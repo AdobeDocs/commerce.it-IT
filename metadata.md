@@ -1,14 +1,17 @@
 ---
-cloud: Experience Cloud
 solution: Commerce
-product: commerce
+solution-title: Commerce
+product: magento
 type: Documentation
+audience: end-user
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/commerce.it-IT
-hide: true
-source-git-commit: 0d0c3c1cb2d0af48352afbe2028966331f0bb8ae
+index: y
+role: User
+feature-set: Commerce
+source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
 workflow-type: tm+mt
-source-wordcount: '53'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---
@@ -16,6 +19,21 @@ ht-degree: 0%
 
 # Metadati per uso interno
 
-Il file metadata.md include metadati a livello di repository che passano attraverso i file TOC.md della guida utente nel repository. Se desideri modificare il contenuto di metadata.md per qualsiasi guida utente, effettua questa operazione in qualsiasi file TOC.md.
+Il file `metadata.md` include metadati a livello di repository che passano ai file della guida utente `TOC.md` nel repository. Se si desidera modificare il contenuto di metadata.md per qualsiasi guida utente, eseguire questa operazione in qualsiasi file `TOC.md`.
 
-Per un elenco di valori validi per **soluzione**, **prodotto** e **tipo**, vedere [metadati](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html).
+| metadati | che cosa fa |
+|--- |--- |
+| solution-title | Utilizzato nell’intestazione dell’articolo come collegamento |
+| solution-hub-url | Apre la pagina dell’hub helpx |
+| solution-icon | Visualizza l’icona della soluzione accanto al titolo della soluzione. Non ancora implementato |
+| getting-started-url | Collegamento alla pagina della guida introduttiva helpx |
+| tutorials-url | Collegamento alle esercitazioni video: esercitazioni helpx o KT |
+| mini-toc-levels | Determina il numero di livelli di intestazione visualizzati nella barra a destra. il valore predefinito è 2 |
+| git-repo | Specifica la posizione dell’archivio principale per uso interno |
+
+Nel file TOC.md
+
+| metadati | che cosa fa |
+|--- |--- |
+| user-guide-title | Utilizzato nell’intestazione dell’articolo come collegamento |
+| user-guide-url | Apre la pagina dell’hub helpx |

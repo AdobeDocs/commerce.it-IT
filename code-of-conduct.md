@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0d0c3c1cb2d0af48352afbe2028966331f0bb8ae
+source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -9,8 +9,7 @@ ht-degree: 0%
 
 ## Il nostro impegno
 
-Al fine di promuovere un ambiente aperto e accogliente,
-i collaboratori e i responsabili si impegnano a partecipare al nostro progetto e
+Nell’interesse di promuovere un ambiente aperto e accogliente, i collaboratori e i responsabili si impegnano a partecipare al nostro progetto e
 la nostra community è un’esperienza priva di molestie per tutti, indipendentemente dall’età, dal corpo
 dimensioni, disabilità, etnia, identità ed espressione di genere, livello di esperienza,
 nazionalità, aspetto personale, razza, religione o identità sessuale e
@@ -29,8 +28,7 @@ include:
 
 Alcuni esempi di comportamenti non accettabili da parte dei partecipanti:
 
-* L’uso di linguaggio o immagini a sfondo sessuale e attenzioni sessuali indesiderate o
-anticipi
+* Utilizzo di linguaggio o immagini a sfondo sessuale e attenzioni o proposte sessuali indesiderate
 * Trolling, commenti offensivi/sprezzanti e attacchi personali o politici
 * Molestie pubbliche o private
 * Pubblicazione di informazioni private altrui, ad esempio in formato fisico o elettronico
@@ -54,7 +52,7 @@ minaccioso, offensivo o dannoso.
 
 Il presente Codice di condotta si applica sia all’interno degli spazi del progetto che negli spazi pubblici
 quando un utente rappresenta il progetto o la relativa community. Esempi di
-rappresentare un progetto o una community tramite un messaggio e-mail ufficiale del progetto
+rappresentare un progetto o una community tramite un messaggio e-mail ufficiale sul progetto
 tramite un account ufficiale di social media o in qualità di
 rappresentante a un evento online o offline. La rappresentanza di un progetto può essere
 ulteriormente definiti e chiariti dai responsabili del progetto.
@@ -63,9 +61,9 @@ ulteriormente definiti e chiariti dai responsabili del progetto.
 
 I casi di comportamenti offensivi, molesti o altrimenti inaccettabili possono essere
 segnalato contattando il team del progetto all’indirizzo Grp-opensourceoffice@adobe.com. Tutti
-i reclami saranno esaminati e analizzati e daranno luogo a una risposta che
+vengono esaminati e analizzati e danno luogo a una risposta che
 sia ritenuta necessaria e adeguata alle circostanze. Il team del progetto è
-obbligato a mantenere la riservatezza nei confronti di chi denuncia un incidente.
+obbligato a mantenere la riservatezza in merito a chi denuncia un incidente.
 Ulteriori dettagli sui criteri di applicazione specifici possono essere pubblicati separatamente.
 
 Responsabili del progetto che non seguono o non applicano correttamente il Codice di condotta
@@ -74,5 +72,5 @@ membri della direzione del progetto.
 
 ## Attribuzione
 
-Questo Codice di condotta è stato adattato dal [Contributor Covenant](https://contributor-covenant.org), versione 1.4,
-disponibile in [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+Questo Codice di condotta è stato adattato dal [Contributor Covenant](https://www.contributor-covenant.org/), versione 1.4,
+disponibile in [https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/](https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/).
