@@ -2,9 +2,9 @@
 title: Note sulla versione [!DNL Payment Services]
 description: Consulta le note sulla versione per informazioni su tutte le  [!DNL Payment Services]  versioni.
 feature: Payments, Release Notes
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 313d69a7f791153fd56a1492f9012776cea1f3df
 workflow-type: tm+mt
-source-wordcount: '3344'
+source-wordcount: '3392'
 ht-degree: 0%
 
 ---
@@ -89,6 +89,24 @@ _28 giugno 2021_
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-2761 --> È ora possibile personalizzare i dati visualizzati nel [report sullo stato dei pagamenti dell&#39;ordine](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e nel [report sui pagamenti](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/payouts.html#show-and-hide-columns) visualizzando o nascondendo le colonne tramite il controllo Impostazioni colonna.
 
 +++
+
+## v2.10.3
+
+_24 febbraio 2025_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
+
+![È stato risolto il problema](../assets/fix.svg)<!-- PAY-xxxx -->. Sono state migliorate la stabilità e le prestazioni generali.
+
+![Problema risolto](../assets/fix.svg)<!-- PAY-xxxx --> Miglioramenti e ottimizzazioni generali. Sono stati corretti alcuni bug critici di v2.10.2.
+
+## v2.10.2
+
+_21 febbraio 2025_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
+
+![Problema noto](../assets/bug.svg)<!-- PAY-xxxx --> Contiene bug critici che possono influire sulla stabilità e sulle prestazioni. Invece di utilizzare questa versione (v2.10.2), Adobe consiglia di eseguire l’aggiornamento a v2.10.3.
 
 ## v2.10.1
 
