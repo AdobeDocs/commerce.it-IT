@@ -1,7 +1,8 @@
 ---
 title: Aggiungi sinonimi
 description: Aggiungi [!DNL Live Search] sinonimi per migliorare la risposta alle richieste di ricerca.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
+source-git-commit: 81bde302463a70e41318b494565694929703dff9
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
@@ -30,7 +31,6 @@ Segui le istruzioni per il [tipo di sinonimo](synonyms-type.md) che desideri cre
 1. Accettare l&#39;opzione **bidirezionale** predefinita.
 
    ![Aggiungi sinonimo bidirezionale](assets/synonym-add-two-way.png)
-
 
 1. Immettere il termine o la frase **Parola chiave** da trovare.
 1. Immettere i **Espansione** termini che si desidera aggiungere come sinonimi per la parola chiave. Separa più termini con una virgola.

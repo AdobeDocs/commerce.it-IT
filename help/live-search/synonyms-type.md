@@ -1,9 +1,10 @@
 ---
 title: Tipi di sinonimi
 description: I sinonimi unidirezionali [!DNL Live Search] consentono di espandere la definizione delle parole chiave.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: f5522428-c7cc-4627-a09b-d9148918c127
+source-git-commit: 81bde302463a70e41318b494565694929703dff9
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -38,10 +39,6 @@ a, an e sono, come, at, be, ma, per, se, in, into, is, no, no, di, su, o, tale, 
 
 Le parole di arresto non rendono i sinonimi più significativi, ma aumentano la quantità di dati da elaborare.
 
-### Usa singole parole
-
-Se un sinonimo contiene più parole, lo spazio vuoto tra le parole fa sì che vengano trattate come sinonimi separati. Ad esempio, se definisci &quot;pezzo di tempo&quot; come sinonimo di &quot;orologio&quot;, le parole &quot;tempo&quot; e &quot;pezzo&quot; vengono trattate come sinonimi separati.
-
 ### Uso del singolare e del plurale
 
 Non è necessario definire sia la forma singolare che quella plurale di una parola come sinonimo. Se nel catalogo sono presenti una combinazione di termini singolari e plurali, la funzione Ricerca consente di trovare il set di prodotti corretto. Ad esempio, se utilizzi la parola &quot;pant&quot; nel nome del prodotto e un acquirente cerca &quot;pantaloni&quot;, viene restituito il set corretto di prodotti e la singola parola &quot;pant&quot; viene offerta come suggerimento. Il singolare termine &quot;pantaloni&quot; è spesso usato nell&#39;industria della moda e talvolta nel commercio al dettaglio, anche se la forma plurale &quot;pantaloni&quot; è più comunemente usata in alcune aree. (La parola &quot;pantalone&quot; tecnicamente si riferisce alla parte di un indumento che copre una gamba, ed è per questo che hai bisogno di un &quot;paio di pantaloni&quot; per coprire entrambe le gambe.)
@@ -49,3 +46,13 @@ Non è necessario definire sia la forma singolare che quella plurale di una paro
 ### Coerenza
 
 Coerenza con il modo in cui la terminologia viene utilizzata nel catalogo. Tieni presente che potrebbero esserci differenze regionali nell’utilizzo e a volte differenze all’interno di un settore.
+
+## Comportamento sinonimo di più parole
+
+Per i sinonimi composti da più parole, Commerce considera il sinonimo come una frase. Ad esempio, se crei un sinonimo bidirezionale **tavolo da pranzo** ![Selettore bidirezionale](assets/btn-two-way.png) **tavolo da cucina** ![Selettore bidirezionale](assets/btn-two-way.png) **tavolo da pranzo**, Commerce eseguirà una ricerca in tutti i campi impostati come ricercabile per individuare l&#39;occorrenza di **tavolo da pranzo** o **tavolo da cucina** o **tavolo da pranzo**.
+
+Se non viene creato alcun sinonimo e un acquirente cerca **la tabella della cucina**, Commerce cerca i termini ovunque nei campi ricercabili, anche tra campi diversi, ad esempio **la tabella** nel campo del nome e **la cucina** nella parola chiave meta.
+
+Dopo aver creato un sinonimo, il comportamento di ricerca cambia per cercare la frase esatta **tabella cucina**. Questo potrebbe ridurre il numero di risultati, perché verranno visualizzati solo i prodotti con la frase esatta.
+
+Se desideri cercare i termini separatamente come prima, puoi [creare un ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). Se la domanda è sufficiente, Commerce prenderà in considerazione la possibilità di aggiungere questa funzionalità al prodotto in una versione futura.
