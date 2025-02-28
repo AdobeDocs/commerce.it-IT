@@ -1,9 +1,10 @@
 ---
 title: Crea nuovo consiglio
 description: Scopri come creare un’unità di consigli di prodotto.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
+source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1511'
 ht-degree: 0%
 
 ---
@@ -81,6 +82,10 @@ Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dat
    * **Salva come bozza** per modificare l&#39;unità di consigli in un secondo momento. Non è possibile modificare il tipo di pagina o il tipo di consiglio per un&#39;unità di consigli in stato bozza.
 
    * **Attiva** per abilitare l&#39;unità di consigli nella vetrina.
+
+>[!IMPORTANT]
+>
+>Alcuni browser potrebbero bloccare gli script critici che impediscono al servizio Consigli di prodotto di funzionare come previsto.
 
 ## Indicatori di preparazione
 

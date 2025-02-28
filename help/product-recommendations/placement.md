@@ -1,9 +1,10 @@
 ---
 title: Posizionamento ed etichette
 description: Scopri dove puoi inserire consigli su varie pagine del sito e suggerimenti per le etichette utilizzate di frequente per ogni tipo di consiglio.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 0576add8-50dd-4aac-91f5-38b7d85b751f
+source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
@@ -51,8 +52,8 @@ _Consiglio all&#39;inizio dei risultati di ricerca_
 
 Nella tabella seguente sono elencate le pagine iniziali in cui è possibile inserire i consigli e i tipi di consigli consentiti in ogni pagina.
 
-| Pagina | Consigli di posizionamento |
-|---|---|
+| Pagina | Consigli di posizionamento | Tipi |
+|---|---|---|
 | Home page | Nella parte superiore del contenuto principale<br>Nella parte inferiore del contenuto principale (impostazione predefinita) | Più visualizzati<br>Più acquistati<br>Più aggiunti al carrello<br>Consigliati<br>Di tendenza |
 | Categoria | Nella parte superiore del contenuto principale<br>Nella parte inferiore del contenuto principale (impostazione predefinita) | Più visualizzati<br>Più acquistati<br>Più aggiunti al carrello<br>Consigliati<br>Di tendenza |
 | Dettagli prodotto | Nella parte inferiore del contenuto principale (impostazione predefinita) | Più visualizzati<br>Più acquistati<br>Più aggiunti al carrello<br>Ha visualizzato questo, ha visualizzato questo<br>Ha visualizzato questo, ha acquistato quello<br>Ha acquistato questo, ha acquistato quello<br>Altri elementi simili a questo<br>Di tendenza<br>Somiglianza visiva |
