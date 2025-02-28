@@ -5,9 +5,10 @@ seo-title: Adobe Commerce Payments Services Guide
 seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerce or [!DNL Magento Open Source].
 feature: Payments, Checkout
 recommendations: noCatalog
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: e27a259f-e72e-4d73-a103-59167638e582
+source-git-commit: 62b708f79ac011ef33b37f67384df7c94571ced2
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
@@ -42,6 +43,10 @@ Questa guida non descrive le funzionalità di base di [!DNL Adobe Commerce] e [!
 ## Supporto
 
 Se hai bisogno di informazioni o hai domande non trattate in questa guida, contatta il tuo rappresentante commerciale [!DNL Payment Services] o utilizza le risorse disponibili nella tua Home [!DNL Payment Services]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3447836)
+
+Consulta [Disponibilità](overview.md#availability) per verificare quale opzione [!DNL Payment Services] è adatta alle tue esigenze.
 
 * [Centro assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) - Cercare gli articoli relativi alla risoluzione dei problemi relativi a [!DNL Payment Services] nella Knowledge Base.
 * [Ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket): i clienti Commerce possono inviare un ticket per ricevere ulteriore assistenza.
