@@ -3,9 +3,10 @@ title: Connettore servizi Commerce
 description: Scopri come integrare la tua istanza di Adobe Commerce o Magento Open Source nei servizi utilizzando le chiavi API di produzione e sandbox.
 feature: Services, Saas
 role: Admin, User
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 1aa6ba8b-be39-496e-b83d-a4a7db9f5dd8
+source-git-commit: 5e2c32b66407585317e22649184337e2aace9bad
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
@@ -96,6 +97,8 @@ Per i progetti Adobe Commerce Cloud Pro con più ambienti di staging, puoi richi
 - [Inviare una richiesta di supporto](https://experienceleague.adobe.com/home?support-tab=home#support) per richiedere spazio dati di test aggiuntivo e indicare la giustificazione aziendale per lo spazio dati aggiuntivo. Questa richiesta è soggetta ad approvazione.
 
 I clienti Magento Open Source che utilizzano Adobe Payment Services possono richiedere anche uno spazio di dati aggiuntivo. Contatta il team dei pagamenti per ottenere l&#39;approvazione preventiva degli spazi di dati aggiuntivi prima di inviare una [richiesta di supporto](https://experienceleague.adobe.com/home?support-tab=home#support) per richiedere lo spazio di dati di prova.
+
+I clienti che possiedono più progetti Cloud o installazioni on-premise (live/production) possono anche richiedere spazi di dati aggiuntivi per la produzione e il test per ciascun progetto o istanza [inviando una richiesta di supporto](https://experienceleague.adobe.com/home?support-tab=home#support).
 
 ### Selezionare o creare un progetto SaaS {#createsaasenv}
 
