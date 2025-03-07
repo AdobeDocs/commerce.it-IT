@@ -2,9 +2,10 @@
 title: Revisione dei registri e risoluzione dei problemi
 description: Scopri come risolvere i problemi di  [!DNL data export]  errori utilizzando i registri di esportazione dei dati e saas.
 feature: Services
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: d022756f-6e75-4c2a-9601-31958698dc43
+source-git-commit: 22c74c12ddfccdb4e6c4e02c3a15557e1020d5ef
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
@@ -36,8 +37,8 @@ Ogni record di registro ha la seguente struttura.
    "feed": "<feed name>",
    "operation": "<executed operation>",
    "status": "<status of operation>",
-   "elapsed": "<time elaspsed from script run>",
-   "pid": "<proccess id who executed `operation`>",
+   "elapsed": "<time elapsed from script run>",
+   "pid": "<process id that executed `operation`>",
    "caller": "<who called this `operation`>"
 } [] []
 ```
@@ -50,10 +51,10 @@ Nella tabella seguente sono descritti i tipi di operazioni che è possibile regi
 
 | Operazione | Descrizione | Esempio chiamante |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| sincronizzazione completa | La sincronizzazione completa raccoglie e invia tutti i dati al SaaS per un determinato feed. | `bin/magento saas:resync --feed=products` |
-| reindicizzazione parziale | La sincronizzazione parziale raccoglie e invia dati a SaaS solo per le entità aggiornate in un determinato feed. Questo registro è presente solo se esistono entità aggiornate. | `bin/magento cron:run --group=index` |
-| riprova elementi non riusciti | Invia nuovamente gli elementi per un determinato feed a SaaS se l&#39;operazione di sincronizzazione precedente non è riuscita a causa di un errore dell&#39;applicazione Commerce o del server. Questo registro è presente solo se sono presenti elementi non riusciti. | `bin/magento cron:run --group=saas_data_exporter` (qualsiasi gruppo cron &quot;*_data_exporter&quot;) |
-| sincronizzazione completa (legacy) | Sincronizzazione completa per un determinato feed in modalità di esportazione legacy. | `bin/magento saas:resync --feed=categories` |
+| sincronizzazione completa | Raccoglie e invia tutti i dati all’SaaS per un determinato feed. | `bin/magento saas:resync --feed=products` |
+| reindicizzazione parziale | Raccoglie e invia dati a SaaS solo per entità aggiornate in un determinato feed. Questo registro è presente solo se esistono entità aggiornate. | `bin/magento cron:run --group=index` |
+| riprova elementi non riusciti | Inviare nuovamente gli elementi per un determinato feed a SaaS se l&#39;operazione di sincronizzazione precedente non è riuscita a causa di un errore dell&#39;applicazione Commerce o del server. Questo registro è presente solo se sono presenti elementi non riusciti. | `bin/magento cron:run --group=saas_data_exporter` (qualsiasi gruppo cron &quot;*_data_exporter&quot;) |
+| sincronizzazione completa (legacy) | Raccoglie e invia tutti i dati a SaaS per un determinato feed in modalità di esportazione legacy. | `bin/magento saas:resync --feed=categories` |
 | reindicizzazione parziale (legacy) | Invia entità aggiornate a SaaS per un determinato feed in modalità di esportazione legacy. Questo registro è presente solo se esistono entità aggiornate. | `bin/magento cron:run --group=index` |
 | sincronizzazione parziale (legacy) | Invia entità aggiornate a SaaS per un determinato feed in modalità di esportazione legacy. Questo registro è presente solo se esistono entità aggiornate. | `bin/magento cron:run --group=saas_data_exporter` (qualsiasi gruppo cron &quot;*_data_exporter&quot;) |
 
@@ -123,12 +124,12 @@ In questo esempio viene aggiunta una regola che consente di eseguire query sui r
 
 ## Risoluzione dei problemi
 
-Se i dati mancano o sono errati in Commerece Services, controlla i registri per verificare se si è verificato un problema durante la sincronizzazione dall’istanza di Adobe Commerce alla piattaforma Commerce Service. Se necessario, utilizza la registrazione estesa per aggiungere ulteriori informazioni ai registri per la risoluzione dei problemi.
+Se i dati mancano o sono errati nei servizi Commerce, controlla i registri per individuare eventuali messaggi di errore che si sono verificati durante la sincronizzazione da Adobe Commerce alla piattaforma dei servizi Commerce. Se necessario, utilizza la registrazione estesa per aggiungere ulteriori informazioni ai registri per la risoluzione dei problemi.
 
-- commerce-data-export-errors.log - se si è verificato un errore durante la fase di raccolta
-- saas-export-errors.log - se si è verificato un errore durante la fase di trasmissione
+- Il log degli errori di esportazione dei dati (`commerce-data-export-errors.log`) acquisisce gli errori che si verificano durante la fase di raccolta.
+- Il log degli errori di esportazione SaaS (`saas-export-errors.log`) acquisisce gli errori che si verificano durante la fase di trasmissione.
 
-Se vengono visualizzati errori non correlati alla configurazione o alle estensioni di terze parti, invia un [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) con il maggior numero di informazioni possibile.
+Se vengono visualizzati errori non correlati alla configurazione o alle estensioni di terze parti, invia un [ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) con il maggior numero di informazioni possibile.
 
 ### Risolvi problemi di sincronizzazione catalogo {#resolvesync}
 
@@ -143,22 +144,15 @@ Quando attivi una risincronizzazione dei dati, l’aggiornamento dei dati può r
 
 #### Sincronizzazione non in esecuzione
 
-Se la sincronizzazione non è in esecuzione su una pianificazione o non è stato sincronizzato nulla, vedere questo articolo [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
+Se la sincronizzazione non è in esecuzione su una pianificazione o non è stato sincronizzato nulla, vedere questo articolo [KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
 
 #### Sincronizzazione non riuscita
 
-Se lo stato della sincronizzazione del catalogo è **Non riuscito**, inviare un [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+Se lo stato della sincronizzazione del catalogo è **Non riuscito**, inviare un [ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 ## Registrazione estesa
 
-Per ulteriori informazioni di registro, puoi utilizzare le variabili di ambiente per estendere i registri con dati aggiuntivi per il tracciamento e la risoluzione dei problemi.
-
-Nella directory `var/log/` sono presenti due file di log:
-
-- commerce-data-export-errors.log - se si è verificato un errore durante la fase di raccolta
-- saas-export-errors.log - se si è verificato un errore durante la fase di trasmissione
-
-Puoi utilizzare le variabili di ambiente per estendere i registri con dati aggiuntivi per il tracciamento e la risoluzione dei problemi.
+Utilizza le variabili di ambiente per estendere i registri con dati aggiuntivi per il tracciamento e la risoluzione dei problemi. Aggiungi la variabile di ambiente alla riga di comando quando esegui i comandi CLI di esportazione dei dati, come mostrato negli esempi seguenti.
 
 ### Verifica il payload del feed
 
