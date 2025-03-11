@@ -2,7 +2,8 @@
 title: Raccogli dati
 description: Scopri come gli eventi raccolgono i dati per  [!DNL Product Recommendations].
 feature: Services, Recommendations, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
+source-git-commit: 94d2a9911ab10d164d75779d1f310e5bdf2aea74
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 0%
@@ -118,14 +119,14 @@ Questa tabella descrive gli eventi utilizzati da ogni tipo di consiglio.
 | Tipo di consiglio | Eventi | Pagina |
 | --- | --- | --- |
 | Articoli più visualizzati | `page-view`<br>`product-view` | Pagina dettagli prodotto |
-| Più acquistati | `page-view`<br>`complete-checkout` | Carrello/Pagamento |
+| Più acquistati | `page-view`<br>`place-order` | Carrello/Pagamento |
 | Più aggiunti al carrello | `page-view`<br>`add-to-cart` | Pagina dettagli prodotto<br>Pagina elenco prodotti<br>Carrello<br>Elenco desideri |
 | Ha visualizzato questo, ha visualizzato quello | `page-view`<br>`product-view` | Pagina dettagli prodotto |
 | Ho visto questo, ho comprato quello | Registrazioni dei prodotti | `page-view`<br>`product-view` | Pagina dettagli prodotto<br>Carrello/Pagamento |
 | Ho comprato questo e quello | Registrazioni dei prodotti | `page-view`<br>`product-view` | Pagina dettagli prodotto |
 | Di tendenza | `page-view`<br>`product-view` | Pagina dettagli prodotto |
 | Conversione: Visualizza per acquisto | Registrazioni dei prodotti | `page-view`<br>`product-view` | Pagina dettagli prodotto |
-| Conversione: Visualizza per acquisto | Registrazioni dei prodotti | `page-view`<br>`complete-checkout` | Carrello/Pagamento |
+| Conversione: Visualizza per acquisto | Registrazioni dei prodotti | `page-view`<br>`place-order` | Carrello/Pagamento |
 | Conversione: Visualizza in carrello | Registrazioni dei prodotti | `page-view`<br>`product-view` | Pagina dettagli prodotto |
 | Conversione: Visualizza in carrello | Registrazioni dei prodotti | `page-view`<br>`add-to-cart` | Pagina dettagli prodotto<br>Pagina elenco prodotti<br>Carrello<br>Elenco desideri |
 
