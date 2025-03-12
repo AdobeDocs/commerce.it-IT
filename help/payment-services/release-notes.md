@@ -2,13 +2,13 @@
 title: Note sulla versione [!DNL Payment Services]
 description: Consulta le note sulla versione per informazioni su tutte le  [!DNL Payment Services]  versioni.
 feature: Payments, Release Notes
-source-git-commit: 313d69a7f791153fd56a1492f9012776cea1f3df
+exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
+source-git-commit: 0ad77dca302d467ad5f037f0cd567e18bd148af0
 workflow-type: tm+mt
-source-wordcount: '3392'
+source-wordcount: '3644'
 ht-degree: 0%
 
 ---
-
 
 # Note sulla versione
 
@@ -89,6 +89,33 @@ _28 giugno 2021_
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-2761 --> È ora possibile personalizzare i dati visualizzati nel [report sullo stato dei pagamenti dell&#39;ordine](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e nel [report sui pagamenti](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/payouts.html#show-and-hide-columns) visualizzando o nascondendo le colonne tramite il controllo Impostazioni colonna.
 
 +++
+
+## v2.11.0
+
+_13 marzo 2025_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
+
+
+![Nuovo](../assets/new.svg)<!-- PAY-5938 --> Ora [!DNL Payment Services] consente ai commercianti di gestire le impostazioni di pagamento per massimizzare la flessibilità della loro attività. Questa versione migliora la possibilità di allegare [più account PayPal](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/settings#use-multiple-paypal-accounts) per le aree geografiche e i marchi supportati da un commerciante. Il nostro team di vendita può fornire un collegamento di onboarding per configurare gli ambiti di visualizzazione del sito web e del negozio.
+
+![Nuovo](../assets/new.svg)<!-- PAY-5968 --> Ora [!DNL Payment Services] aggiorna la configurazione amministratore con **valori ID commerciante PayPal** e **Stato commerciante PayPal**. Questi valori forniscono agli esercenti una migliore visibilità sullo stato del loro conto PayPal.
+
+![È stato risolto il problema](../assets/fix.svg)<!-- PAY-5816 -->. È stata ripristinata la funzionalità dell&#39;ordine normale in [!DNL Payment Services], risolvendo un problema che causava errori in tutte le posizioni dell&#39;ordine con la versione v2.9.0.
+
+![È stato risolto un problema](../assets/fix.svg)<!-- PAY-5825 --> a causa del quale il mini-carrello Apple Pay utilizzava un URL di totali stimati non corretto per i clienti connessi. Ora [!DNL Payment Services] garantisce calcoli totali accurati.
+
+![Problema risolto](../assets/fix.svg)<!-- PAY-5826 --> È stata migliorata l&#39;affidabilità di Order Management tramite la risoluzione di un problema che causava un errore HTTP 500 durante la modifica dello stato del preventivo in `inactive`.
+
+![È stato risolto un problema](../assets/fix.svg)<!-- PAY-5849 --> che causava la generazione di eccezioni per quantità decimali inferiori a 1 da parte di `LineItemProvider`. Ora [!DNL Payment Services] fornisce un supporto migliore per le quantità frazionarie.
+
+![È stato risolto il problema](../assets/fix.svg)<!-- PAY-5868 -->. È stato corretto un errore relativo all&#39;importo della gift card durante l&#39;acquisto. [!DNL Payment Services] assicura ora valori accurati durante un processo di pagamento.
+
+![È stato risolto un problema](../assets/fix.svg)<!-- PAY-5911 --> che ha risolto gli errori durante la creazione della spedizione per gli ordini effettuati con metodi di pagamento online diversi da[!DNL Payment Services], migliorando l&#39;affidabilità complessiva.
+
+![Problema risolto](../assets/fix.svg)<!-- PAY-5954 --> [!DNL Payment Services] offre ora un&#39;esperienza di pagamento più fluida risolvendo un problema in cui Apple Pay non è riuscito a effettuare un ordine quando è stata selezionata un&#39;altra carta di credito nel portafoglio.
+
+![Problema risolto](../assets/fix.svg)<!-- PAY-5971 --> [!DNL Payment Services] non reindirizza più i clienti alla pagina di revisione dell&#39;ordine quando Apple Pay non riesce, evitando interruzioni non necessarie dell&#39;estrazione.
 
 ## v2.10.3
 
