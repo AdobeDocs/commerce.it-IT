@@ -4,9 +4,9 @@ description: Informazioni aggiornate sulla versione di  [!DNL Data Export Extens
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 7e19d42f4e064cfc4efd7c275546725795b60310
+source-git-commit: e30210e6aac469929e4767e3747bd819bc10b9f4
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '987'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,11 @@ Gli aggiornamenti includono:
 >L’estensione SaaS per l’esportazione dei dati è una raccolta di moduli che viene installata automaticamente con Live Search, Product Recommendations e Catalog Service. Puoi controllare la versione installata nel sistema utilizzando Composer. In alcuni casi, potrebbe essere utile aggiornare l’estensione di esportazione dei dati sul sistema per rilevare correzioni o nuove funzionalità senza aggiornare la versione del servizio Commerce.
 
 ## Versione principale corrente
+
+## Versione 103.3.21
+
+![Correzione](../assets/new.svg) è stata aggiunta la funzionalità per sincronizzare parzialmente `product`, `productOverrides` e `productAttributes` feed in base a un elenco specificato di SKU di prodotto. Utilizzare la nuova funzionalità aggiungendo l&#39;opzione `--by-ids` al comando CLI `bin/magento saas:resync --feed=<FEED_NAME>`. <!--MDEE-606-->
+![Correzione](../assets/fix.svg) Riduzione dei potenziali problemi di compatibilità con PHP 8.4 grazie alla risoluzione delle funzionalità obsolete. <!--MDEE-1002-->
 
 ## Versione 103.3.20
 
