@@ -4,9 +4,10 @@ description: Dopo l'installazione, è possibile configurare  [!DNL Payment Servi
 role: Admin, Developer
 level: Intermediate
 feature: Payments, Checkout, Configuration, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: bb59bd49-6ecd-4ef1-a6b9-e1e93db04bf6
+source-git-commit: 24622b8a20b8cd95e13a68df6e0929206ffbb06b
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -88,6 +89,32 @@ bin/magento cron:run --group payment_services_data_export
 ```
 
 Per ulteriori informazioni sulla reindicizzazione e sugli indicizzatori, vedere l&#39;argomento [Gestione degli indicizzatori](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) nella documentazione per gli sviluppatori.
+
+## Configurare l’ambito tramite CLI
+
+[!DNL Payment Services] consente ai commercianti di utilizzare [più account PayPal](settings.md#use-multiple-paypal-accounts). Ora è possibile modificare gli ambiti di questi account tramite CLI.
+
+Per impostare l&#39;ambito al livello `website`, eseguire:
+
+```bash
+bin/magento config:set payment/payment_services/mba_scoping_level website
+```
+
+Per impostare l&#39;ambito al livello `store`, utilizzare:
+
+```bash
+bin/magento config:set payment/payment_services/mba_scoping_level store
+```
+
+>[!TIP]
+>
+> Se si desidera modificare l&#39;ambito a livello di archivio, contattare il rappresentante commerciale [!DNL Payment Services].
+
+Dopo aver modificato l’ambito, svuota la cache per visualizzare le modifiche:
+
+```bash
+bin/magento cache:clean:payment_services_merchant_scopes
+```
 
 ## Configurare l’elaborazione L2/L3
 

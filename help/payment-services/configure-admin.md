@@ -4,9 +4,10 @@ description: Dopo l'installazione, puoi configurare  [!DNL Payment Services]  ne
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: a4da36e2-4316-42d5-ae30-cf078f440444
+source-git-commit: 24622b8a20b8cd95e13a68df6e0929206ffbb06b
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -34,6 +35,7 @@ Puoi abilitare [!DNL Payment Services] per il tuo archivio e _[!UICONTROL Mercha
    >
    > Se devi modificare l&#39;ID dello spazio dei dati nel connettore dei servizi di Commerce, devi reimpostare l&#39;ID [!DNL Payment Services]. Fai clic su **Reimposta ID servizi di pagamento** per reimpostare gli ID sandbox o produzione. Se ripristini gli ID [!DNL Payment Services], devi effettuare di nuovo l&#39;onboarding.
 
+1. I valori **[!UICONTROL PayPal Merchant ID]** e **[!UICONTROL PayPal Merchant Status]** vengono forniti automaticamente da PayPal dopo la prima visita al dashboard [!DNL Payment Services].
 1. Per **Soft Descriptor** (valori personalizzati che vengono visualizzati nei rendiconti bancari delle transazioni dei clienti per distinguere tra negozi, marchi o cataloghi), aggiungi il testo personalizzato (fino a 22 caratteri) nel campo di testo, sostituendo `Soft descriptor` o il valore esistente.
 1. Fai clic su **[!UICONTROL Save Config]** per salvare le modifiche.
 1. Passare a **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, quindi fare clic su **[!UICONTROL Flush Cache]** per aggiornare tutte le cache non valide.
@@ -48,6 +50,8 @@ Puoi abilitare [!DNL Payment Services] per il tuo archivio e _[!UICONTROL Mercha
 | [!UICONTROL Method] | visualizzazione store | Imposta il metodo o l’ambiente per lo store. Opzioni: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Payment Services Sandbox ID] | visualizzazione store | L’ID venditore della sandbox, generato automaticamente durante l’onboarding della sandbox. |
 | [!UICONTROL Payment Services Production ID] | visualizzazione store | L’ID esercente di produzione, generato automaticamente durante l’onboarding della produzione (dal vivo). |
+| [!UICONTROL PayPal Merchant ID] | visualizzazione store | L&#39;ID univoco dell&#39;account esercente PayPal, generato al momento della creazione del conto PayPal. |
+| [!UICONTROL PayPal Merchant Status] | visualizzazione store | Stato del tuo ID esercente PayPal. |
 | [!UICONTROL Soft Descriptor] | visualizzazione sito Web o store | Aggiungi un soft descriptor ai tuoi siti web e alle viste store per aggiungere informazioni alle transazioni dei clienti che delineano marchi, store o linee di prodotti. |
 
 ## [!UICONTROL Credit Card Fields]
