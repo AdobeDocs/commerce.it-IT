@@ -3,9 +3,9 @@ title: Note sulla versione [!DNL Payment Services]
 description: Consulta le note sulla versione per informazioni su tutte le  [!DNL Payment Services]  versioni.
 feature: Payments, Release Notes
 exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
-source-git-commit: 0ad77dca302d467ad5f037f0cd567e18bd148af0
+source-git-commit: 0098e5bab2ea72f9abd7c846d49d5ee4d523ad73
 workflow-type: tm+mt
-source-wordcount: '3644'
+source-wordcount: '3681'
 ht-degree: 0%
 
 ---
@@ -89,6 +89,14 @@ _28 giugno 2021_
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-2761 --> È ora possibile personalizzare i dati visualizzati nel [report sullo stato dei pagamenti dell&#39;ordine](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e nel [report sui pagamenti](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/payouts.html#show-and-hide-columns) visualizzando o nascondendo le colonne tramite il controllo Impostazioni colonna.
 
 +++
+
+## v2.11.1
+
+_14 marzo 2025_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
+
+![È stato risolto il problema](../assets/fix.svg)<!-- PAY-5849 --> che interessava [Voci di riga](line-items.md) durante l&#39;estrazione. Ora [!DNL Payment Services] ha migliorato l&#39;affidabilità del processo di pagamento per **elementi riga**. Se riscontri un problema simile, contatta il tuo rappresentante commerciale [!DNL Payment Services] per assistenza.
 
 ## v2.11.0
 
