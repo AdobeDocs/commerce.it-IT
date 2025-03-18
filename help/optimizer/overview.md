@@ -1,0 +1,96 @@
+---
+title: '[!DNL Adobe Commerce Optimizer]'
+description: Scopri come utilizzare [!DNL Adobe Commerce Optimizer] per offrire una vetrina veloce e performante con un catalogo scalabile che ti consenta di ottimizzare il backend di eCommerce esistente aumentando il traffico e incrementando il coinvolgimento e la conversione.
+hide: true
+recommendations: noCatalog
+source-git-commit: 6dd95d5c01bbe217decf3ee48a8ab2cee6167f47
+workflow-type: tm+mt
+source-wordcount: '775'
+ht-degree: 0%
+
+---
+
+# Cos&#39;è [!DNL Adobe Commerce Optimizer]?
+
+[!DNL Adobe Commerce Optimizer] migliora la tua esperienza di e-commerce con una vetrina ad alte prestazioni, aumentando il traffico organico, il coinvolgimento dei clienti e i ricavi.
+
+Con [!DNL Adobe Commerce Optimizer] è possibile:
+
+- Aumenta e ridimensiona il catalogo senza riorganizzare l’intero stack commerce.
+- Acquisisci i dati del catalogo da qualsiasi origine.
+- Definire i canali e i criteri aziendali.
+- Crea ricerche e consigli personalizzati utilizzando IA e ML.
+- Visualizzare i dati fondamentali sulla disponibilità dei prodotti, compresi lo stato di sincronizzazione e i dati degli eventi storefront, per un&#39;implementazione e una risoluzione dei problemi accurate.
+
+>[!BEGINSHADEBOX]
+
+Se desideri partecipare al programma di accesso anticipato [!DNL Adobe Commerce Optimizer], invia una richiesta e-mail a [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
+
+>[!ENDSHADEBOX]
+
+Guarda il seguente video per una panoramica di alto livello di [!DNL Adobe Commerce Optimizer]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
+
+## Chi trae il massimo vantaggio da [!DNL Adobe Commerce Optimizer]?
+
+[!DNL Adobe Commerce Optimizer] è per:
+
+- I commercianti che desiderano mantenere il sistema di e-commerce back-end esistente e trasformare solo le esperienze della vetrina.
+- Aziende in cui un sistema di terze parti gestisce il carrello e il ciclo di vita del pagamento.
+- I clienti di AEM che attualmente non utilizzano Adobe Commerce cercano un modo semplice per gestire il catalogo dei prodotti.
+
+## Presentazione rapida
+
+Quando si avvia [!DNL Adobe Commerce Optimizer] per la prima volta, vengono visualizzati i seguenti elementi:
+
+>[!NOTE]
+>
+>L&#39;immagine è un esempio dell&#39;aspetto di [!DNL Adobe Commerce Optimizer] ed è soggetta a modifiche.
+
+![[!DNL Adobe Commerce Optimizer] UI](assets/user-interface.png)
+
+>[!BEGINTABS]
+
+>[!TAB Home]
+
+Visualizza in anteprima le metriche e le attività chiave per il tuo store.
+
+>[!TAB Merchandising]
+
+Crea esperienze personalizzate per gli acquirenti tramite l’individuazione dei prodotti e la generazione di consigli.
+
+- **Individuazione prodotto**: migliora la funzionalità di ricerca nel sito, garantendo un&#39;esperienza di acquisto fluida ed efficiente che massimizza i tassi di conversione. Consente ai commercianti di assicurarsi che i consumatori ottengano i prodotti giusti al momento giusto.
+- **Recommendations** - Utilizza algoritmi di intelligenza artificiale e machine learning per eseguire un&#39;analisi approfondita dei dati aggregati dei visitatori. Quando vengono combinati con il catalogo, questi dati offrono un’esperienza altamente coinvolgente, rilevante e personalizzata. I consigli emergono sulla vetrina come unità con etichette, ad esempio &quot;Hanno visto anche i clienti che hanno visualizzato questo prodotto&quot;. Puoi creare, gestire e distribuire i consigli direttamente da [!DNL Adobe Commerce Optimizer].
+
+>[!TAB Catalogo]
+
+Definisci i canali e i criteri. Il catalogo non solo contiene i dati dei prodotti, ma consente anche di definire la struttura aziendale.
+
+- **Canali** - Consente di definire la struttura della vendita al dettaglio in business group significativi. Ad esempio, rivenditori per l&#39;industria automobilistica, filiali per conglomerati multimarca o sedi di produzione per i fornitori.
+- **Criteri** - Filtri di accesso ai dati che si trovano all&#39;interno dei canali. Le policy garantiscono che il contenuto corretto venga inviato alla destinazione corretta. Ad esempio, punti vendita negozi fisici, mercati, pipeline pubblicitarie (Google, Facebook, Instagram).
+
+>[!TAB Informazioni dati]
+
+Ottieni informazioni approfondite sulla disponibilità dei dati dei prodotti per la vetrina, per assicurarti di poterli visualizzare immediatamente agli acquirenti.
+
+- **Sincronizzazione dati** - Visualizza una panoramica dello stato di sincronizzazione dei dati di prodotto trasferiti dall&#39;origine dati (PIM, ERP e così via) in [!DNL Adobe Commerce Optimizer]. I dati del prodotto vengono visualizzati nelle schede **[!UICONTROL Catalog Service]**, **[!UICONTROL Product Discovery]** e **[!UICONTROL Recommendations]**.
+- **Evento** - Visualizza i dati dell&#39;evento storefront che alimentano l&#39;individuazione dei prodotti e i consigli. La pagina **Evento** consente al commerciante di verificare che l&#39;implementazione dell&#39;evento storefront sia stata eseguita correttamente e che gli eventi vengano acquisiti correttamente. Gli esercenti possono utilizzare questa pagina per identificare potenziali problemi e adottare misure per risolvere eventuali problemi.
+
+>[!ENDTABS]
+
+## Funzionalità principali
+
+Le funzionalità principali includono:
+
+- **Acquisizione di cataloghi di terze parti** - Acquisisce i dati del catalogo da qualsiasi origine di terze parti (PIM, ERP e così via). I dati del catalogo vengono acquisiti direttamente nel livello dei servizi di merchandising, un componente SaaS denominato Servizi di merchandising basato su canali e criteri (canali e criteri).
+- **Servizi di merchandising basati su canali e criteri** - Questa soluzione è il componente fondamentale di [!DNL Adobe Commerce Optimizer]. I servizi di merchandising basati su canali e criteri sono un modello di dati di catalogo altamente scalabile e flessibile che consente di sbloccare casi di utilizzo multi-brand, multi-business unit e multilingue. Questi servizi di merchandising forniscono elementi di base che i commercianti possono utilizzare per creare e gestire cataloghi su larga scala. In [!DNL Adobe Commerce Optimizer], puoi gestire il catalogo creando canali e criteri che definiscano al meglio i tuoi obiettivi aziendali. Inoltre, il merchandiser può fornire esperienze personalizzate per indirizzare il traffico e il coinvolgimento utilizzando l’individuazione dei prodotti&#x200B; i consigli sui prodotti&#x200B; e il merchandising intelligente. Ulteriori informazioni su [Servizi di merchandising basati su canali e criteri](https://experienceleague.adobe.com/en/docs/commerce/merchandising-services/overview).
+- **Metriche di successo**: fornisce informazioni in tempo reale sulle prestazioni delle iniziative di e-commerce. Puoi visualizzare prima e dopo i risultati di KPI specifici, valutare l’impatto delle modifiche e ottimizzarli per ottenere risultati migliori.
+- **Vetrina Commerce con tecnologia Edge Delivery** - Con la distribuzione Edge, puoi avviare rapidamente il tuo sito utilizzando componenti precompilati della vetrina con funzionalità di e-commerce integrate, tra cui pagine di elenchi di prodotti, pagine di dettagli dei prodotti, carrello e pagamento.
+- **Carrello di terze parti e pagamento** - Utilizza API mesh e App builder per l&#39;integrazione con i sistemi di carrello e pagamento di terze parti.
+
+## Architettura
+
+Il diagramma seguente descrive l&#39;architettura di base di [!DNL Adobe Commerce Optimizer], dall&#39;inserimento dei dati del catalogo alla relazione tra i servizi di merchandising, la vetrina e l&#39;integrazione con un carrello e un processo di pagamento di terze parti.
+
+Architettura ![[!DNL Adobe Commerce Optimizer]](assets/architecture.png)
