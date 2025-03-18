@@ -3,13 +3,13 @@ title: Panoramica di Adobe Commerce as a Cloud Service
 description: Scopri le funzioni e i vantaggi principali di Adobe Commerce as a Cloud Service.
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
-source-git-commit: 0a112b1dab0113eb910e2ecdcca21e7e2814e761
+exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
+source-git-commit: 27d08ed9c01923f2144b071ed7418a399b3126eb
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1593'
 ht-degree: 0%
 
 ---
-
 
 # Panoramica di Adobe Commerce as a Cloud Service
 
@@ -83,10 +83,13 @@ Adobe fornisce i seguenti strumenti per sviluppatori per creare integrazioni e p
 
 ## Commerce Foundation
 
-Commerce Foundation offre una piattaforma di hosting automatizzata sicura e funzioni self-service per la gestione dell&#39;applicazione Commerce in un ambiente nativo per il cloud. Le caratteristiche principali includono:
+Commerce Foundation offre una piattaforma di hosting automatizzata sicura e funzioni self-service per la gestione dell&#39;applicazione Commerce in un ambiente nativo per il cloud.
+
+Le caratteristiche principali includono:
 
 - Onboarding semplificato
 - Aggiornamenti senza problemi
+- Integrazioni di terze parti
 
 ### Onboarding semplificato
 
@@ -103,6 +106,10 @@ Il processo di aggiornamento tipico per Adobe Commerce on Cloud prevedeva la cre
 >[!NOTE]
 >
 >Adobe garantisce la compatibilità con le versioni precedenti per tutti gli aggiornamenti. Ciò significa che quando vengono applicati aggiornamenti, questi non interromperanno le funzionalità o personalizzazioni esistenti conformi al modello [Estensibilità API-first](https://developer.adobe.com/commerce/extensibility/).
+
+### Integrazioni di terze parti
+
+Gli sviluppatori possono utilizzare [API GraphQL e REST](https://developer.adobe.com/commerce/services/cloud/guides/) complete per integrare Commerce Foundation con sistemi di terze parti ed estendere le funzionalità di Commerce.
 
 ## Integrazione con Experience Cloud
 
