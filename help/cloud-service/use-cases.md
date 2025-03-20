@@ -1,18 +1,20 @@
 ---
 title: Casi d’uso
-description: Scopri come eseguire casi d’uso pratici e scenari aziendali supportati con Adobe Commerce as a Cloud Service.
+description: Scopri come eseguire casi d'uso pratici e scenari aziendali supportati con  [!DNL Adobe Commerce as a Cloud Service].
 role: User, Leader
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---
 
-
 # Casi d’uso
 
-I seguenti casi d’uso illustrano le funzionalità di base e gli scenari aziendali supportati da Adobe Commerce as a Cloud Service, consentendo di accelerare lo sviluppo e avviare esperienze di forte impatto.
+{{accs-early-access}}
+
+I seguenti casi d&#39;uso illustrano le funzionalità di base e gli scenari aziendali supportati da [!DNL Adobe Commerce as a Cloud Service], consentendo di accelerare lo sviluppo e avviare esperienze di forte impatto.
 
 In caso di problemi, consulta la sezione [Risoluzione dei problemi](#troubleshooting).
 

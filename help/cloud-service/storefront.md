@@ -1,16 +1,18 @@
 ---
 title: Configurare la vetrina
-description: Scopri come eseguire lo strumento di scaffolding per configurare la vetrina Adobe Commerce as a Cloud Service.
+description: Scopri come eseguire lo strumento di scaffolding per configurare la vetrina  [!DNL Adobe Commerce as a Cloud Service] .
 role: Developer
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
-
 # Configurare la vetrina
+
+{{accs-early-access}}
 
 Nei passaggi seguenti viene illustrato come configurare rapidamente la vetrina Adobe Commerce con tecnologia Edge Delivery utilizzando il comando `aio commerce init`. Questo processo imposta quanto segue:
 
