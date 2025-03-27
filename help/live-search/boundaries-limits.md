@@ -3,9 +3,9 @@ title: Limiti e limiti
 description: Scopri i limiti e le limitazioni di  [!DNL Live Search]  per garantire che soddisfi le esigenze della tua azienda.
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
-source-git-commit: 81bde302463a70e41318b494565694929703dff9
+source-git-commit: 449b281e46d16de56f4c3d2e01e7165c59ee78a2
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -54,12 +54,12 @@ Adobe Commerce offre diverse opzioni per la ricerca del sito. Rivedi i limiti e 
 - Il numero massimo di risultati per pagina è 500.
 - Non è possibile filtrare i risultati utilizzando un attributo di tipo data.
 
-## Regole
+## Cerca merchandising
 
 - Il numero massimo di [regole](rules.md) di merchandising di ricerca per ogni visualizzazione dello store è 50.
-- Il merchandising per categoria può avere una regola per categoria.
 - Il numero massimo di condizioni per regola è 10.
 - Il numero massimo di eventi per regola è 25.
+- Le regole e i prodotti classificati manualmente vengono applicati ai risultati della ricerca quando viene selezionato il criterio di ordinamento predefinito &quot;Ordina per: Più rilevante&quot;. Se un acquirente modifica il criterio di ordinamento in modo da definirlo in base al nome o al prezzo, le regole e le classificazioni manuali non sono più attive.
 - Per evitare risultati imprevedibili in risposte impaginate, il numero di prodotti bloccati non deve superare le dimensioni di pagina richieste.
 
 ## Sinonimi
@@ -68,9 +68,10 @@ Adobe Commerce offre diverse opzioni per la ricerca del sito. Rivedi i limiti e 
 
 ## Merchandising categorie
 
-- È possibile creare una regola per categoria per ogni visualizzazione store. Ogni regola può avere:
-   - Fino a dieci condizioni
-   - Fino a 25 eventi
+- Puoi creare una regola per categoria per ogni visualizzazione Store.
+- Il numero massimo di condizioni per regola è 10.
+- Il numero massimo di eventi per regola è 25.
+- Le regole vengono applicate quando una categoria specifica viene aperta nella vetrina ed esiste una regola per tale categoria. Per le regole di merchandising per categorie, l’ordinamento predefinito è &quot;Ordina per: posizione&quot;. Se un acquirente modifica l’ordinamento, tutti i prodotti nascosti, bloccati e nascosti non vengono più ordinati.
 
 ## Autorizzazioni B2B e categoria
 
