@@ -1,9 +1,10 @@
 ---
 title: '[!DNL Product Recommendations] Workspace'
 description: Scopri come configurare, gestire e monitorare le prestazioni dei consigli di prodotto.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
+source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '874'
 ht-degree: 0%
 
 ---
@@ -18,6 +19,19 @@ Nell&#39;area di lavoro [!DNL Product Recommendations] viene visualizzato un ele
 
 ![Area di lavoro Consigli](assets/workspace.png)
 _Consigli per Workspace_
+
+## Raccolta dati
+
+Per garantire che ogni area funzionale nell’area di lavoro contenga i dati corretti, devi configurare la raccolta dati in base all’implementazione della vetrina selezionata:
+
+1. Luma - La raccolta dei dati è disponibile come strumento pronto all’uso.
+1. Headless: la raccolta dei dati deve essere configurata manualmente, a seconda dell’implementazione in vetrina.
+
+Se utilizzi una vetrina headless, consulta la seguente documentazione per ulteriori informazioni sugli eventi richiesti da aggiungere:
+
+- [Eventi richiesti](events.md) per il dashboard Consigli di prodotto.
+- [Agente di raccolta eventi storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) che deve essere aggiunto come prerequisito.
+- [Esempi](https://github.com/adobe/commerce-events/tree/main/examples) della struttura degli eventi.
 
 ## Impostare l&#39;ambito
 
