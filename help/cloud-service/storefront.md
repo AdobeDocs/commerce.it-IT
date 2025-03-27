@@ -3,9 +3,9 @@ title: Configurare la vetrina
 description: Scopri come eseguire lo strumento di scaffolding per configurare la vetrina  [!DNL Adobe Commerce as a Cloud Service] .
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: 7f7a674b856090bd02752a9e2ad29475b2b56fcf
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -102,13 +102,11 @@ L’esecuzione del comando seguente creerà uno scaffolding per la vetrina Comme
 
 1. Immettere il nome dell&#39;archivio che si desidera creare.
 
-1. Selezionare il modello da utilizzare, ad esempio `adobe-commerce/adobe-demo-store`.
-
 1. Selezionare una delle opzioni seguenti:
 
-   * **Utilizza l&#39;istanza demo di Adobe (endpoint predefiniti)** - Utilizza l&#39;istanza Commerce di Adobe.
+   * **Utilizza il tenant demo di Adobe Commerce**. Utilizza un tenant demo.
       * Se selezioni questa opzione, ti viene richiesto di installare il bot AEM Code Sync in una finestra del browser. È necessario specificare l’archivio creato e autorizzare il bot. Tornare a CLI e immettere `y` per confermare l&#39;installazione bot di AEM Code Sync.
-   * **Scegli un&#39;API disponibile (Mesh -> SaaS)** - Seleziona un&#39;istanza Commerce esistente nell&#39;organizzazione selezionata.
+   * **Scegli un tenant Adobe Commerce disponibile**. Seleziona un tenant Commerce esistente nell&#39;organizzazione selezionata.
       * Se selezionate questa opzione, dovete selezionare il progetto e l&#39;area di lavoro in cui creare una mesh.
 
    >[!NOTE]
