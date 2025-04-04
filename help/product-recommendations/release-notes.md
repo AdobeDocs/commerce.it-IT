@@ -3,9 +3,9 @@ title: Note sulla versione [!DNL Product Recommendations]
 description: Informazioni aggiornate sulla versione di  [!DNL Product Recommendations]  da Adobe Commerce.
 feature: Services, Recommendations, Release Notes
 exl-id: 37404605-5b62-4c71-90d1-4f09e6105c4b
-source-git-commit: 615fa2967680c16ec123d41c20019f72cfeddc60
+source-git-commit: ea7618805596ac4100f5080efe32793feea001df
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1460'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,16 @@ I clienti di ![New](../assets/new.svg) [!DNL Product Recommendations] ora posson
 
 ## Versione principale corrente
 
+### 6.2.0 di magento/product-recommendations
+
+_4 aprile 2025_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"}
+
+![Nuovo](../assets/new.svg) ha aggiornato gli URL CDN per `recommendations-admin-ui` al dominio `adobe.io`.
+
+### Versioni precedenti
+
 ### 6.1.0 di magento/product-recommendations
 
 _11 marzo 2025_
@@ -57,8 +67,6 @@ _11 marzo 2025_
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Nuovo](../assets/new.svg) aggiunto supporto PHP 8.4.
-
-### Versioni precedenti
 
 ### 6.0.3 di magento/product-recommendations
 
