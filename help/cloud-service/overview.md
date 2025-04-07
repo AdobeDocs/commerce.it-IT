@@ -4,9 +4,9 @@ description: Scopri le funzionalità e i vantaggi principali di  [!DNL Adobe Com
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: 25a0d658776ea95fcae07f6390abeeb559642613
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1496'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Le caratteristiche principali includono:
 
 ### Onboarding semplificato
 
-Avvia in pochi minuti le istanze sandbox e di produzione con il portale di provisioning self-service di Commerce Cloud Manager. Tutto ciò di cui hai bisogno, inclusi i servizi di merchandising, Commerce Storefront e App Builder, viene configurato automaticamente e integrato con le tue istanze.
+Avvia in pochi minuti le istanze di produzione e sandbox con il portale di provisioning self-service [!UICONTROL Commerce Cloud Manager]. Tutto ciò di cui hai bisogno, inclusi i servizi di merchandising, un’istanza headless di Commerce e App Builder, viene configurato automaticamente e integrato con le tue istanze.
 
 Consulta la [Guida introduttiva](getting-started.md) per scoprire come creare e gestire le istanze di Commerce.
 

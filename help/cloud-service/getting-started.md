@@ -3,9 +3,9 @@ title: Guida introduttiva a  [!DNL Adobe Commerce as a Cloud Service]
 description: Scopri come iniziare a utilizzare  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-source-git-commit: a1b825a819b25d9374eef169c633d54fb94ee26c
+source-git-commit: 9b90e6f79a394ec0941c9e48aee3859f0bcdedd5
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,10 @@ Questo diagramma fornisce una panoramica di alto livello sulla creazione di inte
 >[!ENDTABS]
 
 ## Creare un’istanza
+
+>[!NOTE]
+>
+>Prima di poter creare un&#39;istanza, l&#39;amministratore di prodotto o l&#39;amministratore di sistema dell&#39;organizzazione deve aggiungere l&#39;utente come utente del prodotto [!DNL Adobe Commerce as a Cloud Service]. Per ulteriori informazioni, vedere [Aggiungere utenti e amministratori](./user-management.md#add-users-and-admins).
 
 [!DNL Adobe Commerce as a Cloud Service] istanze utilizzano un sistema basato sul credito. È possibile creare più istanze, ma ogni istanza richiede una quantità relativa di crediti. La quantità di crediti che hai inizialmente dipende dal tuo abbonamento.
 
