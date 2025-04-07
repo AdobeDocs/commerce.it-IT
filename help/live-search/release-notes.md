@@ -3,9 +3,9 @@ title: Note sulla versione [!DNL Live Search]
 description: Informazioni aggiornate sulla versione di  [!DNL Live Search]  da Adobe Commerce.
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
-source-git-commit: eb016fa8e53cfb9d035d73979495171feccb764f
+source-git-commit: 7dd7ebfae07351f32e781c61b3019b75b421287f
 workflow-type: tm+mt
-source-wordcount: '2186'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Gli aggiornamenti includono:
 ## Aggiornamenti dei servizi in hosting
 
 Queste note descrivono gli aggiornamenti pubblicati al di fuori di una versione con versione o i miglioramenti al servizio ospitato.
+
+_3 aprile 2025_
+
+![Correzione](../assets/fix.svg) Aggiornamento dell&#39;estensione SaaS Data Export per rimuovere la &quot;Categoria principale da assegnare ai prodotti&quot; [limitazione](boundaries-limits.md#b2b-and-category-permissions) per i commercianti B2B. Consulta [Gestire l&#39;estensione per l&#39;esportazione dei dati](../data-export/manage-extension.md) per scoprire come aggiornare l&#39;estensione per l&#39;esportazione dei dati SaaS alla versione 103.4.0+.
 
 _20 febbraio 2025_
 
