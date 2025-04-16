@@ -3,9 +3,9 @@ title: Casi d’uso
 description: Scopri come eseguire casi d'uso pratici e scenari aziendali supportati con  [!DNL Adobe Commerce as a Cloud Service].
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: d5935f4d080c3be1f51bf8916575a3b2f357ee22
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1305'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Crea, modifica e pubblica i contenuti direttamente nella vetrina.
 
 1. Apri la [vetrina](./storefront.md) creata nei prerequisiti.
 
-1. Aprire Authoring documenti. Passando a `https://da.live/#/<GitHub User Name>/<Repository Name>/main/da/index.md`.
+1. Apri Storefront Builder. Passando a `https://da.live/#/<GitHub User Name>/<Repository Name>/main/da/index.md`.
 
 1. Apri la pagina [!UICONTROL **Indice**].
 
@@ -110,7 +110,7 @@ La funzione di sperimentazione contestuale di Adobe Commerce consente di creare 
 
 * Installa l&#39;estensione [AEM Sidekick](https://www.aem.live/docs/sidekick)
 
-1. Nella visualizzazione per l&#39;authoring dei documenti della vetrina, seleziona la pagina indice e fai clic su [!UICONTROL **Copia**].
+1. In Storefront Builder, selezionare la pagina indice e fare clic su [!UICONTROL **Copia**].
 
 1. Crea una cartella [!UICONTROL **experiment**] nella cartella principale facendo clic sul pulsante [!UICONTROL **New**] e selezionando [!UICONTROL **Cartella**].
 
