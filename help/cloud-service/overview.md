@@ -4,9 +4,9 @@ description: Scopri le funzionalità e i vantaggi principali di  [!DNL Adobe Com
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-source-git-commit: 25a0d658776ea95fcae07f6390abeeb559642613
+source-git-commit: 4cd5847eee52ff43e2fae27080a5971ceb939875
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1475'
 ht-degree: 0%
 
 ---
@@ -148,6 +148,5 @@ Nelle sezioni seguenti vengono fornite informazioni sui vantaggi offerti da [!DN
 | [Gestione temporanea del contenuto](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) | [Servizio catalogo](../catalog-service/overview.md) | Roadmap | Strumento di gestione dei cataloghi collegato a Adobe Experience Platform, che consente la gestione di cataloghi di grandi dimensioni. |
 | [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview) | [Commerce Storefront](https://www.aem.live/) | Disponibile | Un CMS di base che consente agli utenti di creare e gestire facilmente documenti e contenuti di siti Web mediante l&#39;authoring basato su documenti. In alternativa, un editor universale che consente una gestione e una personalizzazione dei contenuti più avanzate su più piattaforme. |
 | [Pagamenti](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments) | [Servizi di pagamento per Adobe Commerce](../payment-services/overview.md) | Disponibile | Un servizio di pagamento integrato che agevoli transazioni sicure ed efficienti. |
-| [Catalogo condiviso](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) | [Servizio di indicizzazione prezzi](../price-index/price-indexing.md) | Roadmap | Analizza i dati sui prezzi e suggerisce strategie di prezzo ottimali per i prodotti in base a vari fattori. |
 | [Riscritture URL](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) | [Commerce Storefront](https://www.aem.live/) | Disponibile | Un CMS di base che consente agli utenti di creare e gestire facilmente documenti e contenuti di siti Web mediante l&#39;authoring basato su documenti. In alternativa, un editor universale che consente una gestione e una personalizzazione dei contenuti più avanzate su più piattaforme. |
 | [Merchandiser visivo](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser) | [Servizio catalogo](../catalog-service/overview.md) | Roadmap | Strumento di gestione dei cataloghi collegato a Adobe Experience Platform, che consente la gestione di cataloghi di grandi dimensioni. |
