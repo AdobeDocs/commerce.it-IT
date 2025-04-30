@@ -3,9 +3,9 @@ title: Note sulla versione [!DNL Payment Services]
 description: Consulta le note sulla versione per informazioni su tutte le  [!DNL Payment Services]  versioni.
 feature: Payments, Release Notes
 exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
-source-git-commit: 359143c4f48ff911d6dbe9105f364615525fab8c
+source-git-commit: eb2e99dc3a0dbe1e27524c554886a57a4c8a1c30
 workflow-type: tm+mt
-source-wordcount: '3971'
+source-wordcount: '3986'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Queste note sulla versione descrivono le modifiche e le correzioni apportate all
 
 +++Aggiornamenti dei servizi in hosting
 
+_25 aprile 2025_
+
+![Nuovo problema](../assets/new.svg)<!-- Issue PAY-6051 --> Ora nel dashboard [!DNL Payment Services] vengono visualizzate sia la versione dell&#39;estensione corrente che la versione del dashboard.
+
 _30 agosto 2024_
 
 ![Nuovo problema](../assets/new.svg)<!-- Issue PAY-5658 --> Ora gli esercenti possono filtrare le transazioni in base ai dettagli di pagamento nel report [transazioni](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/transactions.html) per ottenere dati più dettagliati e accurati sui metodi di pagamento.
@@ -42,7 +46,7 @@ _9 luglio 2024_
 
 _5 marzo 2024_
 
-![Problema risolto](../assets/fix.svg)<!-- Issue PAY-5252 --> Ora gli esercenti possono copiare i dati dalle griglie del dashboard selezionando il contenuto di una singola cella.
+![È stato risolto il problema](../assets/fix.svg)<!-- Issue PAY-5252 --> Ora gli esercenti possono copiare i dati dalle griglie del dashboard selezionando il contenuto di una singola cella.
 
 _10 ottobre 2023_
 
