@@ -4,14 +4,18 @@ description: Scopri come utilizzare [!DNL Adobe Commerce Optimizer] per offrire 
 hide: true
 recommendations: noCatalog
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 67a9d89a6f50818cdef0108c66e6c8dcb76bb29c
+source-git-commit: 425c801a852de566120504563e256b0351df588e
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
 
 # Cos&#39;è [!DNL Adobe Commerce Optimizer]?
+
+>[!NOTE]
+>
+>Questa documentazione descrive un prodotto in fase di sviluppo con accesso anticipato e non riflette tutte le funzionalità previste per la disponibilità generale.
 
 [!DNL Adobe Commerce Optimizer] migliora la tua esperienza di e-commerce con una vetrina ad alte prestazioni, aumentando il traffico organico, il coinvolgimento dei clienti e i ricavi.
 
@@ -39,7 +43,7 @@ Guarda il seguente video per una panoramica di alto livello di [!DNL Adobe Comme
 
 - I commercianti che desiderano mantenere il sistema di e-commerce back-end esistente e trasformare solo le esperienze della vetrina.
 - Aziende in cui un sistema di terze parti gestisce il carrello e il ciclo di vita del pagamento.
-- I clienti di AEM che attualmente non utilizzano Adobe Commerce cercano un modo semplice per gestire il catalogo dei prodotti.
+- Clienti AEM che cercano un modo semplice per gestire il catalogo dei prodotti da un motore di e-commerce di terze parti.
 
 ## Presentazione rapida
 
@@ -49,7 +53,7 @@ Quando si avvia [!DNL Adobe Commerce Optimizer] per la prima volta, vengono visu
 >
 >L&#39;immagine è un esempio dell&#39;aspetto di [!DNL Adobe Commerce Optimizer] ed è soggetta a modifiche.
 
-![[!DNL Adobe Commerce Optimizer] UI](assets/user-interface.png)
+![[!DNL Adobe Commerce Optimizer] UI](./assets/user-interface.png)
 
 >[!BEGINTABS]
 
@@ -84,9 +88,9 @@ Ottieni informazioni approfondite sulla disponibilità dei dati dei prodotti per
 
 Le funzionalità principali includono:
 
-- **Acquisizione di cataloghi di terze parti** - Acquisisce i dati del catalogo da qualsiasi origine di terze parti (PIM, ERP e così via). I dati del catalogo vengono acquisiti direttamente nel livello dei servizi di merchandising, un componente SaaS denominato Servizi di merchandising basato su canali e criteri (canali e criteri).
-- **Servizi di merchandising basati su canali e criteri** - Questa soluzione è il componente fondamentale di [!DNL Adobe Commerce Optimizer]. I servizi di merchandising basati su canali e criteri sono un modello di dati di catalogo altamente scalabile e flessibile che consente di sbloccare casi di utilizzo multi-brand, multi-business unit e multilingue. Questi servizi di merchandising forniscono elementi di base che i commercianti possono utilizzare per creare e gestire cataloghi su larga scala. In [!DNL Adobe Commerce Optimizer], puoi gestire il catalogo creando canali e criteri che definiscano al meglio i tuoi obiettivi aziendali. Inoltre, il merchandiser può fornire esperienze personalizzate per indirizzare il traffico e il coinvolgimento utilizzando l’individuazione dei prodotti&#x200B; i consigli sui prodotti&#x200B; e il merchandising intelligente. Ulteriori informazioni su [Servizi di merchandising basati su canali e criteri](https://experienceleague.adobe.com/en/docs/commerce/merchandising-services/overview).
-- **Metriche di successo**: fornisce informazioni in tempo reale sulle prestazioni delle iniziative di e-commerce. Puoi visualizzare prima e dopo i risultati di KPI specifici, valutare l’impatto delle modifiche e ottimizzarli per ottenere risultati migliori.
+- **Acquisizione di cataloghi di terze parti** - Acquisisci i dati del catalogo da qualsiasi origine di terze parti (il catalogo Commerce esistente, PIM, ERP e così via). I dati del catalogo vengono acquisiti direttamente nel livello dei servizi di merchandising, un componente SaaS denominato Servizi di merchandising basato su canali e criteri (canali e criteri).
+- **Servizi di merchandising basati su canali e criteri** - Questa soluzione è il componente fondamentale di [!DNL Adobe Commerce Optimizer]. I servizi di merchandising basati su canali e criteri sono un modello di dati di catalogo altamente scalabile e flessibile che consente di sbloccare casi di utilizzo multi-brand, multi-business unit e multilingue. Questi servizi di merchandising forniscono elementi di base che i commercianti possono utilizzare per creare e gestire cataloghi su larga scala. In [!DNL Adobe Commerce Optimizer], puoi gestire il catalogo creando canali e criteri che definiscano al meglio i tuoi obiettivi aziendali. Inoltre, il merchandiser può fornire esperienze personalizzate per indirizzare il traffico e il coinvolgimento utilizzando l’individuazione dei prodotti&#x200B; i consigli sui prodotti&#x200B; e il merchandising intelligente. Ulteriori informazioni su [Servizi di merchandising basati su canali e criteri](./merchandising/overview.md).
+- **Metriche prima e dopo (PDF)**: fornisce informazioni in tempo reale sulle prestazioni delle iniziative commerce. Puoi visualizzare prima e dopo i risultati di KPI specifici, valutare l’impatto delle modifiche e ottimizzarli per ottenere risultati migliori. I risultati vengono consegnati in un PDF.
 - **Vetrina Commerce con tecnologia Edge Delivery** - Con la distribuzione Edge, puoi avviare rapidamente il tuo sito utilizzando componenti precompilati della vetrina con funzionalità di e-commerce integrate, tra cui pagine di elenchi di prodotti, pagine di dettagli dei prodotti, carrello e pagamento.
 - **Carrello di terze parti e pagamento** - Utilizza API mesh e App builder per l&#39;integrazione con i sistemi di carrello e pagamento di terze parti.
 
@@ -94,4 +98,4 @@ Le funzionalità principali includono:
 
 Il diagramma seguente descrive l&#39;architettura di base di [!DNL Adobe Commerce Optimizer], dall&#39;inserimento dei dati del catalogo alla relazione tra i servizi di merchandising, la vetrina e l&#39;integrazione con un carrello e un processo di pagamento di terze parti.
 
-Architettura ![[!DNL Adobe Commerce Optimizer]](assets/architecture.png)
+Architettura ![[!DNL Adobe Commerce Optimizer]](./assets/architecture.png)
