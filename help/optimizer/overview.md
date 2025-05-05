@@ -35,7 +35,7 @@ Per ulteriori informazioni sul programma di accesso anticipato [!DNL Adobe Comme
 
 Guarda il seguente video per una panoramica di alto livello di [!DNL Adobe Commerce Optimizer]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450226)
+>[!VIDEO](https://video.tv.adobe.com/v/3450471?captions=ita)
 
 ## Chi trae il massimo vantaggio da [!DNL Adobe Commerce Optimizer]?
 

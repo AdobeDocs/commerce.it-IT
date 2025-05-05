@@ -16,7 +16,7 @@ Il merchandising per categorie consente ai proprietari dei negozi di applicare [
 
 Questo video è un’introduzione alla categoria Merchandising.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424617)
+>[!VIDEO](https://video.tv.adobe.com/v/3448859?captions=ita)
 
 La funzione è accessibile nell&#39;amministratore da **Marketing** > SEO &amp; Search > **[!DNL Live Search]** > **Category Merchandising**.
 
