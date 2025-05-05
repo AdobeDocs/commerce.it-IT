@@ -6,16 +6,16 @@ recommendations: noDisplay, noCatalog
 hide: true
 hidefromtoc: true
 exl-id: 5ba1fa65-391f-4af7-8c40-d8314ec9d3e5
-source-git-commit: 79d1b862c5cc307daf93f93c03f1993dbd45aa09
+source-git-commit: 7b59d3a3c7d3cdc875e3329c7949eccc3a6c9fdc
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
 
 # Soluzioni di prodotto Adobe Commerce
 
-Adobe offre diverse soluzioni per soddisfare i requisiti della tua attività di e-commerce. La documentazione di Adobe Commerce in [Experience League](https://experienceleague.adobe.com/it/docs/commerce) e nel sito [Adobe Developer](https://developer.adobe.com/commerce/docs/) fornisce ai clienti risorse self-service che supportano tutte le soluzioni. Tuttavia, navigare in un volume così grande di contenuti può essere difficile senza guida.
+Adobe offre diverse soluzioni per soddisfare i requisiti della tua attività di e-commerce. La documentazione di Adobe Commerce in [Experience League](https://experienceleague.adobe.com/en/docs/commerce) e nel sito [Adobe Developer](https://developer.adobe.com/commerce/docs/) fornisce ai clienti risorse self-service che supportano tutte le soluzioni. Tuttavia, navigare in un volume così grande di contenuti può essere difficile senza guida.
 
 ## Distintivi
 
@@ -41,7 +41,11 @@ Questo badge identifica la documentazione solo per [progetti Adobe Commerce as a
 
 #### [!BADGE Solo PaaS]{type=Informative tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
 
-Questo badge identifica solo la documentazione relativa a [Adobe Commerce su Cloud](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/overview) e ai progetti locali. I progetti Adobe Commerce on Cloud sono ospitati su una soluzione PaaS (Platform-as-a-Service) nativa per il cloud e completamente gestita, con tutte le funzioni principali di Adobe Commerce in un ambiente con preprovisioning. I progetti locali sono ospitati su un’infrastruttura gestita dal cliente.
+Questo badge identifica solo la documentazione relativa a [Adobe Commerce su Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) e ai progetti locali. I progetti Adobe Commerce on Cloud sono ospitati su una soluzione PaaS (Platform-as-a-Service) nativa per il cloud e completamente gestita, con tutte le funzioni principali di Adobe Commerce in un ambiente con preprovisioning. I progetti locali sono ospitati su un’infrastruttura gestita dal cliente.
+
+>[!NOTE]
+>
+>Salvo diversa indicazione, sono inclusi anche i progetti con hosting autonomo basati sulla base di codice di Magento Open Source.
 
 ### Regole
 
