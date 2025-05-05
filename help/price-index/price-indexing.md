@@ -14,7 +14,7 @@ ht-degree: 0%
 
 L&#39;indicizzazione dei prezzi SaaS ottimizza le prestazioni del sito ripartendo le attività a uso intensivo di risorse, come l&#39;indicizzazione e il calcolo dei prezzi, dall&#39;applicazione Commerce all&#39;infrastruttura cloud di Adobe. Questo approccio consente ai commercianti di scalare rapidamente le risorse per accelerare i tempi di indicizzazione dei prezzi e fornire aggiornamenti dei prezzi allo storefront e ai servizi Commerce connessi in modo più rapido.
 
-Il diagramma seguente mostra il flusso di dati di indicizzazione ai servizi SaaS quando Commerce utilizza il processo di indicizzazione dei prezzi [](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) incluso nell&#39;applicazione Commerce:
+Il diagramma seguente mostra il flusso di dati di indicizzazione ai servizi SaaS quando Commerce utilizza il processo di indicizzazione dei prezzi [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) incluso nell&#39;applicazione Commerce:
 
 ![Flusso di dati predefinito](assets/old_way.png)
 

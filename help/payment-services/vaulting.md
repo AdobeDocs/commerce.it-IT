@@ -73,7 +73,7 @@ Puoi usare le carte ad archivio nell&#39;Amministratore solo se il cliente ha un
 Per creare un ordine nell’amministratore per un cliente utilizzando la sua carta di credito archiviata:
 
 1. [Crea un ordine e aggiungi prodotti](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
-1. In _[!UICONTROL Payment & Shipping Information]_, selezionare **[!UICONTROL Stored Cards]**come metodo di pagamento.
+1. In _[!UICONTROL Payment & Shipping Information]_, selezionare **[!UICONTROL Stored Cards]**&#x200B;come metodo di pagamento.
 1. Seleziona il metodo di pagamento con carta di credito archiviata desiderato.
 1. Dopo aver completato tutti gli altri passaggi necessari per l&#39;ordine, [invialo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 

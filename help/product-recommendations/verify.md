@@ -65,4 +65,4 @@ Per verificare che gli eventi utilizzati per le metriche si attivino correttamen
 
 >[!NOTE]
 >
-> Se è abilitata la modalità di restrizione dei cookie [](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html), Adobe Commerce non raccoglie dati comportamentali fino al consenso dell&#39;acquirente. Se la Modalità di restrizione cookie è disabilitata, i dati comportamentali vengono raccolti per impostazione predefinita.
+> Se è abilitata la modalità di restrizione dei cookie [&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html), Adobe Commerce non raccoglie dati comportamentali fino al consenso dell&#39;acquirente. Se la Modalità di restrizione cookie è disabilitata, i dati comportamentali vengono raccolti per impostazione predefinita.

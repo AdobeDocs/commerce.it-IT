@@ -75,7 +75,7 @@ L&#39;oggetto `upc` contiene i seguenti attributi:
 | `type` | stringa! | Il tipo di UPC. |
 | `code` | stringa! | Il codice prodotto UPC dell’articolo. |
 
-Esempio di elementi +++Line
++++Esempio di elementi Line
 
 ```json
 {

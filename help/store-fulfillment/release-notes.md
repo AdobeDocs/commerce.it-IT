@@ -50,9 +50,9 @@ Questa versione contiene i seguenti aggiornamenti:
 
 ![Problema risolto](../assets/fix.svg) Aggiornamenti all&#39;installazione:
 
-- <!-- WMTP-880--> È stato risolto un problema che causava la restituzione di un codice del sito Web errato durante l&#39;installazione dell&#39;estensione [!DNL Store Fulfillment].
+- &#x200B;<!-- WMTP-880--> È stato risolto un problema che causava la restituzione di un codice del sito Web errato durante l&#39;installazione dell&#39;estensione [!DNL Store Fulfillment].
 
-- <!-- WMTP-878--> È stato risolto un problema relativo ai valori SKU integer che richiedeva il cast del tipo di dati al tipo stringa durante l’installazione.
+- &#x200B;<!-- WMTP-878--> È stato risolto un problema relativo ai valori SKU integer che richiedeva il cast del tipo di dati al tipo stringa durante l’installazione.
 
 ![È stato risolto un problema](../assets/fix.svg)<!-- WMTP-915--> a causa del quale si verificava un errore dovuto a un codice di errore di archiviazione mancante.
 

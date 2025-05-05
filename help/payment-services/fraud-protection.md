@@ -40,16 +40,16 @@ Poiché Signifyd esegue alcune azioni sugli ordini, è necessario configurare l&
 
 Queste opzioni di configurazione non sono compatibili con Payment Services e l’integrazione Signifyd:
 
-* Quando [!DNL Payment Services] è configurato con l&#39;azione di pagamento `Authorize` _e_ Signifyd è in modalità `PostAuth` con l&#39;opzione _[!UICONTROL Decline Guarantees]_impostata su **Crea nota di credito**.
+* Quando [!DNL Payment Services] è configurato con l&#39;azione di pagamento `Authorize` _e_ Signifyd è in modalità `PostAuth` con l&#39;opzione _[!UICONTROL Decline Guarantees]_&#x200B;impostata su **Crea nota di credito**.
 
   Motivo: [!DNL Payment Services] crea una transazione di autorizzazione che Signify tenta quindi di rimborsare.
 
 
-* [!DNL Payment Services] è configurato con l&#39;azione di pagamento `Authorize and Capture` _e_ Signifyd è in modalità `PostAuth` con l&#39;opzione _[!UICONTROL Decline Guarantees]_impostata su **Annulla ordine**.
+* [!DNL Payment Services] è configurato con l&#39;azione di pagamento `Authorize and Capture` _e_ Signifyd è in modalità `PostAuth` con l&#39;opzione _[!UICONTROL Decline Guarantees]_&#x200B;impostata su **Annulla ordine**.
 
   Motivo: [!DNL Payment Services] crea una transazione di acquisizione che Signifyd tenta quindi di annullare.
 
 
 Consulta la documentazione di Signifyd per informazioni sulla [configurazione dell&#39;estensione](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#configuringmagento2extension).
 
-Per ulteriori informazioni sui flussi di lavoro degli ordini](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#howmagento2works), consulta la documentazione di Signifyd.[
+Per ulteriori informazioni sui flussi di lavoro degli ordini[&#128279;](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#howmagento2works), consulta la documentazione di Signifyd.

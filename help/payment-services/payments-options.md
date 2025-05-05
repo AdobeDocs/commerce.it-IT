@@ -135,14 +135,14 @@ Per **acquisire pagamenti con _solo_ pulsanti di pagamento PayPal (_non_ l&#39;o
 
 1. Assicurati che l&#39;archivio sia [in modalità di produzione](settings.md#enable-payment-services).
 1. [Configura i pulsanti di pagamento PayPal desiderati](settings.md#payment-buttons) in Impostazioni.
-1. Disattiva _l&#39;opzione **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)**nella sezione_[!UICONTROL Payment buttons]_._
+1. Disattiva _l&#39;opzione **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)**&#x200B;nella sezione&#x200B;_[!UICONTROL Payment buttons]_._
 
 Per **acquisire i pagamenti con il provider di carte di credito esistente _e_ i pulsanti di pagamento PayPal**:
 
 1. Assicurati che l&#39;archivio sia [in modalità di produzione](settings.md#enable-payment-services).
 1. [Configura i pulsanti di pagamento PayPal desiderati](settings.md#payment-buttons).
-1. Disattiva _l&#39;opzione **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)**nella sezione_[!UICONTROL Payment buttons]_._
-1. Disattiva _l&#39;opzione **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)**nella sezione_[!UICONTROL Credit card fields]_ e utilizza l&#39;account [provider di carte di credito esistente](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)._
+1. Disattiva _l&#39;opzione **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)**&#x200B;nella sezione&#x200B;_[!UICONTROL Payment buttons]_._
+1. Disattiva _l&#39;opzione **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)**&#x200B;nella sezione&#x200B;_[!UICONTROL Credit card fields]_ e utilizza l&#39;account [provider di carte di credito esistente](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)._
 
 ## Ricalcolo ordine
 

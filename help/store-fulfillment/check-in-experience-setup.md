@@ -1,6 +1,6 @@
 ---
 title: Configurazione dell’esperienza di archiviazione
-description: Configurare le selezioni di marca e modello] disponibili per i clienti di ritiro a bordo quando completano il modulo per l'ordine di ritiro.
+description: Configurare le selezioni di marca e modello&rbrack; disponibili per i clienti di ritiro a bordo quando completano il modulo per l'ordine di ritiro.
 role: Admin
 level: Intermediate
 source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1

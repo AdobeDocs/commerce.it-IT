@@ -231,7 +231,7 @@ L&#39;ultima parte di questo tutorial prevede l&#39;aggiornamento della vetrina 
 
 1. Nella directory principale della cartella, aprire il file `config.json`.
 
-   Codice +++config.json
+   +++Codice config.json
 
    ```json
    {
@@ -269,7 +269,7 @@ L&#39;ultima parte di questo tutorial prevede l&#39;aggiornamento della vetrina 
    - `ac-environment-id`: `"Fwus6kdpvYCmeEdcCX7PZg"`
    - `ac-price-book-id`: `"west_coast_inc"`
 
-+++
+   +++
 
 1. Sostituisci il valore `ac-channel-id` con l&#39;ID canale Celport copiato in precedenza.
 1. Se necessario, sostituisci il valore `ac-environment-id` con l&#39;ID tenant per l&#39;istanza [!DNL Adobe Commerce Optimizer]. Puoi trovare l’ID nell’e-mail di onboarding per il programma Early Access o contattando il rappresentante del tuo account Adobe.

@@ -141,8 +141,8 @@ _19 settembre 2023_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
-![New](../assets/new.svg) Catalog Service ora utilizza l&#39;indicizzazione dei prezzi SaaS [.
-](../price-index/price-indexing.md)
+![New](../assets/new.svg) Catalog Service ora utilizza l&#39;indicizzazione dei prezzi SaaS [&#128279;](../price-index/price-indexing.md).
+
 ![Correzione](../assets/fix.svg) Questa versione contiene correzioni di bug e miglioramenti sul lato servizio.
 
 ### Versione V1.11

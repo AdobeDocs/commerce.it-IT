@@ -266,7 +266,7 @@ _20 marzo 2023_
 [!BADGE Supportato]{type=Informative tooltip="Supportato"}
 
 ![Correzione](../assets/fix.svg) è stato corretto l&#39;errore &quot;Impossibile recuperare i dati delle opzioni prodotto&quot; che poteva verificarsi durante l&#39;esportazione del catalogo.
-![Correzione](../assets/fix.svg) Il simbolo di valuta nella colonna _Entrate_ del dashboard _[!DNL Product Recommendations]_ora riflette correttamente la valuta di base configurata.
+![Correzione](../assets/fix.svg) Il simbolo di valuta nella colonna _Entrate_ del dashboard _[!DNL Product Recommendations]_&#x200B;ora riflette correttamente la valuta di base configurata.
 
 ### 3.0.4 di magento/product-recommendations
 

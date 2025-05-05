@@ -66,7 +66,7 @@ Scarica il [file di configurazione dell&#39;area di lavoro](https://developer.ad
    cat config/private.key | pbcopy
    ```
 
-   Per ulteriori informazioni sul file `private.key`, vedere Autenticazione dell&#39;account di servizio [](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/).
+   Per ulteriori informazioni sul file `private.key`, vedere Autenticazione dell&#39;account di servizio [&#128279;](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/).
 
 1. Copiare il contenuto del file `<workspace-name>.json` nel campo **Dettagli account/credenziali servizio**.
 
@@ -169,7 +169,7 @@ Gli eventi di profilo della serie temporale contengono dati sulle informazioni d
 
 1. Assicurati di aver [fornito](#add-service-account-and-credential-details) i dettagli dell&#39;account del servizio e delle credenziali.
 
-1. Assicurati di avere uno schema e un set di dati specificati per l&#39;acquisizione dei dati dell&#39;evento del profilo [](profile-data.md) e per l&#39;acquisizione dei dati dell&#39;evento del profilo della [serie temporale](update-xdm.md#time-series-profile-event-data).
+1. Assicurati di avere uno schema e un set di dati specificati per l&#39;acquisizione dei dati dell&#39;evento del profilo [&#128279;](profile-data.md) e per l&#39;acquisizione dei dati dell&#39;evento del profilo della [serie temporale](update-xdm.md#time-series-profile-event-data).
 
 1. Se desideri inviare i dati del profilo ad Experience Platform, seleziona la casella di controllo **Profili cliente**.
 
