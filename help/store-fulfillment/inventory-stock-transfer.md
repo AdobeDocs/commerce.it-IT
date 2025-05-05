@@ -22,27 +22,27 @@ La soluzione [!DNL Store Fulfillment] utilizza Adobe Commerce Inventory manageme
 
 Queste modifiche alla configurazione consentono di eseguire tre operazioni:
 
-1. [Trasferisci scorte all&#39;origine](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/inventory-transfer) per spostare le scorte dall&#39;origine/scorta predefinita alla nuova origine/scorta.
+1. [Trasferisci scorte all&#39;origine](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/quantities/inventory-transfer) per spostare le scorte dall&#39;origine/scorta predefinita alla nuova origine/scorta.
 
-1. [Assegna in blocco le origini](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/bulk-assignment) per aggiungere nuove origini per tutti i prodotti.
+1. [Assegna in blocco le origini](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/quantities/bulk-assignment) per aggiungere nuove origini per tutti i prodotti.
 
-1. [Completare gli aggiornamenti in blocco per gli attributi del prodotto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update) per aggiungere gli attributi `Allow Store Pickup` e `Allow Home Delivery` ai prodotti esistenti. Al momento dell&#39;installazione della soluzione, gli attributi hanno i valori *default* ottimali. Tuttavia, questi attributi non vengono applicati ai prodotti esistenti fino a quando non si completa il processo di updaContes in blocco.
+1. [Completare gli aggiornamenti in blocco per gli attributi del prodotto](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update) per aggiungere gli attributi `Allow Store Pickup` e `Allow Home Delivery` ai prodotti esistenti. Al momento dell&#39;installazione della soluzione, gli attributi hanno i valori *default* ottimali. Tuttavia, questi attributi non vengono applicati ai prodotti esistenti fino a quando non si completa il processo di updaContes in blocco.
 
-L&#39;inventario viene detratto dall&#39;origine selezionata (ubicazione negozio al dettaglio o magazzino di e-commerce). Le origini utilizzate come magazzini di e-commerce devono essere assegnate alla stessa scorta del luogo di prelievo del negozio e prioritarie prima delle posizioni di vendita al dettaglio. Per ulteriori informazioni, vedere [Assegnazione di priorità alle origini per un Stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources).
+L&#39;inventario viene detratto dall&#39;origine selezionata (ubicazione negozio al dettaglio o magazzino di e-commerce). Le origini utilizzate come magazzini di e-commerce devono essere assegnate alla stessa scorta del luogo di prelievo del negozio e prioritarie prima delle posizioni di vendita al dettaglio. Per ulteriori informazioni, vedere [Assegnazione di priorità alle origini per un Stock](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources).
 
 Per ulteriori informazioni sulla gestione di inventario, scorte e origini, consulta la documentazione utente di Adobe Commerce:
 
-- [Gestione dell&#39;inventario](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)
+- [Gestione dell&#39;inventario](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/introduction)
 
-- [Gestione delle quantità di magazzino](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/quantities-manage)
+- [Gestione delle quantità di magazzino](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/quantities/quantities-manage)
 
-- [Gestione Stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)
+- [Gestione Stock](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/stocks/stocks-manage)
 
-- [Gestione delle origini](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage)
+- [Gestione delle origini](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/sources/sources-manage)
 
-- [Assegnazione di priorità alle origini per un Stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)
+- [Assegnazione di priorità alle origini per un Stock](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)
 
-- [Aggiornamenti in blocco per attributi prodotto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)
+- [Aggiornamenti in blocco per attributi prodotto](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)
 
 
 >[!IMPORTANT]

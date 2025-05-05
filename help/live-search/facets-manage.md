@@ -35,7 +35,7 @@ Consulta [Impostazioni](settings.md) per configurare intervalli e raggruppamenti
 
 1. Per modificare l&#39;etichetta del facet, effettuate una delle seguenti operazioni:
 
-   * Per una vetrina [!DNL Commerce], modifica l&#39;[etichetta attributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
+   * Per una vetrina [!DNL Commerce], modifica l&#39;[etichetta attributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=it).
    * Per un’implementazione headless, fai clic sul valore nella prima colonna e modifica il testo in base alle esigenze.
 
    ![Modifica etichetta](assets/facet-edit-label.png)

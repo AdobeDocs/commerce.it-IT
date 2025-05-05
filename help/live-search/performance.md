@@ -18,7 +18,7 @@ L&#39;area di lavoro *Performance* fornisce informazioni approfondite sui termin
 
 ![Prestazioni](assets/performance-unique-searches.png)
 
-Per ulteriori informazioni sulla sincronizzazione dei dati, è inoltre possibile fare riferimento a [Dashboard di gestione dati](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
+Per ulteriori informazioni sulla sincronizzazione dei dati, è inoltre possibile fare riferimento a [Dashboard di gestione dati](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=it).
 
 >[!NOTE]
 >

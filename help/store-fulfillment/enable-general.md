@@ -150,7 +150,7 @@ Poiché il file di registro dell&#39;applicazione può crescere rapidamente, abi
 
 >[!TIP]
 >
->Per le installazioni locali di Adobe Commerce, chiedere all&#39;amministratore di sistema di impostare la rotazione del registro per il file `var/log/walmart-bopis.log` per ridurre al minimo le dimensioni. Per le installazioni locali di Adobe Commerce, vedere [Rotazione del registro](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) nella _Guida all&#39;installazione di Adobe Commerce_. Per i progetti Adobe Commerce su infrastrutture cloud, consulta [Visualizzare e gestire i registri](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+>Per le installazioni locali di Adobe Commerce, chiedere all&#39;amministratore di sistema di impostare la rotazione del registro per il file `var/log/walmart-bopis.log` per ridurre al minimo le dimensioni. Per le installazioni locali di Adobe Commerce, vedere [Rotazione del registro](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=it#server-settings) nella _Guida all&#39;installazione di Adobe Commerce_. Per i progetti Adobe Commerce su infrastrutture cloud, consulta [Visualizzare e gestire i registri](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=it).
 
 <table>
 <thead>
@@ -355,7 +355,7 @@ Configurare queste impostazioni dall&#39;amministratore selezionando <strong>[!U
 
 >[!NOTE]
 >
->Per ulteriori informazioni sulla configurazione delle opzioni di consegna in-store, vedi [Consegna in-store](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery) nella _Guida utente di Adobe Commerce_.
+>Per ulteriori informazioni sulla configurazione delle opzioni di consegna in-store, vedi [Consegna in-store](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery) nella _Guida utente di Adobe Commerce_.
 
 
 ### Configurazione dei metodi di consegna

@@ -55,4 +55,4 @@ Se non viene creato alcun sinonimo e un acquirente cerca **la tabella della cuci
 
 Dopo aver creato un sinonimo, il comportamento di ricerca cambia per cercare la frase esatta **tabella cucina**. Questo potrebbe ridurre il numero di risultati, perché verranno visualizzati solo i prodotti con la frase esatta.
 
-Se desideri cercare i termini separatamente come prima, puoi [creare un ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). Se la domanda è sufficiente, Commerce prenderà in considerazione la possibilità di aggiungere questa funzionalità al prodotto in una versione futura.
+Se desideri cercare i termini separatamente come prima, puoi [creare un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). Se la domanda è sufficiente, Commerce prenderà in considerazione la possibilità di aggiungere questa funzionalità al prodotto in una versione futura.

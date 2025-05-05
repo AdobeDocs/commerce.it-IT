@@ -26,7 +26,7 @@ Le visualizzazioni Pagamenti mostrano immediatamente informazioni complete sui p
 
 >[!NOTE]
 >
->I report pagamenti mostrano solo gli ordini acquisiti (l&#39;azione di pagamento è impostata su [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/production.html#set-payment-services-as-payment-method)) o [contrassegnati come `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
+>I report pagamenti mostrano solo gli ordini acquisiti (l&#39;azione di pagamento è impostata su [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/production.html?lang=it#set-payment-services-as-payment-method)) o [contrassegnati come `Invoiced`](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
 
 ## Visualizzazione dati pagamenti
 
@@ -154,7 +154,7 @@ I rapporti di pagamento includono le seguenti informazioni.
 | [!UICONTROL Code] | Codice transazione che indica il credito (*CR*) o il debito (*DR*) |
 | [!UICONTROL Reference ID] | ID transazione originale per cui è correlato questo evento |
 | [!UICONTROL Invoice] | ID fattura (uno per ordine) della transazione |
-| [!UICONTROL Commerce order] | ID ordine Commerce <br> <br>Per visualizzare le [informazioni ordine](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders) correlate, fare clic sull&#39;ID. |
+| [!UICONTROL Commerce order] | ID ordine Commerce <br> <br>Per visualizzare le [informazioni ordine](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/order-management/orders/orders) correlate, fare clic sull&#39;ID. |
 | [!UICONTROL Commerce trans] | ID transazione Commerce |
 | [!UICONTROL Pay method] | Tipo di carta di credito—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*—e provider di carta associato (ad esempio *Visa* o *MasterCard*) |
 | [!UICONTROL TRANS AMT] | Importo della transazione |

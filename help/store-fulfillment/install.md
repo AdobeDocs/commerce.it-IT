@@ -18,7 +18,7 @@ Completare l&#39;installazione iniziale dell&#39;estensione [!DNL Store Fulfillm
 
 >[!TIP]
 >
->Aggiorna l&#39;estensione Store Fulfillment per Adobe Commerce on-premise seguendo le [istruzioni di aggiornamento](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html) nella _Guida all&#39;aggiornamento di Adobe Commerce_. Per Adobe Commerce su infrastruttura cloud, consulta [Aggiornare un&#39;estensione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html#upgrade-an-extension) nella *Guida di Commerce su infrastruttura cloud*.
+>Aggiorna l&#39;estensione Store Fulfillment per Adobe Commerce on-premise seguendo le [istruzioni di aggiornamento](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html?lang=it) nella _Guida all&#39;aggiornamento di Adobe Commerce_. Per Adobe Commerce su infrastruttura cloud, consulta [Aggiornare un&#39;estensione](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html?lang=it#upgrade-an-extension) nella *Guida di Commerce su infrastruttura cloud*.
 
 ## Prerequisiti
 
@@ -35,17 +35,17 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Accesso all&#39;archivio del software Store Fulfillment di Walmart Commerce Technologies (file .zip)**. Durante il processo di onboarding e abilitazione, rivolgiti al tuo Account Manager per accedere al file di installazione per l&#39;estensione Store Fulfillment.
 
-- **Informazioni account Adobe Commerce**-L&#39;installazione della soluzione [!DNL Store Fulfillment] richiede un account [[!DNL Commerce] account](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create){target="_blank"}. È necessario disporre di un ID account e di credenziali con accesso proprietario o amministratore al progetto [!DNL Adobe Commerce].
+- **Informazioni account Adobe Commerce**-L&#39;installazione della soluzione [!DNL Store Fulfillment] richiede un account [[!DNL Commerce] account](https://experienceleague.adobe.com/it/docs/commerce-admin/start/commerce-account/commerce-account-create){target="_blank"}. È necessario disporre di un ID account e di credenziali con accesso proprietario o amministratore al progetto [!DNL Adobe Commerce].
 
-- Per [!DNL Adobe Commerce] su progetti di infrastruttura cloud, i programmi di installazione software devono avere accesso come amministratore al progetto Cloud. Consulta [Gestire l&#39;accesso utente](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/user-access).
+- Per [!DNL Adobe Commerce] su progetti di infrastruttura cloud, i programmi di installazione software devono avere accesso come amministratore al progetto Cloud. Consulta [Gestire l&#39;accesso utente](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/project/user-access).
 
-- **Esperienza con Composer e[!DNL Commerce CLI]**. Per informazioni sull&#39;utilizzo di questi strumenti per installare e gestire le estensioni sulla piattaforma [!DNL Adobe Commerce], vedere [Installazione CLI generale](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions){target="_blank"}.
+- **Esperienza con Composer e[!DNL Commerce CLI]**. Per informazioni sull&#39;utilizzo di questi strumenti per installare e gestire le estensioni sulla piattaforma [!DNL Adobe Commerce], vedere [Installazione CLI generale](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/tutorials/extensions){target="_blank"}.
 
 - **Prova a installare estensioni di terze parti su Adobe Commerce**. Per maggiori informazioni, consulta la documentazione di Adobe Commerce.
 
-   - [Installa un&#39;estensione per un&#39;istanza di Adobe Commerce sull&#39;infrastruttura cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension).
+   - [Installa un&#39;estensione per un&#39;istanza di Adobe Commerce sull&#39;infrastruttura cloud](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension).
 
-   - [Installa un&#39;estensione per un&#39;istanza locale di Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions).
+   - [Installa un&#39;estensione per un&#39;istanza locale di Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/tutorials/extensions).
 
 ### Passaggio 1: scaricare il bundle dell’estensione
 
@@ -92,7 +92,7 @@ Utilizzare Composer per configurare la directory di origine per l&#39;installazi
 
 >[!NOTE]
 >
->Per prestazioni migliori sulle istanze locali di Adobe Commerce, puoi [aggiornare la configurazione del caricamento automatico](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/deployment-flow.html#update-the-autoloader): `composer dump-autoload --optimize`
+>Per prestazioni migliori sulle istanze locali di Adobe Commerce, puoi [aggiornare la configurazione del caricamento automatico](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/deployment-flow.html?lang=it#update-the-autoloader): `composer dump-autoload --optimize`
 
 ### Passaggio 4: aggiornare lo schema e i dati del database
 
@@ -134,7 +134,7 @@ Dal server Adobe Commerce, verifica che i moduli per l’estensione Store Fulfil
 
 1. Accedi al server.
 
-   Per le installazioni su Adobe Commerce nell&#39;infrastruttura cloud, [utilizza SSH per accedere all&#39;ambiente remoto](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh).
+   Per le installazioni su Adobe Commerce nell&#39;infrastruttura cloud, [utilizza SSH per accedere all&#39;ambiente remoto](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh).
 
 1. Verificare che i moduli Servizi di evasione del punto vendita siano abilitati.
 
@@ -188,7 +188,7 @@ Dal server Adobe Commerce, verifica che i moduli per l’estensione Store Fulfil
 
 ### Passaggi aggiuntivi
 
-Se necessario, utilizzare il comando CLI [setup:static-content:deploy](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises){target="_blank"} per distribuire i file di visualizzazione statica nell&#39;ambiente di produzione.
+Se necessario, utilizzare il comando CLI [setup:static-content:deploy](https://experienceleague.adobe.com/it/docs/commerce-operations/tools/cli-reference/commerce-on-premises){target="_blank"} per distribuire i file di visualizzazione statica nell&#39;ambiente di produzione.
 
 ```bash
 php bin/magento setup:static-content:deploy -f
@@ -198,6 +198,6 @@ L&#39;opzione `-f` è necessaria se si utilizza un tema vuoto.
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consulta l&#39;articolo sulle best practice per la distribuzione di contenuti statici [in Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) nell&#39;Help Center di Adobe Commerce.
+>Per ulteriori informazioni, consulta l&#39;articolo sulle best practice per la distribuzione di contenuti statici [in Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html?lang=it) nell&#39;Help Center di Adobe Commerce.
 
 

@@ -20,7 +20,7 @@ Le proprietà dell’attributo del prodotto (metadati) determinano:
 
 L&#39;ambito dei metadati dell&#39;attributo è `website/store/store view`.
 
-L&#39;API [!DNL Live Search] consente a un client di ordinare in base a qualsiasi attributo di prodotto la cui proprietà [storefront](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) `Use in Search` è impostata su `Yes` nell&#39;amministrazione di Adobe Commerce. Se abilitata, è possibile impostare `Search Weight` per l&#39;attributo.
+L&#39;API [!DNL Live Search] consente a un client di ordinare in base a qualsiasi attributo di prodotto la cui proprietà [storefront](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/product-attributes/product-attributes) `Use in Search` è impostata su `Yes` nell&#39;amministrazione di Adobe Commerce. Se abilitata, è possibile impostare `Search Weight` per l&#39;attributo.
 
 [!DNL Live Search] non indicizza prodotti eliminati o prodotti impostati su `Not Visible Individually`.
 
@@ -32,7 +32,7 @@ L&#39;API [!DNL Live Search] consente a un client di ordinare in base a qualsias
 
 Il client chiama il servizio di ricerca dalla vetrina per recuperare i metadati dell’indice (filtrabili, ordinabili). Il servizio di ricerca può chiamare solo gli attributi di prodotto ricercabili con la proprietà *Use in Layered Navigation* impostata su `Filterable (with results)` e *Use for Sorting in Product Listing* impostata su `Yes`.
 
-Per creare una query dinamica, il servizio di ricerca deve sapere quali attributi sono ricercabili e il relativo [peso](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results). [!DNL Live Search] rispetta i pesi di ricerca di Adobe Commerce (1-10, dove 10 è la priorità più alta). L’elenco dei dati sincronizzati e condivisi con il servizio catalogo si trova nello schema, definito in:
+Per creare una query dinamica, il servizio di ricerca deve sapere quali attributi sono ricercabili e il relativo [peso](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/search/search-results). [!DNL Live Search] rispetta i pesi di ricerca di Adobe Commerce (1-10, dove 10 è la priorità più alta). L’elenco dei dati sincronizzati e condivisi con il servizio catalogo si trova nello schema, definito in:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
@@ -89,7 +89,7 @@ La tabella seguente descrive varie modifiche e il tempo di attesa approssimativo
 
 ## Ricerca client
 
-L&#39;API [!DNL Live Search] consente a un client di ordinare in base a qualsiasi attributo di prodotto ordinabile impostando la [proprietà storefront](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes), *utilizzata per l&#39;ordinamento negli elenchi di prodotti* su `Yes`. A seconda del tema, questa impostazione determina l&#39;inclusione dell&#39;attributo come opzione nel controllo di paginazione [Ordina per](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation) nelle pagine del catalogo. È possibile indicizzare fino a 200 attributi di prodotto da [!DNL Live Search], con [proprietà storefront](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) ricercabili e filtrabili.
+L&#39;API [!DNL Live Search] consente a un client di ordinare in base a qualsiasi attributo di prodotto ordinabile impostando la [proprietà storefront](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/product-attributes/product-attributes), *utilizzata per l&#39;ordinamento negli elenchi di prodotti* su `Yes`. A seconda del tema, questa impostazione determina l&#39;inclusione dell&#39;attributo come opzione nel controllo di paginazione [Ordina per](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/navigation/navigation) nelle pagine del catalogo. È possibile indicizzare fino a 200 attributi di prodotto da [!DNL Live Search], con [proprietà storefront](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/product-attributes/product-attributes) ricercabili e filtrabili.
 
 I metadati dell’indice vengono memorizzati nella pipeline di indicizzazione e sono accessibili dal servizio di ricerca.
 

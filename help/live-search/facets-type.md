@@ -34,7 +34,7 @@ Al contrario, [implementazioni headless](https://developer.adobe.com/commerce/ph
 
 ### Etichette facet
 
-Per [!DNL Commerce] storefronts, l&#39;etichetta del facet è determinata dalle [*Proprietà attributo*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). Per gli archivi con più visualizzazioni, è possibile definire etichette aggiuntive in *Gestisci etichette*. Per le implementazioni headless, le etichette vengono modificate dall&#39;[area di lavoro faceting](faceting-workspace.md).
+Per [!DNL Commerce] storefronts, l&#39;etichetta del facet è determinata dalle [*Proprietà attributo*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=it). Per gli archivi con più visualizzazioni, è possibile definire etichette aggiuntive in *Gestisci etichette*. Per le implementazioni headless, le etichette vengono modificate dall&#39;[area di lavoro faceting](faceting-workspace.md).
 
 ### Tipo di ordinamento
 

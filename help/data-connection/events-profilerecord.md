@@ -24,7 +24,7 @@ Di seguito sono descritti i dati acquisiti per un record di profilo.
 
 | Campo | Descrizione |
 |---|---|
-| `channel` | Contiene informazioni sull’origine dei dati. Sia `_id` che `_type` contengono [valori con spazio dei nomi](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/namespaces). |
+| `channel` | Contiene informazioni sull’origine dei dati. Sia `_id` che `_type` contengono [valori con spazio dei nomi](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/schema/namespaces). |
 | `channel._id` | L&#39;identificatore univoco del canale, ad esempio `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifica l&#39;origine dei dati del canale, ad esempio `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `person` | Contiene informazioni sul cliente. |
@@ -59,6 +59,6 @@ Di seguito sono descritti i dati acquisiti per un record di profilo.
 
 >[!NOTE]
 >
->Ogni record di profilo include anche il campo [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap), che include l&#39;ID cliente Commerce generato dal sistema come identificatore primario del profilo e un ID e-mail utilizzato come identificatore secondario.
+>Ogni record di profilo include anche il campo [`identityMap`](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/field-groups/profile/identitymap), che include l&#39;ID cliente Commerce generato dal sistema come identificatore primario del profilo e un ID e-mail utilizzato come identificatore secondario.
 
 Scopri come [creare uno schema specifico per il record del profilo](profile-data.md) in grado di acquisire i dati dai record del profilo.

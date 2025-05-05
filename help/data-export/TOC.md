@@ -25,4 +25,4 @@ ht-degree: 5%
    - [Estendere e personalizzare i feed di esportazione dei dati SaaS](extensibility-and-customizations.md)
    - [Aggiungere un attributo di prodotto in modo dinamico](add-attribute-dynamically.md)
 - [Note sulla versione](release-notes.md)
-- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=it)

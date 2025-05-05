@@ -14,13 +14,13 @@ ht-degree: 0%
 
 Nell&#39;elenco seguente sono elencati gli eventi di back office di Commerce disponibili quando si installa l&#39;estensione [!DNL Data Connection]. I dati raccolti da questi eventi vengono inviati a Adobe Experience Platform. Puoi anche creare [eventi personalizzati](custom-events.md) per raccogliere dati aggiuntivi non forniti come predefiniti.
 
-Oltre ai dati raccolti dai seguenti eventi, si ottengono anche [altri dati](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) forniti da Adobe Experience Platform Web SDK.
+Oltre ai dati raccolti dai seguenti eventi, si ottengono anche [altri dati](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=it) forniti da Adobe Experience Platform Web SDK.
 
 Gli eventi di back office contengono dati lato server. Questi dati comprendono [informazioni sullo stato dell&#39;ordine](#order-status), ad esempio se un ordine è stato effettuato, annullato, rimborsato, spedito o completato. I dati lato server includono anche [informazioni sugli eventi del profilo cliente](#customer-profile-events), ad esempio se è stato creato, aggiornato o eliminato un account.
 
 >[!NOTE]
 >
->Tutti gli eventi di back office includono il campo [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html), che include l&#39;indirizzo e-mail dell&#39;acquirente, se disponibile, e ECID.
+>Tutti gli eventi di back office includono il campo [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=it), che include l&#39;indirizzo e-mail dell&#39;acquirente, se disponibile, e ECID.
 
 ## Stato ordine
 
@@ -407,7 +407,7 @@ Gli eventi profilo acquisiti dal lato server includono informazioni sull&#39;acc
 
 >[!NOTE]
 >
->Ogni evento del profilo cliente include anche il campo [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html), che include l&#39;ID cliente Commerce generato dal sistema come identificatore primario del profilo e un ID e-mail utilizzato come identificatore secondario.
+>Ogni evento del profilo cliente include anche il campo [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=it), che include l&#39;ID cliente Commerce generato dal sistema come identificatore primario del profilo e un ID e-mail utilizzato come identificatore secondario.
 
 ### accountCreated
 

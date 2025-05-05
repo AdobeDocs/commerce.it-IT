@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Configurazione processo in background
 
-L&#39;integrazione Store Fulfillment utilizza processi in background e code di messaggi per prestazioni e scalabilità ottimali. Crea ambienti per i tuoi archivi Adobe Commerce utilizzando [variabili di distribuzione](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner) che avviano automaticamente [i runner della coda messaggi](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework).
+L&#39;integrazione Store Fulfillment utilizza processi in background e code di messaggi per prestazioni e scalabilità ottimali. Crea ambienti per i tuoi archivi Adobe Commerce utilizzando [variabili di distribuzione](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner) che avviano automaticamente [i runner della coda messaggi](https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework).
 
-I processi in background vengono gestiti utilizzando la funzionalità standard di Adobe Commerce [Attività pianificate](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cron). Questi processi sono responsabili della sincronizzazione dei dati di configurazione degli ordini e dei negozi con i servizi Web di esecuzione dei negozi.
+I processi in background vengono gestiti utilizzando la funzionalità standard di Adobe Commerce [Attività pianificate](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/cron). Questi processi sono responsabili della sincronizzazione dei dati di configurazione degli ordini e dei negozi con i servizi Web di esecuzione dei negozi.
 
 ## Gestisci attività pianificate per il Store Fulfillment
 

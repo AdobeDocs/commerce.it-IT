@@ -129,7 +129,7 @@ Se i dati mancano o sono errati nei servizi Commerce, controlla i registri per i
 - Il log degli errori di esportazione dei dati (`commerce-data-export-errors.log`) acquisisce gli errori che si verificano durante la fase di raccolta.
 - Il log degli errori di esportazione SaaS (`saas-export-errors.log`) acquisisce gli errori che si verificano durante la fase di trasmissione.
 
-Se vengono visualizzati errori non correlati alla configurazione o alle estensioni di terze parti, invia un [ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) con il maggior numero di informazioni possibile.
+Se vengono visualizzati errori non correlati alla configurazione o alle estensioni di terze parti, invia un [ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) con il maggior numero di informazioni possibile.
 
 ### Risolvi problemi di sincronizzazione catalogo {#resolvesync}
 
@@ -144,11 +144,11 @@ Quando attivi una risincronizzazione dei dati, l’aggiornamento dei dati può r
 
 #### Sincronizzazione non in esecuzione
 
-Se la sincronizzazione non è in esecuzione su una pianificazione o non è stato sincronizzato nulla, vedere questo articolo [KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
+Se la sincronizzazione non è in esecuzione su una pianificazione o non è stato sincronizzato nulla, vedere questo articolo [KnowledgeBase](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
 
 #### Sincronizzazione non riuscita
 
-Se lo stato della sincronizzazione del catalogo è **Non riuscito**, inviare un [ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Se lo stato della sincronizzazione del catalogo è **Non riuscito**, inviare un [ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 ## Registrazione estesa
 

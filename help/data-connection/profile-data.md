@@ -14,24 +14,24 @@ ht-degree: 0%
 
 Quando gli acquirenti creano un profilo nel sito Commerce, viene creato un record di profilo e i dati vengono acquisiti. È necessario creare uno schema e un set di dati specifici per quel record di profilo prima di poter inviare in streaming i dati di profilo a Experience Platform.
 
-1. [Crea](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas) uno schema e imposta la classe su **Profilo individuale**.
+1. [Crea](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/ui/resources/schemas) uno schema e imposta la classe su **Profilo individuale**.
 
-1. [Aggiungi](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas) i seguenti gruppi di campi specifici del profilo:
+1. [Aggiungi](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/ui/resources/schemas) i seguenti gruppi di campi specifici del profilo:
 
    - identityMap
    - Dettagli demografici
    - Dettagli di contatto personali
    - Dettagli dell’account utente
 
-1. [Attiva](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas) lo schema per il profilo.
+1. [Attiva](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/ui/resources/schemas) lo schema per il profilo.
 
    Quando uno schema è abilitato per il profilo, tutti i set di dati creati da questo schema partecipano a Real-Time CDP, che unisce dati da origini diverse per creare una visualizzazione completa di ciascun cliente.
 
-1. [Crea un set di dati](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform) in base allo schema creato o aggiornato.
+1. [Crea un set di dati](https://experienceleague.adobe.com/it/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform) in base allo schema creato o aggiornato.
 
    Un set di dati è un costrutto di archiviazione e gestione per una raccolta di dati, in genere una tabella che contiene uno schema (colonne) e dei campi (righe). I set di dati contengono anche metadati che descrivono vari aspetti dei dati memorizzati.
 
-1. Crea uno [spazio dei nomi personalizzato](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#create-namespaces) in Experience Platform con i seguenti valori:
+1. Crea uno [spazio dei nomi personalizzato](https://experienceleague.adobe.com/it/docs/experience-platform/identity/features/namespaces#create-namespaces) in Experience Platform con i seguenti valori:
 
    - **Nome visualizzato**: _ID cliente Commerce_
    - **Simbolo identità**: _ID cliente_

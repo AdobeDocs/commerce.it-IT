@@ -16,7 +16,7 @@ L&#39;area di lavoro *Faceting* elenca tutti i facet attualmente disponibili e f
 
 ## Impostare l&#39;ambito
 
-Se l&#39;installazione di Adobe Commerce include più visualizzazioni dello store, impostare **Ambito** sulla [visualizzazione dello store](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) in cui si applicano le impostazioni del facet.
+Se l&#39;installazione di Adobe Commerce include più visualizzazioni dello store, impostare **Ambito** sulla [visualizzazione dello store](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=it#scope-settings) in cui si applicano le impostazioni del facet.
 
 ## Filtrare l’elenco
 

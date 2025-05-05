@@ -26,7 +26,7 @@ Dopo aver [configurato i servizi Commerce](connect.md#configure-commerce-service
 
    Questa opzione è visibile se non hai ancora configurato [!DNL Payment Services] come metodo di pagamento per uno o più siti Web.
 
-   Si viene indirizzati all&#39;area delle impostazioni nella visualizzazione Home con le opzioni pertinenti espanse (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), dove è possibile abilitare le opzioni [!DNL Payment Services] come [metodo di pagamento](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}.
+   Si viene indirizzati all&#39;area delle impostazioni nella visualizzazione Home con le opzioni pertinenti espanse (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), dove è possibile abilitare le opzioni [!DNL Payment Services] come [metodo di pagamento](https://experienceleague.adobe.com/it/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}.
 
 1. In _[!UICONTROL General Configuration]_, impostare **[!UICONTROL Enable]**&#x200B;su `Yes`.
 1. Impostare **[!UICONTROL Payment Action]**, sia per _[!UICONTROL Credit Card Fields]_&#x200B;che per&#x200B;_[!UICONTROL PayPal payment buttons]_, su una delle opzioni seguenti:
@@ -42,7 +42,7 @@ Dopo aver [configurato i servizi Commerce](connect.md#configure-commerce-service
 
 1. Fare clic su **[!UICONTROL Save]**.
 1. Fare clic su **[!UICONTROL Go to Payment Services]** per tornare alla home di [!DNL Payment Services].
-1. [Cancella la cache](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
+1. [Cancella la cache](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=it).
 
    La cancellazione deve essere eseguita dopo ogni modifica della configurazione.
 
@@ -156,7 +156,7 @@ Abilita pagamenti live:
 1. Nella Home, fare clic su **[!UICONTROL Settings]** in alto a destra della pagina. Per ulteriori informazioni, vedere [Home](payments-home.md).
 1. Nella sezione _[!UICONTROL General Configuration]_&#x200B;impostare **[!UICONTROL Payment mode]**&#x200B;su `Production`.
 1. Fare clic su **[!UICONTROL Save]**.
-1. [Cancella la cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
+1. [Cancella la cache](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
 
    >[!IMPORTANT]
    >

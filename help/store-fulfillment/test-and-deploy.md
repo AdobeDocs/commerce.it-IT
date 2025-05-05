@@ -644,4 +644,4 @@ L’implementazione e i test variano a seconda dell’infrastruttura e delle fun
 
 >[!TIP]
 >
->Per le linee guida per la distribuzione, gli elenchi di controllo e le best practice per Adobe Commerce sui progetti di infrastruttura cloud, consulta [Distribuire l&#39;archivio](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) nella documentazione per sviluppatori di Adobe Commerce.
+>Per le linee guida per la distribuzione, gli elenchi di controllo e le best practice per Adobe Commerce sui progetti di infrastruttura cloud, consulta [Distribuire l&#39;archivio](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) nella documentazione per sviluppatori di Adobe Commerce.

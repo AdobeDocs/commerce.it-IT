@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Raccogliere dati Commerce tramite tag Adobe Experience Platform
 
-Anche se è possibile utilizzare l&#39;estensione [!DNL Data Connection] per pubblicare e sottoscrivere eventi storefront, alcuni commercianti potrebbero già utilizzare una soluzione di raccolta dati, ad esempio i [tag Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). Per questi commercianti, Adobe Commerce fornisce un&#39;opzione di sola pubblicazione nell&#39;estensione [!DNL Data Connection] che utilizza Adobe Commerce Event SDK.
+Anche se è possibile utilizzare l&#39;estensione [!DNL Data Connection] per pubblicare e sottoscrivere eventi storefront, alcuni commercianti potrebbero già utilizzare una soluzione di raccolta dati, ad esempio i [tag Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=it). Per questi commercianti, Adobe Commerce fornisce un&#39;opzione di sola pubblicazione nell&#39;estensione [!DNL Data Connection] che utilizza Adobe Commerce Event SDK.
 
 Flusso di dati dell&#39;estensione ![[!DNL Data Connection]](assets/tags-data-flow.png)
 Flusso di dati dell&#39;estensione _[!DNL Data Connection]con tag_
@@ -33,15 +33,15 @@ Per raccogliere i dati evento di Commerce:
 
 Per mappare i dati della vetrina Commerce a Adobe Experience Platform, configura e installa quanto segue dai tag di Adobe Experience Platform:
 
-1. [Impostare una proprietà tag](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) in Raccolta dati di Adobe Experience Platform.
+1. [Impostare una proprietà tag](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=it) in Raccolta dati di Adobe Experience Platform.
 
 1. In **Authoring**, seleziona **Estensioni** e installa e configura le seguenti estensioni:
 
-   - [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html)
+   - [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html?lang=it)
 
-   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html)
+   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=it)
 
-1. [Pubblica tag](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) nell&#39;ambiente di sviluppo.
+1. [Pubblica tag](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=it) nell&#39;ambiente di sviluppo.
 
 1. Segui i passaggi **Mappatura eventi** seguenti per configurare elementi di dati e regole per eventi specifici.
 
@@ -57,7 +57,7 @@ Poiché la raccolta dei dati tramite i tag è diversa dall’utilizzo di Adobe C
 
 Quando aggiorni gli elementi dati e le regole nei tag Adobe Experience Platform con dati evento specifici per Adobe Commerce, puoi adottare alcuni passaggi comuni.
 
-Aggiungiamo ad esempio l&#39;evento Adobe Commerce `signOut` ai tag Adobe Experience Platform. I passaggi descritti di seguito, fatta eccezione per i valori specifici impostati, descrivono come aggiungere [elementi dati](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#data-element) e [regole](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#create-a-rule), applicabili a tutti gli eventi Adobe Commerce che si stanno aggiungendo ai tag.
+Aggiungiamo ad esempio l&#39;evento Adobe Commerce `signOut` ai tag Adobe Experience Platform. I passaggi descritti di seguito, fatta eccezione per i valori specifici impostati, descrivono come aggiungere [elementi dati](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html?lang=it#data-element) e [regole](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html?lang=it#create-a-rule), applicabili a tutti gli eventi Adobe Commerce che si stanno aggiungendo ai tag.
 
 1. Creare un elemento dati:
 
@@ -1411,7 +1411,7 @@ return IdentityMap;
 
 ## Impostazione del consenso
 
-Quando installi l&#39;estensione [!DNL Data Connection] in Adobe Commerce, il consenso per la raccolta dei dati è attivato per impostazione predefinita. La rinuncia viene gestita tramite il cookie [`mg_dnt`](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). Se scegli di utilizzare `mg_dnt` per gestire il consenso, puoi seguire i passaggi qui descritti. La [documentazione di Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) include diverse opzioni aggiuntive per la gestione del consenso.
+Quando installi l&#39;estensione [!DNL Data Connection] in Adobe Commerce, il consenso per la raccolta dei dati è attivato per impostazione predefinita. La rinuncia viene gestita tramite il cookie [`mg_dnt`](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=it). Se scegli di utilizzare `mg_dnt` per gestire il consenso, puoi seguire i passaggi qui descritti. La [documentazione di Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=it) include diverse opzioni aggiuntive per la gestione del consenso.
 
 1. Creare un elemento dati **Core Custom Code** (`%do not track cookie%`) per il cookie `mg_dnt`:
 

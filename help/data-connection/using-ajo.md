@@ -21,7 +21,7 @@ Crea un carrello abbandonato, sfoglia le e-mail o notifica utilizzando i dati pr
 | Tipi di dati | Dati storefront (eventi comportamentali) | Dati di back office (eventi lato server) |
 |---|---|---|
 | **Definizione** | Clic o azioni eseguite dai clienti sul sito. | Informazioni sul ciclo di vita e dettagli di ciascun ordine (passato e corrente). |
-| **Eventi acquisiti da Adobe Commerce** | [pageView](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Storico ordini](https://experienceleague.adobe.com/en/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
+| **Eventi acquisiti da Adobe Commerce** | [pageView](https://experienceleague.adobe.com/it/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/it/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/it/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/it/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/it/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/it/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/it/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Storico ordini](https://experienceleague.adobe.com/it/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
 
 ### Quali sono stati i risultati ottenuti dagli altri clienti?
 
@@ -47,7 +47,7 @@ Questo caso d&#39;uso particolare si concentra sulla creazione di un&#39;e-mail 
 
 ### Cos’è Adobe Journey Optimizer?
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) ti consente di personalizzare l&#39;esperienza di e-commerce per i tuoi acquirenti. Ad esempio, puoi utilizzare Journey Optimizer per creare e distribuire campagne di marketing pianificate, come le promozioni settimanali di un negozio al dettaglio, o generare un’e-mail abbandonato nel carrello se un cliente ha aggiunto un prodotto a un carrello ma non lo ha completato.
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=it) ti consente di personalizzare l&#39;esperienza di e-commerce per i tuoi acquirenti. Ad esempio, puoi utilizzare Journey Optimizer per creare e distribuire campagne di marketing pianificate, come le promozioni settimanali di un negozio al dettaglio, o generare un’e-mail abbandonato nel carrello se un cliente ha aggiunto un prodotto a un carrello ma non lo ha completato.
 
 In questo argomento imparerai a creare un&#39;e-mail del carrello abbandonata ascoltando un evento `checkout` generato dalla tua istanza di [!DNL Commerce] e rispondendo a tale evento in Journey Optimizer.
 
@@ -83,7 +83,7 @@ Crea un utente nell’ambiente sandbox e verifica che le informazioni sull’acc
 
 Nell&#39;ambiente sandbox [!DNL Commerce], attiva gli eventi nella vetrina visualizzando le pagine dei prodotti, aggiungendo elementi al carrello e completando varie altre attività eseguite da un acquirente. Quindi, verifica che questi eventi vengano trasmessi a Journey Optimizer.
 
-1. Avvia [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html).
+1. Avvia [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html?lang=it).
 1. Selezionare **[!UICONTROL Profiles]**.
 1. Imposta **[!UICONTROL Identity namespace]** su `Email`.
 1. Imposta **[!UICONTROL Identity value]** sul tuo indirizzo e-mail.
@@ -112,7 +112,7 @@ Configurare due eventi in Journey Optimizer: uno ascolta l&#39;evento `commerce.
 
 ### Creare un evento listener
 
-1. Avvia [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html).
+1. Avvia [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html?lang=it).
 
 1. Fare clic su **[!UICONTROL Configurations]** nella sezione **[!UICONTROL Administration]** del riquadro sinistro.
 
@@ -185,7 +185,7 @@ Crea un’e-mail carrello abbandonata che viene inviata quando viene rilevato un
 
 1. Nel percorso creato in precedenza, fare doppio clic sull&#39;icona **[!UICONTROL Email]** nell&#39;area di lavoro.
 
-1. Segui i [passaggi](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html#configure-email) nella guida di Journey Optimizer per creare l’e-mail del carrello abbandonato.
+1. Segui i [passaggi](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html?lang=it#configure-email) nella guida di Journey Optimizer per creare l’e-mail del carrello abbandonato.
 
 Ora disponi di un percorso in Journey Optimizer che ascolta l&#39;evento `commerce.checkouts` dal tuo archivio [!DNL Commerce] e di un&#39;e-mail del carrello abbandonata, inviata dopo un certo periodo di tempo. Nella sezione successiva viene illustrato come verificare il funzionamento del percorso.
 

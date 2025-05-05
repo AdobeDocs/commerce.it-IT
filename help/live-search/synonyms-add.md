@@ -18,7 +18,7 @@ Aumenta il coinvolgimento dei clienti aggiungendo il tuo elenco curato di [!DNL 
 ## Passaggio 1: aggiungere un sinonimo
 
 1. In Amministrazione, vai a **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
-1. Per più archivi, impostare **Ambito** nella [visualizzazione archivio](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) in cui si applicano le impostazioni dei sinonimi.
+1. Per più archivi, impostare **Ambito** nella [visualizzazione archivio](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=it#scope-settings) in cui si applicano le impostazioni dei sinonimi.
 1. Fare clic sulla scheda **Sinonimi**.
 1. Fare clic sul pulsante **Aggiungi sinonimi**.
 

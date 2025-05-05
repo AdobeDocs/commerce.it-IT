@@ -13,7 +13,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] consente ai commercianti di visualizzare le informazioni di tracciamento per una spedizione nel dashboard PayPal del commerciante.
 
-Per ulteriori informazioni sulla griglia delle spedizioni per Adobe Commerce, vedere l&#39;argomento [spedizioni](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank}.
+Per ulteriori informazioni sulla griglia delle spedizioni per Adobe Commerce, vedere l&#39;argomento [spedizioni](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank}.
 
 ## Come funziona la spedizione
 

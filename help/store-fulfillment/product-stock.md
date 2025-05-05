@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Gestione magazzino prodotto
 
-In qualità di commerciante, puoi utilizzare le opzioni di azioni e origini di Adobe Commerce [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction). È inoltre possibile utilizzare la soluzione di evasione del punto vendita per controllare altre opzioni di disponibilità del magazzino correlate alle operazioni del punto vendita esercente.
+In qualità di commerciante, puoi utilizzare le opzioni di azioni e origini di Adobe Commerce [Inventory management](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/introduction). È inoltre possibile utilizzare la soluzione di evasione del punto vendita per controllare altre opzioni di disponibilità del magazzino correlate alle operazioni del punto vendita esercente.
 
 - Opzione di consegna a domicilio da negozi mercantili
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Soluzioni di prodotto Adobe Commerce
 
-Adobe offre diverse soluzioni per soddisfare i requisiti della tua attività di e-commerce. La documentazione di Adobe Commerce in [Experience League](https://experienceleague.adobe.com/en/docs/commerce) e nel sito [Adobe Developer](https://developer.adobe.com/commerce/docs/) fornisce ai clienti risorse self-service che supportano tutte le soluzioni. Tuttavia, navigare in un volume così grande di contenuti può essere difficile senza guida.
+Adobe offre diverse soluzioni per soddisfare i requisiti della tua attività di e-commerce. La documentazione di Adobe Commerce in [Experience League](https://experienceleague.adobe.com/it/docs/commerce) e nel sito [Adobe Developer](https://developer.adobe.com/commerce/docs/) fornisce ai clienti risorse self-service che supportano tutte le soluzioni. Tuttavia, navigare in un volume così grande di contenuti può essere difficile senza guida.
 
 ## Distintivi
 
@@ -41,7 +41,7 @@ Questo badge identifica la documentazione solo per [progetti Adobe Commerce as a
 
 #### [!BADGE Solo PaaS]{type=Informative tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
 
-Questo badge identifica solo la documentazione relativa a [Adobe Commerce su Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) e ai progetti locali. I progetti Adobe Commerce on Cloud sono ospitati su una soluzione PaaS (Platform-as-a-Service) nativa per il cloud e completamente gestita, con tutte le funzioni principali di Adobe Commerce in un ambiente con preprovisioning. I progetti locali sono ospitati su un’infrastruttura gestita dal cliente.
+Questo badge identifica solo la documentazione relativa a [Adobe Commerce su Cloud](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/overview) e ai progetti locali. I progetti Adobe Commerce on Cloud sono ospitati su una soluzione PaaS (Platform-as-a-Service) nativa per il cloud e completamente gestita, con tutte le funzioni principali di Adobe Commerce in un ambiente con preprovisioning. I progetti locali sono ospitati su un’infrastruttura gestita dal cliente.
 
 ### Regole
 

@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Configurazione di più siti web e ambiti
 
-È possibile impostare l&#39;[Ambito](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) per alcuni elementi in modo da includere più siti Web, store e visualizzazioni dello store:
+È possibile impostare l&#39;[Ambito](https://experienceleague.adobe.com/it/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) per alcuni elementi in modo da includere più siti Web, store e visualizzazioni dello store:
 
-- [Gestisci Stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) per ambito
+- [Gestisci Stock](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/stocks/stocks-manage) per ambito
 
 - Gestisci [!DNL Delivery Methods] per ambito
 

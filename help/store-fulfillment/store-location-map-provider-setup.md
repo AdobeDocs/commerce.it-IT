@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Impostazione della posizione del negozio e della mappatura
 
-Abilitare le funzionalità di mappatura e posizione del negozio per il completamento del negozio configurando un provider di [distanza](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm) per la ricerca di posizioni del negozio al dettaglio.
+Abilitare le funzionalità di mappatura e posizione del negozio per il completamento del negozio configurando un provider di [distanza](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/configuration/distance-priority-algorithm) per la ricerca di posizioni del negozio al dettaglio.
 
 **Requisiti**
 
-Durante il processo di configurazione, fornisci una chiave API Google per la piattaforma Google Maps. In caso contrario, [generarne uno dalla piattaforma Google Maps](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm#configure-google-maps).
+Durante il processo di configurazione, fornisci una chiave API Google per la piattaforma Google Maps. In caso contrario, [generarne uno dalla piattaforma Google Maps](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/configuration/distance-priority-algorithm#configure-google-maps).
 
 Per configurare il provider di distanze:
 

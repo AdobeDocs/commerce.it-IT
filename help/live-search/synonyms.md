@@ -14,6 +14,6 @@ I sinonimi consentono di espandere la query di ricerca in modo da includere paro
 
 >[!IMPORTANT]
 >
->Per le installazioni di Adobe Commerce con [!DNL Live Search] installato, [!DNL Live Search] Sinonimi sostituisce la funzionalità standard di Adobe Commerce [Ricerca sinonimi](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#search-synonyms), anche se entrambi vengono visualizzati nella sezione *SEO &amp; Search* del menu Marketing. Se utilizzi [!DNL Live Search], segui le istruzioni riportate in questa sezione.
+>Per le installazioni di Adobe Commerce con [!DNL Live Search] installato, [!DNL Live Search] Sinonimi sostituisce la funzionalità standard di Adobe Commerce [Ricerca sinonimi](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=it#search-synonyms), anche se entrambi vengono visualizzati nella sezione *SEO &amp; Search* del menu Marketing. Se utilizzi [!DNL Live Search], segui le istruzioni riportate in questa sezione.
 
-[!DNL Live Search] supporta anche [reindirizzamenti termini di ricerca](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html).
+[!DNL Live Search] supporta anche [reindirizzamenti termini di ricerca](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=it).

@@ -21,24 +21,24 @@ Utilizza la tabella seguente per trovare le note sulla versione e le informazion
       <td><strong>Servizi Commerce</strong>
         <p>Scopri gli ultimi miglioramenti ai servizi innovativi di Commerce disponibili come estensioni.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html">[!DNL Catalog Service]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html">[!DNL Live Search]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html">[!DNL Payment Services]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html">Consigli di prodotto</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html?lang=it">[!DNL Catalog Service]</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html?lang=it">[!DNL Live Search]</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html?lang=it">[!DNL Payment Services]</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html?lang=it">Consigli di prodotto</a></li>
           </ul>
         </td>
       <td><strong>Servizi di integrazione</strong>
         <p>Scopri gli ultimi miglioramenti ai servizi di integrazione che consentono ai servizi Commerce di connettersi con altri servizi ed estensioni e prodotti Adobe.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/data-connection/release-notes.html">[!DNL Data Connection]</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/data-connection/release-notes.html?lang=it">[!DNL Data Connection]</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html">[!DNL Services Connector]</a></li>
           </ul>
       </td>
       <td><strong>Servizi dati</strong>
         <p>Scopri gli ultimi miglioramenti al servizio dati che consentono ai servizi Commerce di gestire i dati dei prodotti.</p>
           <ul>
-           <li><a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Estensione SaaS Data Export</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/data-services/catalog-sync.html">Sincronizzazione catalogo</a></li>
+           <li><a href="https://experienceleague.adobe.com/it/docs/commerce/saas-data-export/release-notes">Estensione SaaS Data Export</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/data-services/catalog-sync.html?lang=it">Sincronizzazione catalogo</a></li>
           </ul>
       </td>
     </tr>

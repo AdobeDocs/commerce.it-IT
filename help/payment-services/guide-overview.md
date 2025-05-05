@@ -37,7 +37,7 @@ Questa guida non descrive le funzionalità di base di [!DNL Adobe Commerce] e [!
 
 | Guida | Descrizione |
 |------ | ----------- |
-| Guida utente di [[!DNL Adobe Commerce] 2.4](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Documentazione incentrata sul commerciante per [!DNL Adobe Commerce] e [!DNL Magento Open Source] |
+| Guida utente di [[!DNL Adobe Commerce] 2.4](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=it) | Documentazione incentrata sul commerciante per [!DNL Adobe Commerce] e [!DNL Magento Open Source] |
 | Guida per gli sviluppatori di [[!DNL Adobe Commerce] 2.4](https://developer.adobe.com/commerce/docs) | Documentazione incentrata sugli sviluppatori utilizzata per generare e personalizzare [!DNL Adobe Commerce] o [!DNL Magento Open Source] |
 
 ## Supporto
@@ -48,5 +48,5 @@ Se hai bisogno di informazioni o hai domande non trattate in questa guida, conta
 
 Consulta [Disponibilità](overview.md#availability) per verificare quale opzione [!DNL Payment Services] è adatta alle tue esigenze.
 
-* [Centro assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) - Cercare gli articoli relativi alla risoluzione dei problemi relativi a [!DNL Payment Services] nella Knowledge Base.
-* [Ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket): i clienti Commerce possono inviare un ticket per ricevere ulteriore assistenza.
+* [Centro assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=it) - Cercare gli articoli relativi alla risoluzione dei problemi relativi a [!DNL Payment Services] nella Knowledge Base.
+* [Ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=it#submit-ticket): i clienti Commerce possono inviare un ticket per ricevere ulteriore assistenza.

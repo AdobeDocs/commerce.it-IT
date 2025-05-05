@@ -100,7 +100,7 @@ Casi d’uso consigliati per l’impostazione dei reindirizzamenti di ricerca:
 
 Verifica sempre i reindirizzamenti di ricerca per assicurarti che funzionino correttamente e che conducano alle pagine più rilevanti. Monitorano continuamente le prestazioni e apportano le regolazioni necessarie.
 
-Scopri come [gestire i reindirizzamenti di ricerca](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms).
+Scopri come [gestire i reindirizzamenti di ricerca](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/search/search-terms).
 
 ## Migliorare la rilevanza dei risultati di ricerca
 
@@ -154,7 +154,7 @@ Assicurati che ogni prodotto abbia contenuti rilevanti all’interno di ogni att
 Ulteriori informazioni sugli attributi del prodotto per la ricerca:
 
 - [Imposta attributi come ricercabili](workspace.md#set-attributes-as-searchable)
-- [Assegna peso agli attributi](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Assegna peso agli attributi](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Monitoraggio dei risultati di ricerca
 
