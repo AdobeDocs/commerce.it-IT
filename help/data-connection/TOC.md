@@ -5,12 +5,14 @@ breadcrumb-title: Estensione [!DNL Data Connection] per Adobe Commerce
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+source-git-commit: 98a7ea9ff7d741bd7333b44618e7287da9d66353
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 3%
+source-wordcount: '146'
+ht-degree: 2%
 
 ---
+
 
 # Estensione [!DNL Data Connection] per Adobe Commerce {#data-connection}
 
@@ -25,14 +27,14 @@ ht-degree: 3%
    - [Aggiornamento dello schema dei record di profilo per l’acquisizione di dati Commerce](profile-data.md)
    - [Collegare i dati Commerce a Adobe Experience Platform](connect-data.md)
    - [Integrare Adobe Experience Platform Mobile SDK con Commerce](mobile-sdk-epc.md)
-- Acquisisci dati {#event-forwarding}
+- Acquisire dati {#event-forwarding}
    - [Eventi comportamentali](events.md)
    - [Eventi di back office](events-backoffice.md)
    - [Record profilo](events-profilerecord.md)
    - [Aggiungi attributi ordine personalizzati](custom-attributes.md)
    - [Eventi personalizzati](custom-events.md)
    - [Utilizzare i tag di Adobe Experience Platform](using-tags.md)
-- Casi d&#39;uso {#use-cases}
+- Casi d’uso {#use-cases}
    - [Utilizzare Adobe Journey Optimizer per inviare un messaggio e-mail per carrello abbandonato](using-ajo.md)
    - [Creare un pubblico in Real-Time CDP utilizzando i dati evento di Commerce](create-audience.md)
-- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=it)
+- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
