@@ -3,9 +3,10 @@ title: Criteri
 description: Scopri come utilizzare i criteri per filtrare i dati all’interno di un canale per garantire che i dati vengano inviati alla destinazione giusta.
 hide: true
 recommendations: noCatalog
-source-git-commit: 425c801a852de566120504563e256b0351df588e
+exl-id: 05bbad1a-d612-41a4-9575-543f507089c3
+source-git-commit: a731d978aa180633431b0dd9dde5439c286461a2
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -32,12 +33,12 @@ Un filtro è composto dalle seguenti parti:
 |---|---|---|
 | **Attributo** | L’attributo del prodotto utilizzato per il filtro. | `part_category` |
 | **Operatore** | Condizione applicata all’attributo. | `IN`, `EQUALS`, `CONTAINS` |
-| **Origine valore** | Specifica se i valori sono `STATIC` o `TRIGGER`. | `STATIC` |
+| **Origine valore** | Specifica se i valori sono `STATIC` o `TRIGGER`. | `STATIC` [Ulteriori informazioni](#value-source-types) |
 | **Valore** | I valori specifici che soddisfano la condizione. | `brakes, suspension` |
 
 ### Esempio
 
-Un filtro con l&#39;attributo `part_category`, un operatore di `IN` e i valori `brakes, suspension` garantisce che solo i prodotti classificati come freni e sospensioni siano inclusi nel criterio.
+Un filtro con l&#39;attributo `part_category`, un operatore di `IN` e valori `brakes, suspension` garantisce che solo i prodotti con un attributo `part_category` con valore di `brake` o `suspension` vengano filtrati e visualizzati dal criterio.
 
 ### Tipi di origine del valore
 

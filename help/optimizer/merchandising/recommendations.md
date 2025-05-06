@@ -2,9 +2,10 @@
 title: Consigli
 description: I consigli sono un potente strumento di marketing che puoi utilizzare per aumentare le conversioni, incrementare i ricavi e stimolare il coinvolgimento degli acquirenti.
 recommendations: noCatalog
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: 04228203-37a3-4535-ad61-d5e586e57d63
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -31,3 +32,11 @@ Dall’area di lavoro, puoi:
 - [Modifica](../../product-recommendations/edit.md) un consiglio esistente.
 
 Puoi visualizzare questi consigli di prodotto nella vetrina utilizzando il componente vetrina consigli.
+
+## Limitazioni
+
+Di seguito sono elencate le limitazioni relative ai consigli per l’accesso anticipato.
+
+- [!DNL Adobe Commerce Optimizer] supporta il tipo di consiglio _Visualizzato di recente_.
+- Non sono supportate inclusioni o esclusioni di categorie o attributi.
+- Impossibile visualizzare l&#39;anteprima dei consigli in [!DNL Adobe Commerce Optimizer].

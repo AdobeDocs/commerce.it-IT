@@ -4,9 +4,10 @@ description: Scopri come utilizzare [!DNL Adobe Commerce Optimizer] per gestire 
 hide: true
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1672'
 ht-degree: 0%
 
 ---
@@ -78,7 +79,7 @@ Carvelo vuole vendere parti dei suoi tre marchi (Aurora, Bolt e Cruz) attraverso
 In definitiva, Carvelo ha due obiettivi principali:
 
 1. Gestisci un sito web &quot;globale&quot;, che ha tutte le SKU per tutti e tre i marchi.
-1. Offrire ai dealer un percorso per creare i propri punti vendita in base alla visibilità SKU e ai prezzi per ogni SKU.
+1. Offrire ai dealer un percorso per creare i propri punti vendita in base alla visibilità SKU e ai prezzi per ogni SKU. Il tutto utilizzando un singolo catalogo di base, che elimina la duplicazione dei cataloghi.
 
 >[!ENDSHADEBOX]
 
@@ -231,7 +232,7 @@ L&#39;ultima parte di questo tutorial prevede l&#39;aggiornamento della vetrina 
 
 1. Nella directory principale della cartella, aprire il file `config.json`.
 
-   +++Codice config.json
+   Codice +++config.json
 
    ```json
    {
@@ -269,12 +270,14 @@ L&#39;ultima parte di questo tutorial prevede l&#39;aggiornamento della vetrina 
    - `ac-environment-id`: `"Fwus6kdpvYCmeEdcCX7PZg"`
    - `ac-price-book-id`: `"west_coast_inc"`
 
-   +++
++++
 
 1. Sostituisci il valore `ac-channel-id` con l&#39;ID canale Celport copiato in precedenza.
-1. Se necessario, sostituisci il valore `ac-environment-id` con l&#39;ID tenant per l&#39;istanza [!DNL Adobe Commerce Optimizer]. Puoi trovare l’ID nell’e-mail di onboarding per il programma Early Access o contattando il rappresentante del tuo account Adobe.
+1. Sostituisci il valore `ac-environment-id` con l&#39;ID tenant per l&#39;istanza [!DNL Adobe Commerce Optimizer]. Puoi trovare l’ID nell’e-mail di onboarding per il programma Early Access o contattando il rappresentante del tuo account Adobe.
 
-   Assicurarsi che il valore `commerce-endpoint` corrisponda all&#39;endpoint GraphQL per l&#39;istanza [!DNL Adobe Commerce Optimizer].
+   >[!IMPORTANT]
+   >
+   >Assicurarsi che il valore `commerce-endpoint` corrisponda all&#39;endpoint GraphQL per l&#39;istanza [!DNL Adobe Commerce Optimizer]. Questo viene fornito nell’e-mail di benvenuto.
 
 1. Sostituire il valore `ac-price-book-id` con `"east_coast_inc"`.
 1. Salva il file.
@@ -317,7 +320,7 @@ Quando salvi le modifiche, aggiorni la configurazione del catalogo in modo da ut
 
       Quando si salva il file, l&#39;anteprima della vetrina locale viene aggiornata automaticamente.
 
-   1. Visualizzate l&#39;anteprima delle modifiche nel browser utilizzando la funzione di ricerca per trovare le parti dei pneumatici.
+   1. Visualizzate l&#39;anteprima delle modifiche nel browser utilizzando la feature di ricerca per trovare le parti di pneumatico.
 
       Osservate i diversi tipi di parti disponibili e i prezzi assegnati al canale Kingsbluff.
 

@@ -2,9 +2,10 @@
 title: Individuazione prodotto
 description: L'individuazione dei prodotti offre un'esperienza di ricerca rapida, rilevante e intuitiva.
 recommendations: noCatalog
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: b9429ccb-947b-462c-8b34-63fb53d015f6
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -37,3 +38,7 @@ La pagina principale **Individuazione prodotto** contiene le schede seguenti:
 - [Sinonimi](../../live-search/synonyms.md)
 - [Cerca nel merchandising](../../live-search/rules.md)
 - [Impostazioni](../../live-search/settings.md)
+
+## Limitazione
+
+Per l’individuazione del prodotto, le impostazioni di merchandising e prezzo basate su attributi non sono supportate.
