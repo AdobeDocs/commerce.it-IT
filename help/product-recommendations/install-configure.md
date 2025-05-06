@@ -26,7 +26,7 @@ Poiché il [!DNL Product Recommendations] modulo è un metapacchetto autonomo, g
 
 >[!IMPORTANT]
 >
->Assicurati di](../landing/saas.md#credentials) disporre delle adesioni corrette [per utilizzare Product Raccomandazioni.
+>Assicurati di[&#128279;](../landing/saas.md#credentials) disporre delle adesioni corrette per utilizzare Product Raccomandazioni.
 
 Installare il `magento/product-recommendations` modulo con Composer:
 
@@ -66,7 +66,7 @@ Dopo aver correttamente collegare Commerce applicazione a Commerce Services e sp
 
 ## Monitoraggio e risoluzione dei problemi di sincronizzazione dei dati
 
-Dall&#39;amministratore Commerce, è possibile monitorare il processo di sincronizzazione utilizzando il dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) di [gestione dei dati. Utilizza l&#39;interfaccia della riga](../data-export/data-export-cli-commands.md#troubleshooting) di comando e i [registri di Commerce per gestire e risolvere i problemi del processo.
+Dall&#39;amministratore Commerce, è possibile monitorare il processo di sincronizzazione utilizzando il dashboard[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) di [gestione dei dati. Utilizza l&#39;interfaccia della riga](../data-export/data-export-cli-commands.md#troubleshooting) di comando e i registri di Commerce per gestire e risolvere i problemi del processo.
 
 Puoi quindi [verificare](verify.md) che i dati comportamentali vengano inviati al tuo negozio.
 
