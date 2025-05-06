@@ -2,9 +2,9 @@
 title: Sincronizzare i feed utilizzando Commerce CLI
 description: Scopri come utilizzare i comandi dell’interfaccia della riga di comando per gestire feed e processi per  [!DNL data export extension]  per i servizi SaaS di Adobe Commerce.
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: 6f578dfaf3d3e77d7b541714de613025b8c789a4
+source-git-commit: 8233b2e184c8af293ffc41cb22e085388cf18049
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Il comando `saas:resync` nel pacchetto `magento/saas-export` consente di gestire
 Adobe sconsiglia di utilizzare il comando `saas:resync` regolarmente. Gli scenari tipici per l’utilizzo del comando sono:
 
 - Sincronizzazione iniziale
-- Sincronizza i dati con il nuovo spazio dati dopo aver modificato l&#39;[ID spazio dati SaaS](https://experienceleague.adobe.com/it/docs/commerce-admin/config/services/saas)
+- Sincronizza i dati con un nuovo spazio dati dopo aver modificato l&#39;[ID spazio dati SaaS](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
 - Risoluzione dei problemi
 
 Monitorare le operazioni di sincronizzazione nel file `var/log/saas-export.log`.
@@ -25,11 +25,11 @@ Monitorare le operazioni di sincronizzazione nel file `var/log/saas-export.log`.
 
 >[!NOTE]
 >
->La sincronizzazione iniziale viene eseguita automaticamente quando sono abilitati Live Search o Product Recommendations. Non sono necessari comandi manuali.
+>La sincronizzazione iniziale viene eseguita automaticamente quando sono abilitati Live Search o Product Recommendations. I comandi manuali non sono necessari.
 
-Quando si attiva `saas:resync` dalla riga di comando, a seconda delle dimensioni del catalogo, l&#39;aggiornamento dei dati può richiedere da alcuni minuti ad alcune ore.
+Quando si attiva un `saas:resync` dalla riga di comando, a seconda delle dimensioni del catalogo, l&#39;aggiornamento dei dati può richiedere da alcuni minuti ad alcune ore.
 
-Per la sincronizzazione iniziale, Adobe consiglia di eseguire i comandi nel seguente ordine:
+Per la Sincronizzazione iniziale, Adobe Systems consiglia di eseguire i comandi nell&#39;ordine seguente:
 
 ```shell
 bin/magento saas:resync --feed productattributes
@@ -43,7 +43,7 @@ bin/magento saas:resync --feed categories
 bin/magento saas:resync --feed categoryPermissions
 ```
 
-## Sincronizza con i comandi CLI
+## Sincronizzazione tramite comandi CLI
 
 Il comando `saas:resync` supporta diverse operazioni di sincronizzazione:
 
@@ -68,7 +68,7 @@ Per la descrizione delle opzioni con esempi, consulta le sezioni seguenti.
 
 Risincronizza parzialmente entità specifiche in base ai loro ID. Supporta `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants` e `categoryPermissions` feed.
 
-Per impostazione predefinita, le entità sono specificate in un elenco separato da virgole per SKU del prodotto. Per utilizzare gli ID prodotto, aggiungere l&#39;opzione `--id-type=ProductID`.
+Per impostazione predefinita, quando si utilizza l&#39;opzione `--by-ids` si specificano valori utilizzando i valori SKU del prodotto. Per utilizzare gli ID prodotto, aggiungere l&#39;opzione `--id-type=ProductID`.
 
 **Esempi:**
 
@@ -81,13 +81,13 @@ bin/magento saas:resync --feed= products --by-ids='1,2,3' --id-type='productId'
 
 ## `--cleanup-feed`
 
-Pulire la tabella di feed dell’indicizzatore di feed prima di reindicizzare e inviare dati a SaaS. Supportato solo per `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants` e `categoryPermissions`.
+Pulisci la tabella dell’indicizzatore del feed prima della reindicizzazione e dell’invio dei dati a SaaS. Supportato solo per `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants` e `categoryPermissions`.
 
 Se utilizzata con l&#39;opzione `--dry-run`, l&#39;operazione esegue un&#39;operazione di risincronizzazione a secco per tutti gli elementi.
 
 >[!IMPORTANT]
 >
->Usare solo dopo la pulizia dell&#39;ambiente o con l&#39;opzione `--dry-run`. Se utilizzata in altri casi, l’operazione di pulizia causa la perdita di dati e problemi di sincronizzazione dei dati, in cui gli elementi da eliminare in Adobe Commerce non verranno eliminati dallo spazio dati SaaS.
+>Usare solo dopo la pulizia dell&#39;ambiente o con l&#39;opzione `--dry-run`. Se utilizzata in altri casi, l’operazione di pulizia può causare la perdita di dati e problemi di sincronizzazione dei dati.
 
 **Esempio:**
 
@@ -107,9 +107,9 @@ bin/magento saas:resync --feed productAttributes --continue-resync
 
 ## `--dry-run`
 
-Esegue il processo di reindicizzazione del feed senza inviare il feed a SaaS e senza salvarlo nella tabella del feed. Questa opzione è utile per identificare eventuali problemi con il set di dati.
+Esegue il processo di reindicizzazione feed senza inviare il feed a SaaS e senza salvare nella tabella feed. Questa opzione è utile per identificare eventuali problemi con il set di dati.
 
-Aggiungi la variabile di ambiente `EXPORTER_EXTENDED_LOG=1` per salvare il payload in `var/log/saas-export.log`.
+Aggiungi la variabile di ambiente in cui salvare il `EXPORTER_EXTENDED_LOG=1` payload `var/log/saas-export.log`.
 
 **Esempio:**
 
@@ -124,7 +124,7 @@ Verificare elementi di feed specifici aggiungendo l&#39;opzione `--by-ids` con l
 **Esempio:**
 
 ```shell
-EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-ids='1,2,3'
+EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-ids='ADB102,ADB111,ADB112'
 ```
 
 ### Test di tutti gli elementi feed
@@ -167,8 +167,8 @@ Invia nuovamente i dati del catalogo esistenti a [!DNL Commerce Services] senza 
 
 Il comportamento varia in base alla [modalità di esportazione](data-synchronization.md#synchronization-modes):
 
-- Modalità legacy: invia nuovamente tutti i dati senza troncarli.
-- Modalità immediata: l’opzione viene ignorata, sincronizza solo gli aggiornamenti/errori.
+- Modalità legacy: invia di nuovo tutti i dati senza troncare.
+- Modalità immediata: l&#39;opzione viene ignorata, sincronizza solo gli aggiornamenti/errori.
 
 **Esempio:**
 
@@ -178,7 +178,7 @@ bin/magento saas:resync --feed productAttributes --no-reindex
 
 ## `--id-type=ProductId`
 
-Per impostazione predefinita, le entità specificate quando si utilizza il comando `saas:resync feed` con l&#39;opzione `--by-ids` vengono specificate per SKU prodotto. Utilizzare l&#39;opzione `--id-type=ProductId` per specificare le entità in base all&#39;ID prodotto.
+Per impostazione predefinita, le entità specificate quando si utilizza il `saas:resync feed` comando con l&#39;opzione `--by-ids` sono specificate dal referenza di magazzino di prodotto. Utilizzare l&#39;opzione `--id-type=ProductId` per specificare le entità in base all&#39;ID prodotto.
 
 ```shell
 bin/magento saas:resync --feed products --by-ids='1,2,3' --id-type='productId'
