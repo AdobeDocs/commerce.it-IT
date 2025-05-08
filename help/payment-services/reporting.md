@@ -33,7 +33,7 @@ Le informazioni fornite nel rapporto Transazioni sono destinate esclusivamente a
 
 La vista del rapporto Transazioni è disponibile nella vista Transazioni di Payment Services. Include tutte le informazioni disponibili sulle transazioni per i tuoi store.
 
-Nella barra laterale _Admin_, passa a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**per visualizzare la visualizzazione dettagliata del report Transazioni in tabella.
+Nella barra laterale _Admin_, passa a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**&#x200B;per visualizzare la visualizzazione dettagliata del report Transazioni in tabella.
 
 ![Visualizzazione report transazioni](assets/transactions-report-view.png){width="800" zoomable="yes"}
 
@@ -55,7 +55,7 @@ Nella visualizzazione del report Transazioni è possibile selezionare l&#39;orig
 
 ![Selezione origini dati](assets/datasource.png){width="300" zoomable="yes"}
 
-Se _[!UICONTROL Live]_è l&#39;origine dati selezionata, è possibile visualizzare le informazioni del report per gli archivi che utilizzano [!DNL Payment Services] in modalità di produzione. Se_[!UICONTROL Sandbox]_ è l&#39;origine dati selezionata, è possibile visualizzare le informazioni del report per la modalità sandbox.
+Se _[!UICONTROL Live]_&#x200B;è l&#39;origine dati selezionata, è possibile visualizzare le informazioni del report per gli archivi che utilizzano [!DNL Payment Services] in modalità di produzione. Se&#x200B;_[!UICONTROL Sandbox]_ è l&#39;origine dati selezionata, è possibile visualizzare le informazioni del report per la modalità sandbox.
 
 Le selezioni delle origini dati funzionano come segue:
 
@@ -85,14 +85,14 @@ Dalla vista del rapporto Transazioni, è possibile filtrare i risultati degli st
 
 1. Nella barra laterale _Admin_, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
 1. Fare clic sul selettore **[!UICONTROL Filter]**.
-1. Attiva le opzioni _[!UICONTROL Transaction Result]_per visualizzare i risultati del rapporto solo per le transazioni ordine selezionate.
-1. Attiva le opzioni _[!UICONTROL Payment Method]_per visualizzare i risultati del report per il tipo di pagamento utilizzato per la transazione.
-1. Attiva le opzioni _[!UICONTROL Payment Detail]_per visualizzare ulteriori informazioni sul tipo di pagamento utilizzato, se disponibili.
+1. Attiva le opzioni _[!UICONTROL Transaction Result]_&#x200B;per visualizzare i risultati del rapporto solo per le transazioni ordine selezionate.
+1. Attiva le opzioni _[!UICONTROL Payment Method]_&#x200B;per visualizzare i risultati del report per il tipo di pagamento utilizzato per la transazione.
+1. Attiva le opzioni _[!UICONTROL Payment Detail]_&#x200B;per visualizzare ulteriori informazioni sul tipo di pagamento utilizzato, se disponibili.
 1. Immettere un valore di _Importo minimo ordine_ o di _Importo massimo ordine_ per visualizzare i risultati del rapporto all&#39;interno di tale intervallo di importi ordine.
-1. Immettere _[!UICONTROL Order ID]_per cercare una transazione specifica.
-1. Introdurre _[!UICONTROL Card Last Four]_per cercare una carta di credito o di debito specifica.
-1. Immettere _[!UICONTROL Customer ID]_per visualizzare tutte le transazioni di un cliente specifico.
-1. Immettere _[!UICONTROL Customer Email]_per filtrare le transazioni per l&#39;e-mail.
+1. Immettere _[!UICONTROL Order ID]_&#x200B;per cercare una transazione specifica.
+1. Introdurre _[!UICONTROL Card Last Four]_&#x200B;per cercare una carta di credito o di debito specifica.
+1. Immettere _[!UICONTROL Customer ID]_&#x200B;per visualizzare tutte le transazioni di un cliente specifico.
+1. Immettere _[!UICONTROL Customer Email]_&#x200B;per filtrare le transazioni per l&#39;e-mail.
 1. Fare clic su **[!UICONTROL Hide filters]** per nascondere il filtro.
 
 ### Mostra e nascondi colonne
@@ -107,7 +107,7 @@ Il rapporto Transazioni mostra tutte le colonne di informazioni disponibili per 
 
 ### Aggiornare i dati del rapporto
 
-La visualizzazione del report Transazioni mostra un timestamp _[!UICONTROL Last updated]_che indica l&#39;ultima volta che le informazioni del report sono state aggiornate. Per impostazione predefinita, i dati del rapporto Transazioni vengono aggiornati automaticamente ogni tre ore.
+La visualizzazione del report Transazioni mostra un timestamp _[!UICONTROL Last updated]_&#x200B;che indica l&#39;ultima volta che le informazioni del report sono state aggiornate. Per impostazione predefinita, i dati del rapporto Transazioni vengono aggiornati automaticamente ogni tre ore.
 
 Puoi anche forzare manualmente un aggiornamento dei dati del rapporto per visualizzare le informazioni più aggiornate.
 

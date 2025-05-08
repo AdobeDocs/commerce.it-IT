@@ -29,7 +29,7 @@ Per completare l’onboarding della sandbox:
       Se hai creato un account sandbox PayPal durante il processo di onboarding di PayPal sandbox, devi [reimpostare la sandbox di onboarding](#reset-your-sandbox-account) o non puoi verificare l&#39;e-mail.
 
    1. Selezionare **[!UICONTROL Business]** come tipo di account e fare clic su **[!UICONTROL Create]**.
-   1. Nella sezione _[!UICONTROL Sandbox Accounts]_, fai clic sui tre punti nella colonna_[!UICONTROL Manage accounts]_ per l&#39;account sandbox creato.
+   1. Nella sezione _[!UICONTROL Sandbox Accounts]_, fai clic sui tre punti nella colonna&#x200B;_[!UICONTROL Manage accounts]_ per l&#39;account sandbox creato.
    1. Fare clic su **[!UICONTROL View/edit account]**.
 
       ![PayPal - Visualizza/Modifica account sandbox](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}

@@ -71,7 +71,7 @@ La visualizzazione dei dati relativi allo stato del pagamento dell&#39;ordine in
 
 La vista del rapporto Stato pagamento ordine è disponibile nella vista Home di Payment Services. Include stati dettagliati (pagamento, fatturazione, spedizione, rimborso, controversia e altro) per tutte le transazioni.
 
-Nella barra laterale _Amministratore_, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**per visualizzare la tabella dettagliata relativa al report sullo stato dei pagamenti degli ordini.
+Nella barra laterale _Amministratore_, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;per visualizzare la tabella dettagliata relativa al report sullo stato dei pagamenti degli ordini.
 
 ![Transazioni dello stato del pagamento dell&#39;ordine nell&#39;amministratore](assets/orders-report-data.png){width="800" zoomable="yes"}
 
@@ -144,7 +144,7 @@ Nella visualizzazione del report Stato pagamento ordine è possibile selezionare
 
 ![Selezione origini dati](assets/datasource.png){width="300" zoomable="yes"}
 
-Se _[!UICONTROL Live]_è l&#39;origine dati selezionata, è possibile visualizzare le informazioni del report per gli archivi che utilizzano [!DNL Payment Services] in modalità di produzione. Se_[!UICONTROL Sandbox]_ è l&#39;origine dati selezionata, è possibile visualizzare le informazioni del report per la modalità sandbox.
+Se _[!UICONTROL Live]_&#x200B;è l&#39;origine dati selezionata, è possibile visualizzare le informazioni del report per gli archivi che utilizzano [!DNL Payment Services] in modalità di produzione. Se&#x200B;_[!UICONTROL Sandbox]_ è l&#39;origine dati selezionata, è possibile visualizzare le informazioni del report per la modalità sandbox.
 
 Le selezioni delle origini dati funzionano come segue:
 
@@ -155,7 +155,7 @@ Le selezioni delle origini dati funzionano come segue:
 Per selezionare l&#39;origine dati per il report [!UICONTROL Order Payment Status]:
 
 1. Nella barra laterale _Admin_, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
-1. Fare clic sul filtro di selezione _[!UICONTROL Data source]_e selezionare **[!UICONTROL Live]**o **[!UICONTROL Sandbox]**.
+1. Fare clic sul filtro di selezione _[!UICONTROL Data source]_&#x200B;e selezionare **[!UICONTROL Live]**&#x200B;o **[!UICONTROL Sandbox]**.
 
    I risultati del report vengono rigenerati in base all&#39;origine dati selezionata.
 
@@ -175,7 +175,7 @@ Nella visualizzazione del rapporto Stato pagamento ordine è possibile filtrare 
 1. Nella barra laterale _Admin_, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Fare clic sul selettore **[!UICONTROL Filter]**.
 1. Attiva le opzioni _Stato pagamento_ per visualizzare i risultati del rapporto solo per gli stati di pagamento dell&#39;ordine selezionati.
-1. Visualizzare i risultati del report entro un intervallo di importi dell&#39;ordine immettendo _[!UICONTROL Min Order Amount]_o _[!UICONTROL Max Order Amount_].
+1. Visualizzare i risultati del report entro un intervallo di importi dell&#39;ordine immettendo _[!UICONTROL Min Order Amount]_&#x200B;o _[!UICONTROL Max Order Amount_].
 1. Fare clic su **[!UICONTROL Hide filters]** per nascondere il filtro.
 
 ### Mostra e nascondi colonne
@@ -208,7 +208,7 @@ La colonna Stato rimborso mostra lo stato corrente di qualsiasi rimborso. Un pag
 
 ### Aggiornare i dati del rapporto
 
-La visualizzazione del report Stato pagamento ordine mostra un timestamp _[!UICONTROL Last updated]_che indica l&#39;ultima volta che le informazioni del report sono state aggiornate. Per impostazione predefinita, i dati del rapporto Stato pagamento ordine vengono aggiornati automaticamente ogni tre ore.
+La visualizzazione del report Stato pagamento ordine mostra un timestamp _[!UICONTROL Last updated]_&#x200B;che indica l&#39;ultima volta che le informazioni del report sono state aggiornate. Per impostazione predefinita, i dati del rapporto Stato pagamento ordine vengono aggiornati automaticamente ogni tre ore.
 
 È inoltre possibile forzare manualmente l&#39;aggiornamento dei dati del rapporto Stato pagamento ordine per visualizzare le informazioni più aggiornate.
 
