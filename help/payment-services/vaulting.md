@@ -1,8 +1,9 @@
 ---
 title: Vaulting con carta di credito
 description: Gli acquirenti possono archiviare (salvare) i dati della carta di credito per acquisti futuri.
-feature: Payments, Checkout
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
+feature: Payments, Checkout, Paas, Saas
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
@@ -31,7 +32,7 @@ I clienti connessi possono archiviare un metodo di pagamento nel dashboard **Il 
 
 1. Passa a **[!UICONTROL Stored Payment Methods]** nella barra di navigazione a sinistra per visualizzare tutti i metodi di pagamento memorizzati.
 
-   Per ulteriori informazioni, vedere [Metodi di pagamento memorizzati](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/payments/stored-payment-methods).
+   Per ulteriori informazioni, vedere [Metodi di pagamento memorizzati](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods).
 
 1. Il cliente fa clic su **[!UICONTROL Add New Card]** per memorizzare una nuova scheda.
 
@@ -72,10 +73,10 @@ Puoi usare le carte ad archivio nell&#39;Amministratore solo se il cliente ha un
 
 Per creare un ordine nell’amministratore per un cliente utilizzando la sua carta di credito archiviata:
 
-1. [Crea un ordine e aggiungi prodotti](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=it).
-1. In _[!UICONTROL Payment & Shipping Information]_, selezionare **[!UICONTROL Stored Cards]**&#x200B;come metodo di pagamento.
+1. [Crea un ordine e aggiungi prodotti](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
+1. In _[!UICONTROL Payment & Shipping Information]_, selezionare **[!UICONTROL Stored Cards]**come metodo di pagamento.
 1. Seleziona il metodo di pagamento con carta di credito archiviata desiderato.
-1. Dopo aver completato tutti gli altri passaggi necessari per l&#39;ordine, [invialo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=it#step-3%3A-submit-the-order).
+1. Dopo aver completato tutti gli altri passaggi necessari per l&#39;ordine, [invialo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 
    ![Utilizza carta di credito archiviata in Amministratore per il cliente](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 

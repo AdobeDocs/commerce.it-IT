@@ -1,52 +1,128 @@
 ---
-title: Panoramica della guida di [!DNL Payment Services]
-description: Informazioni complete su [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] amministratori, inclusi installazione e onboarding
-seo-title: Adobe Commerce Payments Services Guide
-seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerce or [!DNL Magento Open Source].
-feature: Payments, Checkout
+title: Guida di [!DNL Payment Services]
+description: Pubblico previsto per la documentazione di  [!DNL Payment Services] for [!DNL Adobe Commerce] .
+seo-title: Adobe Commerce Payments Services Audience
+seo-description: Describes contents of the [!DNL Payment Services] for Adobe Commerce documentation
+exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
+feature: Payments, Checkout, Paas, Saas
 recommendations: noCatalog
-exl-id: e27a259f-e72e-4d73-a103-59167638e582
-source-git-commit: 62b708f79ac011ef33b37f67384df7c94571ced2
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
 
-# Panoramica della guida di [!DNL Payment Services]
 
-Questa guida è destinata agli amministratori di [!DNL Adobe Commerce] e [!DNL Magento Open Source]. Include informazioni dettagliate sull&#39;installazione e l&#39;onboarding di [!DNL Payment Services], nonché sulla configurazione e la gestione dei servizi. È necessario conoscere già le nozioni di base della configurazione e delle funzionalità principali di Commerce.
+# Guida di [!DNL Payment Services]
 
->[!TIP]
->
->Per assistenza sui servizi di pagamento, vedere [Supporto](#support).
+[!DNL Payment Services] per Adobe Commerce e Magento Open Source è una soluzione di pagamento completamente integrata che consente di controllare in modo efficiente i dati di pagamento e di ordine da tutti i punti vendita in un&#39;unica posizione: la dashboard di Commerce.
 
-[!DNL Payment Services] dispone di due aree per gli amministratori:
+Con una distribuzione semplice, aggiornamenti automatici e un&#39;interfaccia intuitiva, la gestione dei pagamenti non è mai stata così semplice.  Questo sistema semplificato non solo riduce la complessità operativa, ma migliora anche l&#39;esperienza del cliente offrendo opzioni di pagamento rapide, affidabili e sicure. Sfruttando [!DNL Payment Services], i commercianti possono concentrarsi sulla crescita della propria attività e al contempo fornire ai clienti un&#39;esperienza di pagamento fluida e affidabile.
 
-* Amministratore: utilizza quest’area per accedere all’interfaccia utente di configurazione e ai rapporti.
-* Interfaccia della riga di comando (o CLI): utilizzare questo strumento per eseguire attività di installazione e configurazione back-end.
+Questa guida offre una panoramica delle funzionalità e dei vantaggi di [!DNL Payment Services], oltre a informazioni essenziali sull&#39;onboarding e l&#39;implementazione, incluse istruzioni dettagliate per la configurazione e la gestione dei servizi.
 
 Questa guida tratta i seguenti argomenti:
 
-* Tutte le attività specifiche di [!DNL Payment Services] eseguite nell&#39;amministratore.
-* Tutte le attività specifiche di [!DNL Payment Services] eseguite tramite la riga di comando di Commerce
+![verifica](assets/icon-check.png) Panoramica dello scopo, dei vantaggi e delle funzionalità chiave, quali le funzionalità di reporting e la conformità in materia di sicurezza.
 
-Questa guida non descrive le funzionalità di base di [!DNL Adobe Commerce] e [!DNL Magento Open Source].
+![verifica](assets/icon-check.png) Compatibilità e opzioni di esperienza di pagamento disponibili (determinate per area geografica) e metodi di pagamento supportati.
 
-## Documentazione aggiuntiva
+![controllare](assets/icon-check.png) la documentazione dettagliata su onboarding, opzioni di configurazione, configurazione della sandbox (per il test) e configurazione della produzione (per l&#39;elaborazione dei pagamenti live).
 
-| Guida | Descrizione |
-|------ | ----------- |
-| Guida utente di [[!DNL Adobe Commerce] 2.4](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=it) | Documentazione incentrata sul commerciante per [!DNL Adobe Commerce] e [!DNL Magento Open Source] |
-| Guida per gli sviluppatori di [[!DNL Adobe Commerce] 2.4](https://developer.adobe.com/commerce/docs) | Documentazione incentrata sugli sviluppatori utilizzata per generare e personalizzare [!DNL Adobe Commerce] o [!DNL Magento Open Source] |
+![verifica](assets/icon-check.png) Strumenti per la gestione e il monitoraggio dei pagamenti, inclusi report finanziari, elaborazione dei rimborsi e annullamenti.
+
+![verifica](assets/icon-check.png) risorse aggiuntive come best practice, canali di supporto e note sulla versione per aggiornamenti continui.
+
+## Esplora la documentazione di [!DNL Payment Services]
+
+Se sei curioso di sapere come [!DNL Payment Services] può trasformare le tue operazioni di e-commerce o se hai bisogno di ulteriori indicazioni tecniche su [!DNL Payment Services] per Adobe Commerce e Magento Open Source, questa guida ti offre una panoramica.
+
+Per una panoramica delle soluzioni di pagamento predefinite, incluse le funzionalità e i vantaggi, inizia con [Vantaggi chiave](introduction.md). Per istruzioni dettagliate sull&#39;implementazione, vai a [Onboarding](onboard.md).
+
+<table style="table-layout:fixed">
+<tr style="border: 0;">
+<td valign="top" style="text-align: center;">
+   <div>
+      <a href="introduction.md">
+      <img alt="Servizi di pagamento" src="assets/benefits.jpg">
+      <strong >Vantaggi chiave</strong>
+      </a>
+   </div>
+   <p>
+      <em>Scopri come i servizi di pagamento possono trasformare la tua azienda. Ulteriori informazioni sulle caratteristiche e i vantaggi principali</em>
+   </p>
+</td>
+<td valign="top" style="text-align: center;">
+   <div>
+      <a href="compatibility.md">
+      <img alt="Servizi di pagamento" src="assets/compatibility.jpg">
+      <strong>Compatibilità</strong>
+      </a>
+   </div>
+   <p>
+      <em>Esplora la disponibilità del mercato, i metodi di pagamento supportati e gli standard di sicurezza e conformità di Adobe</em>
+   </p>
+</td>
+<td valign="top" style="text-align: center;">
+   <div>
+      <a href="onboard.md">
+      <img alt="Servizi di pagamento" src="assets/onboard.jpg">
+      <strong>Onboarding</strong>
+      </a>
+   </div>
+   <p>
+      <em>Visualizza le guide dettagliate e la documentazione tecnica per la configurazione e l'onboarding</em>
+   </p>
+</td>
+<tr style="border: 0;">
+<td valign="top" style="text-align: center;">
+   <div>
+      <a href="configure-admin.md">
+      <img alt="Servizi di pagamento" src="assets/configuration.jpg">
+      <strong>Configurazione</strong>
+      </a>
+   </div>
+   <p>
+      <em>Personalizza la configurazione e verifica l'esperienza di pagamento per iniziare a elaborare i pagamenti live</em>
+   </p>
+</td>
+<td valign="top" style="text-align: center;">
+   <div>
+      <a href="reporting.md">
+      <img alt="Servizi di pagamento" src="assets/reporting.jpg">
+      <strong>Generazione rapporti</strong>
+      </a>
+   </div>
+   <p>
+      <em>Accedere ai report per gestire le operazioni e tenere traccia delle prestazioni per tutti gli ordini e i metodi di pagamento</em>
+   </p>
+</td>
+<td valign="top" style="text-align: center;">
+   <div>
+      <a href="release-notes.md">
+      <img alt="Servizi di pagamento" src="assets/resources.jpg">
+      <strong>Risorse</strong>
+      </a>
+   </div>
+   <p>
+      <em>Sfoglia collegamenti utili, esercitazioni video e istruzioni su come contattare l'assistenza clienti</em>
+   </p>
+</td>
+</table>
+
+>[!MORELIKETHIS]
+>
+> * [[!DNL Adobe Commerce] 2.4 Guida utente](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)—Documentazione incentrata sul commerciante per [!DNL Adobe Commerce] e [!DNL Magento Open Source]
+> * [[!DNL Adobe Commerce] 2.4 Guida utente](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)—Documentazione incentrata sugli sviluppatori utilizzata per generare e personalizzare [!DNL Adobe Commerce] o [!DNL Magento Open Source]
+> * [Note sulla versione](release-notes.md)—Ulteriori informazioni sulle prossime versioni, sui dettagli del prodotto e sulle versioni di Adobe Commerce che supportano l&#39;estensione [!DNL Payment Services]
+> * [Centro assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) - Cerca articoli relativi alla risoluzione dei problemi relativi a [!DNL Payment Services] nella Knowledge Base
+> * [Ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket): i clienti Commerce possono inviare un ticket per ricevere ulteriore assistenza
 
 ## Supporto
 
 Se hai bisogno di informazioni o hai domande non trattate in questa guida, contatta il tuo rappresentante commerciale [!DNL Payment Services] o utilizza le risorse disponibili nella tua Home [!DNL Payment Services]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3448235?captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3447836)
 
-Consulta [Disponibilità](overview.md#availability) per verificare quale opzione [!DNL Payment Services] è adatta alle tue esigenze.
-
-* [Centro assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=it) - Cercare gli articoli relativi alla risoluzione dei problemi relativi a [!DNL Payment Services] nella Knowledge Base.
-* [Ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=it#submit-ticket): i clienti Commerce possono inviare un ticket per ricevere ulteriore assistenza.
+Vedi [Quale [!DNL Payment Services] opzione è adatta?Argomento ](compatibility.md#which-payment-services-option-is-right-for-you) per verificare quale è l&#39;opzione [!DNL Payment Services] più adatta alle tue esigenze.

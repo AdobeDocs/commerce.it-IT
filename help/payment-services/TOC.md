@@ -6,9 +6,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: eba63e5a0086689ae254545c1ad9a1430fc8a524
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '109'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,8 @@ ht-degree: 3%
 # [!DNL Payment Services] per Commerce {#payment-services}
 
 - [Panoramica della guida](guide-overview.md)
-- [Introduzione a  [!DNL Payment Services]](overview.md)
+- [Introduzione a  [!DNL Payment Services]](introduction.md)
+- [Compatibilità per  [!DNL Payment Services]](compatibility.md)
 - [Note sulla versione](release-notes.md)
 - Onboarding [!DNL Payment Services] {#get-started}
    - [Panoramica sull’onboarding](onboard.md)
@@ -35,14 +36,14 @@ ht-degree: 3%
    - [Opzioni di pagamento](payments-options.md)
    - [Vaulting con carta di credito](vaulting.md)
    - [Estrai in [!DNL Payment Services]](checkout.md)
-   - Gestisci pagamenti {#manage}
+   - Gestire i pagamenti {#manage}
       - [Elementi riga per  [!DNL Payment Services]](line-items.md)
       - [Rimborsi](refunds.md)
       - [Vuoti](voids.md)
    - [Creare un ordine in Admin](create-order.md)
    - [Tracciamento delle spedizioni in [!DNL Payment Services]](track-shipment.md)
-- Reporting finanziario {#reporting}
-   - [Rapporto Transazioni](transactions.md)
+- Reporting finanziario {#financial-reports}
+   - [Generazione rapporti](reporting.md)
    - [Rapporto stato pagamento ordine](order-payment-status.md)
    - [Rapporto Pagamenti](payouts.md)
    - [Dati disponibili](data.md)
@@ -50,4 +51,4 @@ ht-degree: 3%
 - Sicurezza e conformità {#security-compliance}
    - [Sicurezza](security.md)
    - [Protezione contro le frodi significative](fraud-protection.md)
-- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=it)
+- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

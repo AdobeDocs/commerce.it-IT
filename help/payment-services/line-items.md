@@ -1,9 +1,10 @@
 ---
 title: Elementi riga per  [!DNL Payment Services]
 description: Scopri gli elementi riga per  [!DNL Payment Services]  e come visualizzare gli elementi riga nel dashboard esercente.
-feature: Payments
+feature: Payments, Paas, Saas
 role: User
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: f690ff94-f83d-4525-9d52-1dea25a71060
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -75,7 +76,7 @@ L&#39;oggetto `upc` contiene i seguenti attributi:
 | `type` | stringa! | Il tipo di UPC. |
 | `code` | stringa! | Il codice prodotto UPC dell’articolo. |
 
-+++Esempio di elementi Line
+Esempio di elementi +++Line
 
 ```json
 {
@@ -122,11 +123,11 @@ L&#39;oggetto `upc` contiene i seguenti attributi:
 
 +++
 
-Per ulteriori informazioni su questi campi e sulle relative limitazioni, consulta la [documentazione per gli sviluppatori di PayPal sugli elementi di riga](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank}.
+Per ulteriori informazioni su questi campi e sulle relative limitazioni, consulta la [documentazione per gli sviluppatori di PayPal sulle righe](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank}.
 
 ## Gestisci righe
 
-Adobe Commerce [calcola l&#39;imposta in base all&#39;importo totale per ogni riga](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, che può causare problemi di arrotondamento se vengono ordinate più quantità dello stesso articolo o se nel catalogo vengono visualizzati prezzi comprensivi di imposte. In questi casi, la quantità totale può essere divisa in due righe, ma la quantità sarà uguale al totale degli articoli ordinati.
+Adobe Commerce [calcola l&#39;imposta in base all&#39;importo totale per ogni riga](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}. Ciò può causare problemi di arrotondamento se vengono ordinate più quantità dello stesso articolo o se nel catalogo vengono visualizzati prezzi comprensivi di imposte. In questi casi, la quantità totale può essere divisa in due righe, ma la quantità sarà uguale al totale degli articoli ordinati.
 
 > Esempio di elementi riga con problemi di arrotondamento nella vista dashboard esercente
 

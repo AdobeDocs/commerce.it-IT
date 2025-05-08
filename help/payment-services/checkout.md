@@ -1,8 +1,9 @@
 ---
 title: Estrai in [!DNL Payment Services]
 description: Personalizza [!DNL Payment Services] l'estrazione in base alle esigenze del cliente.
-feature: Payments, Checkout
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+feature: Payments, Checkout, Paas, Saas
+exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -22,7 +23,7 @@ Nella pagina di pagamento viene visualizzato un messaggio di errore per l’acqu
 
 ![Errore durante l&#39;estrazione](assets/user-checkout-error.png "Errore durante l&#39;estrazione"){width="600" zoomable="yes"}
 
-Un commento relativo all&#39;ordine annullato viene visualizzato anche nell&#39;amministratore per un [ordine](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=it) specifico.
+Un commento relativo all&#39;ordine annullato viene visualizzato anche nell&#39;amministratore per un [ordine](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en) specifico.
 
 ![Commento ordine annullato in Admin per ordine](assets/admin-checkout-error.png "Commento ordine annullato in Admin per ordine"){width="600" zoomable="yes"}
 

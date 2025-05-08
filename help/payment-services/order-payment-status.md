@@ -3,8 +3,9 @@ title: Rapporto Stato pagamento ordine
 description: Utilizzare il rapporto Stato pagamento ordine per ottenere visibilità sullo stato di pagamento degli ordini e identificare eventuali problemi.
 role: User
 level: Intermediate
-feature: Payments, Checkout, Orders
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
+feature: Payments, Checkout, Orders, Paas, Saas
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # Rapporto Stato pagamento ordine
 
-[!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] offre report completi che consentono di ottenere una chiara visualizzazione delle [transazioni](transactions.md), ordini e pagamenti del tuo Negozio.
+[!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] offre report completi che consentono di ottenere una chiara visualizzazione delle [transazioni](reporting.md), ordini e pagamenti del tuo Negozio.
 
 Sono disponibili due visualizzazioni per la generazione di rapporti sullo stato dei pagamenti degli ordini per consentirti di visualizzare rapidamente lo stato dei pagamenti degli ordini:
 
@@ -70,7 +71,7 @@ La visualizzazione dei dati relativi allo stato del pagamento dell&#39;ordine in
 
 La vista del rapporto Stato pagamento ordine è disponibile nella vista Home di Payment Services. Include stati dettagliati (pagamento, fatturazione, spedizione, rimborso, controversia e altro) per tutte le transazioni.
 
-Nella barra laterale _Amministratore_, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;per visualizzare la tabella dettagliata relativa al report sullo stato dei pagamenti degli ordini.
+Nella barra laterale _Amministratore_, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**per visualizzare la tabella dettagliata relativa al report sullo stato dei pagamenti degli ordini.
 
 ![Transazioni dello stato del pagamento dell&#39;ordine nell&#39;amministratore](assets/orders-report-data.png){width="800" zoomable="yes"}
 
@@ -105,7 +106,7 @@ Rileva quando una transazione di acquisizione in sospeso entra nello stato `Comp
 
 Per assicurarti che questo processo funzioni come previsto, gli esercenti devono configurare un nuovo processo cron. Una volta configurato il processo per l’esecuzione automatica, non sono previsti altri interventi da parte del commerciante.
 
-Consulta [Configurare i processi cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=it). Una volta configurato, il nuovo processo viene eseguito ogni 30 minuti per recuperare gli aggiornamenti per gli ordini con stato `Payment Review`.
+Consulta [Configurare i processi cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). Una volta configurato, il nuovo processo viene eseguito ogni 30 minuti per recuperare gli aggiornamenti per gli ordini con stato `Payment Review`.
 
 Gli esercenti possono controllare lo stato aggiornato del pagamento tramite la visualizzazione rapporto Stato pagamento ordine.
 
@@ -113,11 +114,11 @@ Gli esercenti possono controllare lo stato aggiornato del pagamento tramite la v
 
 [!DNL Payment Services] utilizza i dati degli ordini e li combina con i dati di pagamento aggregati provenienti da altre origini (incluso PayPal) per fornire rapporti significativi e molto utili.
 
-I dati dell’ordine vengono esportati e memorizzati nel servizio di pagamento. Quando [modifichi o aggiungi gli stati dell&#39;ordine](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) o [modifichi una visualizzazione dello store](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), [store](https://experienceleague.adobe.com/it/docs/commerce-admin/start/setup/store-details#store-information) o il nome del sito Web, tali dati vengono combinati con i dati di pagamento e il report sullo stato del pagamento dell&#39;ordine viene compilato con le informazioni combinate.
+I dati dell’ordine vengono esportati e memorizzati nel servizio di pagamento. Quando [modifichi o aggiungi gli stati dell&#39;ordine](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) o [modifichi una visualizzazione dello store](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), [store](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details#store-information) o il nome del sito Web, tali dati vengono combinati con i dati di pagamento e il report sullo stato del pagamento dell&#39;ordine viene compilato con le informazioni combinate.
 
 Questo processo prevede due fasi:
 
-1. L&#39;indice viene modificato in base ai dati `ON SAVE` (ogni volta che vengono modificate le informazioni sull&#39;ordine o sull&#39;archivio) o `BY SCHEDULE` (secondo una pianificazione cron preconfigurata), a seconda di come viene configurato in [Gestione indice](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/index-management) nell&#39;amministratore.
+1. L&#39;indice viene modificato in base ai dati `ON SAVE` (ogni volta che vengono modificate le informazioni sull&#39;ordine o sull&#39;archivio) o `BY SCHEDULE` (secondo una pianificazione cron preconfigurata), a seconda di come viene configurato in [Gestione indice](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) nell&#39;amministratore.
 
    Per impostazione predefinita, l&#39;indicizzazione dei dati si verifica `ON SAVE`, il che significa che ogni volta che qualcosa cambia nell&#39;ordine, nello stato dell&#39;ordine, nella visualizzazione store, nello store o nel sito Web, il processo di reindicizzazione si verifica immediatamente.
 
@@ -133,7 +134,7 @@ Gli unici dati esportati e confrontati a scopo di reporting sono i dati utilizza
 
 Anche se per impostazione predefinita la reindicizzazione avviene in modalità `ON SAVE`, si consiglia di indicizzare in modalità `BY SCHEDULE`. L&#39;indice `BY SCHEDULE` viene eseguito con una pianificazione cron di un minuto ed eventuali dati modificati vengono visualizzati nel report sullo stato dell&#39;ordine entro due minuti da eventuali modifiche dei dati. Questa reindicizzazione programmata consente di ridurre qualsiasi tensione sul negozio, soprattutto se si dispone di un grande volume di ordini in entrata, perché avviene secondo un programma (non come ogni ordine viene effettuato).
 
-È possibile modificare la modalità indice: `ON SAVE` o `BY SCHEDULE`—[in Admin](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+È possibile modificare la modalità indice: `ON SAVE` o `BY SCHEDULE`—[in Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 
 Per informazioni su come configurare l&#39;esportazione dei dati, vedere [Configurazione della riga di comando](configure-cli.md#configure-data-export).
 
@@ -143,7 +144,7 @@ Nella visualizzazione del report Stato pagamento ordine è possibile selezionare
 
 ![Selezione origini dati](assets/datasource.png){width="300" zoomable="yes"}
 
-Se _[!UICONTROL Live]_&#x200B;è l&#39;origine dati selezionata, è possibile visualizzare le informazioni del report per gli archivi che utilizzano [!DNL Payment Services] in modalità di produzione. Se&#x200B;_[!UICONTROL Sandbox]_ è l&#39;origine dati selezionata, è possibile visualizzare le informazioni del report per la modalità sandbox.
+Se _[!UICONTROL Live]_è l&#39;origine dati selezionata, è possibile visualizzare le informazioni del report per gli archivi che utilizzano [!DNL Payment Services] in modalità di produzione. Se_[!UICONTROL Sandbox]_ è l&#39;origine dati selezionata, è possibile visualizzare le informazioni del report per la modalità sandbox.
 
 Le selezioni delle origini dati funzionano come segue:
 
@@ -154,7 +155,7 @@ Le selezioni delle origini dati funzionano come segue:
 Per selezionare l&#39;origine dati per il report [!UICONTROL Order Payment Status]:
 
 1. Nella barra laterale _Admin_, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
-1. Fare clic sul filtro di selezione _[!UICONTROL Data source]_&#x200B;e selezionare **[!UICONTROL Live]**&#x200B;o **[!UICONTROL Sandbox]**.
+1. Fare clic sul filtro di selezione _[!UICONTROL Data source]_e selezionare **[!UICONTROL Live]**o **[!UICONTROL Sandbox]**.
 
    I risultati del report vengono rigenerati in base all&#39;origine dati selezionata.
 
@@ -174,7 +175,7 @@ Nella visualizzazione del rapporto Stato pagamento ordine è possibile filtrare 
 1. Nella barra laterale _Admin_, vai a **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Fare clic sul selettore **[!UICONTROL Filter]**.
 1. Attiva le opzioni _Stato pagamento_ per visualizzare i risultati del rapporto solo per gli stati di pagamento dell&#39;ordine selezionati.
-1. Visualizzare i risultati del report entro un intervallo di importi dell&#39;ordine immettendo _[!UICONTROL Min Order Amount]_&#x200B;o _[!UICONTROL Max Order Amount_].
+1. Visualizzare i risultati del report entro un intervallo di importi dell&#39;ordine immettendo _[!UICONTROL Min Order Amount]_o _[!UICONTROL Max Order Amount_].
 1. Fare clic su **[!UICONTROL Hide filters]** per nascondere il filtro.
 
 ### Mostra e nascondi colonne
@@ -207,7 +208,7 @@ La colonna Stato rimborso mostra lo stato corrente di qualsiasi rimborso. Un pag
 
 ### Aggiornare i dati del rapporto
 
-La visualizzazione del report Stato pagamento ordine mostra un timestamp _[!UICONTROL Last updated]_&#x200B;che indica l&#39;ultima volta che le informazioni del report sono state aggiornate. Per impostazione predefinita, i dati del rapporto Stato pagamento ordine vengono aggiornati automaticamente ogni tre ore.
+La visualizzazione del report Stato pagamento ordine mostra un timestamp _[!UICONTROL Last updated]_che indica l&#39;ultima volta che le informazioni del report sono state aggiornate. Per impostazione predefinita, i dati del rapporto Stato pagamento ordine vengono aggiornati automaticamente ogni tre ore.
 
 È inoltre possibile forzare manualmente l&#39;aggiornamento dei dati del rapporto Stato pagamento ordine per visualizzare le informazioni più aggiornate.
 
@@ -244,10 +245,10 @@ I rapporti sullo stato dei pagamenti degli ordini includono le seguenti informaz
 
 | Colonna | Descrizione |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | ID ordine Commerce<br> <br>Per visualizzare le [informazioni sull&#39;ordine](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} correlate, fare clic sull&#39;ID. |
+| [!UICONTROL Order ID] | ID ordine Commerce<br> <br>Per visualizzare le [informazioni ordine](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} correlate, fare clic sull&#39;ID. |
 | [!UICONTROL Order Date] | Timestamp data ordine |
 | [!UICONTROL Authorized Date] | Data e ora dell’autorizzazione di pagamento |
-| [!UICONTROL Order Status] | [stato ordine](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} di Commerce corrente |
+| [!UICONTROL Order Status] | [stato ordine](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} di Commerce corrente |
 | [!UICONTROL Invoiced] | Stato fattura ordine: *[!UICONTROL No]*, *[!UICONTROL Partial]* o *[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | Stato spedizione ordine: *[!UICONTROL No]*, *[!UICONTROL Partial]* o *[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | Importo totale totale dell’ordine |
