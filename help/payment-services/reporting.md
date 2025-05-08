@@ -132,9 +132,9 @@ I rapporti sulle transazioni includono le seguenti informazioni.
 
 | Colonna | Descrizione |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | ID ordine Commerce (contiene solo i valori per le transazioni riuscite ed è vuoto per le transazioni rifiutate)<br> <br>Per visualizzare le [informazioni ordine](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} correlate, fare clic sull&#39;ID. |
+| [!UICONTROL Order ID] | ID ordine Commerce (contiene solo i valori per le transazioni riuscite ed è vuoto per le transazioni rifiutate)<br> <br>Per visualizzare le [informazioni ordine](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} correlate, fare clic sull&#39;ID. |
 | [!UICONTROL PayPal Transaction ID] | ID transazione fornito dal provider dei pagamenti; contiene solo valori per le transazioni riuscite e un trattino per le transazioni rifiutate. Puoi fare clic su questo ID per accedere alla pagina dei dettagli della transazione PayPal. |
-| [!UICONTROL Customer ID] | ID cliente Commerce di un ordine<br> <br>Per ulteriori informazioni, consulta l&#39;argomento [Informazioni cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"}. |
+| [!UICONTROL Customer ID] | ID cliente Commerce di un ordine<br> <br>Per ulteriori informazioni, consulta l&#39;argomento [Informazioni cliente](https://experienceleague.adobe.com/it/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"}. |
 | [!UICONTROL Transaction Date] | Timestamp data transazione |
 | [!UICONTROL Payment Method] | Tipo di pagamento utilizzato per la transazione con informazioni sul marchio e sul tipo di carta. Consulta [tipi di carta](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) per ulteriori informazioni; disponibile per le versioni di Payment Services 1.6.0 e successive |
 | [!UICONTROL Payment Detail] | Fornisce informazioni aggiuntive sul tipo di pagamento utilizzato per la transazione, se disponibili. |

@@ -106,7 +106,7 @@ Rileva quando una transazione di acquisizione in sospeso entra nello stato `Comp
 
 Per assicurarti che questo processo funzioni come previsto, gli esercenti devono configurare un nuovo processo cron. Una volta configurato il processo per l’esecuzione automatica, non sono previsti altri interventi da parte del commerciante.
 
-Consulta [Configurare i processi cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). Una volta configurato, il nuovo processo viene eseguito ogni 30 minuti per recuperare gli aggiornamenti per gli ordini con stato `Payment Review`.
+Consulta [Configurare i processi cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=it). Una volta configurato, il nuovo processo viene eseguito ogni 30 minuti per recuperare gli aggiornamenti per gli ordini con stato `Payment Review`.
 
 Gli esercenti possono controllare lo stato aggiornato del pagamento tramite la visualizzazione rapporto Stato pagamento ordine.
 
@@ -114,11 +114,11 @@ Gli esercenti possono controllare lo stato aggiornato del pagamento tramite la v
 
 [!DNL Payment Services] utilizza i dati degli ordini e li combina con i dati di pagamento aggregati provenienti da altre origini (incluso PayPal) per fornire rapporti significativi e molto utili.
 
-I dati dell’ordine vengono esportati e memorizzati nel servizio di pagamento. Quando [modifichi o aggiungi gli stati dell&#39;ordine](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) o [modifichi una visualizzazione dello store](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), [store](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details#store-information) o il nome del sito Web, tali dati vengono combinati con i dati di pagamento e il report sullo stato del pagamento dell&#39;ordine viene compilato con le informazioni combinate.
+I dati dell’ordine vengono esportati e memorizzati nel servizio di pagamento. Quando [modifichi o aggiungi gli stati dell&#39;ordine](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) o [modifichi una visualizzazione dello store](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), [store](https://experienceleague.adobe.com/it/docs/commerce-admin/start/setup/store-details#store-information) o il nome del sito Web, tali dati vengono combinati con i dati di pagamento e il report sullo stato del pagamento dell&#39;ordine viene compilato con le informazioni combinate.
 
 Questo processo prevede due fasi:
 
-1. L&#39;indice viene modificato in base ai dati `ON SAVE` (ogni volta che vengono modificate le informazioni sull&#39;ordine o sull&#39;archivio) o `BY SCHEDULE` (secondo una pianificazione cron preconfigurata), a seconda di come viene configurato in [Gestione indice](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) nell&#39;amministratore.
+1. L&#39;indice viene modificato in base ai dati `ON SAVE` (ogni volta che vengono modificate le informazioni sull&#39;ordine o sull&#39;archivio) o `BY SCHEDULE` (secondo una pianificazione cron preconfigurata), a seconda di come viene configurato in [Gestione indice](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/index-management) nell&#39;amministratore.
 
    Per impostazione predefinita, l&#39;indicizzazione dei dati si verifica `ON SAVE`, il che significa che ogni volta che qualcosa cambia nell&#39;ordine, nello stato dell&#39;ordine, nella visualizzazione store, nello store o nel sito Web, il processo di reindicizzazione si verifica immediatamente.
 
@@ -134,7 +134,7 @@ Gli unici dati esportati e confrontati a scopo di reporting sono i dati utilizza
 
 Anche se per impostazione predefinita la reindicizzazione avviene in modalità `ON SAVE`, si consiglia di indicizzare in modalità `BY SCHEDULE`. L&#39;indice `BY SCHEDULE` viene eseguito con una pianificazione cron di un minuto ed eventuali dati modificati vengono visualizzati nel report sullo stato dell&#39;ordine entro due minuti da eventuali modifiche dei dati. Questa reindicizzazione programmata consente di ridurre qualsiasi tensione sul negozio, soprattutto se si dispone di un grande volume di ordini in entrata, perché avviene secondo un programma (non come ogni ordine viene effettuato).
 
-È possibile modificare la modalità indice: `ON SAVE` o `BY SCHEDULE`—[in Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+È possibile modificare la modalità indice: `ON SAVE` o `BY SCHEDULE`—[in Admin](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 
 Per informazioni su come configurare l&#39;esportazione dei dati, vedere [Configurazione della riga di comando](configure-cli.md#configure-data-export).
 
@@ -245,10 +245,10 @@ I rapporti sullo stato dei pagamenti degli ordini includono le seguenti informaz
 
 | Colonna | Descrizione |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | ID ordine Commerce<br> <br>Per visualizzare le [informazioni ordine](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} correlate, fare clic sull&#39;ID. |
+| [!UICONTROL Order ID] | ID ordine Commerce<br> <br>Per visualizzare le [informazioni ordine](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} correlate, fare clic sull&#39;ID. |
 | [!UICONTROL Order Date] | Timestamp data ordine |
 | [!UICONTROL Authorized Date] | Data e ora dell’autorizzazione di pagamento |
-| [!UICONTROL Order Status] | [stato ordine](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} di Commerce corrente |
+| [!UICONTROL Order Status] | [stato ordine](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} di Commerce corrente |
 | [!UICONTROL Invoiced] | Stato fattura ordine: *[!UICONTROL No]*, *[!UICONTROL Partial]* o *[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | Stato spedizione ordine: *[!UICONTROL No]*, *[!UICONTROL Partial]* o *[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | Importo totale totale dell’ordine |
