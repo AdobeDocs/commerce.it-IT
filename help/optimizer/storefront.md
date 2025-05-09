@@ -2,9 +2,10 @@
 title: Configurare la vetrina
 description: Scopri come configurare la vetrina  [!DNL Adobe Commerce Optimizer] .
 role: Developer
-source-git-commit: 425c801a852de566120504563e256b0351df588e
+exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
+source-git-commit: f1aa8439d6322e5278ab787f5cd096e16b7813a2
 workflow-type: tm+mt
-source-wordcount: '2287'
+source-wordcount: '2150'
 ht-degree: 0%
 
 ---
@@ -15,26 +16,24 @@ ht-degree: 0%
 >
 >Questa documentazione descrive un prodotto in fase di sviluppo con accesso anticipato e non riflette tutte le funzionalità previste per la disponibilità generale.
 
-Questo tutorial illustra come configurare e utilizzare [Adobe Commerce Storefront con tecnologia Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=it) per creare una vetrina Commerce performante, scalabile e sicura basata sui dati dell&#39;istanza [!DNL Adobe Commerce Optimizer].
+Questo tutorial illustra come configurare e utilizzare [Adobe Commerce Storefront con tecnologia Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) per creare una vetrina Commerce performante, scalabile e sicura basata sui dati dell&#39;istanza [!DNL Adobe Commerce Optimizer].
 
 
 ## Prerequisiti
 
 * Assicurati di disporre di un account GitHub (github.com) in grado di creare archivi e configurato per lo sviluppo locale.
 
-* Acquisisci familiarità con il flusso di lavoro e il vocabolario di base relativi alla creazione di una vetrina per Adobe Edge Delivery Services consultando la [Panoramica](https://experienceleague.adobe.com/developer/commerce/storefront/get-started?lang=it) nella documentazione di Adobe Commerce Storefront.
+* Scopri i concetti e il flusso di lavoro per sviluppare vetrine di Commerce su Adobe Edge Delivery Services consultando la [Panoramica](https://experienceleague.adobe.com/developer/commerce/storefront/get-started) nella documentazione di Adobe Commerce Storefront.
 * Configurare l’ambiente di sviluppo
 
 
 ### Configurare l’ambiente di sviluppo
 
-Per configurare il tuo ambiente di sviluppo, installa la versione richiesta di Node.js e l’estensione del browser Sidekick.
+Installa Node.js e l&#39;estensione del browser Sidekick necessaria per sviluppare e testare la vetrina [!DNL Adobe Commerce Optimizer] su Edge Delivery Services.
 
 #### Installare Node.js
 
-Per sviluppare e testare localmente la vetrina [!DNL Adobe Commerce Optimizer] sul progetto Edge Delivery Services, è necessario Node.js versione 22.13.1 LTS.
-
-Se necessario, completare i passaggi seguenti per installare Node Version Manager (NVM) e la versione di Node.js richiesta.
+Installare Node Version Manager (NVM) e la versione di Node.js richiesta (22.13.1 LTS).
 
 1. Installazione di Node Version Manager (NVM).
 
@@ -60,48 +59,46 @@ Se necessario, completare i passaggi seguenti per installare Node Version Manage
 
 >[!TIP]
 >
->Questa configurazione è per lo sviluppo con [!DNL Adobe Commerce Optimizer] e Adobe Commerce Edge Delivery Service Storefront. Risorse aggiuntive per l&#39;estensione e la personalizzazione della soluzione [!DNL Adobe Commerce Optimizer] sono disponibili tramite [App Builder per Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) e [API Mesh per Adobe Developer App Builder](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). Per informazioni su accesso e utilizzo, contatta il rappresentante del tuo account Adobe.
+>Questo processo di configurazione della vetrina deve utilizzare [!DNL Adobe Commerce Optimizer] con Adobe Commerce Edge Delivery Service Storefront. Risorse aggiuntive per l&#39;estensione e la personalizzazione della soluzione [!DNL Adobe Commerce Optimizer] sono disponibili tramite [App Builder per Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) e [API Mesh per Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). Per informazioni su accesso e utilizzo, contatta il rappresentante del tuo account Adobe.
 
 #### Installare Sidekick
 
-Installa l’estensione del browser Sidekick per modificare, visualizzare in anteprima e pubblicare i contenuti della vetrina. Consulta le [istruzioni di installazione di Sidekick](https://www.aem.live/docs/sidekick#installation).
+Installa l’estensione del browser Sidekick per modificare, visualizzare in anteprima e pubblicare contenuti nella vetrina. Consulta le [istruzioni di installazione di Sidekick](https://www.aem.live/docs/sidekick#installation).
 
 
 ## Crea la vetrina
 
-La vetrina creata per il progetto [!DNL Adobe Commerce Optimizer] viene creata utilizzando una versione personalizzata di Adobe Commerce su Edge Delivery Services Storefront boilerplate. La boilerplate è un insieme di file e cartelle che forniscono un punto di partenza per la creazione della vetrina.
-
-Questo processo di configurazione della vetrina è personalizzato in modo specifico per [!DNL Adobe Commerce Optimizer] progetti. Il flusso è diverso da quello della configurazione standard di [Adobe Commerce su Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=it).
+La vetrina creata per il progetto [!DNL Adobe Commerce Optimizer] utilizza una versione personalizzata di Adobe Commerce su Edge Delivery Services Storefront. La boilerplate è un insieme di file e cartelle che forniscono un punto di partenza per lo sviluppo della vetrina. Questo processo di installazione è diverso da quello standard per un [Adobe Commerce su Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
 
 >[!NOTE]
 >
->Questa esercitazione utilizza macOS, Chrome e Visual Studio Code come ambiente di sviluppo. La schermata acquisisce e le istruzioni riflettono tale configurazione. Puoi utilizzare un sistema operativo, un browser e un editor di codice diversi, ma l’interfaccia utente visualizzata e i passaggi da intraprendere variano di conseguenza.
+>Questa esercitazione utilizza macOS, Chrome e Visual Studio Code come ambiente di sviluppo. La schermata acquisisce e le istruzioni riflettono tale configurazione. Puoi utilizzare un sistema operativo, un browser e un editor di codice diversi, ma l’interfaccia utente visualizzata e i passaggi da eseguire variano di conseguenza.
 
 ### Panoramica del flusso di lavoro
 
-Segui questi passaggi per configurare una vetrina da utilizzare con Adobe Commerce Optimizer.
+Segui questi passaggi per configurare una vetrina da usare con [!DNL Adobe Commerce Optimizer].
 
 1. **[Creare una cartella dei contenuti](#step-1-create-a-content-folder)**-Creare una cartella dei contenuti condivisa in Google Drive o Sharepoint. Questa cartella contiene il contenuto e le risorse di esempio per la vetrina.
 
-1. **[Creare un archivio del codice](#step-1-create-a-code-repository)**-Creare un archivio GitHub dal modello standard Adobe Commerce + Edge Delivery Services. Includi tutti i rami dall’archivio di origine.
-1. **[Aggiorna il boilerplate della vetrina](#step-2-update-the-storefront-boilerplate)**-Aggiorna il modello boilerplate personalizzato nel ramo `aco` dell&#39;archivio per collegare la cartella dei contenuti alla vetrina e controlla la configurazione della vetrina che distribuisce i dati dall&#39;istanza demo di Adobe Commerce Optimizer alla vetrina.
-1. **[Carica il codice boilerplate aggiornato della vetrina](#step-3-upload-the-updated-boilerplate-code)**-Sovrascrivi il codice nel ramo `main` con il codice aggiornato dal ramo `aco`.
-1. **[Aggiungi l&#39;app CodeSync](#step-4-add-the-aem-code-sync-app)**-Connetti l&#39;archivio al servizio Edge Delivery. Non connettere l&#39;app di sincronizzazione codice finché non hai completato la personalizzazione del codice sorgente e non sei pronto a inviare il codice al ramo `main`.
-1. **[Anteprima e pubblicazione del contenuto](#step-5-preview-and-publish-your-content)**-Utilizzare l&#39;estensione Sidekick per visualizzare in anteprima e pubblicare il contenuto del sito dalla cartella dei contenuti nella vetrina.
-1. **[Visualizzare l&#39;anteprima del sito e i dati di esempio](#step-6-preview-your-site-and-view-sample-data)**-Connettersi al sito della vetrina per visualizzare il contenuto e i dati di esempio dall&#39;istanza demo di [!DNL Adobe Commerce Optimizer].
-1. **[Sviluppa la vetrina nell&#39;ambiente locale](#step-7-develop-the-storefront-in-your-local-environmentdevelop-the-storefront-in-your-local-environment)**-Installa le dipendenze richieste. Avviare il server di sviluppo locale e aggiornare la configurazione della vetrina per connettersi all&#39;istanza [!DNL Adobe Commerce Optimizer] fornita da Adobe.
-1. **[Gestisci contenuto del sito](#step-8-manage-site-content)**. Ulteriori informazioni sull&#39;aggiornamento e la gestione del contenuto del sito.
+1. **[Creare un archivio del codice](#step-2-create-a-code-repository)**-Creare un archivio GitHub dal modello standard Adobe Commerce + Edge Delivery Services. Includi tutti i rami dall’archivio di origine.
+1. **[Aggiorna il boilerplate della vetrina](#step-3-update-the-storefront-boilerplate)**-Aggiorna il modello boilerplate personalizzato nel ramo `aco` per collegare la cartella dei contenuti alla vetrina.
+1. **[Carica il codice boilerplate aggiornato della vetrina](#step-4-upload-the-updated-boilerplate-code)**-Sovrascrivi il codice nel ramo `main` con il codice aggiornato dal ramo `aco`.
+1. **[Aggiungi l&#39;app CodeSync](#step-5-add-the-aem-code-sync-app)**-Connetti l&#39;archivio al servizio Edge Delivery. Non connettere l&#39;app di sincronizzazione codice finché non hai completato la personalizzazione del codice sorgente e non sei pronto a inviare il codice al ramo `main`.
+1. **[Anteprima e pubblicazione del contenuto](#step-6-preview-and-publish-your-content)**-Utilizzare l&#39;estensione Sidekick per visualizzare in anteprima e pubblicare il contenuto del sito dalla cartella dei contenuti nella vetrina.
+1. **[Visualizzare l&#39;anteprima del sito e i dati di esempio](#step-7-preview-your-site)**-Connettersi al sito della vetrina per visualizzare il contenuto e i dati di esempio dall&#39;istanza demo di [!DNL Adobe Commerce Optimizer].
+1. **[Sviluppa la vetrina nell&#39;ambiente locale](#step-8-develop-the-storefront-in-your-local-environment)**-Installa le dipendenze richieste. Avviare il server di sviluppo locale e aggiornare la configurazione della vetrina per connettersi all&#39;istanza [!DNL Adobe Commerce Optimizer] fornita da Adobe.
+1. **[Passaggi successivi](#next-steps)**-Ulteriori informazioni sulla gestione e la visualizzazione di contenuti e dati nella vetrina.
 
 ### Passaggio 1: creare una cartella di contenuti
 
 Segui le istruzioni riportate nella documentazione di Adobe Commerce Storefront per aggiungere una cartella di contenuti condivisi in Google Drive o Sharepoint e aggiungere il contenuto di esempio. Il contenuto di esempio include immagini, testo e altre risorse che compongono il sito.
 
-* [Creare e condividere un&#39;unità Google o una cartella di Sharepoint](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=it#create-and-share-folder)
-* [Carica il contenuto di esempio](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=it#add-sample-content) nella cartella.
+* [Creare e condividere un&#39;unità Google o una cartella di Sharepoint](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#create-and-share-folder)
+* [Carica il contenuto di esempio](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#add-sample-content) nella cartella.
 
 ### Passaggio 2: creare un archivio del codice
 
-Crea un archivio di codice in GitHub utilizzando il modello standard Edge Delivery Services + Adobe Commerce. Questo modello fornisce il codice standard per la vetrina.
+Crea un archivio di codice boilerplate storefront in GitHub utilizzando il modello boilerplate Edge Delivery Services + Adobe Commerce.
 
 1. Accedi al tuo account GitHub.
 
@@ -111,7 +108,7 @@ Crea un archivio di codice in GitHub utilizzando il modello standard Edge Delive
 
    ![[!DNL Create github repo from storefront boilerplate template]](./assets/storefront-create-github-repo.png){width="700" zoomable="yes"}
 
-   Viene visualizzata la pagina di configurazione dell’archivio.
+   Viene visualizzata la pagina di configurazione del repository.
 
    ![[!DNL Configure github repo to pull all branches from boilerplate repo]](./assets/storefront-configure-github-repo.png){width="700" zoomable="yes"}
 
@@ -126,20 +123,13 @@ Crea un archivio di codice in GitHub utilizzando il modello standard Edge Delive
 
 1. Selezionare **Crea repository**.
 
-   Dopo un minuto o due, viene aperto il nuovo archivio.
+   Dopo alcuni minuti, viene aperto il nuovo archivio.
 
-   Ignora le notifiche di richiesta di pull visualizzate nel nuovo archivio.
+   Ignora le notifiche di richiesta pull visualizzate nell’interfaccia utente di GitHub.
 
 ### Passaggio 3: aggiornare la piastra di cottura della vetrina
 
-In questa sezione vengono completate le seguenti attività:
-
-* Consulta il ramo `aco` del tuo archivio per aggiornare il modello standard personalizzato per [!DNL Adobe Commerce Optimizer] progetti
-* Connetti la cartella dei contenuti alla vetrina aggiornando il file `fstab.yaml` in modo che punti alla cartella dei contenuti.
-* Rivedi il file di configurazione della vetrina, `config.json`
-* Configura l’estensione Sidekick per modificare, visualizzare in anteprima e pubblicare il contenuto dalla cartella dei contenuti condivisi.
-
-Per completare questi passaggi, sono necessarie le seguenti informazioni:
+Per aggiornare il codice boilerplate della vetrina sono necessarie le seguenti informazioni:
 
 * **URL archivio GitHub dal passaggio 2**— `github.com/{ORG}/{SITE}`
 
@@ -175,9 +165,9 @@ Per completare questi passaggi, sono necessarie le seguenti informazioni:
    cp default-fstab.yaml fstab.yaml
    ```
 
-1. Aggiorna il file di configurazione della vetrina in modo che punti all&#39;URL del contenuto.
+1. Aggiorna il punto di montaggio nel file di configurazione della vetrina in modo che punti all&#39;URL del contenuto.
 
-   1. Apri il file di configurazione [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=it#vocabulary).
+   1. Apri il file di configurazione [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#vocabulary).
 
       ```json
       mountpoints:
@@ -187,22 +177,22 @@ Per completare questi passaggi, sono necessarie le seguenti informazioni:
        /products/: /products/default
       ```
 
-   1. Sostituisci `{YOUR_MOUNTPOINT_URL}` con l&#39;URL del tuo sistema di gestione dei contenuti.
+   1. Sostituisci `{YOUR_MOUNTPOINT_URL}` con l&#39;URL della cartella dei contenuti.
 
       Se ad esempio si utilizza Google Drive, il codice aggiornato dovrebbe essere simile al seguente.
 
       ```json
        mountpoints:
-        /: https://drive.google.com/drive/folders/{YOUR_FOLDER_ID}
+        /: https://drive.google.com/drive/folders/1HXPWdQT-EK09IxVQV5HBSHN4QCA1a56Y
       ```
 
    1. Salva il file.
 
 #### Verifica la configurazione della connessione dati
 
-La connessione dati stabilisce la comunicazione tra Adobe Commerce Optimizer e la vetrina, garantendo che i dati del catalogo fluiscano direttamente nella vetrina. Questo processo popola varie interfacce della vetrina, tra cui il componente di ricerca, l&#39;elenco dei prodotti e le pagine dei dettagli dei prodotti richiesti per [!DNL Adobe Commerce Optimizer].
+La configurazione della connessione dati stabilisce la comunicazione tra la vetrina e l&#39;istanza [!DNL Adobe Commerce Optimizer] specificata. Questa connessione consente il flusso dei dati del catalogo nella vetrina e di popolare varie interfacce della vetrina, tra cui il componente di ricerca, l’elenco dei prodotti e le pagine dei dettagli dei prodotti.
 
-Per la configurazione iniziale della vetrina, Adobe fornisce un file di configurazione predefinito che si connette a un’istanza demo di Adobe Commerce Optimizer con dati di esempio.
+Per la configurazione iniziale della vetrina, è necessario connettersi all&#39;istanza [!DNL Adobe Commerce Optimizer] predefinita con dati di esempio.
 
 ```json
 {
@@ -234,29 +224,21 @@ Per la configurazione iniziale della vetrina, Adobe fornisce un file di configur
 }
 ```
 
-Esamina il file di configurazione della vetrina nel tuo archivio per capire come viene stabilita la connessione dati.
+In questo file, i valori chiave seguenti specificano l&#39;istanza [!DNL Adobe Commerce Optimizer] a cui connettersi e determinano i dati che fluiscono nella vetrina:
 
-1. Nell’archivio del codice, accedi alla directory principale.
+* `commerce-endpoint` specifica l&#39;istanza a cui connettersi. È impostato per utilizzare l&#39;istanza predefinita [!DNL Adobe Commerce Optimizer]. Questo endpoint viene utilizzato per recuperare i dati del catalogo.
+* `ac-environment-id` è l&#39;ID tenant per l&#39;istanza [!DNL Adobe Commerce Optimizer].
+* `headers` determinare i dati che scorrono dall&#39;istanza alla vetrina.
+   * `ac-channel-id` è impostato su `west_coast_inc`
+   * `ac-price-book-id` è impostato su `west_coast_inc`
+   * `ac-scope-locale` è impostato su `en-US`
+   * `ac-price-book-id` è impostato su `west_coast_inc`
 
-1. Aprire il file `config.json`.
-
-   In questo file, i seguenti valori chiave specificano l’istanza di Adobe Commerce Optimizer a cui connettersi e determinano i dati che fluiscono nella vetrina:
-
-   * `commerce-endpoint` definisce l&#39;istanza di Adobe Commerce Optimizer a cui connettersi.
-   * `headers` determinare i dati che fluiscono nella vetrina.
-      * `ac-channel-id` è impostato su `west_coast_inc`
-      * `ac-price-book-id` è impostato su `west_coast_inc`
-      * `ac-scope-locale` è impostato su `en-US`
-      * `ac-price-book-id` è impostato su `west_coast_inc`
-
-   Questi valori impostano l&#39;ID canale, le impostazioni internazionali e l&#39;ID listino prezzi per inviare i dati del catalogo a un canale di vendita specifico e filtrarli in base alle impostazioni internazionali e ai valori del listino prezzi specificati. Successivamente, scopri come modificare l’istanza di Adobe Commerce Optimizer e aggiornare le intestazioni per definire quali dati vengono inviati alla vetrina.
-
-1. Dopo aver esaminato il file, chiuderlo e continuare l&#39;esercitazione.
-
+Questi valori impostano l&#39;ID canale, le impostazioni internazionali e l&#39;ID listino prezzi per inviare i dati del catalogo a un canale di vendita specifico e filtrarli in base alle impostazioni internazionali e ai valori del listino prezzi specificati. Successivamente, aggiornare l&#39;endpoint per connettersi all&#39;istanza [!DNL Adobe Commerce Optimizer] fornita da Adobe e sostituire i valori di intestazione per recuperare i dati da tale istanza.
 
 #### Configurare l&#39;estensione Sidekick
 
-Aggiungi la configurazione del progetto per l’estensione Sidekick. Sidekick viene utilizzato per modificare, visualizzare in anteprima e pubblicare il contenuto della vetrina. Questa configurazione consente di utilizzare Sidekick per gestire i contenuti sia nella cartella dei contenuti condivisi che nelle pagine del sito pubblicate negli ambienti di staging e produzione.
+Aggiungi la configurazione del progetto per l’estensione Sidekick. Questa configurazione assicura la disponibilità di Sidekick per la gestione dei contenuti per il progetto storefront.
 
 >[!NOTE]
 >
@@ -296,13 +278,47 @@ Aggiungi la configurazione del progetto per l’estensione Sidekick. Sidekick vi
 
    Per ulteriori informazioni, consulta la [documentazione della libreria Sidekick](https://www.aem.live/docs/sidekick-library).
 
-   +++
++++
 
 1. Aggiorna i valori chiave `url` con i valori per l&#39;archivio GitHub.
 
-   * `{ORG}` è il nome o il nome utente del repository del codice
+   * Sostituire la stringa `{ORG}` con l&#39;organizzazione o il nome utente del repository.
 
-   * `{SITE}` è il nome del repository
+   * Sostituisci la stringa `{SITE}` con il nome dell&#39;archivio
+
+   +++Esempio di file di configurazione aggiornato
+
+   Se l&#39;archivio GitHub è denominato `aco-storefront` e l&#39;organizzazione è `early-adopter`, l&#39;URL aggiornato dovrebbe essere simile al seguente:
+
+   ```json
+   {
+     "project": "Boilerplate",
+     "plugins": [
+       {
+         "id": "cif",
+         "title": "Commerce",
+         "environments": [
+           "edit"
+         ],
+         "url": "https://main--aco-storefront--early-adopter.aem.live/tools/picker/dist/index.html",
+         "isPalette": true,
+         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
+       },
+       {
+         "id": "personalisation",
+         "title": "Personalisation",
+         "environments": [
+           "edit"
+         ],
+         "url": "https://main--aco-storefront--early-adopter.aem.live/tools/segments/dist/index.html",
+         "isPalette": true,
+         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
+       }
+     ]
+   }
+   ```
+
++++
 
 1. Salva il file.
 
@@ -316,11 +332,26 @@ Per utilizzare il codice boilerplate personalizzato della vetrina, sovrascrivi i
    git add .
    ```
 
+1. Verifica di eseguire il commit dei due file aggiornati.
+
+   ```bash
+   git status
+   On branch aco
+   Your branch is up to date with 'origin/aco'.
+   
+   Changes to be committed:
+    (use "git restore --staged <file>..." to unstage)
+        new file:   fstab1.yaml
+        modified:   tools/sidekick/config.json
+   ```
+
+1. Eseguire il commit delle modifiche nel ramo `aco`.
+
    ```bash
    git commit -m "Update storefront boilerplate for Adobe Commerce Optimizer"
    ```
 
-1. Effettua il push delle modifiche nel ramo `aco` e sovrascrivi il ramo `main`:
+1. Sovrascrivere la boilerplate nel ramo `main` con le modifiche nel ramo `aco`.
 
    ```bash
    git push origin aco:main -f
@@ -346,19 +377,21 @@ Connetti l’archivio al servizio Edge Delivery aggiungendo all’archivio l’a
 
 ### Passaggio 6: visualizzare in anteprima e pubblicare i contenuti
 
-Per aggiungere contenuti alla vetrina, devi visualizzare in anteprima e pubblicare i contenuti utilizzando l’estensione Sidekick.
+Per aggiungere contenuti alla vetrina, visualizza in anteprima e pubblica il contenuto della vetrina utilizzando l’estensione Sidekick.
 
-1. Aprire la cartella dei contenuti in Google Drive o Sharepoint.
+1. In Google Drive o Sharepoint, apri la cartella dei contenuti.
 
 1. Attiva Sidekick facendo clic sull’icona Sidekick nella barra degli strumenti del browser.
 
    ![[!DNL Turn on Sidekick from browser toolbar]](./assets/storefront-enable-sidekick-toolbar.png){width="700" zoomable="yes"}
 
+   Se l&#39;icona Sidekick non è visibile, verificare che il file di configurazione di Sidekick `tools/Sidekick/config.json` nel ramo `main` dell&#39;archivio GitHub sia [configurato correttamente](#configure-the-sidekick-extension).
+
 1. Utilizza la barra degli strumenti di Sidekick per visualizzare in anteprima e pubblicare i contenuti.
 
    ![[Selezionare i file da visualizzare in anteprima e pubblicare]](./assets/storefront-content-preview-publish.png){width="700" zoomable="yes"}
 
-1. Seleziona i file in ciascuna cartella separatamente e utilizza la barra degli strumenti di Sidekick per visualizzare in anteprima e pubblicare tutti i file.
+   Seleziona i file in ciascuna cartella separatamente e utilizza la barra degli strumenti di Sidekick per visualizzare in anteprima e pubblicare tutti i file.
 
    * **Anteprima**-Carica il contenuto nell&#39;ambiente di staging. Gli URL di gestione temporanea di Storefront terminano con `.aem.page`.
 
@@ -368,10 +401,10 @@ Per ulteriori informazioni, vedere la documentazione di Adobe Experience Manager
 
 ### Passaggio 7: visualizzare l’anteprima del sito
 
-Visualizza l’anteprima del sito per verificare che sia il contenuto di esempio che i dati demo di Adobe Commerce Optimizer siano visualizzati correttamente.
+Verifica che sia il contenuto di esempio che i dati dell’istanza demo di Adobe Commerce Optimizer siano visualizzati correttamente.
 
 * **Il contenuto di esempio** è fornito dalla cartella dei contenuti condivisi. Include i layout di pagina, i banner e altri contenuti pubblicati con Sidekick.
-* **I dati di esempio** sono forniti dall&#39;istanza demo [!DNL Adobe Commerce Optimizer]. I dati includono i dati di prodotto con attributi di prodotto, immagini, descrizioni dei prodotti e prezzi compilati in base ai valori specificati nel file di configurazione della vetrina, `config.json`.
+* **I dati di esempio** sono forniti dall&#39;istanza demo [!DNL Adobe Commerce Optimizer]. I dati includono i dati di prodotto con attributi di prodotto, immagini, descrizioni dei prodotti e prezzi compilati in base ai valori di intestazione specificati nel file di configurazione della vetrina, `config.json`.
 
 
 #### Connettiti al sito per visualizzare contenuti e dati di esempio
@@ -382,15 +415,15 @@ Visualizza l’anteprima del sito per verificare che sia il contenuto di esempio
 
    ![[!DNL ACO storefront site with boilerplate]](./assets/aco-storefront-site-boilerplate.png){width="700" zoomable="yes"}
 
-   Se la pagina restituisce il codice 404, accertati di aver pubblicato il contenuto utilizzando l’estensione Sidekick. Verificare inoltre che il file `fstab.yaml` aggiornato utilizzi l&#39;URL della cartella dei contenuti.
+   Se la pagina restituisce il codice 404, accertati di aver pubblicato il contenuto utilizzando l’estensione Sidekick. Verificare inoltre che il punto di montaggio nel file `fstab.yaml` aggiornato punti alla cartella dei contenuti creata.
 
-1. Visualizza i dati del catalogo di esempio provenienti dalla tua istanza demo di Commerce Optimizer.
+1. Visualizza i dati del catalogo di esempio provenienti dall’istanza predefinita di Commerce Optimizer.
 
    1. Cercare `tires` per visualizzare un elenco a discesa dei prodotti disponibili per gli pneumatici.
 
    ![[!DNL Discover Adobe Commerce Optimizer products]](./assets/storefront-site-with-aco-data.png){width="700" zoomable="yes"}
 
-   Il componente di ricerca fa parte del codice boilerplate della vetrina. I dati dei risultati della ricerca vengono compilati in base alla configurazione della vetrina.
+   Il componente di ricerca fa parte del codice boilerplate della vetrina. I dati dei risultati della ricerca vengono compilati in base alla configurazione della vetrina in `config.json`.
 
    1. Premi **Invio** per visualizzare la pagina dell&#39;elenco dei prodotti.
 
@@ -398,24 +431,21 @@ Visualizza l’anteprima del sito per verificare che sia il contenuto di esempio
 
    1. Visualizzare la pagina dei dettagli di un prodotto selezionando qualsiasi pneumatico presente nella pagina.
 
-      Se esplori la vetrina, noterai che alcuni componenti non funzionano. Ad esempio, l’aggiunta di un prodotto al carrello restituisce un errore e i componenti per la gestione dell’account non funzionano. Questo perché questi componenti non sono stati configurati per ricevere dati da un back-end Commerce. I dati dell’istanza Adobe Commerce Optimizer vengono inseriti solo nelle pagine dei componenti di ricerca, dell’elenco dei prodotti e dei dettagli dei prodotti.
+      Se esplori la vetrina, noterai che alcuni componenti non funzionano. Ad esempio, l’aggiunta di un prodotto al carrello restituisce un errore e i componenti per la gestione dell’account non funzionano. Questi problemi si verificano perché questi componenti non sono stati configurati per ricevere dati da un back-end Commerce. I dati dell&#39;istanza [!DNL Adobe Commerce Optimizer] vengono inseriti solo nelle pagine dei componenti di ricerca, dell&#39;elenco dei prodotti e dei dettagli dei prodotti.
 
    1. Dopo aver esplorato la vetrina, continua con l&#39;esercitazione.
 
 
 ### Passaggio 8: sviluppare la vetrina nell&#39;ambiente locale
 
-In questa sezione si sperimenta la configurazione della vetrina nell&#39;ambiente di sviluppo locale connettendo la vetrina all&#39;istanza [!DNL Adobe Commerce Optimizer] fornita da Adobe.
+In questa sezione aggiorni la configurazione della vetrina dall’ambiente di sviluppo locale.
 
-Per effettuare la connessione, è necessario l’endpoint GraphQL per Merchandising Services fornito nell’e-mail di onboarding.
-
-```text
-https://na1-sandbox.api.commerce.adobe.com/{tenantId}/graphql
-```
+* Aggiornare la configurazione storefront per connettersi all&#39;endpoint GraphQL per l&#39;istanza [!DNL Adobe Commerce Optimizer] fornita da Adobe.
+* Aggiorna i valori dell’intestazione per recuperare i dati dall’istanza.
 
 #### Avvia sviluppo locale
 
-1. Nell’IDE, seleziona il ramo principale dell’archivio di codice GitHub.
+1. Nell’IDE, controlla il ramo principale dell’archivio di codice GitHub.
 
    ```bash
    git checkout main
@@ -479,14 +509,14 @@ Aggiorna il file di configurazione della vetrina e visualizza in anteprima le mo
 
       ![Risultati di ricerca vuoti con valori di intestazione non validi](./assets/storefront-configuration-with-incorrect-headers.png){width="675" zoomable="yes"}
 
-      La ricerca non restituisce alcun risultato perché le intestazioni nel file di configurazione della vetrina utilizzano valori delle intestazioni basati sull’istanza demo. Ora che la configurazione punta all&#39;istanza [!DNL Adobe Commerce Optimizer] fornita, tali valori non sono validi.
+      La ricerca non restituisce alcun risultato perché i valori di intestazione nel file di configurazione della vetrina sono basati sull’istanza predefinita. Ora che la configurazione punta all&#39;istanza [!DNL Adobe Commerce Optimizer] fornita, tali valori non sono validi.
 
 ### Passaggi successivi
 
-Per informazioni su come visualizzare il contenuto nella vetrina aggiornando la configurazione della vetrina utilizzando i valori dell&#39;istanza di [!DNL Adobe Commerce Optimizer], consulta il [caso d&#39;uso end-to-end dell&#39;amministratore del catalogo e dello store](./use-case/admin-use-case.md).
+Per ulteriori informazioni sulla gestione e la visualizzazione di contenuti e dati nella vetrina, consulta il [caso d&#39;uso end-to-end dell&#39;amministratore di store e catalogo](./use-case/admin-use-case.md).
 
 >[!MORELIKETHIS]
 >
->* Se prevedi di utilizzare [!DNL Adobe Commerce Optimizer] senza un back-end Adobe Commerce, consulta la [documentazione della vetrina Adobe Experience Manager](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it) per ulteriori informazioni sull&#39;aggiornamento del contenuto del sito e sull&#39;integrazione con i componenti front-end e i dati back-end Commerce.
+>* [documentazione di Adobe Experience Manager storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) per ulteriori informazioni sull&#39;aggiornamento del contenuto del sito e sull&#39;integrazione con i componenti front-end e i dati back-end di Commerce.
 ></br></br>
->* Se prevedi di utilizzare [!DNL Adobe Commerce Optimizer] con un backend Adobe Commerce, consulta la [documentazione Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it) per scoprire come aggiornare il contenuto e configurare i componenti storefront per la gestione degli account, l&#39;estrazione e altre funzionalità.
+>* [Documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) per ulteriori informazioni sull&#39;aggiornamento del contenuto del sito e sull&#39;integrazione con i componenti front-end e i dati back-end di Adobe Commerce.
