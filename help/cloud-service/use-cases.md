@@ -199,7 +199,7 @@ Considera uno scenario in cui desideri modificare rapidamente lo sfondo di un’
 
 #### Aggiungere l’immagine a Commerce AEM Assets
 
-1. Dal [pannello di navigazione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) di AEM as a Cloud Service, seleziona **Assets** > **File** > **Commerce** e fai clic sulla risorsa creata nella sezione precedente.
+1. Dal [pannello di navigazione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) di AEM as a Cloud Service, seleziona **Assets** > **File** > **Commerce** e fai clic sulla risorsa creata nella sezione precedente.
 
    ![cartella commerce](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -249,7 +249,7 @@ Le varianti di generazione di Adobe Commerce sfruttano l’intelligenza artifici
 
 ### Genera testo
 
-1. Apri il tuo sito di vetrina utilizzando [Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+1. Apri il tuo sito di vetrina utilizzando [Universal Editor](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 1. Selezionare il blocco di testo da modificare.
 
@@ -263,7 +263,7 @@ Le varianti di generazione di Adobe Commerce sfruttano l’intelligenza artifici
 
 ### Generare contenuti e immagini
 
-1. Apri [Genera varianti](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. Apri [Genera varianti](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. Selezionare il modello [!UICONTROL **Banner principale**].
 
