@@ -274,7 +274,7 @@ Questi valori impostano l&#39;ID canale, le impostazioni internazionali e l&#39;
 
    Per ulteriori informazioni, consulta la [documentazione della libreria Sidekick](https://www.aem.live/docs/sidekick-library).
 
-+++
+   +++
 
 1. Aggiorna i valori chiave `url` con i valori per l&#39;archivio GitHub.
 
@@ -314,7 +314,7 @@ Questi valori impostano l&#39;ID canale, le impostazioni internazionali e l&#39;
    }
    ```
 
-+++
+   +++
 
 1. Salva il file.
 
