@@ -5,11 +5,10 @@ breadcrumb-title: Guida di Cloud Service
 hide: true
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: 140bf38ffc42289772c8347db591edfbd6504ea7
+source-git-commit: 34057c1e55ff117ea7aab4407f31548ce826691b
 workflow-type: tm+mt
-source-wordcount: '44'
-ht-degree: 13%
+source-wordcount: '26'
+ht-degree: 23%
 
 ---
 
@@ -17,6 +16,7 @@ ht-degree: 13%
 # [!DNL Adobe Commerce as a Cloud Service] {#cloud-service}
 
 - [Panoramica](overview.md)
+- [Confronto delle funzioni](feature-comparison.md)
 - [Introduzione](getting-started.md)
 - [Gestione degli utenti](user-management.md)
 - [Vetrina](storefront.md)
