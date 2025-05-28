@@ -4,9 +4,9 @@ description: Informazioni aggiornate sulla versione di  [!DNL Data Export Extens
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 1b3af0084d622d544cad5f144d3cd7bd8191814c
+source-git-commit: c9a87df4aa64081b51fd52d84d97fe3949045e31
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1243'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,11 @@ Gli aggiornamenti includono:
 >L’estensione SaaS per l’esportazione dei dati è una raccolta di moduli che viene installata automaticamente con Live Search, Product Recommendations e Catalog Service. Puoi controllare la versione installata nel sistema utilizzando Composer. In alcuni casi, potrebbe essere utile aggiornare l’estensione di esportazione dei dati sul sistema per rilevare correzioni o nuove funzionalità senza aggiornare la versione del servizio Commerce.
 
 ## Versione principale corrente
+
+## Versione 103.4.5
+
+L&#39;esportazione dei dati SaaS ![New](../assets/new.svg) ora supporta il tipo di prodotto Adobe Commerce `giftcard`. Nel feed di dati, i prodotti Gift card vengono esportati come prodotti semplici con il tipo di attributo di prodotto `ac_giftcard`. <!--MDEE-1042-->
+![Correzione](../assets/fix.svg) È stata migliorata la segnalazione degli errori di esportazione dei dati. I registri ora includono messaggi di errore più dettagliati, inclusi i dettagli tecnici originali per semplificare il debug e la traccia degli errori. <!--MDEE-1064-->
 
 ## Versione 103.4.4
 
