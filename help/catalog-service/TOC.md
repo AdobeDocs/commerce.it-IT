@@ -5,10 +5,10 @@ breadcrumb-title: Guida [!DNL Catalog Service]
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 3d76363c2dcbd65a5b54b2b958e23e495460d26d
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 10%
+source-wordcount: '47'
+ht-degree: 12%
 
 ---
 
@@ -17,13 +17,11 @@ ht-degree: 10%
 - [Panoramica della guida](guide-overview.md)
 - [Introduzione a  [!DNL Catalog Service]](overview.md)
 - [Onboarding e installazione](installation.md)
-- [Catalog Service e Mesh API](mesh.md)
-- [Visualizzare i prezzi tassati con API Mesh](taxes.md)
-- Query GraphQL {#graphql}
-   - [query categorie](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)
-   - [query prodotti](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/)
-   - [query productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
-   - [query refineProduct](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/)
+- [Recuperare i dati del catalogo](graphql-queries.md)
+- Integrazione con altre applicazioni {#integration}
+   - [Catalog Service e Mesh API](mesh.md)
+   - [Caso d’uso: visualizzazione dei prezzi tassati](taxes.md)
 - [Note sulla versione](release-notes.md)
-- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/it/docs/commerce/user-guides/home)
+- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+
 
