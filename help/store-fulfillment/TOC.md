@@ -1,15 +1,14 @@
 ---
 user-guide-title: '[!DNL Store FulFillment Guide]'
 user-guide-description: Informazioni dettagliate sull’installazione, la configurazione e l’utilizzo di Store Fulfillment per i negozi Adobe Commerce.
-breadcrumb-title: Evasione store per Adobe Commerce
 index: true
 feature: Shipping/Delivery
 role: Admin, User
 recommendations: noDisplay
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 8%
+source-wordcount: '79'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +20,7 @@ ht-degree: 8%
 - [Flussi di lavoro di assistenza store](store-assist-modules.md)
 - [Requisiti](solution-requirements.md)
 - [Note sulla versione](release-notes.md)
-- Evasione archivio integrato {#onboarding}
+- Evasione del Negozio onboarding {#onboarding}
    - [Panoramica sull’onboarding](onboard.md)
    - [Installare l’estensione](install.md)
    - [Connetti evasione negozio](connect-set-up-service.md)
@@ -34,7 +33,7 @@ ht-degree: 8%
    - [Gestione delle scorte dei prodotti](product-stock.md)
    - [Trasferimento origine Inventory management](inventory-stock-transfer.md)
    - [Più siti Web/ambito](multi-site-and-scope-config.md)
-- Configurazione di sistema {#system-configuration}
+- Configurazione del sistema {#system-configuration}
    - [Processi in background](background-processes.md)
    - [Impostazione della posizione del negozio e della mappatura](store-location-map-provider-setup.md)
    - [Configurazione esperienza di archiviazione](check-in-experience-setup.md)

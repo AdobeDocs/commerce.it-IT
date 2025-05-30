@@ -1,13 +1,12 @@
 ---
 user-guide-title: Guida [!DNL Live Search]
 user-guide-description: Questa guida fornisce istruzioni dettagliate per l'utilizzo di  [!DNL Live Search]  da Adobe Commerce.
-breadcrumb-title: Guida [!DNL Live Search]
 role: Admin
 feature: Services, Search
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
 workflow-type: tm+mt
-source-wordcount: '76'
-ht-degree: 11%
+source-wordcount: '75'
+ht-degree: 10%
 
 ---
 
@@ -19,7 +18,7 @@ ht-degree: 11%
 - [Limiti e limiti](boundaries-limits.md)
 - [Best practice](best-practice.md)
 - [Note sulla versione](release-notes.md)
-- Storefront {#live-search-storefront}
+- Vetrina {#live-search-storefront}
    - [Widget vetrina](storefront-widgets.md)
    - [Pagina di elenco prodotti](plp-styling.md)
    - [Storefront [!DNL Popover]](storefront-popover.md)
@@ -46,4 +45,4 @@ ht-degree: 11%
    - [GraphQL](graphql.md)
    - [Impostazioni](settings.md)
 - [Eventi](events.md)
-- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=it)
+- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

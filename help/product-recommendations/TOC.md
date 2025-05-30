@@ -1,13 +1,12 @@
 ---
 user-guide-title: Guida [!DNL Product Recommendations]
 user-guide-description: Questa guida fornisce istruzioni dettagliate per l'utilizzo di  [!DNL Product Recommendations]  da Adobe Commerce.
-breadcrumb-title: Guida [!DNL Product Recommendations]
 role: Admin
 feature: Services, Recommendations
-source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
+source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
 workflow-type: tm+mt
-source-wordcount: '58'
-ht-degree: 13%
+source-wordcount: '57'
+ht-degree: 12%
 
 ---
 
@@ -16,7 +15,7 @@ ht-degree: 13%
 - [Panoramica della guida](guide-overview.md)
 - [Introduzione a  [!DNL Product Recommendations]](overview.md)
 - [Note sulla versione](release-notes.md)
-- Introduzione a {#getting-started}
+- Introduzione {#getting-started}
    - [Onboarding](onboarding.md)
    - [Flusso di lavoro di implementazione](implementation-workflow.md)
    - [Headless](headless.md)
@@ -31,10 +30,10 @@ ht-degree: 13%
    - [Tipi di consigli](type.md)
    - [Filtri](filters.md)
    - [Posizionamento ed etichette](placement.md)
-- [!DNL Product Recommendations] Sviluppatore {#developer}
+- Sviluppatore [!DNL Product Recommendations] {#developer}
    - [Panoramica](development-overview.md)
    - [Raccogli dati](events.md)
    - [Verifica](verify.md)
    - [Personalizza](customize.md)
    - [Gestire le restrizioni dei cookie](setting-cookie.md)
-- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=it)
+- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
