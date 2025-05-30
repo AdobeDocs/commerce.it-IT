@@ -21,6 +21,6 @@ ht-degree: 10%
    - [Catalog Service e Mesh API](mesh.md)
    - [Caso d’uso: visualizzazione dei prezzi tassati](taxes.md)
 - [Note sulla versione](release-notes.md)
-- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/it/docs/commerce/user-guides/home)
 
 
