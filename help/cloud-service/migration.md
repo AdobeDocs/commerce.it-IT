@@ -2,7 +2,7 @@
 title: Migra a  [!DNL Adobe Commerce as a Cloud Service]
 description: Scopri come eseguire la migrazione a  [!DNL Adobe Commerce as a Cloud Service].
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 role: Architect
 source-git-commit: 395def94181016b12a00ce675bb15ef6c8f10309
 workflow-type: tm+mt
@@ -70,7 +70,7 @@ La migrazione dall&#39;istanza corrente di Adobe Commerce a una nuova istanza di
 
    * [Architettura di Adobe Commerce on Cloud Services](./overview.md): verifica l&#39;architettura della piattaforma e le differenze rispetto all&#39;istanza Adobe Commerce corrente.
    * [Adobe Commerce Extensibility Framework](https://developer.adobe.com/commerce/extensibility/)—Identifica come desideri effettuare la transizione alle personalizzazioni correnti.
-   * [Commerce Storefront con tecnologia Edge Delivery](https://experienceleague.adobe.com/developer/commerce/storefront/): rivedi la soluzione storefront consigliata.
+   * [Commerce Storefront con tecnologia Edge Delivery](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it): rivedi la soluzione storefront consigliata.
 
 1. Verifica la compatibilità della personalizzazione:
 
@@ -92,7 +92,7 @@ I passaggi seguenti descrivono il processo di sviluppo ed esecuzione della migra
 
 1. Imposta uno dei seguenti storefront basati su GraphQL:
 
-   * [Crea una vetrina Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)
+   * [Crea una vetrina Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=it)
    * [Usa PWA Studio per creare una vetrina personalizzata basata su GraphQL](https://developer.adobe.com/commerce/pwa-studio/)
 
 1. Esegui la migrazione dei dati dall’istanza Commerce precedente ad ACCS:
