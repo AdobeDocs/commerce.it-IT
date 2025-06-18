@@ -85,6 +85,6 @@ Catalog Service assicura aggiornamenti e calcoli accurati dei prezzi grazie al s
 
 ## Implementazione
 
-[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
+[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
 
 Il processo di installazione richiede la configurazione di [Commerce Services Connector](../landing/saas.md). Al termine, il passaggio successivo consiste nell&#39;aggiornamento del codice della vetrina da parte di un integratore di sistemi per incorporare le query [!DNL Catalog Service]. Tutte le query [!DNL Catalog Service] vengono instradate al gateway GraphQL. L’URL viene fornito durante il processo di onboarding.

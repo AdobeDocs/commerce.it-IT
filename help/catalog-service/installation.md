@@ -2,7 +2,7 @@
 title: Onboarding e installazione
 description: Scopri come installare [!DNL Catalog Service]
 exl-id: 3f8492c3-f76d-49b7-a201-35deace36a1d
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 source-git-commit: 54fbf7f65ee5e464a4b61a9df95fef7536f1cedb
 workflow-type: tm+mt
 source-wordcount: '885'
@@ -16,7 +16,7 @@ Installa Catalog Service per richiedere e ricevere i dati di prodotto da un&#39;
 
 >[!NOTE]
 >
->Se la tua istanza di Commerce utilizza Live Search o Product Recommendations, il Servizio catalogo viene installato o aggiornato automaticamente quando effettui l’onboarding o l’aggiornamento di tali servizi. Per informazioni dettagliate, vedere le istruzioni di installazione per [Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/install) e [Product Recommendations](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/getting-started/install-configure).
+>Se la tua istanza di Commerce utilizza Live Search o Product Recommendations, il Servizio catalogo viene installato o aggiornato automaticamente quando effettui l’onboarding o l’aggiornamento di tali servizi. Per informazioni dettagliate, vedere le istruzioni di installazione per [Live Search](https://experienceleague.adobe.com/it/docs/commerce/live-search/install) e [Product Recommendations](https://experienceleague.adobe.com/it/docs/commerce/product-recommendations/getting-started/install-configure).
 
 
 
@@ -42,7 +42,7 @@ Installa Catalog Service per richiedere e ricevere i dati di prodotto da un&#39;
 
 Tutte le istanze di test di Commerce utilizzano l’endpoint Sandbox.
 
-Esegui tutti i test di carico sull’endpoint Sandbox. Prima di iniziare il test di caricamento, invia un [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) in modo che il team dei servizi possa prevedere il traffico server aggiuntivo.
+Esegui tutti i test di carico sull’endpoint Sandbox. Prima di iniziare il test di caricamento, invia un [ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=it#submit-ticket) in modo che il team dei servizi possa prevedere il traffico server aggiuntivo.
 
 ## Installazione e configurazione
 
@@ -58,7 +58,7 @@ Per iniziare a utilizzare [!DNL Catalog Service] per Adobe Commerce, sono necess
 
 **Prerequisito**
 
-- Accedi a [repo.magento.com](https://repo.magento.com) per installare l&#39;estensione. Per generare le chiavi e ottenere i diritti necessari, vedere [Ottenere le chiavi di autenticazione](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Per le installazioni cloud, consulta la [Guida di Commerce sull&#39;infrastruttura cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
+- Accedi a [repo.magento.com](https://repo.magento.com) per installare l&#39;estensione. Per generare le chiavi e ottenere i diritti necessari, vedere [Ottenere le chiavi di autenticazione](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Per le installazioni cloud, consulta la [Guida di Commerce sull&#39;infrastruttura cloud](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
 
 - Accedere alla riga di comando del server applicazioni Adobe Commerce.
 
@@ -76,7 +76,7 @@ Utilizzare questo metodo per installare [!DNL Catalog Service] per un&#39;istanz
 
    >[!NOTE]
    >
-   >Per informazioni sulla gestione locale degli ambienti di progetto Commerce, vedere [Gestione dei rami con CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) nella _Guida utente di Adobe Commerce on Cloud Infrastructure_.
+   >Per informazioni sulla gestione locale degli ambienti di progetto Commerce, vedere [Gestione dei rami con CLI](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/develop/cli-branches) nella _Guida utente di Adobe Commerce on Cloud Infrastructure_.
 
 1. Consulta il ramo dell’ambiente da aggiornare utilizzando Adobe Commerce Cloud CLI.
 
@@ -106,7 +106,7 @@ Utilizzare questo metodo per installare [!DNL Catalog Service] per un&#39;istanz
    git push origin <branch-name>
    ```
 
-   Il push degli aggiornamenti all&#39;ambiente cloud avvia il [processo di distribuzione cloud di Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) per applicare le modifiche. Controllare lo stato della distribuzione dal [registro distribuzione](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   Il push degli aggiornamenti all&#39;ambiente cloud avvia il [processo di distribuzione cloud di Commerce](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/develop/deploy/process) per applicare le modifiche. Controllare lo stato della distribuzione dal [registro distribuzione](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB Locale]
 
@@ -146,11 +146,11 @@ Utilizzare questo metodo per installare [!DNL Catalog Service] per un&#39;istanz
 
 Dopo aver installato [!DNL Catalog Service], completa le seguenti attività per integrare il servizio Catalog con l&#39;istanza Adobe Commerce. Questa integrazione consente la sincronizzazione dei dati e la comunicazione tra l’istanza di Commerce, Catalog Service e altri servizi di supporto. La sincronizzazione dei dati è gestita dall&#39;estensione [SaaS Data Export](../data-export/overview.md).
 
-1. Configurare [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas) specificando le chiavi API e selezionando uno spazio dati SaaS.
+1. Configurare [Commerce Services Connector](https://experienceleague.adobe.com/it/docs/commerce/user-guides/integration-services/saas) specificando le chiavi API e selezionando uno spazio dati SaaS.
 
    La configurazione del Connettore servizi Commerce è un processo una tantum necessario per utilizzare i servizi Adobe Commerce come Catalog Service, Live Search e Product Recommendations. Se hai già configurato il connettore per un altro servizio, salta questo passaggio.
 
-1. Eseguire una sincronizzazione dati iniziale dal [dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
+1. Eseguire una sincronizzazione dati iniziale dal [dashboard di gestione dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-dashboard).
 
    La sincronizzazione iniziale può richiedere da alcuni minuti ad ore, a seconda della dimensione del catalogo. Puoi monitorare lo stato della sincronizzazione dal dashboard Gestione dati. Dopo la sincronizzazione iniziale, il catalogo esporta i dati dei prodotti su base continuativa per mantenere aggiornati i servizi.
 
@@ -160,13 +160,13 @@ Dopo aver installato [!DNL Catalog Service], completa le seguenti attività per 
 
 Per garantire il corretto funzionamento dell’esportazione del catalogo:
 
-- [Verificare che i processi cron siano in esecuzione](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
-- Verificare che gli indicizzatori siano in esecuzione da [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) o utilizzando il comando CLI di Commerce `bin/magento indexer:info`.
+- [Verificare che i processi cron siano in esecuzione](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+- Verificare che gli indicizzatori siano in esecuzione da [Admin](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/index-management) o utilizzando il comando CLI di Commerce `bin/magento indexer:info`.
 - Verificare che gli indici `Catalog Attributes Feed, Product Feed, Product Overrides Feed` e `Product Variant Feed` siano impostati su `Update by Schedule`.
 
 ### Monitoraggio e risoluzione dei problemi di sincronizzazione dei dati
 
-L&#39;amministratore di Commerce può monitorare il processo di sincronizzazione utilizzando [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Utilizza [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) e i registri per gestire il processo e risolverlo.
+L&#39;amministratore di Commerce può monitorare il processo di sincronizzazione utilizzando [Data Management Dashboard](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-dashboard). Utilizza [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) e i registri per gestire il processo e risolverlo.
 
 ### Accedere al servizio
 
@@ -186,4 +186,4 @@ Per informazioni dettagliate sull&#39;installazione e la configurazione, vedere 
 
 ## Dashboard di gestione dati
 
-Per ulteriori informazioni sulla sincronizzazione dei dati di [!DNL Catalog Service], vedere [Dashboard di gestione dei dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
+Per ulteriori informazioni sulla sincronizzazione dei dati di [!DNL Catalog Service], vedere [Dashboard di gestione dei dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-dashboard).

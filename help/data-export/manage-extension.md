@@ -39,4 +39,4 @@ Puoi aggiornare uno qualsiasi dei moduli di esportazione dei dati di e-commerce 
    composer require magento/module-saas-price:103.3.1 --with-all-dependencies
    ```
 
-Se l’istanza Commerce è distribuita nell’infrastruttura cloud, aggiorna l’estensione dalla directory del progetto cloud. Consulta [Aggiornare un&#39;estensione](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) nella _Guida di Adobe Commerce sull&#39;infrastruttura cloud_.
+Se l’istanza Commerce è distribuita nell’infrastruttura cloud, aggiorna l’estensione dalla directory del progetto cloud. Consulta [Aggiornare un&#39;estensione](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) nella _Guida di Adobe Commerce sull&#39;infrastruttura cloud_.
