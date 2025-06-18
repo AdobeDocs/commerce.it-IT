@@ -1,7 +1,8 @@
 ---
 title: GraphQL
 description: L'area di lavoro di  [!DNL Live Search] GraphQL ti consente di creare query con i tuoi dati live.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: d32edf42-1fb0-40f9-89e5-798b39521b77
+source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
 workflow-type: tm+mt
 source-wordcount: '39'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 L&#39;area di lavoro *GraphQL* consente agli amministratori di generare e testare le query GraphQL utilizzando i propri dati.
 
-Questa area di lavoro supporta le query [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) e [`attributeMetadata`](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/).
+Questa area di lavoro supporta le query [`productSearch`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) e [`attributeMetadata`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/).
 
 ![Area di lavoro GraphQL](assets/graphql.png)
 
@@ -23,7 +24,7 @@ query productSearch {
     items {
       product {
         sku
-		name
+        name
       }
     }
     facets {
@@ -44,4 +45,3 @@ Variabili:
   "X-Api-Key": "search_gql"
 }
 ```
-
