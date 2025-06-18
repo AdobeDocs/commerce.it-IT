@@ -4,10 +4,10 @@ user-guide-description: Documentazione e risorse per i servizi in hosting che fo
 role: Admin, Leader, User
 feature: Integration, Personalization, Services, Saas
 recommendations: noDisplay
-source-git-commit: 2b948cd07020b1f53616fe201dcc5781ca2f9bcc
+source-git-commit: 468994935eb35fda7880351e4e313b6fd54dc0a0
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 37%
+source-wordcount: '55'
+ht-degree: 36%
 
 ---
 
@@ -18,20 +18,16 @@ ht-degree: 37%
    - [Note sulla versione](/help/landing/release-notes-all.md)
 - [Soluzioni di prodotto](product-solutions.md)
 - Servizi Commerce {#commerce-services}
-   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html?lang=it)
-   - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html?lang=it)
-   - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html?lang=it)
-   - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html?lang=it)
+   - [[!DNL Commerce as a Cloud Service]](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview)
+   - [[!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview)
+   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html)
+   - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html)
+   - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html)
+   - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html)
 - Servizi di integrazione {#integration-services}
-   - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html?lang=it)
+   - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html)
    - [Connettore servizi](/help/landing/saas.md)
 - Strumenti dati {#data-services}
-   - [Esportazione dati SaaS](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html?lang=it)
-   - [Indicizzazione prezzo SaaS](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html?lang=it)
+   - [Esportazione dati SaaS](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html)
+   - [Indicizzazione prezzo SaaS](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html)
    - [Sincronizzazione catalogo](/help/landing/catalog-sync.md)
-
-
-
-
-
-
