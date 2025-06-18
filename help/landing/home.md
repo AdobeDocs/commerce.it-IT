@@ -133,7 +133,7 @@ Adobe fornisce una raccolta di servizi, servizi di integrazione e strumenti di d
       </a>
       <div>
          <a href="../data-connection/overview.md">
-         <strong>[!DNL Data Connection]</strong> [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Si applica solo ai progetti Adobe Commerce su cloud (infrastruttura PaaS gestita da Adobe) e ai progetti locali."}
+         <strong>[!DNL Data Connection]</strong> [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Si applica solo ai progetti Adobe Commerce su cloud (infrastruttura PaaS gestita da Adobe) e ai progetti locali."}
          </a>
       </div>
       <p>
@@ -146,7 +146,7 @@ Adobe fornisce una raccolta di servizi, servizi di integrazione e strumenti di d
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong>Connettore servizi Commerce</strong> [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Si applica solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti locali."}
+         <strong>Connettore servizi Commerce</strong> [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Si applica solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti locali."}
          </a>
       </div>
       <p>
@@ -187,11 +187,11 @@ Adobe fornisce una raccolta di servizi, servizi di integrazione e strumenti di d
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
       <img alt="Sincronizzazione dei dati del monitor" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
          <strong>Dashboard di gestione dati</strong>
          </a>
       </div>
