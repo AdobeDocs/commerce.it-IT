@@ -3,9 +3,9 @@ title: Opzioni di pagamento
 description: Imposta le opzioni di pagamento per personalizzare i metodi disponibili per i clienti del tuo Negozio.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 0d00ce6e5291b3753cb7e2ee9e8af262b2c8894f
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1209'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,10 @@ Con [!DNL Apple Pay], i commercianti possono fornire un&#39;esperienza di pagame
 ![Pulsante Apple Pay nel minicart](assets/applepay-button.png){width="500" zoomable="yes"}
 
 Quando è abilitato, il pulsante [!DNL Apple Pay] è visibile dalla pagina del prodotto, dal mini-carrello, dal carrello e dalle visualizzazioni per il pagamento. È possibile configurare [!DNL Apple Pay] nella configurazione dell&#39;archivio o nella Home dell&#39;estensione.
+
+>[!NOTE]
+>
+>  Il certificato di verifica del dominio Apple Pay è già incluso nel codice di Payment Services. Verificare che il percorso `/.well-known/apple-developer-merchantid-domain-association` restituisca un codice di risposta 200. Consulta la [documentazione per gli sviluppatori di PayPal sull&#39;integrazione con Apple Pay](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file) per ulteriori informazioni sul certificato **Verifica del dominio Apple Pay**.
 
 Per ulteriori informazioni, vedere [Impostazioni](settings.md#apple-pay).
 
@@ -123,18 +127,18 @@ Per **acquisire pagamenti con _solo_ pulsanti di pagamento PayPal (_non_ l&#39;o
 
 1. Assicurati che l&#39;archivio sia [in modalità di produzione](settings.md#enable-payment-services).
 1. [Configura i pulsanti di pagamento PayPal desiderati](settings.md#payment-buttons) in Impostazioni.
-1. Disattiva _l&#39;opzione **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)**&#x200B;nella sezione&#x200B;_[!UICONTROL Payment buttons]_._
+1. Disattiva _l&#39;opzione **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)**nella sezione_[!UICONTROL Payment buttons]_._
 
 Per **acquisire i pagamenti con il provider di carte di credito esistente _e_ i pulsanti di pagamento PayPal**:
 
 1. Assicurati che l&#39;archivio sia [in modalità di produzione](settings.md#enable-payment-services).
 1. [Configura i pulsanti di pagamento PayPal desiderati](settings.md#payment-buttons).
-1. Disattiva _l&#39;opzione **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)**&#x200B;nella sezione&#x200B;_[!UICONTROL Payment buttons]_._
-1. Disattiva _l&#39;opzione **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)**&#x200B;nella sezione&#x200B;_[!UICONTROL Credit card fields]_ e utilizza l&#39;account [provider di carte di credito esistente](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=it#payments)._
+1. Disattiva _l&#39;opzione **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)**nella sezione_[!UICONTROL Payment buttons]_._
+1. Disattiva _l&#39;opzione **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)**nella sezione_[!UICONTROL Credit card fields]_ e utilizza l&#39;account [provider di carte di credito esistente](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)._
 
 ## Opzioni di pagamento
 
-Con [!DNL Payment Services] puoi configurare l&#39;esperienza di pagamento per Adobe Commerce in base alle preferenze e ai comportamenti degli acquirenti. Caratteristiche quali il vaulting con carta di credito [1&rbrace; e lo svuotamento automatico dell&#39;ordine garantiscono ai clienti una transazione semplice e senza problemi.](vaulting.md)
+Con [!DNL Payment Services] puoi configurare l&#39;esperienza di pagamento per Adobe Commerce in base alle preferenze e ai comportamenti degli acquirenti. Caratteristiche quali il vaulting con carta di credito [1} e lo svuotamento automatico dell&#39;ordine garantiscono ai clienti una transazione semplice e senza problemi.](vaulting.md)
 
 Con Adobe Commerce e Magento Open Source [!DNL Payment Services], sono disponibili più esperienze di pagamento. Esistono comportamenti diversi per ogni metodo di pagamento a seconda della posizione in cui sei nel processo di pagamento:
 
