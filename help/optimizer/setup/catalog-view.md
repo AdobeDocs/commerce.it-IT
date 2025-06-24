@@ -3,7 +3,7 @@ title: Vista catalogo
 description: Scopri come creare e gestire le visualizzazioni catalogo in [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 source-git-commit: 553490762ef10e43ccce1654acec59aeb83bb5f9
 workflow-type: tm+mt
 source-wordcount: '1896'
@@ -47,7 +47,7 @@ Ad alto livello, con i servizi di merchandising è possibile:
 - Sblocca la distribuzione del catalogo e fornisci i contenuti giusti progettando il catalogo dei prodotti in modo che rifletta la tua attività, inclusi prodotti, clienti, prezzi e distribuzione.
 - Acquisisci e aggiorna rapidamente i dati del catalogo e distribuisci rapidamente gli aggiornamenti allo storefront in base alle tue esigenze di promozioni e campagne.
 - Ottieni punteggi perfetti con componenti dell’interfaccia utente pronti all’uso e veloci grazie a Edge Delivery Services, per una navigazione fluida dei prodotti e consigli.
-- Adottare un&#39;architettura componibile moderna utilizzando l&#39;architettura di estensibilità di Adobe ([App Builder](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-development)) per importare i dati dei prodotti e alimentare le vetrine commerciali headless utilizzando la [Mesh API](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-and-api-mesh) di Adobe.
+- Adottare un&#39;architettura componibile moderna utilizzando l&#39;architettura di estensibilità di Adobe ([App Builder](https://experienceleague.adobe.com/it/playlists/commerce-get-started-app-builder-development)) per importare i dati dei prodotti e alimentare le vetrine commerciali headless utilizzando la [Mesh API](https://experienceleague.adobe.com/it/playlists/commerce-get-started-app-builder-and-api-mesh) di Adobe.
 
 >[!INFO]
 >

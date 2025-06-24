@@ -3,7 +3,7 @@ title: Caso di utilizzo end-to-end per Storefront e Catalog Administrator
 description: Scopri come utilizzare [!DNL Adobe Commerce Optimizer] per gestire il catalogo utilizzando le viste e i criteri del catalogo e come impostare la vetrina in base alla configurazione del catalogo.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 source-git-commit: 474426ef1f99eed8d2c1b5d736332aaa666872fa
 workflow-type: tm+mt
 source-wordcount: '2211'
@@ -54,7 +54,7 @@ In questo caso d’uso, utilizzerai quanto segue:
 
 >[!NOTE]
 >
-> Scopri di più sui file di configurazione della vetrina consultando l&#39;argomento [Esplora la versione standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) nella documentazione di Adobe Commerce Storefront.
+> Scopri di più sui file di configurazione della vetrina consultando l&#39;argomento [Esplora la versione standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=it) nella documentazione di Adobe Commerce Storefront.
 
 ### ‌Soluzioni principali
 
@@ -452,6 +452,6 @@ Per continuare a conoscere Adobe Commerce Optimizer:
 - Scopri le [configurazioni avanzate dei criteri](../setup/policies.md)
 - Configura [altre visualizzazioni catalogo](../setup/catalog-view.md) per altri dealer
 - Consulta la [documentazione API](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/) per la gestione programmatica del catalogo
-- Scopri come configurare i componenti di rilascio per la vetrina Edge Delivery Services per creare esperienze vetrina personalizzate per l’individuazione dei prodotti, raccomandazioni e altre funzionalità. Consulta la [documentazione di Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)
+- Scopri come configurare i componenti di rilascio per la vetrina Edge Delivery Services per creare esperienze vetrina personalizzate per l’individuazione dei prodotti, raccomandazioni e altre funzionalità. Consulta la [documentazione di Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=it)
 
 

@@ -3,7 +3,7 @@ title: Introduzione
 description: Scopri come iniziare a utilizzare  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
 workflow-type: tm+mt
 source-wordcount: '753'
@@ -45,7 +45,7 @@ Ciascun ruolo svolge un ruolo fondamentale nell&#39;onboarding e nel lancio dell
 
 Gli amministratori sono responsabili della configurazione delle istanze e della gestione di utenti, gruppi e autorizzazioni per la tua organizzazione.
 
-- **[Accedi a Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html)** - Gestisci i diritti Adobe in tutta l&#39;organizzazione. Consulta [gestione utenti](./user-management.md) per scoprire come l&#39;amministratore di prodotto o l&#39;amministratore di sistema della tua organizzazione può aggiungere utenti al prodotto [!DNL Adobe Commerce Optimizer].
+- **[Accedi a Adobe Admin Console](https://helpx.adobe.com/it/enterprise/admin-guide.html)** - Gestisci i diritti Adobe in tutta l&#39;organizzazione. Consulta [gestione utenti](./user-management.md) per scoprire come l&#39;amministratore di prodotto o l&#39;amministratore di sistema della tua organizzazione può aggiungere utenti al prodotto [!DNL Adobe Commerce Optimizer].
 
 - **Crea un&#39;istanza** - [!DNL Adobe Commerce Optimizer] istanze utilizzano un sistema basato sul credito. Puoi creare più istanze Sandbox e Produzione, ciascuna delle quali richiede un credito corrispondente. La quantità di crediti che hai inizialmente dipende dal tuo abbonamento. [Ulteriori informazioni](#create-an-instance).
 
