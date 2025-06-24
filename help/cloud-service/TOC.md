@@ -4,10 +4,10 @@ user-guide-description: Questa guida fornisce istruzioni dettagliate per l'utili
 hide: true
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: c820fa2995486027a1c048da21dc9db6f9cbb85c
+source-git-commit: 3f3d87585378d334d90c9dc1bdcb67a9cd00eff6
 workflow-type: tm+mt
-source-wordcount: '33'
-ht-degree: 12%
+source-wordcount: '38'
+ht-degree: 13%
 
 ---
 
@@ -22,5 +22,7 @@ ht-degree: 12%
 - [Gestione risorse](assets-management.md)
 - [Casi d’uso](use-cases.md)
 - [Responsabilità condivisa](shared-responsibility.md)
-- [Migrazione](migration.md)
-- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/it/docs/commerce/user-guides/home)
+- Migrazione {#migration}
+   - [Panoramica](migration/overview.md)
+   - [Strumento di migrazione dati in blocco](migration/bulk-data.md)
+- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
