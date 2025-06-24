@@ -44,7 +44,7 @@ Puoi assegnare gli utenti a uno qualsiasi dei seguenti ruoli:
 
 >[!BEGINSHADEBOX &quot;Prerequisiti&quot;]
 >
-Per la gestione degli utenti è necessario il provisioning seguente:
+>Per la gestione degli utenti è necessario il provisioning seguente:
 
 - Organizzazione IMS con provisioning per [!DNL Adobe Commerce Optimizer]
 - Un account Adobe Experience Cloud nella stessa organizzazione IMS con il ruolo di amministratore di sistema o di prodotto
