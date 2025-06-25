@@ -20,7 +20,7 @@ Queste note sulla versione descrivono la versione iniziale di Product Visuals e 
 
 Per le modifiche e le correzioni delle funzionalità rilasciate al di fuori della normale versione di rilascio delle funzionalità, controlla le sezioni _Aggiornamenti dei servizi ospitati_.
 
-Ulteriori informazioni sulle prossime versioni, sul supporto del prodotto e sulle versioni di Adobe Commerce che supportano l&#39;estensione per l&#39;integrazione di AEM Assets. Consulta gli argomenti [Pianificazione delle versioni](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) e [Disponibilità del prodotto](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) di Adobe Commerce.
+Ulteriori informazioni sulle prossime versioni, sul supporto del prodotto e sulle versioni di Adobe Commerce che supportano l&#39;estensione per l&#39;integrazione di AEM Assets. Consulta gli argomenti [Pianificazione delle versioni](https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/schedule) e [Disponibilità del prodotto](https://experienceleague.adobe.com/it/docs/commerce-operations/release/product-availability) di Adobe Commerce.
 
 ## Aggiornamenti dei servizi in hosting
 
@@ -48,7 +48,7 @@ _23 aprile 2025_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versione 2.4.5 e successive.
 
-![Nuovo problema](../assets/new.svg)<!-- Issue ACAP-955 --> Ora è possibile utilizzare un [URL di dominio personalizzato](https://experienceleague.adobe.com/en/docs/commerce/product-visuals/get-started/setup-synchronization#optional-configure-the-custom-domain-url) al posto dell&#39;URL di consegna di AEM. Se un commerciante imposta un **nome di dominio personalizzato** nel dashboard di AEM, è necessario aggiungere questo **URL di dominio personalizzato** in Commerce.
+![Nuovo problema](../assets/new.svg)<!-- Issue ACAP-955 --> Ora è possibile utilizzare un [URL di dominio personalizzato](https://experienceleague.adobe.com/it/docs/commerce/product-visuals/get-started/setup-synchronization#optional-configure-the-custom-domain-url) al posto dell&#39;URL di consegna di AEM. Se un commerciante imposta un **nome di dominio personalizzato** nel dashboard di AEM, è necessario aggiungere questo **URL di dominio personalizzato** in Commerce.
 
 ![È stato risolto il problema](../assets/fix.svg)<!-- Issue ACAP-987 -->. Sono stati migliorati i registri generali per i processi di sincronizzazione AEM Assets.
 
@@ -58,7 +58,7 @@ _12 marzo 2025_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versione 2.4.5 e successive.
 
-![Nuovo problema](../assets/new.svg)<!-- Issue ACAP-xx --> Ora, il [ID client IMS del selettore Assets](https://experienceleague.adobe.com/en/docs/commerce/product-visuals/get-started/setup-synchronization) è richiesto dal selettore Assets per abilitare la mappatura delle immagini AEM Assets con le categorie di prodotto e il contenuto generato da Page Builder.
+![Nuovo problema](../assets/new.svg)<!-- Issue ACAP-xx --> Ora, il [ID client IMS del selettore Assets](https://experienceleague.adobe.com/it/docs/commerce/product-visuals/get-started/setup-synchronization) è richiesto dal selettore Assets per abilitare la mappatura delle immagini AEM Assets con le categorie di prodotto e il contenuto generato da Page Builder.
 
 ## v1.0.20
 
