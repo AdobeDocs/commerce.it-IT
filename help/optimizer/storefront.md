@@ -226,7 +226,7 @@ Per aggiornare il codice boilerplate della vetrina sono necessarie le seguenti i
 
    Per ulteriori informazioni, consulta la [documentazione della libreria Sidekick](https://www.aem.live/docs/sidekick-library).
 
-+++
+   +++
 
 1. Aggiorna i valori chiave `url` con i valori per l&#39;archivio GitHub.
 
@@ -266,7 +266,7 @@ Per aggiornare il codice boilerplate della vetrina sono necessarie le seguenti i
    }
    ```
 
-+++
+   +++
 
 1. Salva il file.
 
