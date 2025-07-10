@@ -68,7 +68,7 @@ L&#39;utente di Adobe Commerce che configura l&#39;integrazione deve avere acces
 
 Guarda questo video per scoprire come Adobe Commerce e AEM Assets collaborano per semplificare i flussi di lavoro dei contenuti:
 
->[!VIDEO](https://video.tv.adobe.com/v/3447837)
+>[!VIDEO](https://video.tv.adobe.com/v/3447893?captions=ita)
 
 ## Passaggi successivi
 
