@@ -20,11 +20,11 @@ Quando l&#39;integrazione **AEM Asset Selector** è configurata, gli addetti al 
 
 * Gestisci le immagini delle categorie in modo semplice, garantendone l’allineamento con le linee guida del marchio e della campagna.
 * [!BADGE Solo PaaS]{type=Informative tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe)."} Assegna risorse direttamente in Page Builder per contenuti visivamente avanzati.
-* [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."} Assegna Assets direttamente in Commerce Storefront con tecnologia Edge Delivery Services per arricchire visivamente i contenuti.
+* [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."} Assegna Assets direttamente in Commerce Storefront con tecnologia Edge Delivery Services per arricchire visivamente i contenuti.
 
 >[!NOTE]
 >
-> AEM Asset Selector è un componente front-end di AEM Assets che consente di integrare AEM Assets con le applicazioni di authoring. Per ulteriori informazioni su questo componente, vedi [Selettore risorse micro-front](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} nella *Guida utente di AEM as a Cloud Service*.
+> AEM Asset Selector è un componente front-end di AEM Assets che consente di integrare AEM Assets con le applicazioni di authoring. Per ulteriori informazioni su questo componente, vedi [Selettore risorse micro-front](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} nella *Guida utente di AEM as a Cloud Service*.
 
 ## Vantaggi principali
 
