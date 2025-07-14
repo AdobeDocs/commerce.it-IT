@@ -1,9 +1,10 @@
 ---
 title: Impostazioni
 description: Configura le impostazioni per il servizio  [!DNL Live Search] .
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 6387a365-7e23-4023-95ac-27908164d81c
+source-git-commit: 70ff444afbe7ddf41e966e479e03975a02f4e10f
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ L&#39;impostazione della lingua indica al servizio [!DNL Live Search] la lingua 
 
 1. In Amministrazione, vai a **Marketing** > *SEO &amp; Search* > **[!DNL Live Search]**.
 1. Nell&#39;area di lavoro **Settings** in *Price faceting*, eseguire le operazioni seguenti:
-   * Immetti il **numero di selezioni** o i raggruppamenti di prezzi da rendere disponibili. È possibile definire fino a 50 raggruppamenti di prezzi.
+   * Immetti il **numero di selezioni** o i raggruppamenti di prezzi da rendere disponibili. Con [!DNL Live Search] 4.4.0 è possibile definire fino a 100 raggruppamenti di prezzi. Le versioni precedenti consentivano 50 raggruppamenti di prezzi.
    * Immettere il valore **Intervallo** o l&#39;intervallo di prezzi per ogni gruppo. Il valore massimo è 40.000.000.
 1. Fai clic su **Salva**.
 
@@ -34,7 +35,7 @@ L&#39;impostazione della lingua indica al servizio [!DNL Live Search] la lingua 
 
 | Campo | Descrizione |
 |--- |--- |
-| Numero di selezioni | Specifica il numero di raggruppamenti di intervalli di prezzi che possono essere utilizzati come filtri di ricerca nella vetrina. Valore predefinito: 8, valore massimo: 50 |
+| Numero di selezioni | Specifica il numero di raggruppamenti di intervalli di prezzi che possono essere utilizzati come filtri di ricerca nella vetrina. Valore predefinito: 8, valore massimo: 100 (al [!DNL Live Search] 4.4.0) |
 | Valore intervallo | Specifica l&#39;intervallo di prezzo per ogni gruppo. Ad esempio, cinque selezioni con un valore di intervallo pari a 20 creano cinque raggruppamenti di 0-20, 20-40, 40-60, 60-80 e >80. Valore predefinito: 5, valore massimo: 40.000.000 |
 
 ## Lingua

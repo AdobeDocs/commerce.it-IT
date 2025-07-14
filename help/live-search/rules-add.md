@@ -2,9 +2,9 @@
 title: Aggiungi regole
 description: Scopri come creare regole di Search Merchandising.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: 449b281e46d16de56f4c3d2e01e7165c59ee78a2
+source-git-commit: 00c6d728b1bc425c873bdf46293085b8da242782
 workflow-type: tm+mt
-source-wordcount: '1650'
+source-wordcount: '1710'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Per creare una regola, il primo passaggio consiste nell’utilizzare l’editor 
 ## Aggiungi una regola
 
 1. In Amministrazione, vai a **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
-1. Imposta **Ambito** per identificare la [visualizzazione archivio](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=it#scope-settings) in cui si applica la regola.
+1. Imposta **Ambito** per identificare la [visualizzazione archivio](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) in cui si applica la regola.
 1. Fare clic sull&#39;area di lavoro **Ricerca merchandising**.
 1. Fai clic su **Aggiungi regola** per avviare l&#39;editor di regole.
 
@@ -101,6 +101,10 @@ Selezionare il tipo di strategia per la regola. Nella finestra **Verifica regola
    1. Nella pagina **Informazioni attributo** > **Proprietà storefront**, impostare lo spessore della ricerca su minore o uguale a `5`.
 
       ![Prodotto - Peso ricerca](assets/set-search-weight.png)
+
+>[!NOTE]
+>
+>L’esperienza di ricerca della vetrina è interessata da più configurazioni che lavorano insieme, come facet, sinonimi e regole di merchandising di ricerca/categoria, che possono portare a risultati diversi da quelli visualizzati durante il test di singole configurazioni nell’amministratore. Mentre i test di amministrazione isolano aree di configurazione specifiche, la vetrina applica tutte le configurazioni rilevanti insieme, dando luogo a un output di ricerca più complesso e realistico.
 
 ## Classificazione manuale
 
