@@ -3,10 +3,10 @@ title: Guida introduttiva a  [!DNL Adobe Commerce as a Cloud Service]
 description: Scopri come iniziare a utilizzare  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: c608d9e82a892e40d362065c229b8d451ed3dbfb
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+source-git-commit: 81dd617b0a6460b8dcb01c0a21b696663b0ae493
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Fai clic sulle schede seguenti per visualizzare le panoramiche dei flussi di lav
 
 >[!TAB Flusso di lavoro amministratore e esercente]
 
-Questo diagramma fornisce una panoramica generale del modo in cui amministratori e commercianti accedono e gestiscono le istanze di [!DNL Adobe Commerce as a Cloud Service]. Per ulteriori informazioni sui flussi di lavoro dell&#39;amministratore, vedere la [Guida di Adobe Admin Console](https://helpx.adobe.com/it/enterprise/admin-guide.html).
+Questo diagramma fornisce una panoramica generale del modo in cui amministratori e commercianti accedono e gestiscono le istanze di [!DNL Adobe Commerce as a Cloud Service]. Per ulteriori informazioni sui flussi di lavoro dell&#39;amministratore, vedere la [Guida di Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html).
 
 ![[!DNL Adobe Commerce as a Cloud Service] diagramma flusso esercente](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -72,11 +72,8 @@ Questo diagramma fornisce una panoramica di alto livello sulla creazione di inte
 
    >[!NOTE]
    >
-   >Le istanze sandbox sono attualmente limitate all’area Nord America.
-
-1. _(Facoltativo)_ Se desideri includere dati di prodotto di esempio a scopo di test e apprendimento, seleziona [!UICONTROL **Adobe Store**] dal menu a discesa [!UICONTROL **Dati di test**].
-
-   Puoi saltare questa opzione, ma se lo fai nella vetrina non ci saranno prodotti. Dovrai [importare il catalogo](#import-your-catalog) per visualizzare l&#39;esperienza completa della vetrina.
+   >* Le istanze sandbox sono attualmente limitate all’area Nord America.
+   >* L’opzione per installare i dati di esempio non è attualmente disponibile.
 
 1. Fai clic su [!UICONTROL **Aggiungi istanza**].
 
@@ -102,7 +99,7 @@ Per impostazione predefinita, [!DNL Adobe Commerce as a Cloud Service] istanze n
 
 Esistono due modi per importare il catalogo in [!DNL Adobe Commerce as a Cloud Service]:
 
-* [**Amministratore Commerce**](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/import/data-import) - Interfaccia intuitiva che consente di importare i dati del catalogo con pochi clic.
+* [**Amministratore Commerce**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - Interfaccia intuitiva che consente di importare i dati del catalogo con pochi clic.
 * [**Importa API JSON**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - API REST che consente di importare i dati del catalogo a livello di programmazione.
 
 <!-- TODO
