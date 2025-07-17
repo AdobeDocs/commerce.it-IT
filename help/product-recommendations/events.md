@@ -3,9 +3,9 @@ title: Raccogli dati
 description: Scopri come gli eventi raccolgono i dati per  [!DNL Product Recommendations].
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: 94d2a9911ab10d164d75779d1f310e5bdf2aea74
+source-git-commit: fe96b2922583c0fcb0fcadbdacead6267806f44b
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1343'
 ht-degree: 0%
 
 ---
@@ -88,9 +88,11 @@ L&#39;[Agente di raccolta eventi Adobe Commerce Storefront](https://developer.ad
 | `rec-click` | L’acquirente fa clic su un prodotto nell’unità di consigli. |
 | `view` | Inviata quando l’unità di consigli diventa visualizzabile per almeno il 50%, ad esempio scorrendo la pagina verso il basso. Ad esempio, se un&#39;unità di consigli ha due righe, viene inviato un evento `view` quando una riga più un pixel della seconda diventa visibile all&#39;acquirente. Se l&#39;acquirente scorre la pagina verso l&#39;alto o verso il basso più volte, l&#39;evento `view` viene inviato tante volte quante volte vede l&#39;intera unità di consigli sulla pagina. |
 
->[!NOTE]
->
->Le metriche di consigli del prodotto sono ottimizzate per le vetrine di Luma. Se la vetrina è implementata con PWA Studio, consulta la [documentazione di PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Se utilizzi una tecnologia front-end personalizzata come React o Vue JS, scopri come integrare [Consigli di prodotto in un ambiente headless](headless.md).
+Anche se le metriche di Product Recommendation sono ottimizzate per le vetrine Luma, funzionano anche con altre implementazioni storefront:
+
+- [Edge Delivery Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/)
+- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
+- [Fronte personalizzato (React, Vue JS)](headless.md)
 
 #### Eventi dashboard richiesti
 
@@ -138,4 +140,4 @@ Questa tabella descrive gli eventi utilizzati da ogni tipo di consiglio.
 
 >[!NOTE]
 >
->Se è abilitata la modalità di restrizione dei cookie [&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=it), Adobe Commerce non raccoglie i dati comportamentali fino a quando l&#39;acquirente non acconsente all&#39;utilizzo dei cookie. Se la modalità di restrizione dei cookie è disabilitata, Adobe Commerce raccoglie i dati comportamentali per impostazione predefinita.
+>Se è abilitata la modalità di restrizione dei cookie [](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html), Adobe Commerce non raccoglie i dati comportamentali fino a quando l&#39;acquirente non acconsente all&#39;utilizzo dei cookie. Se la modalità di restrizione dei cookie è disabilitata, Adobe Commerce raccoglie i dati comportamentali per impostazione predefinita.

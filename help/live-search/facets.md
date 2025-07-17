@@ -2,16 +2,16 @@
 title: Facet
 description: '[!DNL Live Search] facet utilizzano più dimensioni di valori di attributo come criteri di ricerca.'
 exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
-source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
+source-git-commit: 58252ffc7417f30b835ec1baf21a709191afd033
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
 
 # Facet
 
-Faceting è un metodo di filtro ad alte prestazioni che utilizza più dimensioni di valori di attributo come criteri di ricerca. La ricerca con facet è simile, ma considerevolmente &quot;più intelligente&quot; rispetto alla [navigazione a più livelli](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=it) standard. L&#39;elenco dei filtri disponibili è determinato dai [attributi filtrabili](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=it#filterable-attributes) dei prodotti restituiti nei risultati della ricerca.
+Faceting è un metodo di filtro ad alte prestazioni che utilizza più dimensioni di valori di attributo come criteri di ricerca. La ricerca con facet è simile, ma considerevolmente &quot;più intelligente&quot; rispetto alla [navigazione a più livelli](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html) standard. L&#39;elenco dei filtri disponibili è determinato dai [attributi filtrabili](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) dei prodotti restituiti nei risultati della ricerca.
 
 [!DNL Live Search] utilizza la query `productSearch`, che restituisce faceting e altri dati specifici di [!DNL Live Search]. Per esempi di codice, fare riferimento a [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) nella documentazione per gli sviluppatori.
 
@@ -25,23 +25,20 @@ Qualsiasi facet definito può essere utilizzato come parametro URL e i risultati
 
 I requisiti degli attributi di categoria e prodotto per il faceting sono simili agli attributi filtrabili utilizzati per la navigazione su più livelli. Per ogni proprietà della vetrina di un attributo, il valore &quot;Use in Search Results Layered Navigation&quot; (Usa nei risultati di ricerca a livello di navigazione) deve essere impostato su &quot;Yes&quot; (Sì).
 
-[!DNL Live Search] supporta fino a:
-
-* 100 attributi configurati come facet
-* 50 attributi ordinabili
-* 200 attributi filtrabili
-* 200 attributi ricercabili
-
 >[!NOTE]
 >
-> Se sono definiti più di 200 attributi filtrabili, non è deterministico quali 200 saranno effettivamente indicizzati.
+>Se definite una categoria di prodotto come sfaccettatura, il facet visualizza la categoria e la sottocategoria.
+>
+>![Facet categoria](assets/facet-category.png)
+
+Per ulteriori informazioni sui requisiti del facet in [, consulta ](./boundaries-limits.md#facets)limiti e limitazioni[!DNL Live Search].
 
 Se hai a che fare con un numero elevato di attributi, puoi combinarli in un singolo &quot;meta-attribute&quot;. Ad esempio, le scarpe hanno generalmente dimensioni numeriche, mentre le magliette hanno generalmente le dimensioni &quot;S/M/L/XL&quot;. Questi due tipi di dimensioni possono essere combinati in un unico attributo ricercabile.
 
 | Impostazione | Descrizione |
 |--- |--- |
-| [Impostazioni visualizzazione categoria](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html?lang=it) | Ancoraggio - `Yes` |
-| [Proprietà attributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=it) | [Tipo di input catalogo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html?lang=it) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (solo widget), `Text swatch` (solo widget) |
+| [Impostazioni visualizzazione categoria](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Ancoraggio - `Yes` |
+| [Proprietà attributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Tipo di input catalogo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (solo widget), `Text swatch` (solo widget) |
 | Proprietà vetrina attributo | Utilizzo in navigazione a livelli dei risultati di ricerca - `Yes` |
 
 ## Aggregazione facet
@@ -54,7 +51,7 @@ L&#39;aggregazione sfaccettatura viene eseguita come segue: se la vetrina ha tre
 
 ## Valori attributi predefiniti
 
-I seguenti attributi di prodotto hanno [proprietà storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=it) utilizzate da [!DNL Live Search] e abilitate per impostazione predefinita.
+I seguenti attributi di prodotto hanno [proprietà storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) utilizzate da [!DNL Live Search] e abilitate per impostazione predefinita.
 
 | Proprietà | Storefront, proprietà | Attributo |
 |---|---|---|
