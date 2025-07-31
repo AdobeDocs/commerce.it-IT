@@ -261,7 +261,7 @@ L&#39;ultima parte di questo tutorial prevede l&#39;aggiornamento della vetrina 
 
 1. Nella directory principale della cartella, aprire il file `config.json`.
 
-   Codice +++config.json
+   +++Codice config.json
 
    ```json
    {
