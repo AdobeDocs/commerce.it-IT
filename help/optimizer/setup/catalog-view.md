@@ -3,11 +3,11 @@ title: Vista catalogo
 description: Scopri cosa sono le visualizzazioni catalogo e come crearle per organizzare il catalogo dei prodotti in base alla struttura aziendale, alle politiche e ai prezzi.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: f67a5327b742338655b0f7ffa4076a174219f711
+source-git-commit: 2e47c770d204c9c7f959893704dd0ebcc6ac792a
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Prima di creare una vista catalogo, assicurati di disporre di:
 
 - [Criteri creati](policies.md) per definire i filtri dei prodotti
 
-- [Imposta i listini prezzi](pricebooks.md) per i prezzi
+- [Listini prezzi acquisiti](pricebooks.md) per i prezzi
 
 1. Dal menu a sinistra, vai a _Configurazione archivio_ e fai clic su **[!UICONTROL Catalog views]**.
 
@@ -49,14 +49,16 @@ Prima di creare una vista catalogo, assicurati di disporre di:
 1. Configura i dettagli di visualizzazione del catalogo:
 
    - **Nome** - Immettere il nome della visualizzazione del catalogo, ad esempio `Celport`. &#x200B;
-   - **Origini del catalogo** - Aggiungere l&#39;origine del catalogo (impostazioni locali), ad esempio `en-US`. Premere **Invio**.
+   - **Origini catalogo** - Selezionare l&#39;origine del catalogo (impostazioni locali), ad esempio `en-US`.
    - **Criteri**: utilizzare il menu a discesa per selezionare i criteri rilevanti. Ad esempio, &quot;Marchio&quot;, &quot;Modello&quot;. &#x200B;Assicurarsi di avere già [creato un criterio](policies.md).
 
 1. Selezionare il listino prezzi dedicato da collegare alla vista catalogo.
 
-1. Fare clic su **[!UICONTROL Add]** per creare la visualizzazione catalogo con il listino prezzi dedicato e i criteri collegati.
+   - **Utilizza tutti i listini prezzi disponibili** - Questa opzione consente di estrarre i dati relativi ai prezzi da tutti i listini prezzi disponibili.
+   - **Consenti solo listini prezzi selezionati** - Questa opzione visualizza la finestra di dialogo **Aggiungi listini prezzi consentiti** in cui è possibile selezionare il listino prezzi dedicato specifico da utilizzare per la visualizzazione catalogo.
+   - **Disattiva prezzi**-Questa opzione non è al momento disponibile.
 
-   Se il pulsante **[!UICONTROL Add]** non è attivo, assicurati che l&#39;origine del catalogo sia aggiunta correttamente posizionando il cursore nel campo Origini del catalogo e premendo **Invio**. &#x200B;
+1. Fare clic su **[!UICONTROL Add]** per creare la visualizzazione catalogo con i listini prezzi e i criteri collegati.
 
 La pagina Visualizzazioni catalogo viene aggiornata per visualizzare la nuova visualizzazione del catalogo.&#x200B;
 
@@ -71,7 +73,7 @@ Architettura ![[!DNL Merchandising Services]](../assets/merchandising-svcs-archi
 ### Come funziona
 
 **1. Acquisizione dei dati**
-I dati del catalogo da PIM, ERP e altri sistemi vengono acquisiti nel framework dei servizi di merchandising. Ogni SKU contiene informazioni sulle impostazioni internazionali e attributi di prodotto associati a viste catalogo, criteri e impostazioni internazionali. Per ulteriori informazioni sull&#39;acquisizione dei dati, consulta la [documentazione per gli sviluppatori](https://developer-stage.adobe.com/commerce/services/composable-catalog).
+I dati del catalogo da PIM, ERP e altri sistemi vengono acquisiti nel framework dei servizi di merchandising. Ogni SKU contiene informazioni sulle impostazioni internazionali e attributi di prodotto associati a viste catalogo, criteri e impostazioni internazionali. Per ulteriori informazioni sull&#39;acquisizione dei dati, consulta la [documentazione per gli sviluppatori](https://developer.adobe.com/commerce/services/optimizer/).
 
 **2. Catalogo base unificato**
 I dati acquisiti creano un catalogo di base unificato nella pipeline di dati di Catalog Service. Questa fonte singola elimina la duplicazione dei dati tra le unità aziendali.
@@ -80,7 +82,7 @@ I dati acquisiti creano un catalogo di base unificato nella pipeline di dati di 
 Più visualizzazioni catalogo rappresentano diverse unità aziendali (ad esempio, &quot;Texas Retail&quot;, &quot;Texas Retail Seasonal&quot;). Le impostazioni internazionali, le policy e i listini prezzi possono essere condivisi tra le diverse viste di catalogo per garantire flessibilità.
 
 **4. Consegna multicanale**
-I dati del catalogo filtrati vengono consegnati a varie destinazioni, tra cui vetrine Edge Delivery Services, marketplace, piattaforme pubblicitarie e micro-vetrine personalizzate. Per ulteriori informazioni sulla distribuzione dei dati del catalogo, consulta la [documentazione per gli sviluppatori](https://developer-stage.adobe.com/commerce/services/composable-catalog).
+I dati del catalogo filtrati vengono consegnati a varie destinazioni, tra cui vetrine Edge Delivery Services, marketplace, piattaforme pubblicitarie e micro-vetrine personalizzate. Per ulteriori informazioni sulla distribuzione dei dati del catalogo, consulta la [documentazione per gli sviluppatori](https://developer.adobe.com/commerce/services/optimizer/).
 
 ### Componenti chiave
 
@@ -126,4 +128,4 @@ I dati del catalogo filtrati vengono consegnati a varie destinazioni, tra cui ve
 
 >[!INFO]
 >
->Per informazioni dettagliate sull&#39;acquisizione e la consegna dei dati del catalogo, consulta la [documentazione per gli sviluppatori](https://developer-stage.adobe.com/commerce/services/composable-catalog).
+>Per informazioni dettagliate sull&#39;acquisizione e la consegna dei dati del catalogo, consulta la [documentazione per gli sviluppatori](https://developer.adobe.com/commerce/services/optimizer/).

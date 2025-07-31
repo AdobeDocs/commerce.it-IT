@@ -3,10 +3,11 @@ title: Caso di utilizzo end-to-end per Storefront e Catalog Administrator
 description: Scopri come utilizzare [!DNL Adobe Commerce Optimizer] per gestire il catalogo utilizzando le viste e i criteri del catalogo e come impostare la vetrina in base alla configurazione del catalogo.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: 474426ef1f99eed8d2c1b5d736332aaa666872fa
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
+source-git-commit: 5c745a8b6b3c289cb52ad7756ec521b0df96c053
 workflow-type: tm+mt
-source-wordcount: '2211'
+source-wordcount: '2158'
 ht-degree: 0%
 
 ---
@@ -32,7 +33,7 @@ Prima di iniziare questa esercitazione, accertati di disporre dei seguenti prere
 - **Autorizzazioni utente**
    - Accesso amministratore a Adobe Admin Console
    - Consulta [Gestione utente](../user-management.md) per la configurazione dell&#39;account
-   - Se non disponi dell&#39;accesso, contatta il rappresentante del tuo account Adobe o completa il [modulo del programma di accesso anticipato](https://experienceleague.adobe.com/go/aco-early-access-program)
+   - Se non disponi dell’accesso, contatta il rappresentante del tuo account Adobe.
 
 - **Dati di esempio**
    - Carvelo Automobile: dati del catalogo caricati nell’istanza
@@ -46,7 +47,7 @@ Prima di iniziare questa esercitazione, accertati di disporre dei seguenti prere
 
 ## Iniziamo
 
-In questo caso d’uso, utilizzerai quanto segue:
+In questo caso d’uso, stai lavorando con quanto segue:
 
 1. Interfaccia utente [!DNL Adobe Commerce Optimizer]: configura le visualizzazioni e i criteri del catalogo per gestire la configurazione operativa complessa del catalogo per il caso d&#39;uso Carvelo.
 
@@ -54,7 +55,7 @@ In questo caso d’uso, utilizzerai quanto segue:
 
 >[!NOTE]
 >
-> Scopri di più sui file di configurazione della vetrina consultando l&#39;argomento [Esplora la versione standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=it) nella documentazione di Adobe Commerce Storefront.
+> Scopri di più sui file di configurazione della vetrina consultando l&#39;argomento [Esplora la versione standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) nella documentazione di Adobe Commerce Storefront.
 
 ### ‌Soluzioni principali
 
@@ -127,7 +128,7 @@ Nel menu di navigazione a sinistra, espandi la sezione _Store setup_ e fai clic 
 >
 >Per il momento puoi ignorare la visualizzazione del catalogo **Global**.
 
-Fai clic sull’icona Info per esaminare i dettagli della visualizzazione del catalogo.
+Fai clic sull’icona info per esaminare i dettagli della vista catalogo.
 
 Arkbridge dispone dei seguenti criteri:
 
@@ -156,7 +157,7 @@ Utilizzando [!DNL Adobe Commerce Optimizer], il responsabile Commerce:
 1. Creare un nuovo criterio denominato *Categorie di parti Celport* per consentire a Celport di vendere solo parti di freni e sospensioni.
 1. Crea una nuova vista catalogo per la vetrina Celport.
 
-   Questa visualizzazione catalogo utilizza i criteri appena creati *Categorie di parti Celport* e i *marchi East Coast Inc* esistenti per garantire che Celport possa vendere solo i marchi Bolt e Cruz come parte dell&#39;accordo con East Coast Inc. La visualizzazione catalogo Celport utilizzerà il listino prezzi `east_coast_inc` per supportare i programmi di prezzo dei prodotti in linea con gli accordi di licenza dei marchi.
+   Questa visualizzazione catalogo utilizza i criteri appena creati *Categorie di parti Celport* e i *Marchi East Coast Inc* esistenti per garantire che Celport possa vendere solo i marchi Bolt e Cruz come parte dell&#39;accordo con East Coast Inc. La visualizzazione catalogo Celport utilizza il listino prezzi `east_coast_inc` per supportare i programmi di prezzo dei prodotti in linea con gli accordi di licenza dei marchi.
 1. Aggiorna la configurazione della vetrina commerce per utilizzare i dati della vista del catalogo Celport creata.
 
 Al termine di questa sezione, Celport sarà pronto a vendere i prodotti Carvelo.
@@ -228,17 +229,13 @@ Crea una nuova visualizzazione catalogo per il dealer *Celport* e collega i segu
 1. Inserisci i dettagli della vista catalogo:
 
    - **Nome** = *Celport*
-   - **Origini catalogo** = *en-US* (premere Invio)
+   - **Origini catalogo** = *en-US*
    - **Criteri** (usa elenco a discesa) = *Marchi East Coast Inc*; *Categorie parte Celport*; *Marchio*; *Modello*                          
 1. Fare clic su **[!UICONTROL Add]** per creare la visualizzazione del catalogo.
 
    La pagina Visualizzazioni catalogo viene aggiornata per visualizzare la nuova visualizzazione catalogo.
 
    ![Elenco visualizzazioni catalogo aggiornato](../assets/updated-catalog-view-list.png)
-
-   >[!NOTE]
-   >
-   >Se il pulsante **[!UICONTROL Add]** non è blu, assicurati che l&#39;origine del catalogo sia selezionata posizionando il cursore nella sezione **[!UICONTROL Catalog sources]** e premendo **Invio**.
 
 1. Ottieni l’ID della vista catalogo Celport.
 
@@ -264,7 +261,7 @@ L&#39;ultima parte di questo tutorial prevede l&#39;aggiornamento della vetrina 
 
 1. Nella directory principale della cartella, aprire il file `config.json`.
 
-   +++Codice config.json
+   Codice +++config.json
 
    ```json
    {
@@ -371,7 +368,7 @@ Ora che hai aggiornato la configurazione della vetrina per utilizzare la vista C
 
    ![Pagina elenco prodotti per freni](../assets/brakes-listing-page.png)
 
-   Fare clic su un&#39;immagine di parte del freno per visualizzare i dettagli del prodotto con le informazioni sul prezzo e prendere nota delle informazioni sul prezzo del prodotto.
+   Fare clic sull&#39;immagine di una parte del freno per visualizzare i dettagli del prodotto con le informazioni sul prezzo e annotare le informazioni sul prezzo del prodotto.
 
 1. Cerca `tires`, che è un&#39;altra categoria di parte disponibile nei dati del caso d&#39;uso nell&#39;istanza [!DNL Adobe Commerce Optimizer].
 
@@ -389,7 +386,7 @@ Ora che hai aggiornato la configurazione della vetrina per utilizzare la vista C
 
       Quando si salva il file, l&#39;anteprima della vetrina locale viene aggiornata automaticamente.
 
-   1. Visualizzate l&#39;anteprima delle modifiche nel browser utilizzando la feature di ricerca per trovare le parti di pneumatico.
+   1. Visualizzate l&#39;anteprima delle modifiche nel browser utilizzando la funzione di ricerca per trovare le parti dei pneumatici.
 
       Osservare i diversi tipi di parti disponibili e i prezzi assegnati alla vista del catalogo Kingsbluff.
 
@@ -415,10 +412,6 @@ Se riscontri problemi durante questa esercitazione, prova le seguenti soluzioni:
 
 - **Soluzione:** Verificare che tutti i criteri associati siano abilitati e configurati correttamente
 
-**Problema:** il pulsante Aggiungi non è blu
-
-- **Soluzione:** Assicurarsi che l&#39;origine del catalogo sia selezionata posizionando il cursore nel campo e premendo Invio
-
 ### Problemi di configurazione della vetrina
 
 **Problema:** Storefront non caricato
@@ -427,7 +420,7 @@ Se riscontri problemi durante questa esercitazione, prova le seguenti soluzioni:
 
 **Problema:** nessun prodotto visualizzato
 
-- **Soluzione:** Verificare che l&#39;ID del listino prezzi corrisponda a quello disponibile nell&#39;istanza di Adobe Commerce Optimizer
+- **Soluzione:** Verificare che l&#39;ID del listino prezzi dedicato corrisponda a quello disponibile nell&#39;istanza di Adobe Commerce Optimizer
 
 **Problema:** La ricerca non restituisce alcun risultato
 
@@ -451,7 +444,5 @@ Per continuare a conoscere Adobe Commerce Optimizer:
 - Esplora le [funzionalità di merchandising](../merchandising/overview.md) per personalizzare l&#39;esperienza di acquisto
 - Scopri le [configurazioni avanzate dei criteri](../setup/policies.md)
 - Configura [altre visualizzazioni catalogo](../setup/catalog-view.md) per altri dealer
-- Consulta la [documentazione API](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/) per la gestione programmatica del catalogo
-- Scopri come configurare i componenti di rilascio per la vetrina Edge Delivery Services per creare esperienze vetrina personalizzate per l’individuazione dei prodotti, raccomandazioni e altre funzionalità. Consulta la [documentazione di Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=it)
-
-
+- Consulta la [documentazione API](https://developer.adobe.com/commerce/services/optimizer/) per la gestione programmatica del catalogo
+- Scopri come configurare i componenti di rilascio per la vetrina Edge Delivery Services per creare esperienze vetrina personalizzate per l’individuazione dei prodotti, raccomandazioni e altre funzionalità. Consulta la [documentazione di Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)
