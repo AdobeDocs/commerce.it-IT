@@ -3,9 +3,9 @@ title: Caso di utilizzo end-to-end per Storefront e Catalog Administrator
 description: Scopri come utilizzare [!DNL Adobe Commerce Optimizer] per gestire il catalogo utilizzando le viste e i criteri del catalogo e come impostare la vetrina in base alla configurazione del catalogo.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: 5c745a8b6b3c289cb52ad7756ec521b0df96c053
+source-git-commit: 1ab7ee5673f261b43db25caf0ad340a0fd9e3341
 workflow-type: tm+mt
 source-wordcount: '2158'
 ht-degree: 0%
@@ -55,7 +55,7 @@ In questo caso d’uso, stai lavorando con quanto segue:
 
 >[!NOTE]
 >
-> Scopri di più sui file di configurazione della vetrina consultando l&#39;argomento [Esplora la versione standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=it) nella documentazione di Adobe Commerce Storefront.
+> Scopri di più sui file di configurazione della vetrina consultando l&#39;argomento [Esplora la versione standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) nella documentazione di Adobe Commerce Storefront.
 
 ### ‌Soluzioni principali
 
@@ -261,7 +261,7 @@ L&#39;ultima parte di questo tutorial prevede l&#39;aggiornamento della vetrina 
 
 1. Nella directory principale della cartella, aprire il file `config.json`.
 
-   +++Codice config.json
+   Codice +++config.json
 
    ```json
    {
@@ -271,7 +271,7 @@ L&#39;ultima parte di questo tutorial prevede l&#39;aggiornamento della vetrina 
       "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql",
       "headers": {
          "cs": {
-            "ac-catalog-view-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
+            "ac-view-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
             "ac-price-book-id": "west_coast_inc",
             "ac-source-locale": "en-US"
            }
@@ -295,7 +295,7 @@ L&#39;ultima parte di questo tutorial prevede l&#39;aggiornamento della vetrina 
    L’intestazione della vista catalogo include i seguenti valori:
 
    - `commerce-endpoint`: `"https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql"`
-   - `ac-catalog-view-id`:`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
+   - `ac-view-id`:`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
    - `ac-price-book-id`: `"west_coast_inc"`
    - `ac-source-locale`: `"en-US"`
 
@@ -307,7 +307,7 @@ L&#39;ultima parte di questo tutorial prevede l&#39;aggiornamento della vetrina 
    https://experience.adobe.com/#/@commerceprojectbeacon/in:XDevkG9W6UbwgQmPn995r3/commerce-optimizer-studio/catalog
    ```
 
-1. Sostituisci il valore `ac-catalog-view-id` con l&#39;ID della vista catalogo Celport copiato in precedenza.
+1. Sostituisci il valore `ac-view-id` con l&#39;ID della vista catalogo Celport copiato in precedenza.
 
 1. Sostituire il valore `ac-price-book-id` con `"east_coast_inc"`.
 
@@ -321,7 +321,7 @@ L&#39;ultima parte di questo tutorial prevede l&#39;aggiornamento della vetrina 
         "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/{{ACO-tenant-id}}/graphql",
         "headers": {
             "cs": {
-                "ac-catalog-view-id": "{{celport-catalog-view-id}}",
+                "ac-view-id": "{{celport-catalog-view-id}}",
                 "ac-price-book-id": "east_coast_inc",
                 "ac-source-locale": "en-US"
               }
@@ -378,7 +378,7 @@ Ora che hai aggiornato la configurazione della vetrina per utilizzare la vista C
 
 1. Prova ad aggiornare il file di configurazione della vetrina (`config.json`).
 
-   1. Modificare i valori `ac-catalog-view-id` e `ac-price-book`.
+   1. Modificare i valori `ac-view-id` e `ac-price-book`.
 
    Ad esempio, è possibile modificare l&#39;ID della vista catalogo in vista catalogo Kingsbluff e l&#39;ID del listino prezzi in `east_coast_inc`. È possibile visualizzare le categorie di parti disponibili per Kingsbluff consultando il criterio *Categorie di parti Kingsbluff*.
 
@@ -445,4 +445,4 @@ Per continuare a conoscere Adobe Commerce Optimizer:
 - Scopri le [configurazioni avanzate dei criteri](../setup/policies.md)
 - Configura [altre visualizzazioni catalogo](../setup/catalog-view.md) per altri dealer
 - Consulta la [documentazione API](https://developer.adobe.com/commerce/services/optimizer/) per la gestione programmatica del catalogo
-- Scopri come configurare i componenti di rilascio per la vetrina Edge Delivery Services per creare esperienze vetrina personalizzate per l’individuazione dei prodotti, raccomandazioni e altre funzionalità. Consulta la [documentazione di Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=it)
+- Scopri come configurare i componenti di rilascio per la vetrina Edge Delivery Services per creare esperienze vetrina personalizzate per l’individuazione dei prodotti, raccomandazioni e altre funzionalità. Consulta la [documentazione di Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)

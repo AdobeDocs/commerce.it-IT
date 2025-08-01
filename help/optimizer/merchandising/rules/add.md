@@ -1,10 +1,11 @@
 ---
 title: Creare e gestire le regole
 description: Scopri come creare e gestire le regole di merchandising.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: 746c016f149fb49b9c483968a8a5f40196b163ed
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
+source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -88,7 +89,9 @@ Selezionare il tipo di strategia per la regola. Nella finestra **Verifica regola
 #### Avvertenze
 
 - Gli apostrofi e le citazioni nelle interrogazioni possono portare ad alcuni problemi minori di classificazione e rilevanza in alcune lingue.
-- Per garantire il corretto funzionamento della classificazione intelligente, assicurati che il **Peso di ricerca** per qualsiasi [attributo di prodotto](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata) utilizzato per la ricerca o il filtraggio (facet) sia pari o inferiore a `5`.
+- Per garantire il corretto funzionamento della classificazione intelligente, assicurati che il **Peso di ricerca** per tutti gli attributi utilizzati per la ricerca o il filtraggio (facet) sia pari o inferiore a `5`.
+
+Per informazioni sull&#39;impostazione dei pesi di ricerca, vedere [API metadati](https://developer.adobe.com/commerce/services/reference/rest/).
 
 ### Classificazione manuale
 

@@ -3,8 +3,8 @@ title: Configurare la vetrina
 description: Scopri come eseguire lo strumento di scaffolding per configurare la vetrina  [!DNL Adobe Commerce as a Cloud Service] .
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: c608d9e82a892e40d362065c229b8d451ed3dbfb
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+source-git-commit: c10d3b6a88fefb8680a039347960bfc7cfa13153
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Nei passaggi seguenti viene illustrato come configurare rapidamente la vetrina Adobe Commerce con tecnologia Edge Delivery utilizzando il comando `aio commerce init`. Questo processo imposta quanto segue:
 
-* [Commerce Storefront con tecnologia Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=it): una vetrina performante, scalabile e sicura basata su Edge Delivery Services di Adobe.
+* [Commerce Storefront con tecnologia Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/): una vetrina performante, scalabile e sicura basata su Edge Delivery Services di Adobe.
 * [Mesh API per Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/mesh/): piattaforma API che consente agli sviluppatori di combinare più origini dati in un unico endpoint GraphQL. API Mesh orchestra API di terze parti con API Adobe tramite un singolo gateway. Una query al singolo endpoint GraphQL può restituire risultati da più origini.
 * [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/) - Raccolta di strumenti per sviluppatori con accesso a API, eventi, funzioni di runtime e plug-in, che è possibile utilizzare per creare progetti per le applicazioni Adobe.
 * [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/) - Un motore senza server per la distribuzione di codice personalizzato che risponde agli eventi ed esegue funzioni nel cloud.
@@ -90,7 +90,7 @@ Prima di eseguire il comando `aio commerce init`, è necessario completare i seg
 
 ## Esegui il comando `aio commerce init`
 
-L’esecuzione del comando seguente creerà uno scaffolding per la vetrina Commerce. Questo scaffolding offre un ottimo punto di partenza per la creazione e la comprensione della vetrina. Per ulteriori informazioni sull&#39;utilizzo della vetrina, consulta la [documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it).
+L’esecuzione del comando seguente creerà uno scaffolding per la vetrina Commerce. Questo scaffolding offre un ottimo punto di partenza per la creazione e la comprensione della vetrina. Per ulteriori informazioni sull&#39;utilizzo della vetrina, consulta la [documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/).
 
 
 1. Esegui il comando `init`:
@@ -109,7 +109,7 @@ L’esecuzione del comando seguente creerà uno scaffolding per la vetrina Comme
       * Se selezioni questa opzione, ti viene richiesto di installare il bot AEM Code Sync in una finestra del browser. È necessario specificare l’archivio creato e autorizzare il bot. Tornare a CLI e immettere `y` per confermare l&#39;installazione bot di AEM Code Sync.
    * **Scegli un tenant Adobe Commerce disponibile**. Seleziona un tenant Commerce esistente nell&#39;organizzazione selezionata.
       * Se selezionate questa opzione, dovete selezionare il progetto e l&#39;area di lavoro in cui creare una mesh.
-   * **Fornisci il tuo URL API tenant Adobe Commerce**. Seleziona questa opzione se sei un partecipante al programma di accesso anticipato. Immetti l’URL API fornito nell’e-mail di onboarding di Adobe.
+   * **Fornisci il tuo URL API tenant Adobe Commerce**. Seleziona questa opzione se sei un partecipante al programma di accesso di prova. Immetti l’URL API fornito nell’e-mail di onboarding di Adobe.
 
    >[!NOTE]
    >
@@ -123,7 +123,7 @@ L’esecuzione del comando seguente creerà uno scaffolding per la vetrina Comme
    * Anteprima vetrina: `https://main--<repo name>--<username or org>.aem.page/`
    * Esecuzione locale: `aio commerce:dev`
 
-Per personalizzare la vetrina, consulta la [documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it).
+Per personalizzare la vetrina, consulta la [documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/).
 
 ## Risoluzione dei problemi
 

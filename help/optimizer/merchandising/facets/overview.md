@@ -1,10 +1,11 @@
 ---
 title: Panoramica dei facet
 description: Scopri i facet in [!DNL Adobe Commerce Optimizer] e come migliorano i risultati della ricerca.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+exl-id: cf16626e-8f85-47ca-b973-891b16c31fe3
+source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -29,12 +30,14 @@ L&#39;aggregazione sfaccettatura viene eseguita come segue: se la vetrina ha tre
 
 ## Valori attributi predefiniti
 
-I seguenti [attributi di prodotto](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#operation/createProductMetadata) sono utilizzati da [!DNL Adobe Commerce Optimizer] e sono abilitati per impostazione predefinita.
+I seguenti attributi di prodotto sono utilizzati da [!DNL Adobe Commerce Optimizer] e abilitati per impostazione predefinita.
 
 | Proprietà | Descrizione | Attributo |
 |---|---|---|
 | Ordinabile | Utilizzato per l’ordinamento nell’elenco prodotti | `price` |
 | Ricercabile | Uso nella ricerca | `price` <br />`sku`<br />`name` |
+
+Per ulteriori informazioni sugli attributi del prodotto e sulle relative proprietà, consulta l&#39;[API dei metadati per l&#39;acquisizione dei dati](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata).
 
 ## Proprietà attributi non di sistema predefinite
 

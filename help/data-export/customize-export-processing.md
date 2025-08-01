@@ -2,9 +2,10 @@
 title: Miglioramento delle prestazioni di esportazione dei dati SaaS
 description: Scopri come migliorare le prestazioni di esportazione dei dati SaaS per Commerce Services utilizzando la modalità di esportazione dei dati con più thread.
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
+source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ Tenere presente che una pianificazione attenta, che includa la stima del volume 
 
 >[!NOTE]
 >
->Adobe consiglia di prestare attenzione quando si utilizza l’elaborazione con più thread. Questa funzionalità è una funzione di accesso anticipato ancora in fase di miglioramento. Se configuri il multi-threading per prestazioni più veloci, puoi attivare i guardrail dei servizi Adobe Commerce inclusi per evitare l’uso improprio del sistema durante l’acquisizione dei dati. Questi guardrail impediscono inoltre agli utenti di attivare le modifiche di sincronizzazione che possono sovraccaricare il sistema. Quando vengono attivate le protezioni, le richieste vengono bloccate e il sistema restituisce 429 errori. Se si verificano questi errori, regolare la configurazione e inviare un ticket di supporto per assistenza.
+>Adobe consiglia di prestare attenzione quando si utilizza l’elaborazione con più thread. Se configuri il multi-threading per prestazioni più veloci, puoi attivare i guardrail dei servizi Adobe Commerce inclusi per evitare l’uso improprio del sistema durante l’acquisizione dei dati. Questi guardrail impediscono inoltre agli utenti di attivare le modifiche di sincronizzazione che possono sovraccaricare il sistema. Quando vengono attivate le protezioni, le richieste vengono bloccate e il sistema restituisce 429 errori. Se si verificano questi errori, regolare la configurazione e inviare un ticket di supporto per assistenza.
 
 ## Configurare il multithreading
 
@@ -63,7 +64,7 @@ Le opzioni specificate nella riga di comando sovrascrivono la configurazione di 
 
 Per elaborare tutte le operazioni di esportazione dei dati utilizzando il multithreading, gli integratori di sistemi o gli sviluppatori possono modificare il numero di thread e la dimensione batch per ogni feed nella configurazione dell’applicazione Commerce.
 
-Queste modifiche possono essere applicate aggiungendo valori personalizzati alla [sezione di sistema](https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) del file di configurazione, `app/etc/config.php`.
+Queste modifiche possono essere applicate aggiungendo valori personalizzati alla [sezione di sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) del file di configurazione, `app/etc/config.php`.
 
 **Esempio: configurazione del multithreading per prodotti e prezzi**
 

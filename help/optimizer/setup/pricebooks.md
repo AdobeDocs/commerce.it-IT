@@ -3,11 +3,11 @@ title: Listino prezzi
 description: Scopri come gestire i listini prezzi in [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
-source-git-commit: 513ed97442bfffe74d64f4eb0484cfa8f25b5ecc
+source-git-commit: 502d8d21ff052f4ecb212176459b38ce51f85dfc
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ I listini prezzi consentono di definire i prezzi dei prodotti per un&#39;origine
 
 Il listino prezzi base definisce la valuta per se stesso e per tutti i listini prezzi figlio. I listini prezzi figlio ereditano questa valuta e non possono sostituirla.
 
-Consulta la [documentazione per sviluppatori](https://developer.adobe.com/commerce/services/reference/rest/) per scoprire come creare, aggiornare ed eliminare listini prezzi fissi [!DNL Adobe Commerce Optimizer] utilizzando l&#39;API Listino prezzi dedicato.
+Consulta la [documentazione per gli sviluppatori](https://developer.adobe.com/commerce/services/reference/rest/) per scoprire come creare, aggiornare ed eliminare listini prezzi fissi per [!DNL Adobe Commerce Optimizer] utilizzando l&#39;API Listino prezzi dedicato.
 
 ## Concetti chiave
 
