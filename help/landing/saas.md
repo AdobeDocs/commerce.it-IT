@@ -84,7 +84,7 @@ Per [!DNL Product Recommendations], lo spazio dati SaaS contiene dati di catalog
 >[!WARNING]
 >
 > Utilizza lo spazio dati **SaaS di produzione** solo nell&#39;installazione di [!DNL Commerce] di produzione per evitare conflitti di dati. In caso contrario, si rischia di inquinare i dati del sito di produzione con i dati di test, causando ritardi nell’implementazione. Ad esempio, i dati del prodotto di produzione potrebbero essere erroneamente sovrascritti dai dati di staging, come gli URL di staging.
-> > In questo caso, [invia una richiesta di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) per richiedere la pulizia dei dati.
+> &#x200B;> In questo caso, [invia una richiesta di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) per richiedere la pulizia dei dati.
 
 Se non riesci a trovare i campi di configurazione LiveSearch nel pannello di amministrazione, verifica di aver immesso la chiave API SaaS corretta.  Assicurati di aver aggiunto la chiave SaaS di produzione durante la configurazione dello spazio di dati di produzione e di aver aggiunto la chiave di staging durante la configurazione dello spazio di dati di staging. Se configuri la chiave errata, i servizi SaaS, come LiveSearch, non sono disponibili nell’ambiente Adobe Commerce.
 
@@ -116,7 +116,7 @@ Per selezionare o creare un progetto SaaS, richiedere la chiave API [!DNL Commer
 
    Se non vedi la sezione **[!UICONTROL Commerce Services Connector]** nella configurazione [!DNL Commerce], installa i moduli [!DNL Commerce] per il [[!DNL Commerce] servizio](#availableservices) desiderato. Verificare inoltre che il pacchetto `magento/module-services-id` sia installato.
 
-1. Nelle sezioni _[!UICONTROL Sandbox API Keys]_e_[!UICONTROL Production API Keys]_, incolla i valori chiave.
+1. Nelle sezioni _[!UICONTROL Sandbox API Keys]_&#x200B;e_[!UICONTROL Production API Keys]_, incolla i valori chiave.
 
    - Le chiavi private devono includere `----BEGIN PRIVATE KEY---` all&#39;inizio della chiave e `----END PRIVATE KEY----` alla fine.
    - Se non disponi di una copia delle chiavi effettive, chiedi al proprietario dell’account di inserirle, quindi collega i valori nella configurazione.
