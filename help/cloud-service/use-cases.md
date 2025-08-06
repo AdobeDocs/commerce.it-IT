@@ -3,10 +3,10 @@ title: Casi d’uso
 description: Scopri come eseguire casi d'uso pratici e scenari aziendali supportati con  [!DNL Adobe Commerce as a Cloud Service].
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: a06d64566fda76c0527aabfa9e8fdf27e7c149ca
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+source-git-commit: 47eb8ee55bb093767f76aa23df8bb347ee280aae
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1325'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ Crea, modifica e pubblica i contenuti direttamente nella vetrina.
 
 1. Aggiorna la pagina vetrina e conferma che le modifiche sono ora attive.
 
-## Esperienza contestuale
+## Sperimentazione contestuale
 
 La funzione di sperimentazione contestuale di Adobe Commerce consente di creare e gestire esperimenti nella vetrina per testare contenuti e configurazioni diversi.
 
@@ -198,7 +198,7 @@ Considera uno scenario in cui desideri modificare rapidamente lo sfondo di un’
 
 #### Aggiungere l’immagine a Commerce AEM Assets
 
-1. Dal [pannello di navigazione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) di AEM as a Cloud Service, seleziona **Assets** > **File** > **Commerce** e fai clic sulla risorsa creata nella sezione precedente.
+1. Dal [pannello di navigazione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) di AEM as a Cloud Service, seleziona **Assets** > **File** > **Commerce** e fai clic sulla risorsa creata nella sezione precedente.
 
    ![cartella commerce](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -248,7 +248,7 @@ Le varianti di generazione di Adobe Commerce sfruttano l’intelligenza artifici
 
 ### Genera testo
 
-1. Apri il tuo sito di vetrina utilizzando [Universal Editor](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+1. Apri il tuo sito di vetrina utilizzando [Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 1. Selezionare il blocco di testo da modificare.
 
@@ -262,7 +262,7 @@ Le varianti di generazione di Adobe Commerce sfruttano l’intelligenza artifici
 
 ### Generare contenuti e immagini
 
-1. Apri [Genera varianti](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. Apri [Genera varianti](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. Selezionare il modello [!UICONTROL **Banner principale**].
 
