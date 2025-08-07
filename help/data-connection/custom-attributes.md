@@ -349,7 +349,7 @@ ComponentRegistrar::register(
 
 Per garantire che i nuovi attributi dell&#39;ordine personalizzato possano essere acquisiti dallo schema [!DNL Commerce] in Experience Platform, è necessario estendere lo schema per includere questi campi personalizzati.
 
-Per informazioni su come estendere uno schema XDM esistente per includere questi campi personalizzati, consulta l&#39;articolo [Creare e modificare gli schemi nell&#39;interfaccia utente](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) nella documentazione di Experience Platform. Il campo ID tenant viene generato in modo dinamico; tuttavia, la struttura del campo deve essere simile all’esempio fornito nella documentazione di Experience Platform.
+Per informazioni su come estendere uno schema XDM esistente per includere questi campi personalizzati, consulta l&#39;articolo [Creare e modificare gli schemi nell&#39;interfaccia utente](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) nella documentazione di Experience Platform. Il campo ID tenant viene generato in modo dinamico; tuttavia, la struttura del campo deve essere simile all’esempio fornito nella documentazione di Experience Platform.
 
 >[!IMPORTANT]
 >

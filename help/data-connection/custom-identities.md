@@ -37,7 +37,7 @@ Prima di implementare attributi di identità personalizzati, assicurati di:
 ## Passaggio 1: configurare lo schema di Experience Platform
 
 1. Accedi a Adobe Experience Platform e seleziona lo schema Commerce.
-1. [Aggiungi campi di identità personalizzati](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas?lang=en#custom-fields-for-standard-groups) a livello principale:
+1. [Aggiungi campi di identità personalizzati](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/ui/resources/schemas?lang=en#custom-fields-for-standard-groups) a livello principale:
    - `hashedPID` (stringa) - Hash identità primaria
    - `hashedSID` (stringa) - Hash identità secondaria
    - `primaryID` (stringa) - Nome campo identità primaria
