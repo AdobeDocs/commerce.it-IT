@@ -1,18 +1,23 @@
 ---
-title: Aggiungi attributi ordine personalizzati
+title: Aggiungere attributi personalizzati agli ordini
 description: Scopri come aggiungere attributi di ordine personalizzati ai dati del backoffice e inviare tali attributi ad Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: dcd0b9e7-8d36-4bde-b226-ac19e83f00e4
+source-git-commit: 5b1387e18e059c938aca600cc31951a3f5289e7e
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '602'
 ht-degree: 2%
 
 ---
 
-# Aggiungi attributi ordine personalizzati
+# Aggiungere attributi personalizzati agli ordini
 
 In questo articolo imparerai ad aggiungere attributi personalizzati agli eventi di back office. Con gli attributi personalizzati, puoi acquisire informazioni approfondite su dati avanzati per migliorare l’analisi e creare ulteriori esperienze personalizzate per gli acquirenti.
+
+>[!NOTE]
+>
+>Scopri come [aggiungere identità personalizzate](custom-identities.md) ai profili.
 
 Gli attributi personalizzati sono supportati a due livelli:
 
@@ -344,7 +349,7 @@ ComponentRegistrar::register(
 
 Per garantire che i nuovi attributi dell&#39;ordine personalizzato possano essere acquisiti dallo schema [!DNL Commerce] in Experience Platform, è necessario estendere lo schema per includere questi campi personalizzati.
 
-Per informazioni su come estendere uno schema XDM esistente per includere questi campi personalizzati, consulta l&#39;articolo [Creare e modificare gli schemi nell&#39;interfaccia utente](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) nella documentazione di Experience Platform. Il campo ID tenant viene generato in modo dinamico; tuttavia, la struttura del campo deve essere simile all’esempio fornito nella documentazione di Experience Platform.
+Per informazioni su come estendere uno schema XDM esistente per includere questi campi personalizzati, consulta l&#39;articolo [Creare e modificare gli schemi nell&#39;interfaccia utente](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) nella documentazione di Experience Platform. Il campo ID tenant viene generato in modo dinamico; tuttavia, la struttura del campo deve essere simile all’esempio fornito nella documentazione di Experience Platform.
 
 >[!IMPORTANT]
 >
