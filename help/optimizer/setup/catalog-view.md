@@ -3,11 +3,11 @@ title: Vista catalogo
 description: Scopri cosa sono le visualizzazioni catalogo e come crearle per organizzare il catalogo dei prodotti in base alla struttura aziendale, alle politiche e ai prezzi.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: 2e47c770d204c9c7f959893704dd0ebcc6ac792a
+source-git-commit: ff53f84b4ab7cfb219aae0e29cc35b23d0f6601b
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,43 @@ Prima di creare una vista catalogo, assicurati di disporre di:
 La pagina Visualizzazioni catalogo viene aggiornata per visualizzare la nuova visualizzazione del catalogo.&#x200B;
 
 Dopo aver completato questi passaggi, la vista catalogo viene ora configurata per visualizzare prodotti e prezzi in base alle origini e ai criteri selezionati.
+
+## Gestisci vista catalogo
+
+Segui queste istruzioni per aggiornare o visualizzare le proprietà delle viste catalogo esistenti.
+
+### Modifica vista catalogo
+
+1. Nell&#39;area di lavoro *Visualizzazioni catalogo* individuare la visualizzazione catalogo nella griglia che si desidera modificare e fare clic su **...** per aprire il menu Azioni.
+1. Fai clic su **Modifica** per accedere all&#39;editor di visualizzazione del catalogo.
+1. Aggiornare il nome, le origini del catalogo, i criteri e le informazioni sul listino prezzi, in base alle esigenze.
+1. Salva le modifiche.
+
+### Elimina vista catalogo
+
+1. Nell&#39;area di lavoro *Visualizzazioni catalogo*, individuare la visualizzazione catalogo nella griglia che si desidera modificare e fare clic su **...** per aprire il menu Azioni.
+1. Fare clic su **Elimina**.
+
+   Quando viene visualizzata la finestra di conferma, fare clic su **[!UICONTROL Delete]**.
+
+### Visualizza dettagli
+
+Questa opzione consente di visualizzare rapidamente tutti i parametri di visualizzazione del catalogo mantenendo la tabella *Visualizzazioni catalogo*.
+
+Nell&#39;area di lavoro *Visualizzazioni catalogo*, individuare la visualizzazione catalogo nella griglia che si desidera modificare e fare clic sull&#39;icona ![informazioni](../assets/info-icon.png).
+
+![Dettagli visualizzazione catalogo](../assets/catalog-view-details.png)
+
+Da qui puoi vedere i dettagli di configurazione della vista catalogo, ad esempio:
+
+- ID visualizzazione
+- Nome
+- Origini del catalogo
+- Criteri
+- Data di creazione
+- Dati modificati
+
+Alcune di queste impostazioni di configurazione sono necessarie durante la configurazione della vetrina o l’utilizzo dell’API di acquisizione dati.
 
 ## Panoramica dell’architettura
 
