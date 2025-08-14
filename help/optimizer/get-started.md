@@ -3,11 +3,11 @@ title: Introduzione
 description: Scopri come iniziare a utilizzare  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 87fbd979b0660af1bf3a8786eb1e1f5f79cea043
+source-git-commit: 5cb7dc4d2bd1b9bd43d4a858e4814ca803a49027
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
@@ -119,11 +119,13 @@ Gestisci le istanze da Commerce Cloud Manager.
 Dopo aver effettuato l’accesso, il dashboard mostra tutte le istanze di prodotto Commerce disponibili nell’organizzazione.
 La colonna Prodotto indica per quale applicazione Commerce è stato eseguito il provisioning dell’istanza.
 
-Utilizza le opzioni Filtro e Ricerca per trovare rapidamente istanze specifiche. Puoi eseguire ricerche per dati creati, area geografica, creato da, tipo di prodotto, ambiente e stato.
+![Ricerca e filtro istanza](./assets/search-filter-instances.png){zoomable="yes"}
+
+Utilizza gli strumenti Filtro e Ricerca per trovare rapidamente istanze specifiche in base alla data di creazione, all’area geografica, al creatore, al tipo di prodotto, all’ambiente o allo stato.
 
 ### Accedere all&#39;applicazione [!DNL Adobe Commerce Optimizer]
 
-Una volta aperta l’app, puoi passare facilmente da un ambiente all’altro, come sandbox e produzione, per visualizzare dati e impostazioni per ciascuno di essi, senza dover tornare a Commerce Cloud Manager.
+Una volta aperta l’app, passa facilmente da un ambiente all’altro, come sandbox e produzione, per visualizzare dati e impostazioni per ciascuno di essi senza tornare a Commerce Cloud Manager.
 
 1. In Commerce Cloud Manager fare clic sul nome dell&#39;istanza per aprire l&#39;applicazione [!DNL Adobe Commerce Optimizer].
 
@@ -146,8 +148,11 @@ Tieni presente le seguenti informazioni chiave:
 - **URL Commerce Optimizer** per accedere all&#39;applicazione [!DNL Adobe Commerce Optimizer]
 - **ID istanza** ID tenant univoco che identifica l&#39;istanza
 
-I dettagli dell’endpoint e dell’ID istanza sono necessari per configurare l’accesso API e l’integrazione con le applicazioni front-end e i sistemi back-end.
-Se non hai accesso ai dettagli dell’istanza, contatta l’amministratore dell’organizzazione per ottenere i valori.
+Se si è uno sviluppatore, è necessario disporre di questi dettagli per configurare l&#39;ambiente di sviluppo e connettersi alle API [!DNL Adobe Commerce Optimizer].
+
+>[!NOTE]
+>
+>Per accedere ai dettagli dell’istanza, devi disporre delle autorizzazioni necessarie nell’organizzazione Adobe IMS. Se non trovi i dettagli dell’istanza o non riesci ad accedere all’applicazione, contatta l’amministratore dell’organizzazione.
 
 ### Modifica il nome e la descrizione dell’istanza
 
@@ -212,6 +217,6 @@ Dopo aver completato la configurazione:
 ### Ottieni aiuto
 
 - **Risorse per sviluppatori**: [Documentazione per sviluppatori](https://developer.adobe.com/commerce/services/optimizer/)
-- **Risorse storefront**: [Documentazione storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it)
-- **Esercitazioni**: [Esercitazioni Commerce Optimizer](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **Supporto**: [Risorse di supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/overview)
+- **Risorse storefront**: [Documentazione storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Esercitazioni**: [Esercitazioni Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **Supporto**: [Risorse di supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
