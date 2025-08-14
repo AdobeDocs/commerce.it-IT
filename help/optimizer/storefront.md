@@ -19,7 +19,7 @@ Questo tutorial fornisce istruzioni dettagliate per la configurazione e l&#39;ut
 >[!TIP]
 >
 >Tracciare rapidamente il processo di configurazione della vetrina utilizzando lo strumento Site Creator per configurare l’archivio del codice della vetrina e l’ambiente di authoring dei documenti
->>automaticamente. Quindi, puoi utilizzare queste istruzioni per capire come è stata creata la vetrina e per scoprire di più sui componenti disponibili.
+>&#x200B;>automaticamente. Quindi, puoi utilizzare queste istruzioni per capire come è stata creata la vetrina e per scoprire di più sui componenti disponibili.
 
 ## Prerequisiti
 
