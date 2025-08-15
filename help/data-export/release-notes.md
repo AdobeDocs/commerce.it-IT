@@ -4,9 +4,9 @@ description: Informazioni aggiornate sulla versione di  [!DNL Data Export Extens
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: d859da62f54cf9a86a57d34d5f74aae972dc99be
+source-git-commit: 0722458a67a945b13d2cb27d8848d58d909aea35
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1446'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ Gli aggiornamenti includono:
 >L’estensione SaaS per l’esportazione dei dati è una raccolta di moduli che viene installata automaticamente con Live Search, Product Recommendations e Catalog Service. Puoi controllare la versione installata nel sistema utilizzando Composer. In alcuni casi, potrebbe essere utile aggiornare l’estensione di esportazione dei dati sul sistema per rilevare correzioni o nuove funzionalità senza aggiornare la versione del servizio Commerce.
 
 ## Versione principale corrente
+
+## Versione 103.4.8
+
+![Correzione](../assets/fix.svg) è stato risolto un problema che impediva la rigenerazione dei feed dei prezzi del prodotto in seguito all&#39;eliminazione di un prodotto o alla modifica dello SKU del prodotto.<!--MDEE-1125-->
+![Correzione](../assets/fix.svg) è stata migliorata l&#39;elaborazione dell&#39;aggiornamento del prodotto per garantire che le modifiche vengano riportate correttamente quando si aggiorna un prodotto appena creato con lo stesso SKU di un prodotto eliminato in precedenza. La sincronizzazione dei prodotti ora utilizza correttamente gli ID prodotto aggiornati, garantendo un’esportazione accurata e affidabile dei dati.<!--MDEE-1126-->
+![Correzione](../assets/fix.svg) è stato risolto un problema a causa del quale Catalog Service poteva restituire dati di variante obsoleti per prodotti configurabili garantendo la pubblicazione degli eventi di aggiornamento del prodotto dopo l&#39;eliminazione degli attributi.<!--MDEE-1127-->
 
 ## Versione 103.4.8
 
