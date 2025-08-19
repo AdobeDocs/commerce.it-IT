@@ -4,9 +4,9 @@ description: Livelli di elaborazione dei pagamenti con carta all'interno di  [!D
 role: Admin
 feature: Payments, Paas, Saas
 exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # Elaborazione di livello 2 e livello 3
 
 [!DNL Payment Services] offre funzionalità avanzate di elaborazione delle carte per aiutare gli esercenti a ottimizzare le transazioni di pagamento e ridurre le commissioni interbancarie. Sono disponibili tre livelli di elaborazione delle carte, ciascuno con requisiti di trattamento diversi per le operazioni.
+
+>[!CAUTION]
+>
+> [Gli ordini Fastlane](payments-options.md#fastlane-button) non includono dati di livello 2/livello 3, elementi riga e raggruppamento importo.
 
 ## Requisiti dei dati per livello di elaborazione
 

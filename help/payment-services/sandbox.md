@@ -3,7 +3,7 @@ title: Configurare la sandbox di prova
 description: Utilizza un account sandbox PayPal per utilizzare  [!DNL Payment Services]  in modalità di test.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Per completare l’onboarding della sandbox:
       Se hai creato un account sandbox PayPal durante il processo di onboarding di PayPal sandbox, devi [reimpostare la sandbox di onboarding](#reset-your-sandbox-account) o non puoi verificare l&#39;e-mail.
 
    1. Selezionare **[!UICONTROL Business]** come tipo di account e fare clic su **[!UICONTROL Create]**.
-   1. Nella sezione _[!UICONTROL Sandbox Accounts]_, fai clic sui tre punti nella colonna&#x200B;_[!UICONTROL Manage accounts]_ per l&#39;account sandbox creato.
+   1. Nella sezione _[!UICONTROL Sandbox Accounts]_, fai clic sui tre punti nella colonna_[!UICONTROL Manage accounts]_ per l&#39;account sandbox creato.
    1. Fare clic su **[!UICONTROL View/edit account]**.
 
       ![PayPal - Visualizza/Modifica account sandbox](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
@@ -41,7 +41,7 @@ Per completare l’onboarding della sandbox:
 
    Questa opzione è visibile se non hai ancora completato l&#39;onboarding della sandbox per [!DNL Payment Services].
 
-   Un ID commerciante sandbox viene generato automaticamente e popolato in [impostazioni](settings.md). Non modificare o alterare questo ID.
+   Un ID commerciante sandbox viene generato automaticamente e popolato in [impostazioni](configure-admin.md). Non modificare o alterare questo ID.
 
    Viene visualizzata una finestra PayPal per collegare un conto PayPal per iniziare ad accettare i pagamenti.
 

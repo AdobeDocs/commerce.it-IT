@@ -5,9 +5,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '106'
 ht-degree: 2%
 
 ---
@@ -27,9 +27,8 @@ ht-degree: 2%
    - [Abilita per produzione](production.md)
 - Configura [!DNL Payment Services] {#configure}
    - [Home di [!DNL Payment Services]](payments-home.md)
-   - [Impostazioni [!DNL Payment Services]](settings.md)
+   - [Configurazione di [!DNL Payment Services]](configure-admin.md)
    - [Configurazione della riga di comando](configure-cli.md)
-   - [Configurazione legacy](configure-admin.md)
    - [Test e convalida](test-validate.md)
 - Pagamenti e pagamento {#payments-checkout}
    - [Opzioni di pagamento](payments-options.md)
@@ -50,4 +49,4 @@ ht-degree: 2%
 - Sicurezza e conformità {#security-compliance}
    - [Sicurezza](security.md)
    - [Protezione contro le frodi significative](fraud-protection.md)
-- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=it)
+- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

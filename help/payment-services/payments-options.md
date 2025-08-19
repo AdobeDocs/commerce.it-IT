@@ -3,9 +3,9 @@ title: Opzioni di pagamento
 description: Imposta le opzioni di pagamento per personalizzare i metodi disponibili per i clienti del tuo Negozio.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 0d00ce6e5291b3753cb7e2ee9e8af262b2c8894f
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1347'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,22 @@ Per informazioni sul completamento dell&#39;onboarding avanzato e standard, cons
 
 ## [!UICONTROL Digital Wallets]
 
+### Pulsante [!DNL Fastlane]
+
+[!DNL Fastlane] offre un metodo di pagamento online veloce, sicuro e senza problemi. Durante un **pagamento per gli ospiti**, puoi memorizzare in modo sicuro la tua carta e i dettagli di spedizione per acquisti ancora più veloci in futuro.
+
+* **Accesso immediato per gli acquirenti verificati**: riconosce milioni di clienti fidelizzati e consente pagamenti senza soluzione di continuità in pochi secondi.
+* **Aumenta i ricavi**: migliora i tassi di conversione e autorizzazione con un numero maggiore di acquisti completati.
+* **Accelera l&#39;estrazione**: riduci l&#39;attrito con un&#39;esperienza di accesso sicura e senza password.
+
+Quando [!DNL Fastlane] è abilitato, l&#39;opzione [!UICONTROL Credit Card Fields] è disabilitata per impostazione predefinita.
+
+>[!NOTE]
+>
+> Attualmente, Fastlane è supportato solo dai commercianti statunitensi; pertanto, [!UICONTROL 3D Secure authentication] non è attualmente supportato.
+
+Per ulteriori informazioni, consulta l&#39;argomento [Fastlane by PayPal](https://www.paypal.com/us/fastlane){target=_blank}.
+
 ### Pulsante [!DNL Apple Pay]
 
 Con [!DNL Apple Pay], i commercianti possono fornire un&#39;esperienza di pagamento sicura e semplificata in Safari (per un massimo di 99 domini per account commerciante), che può aumentare le conversioni. Il pulsante [!DNL Apple Pay] consente di memorizzare i dettagli di pagamento, contatto e spedizione dai dispositivi iOS o macOS dei clienti, consentendo un&#39;esperienza di pagamento rapida e immediata.
@@ -57,7 +73,7 @@ Quando è abilitato, il pulsante [!DNL Apple Pay] è visibile dalla pagina del p
 >
 >  Il certificato di verifica del dominio Apple Pay è già incluso nel codice di Payment Services. Verificare che il percorso `/.well-known/apple-developer-merchantid-domain-association` restituisca un codice di risposta 200. Consulta la [documentazione per gli sviluppatori di PayPal sull&#39;integrazione con Apple Pay](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file) per ulteriori informazioni sul certificato **Verifica del dominio Apple Pay**.
 
-Per ulteriori informazioni, vedere [Impostazioni](settings.md#apple-pay).
+Per ulteriori informazioni, vedere [Impostazioni](configure-admin.md#apple-pay).
 
 ### Pulsante [!DNL Google Pay]
 
@@ -79,7 +95,7 @@ Quando è abilitato, il pulsante [!DNL Google Pay] è visibile dalla pagina del 
 
 ![Pulsante PayPal](assets/paypal-button.png){width="350" zoomable="yes"}
 
-È possibile configurare [!UICONTROL PayPal payment buttons] nella configurazione dell&#39;archivio o nella home di [!DNL Payment Services]. Per ulteriori informazioni, vedere [Impostazioni](settings.md#payment-buttons).
+È possibile configurare [!UICONTROL PayPal payment buttons] nella configurazione dell&#39;archivio o nella home di [!DNL Payment Services].
 
 Scopri la disponibilità dei metodi di pagamento per paese nella [documentazione sui metodi di pagamento](https://developer.paypal.com/docs/checkout/payment-methods/) di PayPal.
 
@@ -109,9 +125,15 @@ Offri ai tuoi clienti pagamenti a breve termine senza interessi e altre opzioni 
 
 Il pulsante [!DNL Pay Later] è visibile dalla pagina del prodotto, dal mini-carrello, dal carrello e dalle visualizzazioni per il pagamento.
 
-Consulta le informazioni sulle offerte Paga più tardi nella documentazione sulle offerte Paga più tardi di [PayPal](https://developer.paypal.com/docs/checkout/pay-later/us/). Utilizza il menu a discesa **Paese** per selezionare un&#39;area di interesse.
+Consulta le informazioni sulle [offerte Pay Later](https://developer.paypal.com/docs/checkout/pay-later/us/) nella documentazione per gli sviluppatori di PayPal. Utilizza il menu a discesa **Paese** per selezionare un&#39;area di interesse.
 
-Scopri come disabilitare o abilitare i messaggi [!DNL Pay Later] aggiornando la configurazione di [Impostazioni](settings.md#payment-buttons).
+Scopri come disabilitare o abilitare i messaggi [!DNL Pay Later] aggiornando la configurazione di [Impostazioni](configure-admin.md#pay-later-button).
+
+##### Facoltativo. Configurare la messaggistica a pagamento posticipato
+
+**Configura messaggi** per [Paga più tardi](configure-admin.md#pay-later-button) consente ai commercianti di modificare gli stili predefiniti per questa opzione di pagamento. Se si imposta **[!UICONTROL Display Pay Later Message]** su `Yes` nella configurazione di [Impostazioni](configure-admin.md#pay-later-button), verrà visualizzato un pulsante modale **[!UICONTROL Configure Messaging]** che consente di impostare gli stili per **[!UICONTROL PayPal Pay Later messaging]**.
+
+![Messaggistica posticipata](assets/pay-later-messaging.png){width="500" zoomable="yes"}
 
 ### Utilizza solo i pulsanti di pagamento PayPal
 
@@ -125,20 +147,20 @@ Questo consente di:
 
 Per **acquisire pagamenti con _solo_ pulsanti di pagamento PayPal (_non_ l&#39;opzione di pagamento con carta di credito PayPal)**:
 
-1. Assicurati che l&#39;archivio sia [in modalità di produzione](settings.md#enable-payment-services).
-1. [Configura i pulsanti di pagamento PayPal desiderati](settings.md#payment-buttons) in Impostazioni.
-1. Disattiva _l&#39;opzione **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)**&#x200B;nella sezione&#x200B;_[!UICONTROL Payment buttons]_._
+1. Assicurati che l&#39;archivio sia [in modalità di produzione](configure-admin.md#enable-payment-services).
+1. [Configura i pulsanti di pagamento PayPal desiderati](configure-admin.md#payment-buttons) in Impostazioni.
+1. Disattiva _l&#39;opzione_ nella sezione **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
 
 Per **acquisire i pagamenti con il provider di carte di credito esistente _e_ i pulsanti di pagamento PayPal**:
 
-1. Assicurati che l&#39;archivio sia [in modalità di produzione](settings.md#enable-payment-services).
-1. [Configura i pulsanti di pagamento PayPal desiderati](settings.md#payment-buttons).
-1. Disattiva _l&#39;opzione **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)**&#x200B;nella sezione&#x200B;_[!UICONTROL Payment buttons]_._
-1. Disattiva _l&#39;opzione **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)**&#x200B;nella sezione&#x200B;_[!UICONTROL Credit card fields]_ e utilizza l&#39;account [provider di carte di credito esistente](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=it#payments)._
+1. Assicurati che l&#39;archivio sia [in modalità di produzione](configure-admin.md#enable-payment-services).
+1. [Configura i pulsanti di pagamento PayPal desiderati](configure-admin.md#payment-buttons).
+1. Disattiva _l&#39;opzione_ nella sezione **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
+1. Disattiva _l&#39;opzione_ nella sezione **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** e utilizza l&#39;account _[!UICONTROL Credit card fields]_provider di carte di credito esistente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)
 
 ## Opzioni di pagamento
 
-Con [!DNL Payment Services] puoi configurare l&#39;esperienza di pagamento per Adobe Commerce in base alle preferenze e ai comportamenti degli acquirenti. Caratteristiche quali il vaulting con carta di credito [1&rbrace; e lo svuotamento automatico dell&#39;ordine garantiscono ai clienti una transazione semplice e senza problemi.](vaulting.md)
+Con [!DNL Payment Services] puoi configurare l&#39;esperienza di pagamento per Adobe Commerce in base alle preferenze e ai comportamenti degli acquirenti. Caratteristiche quali il vaulting con carta di credito [1} e lo svuotamento automatico dell&#39;ordine garantiscono ai clienti una transazione semplice e senza problemi.](vaulting.md)
 
 Con Adobe Commerce e Magento Open Source [!DNL Payment Services], sono disponibili più esperienze di pagamento. Esistono comportamenti diversi per ogni metodo di pagamento a seconda della posizione in cui sei nel processo di pagamento:
 
