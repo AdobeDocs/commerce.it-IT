@@ -4,9 +4,9 @@ description: Informazioni aggiornate sulla versione di  [!DNL Data Export Extens
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 0722458a67a945b13d2cb27d8848d58d909aea35
+source-git-commit: fa3900de75ae36a3efccc7791b6345875b46148f
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1523'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,12 @@ Gli aggiornamenti includono:
 
 ## Versione principale corrente
 
-## Versione 103.4.8
+## Versione 103.4.10
+
+![Correzione](../assets/fix.svg) è stato risolto un problema che causava la restituzione del tipo errato (`text` invece di `OBJECT`) per alcuni attributi creati in modo dinamico. Ora, le informazioni sul tipo corrette vengono restituite in modo coerente, eliminando la necessità di risincronizzazioni manuali o soluzioni alternative.<!--MDEE-1131-->
+![Correzione](../assets/fix.svg) è stato risolto un problema che poteva impedire la raccolta dei dati di prodotto durante le sincronizzazioni parziali a causa di errori nel provider di inventario LowStock. Questa correzione garantisce che i dati del prodotto vengano esportati in modo affidabile e che nessun ID prodotto venga ignorato a causa di errori relativi a LowStock.<!--MDEE-1132-->
+
+## Versione 103.4.9
 
 ![Correzione](../assets/fix.svg) è stato risolto un problema che impediva la rigenerazione dei feed dei prezzi del prodotto in seguito all&#39;eliminazione di un prodotto o alla modifica dello SKU del prodotto.<!--MDEE-1125-->
 ![Correzione](../assets/fix.svg) è stata migliorata l&#39;elaborazione dell&#39;aggiornamento del prodotto per garantire che le modifiche vengano riportate correttamente quando si aggiorna un prodotto appena creato con lo stesso SKU di un prodotto eliminato in precedenza. La sincronizzazione dei prodotti ora utilizza correttamente gli ID prodotto aggiornati, garantendo un’esportazione accurata e affidabile dei dati.<!--MDEE-1126-->
