@@ -156,7 +156,7 @@ Per **acquisire i pagamenti con il provider di carte di credito esistente _e_ i 
 1. Assicurati che l&#39;archivio sia [in modalità di produzione](configure-admin.md#enable-payment-services).
 1. [Configura i pulsanti di pagamento PayPal desiderati](configure-admin.md#payment-buttons).
 1. Disattiva _l&#39;opzione_ nella sezione **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
-1. Disattiva _l&#39;opzione_ nella sezione **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** e utilizza l&#39;account _[!UICONTROL Credit card fields]_&#x200B;provider di carte di credito esistente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)
+1. Disattiva _l&#39;opzione_ nella sezione **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** e utilizza l&#39;account _[!UICONTROL Credit card fields]_&#x200B;provider di carte di credito esistente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=it#payments)
 
 ## Opzioni di pagamento
 
