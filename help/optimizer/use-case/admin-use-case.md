@@ -3,11 +3,11 @@ title: Caso di utilizzo end-to-end per Storefront e Catalog Administrator
 description: Scopri come utilizzare [!DNL Adobe Commerce Optimizer] per gestire il catalogo utilizzando le viste e i criteri del catalogo e come impostare la vetrina in base alla configurazione del catalogo.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: 1ab7ee5673f261b43db25caf0ad340a0fd9e3341
+source-git-commit: e5844cad1d666a81042db64e51e124e6444d19ac
 workflow-type: tm+mt
-source-wordcount: '2158'
+source-wordcount: '2179'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ In questo caso d’uso, stai lavorando con quanto segue:
 
 >[!NOTE]
 >
-> Scopri di più sui file di configurazione della vetrina consultando l&#39;argomento [Esplora la versione standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=it) nella documentazione di Adobe Commerce Storefront.
+> Scopri di più sui file di configurazione della vetrina consultando l&#39;argomento [Esplora la versione standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) nella documentazione di Adobe Commerce Storefront.
 
 ### ‌Soluzioni principali
 
@@ -185,11 +185,12 @@ Creiamo un nuovo criterio denominato *Categorie di parti Celport* per filtrare g
    - **Attributo** = *categoria_parte*
    - **Operatore** = **IN**
    - **Valore Source** = **STATICO**
-   - **Valore** = *freni*, *sospensione*
+   - **Valore** = *freni*
+   - **Valore** = *sospensione*
 
    >[!IMPORTANT]
    >
-   >Assicurati che il nome dell’attributo specificato corrisponda esattamente al nome dell’attributo SKU nel catalogo.
+   >Ogni valore di attributo deve essere immesso separatamente. Dopo aver immesso un valore, premi **Invio** per aggiungerlo alla configurazione del filtro. Quindi, immetti il valore successivo. Tutti i valori devono corrispondere esattamente al nome dell’attributo SKU nel catalogo.
 
    Per ulteriori informazioni sulla differenza tra un&#39;origine di valore STATIC e TRIGGER, vedere [tipi di origine di valore](../setup/policies.md#value-source-types).
 
@@ -230,7 +231,8 @@ Crea una nuova visualizzazione catalogo per il dealer *Celport* e collega i segu
 
    - **Nome** = *Celport*
    - **Origini catalogo** = *en-US*
-   - **Criteri** (usa elenco a discesa) = *Marchi East Coast Inc*; *Categorie parte Celport*; *Marchio*; *Modello*                          
+   - **Criteri** (usa elenco a discesa) = *Marchi East Coast Inc*; *Categorie parte Celport*; *Marchio*; *Modello*
+                         
 1. Fare clic su **[!UICONTROL Add]** per creare la visualizzazione del catalogo.
 
    La pagina Visualizzazioni catalogo viene aggiornata per visualizzare la nuova visualizzazione catalogo.
@@ -261,7 +263,7 @@ L&#39;ultima parte di questo tutorial prevede l&#39;aggiornamento della vetrina 
 
 1. Nella directory principale della cartella, aprire il file `config.json`.
 
-   +++Codice config.json
+   +++codice config.json
 
    ```json
    {
@@ -445,4 +447,4 @@ Per continuare a conoscere Adobe Commerce Optimizer:
 - Scopri le [configurazioni avanzate dei criteri](../setup/policies.md)
 - Configura [altre visualizzazioni catalogo](../setup/catalog-view.md) per altri dealer
 - Consulta la [documentazione API](https://developer.adobe.com/commerce/services/optimizer/) per la gestione programmatica del catalogo
-- Scopri come configurare i componenti di rilascio per la vetrina Edge Delivery Services per creare esperienze vetrina personalizzate per l’individuazione dei prodotti, raccomandazioni e altre funzionalità. Consulta la [documentazione di Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=it)
+- Scopri come configurare i componenti di rilascio per la vetrina Edge Delivery Services per creare esperienze vetrina personalizzate per l’individuazione dei prodotti, raccomandazioni e altre funzionalità. Consulta la [documentazione di Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)
