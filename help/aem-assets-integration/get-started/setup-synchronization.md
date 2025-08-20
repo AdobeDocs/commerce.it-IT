@@ -3,9 +3,9 @@ title: Configurare l’integrazione
 description: Scopri come collegare il progetto Adobe Commerce e i progetti Experience Manager Assets per abilitare la sincronizzazione delle risorse tra questi due sistemi.
 feature: CMS, Media
 exl-id: 3533d010-926f-4d78-935c-98a9b7040d27
-source-git-commit: ff6affa5bcc4111e14054f3f6b3ce970619ca295
+source-git-commit: 86e8876af21da3df0ec5e940113f19593b2f6d0a
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '699'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Configura l’integrazione connettendo Commerce all’istanza di AEM Assets e se
 
 Dopo aver identificato il progetto AEM Assets, seleziona la regola corrispondente per la sincronizzazione delle risorse tra Adobe Commerce e AEM Assets.
 
-* **[!UICONTROL Match by product SKU]**—Regola predefinita che corrisponde allo SKU nei metadati della risorsa con [SKU prodotto Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/implementation-playbook/glossary#sku) per garantire che le risorse siano associate ai prodotti corretti.
+* **[!UICONTROL Match by product SKU]**—Regola predefinita che corrisponde allo SKU nei metadati della risorsa con [SKU prodotto Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku) per garantire che le risorse siano associate ai prodotti corretti.
 
 * **[!UICONTROL Custom match]** - Regola di corrispondenza per scenari più complessi o requisiti aziendali specifici che richiedono una logica di corrispondenza personalizzata. L’implementazione della corrispondenza personalizzata richiede lo sviluppo di codice personalizzato in Adobe Developer App Builder per definire il modo in cui le risorse vengono associate ai prodotti. Ulteriori dettagli disponibili a breve...
 
@@ -24,11 +24,11 @@ Per la configurazione iniziale, utilizza la regola predefinita *Corrispondenza p
 
 ## Prerequisiti
 
-* [Installare il pacchetto AEM Assets](configure-aem.md)
+* [Configurare il progetto AEM Assets](configure-aem.md)
 
 * [!BADGE Solo PaaS]{type=Informative tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe)."} [Installa i pacchetti Adobe Commerce](configure-commerce.md) per aggiungere l&#39;estensione e generare le credenziali e le connessioni necessarie per utilizzare l&#39;estensione.
 
-* Segui i passaggi descritti nell&#39;argomento [abilita Dynamic Media Open API](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis). Includi le seguenti informazioni per il team di supporto:
+* Segui i passaggi descritti nell&#39;argomento [abilita Dynamic Media Open API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis). Includi le seguenti informazioni per il team di supporto:
 
    * **[!UICONTROL AEM Program ID]**
    * **[!UICONTROL Adobe Commerce URL]**
@@ -37,7 +37,7 @@ Per la configurazione iniziale, utilizza la regola predefinita *Corrispondenza p
 
 ## Configurare la connessione
 
-1. Ottieni l&#39;ID del progetto e dell&#39;ambiente [AEM Assets Authoring Environment](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/sites/authoring/quick-start).
+1. Ottieni l&#39;ID del progetto e dell&#39;ambiente [AEM Assets Authoring Environment](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/quick-start).
 
    1. Apri AEM Cloud Manager e seleziona **[!UICONTROL Assets]**.
 
@@ -68,7 +68,7 @@ Per la configurazione iniziale, utilizza la regola predefinita *Corrispondenza p
 1. Selezionare una delle regole di corrispondenza risorse per la sincronizzazione risorse dal menu a discesa **[!UICONTROL Asset matching rule]**.
 
    * Seleziona **[!UICONTROL Match by SKU]** per [corrispondenza automatica predefinita](../synchronize/default-match.md),
-   * Seleziona **[!UICONTROL Custom match]** per [corrispondenza automatica personalizzata](../synchronize/custom-match.md) (richiede [Adobe Developer App Builder](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder).)
+   * Seleziona **[!UICONTROL Custom match]** per [corrispondenza automatica personalizzata](../synchronize/custom-match.md) (richiede [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder).)
 
 1. Aggiungi il nome del campo di metadati [AEM Assets](configure-aem.md#configure-metadata) definito per gli SKU dei prodotti Commerce nel campo **[!UICONTROL Match by product SKU attribute name]**, `commerce:skus` per impostazione predefinita.
 
@@ -95,7 +95,7 @@ L&#39;impostazione **Proprietario visualizzazione** determina quale sistema forn
 
 L&#39;amministratore visualizza le immagini disponibili per il proprietario, mentre le altre immagini sono disattivate e visualizzate con l&#39;etichetta **hidden**.
 
-Per informazioni sul comportamento di visualizzazione delle immagini, vedere l&#39;argomento [Imposta dettagli immagine](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}.
+Per informazioni sul comportamento di visualizzazione delle immagini, vedere l&#39;argomento [Imposta dettagli immagine](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}.
 
 >[!TIP]
 >
