@@ -3,7 +3,7 @@ title: Installazione e configurazione
 description: Scopri come installare, aggiornare e disinstallare [!DNL Product Recommendations].
 role: Admin, Developer
 exl-id: 2e7f6454-d4cb-44bc-982f-354a179e8e59
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 source-git-commit: 7d5e3faeef2fb16779d1558027a0b76ff3fe3a38
 workflow-type: tm+mt
 source-wordcount: '584'
@@ -42,7 +42,7 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-Attivando [!DNL Product Recommendations] in Page Builder, è possibile aggiungere una [unità di consigli](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) attiva a qualsiasi contenuto creato in Page Builder, ad esempio pagine, blocchi e blocchi dinamici.
+Attivando [!DNL Product Recommendations] in Page Builder, è possibile aggiungere una [unità di consigli](https://experienceleague.adobe.com/it/docs/commerce-admin/page-builder/add-content/recommendations) attiva a qualsiasi contenuto creato in Page Builder, ad esempio pagine, blocchi e blocchi dinamici.
 
 Per ulteriori istruzioni, vedi [Utilizzo di [!DNL Product Recommendations] con contenuto Page Builder](page-builder.md).
 
@@ -60,13 +60,13 @@ composer require magento/module-visual-product-recommendations
 
    La configurazione di questa connessione consente la sincronizzazione dei dati e la comunicazione tra l’istanza di Commerce, Catalog Service e altri servizi di supporto. La sincronizzazione dei dati è gestita dall&#39;estensione [SaaS Data Export](../data-export/overview.md).
 
-1. Per garantire la corretta esecuzione dell&#39;esportazione del catalogo, verificare che i processi [cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) e [indexers](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) siano in esecuzione e che l&#39;indicizzatore `Product Feed` sia impostato su `Update by Schedule`.
+1. Per garantire la corretta esecuzione dell&#39;esportazione del catalogo, verificare che i processi [cron](https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) e [indexers](https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cli/manage-indexers) siano in esecuzione e che l&#39;indicizzatore `Product Feed` sia impostato su `Update by Schedule`.
 
 Dopo aver collegato correttamente l&#39;applicazione Commerce a Commerce Services e aver specificato [Spazio dati SaaS](../landing/saas.md#saas-configuration), la sincronizzazione del catalogo inizia. Puoi quindi [verificare](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) che i dati comportamentali vengano inviati alla vetrina.
 
 ## Monitoraggio e risoluzione dei problemi di sincronizzazione dei dati
 
-L&#39;amministratore di Commerce può monitorare il processo di sincronizzazione utilizzando [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Utilizza [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) e i registri per gestire il processo e risolverlo.
+L&#39;amministratore di Commerce può monitorare il processo di sincronizzazione utilizzando [Data Management Dashboard](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-dashboard). Utilizza [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) e i registri per gestire il processo e risolverlo.
 
 Puoi quindi [verificare](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) che i dati comportamentali vengano inviati alla vetrina.
 
@@ -120,4 +120,4 @@ Per consentire ai consigli di prodotto di passare attraverso un firewall, aggiun
 
 ## Disinstalla [!DNL Product Recommendations] {#uninstall}
 
-Se necessario, puoi [disinstallare](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) il modulo product-recommendations.
+Se necessario, puoi [disinstallare](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) il modulo product-recommendations.

@@ -35,4 +35,4 @@ ht-degree: 12%
    - [Raccogli dati](events.md)
    - [Personalizza](customize.md)
    - [Gestire le restrizioni dei cookie](setting-cookie.md)
-- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=it)
