@@ -3,32 +3,32 @@ title: Installazione e configurazione
 description: Scopri come installare, aggiornare e disinstallare [!DNL Product Recommendations].
 role: Admin, Developer
 exl-id: 2e7f6454-d4cb-44bc-982f-354a179e8e59
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
-source-git-commit: be1c739f3821a5f1e846b3026088e3a3ff45a60f
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+source-git-commit: 7d5e3faeef2fb16779d1558027a0b76ff3fe3a38
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
 
 # Installazione e configurazione
 
-La distribuzione [!DNL Product Recommendations] nel tuo negozio e nell&#39;amministratore richiede l&#39;installazione del modulo e la configurazione del [connettore](../landing/saas.md) di Commerce Services. Man mano che vengono rilasciati gli aggiornamenti, è possibile aggiornare facilmente l&#39;installazione con la versione più recente.
+La distribuzione di [!DNL Product Recommendations] nella vetrina e nell&#39;amministratore richiede l&#39;installazione del modulo e la configurazione di [Commerce Services Connector](../landing/saas.md). Man mano che gli aggiornamenti vengono rilasciati, è possibile aggiornare facilmente l’installazione con la versione più recente.
 
-- [Installare](#install)
+- [Installa](#install)
 - [Configura](#configure)
 - [Aggiorna](#update)
-- [Disinstallazione](#uninstall)
+- [Disinstalla](#uninstall)
 
-## Installare [!DNL Product Recommendations] {#install}
+## Installa [!DNL Product Recommendations] {#install}
 
-Poiché il [!DNL Product Recommendations] modulo è un metapacchetto autonomo, gli aggiornamenti vengono rilasciati più frequentemente rispetto a Adobe Systems Commerce. Per essere sicuri di essere aggiornati con le correzioni di bug e le funzionalità più recenti, fare riferimento alla [note sulla versione](release-notes.md).
+Poiché il modulo [!DNL Product Recommendations] è un metapacchetto autonomo, gli aggiornamenti vengono rilasciati più frequentemente rispetto ad Adobe Commerce. Per essere certi di essere aggiornati sulle ultime correzioni di bug e funzionalità, consulta le [note sulla versione](release-notes.md).
 
 >[!IMPORTANT]
 >
->Assicurati di[&#128279;](../landing/saas.md#credentials) disporre delle adesioni corrette per utilizzare Product Raccomandazioni.
+>Assicurati di disporre dei [diritti](../landing/saas.md#credentials) corretti per utilizzare i consigli sui prodotti.
 
-Installare il `magento/product-recommendations` modulo con Composer:
+Installa il modulo `magento/product-recommendations` con Composer:
 
 ```bash
 composer require magento/product-recommendations
@@ -42,7 +42,7 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-Attivando [!DNL Product Recommendations] in Page Builder, è possibile aggiungere una [unità di consigli](https://experienceleague.adobe.com/it/docs/commerce-admin/page-builder/add-content/recommendations) attiva a qualsiasi contenuto creato in Page Builder, ad esempio pagine, blocchi e blocchi dinamici.
+Attivando [!DNL Product Recommendations] in Page Builder, è possibile aggiungere una [unità di consigli](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) attiva a qualsiasi contenuto creato in Page Builder, ad esempio pagine, blocchi e blocchi dinamici.
 
 Per ulteriori istruzioni, vedi [Utilizzo di [!DNL Product Recommendations] con contenuto Page Builder](page-builder.md).
 
@@ -60,25 +60,25 @@ composer require magento/module-visual-product-recommendations
 
    La configurazione di questa connessione consente la sincronizzazione dei dati e la comunicazione tra l’istanza di Commerce, Catalog Service e altri servizi di supporto. La sincronizzazione dei dati è gestita dall&#39;estensione [SaaS Data Export](../data-export/overview.md).
 
-1. Per garantire che l&#39;esportazione del catalogo possa essere eseguita correttamente, verificate che i [cron](https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) job e gli [indicizzatori](https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cli/manage-indexers) siano in esecuzione e che l&#39;indicizzatore `Product Feed` sia impostato su `Update by Schedule`.
+1. Per garantire la corretta esecuzione dell&#39;esportazione del catalogo, verificare che i processi [cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) e [indexers](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) siano in esecuzione e che l&#39;indicizzatore `Product Feed` sia impostato su `Update by Schedule`.
 
-Dopo aver correttamente collegare Commerce applicazione a Commerce Services e specificato lo [spazio](../landing/saas.md#saas-configuration) dati SaaS, inizia il Sincronizzazione catalogo. Puoi quindi [verificare](verify.md) che i dati comportamentali vengano inviati al tuo negozio.
+Dopo aver collegato correttamente l&#39;applicazione Commerce a Commerce Services e aver specificato [Spazio dati SaaS](../landing/saas.md#saas-configuration), la sincronizzazione del catalogo inizia. Puoi quindi [verificare](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) che i dati comportamentali vengano inviati alla vetrina.
 
 ## Monitoraggio e risoluzione dei problemi di sincronizzazione dei dati
 
-Dall&#39;amministratore Commerce, è possibile monitorare il processo di sincronizzazione utilizzando il dashboard[&#128279;](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-dashboard) di [gestione dei dati. Utilizza l&#39;interfaccia della riga](../data-export/data-export-cli-commands.md#troubleshooting) di comando e i registri di Commerce per gestire e risolvere i problemi del processo.
+L&#39;amministratore di Commerce può monitorare il processo di sincronizzazione utilizzando [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Utilizza [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) e i registri per gestire il processo e risolverlo.
 
-Puoi quindi [verificare](verify.md) che i dati comportamentali vengano inviati al tuo negozio.
+Puoi quindi [verificare](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) che i dati comportamentali vengano inviati alla vetrina.
 
-## Aggiorna la tua [!DNL Product Recommendations] installazione {#update}
+## Aggiorna l&#39;installazione di [!DNL Product Recommendations] {#update}
 
-Come tutto Adobe Systems Commerce, [!DNL Product Recommendations] utilizza Composer per l&#39;installazione e gli aggiornamenti. Per aggiornare il `magento/product-recommendations` modulo, esegui quanto segue:
+Come tutti gli altri componenti di Adobe Commerce, [!DNL Product Recommendations] utilizza Composer per l&#39;installazione e gli aggiornamenti. Per aggiornare il modulo `magento/product-recommendations`, eseguire le operazioni seguenti:
 
 ```bash
 composer update magento/product-recommendations --with-dependencies
 ```
 
-Per eseguire l&#39;aggiornamento a una versione principale, ad esempio dalla 5.0 alla 6.0, è necessario modificare il file radice `composer.json` del progetto. Per informazioni sulla versione più recente, vedere la [note sulla versione](release-notes.md) . Ad esempio, apriamo il file principale `composer.json` e ricerca per il `magento/product-recommendations` modulo:
+Per eseguire l&#39;aggiornamento a una versione principale, ad esempio da 5.0 a 6.0, è necessario modificare il file radice `composer.json` del progetto. Per informazioni sull&#39;ultima versione, vedere le [note sulla versione](release-notes.md). Ad esempio, apriamo il file `composer.json` principale e cerchiamo il modulo `magento/product-recommendations`:
 
 ```json
 "require": {
@@ -88,7 +88,7 @@ Per eseguire l&#39;aggiornamento a una versione principale, ad esempio dalla 5.0
 }
 ```
 
-Sbattiamo la versione principale da `5.0` a `6.0`:
+Saltiamo la versione principale da `5.0` a `6.0`:
 
 ```json
 "require": {
@@ -118,6 +118,6 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 Per consentire ai consigli di prodotto di passare attraverso un firewall, aggiungi `commerce.adobe.io` all&#39;elenco consentiti.
 
-## Disinstallazione [!DNL Product Recommendations] {#uninstall}
+## Disinstalla [!DNL Product Recommendations] {#uninstall}
 
-Se necessario, è possibile [disinstallare](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) il modulo product-recommendations.
+Se necessario, puoi [disinstallare](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) il modulo product-recommendations.

@@ -2,9 +2,9 @@
 title: Impostazioni
 description: Scopri come modificare l'origine dei tuoi dati di [!DNL Product Recommendations]  e come abilitare i consigli visivi.
 exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
-source-git-commit: fe5f864262478d1f9e205f2cd275452594cf4675
+source-git-commit: 7d5e3faeef2fb16779d1558027a0b76ff3fe3a38
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Gli ordini di gestione temporanea vengono registrati utilizzando la gestione tem
 
 Per modificare l’origine dei dati dei consigli di prodotto, scegli lo spazio dati SaaS con i dati comportamentali che desideri utilizzare. Prima di iniziare, assicurati che:
 
-- La raccolta dati di Storefront deve essere [configurata e abilitata](install-configure.md) per l&#39;ambiente di produzione e [verificata](verify.md) che i dati comportamentali vengano inviati ad Adobe Commerce.
+- La raccolta dati di Storefront deve essere [configurata e abilitata](install-configure.md) per l&#39;ambiente di produzione e [verificata](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) che i dati comportamentali vengano inviati ad Adobe Commerce.
 - Il catalogo dell’ambiente non di produzione deve essere essenzialmente lo stesso del catalogo di produzione. L’utilizzo di cataloghi simili garantisce che le unità di consigli sui prodotti restituite rispecchino fedelmente quelle in produzione.
 
 1. Accedi all’amministratore dell’ambiente Adobe Commerce non di produzione.
