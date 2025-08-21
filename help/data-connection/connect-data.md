@@ -203,7 +203,7 @@ Anche se Commerce raccoglie già i dati storici dell’ordine, è necessario com
 
 Guarda questo video per ulteriori informazioni sugli ordini storici, quindi completa i seguenti passaggi per implementare la raccolta degli ordini storici.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424672)
+>[!VIDEO](https://video.tv.adobe.com/v/3450235?captions=ita)
 
 #### Impostare il servizio di sincronizzazione ordini
 

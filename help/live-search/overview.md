@@ -35,7 +35,7 @@ Il lato Adobe Commerce dell&#39;architettura include l&#39;hosting della ricerca
 
 Con particolare attenzione alla velocità, alla pertinenza e alla facilità d&#39;uso, [!DNL Live Search] è un elemento di cambiamento per gli acquirenti e i commercianti. Guarda il video seguente, quindi fai una breve presentazione di [!DNL Live Search] dalla vetrina.
 
->[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452577?learn=on&captions=ita)
 
 Per un video più approfondito sull&#39;utilizzo e la configurazione di Live Search, vedi l&#39;argomento [Dimostrazione completa su [!DNL Live Search]](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
 
