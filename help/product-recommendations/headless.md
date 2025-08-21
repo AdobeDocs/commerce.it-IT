@@ -2,7 +2,7 @@
 title: Headless
 description: Scopri come integrare [!DNL Product Recommendations] in una vetrina headless.
 exl-id: c40dac31-f87e-402a-ba50-e8aa4c1d66aa
-source-git-commit: fe5f864262478d1f9e205f2cd275452594cf4675
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Gli integratori personalizzati e headless devono fare riferimento a queste istruzioni Luma e PWA come implementazione suggerita. Esistono molti modi per implementare i consigli di prodotto in soluzioni headless e questa documentazione non copre tutti gli scenari. Gli integratori devono occuparsi di eventi, progettazione e test per le loro implementazioni.
 
-[!DNL Product Recommendations] richiede [dati comportamentali e di catalogo](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=it) per funzionare. Il processo di sincronizzazione dei dati del catalogo rimane invariato in un’implementazione headless, ma sono necessarie modifiche per la raccolta dei dati comportamentali.
+[!DNL Product Recommendations] richiede [dati comportamentali e di catalogo](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html) per funzionare. Il processo di sincronizzazione dei dati del catalogo rimane invariato in un’implementazione headless, ma sono necessarie modifiche per la raccolta dei dati comportamentali.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Puoi eseguire entrambe queste azioni utilizzando gli SDK disponibili, come descr
 
 1. [Installa](install-configure.md) il modulo [!DNL Product Recommendations].
 
-1. Installa e utilizza [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) per attivare [eventi comportamentali](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html?lang=it).
+1. Installa e utilizza [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) per attivare [eventi comportamentali](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations).
 
    Numero minimo di eventi richiesti per restituire [!DNL Product Recommendations] risultati:
 

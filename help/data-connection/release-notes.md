@@ -3,9 +3,9 @@ title: Note sulla versione
 description: Informazioni aggiornate sulla versione dell'estensione  [!DNL Data Connection]  di Adobe Commerce.
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 43020e33ce57861cf586ace12a0832b24c23872d
+source-git-commit: 90fcaa2cdd7c869ceddaeea7525cac00a41d94c5
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1257'
 ht-degree: 1%
 
 ---
@@ -24,9 +24,9 @@ Queste note sulla versione contengono aggiornamenti all&#39;estensione [!DNL Dat
 
 Per le modifiche e le correzioni delle funzionalità relative alle estensioni utilizzate dall&#39;estensione [!DNL Data Connection], vedere **Aggiornamenti dei servizi supportati**.
 
-Per informazioni sulle pianificazioni e sul supporto, consulta le [prossime versioni](https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/schedule).
+Per informazioni sulle pianificazioni e sul supporto, consulta le [prossime versioni](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule).
 
-Consulta la documentazione per gli sviluppatori per [scoprire quali versioni di Commerce supportano questo modulo](https://experienceleague.adobe.com/it/docs/commerce-operations/release/product-availability).
+Consulta la documentazione per gli sviluppatori per [scoprire quali versioni di Commerce supportano questo modulo](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Aggiornamenti dei servizi supportati
 
@@ -46,12 +46,12 @@ _2 agosto 2024_
 
 _24 gennaio 2024_
 
-![Nuovo](../assets/new.svg) - Aggiornamento dell&#39;estensione `data-services-b2b` per includere un nuovo evento richiesta di acquisto denominato [deleteRichiitionList](events.md#deleterequisitionlist) per i commercianti B2B.
+![Nuovo](../assets/new.svg) - Aggiornamento dell&#39;estensione `data-services-b2b` per includere un nuovo evento richiesta di acquisto denominato `deleteRequisitionList` per i commercianti B2B.
 
 _16 novembre 2023_
 
 ![Correzione](../assets/fix.svg) - È stato risolto un problema che causava la visualizzazione errata di un messaggio di errore quando si effettuava un ordine con più indirizzi di spedizione.
-![Correzione](../assets/fix.svg) - È stato risolto un problema nell&#39;evento [productPageView](events.md#productpageview) a causa del quale il campo dell&#39;evento `productListItems.priceTotal` non convertiva il prezzo dopo aver cambiato la valuta nella visualizzazione dello store.
+![Correzione](../assets/fix.svg) - È stato risolto un problema nell&#39;evento `productPageView` a causa del quale il campo dell&#39;evento `productListItems.priceTotal` non convertiva il prezzo dopo aver cambiato la valuta nella visualizzazione dello store.
 ![Correzione](../assets/fix.svg) - È stato risolto un problema nel campo evento `productListItems` a causa del quale il codice valuta non veniva aggiornato quando il commerciante cambiava la visualizzazione dell&#39;archivio.
 
 _10 ottobre 2023_
@@ -59,11 +59,11 @@ _10 ottobre 2023_
 ![Nuovo](../assets/new.svg) - Aggiunti nuovi eventi di stato ordine: [Ordine fatturato](events-backoffice.md#orderinvoiced), [Restituzione articolo ordine avviata](events-backoffice.md#orderitemsreturninitiated) e [Restituzione articolo ordine completata](events-backoffice.md#orderitemreturncompleted).
 ![Correzione](../assets/fix.svg) - È stato risolto un problema a causa del quale le modifiche alla configurazione della valuta non venivano applicate negli eventi dopo l&#39;aggiornamento della cache.
 ![Correzione](../assets/fix.svg): è stato corretto un errore che si verificava quando non veniva visualizzato il messaggio di conferma dell&#39;ordine se era abilitato il posizionamento asincrono dell&#39;ordine.
-![Nuovo](../assets/new.svg) - Sono stati aggiunti dati all&#39;evento [addToRichiitionList](events.md#addtorequisitionlist) per i prodotti semplici nella pagina di visualizzazione Categoria.
-![Correzione](../assets/fix.svg) - È stato risolto un problema nei dati `selectedOptions` nell&#39;evento [addToRichiitionList](events.md#addtorequisitionlist) quando i prodotti vengono aggiunti dalla pagina di conferma dell&#39;ordine.
-![Nuovo](../assets/new.svg) - Aggiunti dati prodotto all&#39;evento [addToRichiitionList](events.md#addtorequisitionlist) quando i prodotti vengono aggiunti all&#39;elenco richieste dalla pagina di visualizzazione Categoria.
-![Nuovo](../assets/new.svg) - Aggiunto l&#39;evento [addToRichiitionList](events.md#addtorequisitionlist) quando i prodotti configurabili vengono aggiunti all&#39;elenco richieste dalla pagina di visualizzazione prodotto.
-![Nuovo](../assets/new.svg) - Aggiunti [addToRichiitionList](events.md#addtorequisitionlist) e [removeFromRichiitionList](events.md#removefromrequisitionlist) eventi quando la quantità di prodotto viene aumentata e/o diminuita da un elenco di richieste.
+![Nuovo](../assets/new.svg) - Sono stati aggiunti dati all&#39;evento `addToRequisitionList` per i prodotti semplici nella pagina di visualizzazione Categoria.
+![Correzione](../assets/fix.svg) - È stato risolto un problema nei dati `selectedOptions` nell&#39;evento `addToRequisitionList` quando i prodotti vengono aggiunti dalla pagina di conferma dell&#39;ordine.
+![Nuovo](../assets/new.svg) - Aggiunti dati prodotto all&#39;evento `addToRequisitionList` quando i prodotti vengono aggiunti all&#39;elenco richieste dalla pagina di visualizzazione Categoria.
+![Nuovo](../assets/new.svg) - Aggiunto l&#39;evento `addToRequisitionList` quando i prodotti configurabili vengono aggiunti all&#39;elenco richieste dalla pagina di visualizzazione Prodotto.
+![Nuovo](../assets/new.svg) - Sono stati aggiunti `addToRequisitionList` e `removeFromRequisitionList` eventi quando la quantità di prodotto viene aumentata e/o diminuita da un elenco di richieste di acquisto.
 
 _10 giugno 2023_
 
@@ -141,7 +141,7 @@ _5 giugno 2024_
 [!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"} Adobe Commerce versioni 2.4.4 e successive
 
 ![Correzione](../assets/fix.svg) - È stato risolto un problema che causava l&#39;utilizzo di un formato di data errato durante l&#39;avvio di una [sincronizzazione cronologica](connect-data.md#specify-order-history-date-range).
-![Correzione](../assets/fix.svg) - È stato risolto un problema che impediva l&#39;invio dell&#39;evento [startCheckout](events.md#startcheckout) in Adobe Commerce 2.4.7.
+![Correzione](../assets/fix.svg) - È stato risolto un problema a causa del quale l&#39;evento `startCheckout` non veniva inviato in Adobe Commerce 2.4.7.
 
 ## 3.1.1.
 

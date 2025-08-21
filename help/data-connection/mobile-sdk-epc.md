@@ -3,7 +3,8 @@ title: Integrare Adobe Experience Platform Mobile SDK con Commerce
 description: Scopri come utilizzare Adobe Experience Platform Mobile SDK con la tua vetrina Commerce headless o personalizzata.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 02d07abb-8d7f-4f0a-9f96-f42654cd79d3
+source-git-commit: a3e19940e2a3d8a240bb17703cfdd9903df311aa
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 L&#39;integrazione di [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/) con l&#39;app mobile Commerce consente ai commercianti di inviare [dati evento](events.md) Commerce al server Edge di Experience Platform.
 
-Quando i dati dell’evento Commerce sono disponibili al perimetro, sono accessibili ad altre applicazioni Adobe Experience Cloud. Ad esempio, puoi utilizzare i dati per creare tipi di pubblico in Real-Time CDP e poi [utilizzarli](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=it) per personalizzare la tua app mobile Commerce.
+Quando i dati dell’evento Commerce sono disponibili al perimetro, sono accessibili ad altre applicazioni Adobe Experience Cloud. Ad esempio, puoi utilizzare i dati per creare tipi di pubblico in Real-Time CDP e poi [utilizzarli](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) per personalizzare la tua app mobile Commerce.
 
 ## Configurazione
 
@@ -26,7 +27,7 @@ Per iniziare a utilizzare Adobe Experience Platform Mobile SDK con Commerce, ins
 
 ### Experience Platform
 
-1. Scopri le funzionalità delle app mobili consultando l&#39;esercitazione [Adobe Experience Cloud nelle app per dispositivi mobili](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=it).
+1. Scopri le funzionalità delle app mobili consultando l&#39;esercitazione [Adobe Experience Cloud nelle app per dispositivi mobili](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html).
 
 1. [Installa e configura](https://developer.adobe.com/client-sdks/documentation/getting-started/) SDK in Experience Platform.
 
@@ -162,4 +163,4 @@ Tutti i [eventi](events.md) contengono un campo denominato `channel`. Il campo `
 
 ## Passaggi successivi
 
-Per informazioni su come recuperare i tipi di pubblico di Real-Time CDP dall&#39;app Commerce per dispositivi mobili per informare le regole di prezzo del carrello, i blocchi dinamici e le regole di prodotto correlate, consulta [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=it#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
+Per informazioni su come recuperare i tipi di pubblico di Real-Time CDP dall&#39;app Commerce per dispositivi mobili per informare le regole di prezzo del carrello, i blocchi dinamici e le regole di prodotto correlate, consulta [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
