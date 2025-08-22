@@ -2,10 +2,11 @@
 title: Panoramica sul merchandising
 description: Informazioni sulle funzionalità di merchandising in [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
+source-git-commit: 17d1872321e664ca58a702b0948fd5e6d2f33202
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -16,13 +17,17 @@ In questa sezione imparerai a creare esperienze personalizzate per gli acquirent
 
 ## Individuazione prodotto
 
-L&#39;individuazione dei prodotti migliora la funzionalità di ricerca nel sito, garantendo un&#39;esperienza di acquisto fluida ed efficiente che massimizza i tassi di conversione. Consente ai commercianti di assicurarsi che i consumatori ottengano i prodotti giusti al momento giusto.
+Product Discovery offre ai commercianti strumenti potenti per curare e ottimizzare l’esperienza di acquisto, garantendo ai clienti la possibilità di trovare rapidamente i prodotti giusti al momento giusto. Ottimizzando il comportamento di ricerca, puoi influenzare direttamente la visibilità, la rilevanza e la conversione dei prodotti.
 
-Con l’individuazione dei prodotti puoi impostare facet, regole e sinonimi per:
+Grazie all&#39;individuazione dei prodotti, è possibile:
 
-- Crea esperienze di ricerca significative per aiutare acquirenti e acquirenti a trovare ciò che desiderano con il minimo sforzo possibile.
-- Sfrutta il faceting dinamico basato sull’intelligenza artificiale e la riclassificazione dei risultati di ricerca in risposta ai comportamenti degli acquirenti durante la sessione.
+* **Configura [facet](./facets/overview.md), [regole di merchandising](./rules/overview.md) e [sinonimi](./synonyms/overview.md)** per guidare gli acquirenti verso i prodotti più rilevanti con attrito minimo.
+* **Crea esperienze di ricerca intuitive e orientate agli obiettivi** che riflettano la tua strategia di merchandising e le priorità stagionali.
+* **Utilizza il faceting dinamico basato sull&#39;intelligenza artificiale e la riclassificazione dei risultati** per adattare i risultati della ricerca in tempo reale in base al comportamento dell&#39;acquirente, aumentando il coinvolgimento e le vendite.
+* **Assicurati che gli elementi promozionali e ad alta priorità siano visualizzati in modo efficace** per allineare i risultati della ricerca agli obiettivi aziendali.
 
 ## Consigli
 
-I consigli utilizzano algoritmi di intelligenza artificiale e machine learning per eseguire un’analisi approfondita dei dati aggregati dei visitatori. Quando vengono combinati con il catalogo, questi dati offrono un’esperienza altamente coinvolgente, rilevante e personalizzata. I consigli emergono sulla vetrina come unità con etichette, ad esempio &quot;Hanno visto anche i clienti che hanno visualizzato questo prodotto&quot;. Puoi creare, gestire e distribuire i consigli direttamente da [!DNL Adobe Commerce Optimizer].
+I consigli utilizzano l’intelligenza artificiale e l’apprendimento automatico per analizzare il comportamento aggregato dei visitatori e le interazioni dei prodotti nella vetrina. Combinando questi dati comportamentali con il catalogo dei prodotti, [!DNL Adobe Commerce Optimizer] offre suggerimenti di prodotto altamente personalizzati e pertinenti che migliorano il coinvolgimento degli acquirenti e aumentano la conversione.
+
+I consigli vengono visualizzati nella vetrina come unità etichettate, ad esempio &quot;Hanno visto anche i clienti che hanno visualizzato questo prodotto&quot;. Queste unità possono essere posizionate strategicamente in tutto il percorso. In qualità di merchandiser, puoi facilmente creare, gestire e distribuire queste unità di consigli direttamente in [!DNL Adobe Commerce Optimizer] per supportare obiettivi promozionali, strategie di cross-selling ed esperienze personalizzate.
