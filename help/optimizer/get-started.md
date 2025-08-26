@@ -3,11 +3,11 @@ title: Introduzione
 description: Scopri come iniziare a utilizzare  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 89099811cd04b92a56fd3c1bda98c586e988f878
+source-git-commit: 7a77cc79be9b6f835668b394909ea2325b642b03
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
@@ -38,24 +38,24 @@ Segui questi passaggi essenziali per eseguire l&#39;ambiente [!DNL Adobe Commerc
    ![Crea istanza](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
 
 1. Configurare le impostazioni delle istanze:
-   - **Nome istanza**: nome descrittivo (ad esempio, &quot;My Company Sandbox&quot;)
+   - **Nome**: nome descrittivo (ad esempio, &quot;My Company Sandbox&quot;)
    - **Descrizione**: breve descrizione dello scopo
-   - **Tipo di ambiente**: inizia con un ambiente **Sandbox** per il test
    - **Regione**: seleziona l&#39;area geografica preferita
+   - **Tipo di ambiente**: inizia con un ambiente **Sandbox** per il test
 
 1. Fai clic su **Aggiungi istanza**.
 
-   Cloud Manager viene aggiornato per includere la nuova istanza. Per informazioni dettagliate sull&#39;accesso e la gestione, vedere [Gestire un&#39;istanza](#manage-instances).
+   Cloud Manager viene aggiornato per includere la nuova istanza. Per informazioni dettagliate sull&#39;accesso e la gestione, vedere [Gestire un&#39;istanza](#manage-an-instance).
 
 >[!NOTE]
 >
->Puoi creare ambienti sandbox solo nell’area Nord America. Una volta creata un&#39;istanza, non è possibile modificare l&#39;area.
+>Le istanze sandbox sono limitate all’area Nord America. Non è possibile modificare la regione dopo la creazione.
 
 ### Passaggio 2: Configurare l’ambiente
 
 Dopo aver creato l’istanza:
 
-1. [Gestisci l&#39;istanza](#manage-instances) da Commerce Cloud Manager.
+1. [Gestisci l&#39;istanza](#manage-an-instance) da Commerce Cloud Manager.
 1. Configurare l&#39;accesso utente utilizzando la [Guida alla gestione utente](./user-management.md).
 
 ### Passaggio 3: Aggiungi dati di esempio (facoltativo)
@@ -217,6 +217,6 @@ Dopo aver completato la configurazione:
 ### Ottieni aiuto
 
 - **Risorse per sviluppatori**: [Documentazione per sviluppatori](https://developer.adobe.com/commerce/services/optimizer/)
-- **Risorse storefront**: [Documentazione storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it)
-- **Esercitazioni**: [Esercitazioni Commerce Optimizer](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **Supporto**: [Risorse di supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/overview)
+- **Risorse storefront**: [Documentazione storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Esercitazioni**: [Esercitazioni Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **Supporto**: [Risorse di supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
