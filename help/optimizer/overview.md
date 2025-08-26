@@ -2,11 +2,11 @@
 title: Cos’è Adobe Commerce Optimizer?
 description: Scopri  [!DNL Adobe Commerce Optimizer]  e le sue funzionalità chiave.
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 877f3c377715f204904eefe3b93d796084721aa7
+source-git-commit: 69c752322b01985a2eb55de69d4736d75f6bd60a
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '899'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Con [!DNL Adobe Commerce Optimizer] è possibile:
 
 Guarda il seguente video per una panoramica di alto livello di [!DNL Adobe Commerce Optimizer]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450471?captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Chi trae il massimo vantaggio da [!DNL Adobe Commerce Optimizer]?
 
@@ -79,7 +79,7 @@ Definisci le visualizzazioni e i criteri del catalogo. Il catalogo non solo cont
 
 Le funzionalità principali includono:
 
-- **Acquisizione di cataloghi di terze parti** - Acquisisci i dati del catalogo da qualsiasi origine di terze parti (il catalogo Commerce esistente, PIM, ERP e così via). I dati del catalogo vengono acquisiti direttamente nel livello dei servizi di merchandising, un componente SaaS denominato Servizi di merchandising basato su visualizzazioni e criteri catalogo (visualizzazioni e criteri catalogo).
+- **Acquisizione di cataloghi di terze parti** - Acquisisci i dati del catalogo da qualsiasi origine di terze parti (il catalogo Commerce esistente, PIM, ERP e così via). I dati del catalogo vengono acquisiti direttamente nel livello dei servizi di merchandising, un componente SaaS denominato Servizi di merchandising basato su visualizzazioni e criteri del catalogo.
 - **Servizi di merchandising basati su visualizzazioni e criteri del catalogo** - Questa soluzione è il componente fondamentale di [!DNL Adobe Commerce Optimizer]. I servizi di merchandising basati su visualizzazioni e criteri del catalogo sono un modello di dati di catalogo altamente scalabile e flessibile che consente di sbloccare casi di utilizzo multi-brand, multi-business unit e multilingue. Questi servizi di merchandising forniscono elementi di base che i commercianti possono utilizzare per creare e gestire cataloghi su larga scala. In [!DNL Adobe Commerce Optimizer], puoi gestire il catalogo creando visualizzazioni catalogo e criteri che definiscano al meglio i tuoi obiettivi aziendali. Inoltre, il merchandiser può fornire esperienze personalizzate per indirizzare il traffico e il coinvolgimento utilizzando l’individuazione dei prodotti&#x200B; i consigli e il merchandising intelligente.
 - **Metriche prima e dopo**: fornisce informazioni in tempo reale sulle prestazioni delle iniziative commerce. Puoi visualizzare prima e dopo i risultati di KPI specifici, valutare l’impatto delle modifiche e ottimizzarli per ottenere risultati migliori. Puoi esportare i risultati in un PDF.
 - **Vetrina Commerce con tecnologia Edge Delivery** - Con la distribuzione Edge, puoi avviare rapidamente il tuo sito utilizzando componenti precompilati della vetrina con funzionalità di e-commerce integrate, tra cui pagine di elenchi di prodotti, pagine di dettagli dei prodotti, carrello e pagamento.
