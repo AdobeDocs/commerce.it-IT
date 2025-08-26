@@ -3,16 +3,16 @@ title: Corrispondenza automatica personalizzata
 description: Scopri come la corrispondenza automatica personalizzata è particolarmente utile per i commercianti con logica di corrispondenza complessa o che si affidano a un sistema di terze parti che non può popolare i metadati in AEM Assets.
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: ff6affa5bcc4111e14054f3f6b3ce970619ca295
+source-git-commit: ee1dd902a883e5653a9fb8764fac708975c37091
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '323'
 ht-degree: 1%
 
 ---
 
 # Corrispondenza automatica personalizzata
 
-Se la strategia di corrispondenza automatica predefinita (**Corrispondenza automatica OOTB**) non è allineata ai requisiti aziendali specifici, selezionare l&#39;opzione di corrispondenza personalizzata. Questa opzione supporta l&#39;utilizzo di [Adobe Developer App Builder](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) per sviluppare un&#39;applicazione di corrispondenza personalizzata che gestisca logiche di corrispondenza complesse o risorse provenienti da un sistema di terze parti che non possono popolare i metadati in AEM Assets.
+Se la strategia di corrispondenza automatica predefinita (**Corrispondenza automatica OOTB**) non è allineata ai requisiti aziendali specifici, selezionare l&#39;opzione di corrispondenza personalizzata. Questa opzione supporta l&#39;utilizzo di [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) per sviluppare un&#39;applicazione di corrispondenza personalizzata che gestisca logiche di corrispondenza complesse o risorse provenienti da un sistema di terze parti che non possono popolare i metadati in AEM Assets.
 
 ## Configurare la corrispondenza automatica personalizzata
 
@@ -24,7 +24,7 @@ Se la strategia di corrispondenza automatica predefinita (**Corrispondenza autom
 
 ## Endpoint API di corrispondenza personalizzati
 
-Quando si crea un&#39;applicazione di corrispondenza personalizzata utilizzando [App Builder](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l&#39;applicazione deve esporre i seguenti endpoint:
+Quando si crea un&#39;applicazione di corrispondenza personalizzata utilizzando [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l&#39;applicazione deve esporre i seguenti endpoint:
 
 * Endpoint **da risorsa App Builder all&#39;URL prodotto**
 * Endpoint **da prodotto App Builder a URL risorsa**
@@ -76,8 +76,8 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 
 | Parametro | Tipo di dati | Descrizione |
 | --- | --- | --- |
-| `assetId` | Stringa | Rappresenta l’ID risorsa aggiornato |
-| `eventData` | Stringa | Restituisce il payload di dati associato a `assetId` |
+| `assetId` | Stringa | Rappresenta l’ID risorsa aggiornato. |
+| `eventData` | Stringa | Restituisce il payload di dati associato all’ID risorsa. |
 
 **Risposta**
 
@@ -136,22 +136,13 @@ exports.main = main;
 **Richiesta**
 
 ```bash
-GET https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to-asset
+POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to-asset
 ```
 
 | Parametro | Tipo di dati | Descrizione |
 | --- | --- | --- |
 | `productSKU` | Stringa | Rappresenta lo SKU del prodotto aggiornato. |
-| `asset_matches` | Stringa | Restituisce tutte le risorse associate a un `productSku` specifico. |
-
-Il parametro `asset_matches` contiene i seguenti attributi:
-
-| Attributo | Tipo di dati | Descrizione |
-| --- | --- | --- |
-| `asset_id` | Stringa | Rappresenta l’ID risorsa aggiornato. |
-| `asset_roles` | Stringa | Restituisce tutti i ruoli di risorse disponibili. Utilizza i [ruoli di risorse Commerce](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) supportati come `thumbnail`, `image`, `small_image` e `swatch_image`. |
-| `asset_format` | Stringa | Fornisce i formati disponibili per la risorsa. I valori possibili sono `image` e `video`. |
-| `asset_position` | Stringa | Mostra la posizione della risorsa. |
+| `eventData` | Stringa | Restituisce il payload di dati associato allo SKU del prodotto. |
 
 **Risposta**
 
@@ -161,12 +152,30 @@ Il parametro `asset_matches` contiene i seguenti attributi:
   "asset_matches": [
     {
       "asset_id": "{ASSET_ID_1}",
-      "asset_roles": ["thumbnail","image"]
+      "asset_roles": ["thumbnail","image"],
+      "asset_position": 1,
+      "asset_format": image
     },
     {
       "asset_id": "{ASSET_ID_2}",
       "asset_roles": ["thumbnail"]
+      "asset_position": 2,
+      "asset_format": image     
     }
   ]
 }
 ```
+
+| Parametro | Tipo di dati | Descrizione |
+| --- | --- | --- |
+| `productSKU` | Stringa | Rappresenta lo SKU del prodotto aggiornato. |
+| `asset_matches` | Stringa | Restituisce tutte le risorse associate a uno SKU di prodotto specifico. |
+
+Il parametro `asset_matches` contiene i seguenti attributi:
+
+| Attributo | Tipo di dati | Descrizione |
+| --- | --- | --- |
+| `asset_id` | Stringa | Rappresenta l’ID risorsa aggiornato. |
+| `asset_roles` | Stringa | Restituisce tutti i ruoli di risorse disponibili. Utilizza i [ruoli di risorse Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) supportati come `thumbnail`, `image`, `small_image` e `swatch_image`. |
+| `asset_format` | Stringa | Fornisce i formati disponibili per la risorsa. I valori possibili sono `image` e `video`. |
+| `asset_position` | Stringa | Mostra la posizione della risorsa. |
