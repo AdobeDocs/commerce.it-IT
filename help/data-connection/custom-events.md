@@ -3,10 +3,11 @@ title: Creare eventi personalizzati
 description: Scopri come creare eventi personalizzati per collegare i dati di Adobe Commerce ad altri prodotti Adobe DX.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
+source-git-commit: 81fbcde11da6f5d086c2b94daeffeec60a9fdbcc
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 0%
+source-wordcount: '271'
+ht-degree: 1%
 
 ---
 
@@ -76,11 +77,7 @@ Le sostituzioni di attributi per gli eventi standard sono supportate solo per Ex
 
 Per qualsiasi evento con `customContext`, l&#39;agente di raccolta sostituisce i campi di join impostati nei contesti rilevanti con i campi in `customContext`. Il caso d’uso per le sostituzioni si verifica quando uno sviluppatore desidera riutilizzare ed estendere i contesti impostati da altre parti della pagina in eventi già supportati.
 
->[!NOTE]
->
->Quando si esegue l’override di eventi personalizzati, l’inoltro di eventi ad Experience Platform deve essere disattivato per quel tipo di evento per evitare un doppio conteggio.
-
-Esempi:
+### Esempi
 
 Visualizzazione prodotto con sostituzioni pubblicata tramite Adobe Commerce Events SDK:
 
@@ -131,6 +128,30 @@ In Experience Platform Edge:
   }
 }
 ```
+
+Archivi basati su Luma:
+
+Negli store basati su Luma, gli eventi di pubblicazione vengono implementati in modo nativo. Pertanto, è possibile impostare dati personalizzati estendendo `customContext`.
+
+Ad esempio:
+
+```javascript
+mse.context.setCustom({
+  productListItems: [
+    {
+      productCategories: [
+        {
+          categoryID: "cat_15",
+          categoryName: "summer pants",
+          categoryPath: "pants/mens/summer",
+        },
+      ],
+    },
+  ],
+});
+```
+
+Per ulteriori informazioni sulla gestione dei dati personalizzati, consulta [sostituzione evento personalizzata](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md).
 
 >[!NOTE]
 >
