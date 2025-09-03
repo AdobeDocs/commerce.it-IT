@@ -5,7 +5,7 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
-source-git-commit: 525ad18961f46379360049b1bf49c18b208bf051
+source-git-commit: 757c1f430346ef82cba0f708cdd17580d8e6dba9
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
@@ -117,7 +117,7 @@ Adobe fornisce una raccolta di servizi, servizi di integrazione e strumenti di d
       </a>
       <div>
          <a href="../data-connection/overview.md">
-         <strong>[!DNL Data Connection]</strong> [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Si applica solo ai progetti Adobe Commerce su cloud (infrastruttura PaaS gestita da Adobe) e ai progetti locali."}
+         <strong>[!DNL Data Connection]</strong> [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Si applica solo ai progetti Adobe Commerce su cloud (infrastruttura PaaS gestita da Adobe) e ai progetti locali."}
          </a>
       </div>
       <p>
@@ -130,7 +130,7 @@ Adobe fornisce una raccolta di servizi, servizi di integrazione e strumenti di d
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong>Connettore servizi Commerce</strong> [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Si applica solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti locali."}
+         <strong>Connettore servizi Commerce</strong> [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Si applica solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti locali."}
          </a>
       </div>
       <p>
@@ -184,11 +184,11 @@ Adobe fornisce una raccolta di servizi, servizi di integrazione e strumenti di d
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
       <img alt="Sincronizzazione dei dati del monitor" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
          <strong>Dashboard di gestione dati</strong>
          </a>
       </div>
@@ -201,3 +201,5 @@ Adobe fornisce una raccolta di servizi, servizi di integrazione e strumenti di d
 >[!NOTE]
 >
 >La dashboard di gestione dati è disponibile senza costi aggiuntivi per i commercianti di Commerce che utilizzano Product Recommendations v6.0.0, Live Search v4.1.0 o Catalog Service v1.17 con una licenza attiva. I commercianti che utilizzano versioni precedenti del servizio possono utilizzare [Catalog Sync](../landing/catalog-sync.md) per gestire e tenere traccia della sincronizzazione dei dati.
+
+{{$include /help/_includes/templated/whats-new.md}}
