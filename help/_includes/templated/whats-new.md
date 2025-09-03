@@ -23,7 +23,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È ora possibile utilizzare lo strumento <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">Site Creator</a> per configurare la vetrina senza utilizzare CLI.</p>
+      <td><p>È ora possibile utilizzare lo strumento <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/storefront">Site Creator</a> per configurare la vetrina senza utilizzare CLI.</p>
 </td>
       <td>
         Aggiornamento principale
@@ -45,7 +45,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stato aggiunto un argomento su come aggiungere <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities">attributi personalizzati ai profili</a>.</p>
+      <td><p>È stato aggiunto un argomento su come aggiungere <a href="https://experienceleague.adobe.com/it/docs/commerce/data-connection/customize-data/custom-identities">attributi personalizzati ai profili</a>.</p>
 </td>
       <td>
         Nuovo argomento
