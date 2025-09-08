@@ -23,7 +23,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stata aggiunta la documentazione per il modulo opzionale <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes">Attributi prodotto aggiuntivi</a>. Quando questo modulo viene installato in un ambiente Adobe Commerce, il processo di esportazione dei dati esporta automaticamente i metadati di classe fiscale, set di attributi e inventario dalla configurazione del prodotto Commerce ai feed <code class="language-plaintext highlighter-rouge">products</code> e <code class="language-plaintext highlighter-rouge">product attributes</code>.</p>
+      <td><p>È stata aggiunta la documentazione per il modulo opzionale <a href="https://experienceleague.adobe.com/it/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes">Attributi prodotto aggiuntivi</a>. Quando questo modulo viene installato in un ambiente Adobe Commerce, il processo di esportazione dei dati esporta automaticamente i metadati di classe fiscale, set di attributi e inventario dalla configurazione del prodotto Commerce ai feed <code class="language-plaintext highlighter-rouge">products</code> e <code class="language-plaintext highlighter-rouge">product attributes</code>.</p>
 </td>
       <td>
         Nuovo argomento
@@ -45,7 +45,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È ora possibile utilizzare lo strumento <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">Site Creator</a> per configurare la vetrina senza utilizzare CLI.</p>
+      <td><p>È ora possibile utilizzare lo strumento <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/storefront">Site Creator</a> per configurare la vetrina senza utilizzare CLI.</p>
 </td>
       <td>
         Aggiornamento principale
@@ -67,7 +67,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stato aggiunto un argomento su come aggiungere <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities">attributi personalizzati ai profili</a>.</p>
+      <td><p>È stato aggiunto un argomento su come aggiungere <a href="https://experienceleague.adobe.com/it/docs/commerce/data-connection/customize-data/custom-identities">attributi personalizzati ai profili</a>.</p>
 </td>
       <td>
         Nuovo argomento
