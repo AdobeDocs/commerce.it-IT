@@ -2,11 +2,11 @@
 title: Gestione degli utenti
 description: Scopri come gestire gli utenti in [!DNL Adobe Commerce as a Cloud Service].
 exl-id: 9bc80fe6-6dfd-4bb3-8dc5-d5efd8a8d90c
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 role: Admin
-source-git-commit: a684fee858577b4b5c700769cd81944143cd3d58
+source-git-commit: 492a22cd1fd8a63d3f4e55a3ddb81621439b624b
 workflow-type: tm+mt
-source-wordcount: '1142'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ Questo processo richiede un&#39;organizzazione IMS con accesso a [!DNL Adobe Com
 
 >[!TIP]
 >
->Per aggiungere più utenti contemporaneamente, puoi eseguire un [caricamento CSV in blocco](https://helpx.adobe.com/it/enterprise/using/bulk-upload-users.html){target="_blank"}.
+>Per aggiungere più utenti contemporaneamente, puoi eseguire un [caricamento CSV in blocco](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}.
 > 
-> È inoltre possibile aggiungere più utenti a un ruolo creando un [gruppo di utenti](https://helpx.adobe.com/it/enterprise/using/user-groups.html){target="_blank"}. Quindi puoi aggiungere il prodotto [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] al gruppo di utenti.
+> È inoltre possibile aggiungere più utenti a un ruolo creando un [gruppo di utenti](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Quindi puoi aggiungere il prodotto [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] al gruppo di utenti.
 
 ## Informazioni sui ruoli
 
@@ -29,11 +29,11 @@ I seguenti ruoli sono disponibili per [!DNL Adobe Commerce as a Cloud Service]. 
 
 * **Utenti** - Gli utenti hanno accesso come amministratore all&#39;amministratore di Commerce, ma non possono gestire l&#39;accesso a livello di prodotto in Admin Console. Gli utenti possono inoltre utilizzare i crediti per [creare istanze](./getting-started.md#create-an-instance) in [!DNL Commerce Cloud Manager].
 
-* Gli sviluppatori [**Developers**](https://helpx.adobe.com/it/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} dispongono di autorizzazioni utente e vengono aggiunti all&#39;istanza di Commerce come utente sviluppatore. Ciò significa che possono utilizzare [SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"} dell&#39;interfaccia utente amministratore, [configurare gli eventi](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"} e [creare webhook](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}.
+* Gli sviluppatori [**Developers**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} dispongono di autorizzazioni utente e vengono aggiunti all&#39;istanza di Commerce come utente sviluppatore. Ciò significa che possono utilizzare [SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"} dell&#39;interfaccia utente amministratore, [configurare gli eventi](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"} e [creare webhook](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}.
 
 * Amministratori: esistono tre diversi tipi di amministratori:
-   * [Amministratori di sistema](https://helpx.adobe.com/it/enterprise/using/admin-roles.html){target="_blank"} - L&#39;amministratore di sistema ha accesso a tutti i prodotti e i profili di prodotto dell&#39;organizzazione tramite Admin Console.
-   * [Amministratori di prodotto](#add-a-product-admin) - Gli amministratori di prodotto possono [gestire utenti, ruoli e autorizzazioni per il prodotto](#add-users-and-admins) in [!DNL Adobe Admin Console] e [gestire gli utenti nell&#39;amministratore di Commerce](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}.
+   * [Amministratori di sistema](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - L&#39;amministratore di sistema ha accesso a tutti i prodotti e i profili di prodotto dell&#39;organizzazione tramite Admin Console.
+   * [Amministratori di prodotto](#add-a-product-admin) - Gli amministratori di prodotto possono [gestire utenti, ruoli e autorizzazioni per il prodotto](#add-users-and-admins) in [!DNL Adobe Admin Console] e [gestire gli utenti nell&#39;amministratore di Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}.
    * [Amministratori del profilo di prodotto](#add-users-developers-and-product-profile-admins) - Gli amministratori del profilo di prodotto non hanno accesso all&#39;amministratore Adobe Commerce, ma possono gestire gli utenti per il prodotto in [!DNL Adobe Admin Console].
 
 Per informazioni dettagliate sulle autorizzazioni concesse a ogni ruolo all&#39;interno di Adobe Commerce, consulta [autorizzazioni utente](#user-permissions).
@@ -137,21 +137,21 @@ L’elenco seguente descrive le risorse alle quali i ruoli predefiniti sono auto
 
 Gli amministratori hanno accesso a tutte le autorizzazioni.
 
-## Aggiungere un utente ad AEM Assets
+## Aggiungere un utente ad AEM Assets o ai visualizzatori di prodotto
 
-Per Adobe Experience Manager Assets e le visualizzazioni di prodotto fornite dagli utenti di AEM Assets è necessaria la seguente configurazione.
+La seguente configurazione è richiesta per [!DNL Adobe Experience Manager Assets] e [!DNL Product Visuals powered by AEM Assets] utenti.
 
-Se il tuo account ha accesso a [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service) e desideri consentire a un utente di accedere alle funzioni avanzate di [AEM Assets](https://experienceleague.adobe.com/it/docs/commerce/aem-assets-integration/overview){target="_blank"} insieme a [!DNL Adobe Commerce as a Cloud Service], utilizza la procedura seguente:
+Se il tuo account ha accesso a [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service) e desideri consentire a un utente di accedere alle funzioni avanzate di [AEM Assets](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview){target="_blank"} insieme a [!DNL Adobe Commerce as a Cloud Service], utilizza la procedura seguente:
 
 >[!NOTE]
 >
->Gli utenti che non dispongono delle autorizzazioni appropriate per le risorse non potranno accedere alle funzionalità avanzate di [!DNL AEM Assets], ad esempio [Generazione di immagini AI](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/generative-ai/generative-ai-in-aem){target="_blank"}, [Varianti generate](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/generative-ai/generate-variations-integrated-editor){target="_blank"} e altro ancora.
+>Gli utenti che non dispongono delle autorizzazioni appropriate per le risorse non potranno accedere alle funzionalità avanzate di [!DNL AEM Assets], ad esempio [Generazione di immagini AI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generative-ai-in-aem){target="_blank"}, [Varianti generate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations-integrated-editor){target="_blank"} e altro ancora.
 
 >[!TIP]
 >
->Per aggiungere più utenti contemporaneamente, puoi eseguire un [caricamento CSV in blocco](https://helpx.adobe.com/it/enterprise/using/bulk-upload-users.html){target="_blank"}.
+>Per aggiungere più utenti contemporaneamente, puoi eseguire un [caricamento CSV in blocco](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}.
 >
->È inoltre possibile aggiungere più utenti a un ruolo creando un [gruppo di utenti](https://helpx.adobe.com/it/enterprise/using/user-groups.html){target="_blank"}. Quindi puoi aggiungere il prodotto [!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**] al gruppo di utenti.
+>È inoltre possibile aggiungere più utenti a un ruolo creando un [gruppo di utenti](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Quindi puoi aggiungere il prodotto [!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**] al gruppo di utenti.
 
 1. Passa a https://adminconsole.adobe.com e accedi con il tuo Adobe ID.
 
@@ -171,14 +171,14 @@ Se il tuo account ha accesso a [Adobe Experience Manager as a Cloud Service](htt
 
 1. Seleziona i seguenti profili di prodotto, necessari per integrare AEM Assets con Commerce:
 
-* Proprietario business: necessario per creare e gestire i programmi.
-* Responsabile dell’implementazione: necessario per distribuire il codice dagli archivi ad AEM.
+   * Proprietario business: necessario per creare e gestire i programmi.
+   * Responsabile dell’implementazione: necessario per distribuire il codice dagli archivi ad AEM.
 
-Se aggiungi uno sviluppatore che non ha bisogno di accedere alle interfacce Cloud Manager o Experience Manager, puoi invece assegnare loro il ruolo di sviluppatore.
+   Se aggiungi uno sviluppatore che non ha bisogno di accedere alle interfacce Cloud Manager o Experience Manager, puoi invece assegnare loro il ruolo di sviluppatore.
 
->[!NOTE]
->
->Per ulteriori informazioni su come queste autorizzazioni influiscono sul tuo accesso ad AEM Assets, consulta [Profili di prodotto di Cloud Manager](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"}.
+   >[!NOTE]
+   >
+   >Per ulteriori informazioni su come queste autorizzazioni influiscono sul tuo accesso ad AEM Assets, consulta [Profili di prodotto di Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"}.
 
 1. Fare clic su [!UICONTROL **Applica**].
 
@@ -196,15 +196,15 @@ Dopo aver aggiunto un utente ad AEM Assets, può accedere all&#39;interfaccia [!
 
 1. Dalla pagina [!UICONTROL **Cloud Manager**], fai clic su [!UICONTROL **Aggiungi programma**] per iniziare.
 
-1. [Crea un nuovo programma](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/onboarding/journey/create-program){target="_blank"}.
+1. [Crea un nuovo programma](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program){target="_blank"}.
 
-1. [Crea un nuovo ambiente](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/creating-an-environment){target="_blank"}.
+1. [Crea un nuovo ambiente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/creating-an-environment){target="_blank"}.
 
 1. Dopo aver creato l&#39;ambiente, tornare a [Admin Console](https://adminconsole.adobe.com){target="_blank"} e selezionare [!UICONTROL **Adobe Experience Manager as a Cloud Service**].
 
 1. Ora dovresti visualizzare nuovi profili di prodotto. Selezionare che contiene `- author -`. Ad esempio, `<environment-name> - author - <program-id> - <environment-id>`.
 
-1. [Aggiungi utenti al profilo di prodotto](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/requirements/users-and-roles){target="_blank"}.
+1. [Aggiungi utenti al profilo di prodotto](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles){target="_blank"}.
 
-* [Configura AEM Assets per supportare i metadati di Commerce](https://experienceleague.adobe.com/it/docs/commerce/aem-assets-integration/get-started/configure-aem)
-* [Integrare AEM Assets con Commerce per la sincronizzazione delle risorse](https://experienceleague.adobe.com/it/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
+* [Configura AEM Assets per supportare i metadati di Commerce](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem)
+* [Integrare AEM Assets con Commerce per la sincronizzazione delle risorse](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
