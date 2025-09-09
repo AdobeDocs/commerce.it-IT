@@ -1,8 +1,9 @@
 ---
 title: Impostazioni
 description: Configura le impostazioni per  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+exl-id: 6ac223de-8e03-4842-8b67-92ce321d323d
+source-git-commit: 652681cc9aef416040ccd470d04bf2540fe97262
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 0%
@@ -22,7 +23,7 @@ L&#39;impostazione **Lingua** indica a [!DNL Adobe Commerce Optimizer] quale lin
 È possibile specificare il numero di gruppi di intervalli di prezzi e il modo in cui i valori di prezzo vengono distribuiti tra di essi. Ogni fascia di prezzo si sovrappone al gruppo precedente di uno. Ad esempio, cinque gruppi con un intervallo di 20 creano le seguenti fasce di prezzo: 0-20, 20-40, 40-60, 60-80 e >80. Se il catalogo non contiene un numero di prodotti sufficiente per riempire tutti gli intervalli definiti, la visualizzazione dei gruppi disponibili viene regolata di conseguenza. Ad esempio: 0-20, 60-80, >80.
 
 1. Nell&#39;area di lavoro **Impostazioni**, selezionare **[!UICONTROL Search]**, quindi in **Fatturazione prezzo**, eseguire le operazioni seguenti:
-   - Immetti il **numero di selezioni** o i raggruppamenti di prezzi da rendere disponibili. È possibile definire fino a 50 raggruppamenti di prezzi.
+   - Immetti il **numero di selezioni** o i raggruppamenti di prezzi da rendere disponibili. È possibile definire fino a 100 raggruppamenti di prezzi.
    - Immettere il valore **Intervallo** o l&#39;intervallo di prezzi per ogni gruppo. Il valore massimo è 40.000.000.
 1. Fai clic su **Salva**.
 
@@ -32,7 +33,7 @@ L&#39;impostazione **Lingua** indica a [!DNL Adobe Commerce Optimizer] quale lin
 
 | Campo | Descrizione |
 |--- |--- |
-| Numero di selezioni | Specifica il numero di raggruppamenti di intervalli di prezzi che possono essere utilizzati come filtri di ricerca nella vetrina. Valore predefinito: 8, valore massimo: 50 |
+| Numero di selezioni | Specifica il numero di raggruppamenti di intervalli di prezzi che possono essere utilizzati come filtri di ricerca nella vetrina. Valore predefinito: 8, valore massimo: 100 |
 | Valore intervallo | Specifica l&#39;intervallo di prezzo per ogni gruppo. Ad esempio, cinque selezioni con un valore di intervallo pari a 20 creano cinque raggruppamenti di 0-20, 20-40, 40-60, 60-80 e >80. Valore predefinito: 5, valore massimo: 40.000.000 |
 
 ## Lingua
