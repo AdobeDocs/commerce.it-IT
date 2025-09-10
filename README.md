@@ -1,7 +1,7 @@
 ---
-source-git-commit: 39977196f322cac571ecdb0219f006970aff3575
+source-git-commit: e761e54e7bd7997f3f40b1dfc1293012931111b0
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '466'
 ht-degree: 5%
 
 ---
@@ -15,13 +15,13 @@ Questo progetto ha adottato il [Codice di condotta di Adobe Open Source](code-of
 
 ## Informazioni sui contributi ai contenuti di Adobe
 
-Consulta la [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=it).
+Consulta la [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Il modo in cui contribuisci dipende da chi sei e dal tipo di modifiche con cui desideri contribuire:
 
 ### Modifiche minori
 
-Se stai apportando aggiornamenti minori, visita l&#39;articolo e fai clic sull&#39;area di feedback visualizzata in fondo all&#39;articolo, fai clic su **Opzioni di feedback dettagliate**, quindi fai clic su **Suggerisci una modifica** per passare al file Markdown di origine su GitHub. Utilizza l’interfaccia utente di GitHub per apportare modifiche. Per ulteriori informazioni, consulta la [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=it).
+Se stai apportando aggiornamenti minori, visita l&#39;articolo e fai clic sull&#39;area di feedback visualizzata in fondo all&#39;articolo, fai clic su **Opzioni di feedback dettagliate**, quindi fai clic su **Suggerisci una modifica** per passare al file Markdown di origine su GitHub. Utilizza l’interfaccia utente di GitHub per apportare modifiche. Per ulteriori informazioni, consulta la [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Le correzioni minori o i chiarimenti inviati per la documentazione e gli esempi di codice in questo archivio sono coperti dalle condizioni d’uso di Adobe.
 
@@ -37,7 +37,7 @@ Se sei un autore tecnico, un responsabile di programma o uno sviluppatore del te
 
 I collaboratori della community possono utilizzare l’interfaccia utente di GitHub per apportare modifiche di base o eseguire il fork dell’archivio per apportare contributi principali.
 
-Per informazioni dettagliate, consulta la [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=it).
+Per informazioni dettagliate, consulta la [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 ## Come utilizzare Markdown per formattare l’argomento
 
@@ -73,3 +73,12 @@ Dopo aver clonato l’archivio, esegui:
 - Non è richiesta alcuna ottimizzazione manuale
 
 Per istruzioni dettagliate sulla configurazione, la risoluzione dei problemi e la configurazione, vedere [`.githooks/README.md`](.githooks/README.md).
+
+## Attività di rastremazione disponibili
+
+Questo archivio utilizza le attività di rastremazione fornite dal gem `adobe-comdox-exl-rake-tasks`. Per visualizzare tutte le attività disponibili, eseguire le operazioni seguenti:
+
+```bash
+cd _jekyll
+bundle exec rake --tasks
+```
