@@ -43,7 +43,7 @@ I consigli sui prodotti consentono di:
 
 Guarda questo video per saperne di più su [!DNL Product Recommendations]:
 
->[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3449966?quality=12&captions=ita)
 
 ## Criteri di conservazione dei dati del catalogo
 
