@@ -4,9 +4,9 @@ description: Scopri come creare eventi personalizzati per collegare i dati di Ad
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
-source-git-commit: 25d796da49406216f26d12e3b1be01902dfe9302
+source-git-commit: 4e8cf0ad3f8f94d4f59bc8d78a44f4b3e86cbc3e
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,9 @@ const mse = window.magentoStorefrontEvents;
 mse.publish.productPageView(customCtx);
 ```
 
-### Esempio 1 - aggiunta di `productCategories`
+### Esempio 1
+
+Questo esempio aggiunge contesto personalizzato durante la pubblicazione dell’evento.
 
 ```javascript
 magentoStorefrontEvents.publish.productPageView({
@@ -107,7 +109,9 @@ magentoStorefrontEvents.publish.productPageView({
 });
 ```
 
-### Esempio 2: aggiunta di contesto personalizzato prima della pubblicazione dell’evento
+### Esempio 2
+
+Questo esempio aggiunge un contesto personalizzato prima di pubblicare l’evento.
 
 ```javascript
 const mse = window.magentoStorefrontEvents;
@@ -129,7 +133,9 @@ mse.context.setCustom({
 mse.publish.productPageView();
 ```
 
-### Esempio 3: il contesto personalizzato impostato nell’editore sovrascrive il contesto personalizzato precedentemente impostato in Adobe Client Data Layer.
+### Esempio 3
+
+Questo esempio imposta il contesto personalizzato nell’editore e sovrascrive il contesto personalizzato precedentemente impostato in Adobe Client Data Layer.
 
 In questo esempio, l&#39;evento `pageView` avrà **Nome pagina personalizzato 2** nel campo `web.webPageDetails.name`.
 
@@ -153,7 +159,9 @@ mse.publish.pageView({
 });
 ```
 
-### Esempio 4: aggiunta di contesto personalizzato a `productListItems` con eventi con più prodotti
+### Esempio 4
+
+In questo esempio viene aggiunto contesto personalizzato a `productListItems` eventi con più prodotti.
 
 ```javascript
 const mse = window.magentoStorefrontEvents;
@@ -174,6 +182,22 @@ mse.context.setCustom({
 });
 
 mse.publish.shoppingCartView();
+```
+
+Archivi basati su Luma:
+
+Gli archivi basati su Luma implementano in modo nativo gli eventi di pubblicazione, in modo da poter impostare dati personalizzati estendendo `customContext`.
+
+Ad esempio:
+
+```javascript
+mse.context.setCustom({
+  web: {
+    webPageDetails: {
+      name: 'Custom Page Name'
+    },
+  },
+});
 ```
 
 >[!NOTE]
