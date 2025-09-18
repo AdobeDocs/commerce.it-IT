@@ -242,7 +242,7 @@ _13 settembre 2024_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.4 e successive
 
-![Nuovo](../assets/new.svg)<!-- PAY-5499 --> [!DNL Payment Services] ora supporta l&#39;invio di informazioni sui numeri di tracciamento a PayPal quando viene immesso un numero di tracciamento [](track-shipment.md) in Adobe Commerce.
+![Nuovo](../assets/new.svg)<!-- PAY-5499 --> [!DNL Payment Services] ora supporta l&#39;invio di informazioni sui numeri di tracciamento a PayPal quando viene immesso un numero di tracciamento [&#128279;](track-shipment.md) in Adobe Commerce.
 
 ![Correzione](../assets/fix.svg)<!-- PAY-5626 --> [!DNL Payment Services] ha ottimizzato il processo di richiesta al registro degli esercenti quando i clienti visitano la pagina di pagamento di Commerce. In precedenza, venivano effettuate richieste separate per ciascun metodo di pagamento (campi in hosting, Google Pay, Apple Pay e pulsanti avanzati). Questo miglioramento riduce il numero di chiamate, migliorando le prestazioni e l’efficienza durante il processo di pagamento.
 
