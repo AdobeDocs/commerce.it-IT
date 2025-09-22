@@ -34,7 +34,7 @@ Gli aggiornamenti includono:
 
 ## Versione 103.4.11
 
-![Nuovo](../assets/new.svg) [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
+![Nuovo](../assets/new.svg) [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
 È stato aggiunto il supporto per attributi di prodotto aggiuntivi per includere nel feed di prodotto i dati di classe fiscale, serie di attributi e inventario dalle configurazioni di prodotto Commerce. I clienti che desiderano includere questi attributi nei feed di esportazione del prodotto devono aggiungere il modulo Attributi prodotto aggiuntivi al proprio progetto Adobe Commerce. Vedi [Aggiungere classe fiscale, set di attributi e attributi di inventario](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 ![Correzione](../assets/fix.svg) è stato risolto un problema che causava una sincronizzazione errata degli aggiornamenti dei prodotti eliminati se si verificava un errore durante un indice di prodotti completo. Ora, tutte le eliminazioni di prodotti vengono sincronizzate correttamente anche se si verifica un errore durante il processo di indicizzazione. <!--MDEE-1144-->
 
