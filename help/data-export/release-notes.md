@@ -4,9 +4,9 @@ description: Informazioni aggiornate sulla versione di  [!DNL Data Export Extens
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 6abfeca68ab67fb11493f78440e09408479e1535
+source-git-commit: 4a25bcb82f98eb44c83a186caa6e5d6d664851d4
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1669'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,13 @@ Gli aggiornamenti includono:
 
 ## Versione principale corrente
 
+## Versione 103.4.12
+
+![Correzione](../assets/fix.svg) è stato risolto un problema a causa del quale in Pagina dettagli prodotto (PDP) non venivano visualizzati gli sconti della regola di prezzo del catalogo quando era presente la determinazione dei prezzi per il gruppo di clienti. Il piano PDP ora mostra correttamente il prezzo più basso.<!--MDEE-1158-->
+
 ## Versione 103.4.11
 
-![Nuovo](../assets/new.svg) [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
+![Nuovo](../assets/new.svg) [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
 È stato aggiunto il supporto per attributi di prodotto aggiuntivi per includere nel feed di prodotto i dati di classe fiscale, serie di attributi e inventario dalle configurazioni di prodotto Commerce. I clienti che desiderano includere questi attributi nei feed di esportazione del prodotto devono aggiungere il modulo Attributi prodotto aggiuntivi al proprio progetto Adobe Commerce. Vedi [Aggiungere classe fiscale, set di attributi e attributi di inventario](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 ![Correzione](../assets/fix.svg) è stato risolto un problema che causava una sincronizzazione errata degli aggiornamenti dei prodotti eliminati se si verificava un errore durante un indice di prodotti completo. Ora, tutte le eliminazioni di prodotti vengono sincronizzate correttamente anche se si verifica un errore durante il processo di indicizzazione. <!--MDEE-1144-->
 
