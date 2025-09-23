@@ -1,7 +1,7 @@
 ---
 title: Metriche di successo
 description: Le metriche di successo forniscono ad insight le metriche delle prestazioni chiave per il tuo archivio  [!DNL Adobe Commerce Optimizer] .
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: 7202a531-fec3-4698-89b9-6bdbcc37015e
 source-git-commit: 497f5e887d987435d57a340ef16fcfa561edc545
 workflow-type: tm+mt
