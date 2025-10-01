@@ -1,12 +1,12 @@
 ---
 title: Strumento di migrazione dati in blocco
 description: Scopri come utilizzare lo strumento di migrazione dei dati in blocco per migrare i dati dall'istanza esistente di Adobe Commerce on Cloud a  [!DNL Adobe Commerce as a Cloud Service].
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 role: Architect
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
-source-git-commit: 131d3bdb7e6ef2622236ddf08f306639396d6ffa
+source-git-commit: 6396bc5f4b265e2e13328ec1af3b72c0e8e15c9a
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -39,8 +39,8 @@ Le sezioni seguenti descrivono in dettaglio questi passaggi.
 
 Lo strumento di migrazione dei dati in blocco è disponibile come segue:
 
-- **T4 2025** - Per accedere allo strumento di migrazione dati in blocco, invia un ticket di supporto.
-- **T4 2025** - Lo strumento di migrazione dati in blocco sarà disponibile al pubblico e sarà accessibile da questa pagina.
+- **T4 2025** (non ancora disponibile) - Dopo la versione iniziale dello strumento di migrazione dati in blocco, potrai accedervi inviando un ticket di supporto.
+- **T4 2025** (non ancora disponibile) - Dopo il rilascio pubblico dello strumento di migrazione dati in blocco, sarà accessibile da questa pagina.
 
 ## Creare un ambiente di destinazione
 
