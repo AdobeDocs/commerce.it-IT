@@ -3,10 +3,10 @@ title: Introduzione a  [!DNL Live Search]
 description: Scopri i requisiti di sistema e i passaggi di installazione per  [!DNL Live Search]  da Adobe Commerce.
 role: Admin, Developer
 exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
-source-git-commit: 3ccf5a7a072505a9b7b3625f5faaac1d38917521
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+source-git-commit: e3746bb29c622da56c804d04dd49c33973012e6e
 workflow-type: tm+mt
-source-wordcount: '3137'
+source-wordcount: '3092'
 ht-degree: 0%
 
 ---
@@ -36,8 +36,6 @@ Questo articolo è destinato agli sviluppatori o agli integratori di sistemi del
 
 - A partire dalla versione 3.0.2 di [!DNL Live Search], l&#39;estensione [!DNL Catalog Service] è inclusa nell&#39;installazione.
 
-- A causa dell’annuncio sulla fine del supporto di Elasticsearch 7 relativo ad agosto 2023, Adobe consiglia a tutti i clienti di Adobe Commerce di migrare al motore di ricerca OpenSearch 2.x. Per informazioni sulla migrazione del motore di ricerca durante un aggiornamento del prodotto, vedere [Migrazione a OpenSearch](https://experienceleague.adobe.com/it/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) nella _Guida all&#39;aggiornamento_.
-
 ## Piattaforme supportate
 
 - Adobe Commerce on Cloud (ECE) : 2.4.4+
@@ -66,7 +64,7 @@ A un livello avanzato, l&#39;onboarding di [!DNL Live Search] richiede:
 
 Segui queste istruzioni se stai installando [!DNL Live Search] in una nuova istanza di Commerce.
 
-1. Verificare che [processi cron](https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) e [indicizzatori](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/index-management) siano in esecuzione.
+1. Verificare che [processi cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) e [indicizzatori](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) siano in esecuzione.
 
 1. Utilizza Composer per aggiungere il modulo Live Search al progetto:
 
@@ -80,10 +78,10 @@ Segui queste istruzioni se stai installando [!DNL Live Search] in una nuova ista
    composer update magento/live-search --with-dependencies
    ```
 
-1. Disattivare temporaneamente [!DNL OpenSearch] e i moduli correlati e installare [!DNL Live Search].
+1. Disattivare [!DNL OpenSearch] e i moduli correlati e installare [!DNL Live Search].
 
    ```bash
-   bin/magento module:disable Magento_ Magento_Elasticsearch8 Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch8 Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
    [!DNL Elasticsearch] continua a gestire le richieste di ricerca dalla vetrina mentre il servizio [!DNL Live Search] sincronizza i dati del catalogo e indicizza i prodotti in background.
@@ -94,7 +92,7 @@ Segui queste istruzioni se stai installando [!DNL Live Search] in una nuova ista
    bin/magento setup:upgrade
    ```
 
-1. Verificare che i seguenti [indicizzatori](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/index-management) siano impostati su &quot;Aggiorna in base alla pianificazione&quot;:
+1. Verificare che i seguenti [indicizzatori](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) siano impostati su &quot;Aggiorna in base alla pianificazione&quot;:
 
    - Feed prodotto
    - Feed variante prodotto
@@ -111,7 +109,7 @@ Dopo aver verificato gli indicizzatori, il passaggio successivo consiste nel [co
 
 Seguire queste istruzioni se si sta installando [!DNL Live Search] in un&#39;istanza di Commerce esistente.
 
-1. Verificare che [processi cron](https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) e [indicizzatori](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/index-management) siano in esecuzione.
+1. Verificare che [processi cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) e [indicizzatori](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) siano in esecuzione.
 
 1. Utilizza Composer per aggiungere il modulo Live Search al progetto:
 
@@ -139,7 +137,7 @@ Seguire queste istruzioni se si sta installando [!DNL Live Search] in un&#39;ist
    bin/magento setup:upgrade
    ```
 
-1. Verificare che i seguenti [indicizzatori](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/index-management) siano impostati su &quot;Aggiorna in base alla pianificazione&quot;:
+1. Verificare che i seguenti [indicizzatori](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) siano impostati su &quot;Aggiorna in base alla pianificazione&quot;:
 
    - Feed prodotto
    - Feed variante prodotto
@@ -204,7 +202,7 @@ Questa versione beta supporta tre nuove funzionalità nella query [`productSearc
 
 Queste nuove condizioni migliorano il meccanismo di filtro delle query di ricerca per perfezionare i risultati della ricerca. Queste nuove condizioni non influiscono sulla query di ricerca principale.
 
-Puoi implementare queste nuove condizioni nella pagina dei risultati della ricerca. Ad esempio, puoi aggiungere una nuova sezione nella pagina in cui l’acquirente può perfezionare ulteriormente i risultati della ricerca. È possibile consentire agli acquirenti di selezionare attributi di prodotto specifici, ad esempio &quot;Produttore&quot;, &quot;Numero parte&quot; e &quot;Descrizione&quot;. Da lì, eseguono ricerche all&#39;interno di tali attributi utilizzando le condizioni `contains` o `startsWith`. Per un elenco degli [attributi](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/product-attributes/attributes-input-types) ricercabili, consulta la Guida dell&#39;amministratore.
+Puoi implementare queste nuove condizioni nella pagina dei risultati della ricerca. Ad esempio, puoi aggiungere una nuova sezione nella pagina in cui l’acquirente può perfezionare ulteriormente i risultati della ricerca. È possibile consentire agli acquirenti di selezionare attributi di prodotto specifici, ad esempio &quot;Produttore&quot;, &quot;Numero parte&quot; e &quot;Descrizione&quot;. Da lì, eseguono ricerche all&#39;interno di tali attributi utilizzando le condizioni `contains` o `startsWith`. Per un elenco degli [attributi](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) ricercabili, consulta la Guida dell&#39;amministratore.
 
 1. Per installare la versione beta, aggiungi la seguente dipendenza al progetto:
 
@@ -212,11 +210,11 @@ Puoi implementare queste nuove condizioni nella pagina dei risultati della ricer
    composer require magento/module-live-search-search-types:"^1.0.0-beta1"
    ```
 
-1. Eseguire il commit e inviare le modifiche ai file `composer.json` e `composer.lock` al progetto cloud. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension).
+1. Eseguire il commit e inviare le modifiche ai file `composer.json` e `composer.lock` al progetto cloud. [Ulteriori informazioni](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension).
 
    Questa versione beta aggiunge **[!UICONTROL Search types]** caselle di controllo per **[!UICONTROL Autocomplete]**, **[!UICONTROL Contains]** e **[!UICONTROL Starts with]** nell&#39;amministratore. Aggiorna inoltre l&#39;API GraphQL [`productSearch`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability) per includere queste nuove funzionalità di ricerca.
 
-1. Nell&#39;amministratore, [imposta un attributo di prodotto](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) in modo che sia possibile eseguire ricerche e specifica la funzionalità di ricerca per tale attributo, ad esempio **Contains** (impostazione predefinita) o **Starts with**. È possibile specificare un massimo di sei attributi da abilitare per **Contains** e sei attributi da abilitare per **Starts with**. Per la versione beta, tieni presente che l’amministratore non applica questa restrizione, ma che la applica nelle ricerche API.
+1. Nell&#39;amministratore, [imposta un attributo di prodotto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) in modo che sia possibile eseguire ricerche e specifica la funzionalità di ricerca per tale attributo, ad esempio **Contains** (impostazione predefinita) o **Starts with**. È possibile specificare un massimo di sei attributi da abilitare per **Contains** e sei attributi da abilitare per **Starts with**. Per la versione beta, tieni presente che l’amministratore non applica questa restrizione, ma che la applica nelle ricerche API.
 
    ![Specificare la funzionalità di ricerca](./assets/search-filters-admin.png)
 
@@ -262,7 +260,7 @@ Quando si eseguono questi comandi, inizia la sincronizzazione iniziale dei dati 
 
 ### Monitorare l’avanzamento della sincronizzazione
 
-Utilizza [Dashboard di gestione dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-dashboard) per monitorare lo stato di avanzamento della sincronizzazione. Questa dashboard fornisce informazioni utili sulla disponibilità di dati di prodotto nella vetrina, garantendo che possano essere visualizzati tempestivamente ai clienti.
+Utilizza [Dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) per monitorare lo stato di avanzamento della sincronizzazione. Questa dashboard fornisce informazioni utili sulla disponibilità di dati di prodotto nella vetrina, garantendo che possano essere visualizzati tempestivamente ai clienti.
 
 ![Dashboard di gestione dati](assets/data-management-dashboard.png)
 
@@ -285,12 +283,12 @@ Per verificare se i dati del catalogo sono stati esportati da Adobe Commerce e s
   >
   >Se si verifica un errore `table does not exist`, cercare le voci nelle tabelle `catalog_data_exporter_products` e `catalog_data_exporter_product_attributes`. Questi nomi di tabella vengono utilizzati in [!DNL Live Search] versioni precedenti alla 4.2.1.
 
-- Utilizza il [parco giochi GraphQL](https://experienceleague.adobe.com/it/docs/commerce/live-search/live-search-admin/graphql) con la query predefinita (consulta [riferimento GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) per ulteriori dettagli) per verificare quanto segue:
+- Utilizza il [parco giochi GraphQL](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/graphql) con la query predefinita (consulta [riferimento GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) per ulteriori dettagli) per verificare quanto segue:
 
    - Il conteggio dei prodotti restituito si avvicina a quello previsto per la visualizzazione Store.
    - Vengono restituiti i facet.
 
-Per ulteriori informazioni, vedere [[!DNL Live Search] catalogo non sincronizzato](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) nella Knowledge Base del supporto tecnico.
+Per ulteriori informazioni, vedere [[!DNL Live Search] catalogo non sincronizzato](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) nella Knowledge Base del supporto tecnico.
 
 ## &#x200B;5. Configurare i dati
 
@@ -310,7 +308,7 @@ Se la versione di [!DNL Live Search] è precedente alla 4.0.0+, è necessario ab
 
 Quando si modifica questa configurazione, viene visualizzato il messaggio `Page cache is invalidated`. Per salvare le modifiche, è necessario svuotare la cache di Magento.
 
-1. Accedere alla pagina [Gestione cache](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/cache-management) effettuando una delle operazioni seguenti:
+1. Accedere alla pagina [Gestione cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) effettuando una delle operazioni seguenti:
 
    - Fare clic sul collegamento **[!UICONTROL Cache Management]** nel messaggio sopra l&#39;area di lavoro.
    - Nella barra laterale _Admin_, passa a **[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Cache Management]**.
@@ -321,7 +319,7 @@ Quando si modifica questa configurazione, viene visualizzato il messaggio `Page 
 
 ### Assegna categorie
 
-I prodotti restituiti in [!DNL Live Search] devono essere assegnati a una [categoria](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/categories/categories). In Luma, ad esempio, i prodotti sono inseriti in categorie come &quot;Uomini&quot;, &quot;Donne&quot; e &quot;Attrezzi&quot;. Sono impostate anche delle sottocategorie per &quot;Tops&quot;, &quot;Bottoms&quot; e &quot;Watches&quot;. Queste assegnazioni di categoria migliorano la granularità quando si filtrano.
+I prodotti restituiti in [!DNL Live Search] devono essere assegnati a una [categoria](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). In Luma, ad esempio, i prodotti sono inseriti in categorie come &quot;Uomini&quot;, &quot;Donne&quot; e &quot;Attrezzi&quot;. Sono impostate anche delle sottocategorie per &quot;Tops&quot;, &quot;Bottoms&quot; e &quot;Watches&quot;. Queste assegnazioni di categoria migliorano la granularità quando si filtrano.
 
 ## &#x200B;6. Verificare la connessione
 
@@ -405,7 +403,7 @@ Per eseguire l&#39;aggiornamento a una versione principale, ad esempio da 3.1.1 
 
 ## Disinstallazione di [!DNL Live Search]
 
-Per disinstallare [!DNL Live Search], fare riferimento a [Moduli di disinstallazione](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).
+Per disinstallare [!DNL Live Search], fare riferimento a [Moduli di disinstallazione](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).
 
 ## [!DNL Live Search] pacchetti
 
@@ -414,7 +412,7 @@ L&#39;estensione [!DNL Live Search] è costituita dai pacchetti seguenti:
 | Pacchetto | Descrizione |
 |--- |--- |
 | `module-live-search` | Consente ai commercianti di configurare le impostazioni di ricerca per faceting, sinonimi, regole di query e così via e fornisce l&#39;accesso a un&#39;area di riproduzione GraphQL di sola lettura per testare le query di *Admin*. |
-| `module-live-search-adapter` | Indirizza le richieste di ricerca dalla vetrina al servizio [!DNL Live Search] ed esegue il rendering dei risultati nella vetrina. <br />- Sfoglia categorie - Indirizza le richieste dalla [navigazione superiore](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/navigation/navigation-top) della vetrina al servizio di ricerca.<br />- Ricerca globale - Indirizza le richieste dal campo [Ricerca rapida](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/search/search) al servizio [!DNL Live Search]. Il campo di ricerca rapida si trova nell’angolo superiore destro della pagina della vetrina. |
+| `module-live-search-adapter` | Indirizza le richieste di ricerca dalla vetrina al servizio [!DNL Live Search] ed esegue il rendering dei risultati nella vetrina. <br />- Sfoglia categorie - Indirizza le richieste dalla [navigazione superiore](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top) della vetrina al servizio di ricerca.<br />- Ricerca globale - Indirizza le richieste dal campo [Ricerca rapida](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) al servizio [!DNL Live Search]. Il campo di ricerca rapida si trova nell’angolo superiore destro della pagina della vetrina. |
 | `module-live-search-storefront-popover` | Un popover &quot;search as you type&quot; (cerca durante la digitazione) sostituisce la ricerca rapida standard e restituisce dati e miniature dei risultati di ricerca principali. |
 
 ## [!DNL Live Search] dipendenze
@@ -525,7 +523,7 @@ Dopo l&#39;abilitazione di [!DNL Live Search], l&#39;estensione Esportazione dat
 
 ### Inventory management
 
-[!DNL Live Search] supporta le funzionalità [Inventory management](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/introduction) in Commerce (precedentemente noto come Multi-Source Inventory o MSI). Per abilitare il supporto completo, è necessario [aggiornare](install.md#updating-live-search) il modulo di dipendenza `commerce-data-export` alla versione 102.2.0+.
+[!DNL Live Search] supporta le funzionalità [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) in Commerce (precedentemente noto come Multi-Source Inventory o MSI). Per abilitare il supporto completo, è necessario [aggiornare](install.md#updating-live-search) il modulo di dipendenza `commerce-data-export` alla versione 102.2.0+.
 
 [!DNL Live Search] restituisce un valore booleano che indica se un prodotto è disponibile all&#39;interno di Inventory management, ma non contiene informazioni sull&#39;origine che contiene il titolo.
 
@@ -562,7 +560,7 @@ Questo modulo aggiunge contesti aggiuntivi alle query GraphQL:
 
 ### Supporto B2B
 
-[!DNL Live Search] supporta la funzionalità [B2B](https://experienceleague.adobe.com/it/docs/commerce-admin/b2b/guide-overview) con ulteriori [limitazioni](boundaries-limits.md#b2b-and-category-permissions).
+[!DNL Live Search] supporta la funzionalità [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview) con ulteriori [limitazioni](boundaries-limits.md#b2b-and-category-permissions).
 
 ### Supporto PWA
 
