@@ -1,18 +1,18 @@
 ---
-title: Strumenti di codifica per le estensioni
+title: Strumenti di codifica IA per le estensioni
 description: Scopri come utilizzare gli strumenti di intelligenza artificiale per creare estensioni Commerce App Builder.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 role: Architect
 hide: true
 hidefromtoc: true
-source-git-commit: 6d2debaeefd65d273c1e0e92f9a7b03740b11520
+source-git-commit: e032571ba0dd8a2f71813f9e3114afa3f7d617bf
 workflow-type: tm+mt
-source-wordcount: '1422'
+source-wordcount: '1424'
 ht-degree: 0%
 
 ---
 
-# Strumenti di codifica per le estensioni
+# Strumenti di codifica IA per le estensioni
 
 Durante la migrazione a [!DNL Adobe Commerce as a Cloud Service], è possibile utilizzare gli strumenti di codifica AI per convertire le estensioni PHP [!DNL Adobe Commerce] esistenti in estensioni [!DNL Adobe Developer App Builder]. Può essere utilizzato anche per creare nuove estensioni [!DNL App Builder].
 
@@ -164,7 +164,7 @@ Consulta le seguenti risorse per iniziare:
 
 * [Kit di avvio dell&#39;integrazione](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Modelli di kit di avvio Adobe Commerce](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Modelli di avvio Adobe I/O Events](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Modelli di avvio Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Applicazioni di esempio App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Perché utilizzare queste risorse
