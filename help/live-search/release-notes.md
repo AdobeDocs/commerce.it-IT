@@ -3,9 +3,9 @@ title: Note sulla versione [!DNL Live Search]
 description: Informazioni aggiornate sulla versione di  [!DNL Live Search]  da Adobe Commerce.
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
-source-git-commit: 6b74580a3135322f222b8cfa5c51277a34e6bb83
+source-git-commit: 65ee1d4a14d97d5e54602fbdb3b9aa1b464de8df
 workflow-type: tm+mt
-source-wordcount: '2589'
+source-wordcount: '2633'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ _3 aprile 2025_
 
 _20 febbraio 2025_
 
-![New](../assets/new.svg) Commerce supporta i sinonimi con più parole. [Ulteriori informazioni](synonyms-type.md#multi-word-synonym-behavior). Il supporto per i sinonimi composti da più parole è disponibile solo dopo la data di rilascio del 20 febbraio. Qualsiasi sinonimo di più parole esistente richiede una reindicizzazione completa per funzionare, che puoi richiedere [creando un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+![New](../assets/new.svg) Commerce supporta i sinonimi con più parole. [Ulteriori informazioni](synonyms-type.md#multi-word-synonym-behavior). Il supporto per i sinonimi composti da più parole è disponibile solo dopo la data di rilascio del 20 febbraio. Qualsiasi sinonimo di più parole esistente richiede una reindicizzazione completa per funzionare, che puoi richiedere [creando un ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 _31 gennaio 2025_
 
@@ -53,7 +53,7 @@ _31 gennaio 2025_
 
 _19 settembre 2024_
 
-![Nuovo](../assets/new.svg) È stata rilasciata una versione beta che supporta tre nuove funzionalità di ricerca: con livelli, inizia con e contiene. [Ulteriori informazioni](install.md#install-the-live-search-beta).
+![Nuova](../assets/new.svg) versione di Beta per le seguenti funzionalità di ricerca avanzate: ricerca su più livelli utilizzando `startsWith` e `contains`. [Ulteriori informazioni](workspace.md#layered-search-and-expansion-of-search-types).
 
 _4 settembre 2024_
 
@@ -97,6 +97,15 @@ _31 maggio 2024_
 _27 ottobre 2023_
 
 ![Nuovo](../assets/new.svg) Il widget PLP [!DNL Live Search] ora supporta i campioni colore.
+
+## [!DNL Live Search] 4.6.0
+
+_9 ottobre 2025_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.4 e successive
+
+![Nuova versione GA](../assets/new.svg) per le seguenti funzionalità di ricerca avanzate: ricerca a più livelli con `startsWith` e `contains`. [Ulteriori informazioni](workspace.md#layered-search-and-expansion-of-search-types).
+![Correzione](../assets/fix.svg) L&#39;oggetto `ProductInterface` nel servizio [Live Search](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) è stato dichiarato obsoleto. Utilizzare invece l&#39;oggetto `ProductView` nel servizio catalogo.
 
 ## [!DNL Live Search] 4.5.0
 
@@ -193,7 +202,7 @@ _22 febbraio 2024_
 
 ### Nuove funzioni
 
-![Nuovo](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-dashboard) è ora disponibile. Questo dashboard rinnovato fornisce informazioni approfondite sui flussi di dati per [!DNL Product Recommendations], [!DNL Live Search] e [!DNL Catalog Service].
+![Nuovo](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) è ora disponibile. Questo dashboard rinnovato fornisce informazioni approfondite sui flussi di dati per [!DNL Product Recommendations], [!DNL Live Search] e [!DNL Catalog Service].
 
 ### Aggiornamenti
 
@@ -309,7 +318,7 @@ _14 marzo 2023_
 #### Nuove funzioni
 
 ![Nuova](../assets/new.svg) scheda elemento prodotto nell&#39;anteprima delle regole
-![Nuovo](../assets/new.svg) [Widget pagina elenco prodotti](https://experienceleague.adobe.com/it/docs/commerce/live-search/live-search-storefront/plp-styling)
+![Nuovo](../assets/new.svg) [Widget pagina elenco prodotti](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/plp-styling)
 ![Nuovo](../assets/new.svg) [Opzioni filtro categorie](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
 ![Nuovo](../assets/new.svg) Aggiunta la possibilità di trascinare e rilasciare per creare eventi di fissaggio
 ![Nuove](../assets/new.svg) nuove azioni pin:
@@ -317,8 +326,8 @@ _14 marzo 2023_
 - Fissa in alto - Posiziona il prodotto in prima posizione
 - Fissa in basso - Posiziona il prodotto in fondo ai risultati
 - Sbloccare un evento con un clic
-![Nuovo](../assets/new.svg) [Classificazione intelligente per le regole](https://experienceleague.adobe.com/it/docs/commerce/live-search/live-search-admin/rules/rules-add)
-![New](../assets/new.svg) [!DNL Live Search] ora supporta le funzionalità complete di [Inventory management](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/introduction) in Commerce (in precedenza noto come inventario Multi-Source o MSI). Per abilitare il supporto completo, è necessario [aggiornare](install.md#update) il modulo di dipendenza `commerce-data-export` alla versione 102.2.0+.
+![Nuovo](../assets/new.svg) [Classificazione intelligente per le regole](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/rules/rules-add)
+![New](../assets/new.svg) [!DNL Live Search] ora supporta le funzionalità complete di [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) in Commerce (in precedenza noto come inventario Multi-Source o MSI). Per abilitare il supporto completo, è necessario [aggiornare](install.md#update) il modulo di dipendenza `commerce-data-export` alla versione 102.2.0+.
 
 #### Aggiornamenti
 
@@ -388,7 +397,7 @@ Le installazioni di [!DNL Live Search] esistenti devono essere aggiornate a [!DN
 ![Nuovo](../assets/new.svg) Il numero di righe disponibili in [[!DNL storefront popover]](overview.md) può essere configurato da *Amministratore*.
 ![Nuovo](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) supportato per [!DNL Live Search].
 ![Nuovo](../assets/new.svg) Il processo di installazione di [!DNL Live Search] è stato aggiornato con modifiche avanzate.
-![Correzione](../assets/fix.svg) [Collegamento Ricerca avanzata](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/search/search) rimosso dal piè di pagina della vetrina.
+![Correzione](../assets/fix.svg) [Collegamento Ricerca avanzata](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) rimosso dal piè di pagina della vetrina.
 ![Bug](../assets/bug.svg) I seguenti attributi di prodotto non sono supportati da [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) se utilizzati in relazione alla versione beta di PWA: `description`, `name`, `short_description`
 ![Bug](../assets/bug.svg) La versione beta di PWA per [!DNL Live Search] non supporta [gestione eventi](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
@@ -396,9 +405,9 @@ Le installazioni di [!DNL Live Search] esistenti devono essere aggiornate a [!DN
 
 [!BADGE Supportato]{type="Informative" tooltip="Supportato"} Adobe Commerce versioni 2.4.x e successive
 
-![Correzione](../assets/fix.svg) [L&#39;attributo di prezzo personalizzato](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/product-attributes/attributes-input-types) non restituisce più un errore se configurato come [facet](facets-add.md).
-![Correzione](../assets/fix.svg) è stato risolto un problema che causava un errore se non era disponibile alcun [simbolo di valuta](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) (`data-currency-symbol`).
-![Correzione](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) ora mostra il [Prezzo speciale](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/products/pricing/product-price-special) (prezzo finale minimo) quando disponibile.
+![Correzione](../assets/fix.svg) [L&#39;attributo di prezzo personalizzato](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) non restituisce più un errore se configurato come [facet](facets-add.md).
+![Correzione](../assets/fix.svg) è stato risolto un problema che causava un errore se non era disponibile alcun [simbolo di valuta](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) (`data-currency-symbol`).
+![Correzione](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) ora mostra il [Prezzo speciale](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) (prezzo finale minimo) quando disponibile.
 
 ### [!DNL Live Search] 1.3.0
 
@@ -407,9 +416,9 @@ Le installazioni di [!DNL Live Search] esistenti devono essere aggiornate a [!DN
 ![Nuovo](../assets/new.svg) [Performance](performance.md) il dashboard di reporting fornisce ad insight i termini di ricerca utilizzati dagli acquirenti.
 ![Nuovo](../assets/new.svg) [!DNL Live Search] [Eventi Storefront SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) fornisce l&#39;accesso a un livello dati comune con i servizi di pubblicazione e sottoscrizione degli eventi e le metriche.
 ![Correzione](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) ha una nuova classe `active` per il contenitore `.search-autocomplete` che controlla la visibilità.
-![Correzione](../assets/fix.svg) Nella vetrina, il collegamento a piè di pagina [Termini di ricerca](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/search/search-terms) è stato rimosso e la relativa cache è disabilitata per le installazioni di [!DNL Live Search].
+![Correzione](../assets/fix.svg) Nella vetrina, il collegamento a piè di pagina [Termini di ricerca](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) è stato rimosso e la relativa cache è disabilitata per le installazioni di [!DNL Live Search].
 ![Bug](../assets/bug.svg) La patch per l&#39;adattatore di ricerca gestisce i prodotti duplicati.
-![Bug](../assets/bug.svg) [!DNL Live Search] supporta [ubicazioni di inventario a origine singola](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/sources/sources-manage) (fisico) con più [scorte](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/stocks/stocks-manage) (virtuali). Al momento non sono supportate più origini inventario.
+![Bug](../assets/bug.svg) [!DNL Live Search] supporta [ubicazioni di inventario a origine singola](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage) (fisico) con più [scorte](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) (virtuali). Al momento non sono supportate più origini inventario.
 
 ### [!DNL Live Search] 1.2.0
 
@@ -428,8 +437,8 @@ Le installazioni di [!DNL Live Search] esistenti devono essere aggiornate a [!DN
 
 [!BADGE Supportato]{type="Informative" tooltip="Supportato"} Adobe Commerce versioni 2.4.x e successive
 
-![Bug](../assets/bug.svg) Il servizio [!DNL Live Search] supporta solo la [valuta di base](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration) dell&#39;installazione di Adobe Commerce.
-![Bug](../assets/bug.svg) Quando si aggiunge un facet, il feed degli attributi del prodotto non viene aggiornato correttamente se impostato su `Update on Save`. Per evitare questo problema, passare a [Gestione indice](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/index-management) e impostare il feed attributi prodotto su `Update by Schedule`.
+![Bug](../assets/bug.svg) Il servizio [!DNL Live Search] supporta solo la [valuta di base](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration) dell&#39;installazione di Adobe Commerce.
+![Bug](../assets/bug.svg) Quando si aggiunge un facet, il feed degli attributi del prodotto non viene aggiornato correttamente se impostato su `Update on Save`. Per evitare questo problema, passare a [Gestione indice](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) e impostare il feed attributi prodotto su `Update by Schedule`.
 ![Bug](../assets/bug.svg) [!DNL Live Search] sinonimi definiti per visualizzazione archivio, ma attualmente memorizzati per sito Web e identificati con una combinazione di `environmentId` e `storeViewCode`. Di conseguenza, tutti i siti web e le visualizzazioni dello store all’interno dell’installazione di Adobe Commerce condividono i sinonimi. Il set di sinonimi creato più di recente per la visualizzazione Store ha la precedenza.
 ![Bug](../assets/bug.svg) Se un sinonimo contiene più parole, ogni parola viene considerata come un sinonimo separato. Ad esempio, se definisci &quot;pezzo orario&quot; come sinonimo di &quot;orologio&quot;, sia &quot;tempo&quot; che &quot;pezzo&quot; vengono trattati come sinonimi di orologio.
 
@@ -440,5 +449,5 @@ Le installazioni di [!DNL Live Search] esistenti devono essere aggiornate a [!DN
 Per ulteriori informazioni:
 
 - [Documentazione per gli sviluppatori di Adobe Commerce](https://developer.adobe.com/commerce/docs)
-- [Guida utente di Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce)
+- [Guida utente di Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce)
 - [[!DNL Live Search] sul Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)
