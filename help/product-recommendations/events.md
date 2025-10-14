@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Quando installi e configuri [[!DNL Product Recommendations]](install-configure.md), il modulo distribuisce la raccolta di dati comportamentali nella vetrina. Questo meccanismo raccoglie dati comportamentali anonimi dagli acquirenti e potenzia [!DNL Product Recommendations]. Ad esempio, l&#39;evento `view` viene utilizzato per calcolare il tipo di consiglio `Viewed this, viewed that` e l&#39;evento `place-order` per calcolare il tipo di consiglio `Bought this, bought that`.
 
-Per ulteriori informazioni sui dati comportamentali raccolti dagli eventi [, consulta la ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)documentazione per sviluppatori[!DNL Product Recommendations].
+Per ulteriori informazioni sui dati comportamentali raccolti dagli eventi [, consulta la &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)documentazione per sviluppatori[!DNL Product Recommendations].
 
 >[!NOTE]
 >

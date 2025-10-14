@@ -21,7 +21,7 @@ In questo argomento, API Mesh viene utilizzato per visualizzare i prezzi dei pro
 Per visualizzare le imposte nella pagina Dettagli prodotto, è necessario configurarle.
 
 1. [Impostare le aliquote](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html?lang=it).
-1. Abilita la visualizzazione delle imposte [ nel catalogo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html?lang=it#step-1%3A-configure-catalog-prices-display-settings) e impostala su `Including and Excluding Tax` o `Including Tax`.
+1. Abilita la visualizzazione delle imposte [&#x200B; nel catalogo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html?lang=it#step-1%3A-configure-catalog-prices-display-settings) e impostala su `Including and Excluding Tax` o `Including Tax`.
 
 Verifica che Catalog Service funzioni controllando una pagina di dettagli prodotto.
 

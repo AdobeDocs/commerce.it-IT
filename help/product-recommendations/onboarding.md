@@ -38,7 +38,7 @@ Il processo di onboarding per [!DNL Product Recommendations] richiede l&#39;acce
 
 [!DNL Product Recommendations] può essere aggiunto a una pagina come tipo di contenuto Page Builder. Per aggiungere il supporto di Page Builder ai consigli di prodotto, fare riferimento a [Installazione e configurazione](install-configure.md).
 
-Per istruzioni su come aggiungere [[!DNL Page Builder]  al contenuto di ](page-builder.md), vedere [!DNL Product Recommendations]Integrazione[!DNL Page Builder].
+Per istruzioni su come aggiungere [[!DNL Page Builder]  al contenuto di &#x200B;](page-builder.md), vedere [!DNL Product Recommendations]Integrazione[!DNL Page Builder].
 
 ### Indicizzazione dei prezzi SaaS
 

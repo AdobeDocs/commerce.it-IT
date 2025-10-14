@@ -21,7 +21,7 @@ ht-degree: 2%
 - [Note sulla versione](release-notes.md)
 - Onboarding [!DNL Payment Services] {#get-started}
    - [Panoramica sull’onboarding](onboard.md)
-   - [Installa l&#39;estensione  [!DNL Payment Services] ](install.md)
+   - [Installa l&#39;estensione  [!DNL Payment Services] &#x200B;](install.md)
    - [Connetti l’istanza](connect.md)
    - [Configurare la sandbox di prova](sandbox.md)
    - [Abilita per produzione](production.md)

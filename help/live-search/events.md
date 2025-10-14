@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # [!DNL Live Search] eventi
 
-Per informazioni sui dati comportamentali raccolti dagli eventi [, consulta la ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)documentazione per sviluppatori[!DNL Live Search].
+Per informazioni sui dati comportamentali raccolti dagli eventi [, consulta la &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)documentazione per sviluppatori[!DNL Live Search].

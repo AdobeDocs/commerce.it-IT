@@ -77,7 +77,7 @@ Questo diagramma di flusso mostra i passaggi sandbox necessari per l&#39;onboard
 
 **Passaggi di onboarding per le versioni v2.4.0-2.4.6 Parte 1: Sandbox**
 
-1. [Installare l&#39;estensione [!DNL Payment Services] ](install.md#get-payment-services) se necessario.
+1. [Installare l&#39;estensione [!DNL Payment Services] &#x200B;](install.md#get-payment-services) se necessario.
 1. [Ottieni credenziali API](connect.md#obtain-api-credentials).
 1. [Connetti l&#39;istanza](connect.md#configure-commerce-services) ai servizi Commerce. Questa connessione deve essere completata una sola volta per ogni istanza di Commerce.
 1. [Configura il servizio sandbox](sandbox.md#enable-sandbox-testing) (oppure, in alternativa, accedi a [abilitazione dei pagamenti live](sandbox.md#enable-live-payments) se hai testato funzionalità in un altro ambiente) con un account di elaborazione pagamento PayPal di prova.

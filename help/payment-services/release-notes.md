@@ -609,6 +609,6 @@ _29 novembre 2021_
 
 ![Problema noto](../assets/bug.svg)<!-- Issue PAY-2473 --> L&#39;utilizzo di [chiavi di composizione non corrette](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=it) durante l&#39;installazione dell&#39;estensione impedisce all&#39;utente di [autenticarsi](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) con `MAGEID` corretto.
 
-![Problema noto](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] report [ potrebbero non essere sincronizzati immediatamente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=it).
+![Problema noto](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] report [&#x200B; potrebbero non essere sincronizzati immediatamente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=it).
 
 ![Problema noto](../assets/bug.svg)<!-- Issue PAY-2475 --> Il tuo [account sandbox PayPal](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=it) per [!DNL Payment Services] non può essere verificato se crei tale account durante l&#39;onboarding.

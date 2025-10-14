@@ -189,7 +189,7 @@ Puoi abilitare e configurare le opzioni di pagamento dei pulsanti di pagamento P
 
      >[!NOTE]
      >
-     > Per utilizzare Apple Pay è necessario disporre di un account Apple sandbox tester[ (completo di informazioni sulla fatturazione e sulla carta di credito false) per testarlo. ](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) Quando sei pronto a utilizzare Apple Pay in modalità di produzione sandbox _o_, dopo aver completato [test e convalida](test-validate.md#test-in-sandbox-environment), completa [la registrazione automatica con [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Registra il dominio live_) e configuralo per i tuoi store in [!DNL Payment Services].
+     > Per utilizzare Apple Pay è necessario disporre di un account Apple sandbox tester[&#x200B; (completo di informazioni sulla fatturazione e sulla carta di credito false) per testarlo. &#x200B;](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) Quando sei pronto a utilizzare Apple Pay in modalità di produzione sandbox _o_, dopo aver completato [test e convalida](test-validate.md#test-in-sandbox-environment), completa [la registrazione automatica con [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Registra il dominio live_) e configuralo per i tuoi store in [!DNL Payment Services].
 
      Quando attivi/disattivi la visibilità dei pulsanti di pagamento o del messaggio PayPal Pay Later (Paga più tardi), nella parte inferiore della pagina Settings (Impostazioni) viene visualizzata un&#39;anteprima visiva della configurazione.
 
@@ -244,7 +244,7 @@ Puoi abilitare e configurare le opzioni di pagamento dei pulsanti di pagamento P
 
 1. [Svuotare la cache](#flush-the-cache).
 
-Puoi configurare lo stile del pulsante di pagamento [ nella configurazione legacy in Admin](configure-admin.md#configure-paypal-smart-buttons) o qui in [!DNL Payment Services Home]. Consulta la [Guida allo stile Pulsanti di PayPal](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) per ulteriori informazioni sullo stile dei pulsanti di pagamento di PayPal.
+Puoi configurare lo stile del pulsante di pagamento [&#x200B; nella configurazione legacy in Admin](configure-admin.md#configure-paypal-smart-buttons) o qui in [!DNL Payment Services Home]. Consulta la [Guida allo stile Pulsanti di PayPal](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) per ulteriori informazioni sullo stile dei pulsanti di pagamento di PayPal.
 
 #### Opzioni di configurazione
 

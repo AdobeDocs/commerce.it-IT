@@ -48,7 +48,7 @@ Per creare il progetto, segui i passaggi descritti nell&#39;esercitazione [Auten
 Durante l’esercitazione, assicurati che il progetto presenti quanto segue:
 
 - Accesso ai [profili di prodotto](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=it#select-product-profiles) seguenti: **Accesso predefinito a tutti i prodotti** e **Accesso predefinito a tutti i prodotti AEP**.
-- [ ruoli e autorizzazioni corretti configurati](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=it#assign-api-to-a-role).
+- [&#x200B; ruoli e autorizzazioni corretti configurati](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=it#assign-api-to-a-role).
 - Se hai deciso di utilizzare i token web JSON (JWT) come metodo di autenticazione server-to-server, devi caricare anche una chiave privata.
 
 Il risultato di questo passaggio crea un file di configurazione da utilizzare nel passaggio successivo.
@@ -69,7 +69,7 @@ Configurazione amministratore ![[!DNL Data Connection]](./assets/epc-admin-confi
    cat config/private.key | pbcopy
    ```
 
-   Per ulteriori informazioni sul file [, vedere Autenticazione dell&#39;account di servizio ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/)`private.key`.
+   Per ulteriori informazioni sul file [, vedere Autenticazione dell&#39;account di servizio &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/)`private.key`.
 
 1. Copiare il contenuto del file `<workspace-name>.json` nei campi **Dettagli account servizio/credenziali**, ad esempio `"client_id"`, `"client_secrets"`, `"technical_account_email"`, `"technical_account_id"` e così via.
 

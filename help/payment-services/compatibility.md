@@ -102,7 +102,7 @@ Per istruzioni complete e avviare il processo di onboarding, consulta [Introduzi
 
 ### Carte di credito accettate e valute
 
-[!DNL Payment Services] accetta le valute dei paesi [ in cui è disponibile](#availability). Per ulteriori informazioni sull&#39;impostazione dei tassi di cambio, vedere [Configurazione della valuta](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html?lang=it).
+[!DNL Payment Services] accetta le valute dei paesi [&#x200B; in cui è disponibile](#availability). Per ulteriori informazioni sull&#39;impostazione dei tassi di cambio, vedere [Configurazione della valuta](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html?lang=it).
 
 Per ulteriori informazioni sulle valute e sui metodi di pagamento disponibili con i prodotti e i servizi PayPal, consulta le pagine seguenti:
 
