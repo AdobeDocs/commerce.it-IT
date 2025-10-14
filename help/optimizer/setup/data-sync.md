@@ -1,12 +1,13 @@
 ---
 title: Sincronizzazione dati
-description: Scopri come sincronizzare i dati del catalogo con  [!DNL Adobe Commerce Optimizer].
+description: Rivedi i dati del catalogo che vengono sincronizzati dall'origine dati di Commerce in [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
+source-git-commit: 0b8e0222a1de1c425964f9f54294d7e0435a26d8
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---

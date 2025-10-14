@@ -1,8 +1,9 @@
 ---
 title: Creare e gestire i consigli
 description: Scopri come creare e gestire i consigli.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
+source-git-commit: 0b8e0222a1de1c425964f9f54294d7e0435a26d8
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 0%
@@ -135,7 +136,7 @@ _Tipo di consiglio_
 >
 >Gli indicatori non possono mai raggiungere il 100%.
 
-La percentuale dell’indicatore di preparazione per i tipi di consigli che dipendono dai dati del catalogo non cambia molto, in quanto il catalogo del commerciante non cambia spesso. Tuttavia, la percentuale dell’indicatore di preparazione per i tipi di consigli basati sui dati comportamentali dell’acquirente può variare spesso a seconda dell’attività giornaliera dell’acquirente.
+La percentuale dell’indicatore di preparazione per i tipi di consigli che dipendono dai dati del catalogo non cambia molto, in quanto il catalogo del commerciante non cambia spesso. Tuttavia, la percentuale dell’indicatore di preparazione per i tipi di consigli basati sui dati comportamentali degli acquirenti può variare spesso a seconda dell’attività giornaliera degli acquirenti.
 
 #### Cosa fare se la percentuale dell’indicatore di prontezza è bassa
 
