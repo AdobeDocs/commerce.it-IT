@@ -18,14 +18,14 @@ Dopo aver abilitato [!DNL Catalog Service], puoi accedere al servizio e utilizza
 
 [!DNL Catalog Service] è disponibile come API GraphQL a cui è possibile accedere dall&#39;amministratore Commerce o da qualsiasi applicazione front-end che supporta le query GraphQL. Il servizio è disponibile sia in ambienti SaaS che PaaS.
 
-[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
+[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
 
 | Ambiente | Endpoint |
 | ------------ | ----------: |
 | **Test** | `https://catalog-service-sandbox.adobe.io/graphql` |
 | **Produzione** | `https://catalog-service.adobe.io/graphql` |
 
-[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."}
+[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."}
 
 | Ambiente | Endpoint |
 | ----------- | --------:|
@@ -48,7 +48,7 @@ Per informazioni dettagliate sull&#39;utilizzo dell&#39;API GraphQL di Catalog S
 
 Per l&#39;integrazione con una vetrina headless, è necessario aggiornare la configurazione della vetrina per abilitare la comunicazione tra la vetrina e [!DNL Catalog Service] per recuperare i dati di prodotti e categorie.
 
-Se utilizzi Adobe Commerce storefront su Edge Delivery Services, aggiungi l’endpoint Catalog Service alla configurazione della vetrina. Per informazioni dettagliate, consulta la [documentazione di Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/#storefront-configuration).
+Se utilizzi Adobe Commerce storefront su Edge Delivery Services, aggiungi l’endpoint Catalog Service alla configurazione della vetrina. Per informazioni dettagliate, consulta la [documentazione di Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=it#storefront-configuration).
 
 Per altre integrazioni, consulta la documentazione di configurazione del progetto per informazioni dettagliate su come configurare le integrazioni tra il servizio e le origini dati back-end.
 
@@ -64,4 +64,4 @@ Per informazioni dettagliate sull&#39;installazione e la configurazione, vedere 
 
 ## Utilizzare il dashboard di gestione dati
 
-Utilizza [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) per monitorare la sincronizzazione dei dati tra [!DNL Catalog Service] e l&#39;istanza di Adobe Commerce. Il dashboard fornisce informazioni approfondite sul processo di trasferimento dei dati, compreso lo stato delle esportazioni di dati e un elenco di prodotti sincronizzati.
+Utilizza [Data Management Dashboard](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-dashboard) per monitorare la sincronizzazione dei dati tra [!DNL Catalog Service] e l&#39;istanza di Adobe Commerce. Il dashboard fornisce informazioni approfondite sul processo di trasferimento dei dati, compreso lo stato delle esportazioni di dati e un elenco di prodotti sincronizzati.
