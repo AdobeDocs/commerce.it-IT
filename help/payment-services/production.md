@@ -131,7 +131,7 @@ Per abilitare la pubblicazione dei tuoi store, richiedi pagamenti a Adobe (solo 
 1. Compila il modulo.
 1. Un membro del team vendite ti contatterà.
 
-In alternativa, puoi richiedere i pagamenti a Adobe all&#39;indirizzo [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
+In alternativa, puoi richiedere i pagamenti a Adobe all&#39;indirizzo [business.adobe.com](https://business.adobe.com/it/resources/payment-services.html).
 
 >[!IMPORTANT]
 >
