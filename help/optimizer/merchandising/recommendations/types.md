@@ -1,10 +1,11 @@
 ---
 title: Tipi di consigli
 description: Scopri i consigli che puoi distribuire in varie pagine del sito.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+exl-id: f1c4e0ef-a8fe-452d-9870-6d6964b4335d
+source-git-commit: 3fa6816c539494ce2cc67a9e3c601b8d3048f5d9
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1731'
 ht-degree: 0%
 
 ---
@@ -18,13 +19,43 @@ Adobe Commerce Optimizer fornisce una vasta serie di consigli che puoi distribui
 - [Popolarità](#popularity)
 - [Prestazioni elevate](#highperf)
 
+Come best practice, Adobe consiglia le seguenti linee guida quando si utilizzano i consigli:
+
+- Diversifica i tipi di consigli. I clienti iniziano a ignorare i consigli se suggeriscono di volta in volta gli stessi prodotti.
+
+- Non distribuire gli stessi consigli nella pagina del carrello e nella pagina di conferma dell’ordine. Valuta se utilizzare `Most Added to Cart` per la pagina del carrello e `Bought This, Bought That` per la pagina di conferma dell&#39;ordine.
+
+- Mantieni il tuo sito ordinato. Non distribuire più di tre unità di consigli sulla stessa pagina.
+
+- Se il tuo negozio vende vestiti, il consiglio `More like this` può suggerire prodotti specifici per genere che non corrispondono al genere del prodotto visualizzato. Prendi in considerazione l’utilizzo di questo tipo di consigli solo per categorie non di abbigliamento.
+
 >[!NOTE]
 >
->Per ulteriori informazioni sugli eventi descritti in questo articolo, vedi [eventi](../../setup/events/overview.md).
+>Per ulteriori informazioni sugli eventi descritti in questo articolo, vedi [eventi storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) nella documentazione per gli sviluppatori.
+
+## Requisiti in materia di dati e comportamento
+
+Product Recommendations è un sistema basato sui dati che si basa sui dati comportamentali raccolti dalla vetrina. La qualità e la quantità dei consigli dipendono dalla quantità di dati evento disponibili.
+
+>[!IMPORTANT]
+>
+>La maggior parte dei tipi di consigli richiede dati comportamentali sufficienti (come visualizzazioni di prodotti, azioni di aggiunta al carrello e acquisti) per generare risultati significativi. Il sistema richiede in genere diversi giorni di attività di acquisto attiva per generare consigli accurati. Consulta [indicatori di preparazione](create.md#readiness-indicators) per scoprire come il traffico del sito aiuta a popolare i vari tipi di consigli.
+
+### Cosa succede con dati insufficienti
+
+Quando i dati dell’evento non sono sufficienti per generare i consigli, il sistema può:
+
+- Restituisce risultati vuoti per l’unità di consigli.
+- Attiva [consigli di backup](../../setup/events/overview.md#backup-recommendations), ad esempio per visualizzare `Most viewed` prodotti quando i consigli personalizzati non sono ancora disponibili.
+- Visualizza meno prodotti di [configurati](create.md) nell&#39;unità di consigli.
 
 ## Personalizzato {#personalized}
 
 Questi tipi di consigli consigliano prodotti in base alla cronologia comportamentale dell’acquirente specifica sul tuo sito. Ad esempio, se un acquirente cerca una giacca in precedenza o ne ha acquistata una sul tuo sito, questi consigli in pratica rilevano da dove hanno lasciato e consigliano altre giacche o prodotti simili.
+
+>[!NOTE]
+>
+>I consigli personalizzati richiedono che gli acquirenti abbiano una storia comportamentale consolidata. I nuovi visitatori o acquirenti che non dispongono di una cronologia delle interazioni sufficiente visualizzeranno [consigli di backup](../../setup/events/overview.md#backup-recommendations), ad esempio la maggior parte dei prodotti visualizzati, finché non genereranno un numero sufficiente di segnali comportamentali sul sito.
 
 | Tipo | Descrizione |
 |---|---|
@@ -38,6 +69,8 @@ Questi tipi di consigli sono orientati alla social-proof per aiutare gli acquire
 >[!NOTE]
 >
 >I tipi di consigli &quot;visualizzato questo, visualizzato quello&quot;, &quot;visualizzato questo, acquistato quello&quot; e &quot;comprato questo, comprato che&quot; non utilizzano una metrica di occorrenza semplice, ma piuttosto un algoritmo di filtro collaborativo più sofisticato che cerca *somiglianze interessanti* che non sono distorti verso i prodotti più popolari. I dati utilizzati per informare questi tipi di consigli si basano sul comportamento aggregato dell’acquirente derivante da più sessioni sul sito. I dati non si basano sul comportamento dell’acquirente derivato da una singola occorrenza nella sessione sul sito. Questi tipi di consigli aiutano gli acquirenti a trovare i prodotti adiacenti che potrebbero non essere evidenti da abbinare al prodotto attualmente visualizzato.
+>
+>Questi tipi di consigli richiedono dati importanti sulle interazioni tra i prodotti per identificare correlazioni significative. I negozi con una limitata diversità del catalogo dei prodotti o un traffico ridotto possono visualizzare meno consigli fino a quando non emergono modelli comportamentali sufficienti.
 
 | Tipo | Descrizione |
 |---|---|
@@ -50,6 +83,10 @@ Questi tipi di consigli sono orientati alla social-proof per aiutare gli acquire
 
 Questi tipi di consigli consigliano prodotti che sono i più popolari o di tendenza negli ultimi sette giorni.
 
+>[!NOTE]
+>
+>I consigli basati sulla popolarità richiedono dati evento sufficienti dalla vetrina. Se il negozio è nuovo o il traffico è ridotto, questi tipi di consigli possono restituire risultati limitati o nessun risultato fino a quando non sono stati raccolti dati comportamentali adeguati. Monitora l&#39;[indicatore di preparazione ai dati](../../manage-results/recommendation-performance.md) per garantire prestazioni ottimali.
+
 | Tipo | Descrizione |
 |---|---|
 | Articoli più visualizzati | Consiglia i prodotti più visualizzati contando il numero di sessioni in cui si è verificata un’azione di visualizzazione negli ultimi sette giorni.<br/><br/>**Dove usato:**<br/>- Home page<br/>- Categoria<br/>- Dettagli prodotto<br/>- Carrello<br/>- Conferma <br/><br/>**Etichette consigliate:**<br/>- Più popolari<br/>- Di tendenza<br/>- Popolari al momento<br/>- Recentemente popolari<br/>- Prodotti popolari ispirati a questo prodotto (PDP)<br/>- Più venduti |
@@ -61,9 +98,14 @@ Questi tipi di consigli consigliano prodotti che sono i più popolari o di tende
 
 Questi tipi di consigli consigliano prodotti con le prestazioni migliori in base a criteri di successo come l’aggiunta al carrello o i tassi di conversione.
 
+>[!NOTE]
+>
+>I tipi di consigli con prestazioni elevate si basano sui dati di conversione (acquisti e azioni di aggiunta al carrello). I nuovi store o store con volumi di conversione bassi potrebbero dover raccogliere dati per 7-14 giorni prima che questi consigli diventino effettivi.
+
 | Tipo | Descrizione |
 |---|---|
 | Visualizza per conversione acquisto | Consiglia prodotti con il più alto tasso di conversione visualizzazione-acquisto. Di tutte le sessioni cliente che hanno registrato una visualizzazione di prodotto, qual è la proporzione che alla fine ha registrato un acquisto da parte del cliente.<br/><br/>**Dove usato:**<br/>- Home page<br/>- Categoria<br/>- Dettagli prodotto<br/>- Carrello<br/>- Conferma <br/><br/>**Etichette consigliate:**<br/> -Articoli più venduti<br/>- Prodotti popolari<br/>- Potresti essere interessato a |
 | Conversione da Vista a Carrello | Consiglia i prodotti con il più alto tasso di conversione da vista a carrello. Di tutte le sessioni cliente che hanno registrato una visualizzazione di prodotto, qual è la proporzione che alla fine ha registrato e aggiunto al carrello da parte del cliente.<br/><br/>**Dove usato:**<br/>- Home page<br/>- Categoria<br/>- Dettagli prodotto<br/>- Carrello<br/>- Conferma <br/><br/>**Etichette consigliate:**<br/> - Articoli più venduti<br/>- Prodotti più popolari<br/>- Potresti essere interessato a |
 | Più acquistati | Spesso definito &quot;Più venduti&quot;, questo tipo di consiglio conta il numero di sessioni in cui si è verificata un’azione di ordine negli ultimi sette giorni. Questo tipo di consiglio può essere utilizzato su tutte le pagine.<br/><br/>**Dove usato:**<br/>- Home page<br/>- Categoria<br/>- Dettagli prodotto<br/>- Carrello<br/>- Conferma <br/><br/>**Etichette consigliate:**<br/> - Più popolari<br/>- Di tendenza<br/>- Popolari al momento<br/>- Recentemente popolari<br/>- Prodotti popolari ispirati a questo prodotto (PDP)<br/>- Più venduti |
+| Più aggiunti al carrello | Consiglia i prodotti aggiunti più frequentemente ai carrelli dagli acquirenti negli ultimi sette giorni. Questo tipo di consiglio può essere utilizzato su tutte le pagine.<br/><br/>**Dove usato:**<br/>- Home page<br/>- Categoria<br/>- Dettagli prodotto<br/>- Carrello<br/>- Conferma <br/><br/>**Etichette consigliate:**<br/> - Più popolari<br/>- Di tendenza<br/>- Popolari al momento<br/>- Recentemente popolari<br/>- Prodotti popolari ispirati a questo prodotto (PDP)<br/>- Più venduti |
 | Più aggiunti al carrello | Consiglia i prodotti aggiunti più frequentemente ai carrelli dagli acquirenti negli ultimi sette giorni. Questo tipo di consiglio può essere utilizzato su tutte le pagine.<br/><br/>**Dove usato:**<br/>- Home page<br/>- Categoria<br/>- Dettagli prodotto<br/>- Carrello<br/>- Conferma <br/><br/>**Etichette consigliate:**<br/> - Più popolari<br/>- Di tendenza<br/>- Popolari al momento<br/>- Recentemente popolari<br/>- Prodotti popolari ispirati a questo prodotto (PDP)<br/>- Più venduti |

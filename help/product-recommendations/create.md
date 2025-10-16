@@ -2,7 +2,7 @@
 title: Crea nuovo consiglio
 description: Scopri come creare un’unità di consigli di prodotto.
 exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
-source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
+source-git-commit: 67d0b98f3a9317c0db944a176fd99375091a3970
 workflow-type: tm+mt
 source-wordcount: '1512'
 ht-degree: 0%
@@ -24,11 +24,11 @@ Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dat
 
 1. Nella barra laterale _Amministratore_, vai a **Marketing** > _Promozioni_ > **Consigli di prodotto** per visualizzare l&#39;area di lavoro _Consigli di prodotto_.
 
-1. Specifica la [visualizzazione archivio](https://experienceleague.adobe.com/it/docs/commerce-admin/start/setup/websites-stores-views) in cui desideri visualizzare i consigli.
+1. Specifica la [visualizzazione archivio](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) in cui desideri visualizzare i consigli.
 
    >[!NOTE]
    >
-   > Le unità di consigli di Page Builder devono essere create nella vista store predefinita, ma possono essere utilizzate ovunque. Per ulteriori informazioni sulla creazione di consigli di prodotto con Page Builder, consulta [Aggiungi contenuto - Consigli di prodotto](https://experienceleague.adobe.com/it/docs/commerce-admin/page-builder/add-content/recommendations).
+   > Le unità di consigli di Page Builder devono essere create nella vista store predefinita, ma possono essere utilizzate ovunque. Per ulteriori informazioni sulla creazione di consigli di prodotto con Page Builder, consulta [Aggiungi contenuto - Consigli di prodotto](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Fai clic su **Crea consiglio**.
 
@@ -38,14 +38,14 @@ Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dat
 
    >[!NOTE]
    >
-   > I consigli di prodotto non sono supportati nella pagina del carrello quando lo store è configurato per [visualizzare la pagina del carrello subito dopo l&#39;aggiunta di un prodotto al carrello](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
+   > I consigli di prodotto non sono supportati nella pagina del carrello quando lo store è configurato per [visualizzare la pagina del carrello subito dopo l&#39;aggiunta di un prodotto al carrello](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Home page
    * Categoria
    * Dettagli prodotto
    * Carrello
    * Conferma
-   * [Page Builder](https://experienceleague.adobe.com/it/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    Puoi creare fino a cinque unità di consigli attive per ogni tipo di pagina e fino a 25 per Page Builder. Il tipo di pagina è disattivato Al raggiungimento del limite.
 
@@ -161,7 +161,7 @@ La percentuale dell’indicatore di preparazione per i tipi di consigli che dipe
 
 #### Cosa fare se la percentuale dell’indicatore di prontezza è bassa
 
-Una percentuale di preparazione bassa indica che non vi sono molti prodotti del catalogo che possono essere inclusi nei consigli per questo tipo di consigli. Ciò significa che esiste un&#39;elevata probabilità che vengano restituiti [consigli di backup](events.md#backuprecs) se si distribuisce comunque questo tipo di consigli.
+Una percentuale di preparazione bassa indica che non vi sono molti prodotti del catalogo che possono essere inclusi nei consigli per questo tipo di consigli. Ciò significa che esiste un&#39;elevata probabilità che vengano restituiti [consigli di backup](events.md#backup-recommendations) se si distribuisce comunque questo tipo di consigli.
 
 >[!IMPORTANT]
 >
