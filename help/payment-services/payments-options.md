@@ -3,9 +3,9 @@ title: Opzioni di pagamento
 description: Imposta le opzioni di pagamento per personalizzare i metodi disponibili per i clienti del tuo Negozio.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
+source-git-commit: 999407f00b118441abe39209a15f587ec73fa75d
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1350'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Quando [!DNL Fastlane] è abilitato, l&#39;opzione [!UICONTROL Credit Card Field
 
 >[!NOTE]
 >
-> Attualmente, Fastlane è supportato solo dai commercianti statunitensi; pertanto, [!UICONTROL 3D Secure authentication] non è attualmente supportato.
+> Nelle istanze sandbox, le transazioni Fastlane non mostrano l’indirizzo di spedizione nella vista Attività transazione.
 
 Per ulteriori informazioni, consulta l&#39;argomento [Fastlane by PayPal](https://www.paypal.com/us/fastlane){target=_blank}.
 
@@ -156,11 +156,11 @@ Per **acquisire i pagamenti con il provider di carte di credito esistente _e_ i 
 1. Assicurati che l&#39;archivio sia [in modalità di produzione](configure-admin.md#enable-payment-services).
 1. [Configura i pulsanti di pagamento PayPal desiderati](configure-admin.md#payment-buttons).
 1. Disattiva _l&#39;opzione_ nella sezione **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
-1. Disattiva _l&#39;opzione_ nella sezione **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** e utilizza l&#39;account _[!UICONTROL Credit card fields]_&#x200B;provider di carte di credito esistente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=it#payments)
+1. Disattiva _l&#39;opzione_ nella sezione **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** e utilizza l&#39;account _[!UICONTROL Credit card fields]_provider di carte di credito esistente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)
 
 ## Opzioni di pagamento
 
-Con [!DNL Payment Services] puoi configurare l&#39;esperienza di pagamento per Adobe Commerce in base alle preferenze e ai comportamenti degli acquirenti. Caratteristiche quali il vaulting con carta di credito [1&rbrace; e lo svuotamento automatico dell&#39;ordine garantiscono ai clienti una transazione semplice e senza problemi.](vaulting.md)
+Con [!DNL Payment Services] puoi configurare l&#39;esperienza di pagamento per Adobe Commerce in base alle preferenze e ai comportamenti degli acquirenti. Caratteristiche quali il vaulting con carta di credito [1} e lo svuotamento automatico dell&#39;ordine garantiscono ai clienti una transazione semplice e senza problemi.](vaulting.md)
 
 Con Adobe Commerce e Magento Open Source [!DNL Payment Services], sono disponibili più esperienze di pagamento. Esistono comportamenti diversi per ogni metodo di pagamento a seconda della posizione in cui sei nel processo di pagamento:
 
