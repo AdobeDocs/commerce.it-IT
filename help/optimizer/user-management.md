@@ -1,10 +1,11 @@
 ---
 title: Gestione degli utenti
-description: Scopri come gestire gli utenti in [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: 02758aa5cc14af6d46bfc4bb7865fa37a787d4cb
+description: Scopri come creare e gestire utenti e assegnare ruoli utente per  [!DNL Adobe Commerce Optimizer].
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+exl-id: 9ab2118d-b7e3-4e2e-adac-8f3950fe1824
+source-git-commit: 36a953d4fb0e1e14c7cb88a80f3b59d6fe8eb49e
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '696'
 ht-degree: 0%
 
 ---
@@ -17,22 +18,56 @@ Puoi assegnare gli utenti a uno qualsiasi dei seguenti ruoli:
 
 - **Utente**: gli utenti hanno accesso all&#39;interfaccia utente [!DNL Adobe Commerce Optimizer] per visualizzare e gestire le visualizzazioni catalogo e le regole di merchandising e per tenere traccia delle metriche delle prestazioni.
 
-- [**Sviluppatore**](https://helpx.adobe.com/it/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}: gli sviluppatori dispongono delle autorizzazioni utente e dell&#39;accesso a Adobe Developer Console. Ciò significa che possono creare progetti e configurare le credenziali per utilizzare strumenti per sviluppatori come API e SDK di [!DNL Adobe Commerce Optimizer] insieme a strumenti di estensibilità di Adobe come App Builder e API Mesh.
+- [**Sviluppatore**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}: gli sviluppatori dispongono delle autorizzazioni utente e dell&#39;accesso a Adobe Developer Console. Ciò significa che possono creare progetti e configurare le credenziali per utilizzare strumenti per sviluppatori come API e SDK di [!DNL Adobe Commerce Optimizer] insieme a strumenti di estensibilità di Adobe come App Builder e API Mesh.
 
 - **Amministratore** - Esistono tre diversi tipi di ruoli di amministratore:
-   - [Amministratori di sistema](https://helpx.adobe.com/it/enterprise/using/admin-roles.html){target="_blank"} - L&#39;amministratore di sistema ha accesso a tutti i prodotti e i profili di prodotto dell&#39;organizzazione tramite Adobe Admin Console.
+   - [Amministratori di sistema](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - L&#39;amministratore di sistema ha accesso a tutti i prodotti e i profili di prodotto dell&#39;organizzazione tramite Adobe Admin Console.
    - [Amministratori prodotto](#add-a-product-admin) - Gli amministratori prodotto possono [gestire utenti, ruoli e autorizzazioni per il prodotto](#add-users-and-admins) in [!DNL Adobe Admin Console].
    - [Amministratori dei profili di prodotto](#add-users-developers-and-product-profile-admins) - Gli amministratori dei profili di prodotto possono gestire gli utenti per il prodotto in [!DNL Adobe Admin Console].
 
 ## Aggiungi un amministratore prodotto
 
-1. Passa a [Admin Console](https://adminconsole.adobe.com) e accedi con il tuo Adobe ID.
+>[!BEGINTABS]
+
+>[!NOTE]
+>
+>Assegna agli amministratori di prodotto il [ruolo utente](#add-users) prima di aggiungerli come amministratori di prodotto. Il ruolo Utente è richiesto per le autorizzazioni di base di Commerce.
+
+>[!TAB GA (con provisioning dopo il 13 ottobre 2025)]
+
+1. Passa a <https://adminconsole.adobe.com> e accedi con il tuo Adobe ID.
 
 1. Seleziona la tua organizzazione.
 
-1. Nella scheda [!UICONTROL **Prodotti**], in [!UICONTROL **Prodotti e servizi**], selezionare il prodotto [!UICONTROL **Adobe Commerce as a Cloud Service - Backend**].
+1. Selezionare la scheda [!UICONTROL **Utenti**].
 
-   ![seleziona il prodotto](../cloud-service/assets/backend.png){width="600" zoomable="yes"}
+1. Selezionare la scheda [!UICONTROL **Amministratori**].
+
+1. Fai clic su [!UICONTROL **Aggiungi amministratore**].
+
+1. Immettere il nome utente o l&#39;indirizzo di posta elettronica degli utenti che si desidera aggiungere come amministratori e fare clic su [!UICONTROL **Avanti**].
+
+1. Selezionare il ruolo [!UICONTROL **Amministratore del profilo di prodotto**].
+
+1. Fai clic su **+** per aggiungere prodotti.
+
+1. Seleziona l’istanza Commerce Optimizer esistente a cui aggiungere l’amministratore. Le istanze di Commerce Optimizer utilizzano il seguente formato: `Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`.
+
+1. Seleziona il profilo di prodotto.
+
+1. Fare clic su [!UICONTROL **Applica**].
+
+1. Fai clic su [!UICONTROL **Salva**].
+
+>[!TAB Accesso anticipato (eseguito prima del 13 ottobre 2025)]
+
+1. Passa a <https://adminconsole.adobe.com> e accedi con il tuo Adobe ID.
+
+1. Seleziona la tua organizzazione.
+
+1. Nella scheda [!UICONTROL **Prodotti**], in [!UICONTROL **Prodotti e servizi**], selezionare il prodotto [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**].
+
+   ![seleziona il prodotto](/help/cloud-service/assets/backend.png){width="600" zoomable="yes"}
 
 1. Selezionare la scheda [!UICONTROL **Amministratori**].
 
@@ -40,41 +75,74 @@ Puoi assegnare gli utenti a uno qualsiasi dei seguenti ruoli:
 
 1. Immettere il nome utente o l&#39;indirizzo di posta elettronica degli utenti che si desidera aggiungere come amministratori e fare clic su [!UICONTROL **Salva**].
 
-## Aggiungere utenti, sviluppatori e amministratori dei profili di prodotto
+>[!ENDTABS]
 
->[!BEGINSHADEBOX &quot;Prerequisiti&quot;]
+## Aggiungi utenti
+
+Le istruzioni seguenti forniscono informazioni su come aggiungere utenti a [!DNL Commerce Cloud Manager] e Commerce Optimizer. L&#39;interfaccia [!DNL Commerce Cloud Manager] consente di creare e gestire le istanze di Commerce Optimizer. Questo processo è necessario per tutti gli utenti, inclusi sviluppatori e amministratori.
+
+>[!NOTE]
 >
->Per la gestione degli utenti è necessario il provisioning seguente:
+>Solo gli amministratori di prodotto e gli amministratori di sistema possono aggiungere utenti e sviluppatori al prodotto Adobe Commerce Optimizer.
 
-- Organizzazione IMS con provisioning per [!DNL Adobe Commerce Optimizer]
-- Un account Adobe Experience Cloud nella stessa organizzazione IMS con il ruolo di amministratore di sistema o di prodotto
+>[!BEGINTABS]
 
->[!ENDSHADEBOX]
+>[!TAB GA (con provisioning dopo il 13 ottobre 2025)]
 
-Utilizzare le istruzioni seguenti per aggiungere utenti e sviluppatori a [!DNL Commerce Cloud Manager], dove si gestiscono le istanze di Commerce.
-
-1. Passa a [Adobe Admin Console](https://adminconsole.adobe.com) e accedi con il tuo Adobe ID.
+1. Passa a <https://adminconsole.adobe.com> e accedi con il tuo Adobe ID.
 
 1. Seleziona la tua organizzazione.
 
-1. Nella scheda [!UICONTROL **Prodotti**], in [!UICONTROL **Prodotti e servizi**], selezionare il prodotto [!UICONTROL **Adobe Commerce as a Cloud Service - Backend**].
+1. Selezionare la scheda [!UICONTROL **Prodotti**].
 
-   ![seleziona il prodotto](../cloud-service/assets/backend.png){width="600" zoomable="yes"}
+1. Seleziona il prodotto [!UICONTROL **Adobe Commerce**].
+
+1. Seleziona il prodotto Commerce Cloud Manager se desideri aggiungere l’utente all’interfaccia di Cloud Manager, in cui può creare e gestire le istanze di Commerce Optimizer, oppure seleziona l’istanza Commerce Optimizer esistente a cui aggiungere l’utente. Le istanze di Commerce Optimizer utilizzano il seguente formato: `Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`.
+
+1. Selezionare la scheda [!UICONTROL **Utenti**] e fare clic su [!UICONTROL **Aggiungi utenti**].
+
+1. Immettere il nome utente o l&#39;indirizzo di posta elettronica degli utenti che si desidera aggiungere e fare clic su [!UICONTROL **Salva**].
+
+1. Seleziona il profilo di prodotto desiderato.
+
+1. Fare clic su [!UICONTROL **Applica**].
+
+1. Fai clic su [!UICONTROL **Salva**].
+
+>[!TAB Accesso anticipato (eseguito prima del 13 ottobre 2025)]
+
+1. Passa a <https://adminconsole.adobe.com> e accedi con il tuo Adobe ID.
+
+1. Seleziona la tua organizzazione.
+
+1. Nella scheda [!UICONTROL **Prodotti**], in [!UICONTROL **Prodotti e servizi**], selezionare il prodotto [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**].
+
+   ![seleziona il prodotto](/help/cloud-service//assets/backend.png){width="600" zoomable="yes"}
 
 1. Fare clic sul profilo di prodotto [!UICONTROL **Predefinito - Cloud Manager**].
 
-1. Seleziona la scheda [!UICONTROL **Utenti**], [!UICONTROL **Sviluppatori**] o [!UICONTROL **Amministratori**] e fai clic su [!UICONTROL **Aggiungi utenti**] o [!UICONTROL **Aggiungi sviluppatori**] o [!UICONTROL **Aggiungi amministratori**].
+1. Selezionare la scheda [!UICONTROL **Utenti**] e fare clic su [!UICONTROL **Aggiungi utenti**].
 
-   Gli amministratori aggiunti da questa schermata vengono assegnati al gruppo [amministratori del profilo di prodotto](#understanding-roles).
+   ![scheda selezionata](/help/cloud-service/assets/tab-select.png){width=600 zoomable="yes"}
 
-   ![scheda selezionata](../cloud-service/assets/tab-select.png){width=600 zoomable="yes"}
+1. Immettere il nome utente o l&#39;indirizzo di posta elettronica degli utenti che si desidera aggiungere e fare clic su [!UICONTROL **Salva**].
 
-1. Immettere il nome utente o l&#39;indirizzo di posta elettronica degli utenti che si desidera aggiungere come amministratori e fare clic su [!UICONTROL **Salva**].
+>[!ENDTABS]
+
+### Aggiungere sviluppatori e amministratori dei profili di prodotto
+
+Per aggiungere sviluppatori e amministratori dei profili di prodotto, ripetere il processo [aggiungi utenti](#add-users), ma selezionare la scheda [!UICONTROL **Sviluppatori**] o [!UICONTROL **Amministratori**] invece della scheda [!UICONTROL **Utenti**].
+
+>[!NOTE]
+>
+>Assegna agli sviluppatori il ruolo Utente prima di aggiungerli come sviluppatori. Il ruolo Utente è richiesto per le autorizzazioni di base di Commerce.
+
+![scheda selezionata](/help//cloud-service/assets/tab-select.png){width=600 zoomable="yes"}
 
 ## Gestione di utenti in blocco
 
 Puoi aggiungere più utenti in modo più efficiente con uno dei seguenti metodi:
 
-- Utilizza la funzionalità **Aggiungi utenti da CSV** in Adobe Admin Console per eseguire un [caricamento CSV in blocco](https://helpx.adobe.com/it/enterprise/using/bulk-upload-users.html){target="_blank"}.
-- Aggiungere più utenti a un ruolo creando un [gruppo di utenti](https://helpx.adobe.com/it/enterprise/using/user-groups.html){target="_blank"}. Quindi, aggiungi il prodotto [!UICONTROL **Adobe Commerce as a Cloud Service - Backend**] al gruppo di utenti.
+- Utilizza la funzionalità **Aggiungi utenti da CSV** in Adobe Admin Console per eseguire un [caricamento CSV in blocco](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}.
+- Aggiungere più utenti a un ruolo creando un [gruppo di utenti](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Aggiungere quindi il prodotto [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] al gruppo di utenti.
 
