@@ -3,9 +3,9 @@ title: Mantenere contenuti accurati e pertinenti
 description: Una piattaforma di eCommerce è uno dei canali di coinvolgimento più cruciali. La disponibilità di aggiornamenti senza soluzione di continuità nel sistema di gestione delle risorse garantisce che le vetrine commerciali presentino sempre le informazioni di prodotto più aggiornate.
 feature: CMS, Media, Integration
 exl-id: 2c749e84-fcc4-4bf9-90b2-87438329889e
-source-git-commit: 6640635fca5c53fe4b06b9bbb3120fffc46cb0b8
+source-git-commit: 141f2291d1ead324a159053145e92ee7d4237a7d
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,10 @@ Disaccoppiando la creazione dei contenuti dalla gestione dei cataloghi, le azien
 * Gli aggiornamenti dei prodotti rimangono rapidi perché la creazione delle risorse non ritarda le modifiche al catalogo, consentendo una maggiore agilità nella gestione dei nuovi prodotti.
 
 * L&#39;automazione migliora l&#39;efficienza e l&#39;accuratezza, riducendo le incongruenze tra i dati dei prodotti e i contenuti associati.
+
+>[!NOTE]
+>
+> Le importazioni di prodotti CSV in PaaS e SaaS non attivano gli eventi di aggiornamento. Utilizza l’API per le importazioni e gli aggiornamenti dei cataloghi.
 
 ## Modifiche al ciclo di vita di AEM Assets
 
