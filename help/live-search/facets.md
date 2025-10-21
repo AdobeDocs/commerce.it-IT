@@ -31,7 +31,7 @@ I requisiti degli attributi di categoria e prodotto per il faceting sono simili 
 >
 >![Facet categoria](assets/facet-category.png)
 
-Per ulteriori informazioni sui requisiti del facet in [, consulta ](./boundaries-limits.md#facets)limiti e limitazioni[!DNL Live Search].
+Per ulteriori informazioni sui requisiti del facet in [, consulta &#x200B;](./boundaries-limits.md#facets)limiti e limitazioni[!DNL Live Search].
 
 Se hai a che fare con un numero elevato di attributi, puoi combinarli in un singolo &quot;meta-attribute&quot;. Ad esempio, le scarpe hanno generalmente dimensioni numeriche, mentre le magliette hanno generalmente le dimensioni &quot;S/M/L/XL&quot;. Questi due tipi di dimensioni possono essere combinati in un unico attributo ricercabile.
 
