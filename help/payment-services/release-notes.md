@@ -21,7 +21,7 @@ Queste note sulla versione descrivono la versione iniziale di [!DNL Payment Serv
 
 Per le modifiche e le correzioni delle funzionalità rilasciate al di fuori della normale versione di rilascio delle funzionalità, controlla le sezioni _Aggiornamenti dei servizi ospitati_.
 
-Per ulteriori informazioni sulle prossime versioni, sul supporto del prodotto e sulle versioni di Adobe Commerce che supportano l&#39;estensione [!DNL Payment Services], consulta gli argomenti Pianificazione della versione [di Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) e [Disponibilità del prodotto](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+Per ulteriori informazioni sulle prossime versioni, sul supporto del prodotto e sulle versioni di Adobe Commerce che supportano l&#39;estensione [!DNL Payment Services], consulta gli argomenti Pianificazione della versione [di Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/schedule) e [Disponibilità del prodotto](https://experienceleague.adobe.com/it/docs/commerce-operations/release/product-availability).
 
 ## Aggiornamenti dei servizi in hosting
 
@@ -35,15 +35,15 @@ _25 aprile 2025_
 
 _30 agosto 2024_
 
-![Nuovo problema](../assets/new.svg)<!-- Issue PAY-5658 --> Ora gli esercenti possono filtrare le transazioni in base ai dettagli di pagamento nel report [transazioni](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) per ottenere dati più dettagliati e accurati sui metodi di pagamento.
+![Nuovo problema](../assets/new.svg)<!-- Issue PAY-5658 --> Ora gli esercenti possono filtrare le transazioni in base ai dettagli di pagamento nel report [transazioni](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html?lang=it) per ottenere dati più dettagliati e accurati sui metodi di pagamento.
 
 _15 luglio 2024_
 
-![Nuovo problema](../assets/new.svg)<!-- Issue PAY-5571 --> Ora gli esercenti possono filtrare le transazioni in base all&#39;e-mail del cliente Commerce nel [report delle transazioni](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html). Inserisci l’e-mail del cliente per filtrare le transazioni per quella specifica e-mail.
+![Nuovo problema](../assets/new.svg)<!-- Issue PAY-5571 --> Ora gli esercenti possono filtrare le transazioni in base all&#39;e-mail del cliente Commerce nel [report delle transazioni](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html?lang=it). Inserisci l’e-mail del cliente per filtrare le transazioni per quella specifica e-mail.
 
 _9 luglio 2024_
 
-![Nuovo problema](../assets/new.svg)<!-- Issue PAY-5488 --> Ora gli esercenti possono visualizzare l&#39;ID cliente Commerce come colonna nel [report delle transazioni](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) per identificare le transazioni inserite da un particolare cliente. Inoltre, gli esercenti possono filtrare il rapporto transazioni in base a questo ID cliente Commerce per gli ordini associati.
+![Nuovo problema](../assets/new.svg)<!-- Issue PAY-5488 --> Ora gli esercenti possono visualizzare l&#39;ID cliente Commerce come colonna nel [report delle transazioni](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html?lang=it) per identificare le transazioni inserite da un particolare cliente. Inoltre, gli esercenti possono filtrare il rapporto transazioni in base a questo ID cliente Commerce per gli ordini associati.
 
 _5 marzo 2024_
 
@@ -51,7 +51,7 @@ _5 marzo 2024_
 
 _10 ottobre 2023_
 
-![Nuovo problema](../assets/fix.svg)<!-- Issue PAY-4888 --> Ora gli esercenti possono filtrare le transazioni con carta di credito e di debito in base alle ultime quattro cifre del numero di carta nel [report Transazioni](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html).
+![Nuovo problema](../assets/fix.svg)<!-- Issue PAY-4888 --> Ora gli esercenti possono filtrare le transazioni con carta di credito e di debito in base alle ultime quattro cifre del numero di carta nel [report Transazioni](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html?lang=it).
 
 _12 luglio 2023_
 
@@ -59,7 +59,7 @@ _12 luglio 2023_
 
 _9 giugno 2023_
 
-![Nuovo](../assets/new.svg)<!-- Issue PAY-4288 --> Ora gli esercenti possono [configurare _solo_ pulsanti di pagamento PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons) e _non_ utilizzare l&#39;opzione di pagamento PayPal con carta di credito. Questo consente agli esercenti di fornire varie opzioni di pagamento, tra cui i pulsanti di pagamento Venmo e PayPal, e di utilizzare un provider di carte di credito esistente invece dell&#39;opzione di pagamento PayPal con carta di credito.
+![Nuovo](../assets/new.svg)<!-- Issue PAY-4288 --> Ora gli esercenti possono [configurare _solo_ pulsanti di pagamento PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html?lang=it#use-only-paypal-payment-buttons) e _non_ utilizzare l&#39;opzione di pagamento PayPal con carta di credito. Questo consente agli esercenti di fornire varie opzioni di pagamento, tra cui i pulsanti di pagamento Venmo e PayPal, e di utilizzare un provider di carte di credito esistente invece dell&#39;opzione di pagamento PayPal con carta di credito.
 
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-4050 --> aggiunta [visualizzazione visualizzazione dati](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view), visualizzata nella Home page del servizio di pagamento, per il report sullo stato del pagamento dell&#39;ordine.
 
@@ -81,7 +81,7 @@ _31 agosto 2022_
 
 _9 agosto 2021_
 
-![Nuovo](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay è ora disponibile come Smart Button PayPal. Questa [opzione di pagamento](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) consente ai clienti di utilizzare la funzionalità Touch ID sul dispositivo iOS o macOS per selezionare Apple Pay. Apple Pay elabora il pagamento utilizzando le credenziali di pagamento della carta di credito e di debito memorizzate sul dispositivo.
+![Nuovo](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay è ora disponibile come Smart Button PayPal. Questa [opzione di pagamento](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html?lang=it#apple-pay-button) consente ai clienti di utilizzare la funzionalità Touch ID sul dispositivo iOS o macOS per selezionare Apple Pay. Apple Pay elabora il pagamento utilizzando le credenziali di pagamento della carta di credito e di debito memorizzate sul dispositivo.
 
 _28 giugno 2021_
 
@@ -125,7 +125,7 @@ _20 agosto 2025_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.4 e successive
 
-![Nuovo](../assets/new.svg)<!-- PAY-6022 --> [Fastlane](https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/payments-options) offre un acquisto più veloce durante le spese per gli ospiti.
+![Nuovo](../assets/new.svg)<!-- PAY-6022 --> [Fastlane](https://experienceleague.adobe.com/it/docs/commerce/payment-services/payments-checkout/payments-options) offre un acquisto più veloce durante le spese per gli ospiti.
 
 ![Nuovo](../assets/new.svg)<!-- PAY-6168 --> ha aggiunto la mutazione [`addProductsToNewCart`](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/mutations/) a [!DNL Payment Services] per consentire transizioni più fluide e un migliore riutilizzo del carrello.
 
@@ -133,7 +133,7 @@ _20 agosto 2025_
 
 ![Nuovo](../assets/new.svg)<!-- PAY-6227 --> Durante il check-out con PayPal, [!DNL Payment Services] ignora la finestra a comparsa di conferma dell&#39;ordine per un processo di acquisto più rapido.
 
-![Nuovo](../assets/new.svg)<!-- PAY-6234 --> Aggiunta nuova funzionalità per l&#39;opzione di pagamento [Paga più tardi](https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/payments-options). Ora, il configuratore di messaggistica BNPL offre maggiore flessibilità nella visualizzazione dei messaggi BNPL Pay Later sulle pagine di pagamento dei clienti.
+![Nuovo](../assets/new.svg)<!-- PAY-6234 --> Aggiunta nuova funzionalità per l&#39;opzione di pagamento [Paga più tardi](https://experienceleague.adobe.com/it/docs/commerce/payment-services/payments-checkout/payments-options). Ora, il configuratore di messaggistica BNPL offre maggiore flessibilità nella visualizzazione dei messaggi BNPL Pay Later sulle pagine di pagamento dei clienti.
 
 ![Problema risolto](../assets/fix.svg)<!-- PAY-5505 --> Ora, [!DNL Payment Services] imposta il preventivo come inattivo quando un popup di Google Pay o PayPal viene chiuso nella pagina del prodotto.
 
@@ -154,7 +154,7 @@ _13 marzo 2025_
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.4 e successive
 
 
-![Nuovo](../assets/new.svg)<!-- PAY-5938 --> Ora [!DNL Payment Services] consente ai commercianti di gestire le impostazioni di pagamento per massimizzare la flessibilità della loro attività. Questa versione migliora la possibilità di allegare [più account PayPal](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/settings#use-multiple-paypal-accounts) per le aree geografiche e i marchi supportati da un commerciante. Il nostro team di vendita può fornire un collegamento di onboarding per configurare gli ambiti di visualizzazione del sito web e del negozio.
+![Nuovo](../assets/new.svg)<!-- PAY-5938 --> Ora [!DNL Payment Services] consente ai commercianti di gestire le impostazioni di pagamento per massimizzare la flessibilità della loro attività. Questa versione migliora la possibilità di allegare [più account PayPal](https://experienceleague.adobe.com/it/docs/commerce/payment-services/configure/settings#use-multiple-paypal-accounts) per le aree geografiche e i marchi supportati da un commerciante. Il nostro team di vendita può fornire un collegamento di onboarding per configurare gli ambiti di visualizzazione del sito web e del negozio.
 
 ![Nuovo](../assets/new.svg)<!-- PAY-5968 --> Ora [!DNL Payment Services] aggiorna la configurazione amministratore con **valori ID commerciante PayPal** e **Stato commerciante PayPal**. Questi valori forniscono agli esercenti una migliore visibilità sullo stato del loro conto PayPal.
 
@@ -208,13 +208,13 @@ _13 dicembre 2024_
 
 ![Nuovo](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services] ora supporta gli endpoint GraphQL per il vaulting senza acquisto, consentendo ai clienti di salvare i metodi di pagamento senza completare una transazione.
 
-![Nuovo](../assets/fix.svg)<!-- PAY-5789 --> [!DNL Payment Services] ora supporta [l&#39;autenticazione protetta 3D con Google Pay](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/security-compliance/security#3ds), migliorando la sicurezza per gli esercenti e i clienti durante le transazioni di pagamento.
+![Nuovo](../assets/fix.svg)<!-- PAY-5789 --> [!DNL Payment Services] ora supporta [l&#39;autenticazione protetta 3D con Google Pay](https://experienceleague.adobe.com/it/docs/commerce-merchant-services/payment-services/security-compliance/security#3ds), migliorando la sicurezza per gli esercenti e i clienti durante le transazioni di pagamento.
 
-![Correzione](../assets/fix.svg)<!-- PAY-5703 --> [!DNL Payment Services] aggiunge la possibilità per [clienti di salvare le schede direttamente nel proprio **Account personale**](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting), migliorando la comodità e semplificando le future estrazioni. `Vault without purchase functionality might not be 100% compatible with Adobe Commerce 2.4.4 due to a known issue with` [`GraphQL authorization mechanisms`](https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens/).
+![Correzione](../assets/fix.svg)<!-- PAY-5703 --> [!DNL Payment Services] aggiunge la possibilità per [clienti di salvare le schede direttamente nel proprio **Account personale**](https://experienceleague.adobe.com/it/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting), migliorando la comodità e semplificando le future estrazioni. `Vault without purchase functionality might not be 100% compatible with Adobe Commerce 2.4.4 due to a known issue with` [`GraphQL authorization mechanisms`](https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens/).
 
 ![Correzione](../assets/fix.svg)<!-- PAY-5762 --> è stato risolto un problema a causa del quale i codici coupon non venivano applicati nella pagina di revisione dell&#39;ordine quando l&#39;ordine veniva avviato dalla pagina dei dettagli del prodotto (PDP).
 
-![Correzione](../assets/fix.svg)<!-- PAY-5792 --> [!DNL Payment Services] visualizza ora le descrizioni e gli indirizzi di fatturazione per [carte in deposito nella pagina di pagamento](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting), dando ai clienti maggiore visibilità sui metodi di pagamento salvati.
+![Correzione](../assets/fix.svg)<!-- PAY-5792 --> [!DNL Payment Services] visualizza ora le descrizioni e gli indirizzi di fatturazione per [carte in deposito nella pagina di pagamento](https://experienceleague.adobe.com/it/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting), dando ai clienti maggiore visibilità sui metodi di pagamento salvati.
 
 ![Correzione](../assets/fix.svg)<!-- PAY-5793 --> [!DNL Payment Services] consente ai commercianti di memorizzare l&#39;indirizzo di fatturazione per le carte in deposito direttamente dalla pagina di pagamento, garantendo informazioni di pagamento accurate e complete.
 
@@ -264,15 +264,15 @@ _2 agosto 2024_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.4 e successive
 
-![Nuovo](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] ora supporta [dati elemento riga a livello di ordine](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/manage/line-items). Questa funzione consente ai commercianti di visualizzare informazioni dettagliate sugli articoli di un ordine, ad esempio dettagli del prodotto, quantità e prezzo (incluse IVA, sconti e altre informazioni rilevanti).
+![Nuovo](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] ora supporta [dati elemento riga a livello di ordine](https://experienceleague.adobe.com/it/docs/commerce-merchant-services/payment-services/payments-checkout/manage/line-items). Questa funzione consente ai commercianti di visualizzare informazioni dettagliate sugli articoli di un ordine, ad esempio dettagli del prodotto, quantità e prezzo (incluse IVA, sconti e altre informazioni rilevanti).
 
-![Nuovo](../assets/new.svg)<!-- PAY-5380 --> [!DNL Payment Services] migliora la [configurazione nell&#39;esperienza di amministrazione](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/configure/configure-admin#general-configuration) per gli esercenti per un processo di onboarding più semplice e intuitivo. Questa funzione consente ai commercianti di reimpostare gli ID [!DNL Payment Services].
+![Nuovo](../assets/new.svg)<!-- PAY-5380 --> [!DNL Payment Services] migliora la [configurazione nell&#39;esperienza di amministrazione](https://experienceleague.adobe.com/it/docs/commerce-merchant-services/payment-services/configure/configure-admin#general-configuration) per gli esercenti per un processo di onboarding più semplice e intuitivo. Questa funzione consente ai commercianti di reimpostare gli ID [!DNL Payment Services].
 
-![Nuovo](../assets/new.svg)<!-- PAY-5255 --> [!DNL Payment Services] include una [notifica di errore pagamento](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-payment-failed-emails). Questa funzione fornisce notifiche quasi in tempo reale agli esercenti di errori di pagamento, consentendo di risparmiare ordini contattando l’acquirente e migliorando potenzialmente la risoluzione dei problemi.
+![Nuovo](../assets/new.svg)<!-- PAY-5255 --> [!DNL Payment Services] include una [notifica di errore pagamento](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-payment-failed-emails). Questa funzione fornisce notifiche quasi in tempo reale agli esercenti di errori di pagamento, consentendo di risparmiare ordini contattando l’acquirente e migliorando potenzialmente la risoluzione dei problemi.
 
 ![Correzione](../assets/fix.svg)<!-- PAY-5469 --> è stato risolto un problema che causava il blocco della finestra a comparsa **Google Pay da parte di Safari**. Gli acquirenti possono ora completare le transazioni di pagamento Google Pay su Safari.
 
-![Correzione](../assets/fix.svg)<!-- PAY-5492 --> è stato risolto un problema che si verificava quando un commerciante aggiungeva termini e condizioni personalizzati alla pagina di pagamento. Durante un [pagamento rapido](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options#standard-vs-advanced-payments-experience) un acquirente ora può accettare questi termini e condizioni per completare il pagamento senza alcun problema.
+![Correzione](../assets/fix.svg)<!-- PAY-5492 --> è stato risolto un problema che si verificava quando un commerciante aggiungeva termini e condizioni personalizzati alla pagina di pagamento. Durante un [pagamento rapido](https://experienceleague.adobe.com/it/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options#standard-vs-advanced-payments-experience) un acquirente ora può accettare questi termini e condizioni per completare il pagamento senza alcun problema.
 
 ![Correzione](../assets/fix.svg)<!-- PAY-5532 --> Migliorate funzionalità di ritiro in-store (ISPU) con **InstantPurchase**. I **Metodi di consegna ISPU** non vengono più visualizzati quando un acquirente effettua un ordine con **InstantPurchase**.
 
@@ -294,7 +294,7 @@ _23 aprile 2024_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.4 e successive
 
-![Correzione](../assets/fix.svg)<!-- Issue PAY-5396 -->[!DNL Payment Services] ora supporta [le linee guida di Adobe Commerce per il parametro `--db-prefix`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced#install-from-the-command-line) per Adobe Commerce versioni 2.4.7 e successive.
+![Correzione](../assets/fix.svg)<!-- Issue PAY-5396 -->[!DNL Payment Services] ora supporta [le linee guida di Adobe Commerce per il parametro `--db-prefix`](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/advanced#install-from-the-command-line) per Adobe Commerce versioni 2.4.7 e successive.
 
 ## v2.4.3
 
@@ -328,7 +328,7 @@ _20 marzo 2024_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.4 e successive
 
-![I nuovi](../assets/new.svg)<!-- PAY-4868 --> commercianti possono [configurare Google Pay durante l&#39;intera esperienza di acquisto](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html), in modo analogo ad altri pulsanti di pagamento in [!DNL Payment Services] tramite l&#39;amministratore.
+![I nuovi](../assets/new.svg)<!-- PAY-4868 --> commercianti possono [configurare Google Pay durante l&#39;intera esperienza di acquisto](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html?lang=it), in modo analogo ad altri pulsanti di pagamento in [!DNL Payment Services] tramite l&#39;amministratore.
 
 ![Nuovo](../assets/new.svg)<!-- PAY-4381 --> [I servizi di pagamento supportano Google Pay tramite GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/), consentendo agli esercenti di avere un&#39;esperienza Commerce headless con il metodo di pagamento Google Pay.
 
@@ -374,7 +374,7 @@ _7 dicembre 2023_
 
 - la pagina ordine cliente nella vetrina
 - l’e-mail di conferma dell’ordine inviata all’acquirente
-- dalla [visualizzazione dettagli ordine](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) in Commerce Admin.
+- dalla [visualizzazione dettagli ordine](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html?lang=it#view-an-order) in Commerce Admin.
 
 ## v2.3.0
 
@@ -398,15 +398,15 @@ _30 agosto 2023_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.4 e successive
 
-![Nuovo](../assets/new.svg)<!-- PAY-4638 --> Aggiunta integrazione [con Signifyd](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security-compliance/fraud-protection.html), che fornisce servizi automatizzati di protezione dalle frodi.
+![Nuovo](../assets/new.svg)<!-- PAY-4638 --> Aggiunta integrazione [con Signifyd](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security-compliance/fraud-protection.html?lang=it), che fornisce servizi automatizzati di protezione dalle frodi.
 
-![Nuovo](../assets/new.svg)<!-- PAY-3981 --> [Apple Pay è stato promosso a un&#39;opzione di pagamento separata](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html?lang=en#apple-pay-button), al di fuori dei pulsanti di pagamento PayPal, per aumentare la visibilità dell&#39;opzione di pagamento da parte dell&#39;acquirente e consentire agli esercenti di controllare il posizionamento e lo stile di Apple Pay.
+![Nuovo](../assets/new.svg)<!-- PAY-3981 --> [Apple Pay è stato promosso a un&#39;opzione di pagamento separata](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html?lang=it#apple-pay-button), al di fuori dei pulsanti di pagamento PayPal, per aumentare la visibilità dell&#39;opzione di pagamento da parte dell&#39;acquirente e consentire agli esercenti di controllare il posizionamento e lo stile di Apple Pay.
 
 ![Nuovo](../assets/new.svg)<!-- PAY-4002 --> è stata migliorata l&#39;esperienza utente relativa al pagamento dei campi della carta di credito, inclusi miglioramenti di stile come l&#39;aggiunta di icone di pagamento, per ridurre il carico cognitivo dell&#39;acquirente e aumentare le conversioni.
 
-![Nuovo](../assets/new.svg)<!-- PAY-4002 --> è stata aggiunta la funzionalità per consentire agli esercenti di [ordinare l&#39;ordine delle opzioni di pagamento](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) per assegnare la priorità ad alcune opzioni di pagamento. Questa funzionalità incoraggia un tasso di conversazione più elevato per il pagamento.
+![Nuovo](../assets/new.svg)<!-- PAY-4002 --> è stata aggiunta la funzionalità per consentire agli esercenti di [ordinare l&#39;ordine delle opzioni di pagamento](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html?lang=it#payment-buttons) per assegnare la priorità ad alcune opzioni di pagamento. Questa funzionalità incoraggia un tasso di conversazione più elevato per il pagamento.
 
-![New](../assets/new.svg)<!-- PAY-4035 --> I commercianti possono ora monitorare in modo efficiente lo stato dei loro negozi e identificare eventuali problemi di transazione utilizzando il nuovo [report sulle transazioni](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) disponibile nella home page dell&#39;amministratore [!DNL Payment Services]. Il rapporto presenta anche dati sui tassi di autorizzazione delle transazioni e sulle tendenze negative delle transazioni.
+![New](../assets/new.svg)<!-- PAY-4035 --> I commercianti possono ora monitorare in modo efficiente lo stato dei loro negozi e identificare eventuali problemi di transazione utilizzando il nuovo [report sulle transazioni](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html?lang=it) disponibile nella home page dell&#39;amministratore [!DNL Payment Services]. Il rapporto presenta anche dati sui tassi di autorizzazione delle transazioni e sulle tendenze negative delle transazioni.
 
 ## v2.1.0
 
@@ -416,13 +416,13 @@ _9 giugno 2023_
 
 ![Nuovo](../assets/new.svg)<!-- Issue xxx --> Aggiunto supporto per Adobe Commerce 2.4.7-beta1.
 
-![Nuovo](../assets/new.svg)<!-- Issue xxx --> Aggiunta [disponibilità nei seguenti paesi e nelle valute associate](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#availability): Australia, Francia, Regno Unito.
+![Nuovo](../assets/new.svg)<!-- Issue xxx --> Aggiunta [disponibilità nei seguenti paesi e nelle valute associate](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=it#availability): Australia, Francia, Regno Unito.
 
-![Nuovo](../assets/new.svg)<!-- Issue PAY-4296 --> aggiunte [risorse espanse per i ruoli di amministratore](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) per garantire che gli utenti amministratori possano creare e gestire gli ordini per i clienti e possano visualizzare[!DNL Payment Services] nel menu Vendite.
+![Nuovo](../assets/new.svg)<!-- Issue PAY-4296 --> aggiunte [risorse espanse per i ruoli di amministratore](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html?lang=it#configure-roles) per garantire che gli utenti amministratori possano creare e gestire gli ordini per i clienti e possano visualizzare[!DNL Payment Services] nel menu Vendite.
 
-![Nuovo](../assets/new.svg)<!-- Issue PAY-4236 --> aggiunto [annullamento automatico per gli ordini che generano errori durante l&#39;estrazione](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html#order-auto-voided-if-error).
+![Nuovo](../assets/new.svg)<!-- Issue PAY-4236 --> aggiunto [annullamento automatico per gli ordini che generano errori durante l&#39;estrazione](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html?lang=it#order-auto-voided-if-error).
 
-![Nuovo](../assets/new.svg)<!-- Issue PAY-4183 --> funzionalità creata per [visualizzare il pulsante di opzione per il pagamento con carta di credito](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button) nella pagina di pagamento.
+![Nuovo](../assets/new.svg)<!-- Issue PAY-4183 --> funzionalità creata per [visualizzare il pulsante di opzione per il pagamento con carta di credito](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html?lang=it#debit-or-credit-card-button) nella pagina di pagamento.
 
 ## v2.0.0
 
@@ -440,9 +440,9 @@ _10 marzo 2023_
 
 ![Correzione](../assets/fix.svg)<!-- Issue PAY-4226 --> è stato risolto un problema che impediva ai nuovi commercianti [!DNL Payment Services] di utilizzare l&#39;estrazione in Amministrazione.[!DNL Payment Services] utilizzava in precedenza l&#39;ID cliente Commerce, che non esiste per i nuovi clienti.
 
-![Correzione](../assets/fix.svg)<!-- Issue PAY-4205 --> è stato risolto un problema che causava la sostituzione dello stato dell&#39;indirizzo di spedizione specificato con lo stato nelle impostazioni fiscali predefinite durante l&#39;estrazione tramite l&#39;opzione [PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#paypal-smart-buttons). Ora i clienti possono far spedire i loro ordini in uno stato diverso da quello configurato come predefinito nelle impostazioni fiscali dell’esercente.
+![Correzione](../assets/fix.svg)<!-- Issue PAY-4205 --> è stato risolto un problema che causava la sostituzione dello stato dell&#39;indirizzo di spedizione specificato con lo stato nelle impostazioni fiscali predefinite durante l&#39;estrazione tramite l&#39;opzione [PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html?lang=it#paypal-smart-buttons). Ora i clienti possono far spedire i loro ordini in uno stato diverso da quello configurato come predefinito nelle impostazioni fiscali dell’esercente.
 
-![Correzione](../assets/fix.svg)<!-- Issue PAY-4202 --> è stato risolto un problema che impediva ai clienti di utilizzare il vaulting delle carte per completare un acquisto o eliminare un metodo di pagamento con vaulting per un negozio [utilizzando l&#39;azione di pagamento `Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method). In precedenza, quando il cliente tentava di utilizzare o modificare le proprie carte di credito archiviate, veniva visualizzato l’errore &quot;Provider Vault ID not found&quot; (ID archivio provider non trovato).
+![Correzione](../assets/fix.svg)<!-- Issue PAY-4202 --> è stato risolto un problema che impediva ai clienti di utilizzare il vaulting delle carte per completare un acquisto o eliminare un metodo di pagamento con vaulting per un negozio [utilizzando l&#39;azione di pagamento `Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html?lang=it#set-payment-services-as-payment-method). In precedenza, quando il cliente tentava di utilizzare o modificare le proprie carte di credito archiviate, veniva visualizzato l’errore &quot;Provider Vault ID not found&quot; (ID archivio provider non trovato).
 
 ## v1.6.0
 
@@ -496,9 +496,9 @@ _18 novembre 2022_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.0 e successive
 
-![Nuovo](../assets/new.svg)<!-- Issue PAY-3880 --> Un acquirente ora può [archiviare (salvare) le informazioni sulla sua carta di credito durante l&#39;acquisto](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) per utilizzarle in un acquisto successivo per lo stesso o un altro negozio all&#39;interno dello stesso account esercente.
+![Nuovo](../assets/new.svg)<!-- Issue PAY-3880 --> Un acquirente ora può [archiviare (salvare) le informazioni sulla sua carta di credito durante l&#39;acquisto](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html?lang=it) per utilizzarle in un acquisto successivo per lo stesso o un altro negozio all&#39;interno dello stesso account esercente.
 
-![New](../assets/new.svg)<!-- Issue PAY-3950 --> I commercianti possono ora abilitare la funzionalità [Commerce per l&#39;acquisto immediato](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) per i loro negozi in modo che gli acquirenti possano (utilizzare [informazioni sulla carta di credito in deposito](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html)) accelerare il pagamento.
+![New](../assets/new.svg)<!-- Issue PAY-3950 --> I commercianti possono ora abilitare la funzionalità [Commerce per l&#39;acquisto immediato](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html?lang=it) per i loro negozi in modo che gli acquirenti possano (utilizzare [informazioni sulla carta di credito in deposito](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html?lang=it)) accelerare il pagamento.
 
 ## v1.4.1
 
@@ -514,11 +514,11 @@ _30 settembre 2022_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.0 e successive
 
-![Nuovo](../assets/new.svg)<!-- Issue PAY-784 -->[!DNL Payment Services] ora include la possibilità di impostare un account esercente per [utilizzare più account business PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). Questo consente al commerciante di gestire i negozi in più paesi utilizzando valute diverse o di utilizzare Adobe Commerce per una parte della tua attività.
+![Nuovo](../assets/new.svg)<!-- Issue PAY-784 -->[!DNL Payment Services] ora include la possibilità di impostare un account esercente per [utilizzare più account business PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html?lang=it#use-multiple-paypal-accounts). Questo consente al commerciante di gestire i negozi in più paesi utilizzando valute diverse o di utilizzare Adobe Commerce per una parte della tua attività.
 
-![Nuovi](../assets/new.svg)<!-- Issue PAY-3231 --> I commercianti possono [aggiungere un [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) ai siti Web o alla configurazione delle singole visualizzazioni dello store che vengono visualizzate nei rendiconti bancari delle transazioni dei clienti per delineare marchi, store o linee di prodotti.
+![Nuovi](../assets/new.svg)<!-- Issue PAY-3231 --> I commercianti possono [aggiungere un [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html?lang=it#add-soft-descriptor) ai siti Web o alla configurazione delle singole visualizzazioni dello store che vengono visualizzate nei rendiconti bancari delle transazioni dei clienti per delineare marchi, store o linee di prodotti.
 
-![Nuovo](../assets/new.svg)<!-- Issue PAY-3707 --> [Attiva o disattiva i campi della carta di credito e i pulsanti di pagamento PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) per l&#39;estrazione nelle impostazioni [!DNL Payment Services].
+![Nuovo](../assets/new.svg)<!-- Issue PAY-3707 --> [Attiva o disattiva i campi della carta di credito e i pulsanti di pagamento PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html?lang=it#configure-payment-options) per l&#39;estrazione nelle impostazioni [!DNL Payment Services].
 
 ![Problema risolto](../assets/fix.svg)<!-- Issue PAY-3546 --> Quando un cliente fa clic su **[!UICONTROL Edit cart]**, la pagina viene reindirizzata alla pagina del carrello e vengono visualizzati gli elementi aggiornati anziché un carrello vuoto.
 
@@ -536,7 +536,7 @@ _9 agosto 2022_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.0 e successive
 
-![Nuova](../assets/new.svg)<!-- Issue PAY-XX --> versione di disponibilità generale—[!DNL Payment Services] è ora [supportata da [!DNL Adobe Commerce] e [!DNL Magento Open Source] versioni da 2.4.0 a 2.4.5](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+![Nuova](../assets/new.svg)<!-- Issue PAY-XX --> versione di disponibilità generale—[!DNL Payment Services] è ora [supportata da [!DNL Adobe Commerce] e [!DNL Magento Open Source] versioni da 2.4.0 a 2.4.5](https://experienceleague.adobe.com/it/docs/commerce-operations/release/product-availability).
 
 ![Problema risolto](../assets/fix.svg)<!-- Issue PAY-x --> Apple Pay è ora compatibile con il browser Safari v15.5 su dispositivi mobili e desktop.
 
@@ -556,7 +556,7 @@ _29 giugno 2022_
 
 ![È stato risolto il problema](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Quando le credenziali dei servizi Commerce non sono valide,[!DNL Payment Services] ti avvisa ora visualizzando un errore di credenziali dalla home page di [!DNL Payment Services] nell&#39;amministratore.
 
-![Problema noto](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] non è compatibile con `commerce-data-export` v101.20 e versioni successive, pertanto è incompatibile con l&#39;estensione [[!DNL Channel manager] extension](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
+![Problema noto](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] non è compatibile con `commerce-data-export` v101.20 e versioni successive, pertanto è incompatibile con l&#39;estensione [[!DNL Channel manager] extension](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html?lang=it).
 
 ## v1.1.0
 
@@ -564,9 +564,9 @@ _31 marzo 2022_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.0 e successive
 
-![Nuova](../assets/new.svg)<!-- Issue PAY-2127 --> versione di disponibilità generale—[!DNL Payment Services] è ora [supportata da [!DNL Adobe Commerce] e [!DNL Magento Open Source] versioni da 2.4.0 a 2.4.4](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+![Nuova](../assets/new.svg)<!-- Issue PAY-2127 --> versione di disponibilità generale—[!DNL Payment Services] è ora [supportata da [!DNL Adobe Commerce] e [!DNL Magento Open Source] versioni da 2.4.0 a 2.4.4](https://experienceleague.adobe.com/it/docs/commerce-operations/release/product-availability).
 
-![Nuovo](../assets/new.svg)<!-- Issue PAY-2682 --> L&#39;estensione [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] è ora disponibile per i commercianti canadesi. Gli esercenti possono visualizzare la configurazione dei pagamenti in [francese](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr#carte-de-cr%C3%A9dit-et-devises-accept%C3%A9es) o [inglese](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#accepted-credit-cards-and-currencies).
+![Nuovo](../assets/new.svg)<!-- Issue PAY-2682 --> L&#39;estensione [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] è ora disponibile per i commercianti canadesi. Gli esercenti possono visualizzare la configurazione dei pagamenti in [francese](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr#carte-de-cr%C3%A9dit-et-devises-accept%C3%A9es) o [inglese](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=it#accepted-credit-cards-and-currencies).
 
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] supporta [Dollari canadesi (CAD)](introduction.md#accepted-credit-cards-and-currencies) per le carte di credito e le transazioni PayPal.
 
@@ -584,7 +584,7 @@ _31 marzo 2022_
 
 ![Problema risolto](../assets/fix.svg)<!-- Issue PAY-2561 --> I prodotti precedentemente rimossi non vengono visualizzati nel carrello nella pagina _Rivedi ordine_.
 
-![Problema noto](../assets/bug.svg)<!-- Issue PAY-2842 --> Le transazioni con carta di credito [di prova potrebbero non riuscire con PayPal](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html) durante l&#39;elaborazione dei pagamenti in un ambiente sandbox.
+![Problema noto](../assets/bug.svg)<!-- Issue PAY-2842 --> Le transazioni con carta di credito [di prova potrebbero non riuscire con PayPal](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=it) durante l&#39;elaborazione dei pagamenti in un ambiente sandbox.
 
 ## v1.0.0
 
@@ -608,8 +608,8 @@ _29 novembre 2021_
 
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-1443 --> Puoi facilmente [personalizzare l&#39;aspetto](payments-options.md) dei pulsanti di pagamento PayPal e dei campi della carta di credito per l&#39;estensione [!DNL Payment Services].
 
-![Problema noto](../assets/bug.svg)<!-- Issue PAY-2473 --> L&#39;utilizzo di [chiavi di composizione non corrette](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) durante l&#39;installazione dell&#39;estensione impedisce all&#39;utente di [autenticarsi](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) con `MAGEID` corretto.
+![Problema noto](../assets/bug.svg)<!-- Issue PAY-2473 --> L&#39;utilizzo di [chiavi di composizione non corrette](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=it) durante l&#39;installazione dell&#39;estensione impedisce all&#39;utente di [autenticarsi](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) con `MAGEID` corretto.
 
-![Problema noto](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] report [&#x200B; potrebbero non essere sincronizzati immediatamente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html).
+![Problema noto](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] report [&#x200B; potrebbero non essere sincronizzati immediatamente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=it).
 
-![Problema noto](../assets/bug.svg)<!-- Issue PAY-2475 --> Il tuo [account sandbox PayPal](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html) per [!DNL Payment Services] non può essere verificato se crei tale account durante l&#39;onboarding.
+![Problema noto](../assets/bug.svg)<!-- Issue PAY-2475 --> Il tuo [account sandbox PayPal](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=it) per [!DNL Payment Services] non può essere verificato se crei tale account durante l&#39;onboarding.

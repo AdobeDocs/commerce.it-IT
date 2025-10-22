@@ -68,7 +68,7 @@ _23 maggio 2024_
 
 ![Correzione](../assets/fix.svg) <!--DATA-5033-->Il flag `InStock` per i valori delle opzioni ora tiene conto dello stato `enabled` con ambito della variante prodotto.
 
-![Correzione](../assets/fix.svg) <!--DATA-5888-->Aggiungere supporto per i prezzi dei prodotti che richiedono numeri elevati (fino a 16 cifre) e una maggiore precisione decimale (fino a 4 cifre decimali). Per applicare gli aggiornamenti della configurazione del prezzo al catalogo esistente, risincronizzare i dati del catalogo dal [dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) o utilizzando l&#39;[interfaccia della riga di comando di Adobe Commerce](../landing/catalog-sync.md#command-line-interface).
+![Correzione](../assets/fix.svg) <!--DATA-5888-->Aggiungere supporto per i prezzi dei prodotti che richiedono numeri elevati (fino a 16 cifre) e una maggiore precisione decimale (fino a 4 cifre decimali). Per applicare gli aggiornamenti della configurazione del prezzo al catalogo esistente, risincronizzare i dati del catalogo dal [dashboard di gestione dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-dashboard) o utilizzando l&#39;[interfaccia della riga di comando di Adobe Commerce](../landing/catalog-sync.md#command-line-interface).
 
 #### Limitazioni note
 
@@ -102,7 +102,7 @@ _22 febbraio 2024_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.4 e successive
 
-![Nuovo](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) è ora disponibile. Questo dashboard rinnovato fornisce informazioni approfondite sui flussi di dati per [!DNL Product Recommendations], [!DNL Live Search] e [!DNL Catalog Service]. Il supporto per questa funzione è stato introdotto nella versione 3.1.0 del metapackage `catalog-service`.
+![Nuovo](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=it) è ora disponibile. Questo dashboard rinnovato fornisce informazioni approfondite sui flussi di dati per [!DNL Product Recommendations], [!DNL Live Search] e [!DNL Catalog Service]. Il supporto per questa funzione è stato introdotto nella versione 3.1.0 del metapackage `catalog-service`.
 
 ### Versione V1.16
 
