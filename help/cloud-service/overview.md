@@ -142,7 +142,7 @@ Il seguente confronto consente di selezionare l&#39;opzione migliore per le esig
   </tr>
 </table>
 
-Per ulteriori informazioni su come integrare gli elementi visivi di prodotto basati su AEM Assets con [, consulta la ](../aem-assets-integration/overview.md)guida all&#39;integrazione di AEM Assets[!DNL Adobe Commerce as a Cloud Service].
+Per ulteriori informazioni su come integrare gli elementi visivi di prodotto basati su AEM Assets con [, consulta la &#x200B;](../aem-assets-integration/overview.md)guida all&#39;integrazione di AEM Assets[!DNL Adobe Commerce as a Cloud Service].
 
 ## Piattaforma sviluppatore
 
