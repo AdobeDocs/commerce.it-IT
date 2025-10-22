@@ -3,7 +3,8 @@ title: Visualizzare i prezzi tassati con API Mesh
 description: Utilizza  [!DNL API Mesh] per Adobe Commerce e Catalog Service per visualizzare i prezzi, comprese le imposte.
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: ca62c653-29b9-45cf-b2d4-8cb693b08aac
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%
@@ -20,8 +21,8 @@ In questo argomento, API Mesh viene utilizzato per visualizzare i prezzi dei pro
 
 Per visualizzare le imposte nella pagina Dettagli prodotto, è necessario configurarle.
 
-1. [Impostare le aliquote](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html?lang=it).
-1. Abilita la visualizzazione delle imposte [&#x200B; nel catalogo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html?lang=it#step-1%3A-configure-catalog-prices-display-settings) e impostala su `Including and Excluding Tax` o `Including Tax`.
+1. [Impostare le aliquote](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html).
+1. Abilita la visualizzazione delle imposte [ nel catalogo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings) e impostala su `Including and Excluding Tax` o `Including Tax`.
 
 Verifica che Catalog Service funzioni controllando una pagina di dettagli prodotto.
 
@@ -31,7 +32,7 @@ Verifica che Catalog Service funzioni controllando una pagina di dettagli prodot
 
 Se non l’hai già fatto, connetti l’Mesh API con Catalog Service all’istanza. Consulta le istruzioni dettagliate nell&#39;argomento [Guida introduttiva](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) nella guida per gli sviluppatori di API Mesh.
 
-Nel file `mesh.json`, sostituire i valori `name `, `endpoint` e `x-api-key`.
+Nel file `mesh.json`, sostituire i valori `name`, `endpoint` e `x-api-key`.
 
 ```json
 {
