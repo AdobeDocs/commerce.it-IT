@@ -3,7 +3,7 @@ title: Best practice per [!DNL Live Search]
 description: Scopri le best practice per l'implementazione di [!DNL Live Search] nel tuo store.
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: 4ba9734946f551784cd429ffa7cb23358f0f9710
+source-git-commit: 4634df5ef5421275d44a6a3419a4f55c11e4be45
 workflow-type: tm+mt
 source-wordcount: '2429'
 ht-degree: 0%
@@ -63,7 +63,7 @@ Le funzionalità di filtro e facet sono un componente fondamentale del sito [!DN
 
 Per impostare un attributo di prodotto come facet, è necessario che siano impostate le seguenti [proprietà](facets-add.md#step-1-add-a-facet):
 
-- **[!UICONTROL Use in Search]** -  `No`
+- **[!UICONTROL Use in Search]** -  `Yes`
 - **[!UICONTROL Use in Layered Navigation]** -  `Filterable (with results)`
 - **[!UICONTROL Use in Search Results Layered Navigation]** -  `Yes`
 
@@ -101,7 +101,7 @@ Casi d’uso consigliati per l’impostazione dei reindirizzamenti di ricerca:
 
 Verifica sempre i reindirizzamenti di ricerca per assicurarti che funzionino correttamente e che conducano alle pagine più rilevanti. Monitorano continuamente le prestazioni e apportano le regolazioni necessarie.
 
-Scopri come [gestire i reindirizzamenti di ricerca](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/search/search-terms).
+Scopri come [gestire i reindirizzamenti di ricerca](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms).
 
 ## Migliorare la rilevanza dei risultati di ricerca
 
@@ -155,7 +155,7 @@ Assicurati che ogni prodotto abbia contenuti rilevanti all’interno di ogni att
 Ulteriori informazioni sugli attributi del prodotto per la ricerca:
 
 - [Imposta attributi come ricercabili](workspace.md#set-attributes-as-searchable)
-- [Assegna peso agli attributi](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Assegna peso agli attributi](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Monitoraggio dei risultati di ricerca
 

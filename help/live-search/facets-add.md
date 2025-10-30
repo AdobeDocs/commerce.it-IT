@@ -2,9 +2,9 @@
 title: Aggiungi facet
 description: Scopri come aggiungere attributi di prodotto filtrabili come  [!DNL Live Search] facet.
 exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
-source-git-commit: 053533bc5f3f990ce8219f1e0c7c4930b28f0cd5
+source-git-commit: 15afc6fcd1e6783640dc3980ee06290e017abf37
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,9 @@ Il facet viene aggiunto nella parte inferiore dell&#39;elenco *Facet dinamici* e
 
 1. Se il facet che desideri aggiungere non viene trovato, vai a **Archivi** > Attributi > **Prodotto** e verifica che l&#39;attributo abbia le [proprietà richieste](facets.md) da utilizzare come facet. Se necessario, aggiorna le seguenti proprietà della vetrina dell’attributo:
 
-   * Usa nella ricerca - `No`
-   * Utilizzo in navigazione a livelli dei risultati di ricerca - `Yes`
-   * Usa in navigazione a livelli - `Filterable (with results)`
+   * **[!UICONTROL Use in Search]** -  `Yes`
+   * **[!UICONTROL Use in Layered Navigation]** -  `Filterable (with results)`
+   * **[!UICONTROL Use in Search Results Layered Navigation]** -  `Yes`
 
 1. Quando richiesto, aggiorna la cache.
 
