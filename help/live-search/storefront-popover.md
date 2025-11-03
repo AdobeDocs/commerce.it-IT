@@ -1,20 +1,19 @@
 ---
 title: '[!DNL Storefront Popover]'
 description: ' [!DNL Live Search storefront popover] restituisce dinamicamente i prodotti suggeriti e le miniature.'
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 240a5333-15e9-4178-ba3c-ae6c62c2238c
+source-git-commit: f96e7d8d2a31d5e0f49bd3ac2da320313908a868
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
 
 # [!DNL Storefront Popover]
 
-Quando [!DNL Live Search] è [installato](install.md), viene visualizzato un [!DNL popover] nella vetrina quando gli acquirenti digitano nella casella [Cerca](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html?lang=it#quick-search). Con ogni carattere digitato, [!DNL popover] viene aggiornato con i prodotti suggeriti e le miniature dei risultati di ricerca principali.
+Quando [!DNL Live Search] è [installato](install.md), viene visualizzato un [!DNL popover] nella vetrina quando gli acquirenti digitano nella casella [Cerca](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search). Con ogni carattere digitato, [!DNL popover] viene aggiornato con i prodotti suggeriti e le miniature dei risultati di ricerca principali.
 
 [!DNL Live Search] restituisce risultati per una query di due o più caratteri. Per una corrispondenza parziale, il numero massimo di caratteri per parola è 20. Il numero di caratteri in una query di ricerca durante la digitazione non è configurabile.
-
-Per impostazione predefinita, [!DNL Live Search] supporta [reindirizzamenti termini di ricerca](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=it).
 
 ![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
@@ -24,7 +23,7 @@ Per impostazione predefinita, [!DNL Live Search] supporta [reindirizzamenti term
 
 ## [!DNL Popover] dimensioni pagina
 
-Le dimensioni della pagina di [!DNL popover] determinano il numero di righe di prodotti completati automaticamente che possono essere restituite. Durante l&#39;installazione di Live Search, il valore `page_size` viene modificato nel valore corrente dell&#39;impostazione [Ricerca nel catalogo](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html?lang=it) - `Autocomplete Limit`.
+Le dimensioni della pagina di [!DNL popover] determinano il numero di righe di prodotti completati automaticamente che possono essere restituite. Durante l&#39;installazione di Live Search, il valore `page_size` viene modificato nel valore corrente dell&#39;impostazione [Ricerca nel catalogo](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit`.
 
 Per impostazione predefinita, il valore Ricerca nel catalogo - Limite completamento automatico è impostato su otto righe. Per modificare le dimensioni della pagina di [!DNL popover], eseguire le operazioni seguenti:
 
@@ -120,7 +119,7 @@ Contenitore ![[!DNL Popover]](assets/livesearch-popover-container.png)
 
 ## Disabilitazione di [!DNL popover]
 
-Per disabilitare [!DNL popover] e ripristinare la funzionalità standard [Ricerca rapida](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html?lang=it#quick-search), immettere il comando seguente:
+Per disabilitare [!DNL popover] e ripristinare la funzionalità standard [Ricerca rapida](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search), immettere il comando seguente:
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

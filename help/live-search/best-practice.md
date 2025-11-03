@@ -3,9 +3,9 @@ title: Best practice per [!DNL Live Search]
 description: Scopri le best practice per l'implementazione di [!DNL Live Search] nel tuo store.
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: 4634df5ef5421275d44a6a3419a4f55c11e4be45
+source-git-commit: a22a57f52503811a3a3e9294174a6626c5630b79
 workflow-type: tm+mt
-source-wordcount: '2429'
+source-wordcount: '2180'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Per gestire [!DNL Live Search], vai a **Marketing** > *SEO &amp; Search* > **[!D
 
 ## Ottimizzazione della funzionalità di ricerca
 
-In questa sezione imparerai a ottimizzare la funzionalità di ricerca utilizzando funzioni quali il completamento automatico per fornire suggerimenti in tempo reale come il tipo di acquirente, i sinonimi e gli ortografi per garantire che gli acquirenti trovino i prodotti anche se utilizzano parole diverse, i facet per consentire agli acquirenti di limitare i risultati della ricerca e i reindirizzamenti di ricerca per reindirizzare automaticamente gli acquirenti da una query di ricerca a una pagina specifica.
+In questa sezione imparerai a ottimizzare le funzionalità di ricerca utilizzando funzionalità quali il completamento automatico per fornire suggerimenti in tempo reale come il tipo di acquirente, i sinonimi e gli ortografi per garantire che gli acquirenti trovino i prodotti anche se utilizzano parole diverse, e i facet per consentire agli acquirenti di limitare i risultati della ricerca.
 
 ### Completamento automatico
 
@@ -85,24 +85,6 @@ Ulteriori informazioni sui facet:
 - [Gestione facet](facets-manage.md) (modifica, fissaggio di un facet, eliminazione, pubblicazione)
 - [Fatturazione del prezzo](settings.md#price-faceting)
 
-### Cerca reindirizzamenti
-
-Un reindirizzamento per la ricerca consente di reindirizzare automaticamente gli acquirenti da una query di ricerca a una pagina specifica. I reindirizzamenti di ricerca possono migliorare l’esperienza dell’acquirente e indirizzare i clienti verso i contenuti più rilevanti, ad esempio una pagina di prodotto, una categoria, una pagina di destinazione o un set personalizzato di risultati di ricerca. I reindirizzamenti per la ricerca aiutano a semplificare l’esperienza di acquisto e assicurano che i clienti trovino ciò che stanno cercando in modo rapido ed efficiente.
-
-Casi d’uso consigliati per l’impostazione dei reindirizzamenti di ricerca:
-
-- **Prodotti o categorie popolari** - Reindirizza gli acquirenti a una pagina o categoria di prodotti specifica quando cercano termini comuni o popolari. Ad esempio, la ricerca di &quot;iPhone&quot; potrebbe essere reindirizzata direttamente alla pagina della categoria di iPhone o a una pagina del modello specifica.
-
-- **Campagne promozionali** - Durante gli eventi promozionali o le vendite, reindirizza i termini di ricerca pertinenti alle pagine di destinazione che evidenziano le offerte speciali o i prodotti in primo piano.
-
-- **Ricerche per marchio** - Quando gli acquirenti cercano un nome di marchio, reindirizzali alla pagina dedicata del marchio in cui sono elencati tutti i prodotti di quel marchio.
-
-- **Interruzione del prodotto** - Se un prodotto viene interrotto, è possibile reindirizzare le ricerche per tale prodotto a prodotti simili o alla nuova versione del prodotto.
-
-Verifica sempre i reindirizzamenti di ricerca per assicurarti che funzionino correttamente e che conducano alle pagine più rilevanti. Monitorano continuamente le prestazioni e apportano le regolazioni necessarie.
-
-Scopri come [gestire i reindirizzamenti di ricerca](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/search/search-terms).
-
 ## Migliorare la rilevanza dei risultati di ricerca
 
 Questa sezione illustra come migliorare la rilevanza dei risultati di ricerca implementando regole di ricerca efficaci e utilizzando i metadati del prodotto per garantire che sia possibile eseguire ricerche in attributi precisi e dettagliati.
@@ -155,7 +137,7 @@ Assicurati che ogni prodotto abbia contenuti rilevanti all’interno di ogni att
 Ulteriori informazioni sugli attributi del prodotto per la ricerca:
 
 - [Imposta attributi come ricercabili](workspace.md#set-attributes-as-searchable)
-- [Assegna peso agli attributi](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Assegna peso agli attributi](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Monitoraggio dei risultati di ricerca
 
@@ -182,7 +164,6 @@ Per ottimizzare i risultati della ricerca con [!DNL Live Search], monitorare gli
   Per ridurre la percentuale di risultati pari a zero, puoi effettuare le seguenti operazioni:
 
    - Offri termini di ricerca alternativi o correlati, ad esempio [sinonimi](synonyms.md) quando non vengono trovate corrispondenze esatte.
-   - Fornisci ai clienti suggerimenti correlati o alternativi quando la ricerca non restituisce alcun risultato impostando i reindirizzamenti di ricerca.
    - Esamina regolarmente le query senza risultati per identificare i pattern e apportare le modifiche necessarie al catalogo dei prodotti e alle impostazioni di ricerca.
 
 - **Risultati popolari**: possono migliorare in modo significativo i risultati della ricerca allineandoli alle preferenze e ai comportamenti degli acquirenti.

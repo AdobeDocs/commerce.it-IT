@@ -1,11 +1,11 @@
 ---
 title: Prestazioni di ricerca
 description: La pagina Prestazioni di ricerca fornisce ad insight i termini di ricerca utilizzati dagli acquirenti.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
-source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
+source-git-commit: c9fc68fb54f66b6d471295c6d68f09404a7ac17a
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1837'
 ht-degree: 0%
 
 ---
@@ -110,7 +110,7 @@ Assicurati che i prodotti secondari dei prodotti configurabili dispongano di imm
 
 ### Sfruttare i metadati del prodotto
 
-Assicurati che gli attributi del prodotto [&#x200B; precisi e dettagliati siano impostati come ricercabili](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata). Tieni presente che gli attributi SKU, nome e categoria sono ricercabili per impostazione predefinita e non possono essere esclusi dalla ricerca. Per ottenere risultati ottimali, non utilizzare spazi negli SKU.
+Assicurati che gli attributi del prodotto [ precisi e dettagliati siano impostati come ricercabili](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata). Tieni presente che gli attributi SKU, nome e categoria sono ricercabili per impostazione predefinita e non possono essere esclusi dalla ricerca. Per ottenere risultati ottimali, non utilizzare spazi negli SKU.
 
 Per aumentare la rilevanza della ricerca, assegnare un peso a ogni attributo ricercabile. Gli attributi con un peso maggiore dovrebbero apparire più in alto nei risultati della ricerca. L’ordinamento in base alla rilevanza è influenzato da più criteri, ad esempio il peso della ricerca. Ciò significa che a volte gli attributi con un peso di ricerca inferiore possono comunque avere maggiore rilevanza degli attributi con un peso di ricerca maggiore. Altri criteri possono includere il numero di corrispondenze in un dato attributo, la posizione del termine di ricerca trovato e la struttura generale del testo prima e dopo un termine di ricerca.
 
@@ -136,3 +136,41 @@ Ulteriori informazioni sugli attributi del prodotto per la ricerca:
 | Nessun risultato | Elenca le query di ricerca che non restituiscono risultati e il numero di volte in cui vengono utilizzate durante l’intervallo di date specificato. Limite rapporto: primi 500 termini |
 | Risultati comuni | Elenca i nomi dei prodotti che hanno ricevuto il maggior numero di visualizzazioni durante l’intervallo di date specificato. I risultati più comuni vengono calcolati solo in base alle impression e non sono influenzati dal numero di clic o ricavi generati. Limite rapporto: primi 500 termini |
 | Ricerche univoche | Elenca le query di ricerca univoche utilizzate durante l’intervallo di date specificato. I dati del report vengono calcolati nello stesso modo dei dati univoci dello snapshot di ricerca. Se un acquirente digita la stessa query di ricerca due volte, ma a più di un’ora di distanza, la ricerca viene considerata come due ricerche univoche. Limite rapporto: primi 500 termini |
+
+## Proprietà attributi non di sistema predefinite
+
+Nella tabella seguente sono illustrate le proprietà predefinite di ricerca e filtrabili degli attributi non di sistema. L&#39;impostazione della proprietà dell&#39;attributo *Use in Search* su `Yes` rende l&#39;attributo ricercabile in [!DNL Adobe Commerce Optimizer].
+
+| Codice attributo | Ricercabile |
+|--- |--- |
+| attività | Sì |
+| attributes_brand | Sì |
+| brand | Sì |
+| clima | Sì |
+| collare | Sì |
+| colore | Sì |
+| costo | Sì |
+| eco_collection |  |
+| genere | Sì |
+| produttore | Sì |
+| materiale | Sì |
+| scopo | Sì |
+| strap_bag | Sì |
+| style_general | Sì |
+
+## Proprietà attributi di sistema predefiniti
+
+Nella tabella seguente vengono illustrate le proprietà predefinite di ricerca e filtrabili degli attributi di sistema.
+
+| Codice attributo | Ricercabile |
+|--- |--- |
+| allow_open_amount | Sì |
+| descrizione | Sì |
+| name | Sì |
+| prezzo | Sì |
+| short_description | Sì |
+| sku | Sì |
+| stato | Sì |
+| tax_class_id | Sì |
+| url_key | Sì |
+| peso | Sì |
