@@ -2,9 +2,9 @@
 title: Connettore Commerce Salesforce
 description: Scopri di più su [!DNL Commerce Optimizer SFCC Connector] che fornisce un punto di partenza per integrare Salesforce Commerce B2C con [!DNL Adobe Commerce Optimizer] per sincronizzare i dati del catalogo e implementare e personalizzare il connettore per supportare le operazioni aziendali.
 role: Admin, Developer
-source-git-commit: f3da99ec4d2c518748d0911d6cf5d2d89ab45a47
+source-git-commit: fc6f8566a1932e830a37bcfa32cd1c4168c67c68
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1115'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 Basato sulla tecnologia Adobe App Builder, [!DNL Commerce Optimizer Salesforce Commerce Connector] consente il trasferimento e la gestione senza soluzione di continuità dei dati del catalogo da Salesforce Commerce Cloud B2C a [!DNL Adobe Commerce Optimizer]. Collega entrambe le piattaforme, mantenendo sincronizzate le informazioni sui prodotti, i prezzi e gli aggiornamenti, senza necessità di riposizionare le piattaforme.
 
 Il connettore offre funzionalità affidabili di sincronizzazione dei dati e la flessibilità necessaria per personalizzare i flussi di lavoro in base alle esigenze aziendali.
+
+Per una serie di esercitazioni video end-to-end, consulta [Scopri Salesforce Commerce Cloud Starter Kit](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
 
 ## Funzionalità principali
 
@@ -87,7 +89,6 @@ Il diagramma seguente illustra il flusso di dati di alto livello per l’integra
 * **ACO SFCC Starter Kit Applicazione App Builder**-Fornisce funzioni senza server che gestiscono la sincronizzazione dei dati tra SFCC e Adobe Commerce Optimizer.
 * **Cartuccia SFCC personalizzata**: cartuccia necessaria che estende l&#39;istanza Salesforce Commerce Cloud con le API necessarie per l&#39;estrazione dei dati.
 * **Interfaccia utente di gestione** - Interfaccia Web per monitorare lo stato di sincronizzazione e gestire le operazioni del connettore.
-
 
 ### Processo di sincronizzazione
 
