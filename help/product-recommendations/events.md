@@ -3,7 +3,7 @@ title: Raccogli dati
 description: Scopri come gli eventi raccolgono i dati per  [!DNL Product Recommendations].
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
+source-git-commit: d770d4d99802f7ecf6e395518dfc9aeaac9aa130
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Quando installi e configuri [[!DNL Product Recommendations]](install-configure.md), il modulo distribuisce la raccolta di dati comportamentali nella vetrina. Questo meccanismo raccoglie dati comportamentali anonimi dagli acquirenti e potenzia [!DNL Product Recommendations]. Ad esempio, l&#39;evento `view` viene utilizzato per calcolare il tipo di consiglio `Viewed this, viewed that` e l&#39;evento `place-order` per calcolare il tipo di consiglio `Bought this, bought that`.
 
-Per ulteriori informazioni sui dati comportamentali raccolti dagli eventi [, consulta la &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)documentazione per sviluppatori[!DNL Product Recommendations].
+Per ulteriori informazioni sui dati comportamentali raccolti dagli eventi [, consulta la ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)documentazione per sviluppatori[!DNL Product Recommendations].
 
 >[!NOTE]
 >
@@ -22,7 +22,7 @@ Per ulteriori informazioni sui dati comportamentali raccolti dagli eventi [, con
 
 ## Clienti del settore sanitario
 
-Se sei un cliente del settore sanitario e hai installato l&#39;estensione [HIPAA Data Services](../data-connection/hipaa-readiness.md#installation), che fa parte dell&#39;estensione [Data Connection](../data-connection/overview.md), i dati dell&#39;evento storefront utilizzati da [!DNL Product Recommendations] non vengono più acquisiti. Questo perché i dati dell’evento storefront vengono generati lato client. Per continuare l&#39;acquisizione e l&#39;invio di dati evento vetrina, riattivare la raccolta eventi per [!DNL Product Recommendations]. Per ulteriori informazioni, consulta la [configurazione generale](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services).
+Se sei un cliente del settore sanitario e hai installato l&#39;estensione [HIPAA Data Services](../data-connection/hipaa-readiness.md#installation), che fa parte dell&#39;estensione [Data Connection](../data-connection/overview.md), i dati dell&#39;evento storefront utilizzati da [!DNL Product Recommendations] non vengono più acquisiti. Questo perché i dati dell’evento storefront vengono generati lato client. Per continuare l&#39;acquisizione e l&#39;invio di dati evento vetrina, riattivare la raccolta eventi per [!DNL Product Recommendations]. Per ulteriori informazioni, consulta la [configurazione generale](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services).
 
 ## Tipi di dati ed eventi
 
@@ -87,4 +87,4 @@ In caso di raccolta dati di input insufficiente, i seguenti tipi di consigli ese
 
 >[!NOTE]
 >
->Se è abilitata la modalità di restrizione dei cookie [&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=it), Adobe Commerce non raccoglie i dati comportamentali fino a quando l&#39;acquirente non acconsente all&#39;utilizzo dei cookie. Se la modalità di restrizione dei cookie è disabilitata, Adobe Commerce raccoglie i dati comportamentali per impostazione predefinita.
+>Se è abilitata la modalità di restrizione dei cookie [](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html), Adobe Commerce non raccoglie i dati comportamentali fino a quando l&#39;acquirente non acconsente all&#39;utilizzo dei cookie. Se la modalità di restrizione dei cookie è disabilitata, Adobe Commerce raccoglie i dati comportamentali per impostazione predefinita.
