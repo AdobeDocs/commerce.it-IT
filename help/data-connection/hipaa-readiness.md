@@ -43,7 +43,7 @@ Per una panoramica delle etichette di utilizzo dei dati e del loro ruolo all&#39
 
 Segui i passaggi descritti nell&#39;esercitazione [gestire le etichette di utilizzo dei dati per uno schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/labels) per scoprire come applicare le etichette allo schema [!DNL Commerce].
 
-Per informazioni sulle etichette disponibili da applicare ai campi dello schema [, consulta il ](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/reference#sensitive)glossario delle etichette sensibili[!DNL Commerce]. L&#39;etichetta `RHD`, ad esempio, identifica informazioni protette sulla salute (PHI) o informazioni relative a un paziente che Adobe consente contrattualmente di caricare.
+Per informazioni sulle etichette disponibili da applicare ai campi dello schema [, consulta il &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/reference#sensitive)glossario delle etichette sensibili[!DNL Commerce]. L&#39;etichetta `RHD`, ad esempio, identifica informazioni protette sulla salute (PHI) o informazioni relative a un paziente che Adobe consente contrattualmente di caricare.
 
 Quando i dati di [!DNL Commerce] sono etichettati come sensibili, è possibile applicare criteri per impedire operazioni sui dati che costituiscono violazioni dei criteri. Ulteriori informazioni sull&#39;[applicazione dei criteri](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview) in Experience Platform.
 
