@@ -23,7 +23,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>Sono state aggiornate le <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">note sulla versione</a> per la versione v1.2.7 dell'integrazione AEM Assets.</p>
+      <td><p>Sono state aggiornate le <a href="https://experienceleague.adobe.com/it/docs/commerce/aem-assets-integration/release-notes">note sulla versione</a> per la versione v1.2.7 dell'integrazione AEM Assets.</p>
 </td>
       <td>
         Tecnico
@@ -45,7 +45,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>Sono stati aggiornati i seguenti argomenti per includere informazioni sulla configurazione della gestione delle identità e del single sign-on da Adobe Admin Console:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">Utente Adobe Commerce as a Cloud Service e Identity Management</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer: Utente e Identity Management</a></p>
+      <td><p>Sono stati aggiornati i seguenti argomenti per includere informazioni sulla configurazione della gestione delle identità e del single sign-on da Adobe Admin Console:<br />- <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/user-management">Utente Adobe Commerce as a Cloud Service e Identity Management</a><br />- <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer: Utente e Identity Management</a></p>
 </td>
       <td>
         Feedback tecnico
@@ -67,7 +67,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>Sono stati aggiornati i <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">passaggi per la gestione degli utenti</a> relativi all'aggiunta di un utente.</p>
+      <td><p>Sono stati aggiornati i <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/user-management">passaggi per la gestione degli utenti</a> relativi all'aggiunta di un utente.</p>
 </td>
       <td>
         Aggiornamento principale
@@ -89,7 +89,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stata aggiornata la <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront">guida alla configurazione della vetrina</a> affinché Adobe Commerce Optimizer fornisca le istruzioni per la creazione di un progetto con lo strumento Site Creator, la personalizzazione della configurazione della vetrina e la verifica dei dati del sito e del catalogo controllando le pagine predefinite dei dettagli del prodotto e dei risultati della ricerca del prodotto.</p>
+      <td><p>È stata aggiornata la <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/storefront">guida alla configurazione della vetrina</a> affinché Adobe Commerce Optimizer fornisca le istruzioni per la creazione di un progetto con lo strumento Site Creator, la personalizzazione della configurazione della vetrina e la verifica dei dati del sito e del catalogo controllando le pagine predefinite dei dettagli del prodotto e dei risultati della ricerca del prodotto.</p>
 </td>
       <td>
         Aggiornamento principale
@@ -111,7 +111,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">Per la gestione degli utenti</a> è ora necessario che tutti gli sviluppatori e gli amministratori di prodotto aggiungano prima il ruolo utente.</p>
+      <td><p><a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/user-management">Per la gestione degli utenti</a> è ora necessario che tutti gli sviluppatori e gli amministratori di prodotto aggiungano prima il ruolo utente.</p>
 </td>
       <td>
         Aggiornamento principale
@@ -133,7 +133,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>Pubblicate <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">note sulla versione</a> per Payment Services v2.12.2.</p>
+      <td><p>Pubblicate <a href="https://experienceleague.adobe.com/it/docs/commerce/payment-services/release-notes">note sulla versione</a> per Payment Services v2.12.2.</p>
 </td>
       <td>
         Aggiornamento principale
