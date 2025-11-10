@@ -1,11 +1,11 @@
 ---
 title: Prestazioni di ricerca
 description: La pagina Prestazioni di ricerca fornisce ad insight i termini di ricerca utilizzati dagli acquirenti.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
-source-git-commit: c9fc68fb54f66b6d471295c6d68f09404a7ac17a
+source-git-commit: c408f3de4e3b980545a655e2f6040187f00bc571
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1825'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ La sezione seguente fornisce le strategie da utilizzare per migliorare la funzio
 Esistono diversi fattori chiave che determinano la rilevanza e l’efficacia dei risultati della ricerca:
 
 - Dati di prodotto ben strutturati garantiscono che gli algoritmi di ricerca possano far corrispondere efficacemente i prodotti alle query. I dati sui prodotti di bassa qualità portano a risultati di ricerca meno rilevanti. Per avere un impatto diretto sul successo della strategia di merchandising:
-   - Imposta gli [attributi corretti come ricercabili](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) con il relativo peso.
+   - Imposta gli [attributi corretti come ricercabili](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) con il relativo peso.
    - Assicurati che i dati all’interno di tali attributi siano pertinenti.
 - Un’esperienza di ricerca ben progettata crea fiducia nei clienti e infonde fiducia nel fatto che troveranno ciò di cui hanno bisogno.
 - Le regole di ricerca sono fondamentali in quanto possono aumentare la visibilità di alcuni prodotti in base alla popolarità, ai nuovi arrivi, ai criteri promozionali o a qualsiasi altra strategia di merchandising per soddisfare le esigenze aziendali.
@@ -98,7 +98,7 @@ Per ottimizzare la funzionalità di ricerca, utilizza [sinonimi e ortografia](..
 
 ## Migliorare la rilevanza dei risultati di ricerca
 
-Per migliorare la pertinenza dei risultati della ricerca, implementa [regole di ricerca](../merchandising/rules/overview.md) efficaci e utilizza i metadati del prodotto per garantire che gli [attributi siano precisi e dettagliati](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata).
+Per migliorare la pertinenza dei risultati della ricerca, implementa [regole di ricerca](../merchandising/rules/overview.md) efficaci e utilizza i metadati del prodotto per garantire che gli [attributi siano precisi e dettagliati](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata).
 
 ### Immagini
 
@@ -110,16 +110,11 @@ Assicurati che i prodotti secondari dei prodotti configurabili dispongano di imm
 
 ### Sfruttare i metadati del prodotto
 
-Assicurati che gli attributi del prodotto [&#x200B; precisi e dettagliati siano impostati come ricercabili](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata). Tieni presente che gli attributi SKU, nome e categoria sono ricercabili per impostazione predefinita e non possono essere esclusi dalla ricerca. Per ottenere risultati ottimali, non utilizzare spazi negli SKU.
+Assicurati che gli attributi del prodotto [ precisi e dettagliati siano configurabili come ricercabili e abbiano un peso assegnato](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Tieni presente che gli attributi SKU, nome e categoria sono ricercabili per impostazione predefinita e non possono essere esclusi dalla ricerca. Per ottenere risultati ottimali, non utilizzare spazi negli SKU.
 
 Per aumentare la rilevanza della ricerca, assegnare un peso a ogni attributo ricercabile. Gli attributi con un peso maggiore dovrebbero apparire più in alto nei risultati della ricerca. L’ordinamento in base alla rilevanza è influenzato da più criteri, ad esempio il peso della ricerca. Ciò significa che a volte gli attributi con un peso di ricerca inferiore possono comunque avere maggiore rilevanza degli attributi con un peso di ricerca maggiore. Altri criteri possono includere il numero di corrispondenze in un dato attributo, la posizione del termine di ricerca trovato e la struttura generale del testo prima e dopo un termine di ricerca.
 
 Assicurati che ogni prodotto abbia contenuti rilevanti all’interno di ogni attributo ricercabile. Si sconsiglia di impostare un attributo come ricercabile se contiene grandi quantità di contenuto, in quanto ciò può ridurre la rilevanza dei risultati di ricerca.
-
-Ulteriori informazioni sugli attributi del prodotto per la ricerca:
-
-- [Imposta gli attributi come ricercabili](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)
-- [Assegna peso agli attributi](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)
 
 ## Descrizioni dei campi
 
