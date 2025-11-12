@@ -130,11 +130,11 @@ Dopo aver creato il progetto, salvare i valori seguenti dalla pagina delle crede
 
 Salva i seguenti valori dai dettagli dell’istanza di Adobe Commerce Optimizer.
 
-* **Instance ID—**L&#39;identificatore univoco dell&#39;istanza Adobe Commerce Optimizer. Noto anche come ID tenant.
+* **Instance ID—**&#x200B;L&#39;identificatore univoco dell&#39;istanza Adobe Commerce Optimizer. Noto anche come ID tenant.
 
   Ottieni l’ID dell’istanza dall’URL per accedere all’istanza di Adobe Commerce Optimizer. Ad esempio, nell&#39;URL `https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef`, l&#39;ID istanza è `1234567890abcdef`.
 
-* **Regione—**L’area in cui è ospitata l’istanza sandbox di Adobe Commerce Optimizer.
+* **Regione—**&#x200B;L’area in cui è ospitata l’istanza sandbox di Adobe Commerce Optimizer.
 
   Ottieni la regione dall’URL di Adobe Commerce Optimizer. Ad esempio, nell&#39;URL `https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef`, l&#39;area geografica è `na1`.
 
@@ -172,7 +172,7 @@ Puoi controllare la sincronizzazione dei dati sia dall’amministratore di Comme
 
 1. Verifica che i dati del catalogo scorrano da Commerce a Commerce Optimizer:
 
-   Dall&#39;amministratore di Commerce, aprire la pagina [!UICONTROL Data Feed Sync Status] selezionando [!UICONTROL System]** > [!UICONTROL Data Transfer] > **[!UICONTROL Data Feed Sync Status]**.
+   Dall&#39;amministratore di Commerce, aprire la pagina [!UICONTROL Data Feed Sync Status] selezionando [!UICONTROL System] **&#x200B; > [!UICONTROL Data Transfer] > &#x200B;** [!UICONTROL Data Feed Sync Status]**.
 
    ![Pagina Stato sincronizzazione feed dati con report sullo stato degli elementi del feed](./assets/data-feed-sync-status.png)
 
