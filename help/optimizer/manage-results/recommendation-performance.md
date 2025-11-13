@@ -1,11 +1,11 @@
 ---
 title: Prestazioni consigli
 description: La pagina Prestazioni dei consigli fornisce ad insight informazioni sulle prestazioni dei consigli di prodotto.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
-source-git-commit: 0eea4658d554f2913c7c2d25e0c0753f22016aaa
+source-git-commit: 177ebffe0295fdc87b6f4a60473ebfda6bea0f01
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -20,19 +20,15 @@ Nella pagina Prestazioni dei consigli viene visualizzato un elenco di consigli c
 
 ![Prestazioni consigli](../assets/rec-performance.png){zoomable="yes"}
 
-## Scegli la **visualizzazione catalogo**
-
-Seleziona la [vista catalogo](../setup/catalog-view.md) in cui applicare i consigli.
-
-![Visualizzazione catalogo](../assets/catalog-view.png)
-
 ## Visualizzare un rapporto
 
-Fare clic su **[!UICONTROL Date Range]** e selezionare uno dei seguenti intervalli:
+1. Scegli l&#39;**origine catalogo**, ad esempio `en-US` dove applicare i consigli.
 
-![Intervallo date consigli](../assets/rec-perf-date-range.png)
+1. Fare clic su **[!UICONTROL Date Range]** e selezionare uno dei seguenti intervalli:
 
-La tabella dei consigli viene aggiornata per visualizzare le metriche per tale intervallo di date.
+   ![Intervallo date consigli](../assets/rec-perf-date-range.png)
+
+   La tabella dei consigli viene aggiornata per visualizzare le metriche per tale intervallo di date.
 
 ## Personalizza tabella
 
@@ -46,14 +42,6 @@ La tabella dei consigli viene aggiornata per visualizzare le metriche per tale i
    - Per nascondere una colonna visibile, fare clic su un nome di colonna con un segno di spunta.
 
    La tabella viene aggiornata per includere solo le colonne selezionate.
-
-## Impostare i filtri
-
-Fai clic sull’icona del filtro per filtrare le metriche nell’area di lavoro delle prestazioni dei consigli.
-
-![Filtra metriche](../assets/rec-filters.png)
-
-Puoi configurare più valori per ciascuno dei filtri. Per le descrizioni di ciascun filtro, consulta la [tabella seguente](#column-descriptions).
 
 ## Visualizza dettagli
 
