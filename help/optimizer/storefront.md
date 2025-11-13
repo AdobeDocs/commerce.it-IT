@@ -2,11 +2,11 @@
 title: Configurare la vetrina
 description: Scopri come configurare la vetrina  [!DNL Adobe Commerce Optimizer] .
 role: Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: c00cb55bd7b61d6506ee8b9b81d28118c1adde00
+source-git-commit: d6d559728361f4421829f34818aa368eac407225
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -105,9 +105,9 @@ Lo strumento Site Creator (Creazione sito) crea un progetto completo di vetrina 
 
 Aggiorna la configurazione della vetrina per connetterti all&#39;istanza [!DNL Adobe Commerce Optimizer].
 
-1. Apri Gestione configurazione utilizzando il collegamento salvato in precedenza:
+1. Apri il file `config.json` nell&#39;archivio del codice standard.
 
-   `https://da.live/sheet#/<username or org>/<repo name>/config.json`
+   `https://github.com/<username or org>/<repo name>/config.json`
 
 1. Individua la sezione `cs` (Catalog Service) nella configurazione.
 
@@ -116,16 +116,18 @@ Aggiorna la configurazione della vetrina per connetterti all&#39;istanza [!DNL A
    ```json
    "cs": {
       "AC-View-ID": "{catalogViewId}",
-      "AC-Environment-ID": "{tenantId}",
-      "AC-Source-Locale": "en_US"
+      "AC-Source-Locale": "en_US",
+      "AC-Price-Book-ID": "{priceBookId}"
    }
    ```
 
+   >[!NOTE]
+   >
+   >Per trovare l&#39;ID del listino prezzi dedicato, controllare i [dettagli di configurazione della vista catalogo](./setup/catalog-view.md) in Adobe Commerce Optimizer per visualizzare i listini prezzi assegnati. Se non vengono assegnati listini prezzi, è possibile rimuovere questa intestazione dal file di configurazione. Aggiungerlo nuovamente quando un listino prezzi dedicato è stato assegnato alla vista catalogo.
+
 1. Salva il file di configurazione.
 
->[!NOTE]
->
->La propagazione delle modifiche alla configurazione potrebbe richiedere alcuni minuti. Se i dati non vengono visualizzati immediatamente, attendere 2-3 minuti prima della risoluzione dei problemi.
+   La propagazione delle modifiche alla configurazione potrebbe richiedere alcuni minuti. Se i dati non vengono visualizzati immediatamente, attendere 2-3 minuti prima della risoluzione dei problemi.
 
 ## Verifica la configurazione
 
@@ -216,26 +218,26 @@ Prima di procedere con i passaggi successivi, assicurati che la vetrina funzioni
 
 Se i problemi persistono:
 
-* Consulta la [documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it)
+* Consulta la [documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
 * Consulta la [Guida per gli sviluppatori di Adobe Commerce Optimizer](https://developer.adobe.com/commerce/services/optimizer/)
-* Visita le [risorse di supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/overview)
+* Visita le [risorse di supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
 
 ## Passaggi successivi
 
 Dopo aver configurato e verificato la vetrina, puoi:
 
-1. **[Installa Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=it#install-and-configure-sidekick)** - Estensione browser per la modifica, la visualizzazione in anteprima e la pubblicazione di contenuti direttamente dal sito Web
+1. **[Installa Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)** - Estensione browser per la modifica, la visualizzazione in anteprima e la pubblicazione di contenuti direttamente dal sito Web
 
-2. **[Configura un ambiente di sviluppo locale](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=it#set-up-local-environment)** - Crea un ambiente locale per personalizzare il codice e il contenuto della vetrina
+2. **[Configura un ambiente di sviluppo locale](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)** - Crea un ambiente locale per personalizzare il codice e il contenuto della vetrina
 
 ### Scopri ed esplora
 
 * **[Completa il caso d&#39;uso end-to-end](./use-case/admin-use-case.md)**. Ulteriori informazioni sulla configurazione della vetrina e sulla gestione del catalogo tramite [!DNL Adobe Commerce Optimizer]
 
-* **[Esplora la personalizzazione della vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=it)** - Scopri le opzioni avanzate di configurazione e configurazione
+* **[Esplora la personalizzazione della vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/setup/)** - Scopri le opzioni avanzate di configurazione e configurazione
 
-* **[Personalizza l&#39;esperienza della vetrina con i menu a discesa di Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=it)**-Aggiungi componenti predefiniti per migliorare l&#39;esperienza della vetrina
+* **[Personalizza l&#39;esperienza della vetrina con i menu a discesa di Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)**-Aggiungi componenti predefiniti per migliorare l&#39;esperienza della vetrina
 
 >[!MORELIKETHIS]
 >
-> Per ulteriori informazioni sull&#39;aggiornamento del contenuto del sito e sull&#39;integrazione con i componenti front-end e i dati back-end di Commerce, consulta la [documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it).
+> Per ulteriori informazioni sull&#39;aggiornamento del contenuto del sito e sull&#39;integrazione con i componenti front-end e i dati back-end di Commerce, consulta la [documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/).
