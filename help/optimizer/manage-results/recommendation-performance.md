@@ -1,10 +1,11 @@
 ---
 title: Prestazioni consigli
 description: La pagina Prestazioni dei consigli fornisce ad insight informazioni sulle prestazioni dei consigli di prodotto.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
+source-git-commit: 0eea4658d554f2913c7c2d25e0c0753f22016aaa
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---
@@ -27,14 +28,11 @@ Seleziona la [vista catalogo](../setup/catalog-view.md) in cui applicare i consi
 
 ## Visualizzare un rapporto
 
-Fare clic sul calendario ed eseguire una delle operazioni seguenti:
+Fare clic su **[!UICONTROL Date Range]** e selezionare uno dei seguenti intervalli:
 
-- Per specificare una singola data, fare doppio clic sulla data nel calendario.
-- Per specificare un intervallo di date, fare clic sulla prima e sull&#39;ultima data del calendario.
+![Intervallo date consigli](../assets/rec-perf-date-range.png)
 
->[!NOTE]
->
->L’intervallo di date non può superare un anno.
+La tabella dei consigli viene aggiornata per visualizzare le metriche per tale intervallo di date.
 
 ## Personalizza tabella
 
@@ -71,7 +69,7 @@ Scopri come [creare un nuovo consiglio o gestirne uno esistente](../merchandisin
 
 | Controllo | Descrizione |
 |---|---|
-| ![Selettore calendario](../assets/icon-calendar.png) | Determina l’intervallo di tempo utilizzato per i calcoli delle metriche. |
+| ![Intervallo date](../assets/rec-perf-date-range.png) | Determina l’intervallo di tempo utilizzato per i calcoli delle metriche. |
 | ![Selettore colonna](../assets/icon-show-hide-columns.png) | Determina le colonne visualizzate nella tabella Consigli. |
 | Crea consiglio | Apre la pagina [Crea nuovo consiglio](../merchandising/recommendations/create.md). |
 
