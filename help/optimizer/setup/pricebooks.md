@@ -22,7 +22,7 @@ Il listino prezzi base definisce la valuta per se stesso e per tutti i listini p
 
 ## Aggiungi listini prezzi a Commerce Optimizer
 
-Puoi aggiungere listini prezzi a Commerce Optimizer utilizzando l’API Listino prezzi. Per informazioni su come creare, aggiornare ed eliminare i listini prezzi per [, consulta la ](https://developer.adobe.com/commerce/services/reference/rest/)documentazione per sviluppatori[!DNL Adobe Commerce Optimizer].
+Puoi aggiungere listini prezzi a Commerce Optimizer utilizzando l’API Listino prezzi. Per informazioni su come creare, aggiornare ed eliminare i listini prezzi per [, consulta la &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/)documentazione per sviluppatori[!DNL Adobe Commerce Optimizer].
 
 ## Visualizza listini prezzi in Commerce Optimizer
 
