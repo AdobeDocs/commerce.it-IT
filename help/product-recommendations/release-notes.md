@@ -3,9 +3,9 @@ title: Note sulla versione [!DNL Product Recommendations]
 description: Informazioni aggiornate sulla versione di  [!DNL Product Recommendations]  da Adobe Commerce.
 feature: Services, Recommendations, Release Notes
 exl-id: 37404605-5b62-4c71-90d1-4f09e6105c4b
-source-git-commit: 65aedb6cb8888ddc4cb6278c83b38b733864e324
+source-git-commit: bf1bc8a6189baba77bdffee8b0f1083bf895b78a
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '1878'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,15 @@ Le note sulla versione includono:
 ![Correzioni](../assets/fix.svg) correzioni e miglioramenti
 ![Bug](../assets/bug.svg) problemi noti
 
-Per [informazioni sul supporto del prodotto](https://experienceleague.adobe.com/it/docs/commerce-operations/release/product-availability), consulta la documentazione per gli sviluppatori.
+Per [informazioni sul supporto del prodotto](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability), consulta la documentazione per gli sviluppatori.
 
 ## Aggiornamenti dei servizi in hosting
 
 Queste note descrivono aggiornamenti o problemi noti pubblicati o rilevati al di fuori di una versione con versione o miglioramenti al servizio ospitato.
+
+_19 novembre 2025_
+
+![Nuovo](../assets/new.svg) Ora puoi creare fino a 50 unità di consigli attive per ogni tipo di pagina. In precedenza, il limite era di cinque.
 
 _1 ottobre 2025_
 
@@ -165,7 +169,7 @@ _20 marzo 2023_
 
 ![Nuovo](../assets/new.svg) [!DNL Product Recommendations] aggiornato per supportare Adobe Commerce 2.4.6.
 ![Nuovo](../assets/new.svg) Questa è una versione principale. [Modifica](install-configure.md#update) il file radice `composer.json` del progetto.
-![Nuovo](../assets/new.svg) [!DNL Product Recommendations] ora supporta le funzionalità complete di [Inventory management](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/introduction) in Commerce (in precedenza noto come inventario Multi-Source o MSI). Per abilitare il supporto completo, è necessario [aggiornare](install-configure.md#update) il modulo di dipendenza `commerce-data-export` alla versione 102.2.0+.
+![Nuovo](../assets/new.svg) [!DNL Product Recommendations] ora supporta le funzionalità complete di [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) in Commerce (in precedenza noto come inventario Multi-Source o MSI). Per abilitare il supporto completo, è necessario [aggiornare](install-configure.md#update) il modulo di dipendenza `commerce-data-export` alla versione 102.2.0+.
 
 ### 4.0.1 di magento/product-recommendations
 
@@ -202,7 +206,7 @@ _20 marzo 2023_
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.x e successive
 
 ![Nuovo](../assets/new.svg) aggiunto [Supporto B2B](onboarding.md#b2bsupport) in [!DNL Product Recommendations]
-![Nuovo](../assets/new.svg) Aggiunti nuovi feed a [sincronizza dati catalogo](https://experienceleague.adobe.com/it/docs/commerce/user-guides/data-services/catalog-sync) in Commerce Services tramite la riga di comando
+![Nuovo](../assets/new.svg) Aggiunti nuovi feed a [sincronizza dati catalogo](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) in Commerce Services tramite la riga di comando
 
 ### 3.3.3 di magento/product-recommendations
 
@@ -242,7 +246,7 @@ _20 marzo 2023_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.x e successive
 
-![Nuovo](../assets/new.svg) ha rinominato i servizi Magento in [Servizi Commerce](https://experienceleague.adobe.com/it/docs/commerce/user-guides/integration-services/saas) e ne ha migliorato l&#39;usabilità in Amministrazione
+![Nuovo](../assets/new.svg) ha rinominato i servizi Magento in [Servizi Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas) e ne ha migliorato l&#39;usabilità in Amministrazione
 
 ### 3.2.4 di magento/product-recommendations
 
@@ -263,7 +267,7 @@ _20 marzo 2023_
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.x e successive
 
 ![Nuovo](../assets/new.svg) Aggiunta la possibilità di [visualizzare in anteprima i risultati dei consigli](create.md) al momento della creazione. Potrebbe essere necessario aggiornare il modulo alla versione più recente.
-![Nuovo](../assets/new.svg) Aggiunta la possibilità di [monitorare e gestire](https://experienceleague.adobe.com/it/docs/commerce/user-guides/data-services/catalog-sync) il processo di sincronizzazione del catalogo da parte dell&#39;amministratore.
+![Nuovo](../assets/new.svg) Aggiunta la possibilità di [monitorare e gestire](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) il processo di sincronizzazione del catalogo da parte dell&#39;amministratore.
 ![Nuovo](../assets/new.svg) aggiunti [filtri](filters.md) per controllare quali prodotti vengono visualizzati nei consigli.
 ![Nuovo](../assets/new.svg) aggiunto il tipo di consiglio [Somiglianza visiva](type.md#visualsim).
 
@@ -277,7 +281,7 @@ _20 marzo 2023_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.x e successive
 
-![Nuovo](../assets/new.svg) Aggiunta la possibilità di [risincronizzare](https://experienceleague.adobe.com/it/docs/commerce/user-guides/data-services/catalog-sync) il catalogo con i servizi SaaS tramite riga di comando.
+![Nuovo](../assets/new.svg) Aggiunta la possibilità di [risincronizzare](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) il catalogo con i servizi SaaS tramite riga di comando.
 ![Nuovo](../assets/new.svg) aggiunto supporto per i prefissi delle tabelle di database
 ![Correzione](../assets/fix.svg) Supporto PHP 7.1 rimosso
 
@@ -304,7 +308,7 @@ _20 marzo 2023_
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.x e successive
 
 ![Correzione](../assets/fix.svg) è stato corretto l&#39;errore &quot;Impossibile recuperare i dati delle opzioni prodotto&quot; che poteva verificarsi durante l&#39;esportazione del catalogo.
-![Correzione](../assets/fix.svg) Il simbolo di valuta nella colonna _Entrate_ del dashboard _[!DNL Product Recommendations]_&#x200B;ora riflette correttamente la valuta di base configurata.
+![Correzione](../assets/fix.svg) Il simbolo di valuta nella colonna _Entrate_ del dashboard _[!DNL Product Recommendations]_ora riflette correttamente la valuta di base configurata.
 
 ### 3.0.4 di magento/product-recommendations
 
@@ -346,7 +350,7 @@ Questa è una versione principale. [Modifica](install-configure.md#update) il fi
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.x e successive
 
-Supporto di ![New](../assets/new.svg) Page Builder. Con l’integrazione di Page Builder, puoi posizionare in modo accurato e dettagliato le unità di consigli in qualsiasi posizione arbitraria su contenuti creati da Page Builder. Puoi anche assegnare uno stile ai titoli e alle unità di consigli. Per ulteriori informazioni, vai a [Page Builder](https://experienceleague.adobe.com/it/docs/commerce-admin/page-builder/add-content/recommendations).
+Supporto di ![New](../assets/new.svg) Page Builder. Con l’integrazione di Page Builder, puoi posizionare in modo accurato e dettagliato le unità di consigli in qualsiasi posizione arbitraria su contenuti creati da Page Builder. Puoi anche assegnare uno stile ai titoli e alle unità di consigli. Per ulteriori informazioni, vai a [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 ### 2.0.0 di magento/product-recommendations
 
@@ -361,4 +365,4 @@ Supporto di ![New](../assets/new.svg) Page Builder. Con l’integrazione di Page
 Per ulteriori informazioni sullo sviluppo di [!DNL Product Recommendations] e [!DNL Product Recommendations]:
 
 * [Guida utente](overview.md)
-* [Documentazione per sviluppatori](https://experienceleague.adobe.com/it/docs/commerce/product-recommendations/developer/development-overview)
+* [Documentazione per sviluppatori](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/developer/development-overview)
