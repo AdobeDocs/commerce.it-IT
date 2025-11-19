@@ -2,11 +2,11 @@
 title: Limiti e limiti
 description: Scopri i limiti e le limitazioni per  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: 1eb95f26a196ad4e66cbc980c7f8a41cae950cb6
+source-git-commit: 41eae72cbd01f0e0f2c4a6cf028a2a11c79921ad
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
@@ -47,3 +47,4 @@ Di seguito sono riportati limiti e limiti per [!DNL Adobe Commerce Optimizer].
 
 - Non sono supportate inclusioni o esclusioni di categorie o attributi.
 - Impossibile visualizzare l&#39;anteprima dei consigli in [!DNL Adobe Commerce Optimizer].
+- Puoi creare fino a 50 unità di consigli attive.
