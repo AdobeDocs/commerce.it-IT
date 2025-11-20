@@ -1,7 +1,8 @@
 ---
 title: Prestazioni
-description: L'area di lavoro Prestazioni  [!DNL Live Search]  fornisce informazioni approfondite sui termini di ricerca utilizzati dagli acquirenti.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+description: L'area di lavoro Prestazioni di  [!DNL Live Search]  fornisce ad insight i termini di ricerca utilizzati dagli acquirenti.
+exl-id: 07a63df8-b981-4913-841a-7e81ec634281
+source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
@@ -10,7 +11,7 @@ ht-degree: 0%
 
 # Prestazioni
 
-L&#39;area di lavoro *Performance* fornisce informazioni approfondite sui termini di ricerca utilizzati dagli acquirenti. Le informazioni possono essere utilizzate per identificare le tendenze, aumentare il click-through e migliorare il tasso di conversione. L’area di lavoro Prestazioni fornisce un’istantanea delle metriche di ricerca per un intervallo di date specifico e include i seguenti rapporti:
+L&#39;area di lavoro *Performance* fornisce ad insight i termini di ricerca utilizzati dagli acquirenti. Le informazioni possono essere utilizzate per identificare le tendenze, aumentare il click-through e migliorare il tasso di conversione. L’area di lavoro Prestazioni fornisce un’istantanea delle metriche di ricerca per un intervallo di date specifico e include i seguenti rapporti:
 
 * Ricerche univoche
 * Nessun risultato
@@ -18,7 +19,7 @@ L&#39;area di lavoro *Performance* fornisce informazioni approfondite sui termin
 
 ![Prestazioni](assets/performance-unique-searches.png)
 
-Per ulteriori informazioni sulla sincronizzazione dei dati, è inoltre possibile fare riferimento a [Dashboard di gestione dati](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=it).
+Per ulteriori informazioni sulla sincronizzazione dei dati, è inoltre possibile fare riferimento a [Dashboard di gestione dati](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html).
 
 >[!NOTE]
 >
