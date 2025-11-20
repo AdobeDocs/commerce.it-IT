@@ -69,7 +69,7 @@ La visualizzazione dati Pagamenti include le seguenti informazioni.
 
 La visualizzazione del rapporto Pagamenti è disponibile nella visualizzazione Pagamenti di Servizi di pagamento. Include tutte le informazioni disponibili sui pagamenti per il/i tuo/i negozio/i.
 
-Nella barra laterale _Amministratore_, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**per visualizzare la visualizzazione dettagliata del report Pagamenti nella tabella.
+Nella barra laterale _Amministratore_, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**&#x200B;per visualizzare la visualizzazione dettagliata del report Pagamenti nella tabella.
 
 ![Transazioni di pagamento nell&#39;amministratore](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
@@ -89,7 +89,7 @@ Nella visualizzazione del report Pagamenti è possibile selezionare l&#39;origin
 
 ![Selezione origini dati](assets/datasource.png){width="300" zoomable="yes"}
 
-Se _[!UICONTROL Live]_è l&#39;origine dati selezionata, è possibile visualizzare le informazioni del report per gli archivi in modalità di produzione. Se_[!UICONTROL Sandbox]_ è l&#39;origine dati selezionata, è possibile visualizzare gli archivi di informazioni del report in modalità sandbox.
+Se _[!UICONTROL Live]_&#x200B;è l&#39;origine dati selezionata, è possibile visualizzare le informazioni del report per gli archivi in modalità di produzione. Se&#x200B;_[!UICONTROL Sandbox]_ è l&#39;origine dati selezionata, è possibile visualizzare gli archivi di informazioni del report in modalità sandbox.
 
 Le selezioni delle origini dati funzionano come segue:
 
