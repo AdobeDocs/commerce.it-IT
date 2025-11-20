@@ -125,4 +125,4 @@ Se hai bisogno di informazioni o hai domande non trattate in questa guida, conta
 
 >[!VIDEO](https://video.tv.adobe.com/v/3447836)
 
-Vedi [Quale [!DNL Payment Services] opzione è adatta?Argomento ](compatibility.md#which-payment-services-option-is-right-for-you) per verificare quale è l&#39;opzione [!DNL Payment Services] più adatta alle tue esigenze.
+Vedi [Quale [!DNL Payment Services] opzione è adatta?Argomento &#x200B;](compatibility.md#which-payment-services-option-is-right-for-you) per verificare quale è l&#39;opzione [!DNL Payment Services] più adatta alle tue esigenze.
