@@ -2,9 +2,9 @@
 title: Aggiungi regole
 description: Scopri come creare regole di Search Merchandising.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: 00c6d728b1bc425c873bdf46293085b8da242782
+source-git-commit: 0b8ab786bb6ec333337dc114de214b6d8e4df427
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '2046'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Per creare una regola, il primo passaggio consiste nell’utilizzare l’editor 
 ## Aggiungi una regola
 
 1. In Amministrazione, vai a **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
-1. Imposta **Ambito** per identificare la [visualizzazione archivio](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=it#scope-settings) in cui si applica la regola.
+1. Imposta **Ambito** per identificare la [visualizzazione archivio](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) in cui si applica la regola.
 1. Fare clic sull&#39;area di lavoro **Ricerca merchandising**.
 1. Fai clic su **Aggiungi regola** per avviare l&#39;editor di regole.
 
@@ -90,6 +90,33 @@ I proprietari dei negozi possono impostare i seguenti tipi di strategie di class
 * Nessuno: i prodotti vengono ordinati in base alla rilevanza.
 
 Selezionare il tipo di strategia per la regola. Nella finestra **Verifica regola** vengono visualizzati i risultati previsti.
+
+### Come funziona il punteggio di classificazione intelligente
+
+La classificazione intelligente determina l&#39;ordine finale del prodotto combinando due fattori chiave: **rilevanza testuale** e **segnali comportamentali**. Comprendere come questi fattori interagiscono consente di impostare aspettative realistiche per i risultati della ricerca.
+
+**Componenti punteggio:**
+
+* **Rilevanza testuale**: il fattore dominante nel punteggio. Questo misura se il nome, la descrizione e gli attributi di un prodotto corrispondono alla query di ricerca. Il punteggio di rilevanza del testo è illimitato (non ha un limite superiore specifico) ed è influenzato da fattori come:
+
+   * Frequenza di occorrenza delle parole corrispondenti.
+   * Lunghezza (in lettere) dei nomi/delle descrizioni dei prodotti.
+
+* **Segnali comportamentali**: aumento limitato applicato al punteggio di rilevanza del testo. Quando selezioni una strategia di classificazione intelligente come &quot;Più visualizzati&quot; o &quot;Più acquistati&quot;, i prodotti con segnali comportamentali più elevati ricevono un incremento fisso dei punteggi. Tuttavia, questo incremento ha un limite definito.
+
+**Perché il prodotto più visualizzato potrebbe non essere visualizzato per primo:**
+
+La rilevanza testuale in genere domina la classificazione perché il suo punteggio è illimitato, mentre gli aumenti comportamentali sono fissi. Di conseguenza, i prodotti con corrispondenze testuali forti spesso superano quelli con segnali di coinvolgimento più elevati. Gli aumenti comportamentali da soli possono non compensare le grandi lacune nella rilevanza del testo. La classificazione intelligente affronta questo problema prendendo in considerazione sia la qualità della corrispondenza che l’interazione con l’acquirente, migliorando la rilevanza complessiva. Tuttavia, la qualità della corrispondenza del testo rimane il principale driver di classificazione.
+
+**Esempio:**
+
+Un commerciante utilizza la strategia di classificazione intelligente &quot;Più visualizzato&quot; e cerca &quot;candela&quot;. Si aspettano che lo SKU del prodotto YAN-K-E-512 appaia all’inizio dei risultati perché ha il conteggio di visualizzazioni più alto. Tuttavia, altri prodotti sono classificati più in alto:
+
+* **Candela Texas** (prima posizione): ha un nome di prodotto più breve e più chiaro che crea un punteggio di rilevanza del testo molto elevato. Anche se ha meno visualizzazioni di YAN-K-E-512, la sua corrispondenza testuale superiore supera l&#39;incremento comportamentale.
+
+* **YAN-K-E-512** (posizione più bassa): nonostante il percentile di visualizzazione più alto nei dati comportamentali &quot;Più visualizzati&quot;, il nome complesso basato su SKU genera un punteggio di rilevanza del testo più basso. L’impulso comportamentale fisso non è sufficiente per superare questo vuoto di rilevanza del testo.
+
+Consulta [regole di ricerca](./best-practice.md#search-rules) per scoprire come migliorare la reperibilità dei prodotti utilizzando le regole.
 
 ### Avvertenze
 

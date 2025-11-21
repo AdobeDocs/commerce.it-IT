@@ -1,11 +1,11 @@
 ---
 title: Creare e gestire le regole
 description: Scopri come creare e gestire le regole di merchandising.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
+source-git-commit: 5f3bde7070857cbfd6892e5881ce0437973f0cc0
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '2103'
 ht-degree: 0%
 
 ---
@@ -85,6 +85,33 @@ I proprietari dei negozi possono impostare i seguenti tipi di strategie di class
 - Nessuno: i prodotti vengono ordinati in base alla rilevanza.
 
 Selezionare il tipo di strategia per la regola. Nella finestra **Verifica regola** vengono visualizzati i risultati previsti.
+
+#### Come funziona il punteggio di classificazione intelligente
+
+La classificazione intelligente determina l&#39;ordine finale del prodotto combinando due fattori chiave: **rilevanza testuale** e **segnali comportamentali**. Comprendere come questi fattori interagiscono consente di impostare aspettative realistiche per i risultati della ricerca.
+
+**Componenti punteggio:**
+
+- **Rilevanza testuale**: il fattore dominante nel punteggio. Questo misura se il nome, la descrizione e gli attributi di un prodotto corrispondono alla query di ricerca. Il punteggio di rilevanza del testo è illimitato (non ha un limite superiore specifico) ed è influenzato da fattori come:
+
+   - Frequenza di occorrenza delle parole corrispondenti.
+   - Lunghezza (in lettere) dei nomi/delle descrizioni dei prodotti.
+
+- **Segnali comportamentali**: aumento limitato applicato al punteggio di rilevanza del testo. Quando selezioni una strategia di classificazione intelligente come &quot;Più visualizzati&quot; o &quot;Più acquistati&quot;, i prodotti con segnali comportamentali più elevati ricevono un incremento fisso dei punteggi. Tuttavia, questo incremento ha un limite definito.
+
+**Perché il prodotto più visualizzato potrebbe non essere visualizzato per primo:**
+
+La rilevanza testuale in genere domina la classificazione perché il suo punteggio è illimitato, mentre gli aumenti comportamentali sono fissi. Di conseguenza, i prodotti con corrispondenze testuali forti spesso superano quelli con segnali di coinvolgimento più elevati. Gli aumenti comportamentali da soli possono non compensare le grandi lacune nella rilevanza del testo. La classificazione intelligente affronta questo problema prendendo in considerazione sia la qualità della corrispondenza che l’interazione con l’acquirente, migliorando la rilevanza complessiva. Tuttavia, la qualità della corrispondenza del testo rimane il principale driver di classificazione.
+
+**Esempio:**
+
+Un commerciante utilizza la strategia di classificazione intelligente &quot;Più visualizzato&quot; e cerca &quot;candela&quot;. Si aspettano che lo SKU del prodotto YAN-K-E-512 appaia all’inizio dei risultati perché ha il conteggio di visualizzazioni più alto. Tuttavia, altri prodotti sono classificati più in alto:
+
+- **Candela Texas** (prima posizione): ha un nome di prodotto più breve e più chiaro che crea un punteggio di rilevanza del testo molto elevato. Anche se ha meno visualizzazioni di YAN-K-E-512, la sua corrispondenza testuale superiore supera l&#39;incremento comportamentale.
+
+- **YAN-K-E-512** (posizione più bassa): nonostante il percentile di visualizzazione più alto nei dati comportamentali &quot;Più visualizzati&quot;, il nome complesso basato su SKU genera un punteggio di rilevanza del testo più basso. L’impulso comportamentale fisso non è sufficiente per superare questo vuoto di rilevanza del testo.
+
+Consulta [regole di ricerca](./best-practice.md#tips-to-optimize-search-rules) per scoprire come migliorare la reperibilità dei prodotti utilizzando le regole.
 
 #### Avvertenze
 
