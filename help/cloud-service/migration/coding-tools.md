@@ -1,13 +1,13 @@
 ---
 title: Strumenti di codifica IA per le estensioni
 description: Scopri come utilizzare gli strumenti di intelligenza artificiale per creare estensioni Commerce App Builder.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 0e76dee3b33ca7906b22d33d15c6c75ca1c391ef
+source-git-commit: b62dafbf381eb11501c901d6e8d6ad3da972a307
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1838'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,11 @@ L’utilizzo degli strumenti di codifica AI offre i seguenti vantaggi:
 
 ## Prerequisiti
 
-* Un agente di codifica, ad esempio [Cursore](https://cursor.com/download)&#x200B;(consigliato), [Copilota Github](https://github.com/features/copilot), [CLI Google Gemini](https://github.com/google-gemini/gemini-cli) o [Codice Claude](https://www.claude.com/product/claude-code)
+* Uno dei seguenti agenti di codifica:
+   * [Cursore](https://cursor.com/download)&#x200B;(consigliato)
+   * [Copilota Github](https://github.com/features/copilot)
+   * [CLI Gemini Google](https://github.com/google-gemini/gemini-cli)
+   * [Codice Claude](https://www.claude.com/product/claude-code)
 * [Node.js](https://nodejs.org/en/download): versione LTS
 * Gestione pacchetti: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) o [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git): per la clonazione dell&#39;archivio e il controllo della versione
@@ -118,6 +122,33 @@ Quando si seleziona Gestione pacchetti, Adobe consiglia di utilizzare `npm` per 
 
 ## Configurazione post-installazione
 
+### Accedi a [!DNL Adobe I/O CLI]
+
+Dopo aver installato [!DNL Adobe I/O CLI], è necessario accedere in qualsiasi momento per utilizzare il server MCP.
+
+```bash
+aio auth login
+```
+
+Per verificare di aver eseguito l&#39;accesso, eseguire il comando seguente:
+
+```bash
+aio where
+```
+
+In caso di problemi, disconnettersi e accedere nuovamente:
+
+```bash
+aio auth logout
+aio auth login
+```
+
+>[!NOTE]
+>
+>Alcune funzionalità del server MCP funzioneranno senza effettuare l’accesso, ma il servizio RAG (Retrieval-Augmented Generation) non funzionerà. Il servizio RAG fornisce all’agente di codifica AI l’accesso in tempo reale al set completo della documentazione di Adobe Commerce, consentendogli di rispondere alle domande e generare il codice in base alle procedure di sviluppo Commerce, alle API e ai pattern architetturali correnti.
+>
+>In una versione futura, il servizio RAG sarà accessibile in modo indipendente senza la necessità di installare altri strumenti.
+
 ### Cursore
 
 1. Riavvia l’IDE cursore per caricare i nuovi strumenti e la nuova configurazione MCP.
@@ -174,9 +205,9 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. Utilizza il seguente prompt per verificare se l’agente utilizza il server MCP. In caso contrario, chiedi esplicitamente all’agente di utilizzare gli strumenti MCP disponibili.
 
-```terminal
-What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
-```
+   ```terminal
+   What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
+   ```
 
 ## Richiesta di esempio
 
@@ -189,6 +220,14 @@ Order ID -> orderID
 Order Total -> total
 Customer Email ID -> emailID
 Payment Type -> pType
+```
+
+## Comandi Prompt
+
+Oltre a richiedere conferma, è possibile utilizzare il comando `/search-commerce-docs` per eseguire ricerche nella documentazione nelle conversazioni con l&#39;agente. Ad esempio:
+
+```text
+/search-commerce-docs "How do I subscribe to Commerce events?"
 ```
 
 ## Best practice
@@ -232,7 +271,7 @@ Consulta le seguenti risorse per iniziare:
 
 * [Kit di avvio dell&#39;integrazione](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Modelli di kit di avvio Adobe Commerce](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Modelli di avvio Adobe I/O Events](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Modelli di avvio Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Applicazioni di esempio App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Perché utilizzare queste risorse
@@ -274,6 +313,10 @@ Le estensioni Adobe Commerce complesse spesso richiedono:
 * Test su più componenti
 
 ### Utilizzare gli strumenti MCP
+
+>[!NOTE]
+>
+>Prima di utilizzare gli strumenti MCP, assicurati di aver [effettuato l&#39;accesso a Adobe I/O CLI](#log-in-to-the-adobe-io-cli).
 
 Per impostazione predefinita, gli strumenti sono strumenti MCP, ma in determinate circostanze possono essere utilizzati i comandi CLI. Se desideri garantire l’utilizzo dello strumento MCP, richiedilo esplicitamente nel prompt.
 
