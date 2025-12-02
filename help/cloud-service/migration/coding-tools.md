@@ -1,11 +1,11 @@
 ---
 title: Strumenti di codifica IA per le estensioni
 description: Scopri come utilizzare gli strumenti di intelligenza artificiale per creare estensioni Commerce App Builder.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: b62dafbf381eb11501c901d6e8d6ad3da972a307
+source-git-commit: f31cd10da7e3daec06a777a065c08d14d39046c5
 workflow-type: tm+mt
 source-wordcount: '1838'
 ht-degree: 0%
@@ -26,7 +26,7 @@ L’utilizzo degli strumenti di codifica AI offre i seguenti vantaggi:
 ## Prerequisiti
 
 * Uno dei seguenti agenti di codifica:
-   * [Cursore](https://cursor.com/download)&#x200B;(consigliato)
+   * [Cursore](https://cursor.com/download) (consigliato)
    * [Copilota Github](https://github.com/features/copilot)
    * [CLI Gemini Google](https://github.com/google-gemini/gemini-cli)
    * [Codice Claude](https://www.claude.com/product/claude-code)
@@ -271,7 +271,7 @@ Consulta le seguenti risorse per iniziare:
 
 * [Kit di avvio dell&#39;integrazione](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Modelli di kit di avvio Adobe Commerce](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Modelli di avvio Adobe I/O Events](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Modelli di avvio Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Applicazioni di esempio App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Perché utilizzare queste risorse
