@@ -1,13 +1,13 @@
 ---
 title: Strumenti di codifica IA per le estensioni
 description: Scopri come utilizzare gli strumenti di intelligenza artificiale per creare estensioni Commerce App Builder.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: f31cd10da7e3daec06a777a065c08d14d39046c5
+source-git-commit: 8f7b5536388e8f4cb1e763b430bdca8644d1da5c
 workflow-type: tm+mt
-source-wordcount: '1838'
+source-wordcount: '1849'
 ht-degree: 0%
 
 ---
@@ -42,10 +42,14 @@ L’utilizzo degli strumenti di codifica AI offre i seguenti vantaggi:
    npm install -g @adobe/aio-cli
    ```
 
-1. Installa il plug-in Commerce [Adobe I/O CLI](https://github.com/adobe-commerce/aio-cli-plugin-commerce):
+1. Installa i seguenti plug-in:
+
+   * [Commerce Adobe I/O CLI](https://github.com/adobe-commerce/aio-cli-plugin-commerce)
+   * [Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime)
+   * [CLI di App Builder](https://github.com/adobe/aio-cli-plugin-app-dev)
 
    ```bash
-   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
+   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
    ```
 
 1. Clona il [kit di avvio per l&#39;integrazione di Commerce](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration):
@@ -271,7 +275,7 @@ Consulta le seguenti risorse per iniziare:
 
 * [Kit di avvio dell&#39;integrazione](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Modelli di kit di avvio Adobe Commerce](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Modelli di avvio Adobe I/O Events](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Modelli di avvio Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Applicazioni di esempio App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Perché utilizzare queste risorse

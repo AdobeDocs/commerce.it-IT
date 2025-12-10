@@ -4,9 +4,9 @@ description: Scopri i prerequisiti per il laboratorio di estensione delle valuta
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: e153e974be1dc5ec8ff2eff8d699ce87ef6708dc
+source-git-commit: fda04de3301a305c897c34d3dd0166d50fc3c12a
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -27,10 +27,10 @@ In questa pagina sono elencati i prerequisiti e i passaggi di configurazione per
   npm install -g @adobe/aio-cli
   ```
 
-* Installare il plug-in Commerce
+* Installa i plug-in [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce), [Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime) e [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev):
 
   ```bash
-  aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
+  aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
   ```
 
 * Scaricare un IDE basato sull&#39;intelligenza artificiale, ad esempio [Cursor](https://cursor.com/download) (scelta consigliata), sono supportati anche altri IDE, come Claude Code, Gemini CLI o Copilot, ma potrebbero essere necessarie modifiche ai prompt e ad altri passaggi dell&#39;esercitazione.
@@ -169,6 +169,12 @@ Esegui il comando seguente per scaricare il file di configurazione dell’area d
 
 ```bash
 aio console workspace download workspace.json
+```
+
+Copiare il file di configurazione dell&#39;area di lavoro nella directory `scripts`:
+
+```bash
+cp workspace.json scripts/
 ```
 
 ### Connetti area di lavoro locale a area di lavoro remota
