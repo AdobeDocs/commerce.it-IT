@@ -1,9 +1,9 @@
 ---
 title: Prestazioni consigli
 description: La pagina Prestazioni dei consigli fornisce ad insight informazioni sulle prestazioni dei consigli di prodotto.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
-source-git-commit: 177ebffe0295fdc87b6f4a60473ebfda6bea0f01
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Scopri come [creare un nuovo consiglio o gestirne uno esistente](../merchandisin
 | ![Selettore colonna](../assets/icon-show-hide-columns.png) | Determina le colonne visualizzate nella tabella Consigli. |
 | Crea consiglio | Apre la pagina [Crea nuovo consiglio](../merchandising/recommendations/create.md). |
 
-## Descrizioni colonne
+## Descrizioni delle colonne
 
 | Colonna | Descrizione |
 |---|---|

@@ -1,9 +1,9 @@
 ---
 title: Creare e gestire i facet
 description: Scopri come aggiungere e gestire i facet in [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: d6b7ff1f-a9b8-4fb8-8bd3-b3596695045c
-source-git-commit: dc751a54c654980a29606c85cdd1cd3324973aab
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Qualsiasi attributo di prodotto filtrabile può essere utilizzato come facet. Fa
 
 1. Al termine, fare clic su **Salva**.
 
-## Faccette pin/spin
+## Blocca/sblocca facet
 
 Il pin cambia colore quando si fa clic e viene utilizzato per spostare il facet nella sezione *Facet bloccati* o *Facet dinamici*.
 

@@ -2,7 +2,7 @@
 title: Aggiungi sinonimi
 description: Aggiungi [!DNL Live Search] sinonimi per migliorare la risposta alle richieste di ricerca.
 exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
-source-git-commit: 6dcfd0a54e6a6814b7f5708e0c221452b8af4537
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Aumenta il coinvolgimento dei clienti aggiungendo il tuo elenco curato di [!DNL 
 ## Passaggio 1: aggiungere un sinonimo
 
 1. In Amministrazione, vai a **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
-1. Per più archivi, impostare **Ambito** nella [visualizzazione archivio](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=it#scope-settings) in cui si applicano le impostazioni dei sinonimi.
+1. Per più archivi, impostare **Ambito** nella [visualizzazione archivio](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) in cui si applicano le impostazioni dei sinonimi.
 1. Fare clic sulla scheda **Sinonimi**.
 1. Fare clic sul pulsante **Aggiungi sinonimi**.
 
@@ -65,7 +65,7 @@ Il set di sinonimi viene visualizzato nell&#39;elenco con una freccia unidirezio
 1. Al termine dei sinonimi, fare clic su **Pubblica modifiche**.
 1. Attendi fino a due ore prima che gli aggiornamenti diventino disponibili nella vetrina.
 
-## Descrizioni campi
+## Descrizioni dei campi
 
 | Campo | Descrizione |
 |--- |--- |

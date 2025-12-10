@@ -3,9 +3,9 @@ title: Vista catalogo
 description: Scopri cosa sono le visualizzazioni catalogo e come crearle per organizzare il catalogo dei prodotti in base alla struttura aziendale, alle politiche e ai prezzi.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: ff53f84b4ab7cfb219aae0e29cc35b23d0f6601b
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 0%
@@ -153,12 +153,12 @@ I dati del catalogo filtrati vengono consegnati a varie destinazioni, tra cui ve
 **Sfida**: gestisci più marchi, paesi e lingue<br>
 **Soluzione**: catalogo singolo con visualizzazioni catalogo per ogni combinazione di marchio/area geografica
 
-### Dealer di componenti per automobili
+### Rivenditore di componenti per automobili
 
 **Sfida**: 3.000 dealer con gli stessi prodotti ma prezzi diversi<br>
 **Soluzione**: un catalogo con viste catalogo e listini prezzi specifici per i dealer
 
-### Retailer multi-posizione
+### Retailer multisito
 
 **Sfida**: prezzi e scorte diversi per ubicazione<br>
 **Soluzione**: viste catalogo basate sulla posizione con criteri specifici per l&#39;area geografica

@@ -1,9 +1,9 @@
 ---
 title: Prestazioni di ricerca
 description: La pagina Prestazioni di ricerca fornisce ad insight i termini di ricerca utilizzati dagli acquirenti.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
-source-git-commit: c408f3de4e3b980545a655e2f6040187f00bc571
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '1825'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Esistono diversi fattori chiave che determinano la rilevanza e l’efficacia dei
 - Le regole di ricerca sono fondamentali in quanto possono aumentare la visibilità di alcuni prodotti in base alla popolarità, ai nuovi arrivi, ai criteri promozionali o a qualsiasi altra strategia di merchandising per soddisfare le esigenze aziendali.
 - La navigazione a facet consente ai clienti di perfezionare le ricerche e ottenere rapidamente risultati rilevanti.
 
-### Monitoraggio dei risultati di ricerca
+### Monitorare i risultati della ricerca
 
 Per ottimizzare i risultati della ricerca con [!DNL Adobe Commerce Optimizer], monitorare gli indicatori di prestazioni chiave (KPI, Key Performance Indicators) pertinenti, ad esempio query univoche, posizione media dei clic, tassi di click-through, tasso di conversione e tasso di risultati zero, per capire come gli acquirenti interagiscono con la funzionalità di ricerca. Questi dati ti aiutano ad aggiornare e perfezionare regolarmente le regole di ricerca.
 
@@ -110,7 +110,7 @@ Assicurati che i prodotti secondari dei prodotti configurabili dispongano di imm
 
 ### Sfruttare i metadati del prodotto
 
-Assicurati che gli attributi del prodotto [&#x200B; precisi e dettagliati siano configurabili come ricercabili e abbiano un peso assegnato](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Tieni presente che gli attributi SKU, nome e categoria sono ricercabili per impostazione predefinita e non possono essere esclusi dalla ricerca. Per ottenere risultati ottimali, non utilizzare spazi negli SKU.
+Assicurati che gli attributi del prodotto [ precisi e dettagliati siano configurabili come ricercabili e abbiano un peso assegnato](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Tieni presente che gli attributi SKU, nome e categoria sono ricercabili per impostazione predefinita e non possono essere esclusi dalla ricerca. Per ottenere risultati ottimali, non utilizzare spazi negli SKU.
 
 Per aumentare la rilevanza della ricerca, assegnare un peso a ogni attributo ricercabile. Gli attributi con un peso maggiore dovrebbero apparire più in alto nei risultati della ricerca. L’ordinamento in base alla rilevanza è influenzato da più criteri, ad esempio il peso della ricerca. Ciò significa che a volte gli attributi con un peso di ricerca inferiore possono comunque avere maggiore rilevanza degli attributi con un peso di ricerca maggiore. Altri criteri possono includere il numero di corrispondenze in un dato attributo, la posizione del termine di ricerca trovato e la struttura generale del testo prima e dopo un termine di ricerca.
 

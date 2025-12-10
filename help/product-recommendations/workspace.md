@@ -2,7 +2,7 @@
 title: '[!DNL Product Recommendations] Workspace'
 description: Scopri come configurare, gestire e monitorare le prestazioni dei consigli di prodotto.
 exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
-source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Se utilizzi una vetrina headless, consulta la seguente documentazione per ulteri
 
 ## Impostare l&#39;ambito
 
-Inizialmente l&#39;[ambito](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=it) di tutte le impostazioni dei consigli è impostato su `Default Store View`. Se l&#39;installazione di Commerce include più visualizzazioni dello store, impostare **Ambito** nella [visualizzazione dello store](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=it#scope-settings) in cui vengono applicate le raccomandazioni.
+Inizialmente l&#39;[ambito](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) di tutte le impostazioni dei consigli è impostato su `Default Store View`. Se l&#39;installazione di Commerce include più visualizzazioni dello store, impostare **Ambito** nella [visualizzazione dello store](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) in cui vengono applicate le raccomandazioni.
 
 ## Impostare l’intervallo di date delle metriche
 
@@ -106,7 +106,7 @@ Dalla pagina dei dettagli dei consigli, fai clic su **Crea**. Per ulteriori info
 | Impostazioni | Determina lo spazio di dati SaaS in cui vengono recuperati i dati sul comportamento dei consigli e abilita anche il tipo di consiglio per similarità visiva. |
 | Crea consiglio | Apre la pagina [Crea nuovo consiglio](create.md). |
 
-## Descrizioni colonne
+## Descrizioni delle colonne
 
 | Colonna | Descrizione |
 |---|---|

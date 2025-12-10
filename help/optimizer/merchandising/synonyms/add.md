@@ -1,8 +1,9 @@
 ---
 title: Creare e gestire i sinonimi
 description: Scopri come creare e gestire i sinonimi per  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+exl-id: d2982a0b-e7df-44e6-b3c9-9b4328635d38
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -65,7 +66,7 @@ In questo esempio, la parola chiave da associare è &quot;pantaloni&quot; e l&#3
 1. Al termine dei sinonimi, fare clic su **Pubblica**.
 1. Attendi fino a due ore prima che gli aggiornamenti diventino disponibili nella vetrina.
 
-## Descrizioni campi
+## Descrizioni dei campi
 
 | Campo | Descrizione |
 |--- |--- |
@@ -73,7 +74,7 @@ In questo esempio, la parola chiave da associare è &quot;pantaloni&quot; e l&#3
 | Parola chiave | Parola comunemente associata a una selezione di prodotti nel catalogo. |
 | Espansione | Termini aggiuntivi che hanno lo stesso significato o un significato simile della parola chiave. |
 
-## Gestisci sinonimi
+## Gestire i sinonimi
 
 Segui queste istruzioni per gestire [!DNL Adobe Commerce Optimizer] [sinonimi](overview.md) esistenti.
 

@@ -5,7 +5,7 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
-source-git-commit: 8c2d206227d8dbac0e56bb7e687f217a3a62ddb0
+source-git-commit: 1b3d13da00644c9e01344a8a68ca859bca24aaf1
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 0%
@@ -168,11 +168,11 @@ Gli strumenti dati consentono di gestire e ottimizzare il flusso di informazioni
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
       <img alt="Sincronizzazione dei dati del monitor" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong>Dashboard di gestione dati</strong>
          </a>
       </div>
@@ -198,11 +198,11 @@ Sia che si tratti di scalare l&#39;azienda, migliorare le esperienze dei clienti
 | Creare esperienze personalizzate omni-channel | I dati di e-commerce vengono inseriti in un silos, impedendo la distribuzione di esperienze personalizzate tra i canali. | Utilizza [Connessione dati](../data-connection/overview.md) per inviare dati comportamentali, transazionali e di profilo a Adobe Experience Platform. Crea segmenti di clienti sofisticati, crea campagne carrello abbandonate, rivolgiti a tipi di pubblico simili e analizza le tendenze stagionali nell’intero percorso di clienti. |
 | Gestione semplificata delle risorse digitali | La gestione delle immagini dei prodotti e dei rich media su più sistemi richiede molto tempo ed è soggetta ad errori. | L&#39;[integrazione AEM Assets](../aem-assets-integration/overview.md) fornisce una gestione centralizzata delle risorse collegando Adobe Commerce a un progetto Adobe Experience Manager Assets, semplificando i flussi di lavoro e garantendo esperienze di marchio coerenti in tutti i punti di contatto. |
 | Ottimizzare l’elaborazione dei pagamenti | Opzioni di pagamento limitate e esperienze di pagamento scadenti stanno danneggiando la soddisfazione del cliente e la conversione. | [Servizi di pagamento](../payment-services/guide-overview.md) offre più metodi di pagamento, incluse le rate senza interessi, con un dashboard unificato per la gestione di pagamenti, ordini e fatture. |
-| Gestire la sincronizzazione dei dati su larga scala | L&#39;indicizzazione ad uso intensivo di risorse rallenta il sito e non è possibile tenere traccia facilmente dei problemi di sincronizzazione dei dati. | [Esportazione dati SaaS](../data-export/overview.md), [Indicizzatore prezzo SaaS](../price-index/price-indexing.md) e [Dashboard di gestione dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) sincronizzano automaticamente i dati di catalogo, ordine e inventario, scaricano i calcoli dei prezzi nell&#39;infrastruttura cloud di Adobe e forniscono visibilità in tempo reale sullo stato di sincronizzazione. |
+| Gestire la sincronizzazione dei dati su larga scala | L&#39;indicizzazione ad uso intensivo di risorse rallenta il sito e non è possibile tenere traccia facilmente dei problemi di sincronizzazione dei dati. | [Esportazione dati SaaS](../data-export/overview.md), [Indicizzatore prezzo SaaS](../price-index/price-indexing.md) e [Dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) sincronizzano automaticamente i dati di catalogo, ordine e inventario, scaricano i calcoli dei prezzi nell&#39;infrastruttura cloud di Adobe e forniscono visibilità in tempo reale sullo stato di sincronizzazione. |
 | Recuperare i clienti perduti e ridurre i rendimenti | Gli elevati tassi di abbandono dei clienti e di rendimento dei prodotti influiscono sulla redditività. | Combina [Connessione dati](../data-connection/overview.md) con Adobe Journey Optimizer e Real-Time CDP per identificare i pattern di ritorno, creare campagne di recupero, segmentare i clienti per comportamento e inviare campagne di ricoinvolgimento personalizzate tramite e-mail e SMS. |
 | Decisioni di merchandising basate sui dati | Non sai quali prodotti promuovere o quando eseguire le promozioni. | [Live Search](../live-search/overview.md) fornisce informazioni approfondite sulle prestazioni di ricerca e strumenti di merchandising per accedere a metriche chiave, analizzare i termini di ricerca e utilizzare regole di merchandising intelligenti per aumentare o sotterrare i prodotti in base al comportamento reale dei clienti e agli obiettivi aziendali. |
 | Garanzia di conformità con i dati sensibili | È necessario gestire i dati sensibili dei clienti mantenendo la conformità HIPAA. | [Connessione dati](../data-connection/overview.md) è compatibile con HIPAA e consente di condividere i dati di back office con Experience Platform, mantenendo al contempo la conformità e gestendo in modo sistematico le richieste di accesso a dati personali. |
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-<!-- Last updated from includes: 2025-09-26 20:42:12 -->
+<!-- Last updated from includes: 2025-12-10 17:14:24 -->
