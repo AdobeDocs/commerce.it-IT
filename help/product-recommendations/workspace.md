@@ -35,7 +35,7 @@ Se utilizzi una vetrina headless, consulta la seguente documentazione per ulteri
 
 ## Impostare l&#39;ambito
 
-Inizialmente l&#39;[ambito](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) di tutte le impostazioni dei consigli è impostato su `Default Store View`. Se l&#39;installazione di Commerce include più visualizzazioni dello store, impostare **Ambito** nella [visualizzazione dello store](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) in cui vengono applicate le raccomandazioni.
+Inizialmente l&#39;[ambito](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=it) di tutte le impostazioni dei consigli è impostato su `Default Store View`. Se l&#39;installazione di Commerce include più visualizzazioni dello store, impostare **Ambito** nella [visualizzazione dello store](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=it#scope-settings) in cui vengono applicate le raccomandazioni.
 
 ## Impostare l’intervallo di date delle metriche
 
