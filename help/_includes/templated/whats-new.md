@@ -23,7 +23,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È ora supportato l'aggiornamento della funzionalità Consigli nella documentazione di Commerce Optimizer come <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations">riquadro di anteprima</a>.</p>
+      <td><p>È ora supportato l'aggiornamento della funzionalità Consigli nella documentazione di Commerce Optimizer come <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations">riquadro di anteprima</a>.</p>
 </td>
       <td>
         Tecnico
@@ -45,7 +45,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>Sono state aggiornate le <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">note sulla versione</a> per la versione di novembre di Adobe Commerce as a Cloud Service.</p>
+      <td><p>Sono state aggiornate le <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/release-notes">note sulla versione</a> per la versione di novembre di Adobe Commerce as a Cloud Service.</p>
 </td>
       <td>
         Aggiornamento principale
@@ -67,7 +67,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stato documentato come i clienti di Commerce Optimizer che si connettono a un backend di Adobe Commerce possono monitorare e risolvere i problemi relativi alle esportazioni di feed di dati dalla pagina Stato sincronizzazione feed. Vedere <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync">Sincronizzazione dati</a> nella Guida di Adobe Commerce Optimizer.</p>
+      <td><p>È stato documentato come i clienti di Commerce Optimizer che si connettono a un backend di Adobe Commerce possono monitorare e risolvere i problemi relativi alle esportazioni di feed di dati dalla pagina Stato sincronizzazione feed. Vedere <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/setup/data-sync">Sincronizzazione dati</a> nella Guida di Adobe Commerce Optimizer.</p>
 </td>
       <td>
         Tecnico
@@ -89,7 +89,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>Sono state aggiornate le <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">note sulla versione</a> di Payment Services v2.13.0.</p>
+      <td><p>Sono state aggiornate le <a href="https://experienceleague.adobe.com/it/docs/commerce/payment-services/release-notes">note sulla versione</a> di Payment Services v2.13.0.</p>
 </td>
       <td>
         Tecnico
@@ -111,7 +111,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>Sono state aggiornate le <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">note sulla versione</a> per la versione v1.2.7 dell'integrazione AEM Assets.</p>
+      <td><p>Sono state aggiornate le <a href="https://experienceleague.adobe.com/it/docs/commerce/aem-assets-integration/release-notes">note sulla versione</a> per la versione v1.2.7 dell'integrazione AEM Assets.</p>
 </td>
       <td>
         Tecnico
@@ -133,7 +133,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>Sono stati aggiornati i seguenti argomenti per includere informazioni sulla configurazione della gestione delle identità e del single sign-on da Adobe Admin Console:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">Utente Adobe Commerce as a Cloud Service e Identity Management</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer: Utente e Identity Management</a></p>
+      <td><p>Sono stati aggiornati i seguenti argomenti per includere informazioni sulla configurazione della gestione delle identità e del single sign-on da Adobe Admin Console:<br />- <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/user-management">Utente Adobe Commerce as a Cloud Service e Identity Management</a><br />- <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer: Utente e Identity Management</a></p>
 </td>
       <td>
         Feedback tecnico
@@ -155,7 +155,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>Sono stati aggiornati i <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">passaggi per la gestione degli utenti</a> relativi all'aggiunta di un utente.</p>
+      <td><p>Sono stati aggiornati i <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/user-management">passaggi per la gestione degli utenti</a> relativi all'aggiunta di un utente.</p>
 </td>
       <td>
         Aggiornamento principale
