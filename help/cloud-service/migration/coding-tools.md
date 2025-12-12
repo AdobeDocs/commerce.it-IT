@@ -1,11 +1,11 @@
 ---
 title: Strumenti di codifica IA per le estensioni
 description: Scopri come utilizzare gli strumenti di intelligenza artificiale per creare estensioni Commerce App Builder.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 8f7b5536388e8f4cb1e763b430bdca8644d1da5c
+source-git-commit: d0b9fd3ebbf0c88abbbf12821c5c4825ffcf10f0
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 0%
@@ -72,7 +72,7 @@ L’utilizzo degli strumenti di codifica AI offre i seguenti vantaggi:
 
 Il processo di configurazione richiede di specificare le opzioni di configurazione. Per il percorso di installazione, scegliere &quot;Directory corrente&quot; per installare gli strumenti nell&#39;area di lavoro corrente:
 
-```terminal
+```plain
 ? Where would you like to setup the tools?
 ❯ Current directory
   New directory
@@ -80,7 +80,7 @@ Il processo di configurazione richiede di specificare le opzioni di configurazio
 
 Quando si seleziona l&#39;agente di codifica, Adobe consiglia di selezionare `Cursor` per la migliore esperienza di sviluppo:
 
-```terminal
+```plain
 ? Which coding agent would you like to use?
 ❯ Cursor
   Copilot
@@ -90,7 +90,7 @@ Quando si seleziona l&#39;agente di codifica, Adobe consiglia di selezionare `Cu
 
 Quando si seleziona Gestione pacchetti, Adobe consiglia di utilizzare `npm` per coerenza:
 
-```terminal
+```plain
 ? Which package manager would you like to use?
 ❯ npm
   yarn
@@ -168,7 +168,7 @@ aio auth login
 
 1. Verifica dello stato del server: il server MCP di estensibilità di Commerce deve essere visualizzato come:
 
-   ```terminal
+   ```plain
    Status: Connected/Active
    Server: commerce-extensibility
    Configuration: Automatically configured via .cursor/mcp.json
@@ -176,7 +176,7 @@ aio auth login
 
 1. Utilizza il seguente prompt per verificare se l’agente utilizza il server MCP. In caso contrario, chiedi esplicitamente all’agente di utilizzare gli strumenti MCP disponibili.
 
-```terminal
+```plain
 What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
 ```
 
@@ -195,7 +195,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. Verificare lo stato del server. L&#39;output `MCP:commerce-extensibility` deve corrispondere al seguente:
 
-   ```terminal
+   ```plain
    2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
    2025-11-13 12:58:50.652 [info] Connection state: Starting
    2025-11-13 12:58:50.652 [info] Starting server from LocalProcess extension host
@@ -209,7 +209,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. Utilizza il seguente prompt per verificare se l’agente utilizza il server MCP. In caso contrario, chiedi esplicitamente all’agente di utilizzare gli strumenti MCP disponibili.
 
-   ```terminal
+   ```plain
    What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
    ```
 
@@ -217,7 +217,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 Il seguente prompt di esempio crea un’estensione per inviare notifiche quando viene effettuato un ordine.
 
-```terminal
+```plain
 Implement an Adobe Commerce SaaS extension that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
 
 Order ID -> orderID
@@ -230,7 +230,7 @@ Payment Type -> pType
 
 Oltre a richiedere conferma, è possibile utilizzare il comando `/search-commerce-docs` per eseguire ricerche nella documentazione nelle conversazioni con l&#39;agente. Ad esempio:
 
-```text
+```plain
 /search-commerce-docs "How do I subscribe to Commerce events?"
 ```
 
@@ -275,7 +275,7 @@ Consulta le seguenti risorse per iniziare:
 
 * [Kit di avvio dell&#39;integrazione](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Modelli di kit di avvio Adobe Commerce](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Modelli di avvio Adobe I/O Events](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Modelli di avvio Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Applicazioni di esempio App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Perché utilizzare queste risorse
@@ -304,7 +304,7 @@ Il seguente protocollo in quattro fasi viene applicato automaticamente dal siste
 
 Per uno sviluppo complesso che coinvolge più azioni di runtime, punti di contatto o integrazioni, richiedi esplicitamente che gli strumenti di intelligenza artificiale creino un piano di implementazione dettagliato. Quando in [Fase 2](#protocol) viene visualizzato un piano di alto livello che coinvolge più componenti, richiedere un piano di implementazione dettagliato per suddividerlo in attività gestibili:
 
-```terminal
+```plain
 Create a detailed implementation plan for this complex development.
 ```
 
@@ -326,7 +326,7 @@ Per impostazione predefinita, gli strumenti sono strumenti MCP, ma in determinat
 
 Se sono presenti comandi CLI in uso e si desidera utilizzare gli strumenti MCP, utilizzare il seguente prompt:
 
-```terminal
+```plain
 Use only MCP tools and not CLI commands
 ```
 
@@ -346,7 +346,7 @@ I comandi CLI possono essere utilizzati per i seguenti scenari:
 
 Quando si aggiungono file non necessari (`validator.js`, `transformer.js`, `sender.js`) per endpoint di sola lettura semplici, utilizzare i prompt seguenti:
 
-```terminal
+```plain
 Why do we need these files for a simple read-only endpoint?
 Perform a root cause analysis before adding complexity
 Verify if simpler solutions exist
@@ -402,47 +402,47 @@ Chiedi assistenza per i test. Gli strumenti possono essere utili per il debug, l
 
 **Azioni runtime di test**:
 
-```terminal
+```plain
 Help me test the customer-created runtime action running locally
 ```
 
 **Errori di debug**:
 
-```terminal
+```plain
 Why did the subscription-updated runtime action activation fail?
 ```
 
 **Registri di controllo**:
 
-```terminal
+```plain
 Help me check the logs for the last stock-monitoring runtime action invocation
 ```
 
 **Crea payload di test**:
 
-```terminal
+```plain
 Generate test data for this Commerce event
 ```
 
-```terminal
+```plain
 Create a test payload for the customer_save_after event
 ```
 
 **Trova endpoint di runtime**:
 
-```terminal
+```plain
 What's the URL for this deployed action?
 ```
 
 **Gestisci autenticazione**:
 
-```terminal
+```plain
 How do I authenticate with this external API?
 ```
 
 **Risoluzione dei problemi**:
 
-```terminal
+```plain
 Help me debug why this action is returning 500 errors
 ```
 
@@ -477,19 +477,19 @@ Distribuisci solo le azioni modificate per accelerare lo sviluppo. Questo ridurr
 
 Dopo modifiche importanti, utilizza gli strumenti per pulire le azioni orfane. Lasciare che gli strumenti di intelligenza artificiale gestiscano il processo di pulizia in modo sistematico, può identificare in modo efficiente le azioni orfane, verificarne lo stato e rimuoverle in modo sicuro senza intervento manuale.
 
-```terminal
+```plain
 Help me identify and clean up orphaned runtime actions
 ```
 
 Richiedi agli strumenti di intelligenza artificiale di elencare le azioni distribuite e identificare quelle non utilizzate
 
-```terminal
+```plain
 List all deployed actions and identify which ones are no longer needed
 ```
 
 Richiedere agli strumenti di intelligenza artificiale di rimuovere le azioni orfane utilizzando i comandi appropriati
 
-```terminal
+```plain
 Remove the orphaned actions that are no longer part of the current implementation
 ```
 
