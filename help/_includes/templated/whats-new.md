@@ -1,8 +1,8 @@
 ---
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: b65f9f15fe89a52432fda9e2e29bf96176a431d3
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 3%
+source-wordcount: '216'
+ht-degree: 4%
 
 ---
 # Nuovo modello
@@ -10,6 +10,28 @@ ht-degree: 3%
 ## Novità
 
 Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo elenco sono esclusi tutti gli aggiornamenti minori, ad esempio la modifica della copia.
+
+### 9 dicembre 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È ora supportato l'aggiornamento della funzionalità Consigli nella documentazione di Commerce Optimizer come <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations">riquadro di anteprima</a>.</p>
+</td>
+      <td>
+        Tecnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ae99230552e7466a3a384c77e1e67e0cd981de6a">commit</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 20 novembre 2025
 
@@ -23,7 +45,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>Sono state aggiornate le <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/release-notes">note sulla versione</a> per la versione di novembre di Adobe Commerce as a Cloud Service.</p>
+      <td><p>Sono state aggiornate le <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">note sulla versione</a> per la versione di novembre di Adobe Commerce as a Cloud Service.</p>
 </td>
       <td>
         Aggiornamento principale
@@ -45,7 +67,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stato documentato come i clienti di Commerce Optimizer che si connettono a un backend di Adobe Commerce possono monitorare e risolvere i problemi relativi alle esportazioni di feed di dati dalla pagina Stato sincronizzazione feed. Vedere <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/setup/data-sync">Sincronizzazione dati</a> nella Guida di Adobe Commerce Optimizer.</p>
+      <td><p>È stato documentato come i clienti di Commerce Optimizer che si connettono a un backend di Adobe Commerce possono monitorare e risolvere i problemi relativi alle esportazioni di feed di dati dalla pagina Stato sincronizzazione feed. Vedere <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync">Sincronizzazione dati</a> nella Guida di Adobe Commerce Optimizer.</p>
 </td>
       <td>
         Tecnico
@@ -67,7 +89,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>Sono state aggiornate le <a href="https://experienceleague.adobe.com/it/docs/commerce/payment-services/release-notes">note sulla versione</a> di Payment Services v2.13.0.</p>
+      <td><p>Sono state aggiornate le <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">note sulla versione</a> di Payment Services v2.13.0.</p>
 </td>
       <td>
         Tecnico
@@ -89,7 +111,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>Sono state aggiornate le <a href="https://experienceleague.adobe.com/it/docs/commerce/aem-assets-integration/release-notes">note sulla versione</a> per la versione v1.2.7 dell'integrazione AEM Assets.</p>
+      <td><p>Sono state aggiornate le <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">note sulla versione</a> per la versione v1.2.7 dell'integrazione AEM Assets.</p>
 </td>
       <td>
         Tecnico
@@ -111,7 +133,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>Sono stati aggiornati i seguenti argomenti per includere informazioni sulla configurazione della gestione delle identità e del single sign-on da Adobe Admin Console:<br />- <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/user-management">Utente Adobe Commerce as a Cloud Service e Identity Management</a><br />- <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer: Utente e Identity Management</a></p>
+      <td><p>Sono stati aggiornati i seguenti argomenti per includere informazioni sulla configurazione della gestione delle identità e del single sign-on da Adobe Admin Console:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">Utente Adobe Commerce as a Cloud Service e Identity Management</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer: Utente e Identity Management</a></p>
 </td>
       <td>
         Feedback tecnico
@@ -133,34 +155,12 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>Sono stati aggiornati i <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/user-management">passaggi per la gestione degli utenti</a> relativi all'aggiunta di un utente.</p>
+      <td><p>Sono stati aggiornati i <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">passaggi per la gestione degli utenti</a> relativi all'aggiunta di un utente.</p>
 </td>
       <td>
         Aggiornamento principale
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4088b88553cbdd328a55f3483b20ea073e6c78b2">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 13 ottobre 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata aggiornata la <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/storefront">guida alla configurazione della vetrina</a> affinché Adobe Commerce Optimizer fornisca le istruzioni per la creazione di un progetto con lo strumento Site Creator, la personalizzazione della configurazione della vetrina e la verifica dei dati del sito e del catalogo controllando le pagine predefinite dei dettagli del prodotto e dei risultati della ricerca del prodotto.</p>
-</td>
-      <td>
-        Aggiornamento principale
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4c2d5fc7ad0febbeef2ff0b8ee3bdec5e9b5710c">commit</a></td>
     </tr>
   </tbody>
 </table>
