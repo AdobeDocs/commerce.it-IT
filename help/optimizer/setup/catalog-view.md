@@ -3,11 +3,11 @@ title: Vista catalogo
 description: Scopri cosa sono le visualizzazioni catalogo e come crearle per organizzare il catalogo dei prodotti in base alla struttura aziendale, alle politiche e ai prezzi.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 769aafeb261d978623e68c466888924c92632883
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,11 @@ In questa sezione, puoi creare una visualizzazione catalogo, selezionare un [cri
 
 Prima di creare una vista catalogo, assicurati di disporre di:
 
-- [Criteri creati](policies.md) per definire i filtri dei prodotti
+- [Creati criteri](policies.md) per definire i filtri dei prodotti.
 
-- [Listini prezzi acquisiti](pricebooks.md) per i prezzi
+- [Livelli catalogo definiti](catalog-layer.md) per definire le varianti dei prodotti.
+
+- [Listini prezzi acquisiti](pricebooks.md) per la determinazione dei prezzi.
 
 1. Dal menu a sinistra, vai a _Configurazione archivio_ e fai clic su **[!UICONTROL Catalog views]**.
 
@@ -50,6 +52,7 @@ Prima di creare una vista catalogo, assicurati di disporre di:
 
    - **Nome** - Immettere il nome della visualizzazione del catalogo, ad esempio `Celport`. &#x200B;
    - **Origini catalogo** - Selezionare l&#39;origine del catalogo (impostazioni locali), ad esempio `en-US`.
+   - **Livelli catalogo**-Rivedi i livelli acquisiti e la priorità.
    - **Criteri**: utilizzare il menu a discesa per selezionare i criteri rilevanti. Ad esempio, &quot;Marchio&quot;, &quot;Modello&quot;. &#x200B;Assicurarsi di avere già [creato un criterio](policies.md).
 
 1. Selezionare il listino prezzi dedicato da collegare alla vista catalogo.
@@ -63,6 +66,20 @@ Prima di creare una vista catalogo, assicurati di disporre di:
 La pagina Visualizzazioni catalogo viene aggiornata per visualizzare la nuova visualizzazione del catalogo.&#x200B;
 
 Dopo aver completato questi passaggi, la vista catalogo viene ora configurata per visualizzare prodotti e prezzi in base alle origini e ai criteri selezionati.
+
+## Livelli del catalogo
+
+I livelli catalogo consentono di modificare i dati di prodotto all&#39;interno di una vista catalogo senza modificare i dati di origine originali. I livelli applicano le modifiche a specifici attributi del prodotto, come nome, descrizione, immagini, collegamenti e metadati, creando un livello sopra il catalogo di base. I dati originali del prodotto rimangono intatti e consentono di personalizzare in modo sicuro i prodotti e ripristinare le modifiche in qualsiasi momento.
+
+I casi d’uso comuni per i livelli di catalogo includono:
+
+- **Ottimizzazione SEO**—Sovrascrivi titoli e descrizioni dei metadati del prodotto in base ai consigli di IA di [Sites Optimizer](../manage-results/opportunities.md)
+- **Campagne stagionali**—Aggiorna temporaneamente nomi di prodotto, descrizioni o immagini per le promozioni
+- **Personalizzazione regionale**—Visualizza informazioni di prodotto diverse in base alla posizione geografica o alla lingua
+- **Test A/B**: verifica diverse presentazioni di prodotti per ottimizzare i tassi di conversione
+- **Gestione multimarca**—Personalizzare gli attributi del prodotto per diverse visualizzazioni del catalogo dei marchi
+
+Per ulteriori informazioni sulla creazione, la gestione e l&#39;assegnazione di priorità ai livelli catalogo, vedere [Livelli catalogo](catalog-layer.md).
 
 ## Gestisci vista catalogo
 
@@ -166,3 +183,9 @@ I dati del catalogo filtrati vengono consegnati a varie destinazioni, tra cui ve
 >[!INFO]
 >
 >Per informazioni dettagliate sull&#39;acquisizione e la consegna dei dati del catalogo, consulta la [documentazione per gli sviluppatori](https://developer.adobe.com/commerce/services/optimizer/).
+
+## Altri argomenti correlati
+
+- [Livelli catalogo](catalog-layer.md) - Scopri come modificare i dati di prodotto senza modificare l&#39;origine originale
+- [Criteri](policies.md) - Crea criteri per filtrare i prodotti nelle visualizzazioni catalogo
+- [Listini prezzi](pricebooks.md) - Gestisce le strutture di determinazione prezzi per segmenti cliente diversi
