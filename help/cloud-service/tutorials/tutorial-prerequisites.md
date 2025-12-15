@@ -4,7 +4,7 @@ description: Scopri i prerequisiti per il laboratorio di estensione delle valuta
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: d0b9fd3ebbf0c88abbbf12821c5c4825ffcf10f0
+source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
@@ -127,7 +127,7 @@ cp env.dist .env
 
 Apri il file `.env` in un editor di testo e aggiungi le seguenti credenziali OAuth:
 
-```plain
+```shell-session
 OAUTH_CLIENT_ID=
 OAUTH_CLIENT_SECRET=
 OAUTH_TECHNICAL_ACCOUNT_ID=
@@ -143,7 +143,7 @@ OAUTH_ORG_ID=
 
 Aggiungi i seguenti dettagli dell&#39;istanza di Commerce al file `.env`:
 
-```plain
+```shell-session
 COMMERCE_BASE_URL=
 COMMERCE_GRAPHQL_ENDPOINT=
 ```
@@ -159,7 +159,7 @@ Per trovare questi valori:
 
 Imposta un valore temporaneo per il prefisso dell&#39;evento:
 
-```plain
+```shell-session
 EVENT_PREFIX=test
 ```
 
@@ -331,7 +331,7 @@ Check that the MCP server is running correctly:
 1. Look for an indicator showing the MCP server is connected. This indicator is typically located in the chat interface.
 1. Try entering a prompt like the following:
 
-   ```plain
+   ```shell-session
    Search the storefront docs for information about slots
    ```
 
