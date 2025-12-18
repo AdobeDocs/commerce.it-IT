@@ -93,7 +93,7 @@ Product Visuals è disponibile con [!DNL Adobe Commerce as a Cloud Service], che
 
 In alternativa, le funzionalità native di [!DNL Adobe Commerce as a Cloud Service] forniscono strumenti di base per la gestione delle risorse digitali per l&#39;archiviazione e la gestione delle risorse digitali.
 
-Per ulteriori informazioni su come integrare gli elementi visivi di prodotto basati su AEM Assets con [, consulta la ](../aem-assets-integration/overview.md)guida all&#39;integrazione di AEM Assets[!DNL Adobe Commerce as a Cloud Service].
+Per ulteriori informazioni su come integrare gli elementi visivi di prodotto basati su AEM Assets con [, consulta la &#x200B;](../aem-assets-integration/overview.md)guida all&#39;integrazione di AEM Assets[!DNL Adobe Commerce as a Cloud Service].
 
 ### Visualizzazioni prodotto o AEM Assets
 
