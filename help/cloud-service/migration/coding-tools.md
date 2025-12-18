@@ -1,13 +1,13 @@
 ---
 title: Strumenti di codifica IA per le estensioni
 description: Scopri come utilizzare gli strumenti di intelligenza artificiale per creare estensioni Commerce App Builder.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
+source-git-commit: d2f2563a1f3a656d7bfaa12a0c3ca2b828e7fc33
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1863'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,10 @@ L’utilizzo degli strumenti di codifica AI offre i seguenti vantaggi:
 * [Git](https://github.com/git-guides/install-git): per la clonazione dell&#39;archivio e il controllo della versione
 
 ## Installazione
+
+>[!NOTE]
+>
+>Se desideri installare solo il servizio RAG Documentazione e non l&#39;intero pacchetto degli strumenti di codifica AI, consulta [Servizio RAG Documentazione](./doc-rag.md).
 
 1. Installa la [Adobe I/O CLI](https://github.com/adobe/aio-cli) più recente a livello globale:
 
@@ -151,7 +155,7 @@ aio auth login
 >
 >Alcune funzionalità del server MCP funzioneranno senza effettuare l’accesso, ma il servizio RAG (Retrieval-Augmented Generation) non funzionerà. Il servizio RAG fornisce all’agente di codifica AI l’accesso in tempo reale al set completo della documentazione di Adobe Commerce, consentendogli di rispondere alle domande e generare il codice in base alle procedure di sviluppo Commerce, alle API e ai pattern architetturali correnti.
 >
->In una versione futura, il servizio RAG sarà accessibile in modo indipendente senza la necessità di installare altri strumenti.
+>Per installare il servizio RAG in modo indipendente, vedere [Servizio RAG documentazione](./doc-rag.md).
 
 ### Cursore
 
@@ -275,7 +279,7 @@ Consulta le seguenti risorse per iniziare:
 
 * [Kit di avvio dell&#39;integrazione](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Modelli di kit di avvio Adobe Commerce](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Modelli di avvio Adobe I/O Events](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Modelli di avvio Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Applicazioni di esempio App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Perché utilizzare queste risorse
