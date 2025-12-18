@@ -14,4 +14,4 @@ ht-degree: 0%
 
 L’integrazione di AEM Assets mostra le immagini dei prodotti gestite in AEM Assets invece delle tradizionali immagini ospitate da Commerce. L’integrazione offre funzionalità avanzate di gestione delle immagini: ottimizzazione avanzata, ritaglio e distribuzione tramite la rete CDN (Content Delivery Network) di Adobe.
 
-Per utilizzare AEM Assets con Commerce Storefront con tecnologia Edge Delivery Services, completare la configurazione della vetrina descritta nell&#39;argomento [Configurazione EDS AEM Assets](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/).
+Per utilizzare AEM Assets con Commerce Storefront con tecnologia Edge Delivery Services, completare la configurazione della vetrina descritta nell&#39;argomento [Configurazione EDS AEM Assets](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=it).
