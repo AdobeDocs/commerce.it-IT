@@ -16,7 +16,7 @@ Quando si utilizza AEM Assets as a Digital Asset Management System (DAM) for Com
 
 Completa i seguenti passaggi per configurare il progetto AEM Assets con il codice pacchetto e i metadati richiesti per gestire le risorse Commerce dall’ambiente di authoring AEM:
 
-1. [Scopri di più su ](#aem-commerce-assets-commerce-package-contents)
+1. [Scopri di più su &#x200B;](#aem-commerce-assets-commerce-package-contents)
 
 1. [Completa i passaggi di installazione per configurare il progetto AEM Assets per il supporto dei metadati Commerce](#step-1-install-the-assets-commerce-package)
 
@@ -160,13 +160,13 @@ Il componente Interfaccia utente dati prodotto viene aggiunto automaticamente in
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Facoltativo. Per sincronizzare automaticamente le risorse Commerce approvate durante il caricamento nell&#39;ambiente AEM Assets, impostare su _[!UICONTROL Review Status]_il valore predefinito per il campo `Basic` nella scheda `approved`.
+1. Facoltativo. Per sincronizzare automaticamente le risorse Commerce approvate durante il caricamento nell&#39;ambiente AEM Assets, impostare su _[!UICONTROL Review Status]_&#x200B;il valore predefinito per il campo `Basic` nella scheda `approved`.
 
 1. Salva l’aggiornamento.
 
 ### Applicare il profilo di metadati alla cartella di origine delle risorse di Commerce
 
-1. Dalla pagina [!UICONTROL  Metadata Profiles], seleziona il profilo di integrazione di Commerce.
+1. Dalla pagina [!UICONTROL &#x200B; Metadata Profiles], seleziona il profilo di integrazione di Commerce.
 
 1. Dal menu Azioni, selezionare **[!UICONTROL Apply Metadata Profiles to Folders]**.
 

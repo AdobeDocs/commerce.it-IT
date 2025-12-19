@@ -42,7 +42,7 @@ Quando la regola di corrispondenza **[!UICONTROL Match by product SKU]** è conf
    >
    > Se una risorsa viene utilizzata per più prodotti, configura i metadati per ogni SKU associata.
 
-1. Nella scheda `Basic`, impostare il valore predefinito per il campo _[!UICONTROL Review Status]_su `approved`.
+1. Nella scheda `Basic`, impostare il valore predefinito per il campo _[!UICONTROL Review Status]_&#x200B;su `approved`.
 
    ![Esempio di metadati](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
