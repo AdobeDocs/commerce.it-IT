@@ -28,4 +28,4 @@ Per abilitare l&#39;integrazione in vetrine di Commerce con tecnologia Edge Deli
 
 I menu a discesa di Commerce rilevano automaticamente la configurazione `commerce-assets-enabled` e regolano di conseguenza la gestione delle immagini.
 
-Per ulteriori informazioni su come utilizzare AEM Assets con Commerce Storefront con tecnologia Edge Delivery Services, completa la configurazione della vetrina descritta nell&#39;argomento [Integrazione AEM Assets](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) nella documentazione di *Adobe Commerce Storefront*.
+Per ulteriori informazioni su come utilizzare AEM Assets con Commerce Storefront con tecnologia Edge Delivery Services, completa la configurazione della vetrina descritta nell&#39;argomento [Integrazione AEM Assets](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=it) nella documentazione di *Adobe Commerce Storefront*.
