@@ -1,22 +1,24 @@
 ---
 title: Strumenti di codifica IA per le estensioni
 description: Scopri come utilizzare gli strumenti di intelligenza artificiale per creare estensioni Commerce App Builder.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+feature: App Builder, Cloud
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 role: Developer
+level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: d2f2563a1f3a656d7bfaa12a0c3ca2b828e7fc33
+source-git-commit: 991a8683b9a333d2699f1ef22f3dc54d7b401573
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1847'
 ht-degree: 0%
 
 ---
 
 # Strumenti di codifica IA per le estensioni
 
-Durante la migrazione a [!DNL Adobe Commerce as a Cloud Service], è possibile utilizzare gli strumenti di codifica AI per convertire le estensioni PHP [!DNL Adobe Commerce] esistenti in estensioni [!DNL Adobe Developer App Builder]. Può essere utilizzato anche per creare nuove estensioni [!DNL App Builder].
+Durante la migrazione a [!DNL Adobe Commerce as a Cloud Service], è possibile utilizzare gli strumenti di codifica AI per convertire le estensioni PHP [!DNL Adobe Commerce] esistenti in estensioni [!DNL Adobe Developer App Builder]. È inoltre possibile utilizzare questi strumenti per creare nuove estensioni [!DNL App Builder].
 
-L’utilizzo degli strumenti di codifica AI offre i seguenti vantaggi:
+Gli strumenti di codifica IA offrono i seguenti vantaggi:
 
 * **Flusso di lavoro di sviluppo avanzato**: strumenti di sviluppo Adobe Commerce integrati.
 * **Assistenza basata su IA**: generazione e debug del codice in base al contesto.
@@ -130,7 +132,7 @@ Quando si seleziona Gestione pacchetti, Adobe consiglia di utilizzare `npm` per 
 
 ## Configurazione post-installazione
 
-### Accedi a [!DNL Adobe I/O CLI]
+### Accedi a Adobe I/O CLI
 
 Dopo aver installato [!DNL Adobe I/O CLI], è necessario accedere in qualsiasi momento per utilizzare il server MCP.
 
@@ -193,9 +195,9 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 1. Attiva il server MCP:
 
    * Apri il pannello Estensioni facendo clic sull&#39;icona **Estensioni** nella barra attività a sinistra oppure utilizzando **Cmd+Maiusc+X** (macOs) o **Ctrl+Maiusc+X** (Windows e Linux).
-   * Fare clic su **SERVER MCP - INSTALLATI**.
-   * Fare clic sull&#39;icona a forma di ingranaggio accanto a **Commerce-extensibility MCP Server** e selezionare **Avvia server**, se il server è arrestato.
-   * Fare di nuovo clic sull&#39;icona a forma di ingranaggio e selezionare **Mostra output**.
+   * Fare clic su [!UICONTROL **SERVER MCP - INSTALLATI**].
+   * Fare clic sull&#39;icona a forma di ingranaggio accanto a [!UICONTROL **Commerce-extensibility MCP Server**] e selezionare [!UICONTROL **Avvia server**], se il server è arrestato.
+   * Fare di nuovo clic sull&#39;icona a forma di ingranaggio e selezionare [!UICONTROL **Mostra output**].
 
 1. Verificare lo stato del server. L&#39;output `MCP:commerce-extensibility` deve corrispondere al seguente:
 
@@ -279,7 +281,7 @@ Consulta le seguenti risorse per iniziare:
 
 * [Kit di avvio dell&#39;integrazione](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Modelli di kit di avvio Adobe Commerce](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Modelli di avvio Adobe I/O Events](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Modelli di avvio Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Applicazioni di esempio App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Perché utilizzare queste risorse
@@ -326,7 +328,7 @@ Le estensioni Adobe Commerce complesse spesso richiedono:
 >
 >Prima di utilizzare gli strumenti MCP, assicurati di aver [effettuato l&#39;accesso a Adobe I/O CLI](#log-in-to-the-adobe-io-cli).
 
-Per impostazione predefinita, gli strumenti sono strumenti MCP, ma in determinate circostanze possono essere utilizzati i comandi CLI. Se desideri garantire l’utilizzo dello strumento MCP, richiedilo esplicitamente nel prompt.
+Per impostazione predefinita, gli strumenti sono strumenti MCP, ma in determinate circostanze possono essere utilizzati i comandi CLI. Per garantire l’utilizzo dello strumento MCP, richiedilo esplicitamente nel prompt.
 
 Se sono presenti comandi CLI in uso e si desidera utilizzare gli strumenti MCP, utilizzare il seguente prompt:
 
@@ -346,7 +348,7 @@ I comandi CLI possono essere utilizzati per i seguenti scenari:
 
 ### Sviluppo
 
-È importante mettere in discussione la complessità non necessaria creata dagli strumenti di intelligenza artificiale.
+Mettere in dubbio la complessità non necessaria creata dagli strumenti di intelligenza artificiale.
 
 Quando si aggiungono file non necessari (`validator.js`, `transformer.js`, `sender.js`) per endpoint di sola lettura semplici, utilizzare i prompt seguenti:
 
@@ -466,7 +468,7 @@ Utilizza le seguenti best practice durante la distribuzione:
 
 #### Implementare in modo incrementale
 
-Distribuisci solo le azioni modificate per accelerare lo sviluppo. Questo ridurrà il rischio di interrompere le funzionalità esistenti e fornirà un feedback più rapido sulle modifiche. Riduce inoltre il rischio di interrompere le funzionalità esistenti.
+Distribuisci solo le azioni modificate per accelerare lo sviluppo. Questo approccio riduce il rischio di interrompere le funzionalità esistenti e fornisce un feedback più rapido sulle modifiche.
 
 * Utilizzare gli strumenti MCP per distribuire azioni specifiche
 
@@ -479,7 +481,7 @@ Distribuisci solo le azioni modificate per accelerare lo sviluppo. Questo ridurr
 
 #### Pulizia runtime
 
-Dopo modifiche importanti, utilizza gli strumenti per pulire le azioni orfane. Lasciare che gli strumenti di intelligenza artificiale gestiscano il processo di pulizia in modo sistematico, può identificare in modo efficiente le azioni orfane, verificarne lo stato e rimuoverle in modo sicuro senza intervento manuale.
+Dopo modifiche importanti, utilizza gli strumenti per pulire le azioni orfane. Consenti agli strumenti di intelligenza artificiale di gestire il processo di pulizia in modo sistematico. È in grado di identificare in modo efficiente le azioni orfane, verificarne lo stato e rimuoverle in modo sicuro senza intervento manuale.
 
 ```shell-session
 Help me identify and clean up orphaned runtime actions
@@ -520,7 +522,7 @@ Tracciare i pattern di utilizzo dei token:
 
 ## Cosa evitare
 
-Quando utilizzi gli strumenti di codifica AI, evita i seguenti pattern di protezione:
+Evita i seguenti anti-pattern quando utilizzi gli strumenti di codifica AI:
 
 * **Non saltare la fase di chiarificazione**. Assicurarsi sempre che la fase 1 sia completata prima dell&#39;implementazione.
 * **Non saltare i test dopo ogni funzionalità**. Esegui il test in modo incrementale, non attendere il completamento di tutto.

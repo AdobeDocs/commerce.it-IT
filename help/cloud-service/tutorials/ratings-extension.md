@@ -1,12 +1,14 @@
 ---
 title: Esercitazione sull’estensione delle valutazioni
 description: Scopri come creare un’estensione di valutazione del prodotto per Adobe Commerce as a Cloud Service utilizzando App Builder e strumenti di sviluppo assistiti da AI.
+feature: App Builder, Cloud
 role: Developer
+level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
+source-git-commit: 4ca909c2f8f95fbc404ce6a745d769958b2c01f4
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -39,7 +41,7 @@ git --version
 bash --version
 ```
 
-Se uno dei comandi precedenti non restituisce i risultati previsti, vedere i [prerequisiti](tutorial-prerequisites.md).
+Se uno dei comandi precedenti non restituisce i risultati previsti, consultare i [prerequisiti](tutorial-prerequisites.md).
 
 ## Sviluppo delle estensioni
 
@@ -47,21 +49,21 @@ Questa sezione ti guida attraverso lo sviluppo di un’estensione di valutazione
 
 1. Passare a **[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Tools & MCP]** e verificare che il set di strumenti `commerce-extensibility` sia abilitato senza errori. Se vengono visualizzati degli errori, disattiva e attiva la serie di strumenti.
 
-   ![Impostazioni cursore](../assets/cursor-settings.png){width="600" zoomable="yes"}
+   ![Impostazioni IDE cursore che mostrano il set di strumenti di estendibilità e commerce MCP abilitato](../assets/cursor-settings.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
-   >Quando si lavora con strumenti di sviluppo assistiti da intelligenza artificiale, il codice e le risposte generate dall’agente presenteranno varianti naturali.
+   >Quando si lavora con strumenti di sviluppo assistiti da intelligenza artificiale, è probabile che il codice e le risposte generate dall’agente presentino variazioni naturali.
    >In caso di problemi con il codice, puoi sempre chiedere all&#39;agente di aiutarti a eseguire il debug.
 
 1. Se hai aggiunto della documentazione al contesto del cursore, disattivala:
 
    - Passa a [!UICONTROL **Cursore**] > [!UICONTROL **Impostazioni**] > [!UICONTROL **Impostazioni cursore**] > [!UICONTROL **Indicizzazione e documenti**] ed elimina la documentazione elencata.
 
-   ![Disabilita documentazione](../assets/disable-documentation.png){width="600" zoomable="yes"}
+   ![L&#39;indicizzazione del cursore e le impostazioni dei documenti con l&#39;elenco della documentazione sono vuoti](../assets/disable-documentation.png){width="600" zoomable="yes"}
 
 1. Genera il codice per un’estensione di valutazione del prodotto:
-   - Dalla finestra Cursore della chat cursore, selezionare la modalità **Agente**.
+   - Dalla finestra di chat del cursore, selezionare la modalità [!UICONTROL **Agente**].
    - Immetti il seguente prompt:
 
    ```shell-session
@@ -80,9 +82,9 @@ Questa sezione ti guida attraverso lo sviluppo di un’estensione di valutazione
 
 1. Rispondi alle domande dell&#39;agente esattamente per aiutarlo a generare il codice migliore.
 
-   ![Immetti il prompt nel cursore](../assets/enter-prompt.png){width="600" zoomable="yes"}
+   ![Finestra di chat del cursore in modalità agente con richiesta di estensione immessa](../assets/enter-prompt.png){width="600" zoomable="yes"}
 
-   ![L&#39;agente pone domande chiarificatrici](../assets/agent-questions.png){width="600" zoomable="yes"}
+   ![Agente di IA che pone domande chiarificatrici sui requisiti dell&#39;estensione](../assets/agent-questions.png){width="600" zoomable="yes"}
 
 1. Utilizza il testo di esempio seguente per rispondere alle domande dell’agente per impostare dati di valutazione randomizzati:
 
@@ -90,7 +92,7 @@ Questa sezione ti guida attraverso lo sviluppo di un’estensione di valutazione
    Yes, this headless extension is for Adobe Commerce as a Cloud Service storefront,
    but we do not need any authentication for the GET API because guest users should be able to use it on the storefront.
    
-   This extension will be called directly from the storefront, no async invocation, such as events or webhooks, is required.
+   This extension is called directly from the storefront, no async invocation, such as events or webhooks, is required.
    
    Start with just the GET API for now, we will implement other CRUD operations at a later time.
    
@@ -102,7 +104,7 @@ Questa sezione ti guida attraverso lo sviluppo di un’estensione di valutazione
 
    L&#39;agente crea un file `requirements.md` che funge da origine di verità per l&#39;implementazione.
 
-   ![File dei requisiti creato](../assets/requirements-file.png){width="600" zoomable="yes"}
+   ![File Requirements.md creato dall&#39;agente di IA con dettagli di implementazione](../assets/requirements-file.png){width="600" zoomable="yes"}
 
 1. Esaminare il file `requirements.md` e verificare il piano.
 
@@ -112,11 +114,11 @@ Questa sezione ti guida attraverso lo sviluppo di un’estensione di valutazione
 
    L&#39;agente genera il codice necessario e fornisce un riepilogo dettagliato con i passaggi successivi.
 
-   ![Pianificazione architettura](../assets/architecture-planning.png){width="600" zoomable="yes"}
+   ![Piano dell&#39;architettura dell&#39;agente di IA di fase 2 per l&#39;API di valutazione](../assets/architecture-planning.png){width="600" zoomable="yes"}
 
-   ![Riepilogo generazione codice](../assets/code-generation-summary.png){width="600" zoomable="yes"}
+   ![Riepilogo dei file di codice e della struttura generati](../assets/code-generation-summary.png){width="600" zoomable="yes"}
 
-   ![Passaggi successivi](../assets/next-steps.png){width="600" zoomable="yes"}
+   ![Agente di IA che fornisce i passaggi successivi per il test e la distribuzione](../assets/next-steps.png){width="600" zoomable="yes"}
 
 ### Test locale
 
@@ -128,9 +130,9 @@ Questa sezione ti guida attraverso lo sviluppo di un’estensione di valutazione
 
 1. Segui le istruzioni dell’agente e verifica che l’API funzioni localmente.
 
-   ![Test locale](../assets/local-testing.png){width="600" zoomable="yes"}
+   ![Istruzioni agente IA per test API locali](../assets/local-testing.png){width="600" zoomable="yes"}
 
-   ![Risultati test locali](../assets/local-testing-1.png){width="600" zoomable="yes"}
+   ![Terminale che mostra i risultati dei test API locali con cURL](../assets/local-testing-1.png){width="600" zoomable="yes"}
 
 ### Distribuire l’estensione
 
@@ -142,19 +144,19 @@ Questa sezione ti guida attraverso lo sviluppo di un’estensione di valutazione
 
    Prima della distribuzione, l&#39;agente esegue una valutazione di fattibilità pre-distribuzione.
 
-   ![Valutazione pre-distribuzione](../assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
+   ![Elenco di controllo per la valutazione dell&#39;idoneità dell&#39;agente di IA pre-distribuzione](../assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
 
 1. Quando sei sicuro dei risultati della valutazione, indica all’agente di procedere con la distribuzione.
 
    L’agente utilizza il toolkit MCP per verificare, generare e distribuire automaticamente.
 
-   ![Distribuzione](../assets/deployment-process.png){width="600" zoomable="yes"}
+   ![Processo di compilazione e distribuzione del toolkit MCP](../assets/deployment-process.png){width="600" zoomable="yes"}
 
 ### Post-distribuzione
 
 Puoi testare l’API prima di integrarla nella vetrina. L’agente deve fornire la posizione della nuova azione e una strategia di test.
 
-![Strategia di test](../assets/testing-strategy.png){width="600" zoomable="yes"}
+![Strategia di test dell&#39;agente di IA con URL azione distribuito e comandi di test](../assets/testing-strategy.png){width="600" zoomable="yes"}
 
 Puoi anche testare manualmente l’API utilizzando cURL in un terminale:
 
@@ -162,7 +164,7 @@ Puoi anche testare manualmente l’API utilizzando cURL in un terminale:
 curl -s "https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=TEST-SKU-123"
 ```
 
-![test cURL](../assets/curl-test.png){width="600" zoomable="yes"}
+![Terminale che mostra il test cURL dell&#39;API di classificazione distribuita](../assets/curl-test.png){width="600" zoomable="yes"} riuscito
 
 ### Integrare con Edge Delivery Services
 
@@ -172,9 +174,9 @@ Per integrare l&#39;API di valutazione con una vetrina [!DNL Adobe Commerce] con
 Create a service contract for the ratings api that I can pass on to the storefront agent. Name it RATINGS_API_CONTRACT.md
 ```
 
-![Contratto di assistenza](../assets/create-contract.png){width="600" zoomable="yes"}
+![Agente di IA che crea il file del contratto di servizio per l&#39;integrazione storefront](../assets/create-contract.png){width="600" zoomable="yes"}
 
-![Dettagli contratto di assistenza](../assets/contract.png){width="600" zoomable="yes"}
+![File markdown del contratto API delle valutazioni con dettagli dell&#39;endpoint e della risposta](../assets/contract.png){width="600" zoomable="yes"}
 <!-- 
 Return to the terminal and run the following command in the `extension` folder to copy the file to the `storefront` folder:
 
@@ -246,7 +248,7 @@ This section teaches you how to implement real storefront features and communica
    You should see the following changes in your development environment and browser:
 
    * A product rating "component" is automatically created.
-   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=it).
+   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots).
    * Stars display with proper fill proportions based on mock rating values.
 
 ![Product Ratings Implementation](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}

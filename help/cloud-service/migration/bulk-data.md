@@ -1,27 +1,29 @@
 ---
 title: Strumento di migrazione dati in blocco
 description: Scopri come utilizzare lo strumento di migrazione dei dati in blocco per migrare i dati dall'istanza esistente di Adobe Commerce on Cloud a  [!DNL Adobe Commerce as a Cloud Service].
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+feature: Cloud
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 role: Developer
+level: Intermediate
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: 06bdcfbff5d376064b18bdab3945e7609075b8bc
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '706'
 ht-degree: 0%
 
 ---
 
 # Strumento di migrazione dati in blocco
 
-Lo strumento di migrazione di massa dei dati segue un’architettura distribuita che consente una migrazione sicura ed efficiente dei dati dagli ambienti PaaS agli ambienti SaaS. Questo strumento è progettato per consentire ai responsabili dell&#39;implementazione della soluzione di migrare i dati da un&#39;istanza esistente di Adobe Commerce on Cloud (PaaS) a [!DNL Adobe Commerce as a Cloud Service] (SaaS). Per ulteriori informazioni sul processo di migrazione, vedere [Panoramica sulla migrazione](./overview.md).
+Lo strumento di migrazione di massa dei dati segue un’architettura distribuita che consente una migrazione sicura ed efficiente dei dati dagli ambienti PaaS agli ambienti SaaS. Questo strumento consente agli implementatori della soluzione di migrare i dati da un’istanza Adobe Commerce on Cloud esistente (PaaS) a [!DNL Adobe Commerce as a Cloud Service] (SaaS). Per ulteriori informazioni sul processo di migrazione, vedere [Panoramica sulla migrazione](./overview.md).
 
 >[!NOTE]
 >
->Lo strumento di migrazione dei dati in blocco supporta solo la migrazione dei dati di e-commerce di prime parti. La migrazione dei dati personalizzati non è attualmente supportata.
+>Lo strumento di migrazione dei dati in blocco supporta solo la migrazione dei dati di Commerce di base di prime parti. La migrazione dei dati personalizzati non è attualmente supportata.
 
 L’immagine seguente descrive l’architettura e i componenti chiave per l’utilizzo dello strumento Bulk Data Migration.
 
-![Architettura dello strumento di migrazione dati in blocco](../assets/bulk-data-diagram.png)
+![Diagramma dell&#39;architettura dello strumento Bulk Data Migration che mostra il flusso di dati da PaaS a SaaS](../assets/bulk-data-diagram.png){zoomable="yes"}
 
 ## Flusso di lavoro di migrazione
 
@@ -44,13 +46,13 @@ Lo strumento di migrazione dei dati in blocco è disponibile come segue:
 
 ## Creare un ambiente di destinazione
 
-Il Solution Implementer (SI) crea un ambiente di destinazione per la migrazione. Questo ambiente viene utilizzato per archiviare i dati migrati dall’istanza di origine.
+Il Solution Implementer (SI) crea un ambiente di destinazione per la migrazione. Questo ambiente memorizza i dati migrati dall’istanza di origine.
 
 Innanzitutto, [crea una nuova istanza  [!DNL Adobe Commerce as a Cloud Service] (SaaS)](../getting-started.md#create-an-instance).
 
 ### Configura strumento di estrazione
 
-Lo strumento di estrazione viene utilizzato per estrarre i dati dall’istanza di origine.
+Utilizza lo strumento di estrazione per estrarre i dati dall’istanza sorgente.
 
 1. Scarica lo strumento di estrazione dal collegamento fornito da Adobe.
 1. Imposta le seguenti variabili di ambiente nello strumento di estrazione:
@@ -93,7 +95,7 @@ Esegui lo strumento di caricamento dati fornito da Adobe. Questo strumento:
 
 Dopo il caricamento dei dati, i dati del catalogo passano automaticamente dal database tenant SaaS a Catalog Service.
 
-Catalog Service condivide questi dati con Live Search e Product Recommendations. Non è richiesto alcun intervento manuale per questo processo. I dati saranno disponibili in tutti i servizi al termine dell’acquisizione.
+Catalog Service condivide questi dati con Live Search e Product Recommendations. Non è richiesto alcun intervento manuale per questo processo. I dati sono disponibili in tutti i servizi al termine dell’acquisizione.
 
 ### Verifica dell’integrità dei dati
 

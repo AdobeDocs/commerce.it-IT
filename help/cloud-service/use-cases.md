@@ -1,19 +1,21 @@
 ---
 title: Casi d’uso
 description: Scopri come eseguire casi d'uso pratici e scenari aziendali supportati con  [!DNL Adobe Commerce as a Cloud Service].
+feature: Cloud, Integration
 role: User, Leader
+level: Beginner
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
 
 # Casi d’uso
 
-I seguenti casi d&#39;uso illustrano le funzionalità di base e gli scenari aziendali supportati da [!DNL Adobe Commerce as a Cloud Service], consentendo di accelerare lo sviluppo e avviare esperienze di forte impatto.
+I seguenti casi d&#39;uso illustrano le funzionalità di base e gli scenari aziendali supportati da [!DNL Adobe Commerce as a Cloud Service]. Consentono di accelerare lo sviluppo e lanciare esperienze di alto impatto.
 
 In caso di problemi, consulta la sezione [Risoluzione dei problemi](#troubleshooting).
 
@@ -24,7 +26,7 @@ Prima di provare a eseguire uno di questi casi d&#39;uso, è necessario soddisfa
 1. [Crea la tua istanza di Cloud Service](./getting-started.md#create-an-instance) utilizzando le seguenti opzioni:
    1. Seleziona [!UICONTROL **Sandbox**] nel menu a discesa [!UICONTROL **Ambiente**].
    1. Seleziona [!UICONTROL **Adobe Store**] nel menu a discesa [!UICONTROL **Dati di prova**].
-1. [Accedi al tuo account Adobe Experience Cloud](https://experience.adobe.com)
+1. [Accedi al tuo [!DNL Adobe Experience Cloud] account](https://experience.adobe.com)
 1. [Configura la vetrina di Cloud Service](./storefront.md) utilizzando le seguenti opzioni:
    1. Selezionare [!UICONTROL `adobe-commerce/adobe-demo-store`] per il modello.
    1. Selezionare [!UICONTROL **Scegli un&#39;istanza disponibile (Mesh -> SaaS)**] per il metodo di connessione.
@@ -49,23 +51,23 @@ Questo flusso di lavoro illustra il processo di pagamento per un cliente che acq
 
 1. Trova e seleziona un prodotto. Effettuare le selezioni di personalizzazione necessarie. Quindi fai clic su [!UICONTROL **Aggiungi al carrello**].
 
-   ![ricerca archivio](./assets/store-search.png){width="600" zoomable="yes"}
+   ![Interfaccia di ricerca e selezione prodotti Storefront](./assets/store-search.png){width="600" zoomable="yes"}
 
 1. Seleziona l’icona del carrello per visualizzare il carrello.
 
-   ![aggiungi al carrello ed estrai](./assets/add-to-cart-and-checkout.png){width="600" zoomable="yes"}
+   ![Carrello con prodotto aggiunto e opzioni di pagamento](./assets/add-to-cart-and-checkout.png){width="600" zoomable="yes"}
 
 1. Fai clic su [!UICONTROL **Estrai**].
 
-   ![fai clic su estrai](./assets/click-checkout.png){width="600" zoomable="yes"}
+   ![Pulsante Estrai nella pagina del carrello](./assets/click-checkout.png){width="600" zoomable="yes"}
 
 1. Immettere i recapiti e le informazioni di spedizione richiesti. È possibile utilizzare informazioni fittizie per questo ordine.
 
 1. Per effettuare il pagamento, selezionare [!UICONTROL **Assegno/vaglia postale**]. Se desideri utilizzare una carta di credito, utilizza una delle [carte di prova fornite da Paypal](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers). Puoi utilizzarli con qualsiasi data di scadenza futura e qualsiasi CVC.
 
-   ![immetti i dettagli](./assets/enter-details.png){width="600" zoomable="yes"}
+   ![Modulo di estrazione con campi di informazioni su contatti e spedizione](./assets/enter-details.png){width="600" zoomable="yes"}
 
-   ![carta di credito](./assets/credit-card.png){width="600" zoomable="yes"}
+   ![Modulo di pagamento con carta di credito in fase di pagamento](./assets/credit-card.png){width="600" zoomable="yes"}
 
 1. Fai clic su [!UICONTROL **Inserisci ordine**].
 
@@ -77,11 +79,11 @@ Questo flusso di lavoro illustra il processo di pagamento per un cliente che acq
 
 1. Passa a [!UICONTROL **Vendite**] > [!UICONTROL **Ordini**].
 
-   ![conferma ordine](./assets/confirm-order.png){width="600" zoomable="yes"}
+   ![Griglia ordini in Commerce Admin con ordini recenti](./assets/confirm-order.png){width="600" zoomable="yes"}
 
 1. Cercare l&#39;ordine effettuato e confermare i dettagli.
 
-   ![dettagli ordine](./assets/order-details.png){width="600" zoomable="yes"}
+   ![Pagina dettagli ordine con informazioni su clienti e prodotti](./assets/order-details.png){width="600" zoomable="yes"}
 
 ## Aggiornare il contenuto della vetrina
 
@@ -103,7 +105,7 @@ Crea, modifica e pubblica i contenuti direttamente nella vetrina.
 
 ## Sperimentazione contestuale
 
-La funzione di sperimentazione contestuale di Adobe Commerce consente di creare e gestire esperimenti nella vetrina per testare contenuti e configurazioni diversi.
+La funzionalità di sperimentazione contestuale di [!DNL Adobe Commerce] consente di creare e gestire esperimenti nella vetrina per testare contenuti e configurazioni diversi.
 
 ### Prerequisiti
 
@@ -136,7 +138,7 @@ La funzione di sperimentazione contestuale di Adobe Commerce consente di creare 
       * `https://<your-site>.aem.live/experiments/1234/indexv1`
       * `https://<your-site>.aem.live/experiments/1234/indexv2`
 
-   ![blocco di metadati](./assets/metadata-block.png){width="600" zoomable="yes"}
+   ![Configurazione del blocco di metadati per la sperimentazione contestuale](./assets/metadata-block.png){width="600" zoomable="yes"}
 
 1. Apri una finestra di navigazione in incognito o privata e passa alla pagina principale.
 
@@ -144,39 +146,39 @@ La funzione di sperimentazione contestuale di Adobe Commerce consente di creare 
 
 ## Migliora il contenuto della vetrina
 
-Con AEM Assets, Adobe Express e Firefly, ora puoi apportare rapidamente modifiche alle immagini visualizzate nella vetrina con un flusso di lavoro semplice e autonomo.
+Con [!DNL AEM Assets], [!DNL Adobe Express] e [!DNL Firefly], puoi apportare rapidamente modifiche alle immagini visualizzate nella vetrina con un semplice flusso di lavoro autonomo.
 
 ### Prerequisiti
 
-* Richiede l’accesso ad AEM Assets, Adobe Express e Adobe Firefly.
+* Richiede l&#39;accesso a [!DNL AEM Assets], [!DNL Adobe Express] e [!DNL Adobe Firefly].
 
 ### Personalizzare lo sfondo di un’immagine
 
-Considera uno scenario in cui desideri modificare rapidamente lo sfondo di un’immagine di prodotto. La combinazione di Adobe Commerce, AEM Assets e Adobe Express consente di apportare questa modifica in pochi semplici passaggi.
+Considera uno scenario in cui desideri modificare rapidamente lo sfondo di un’immagine di prodotto. La combinazione di [!DNL Adobe Commerce], [!DNL AEM Assets] e [!DNL Adobe Express] consente di completare questa modifica in pochi semplici passaggi.
 
 1. Apri [storefront](./storefront.md) creato nei prerequisiti e passa a un elemento che desideri modificare. Prendi nota dello SKU degli articoli o del codice prodotto.
 
-1. Apri [!UICONTROL AEM Assets] selezionandolo in [Adobe Experience Cloud](https://experience.adobe.com/#/home).
+1. Apri [!DNL AEM Assets] selezionandolo in [Adobe Experience Cloud](https://experience.adobe.com/#/home).
 
-   ![risorse aem](./assets/select-aem-assets.png){width="600" zoomable="yes"}
+   Selettore ![[!DNL AEM Assets] che mostra l&#39;interfaccia [!DNL Adobe Experience Cloud]](./assets/select-aem-assets.png){width="600" zoomable="yes"}
 
-1. Fare clic su [!UICONTROL Assets].
+1. Fare clic su [!UICONTROL **Assets**].
 
-   ![risorse selezionate](./assets/click-assets.png){width="600" zoomable="yes"}
+   ![Opzione di navigazione di Assets nell&#39;interfaccia [!DNL AEM Assets]](./assets/click-assets.png){width="600" zoomable="yes"}
 
 1. Cerca l&#39;elemento per **SKU** o **Codice prodotto**.
 
 1. Seleziona l&#39;elemento da modificare e fai clic su [!UICONTROL **Apri in Adobe Express**].
 
-   ![apri in adobe express](./assets/open-in-adobe-express.png){width="600" zoomable="yes"}
+   ![Opzione Apri in Adobe Express per la modifica delle risorse](./assets/open-in-adobe-express.png){width="600" zoomable="yes"}
 
 1. Nel pannello [!UICONTROL **Immagine**], seleziona [!UICONTROL **Inserisci oggetto**].
 
-   ![inserisci oggetto](./assets/insert-object.png){width="600" zoomable="yes"}
+   ![Opzione Inserisci oggetto nel pannello Immagine di Adobe Express](./assets/insert-object.png){width="600" zoomable="yes"}
 
 1. Nella casella di testo, descrivere l&#39;immagine che si desidera aggiungere. Ad esempio, &quot;pini innevati&quot;.
 
-   ![inserisci modifica oggetto](./assets/insert-object-edit.png){width="600" zoomable="yes"}
+   ![Casella di testo per la descrizione dell&#39;immagine da generare con IA](./assets/insert-object-edit.png){width="600" zoomable="yes"}
 
 1. Regolare [!UICONTROL Brush size] e disegnare dove si desidera aggiungere l&#39;immagine generata. In questo esempio, disegnare intorno all&#39;oggetto esistente per selezionare lo sfondo.
 
@@ -192,35 +194,35 @@ Considera uno scenario in cui desideri modificare rapidamente lo sfondo di un’
 
 1. Nella finestra di dialogo [!UICONTROL **Salva risorsa**], seleziona la [!UICONTROL **cartella di destinazione**] di Commerce.
 
-   ![salva come nuova risorsa](./assets/save-as-new-asset.png){width="600" zoomable="yes"}
+   ![Finestra di dialogo Salva risorsa con cartella di destinazione di Commerce selezionata](./assets/save-as-new-asset.png){width="600" zoomable="yes"}
 
 1. Fai clic su [!UICONTROL **Salva come nuova risorsa**] per salvare l&#39;immagine.
 
-#### Aggiungere l’immagine a Commerce AEM Assets
+#### Aggiungi immagine a [!DNL Commerce AEM Assets]
 
-1. Dal [pannello di navigazione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) di AEM as a Cloud Service, seleziona **Assets** > **File** > **Commerce** e fai clic sulla risorsa creata nella sezione precedente.
+1. Dal [Pannello di navigazione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) di [!DNL AEM as a Cloud Service], seleziona [!UICONTROL **Assets**] > [!UICONTROL **File**] > [!UICONTROL **Commerce**] e fai clic sulla risorsa creata nella sezione precedente.
 
-   ![cartella commerce](./assets/commerce-folder.png){width="600" zoomable="yes"}
+   ![Cartella Commerce in [!DNL AEM Assets] con immagini prodotto](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
 1. Fare clic su [!UICONTROL **Proprietà**].
 
-   ![proprietà](./assets/properties.png){width="600" zoomable="yes"}
+   ![Pulsante Proprietà nella barra degli strumenti [!DNL AEM Assets]](./assets/properties.png){width="600" zoomable="yes"}
 
 1. Selezionare la scheda [!UICONTROL **Commerce**].
 
-   ![scheda commerce](./assets/commerce-tab.png){width="600" zoomable="yes"}
+   ![Scheda Commerce nel pannello delle proprietà della risorsa](./assets/commerce-tab.png){width="600" zoomable="yes"}
 
 1. Verificare che [!UICONTROL **esista in Adobe Commerce?Campo**] impostato su [!UICONTROL **Sì**].
 
 1. Fai clic su [!UICONTROL **Aggiungi**] e immetti lo SKU del prodotto a cui desideri aggiungere la risorsa.
 
-   ![aggiungi a sku](./assets/add-to-sku.png){width="600" zoomable="yes"}
+   ![Aggiungi SKU per collegare la risorsa al prodotto](./assets/add-to-sku.png){width="600" zoomable="yes"}
 
 1. Selezionare la posizione per la risorsa e il tipo di risorsa.
 
 1. Selezionare la scheda [!UICONTROL **Base**] e modificare la scheda [!UICONTROL **Stato revisione**] in [!UICONTROL **Approvato**].
 
-   ![approva risorsa](./assets/approve-asset.png){width="600" zoomable="yes"}
+   ![Elenco a discesa Stato revisione impostato su Approvato nella scheda Base](./assets/approve-asset.png){width="600" zoomable="yes"}
 
 1. Fai clic su [!UICONTROL **Salva e chiudi**].
 
@@ -232,7 +234,7 @@ Considera uno scenario in cui desideri modificare rapidamente lo sfondo di un’
 
 1. Espandi la sezione [!UICONTROL **Immagini e video**].
 
-   ![immagini e video](./assets/images-and-videos.png){width="600" zoomable="yes"}
+   ![Sezione Immagini e video espansa nella modifica del prodotto](./assets/images-and-videos.png){width="600" zoomable="yes"}
 
 1. Conferma che l’immagine sia ora disponibile nell’elenco delle immagini.
 
@@ -240,15 +242,15 @@ Considera uno scenario in cui desideri modificare rapidamente lo sfondo di un’
 
 1. Confermare la visualizzazione della nuova immagine.
 
-   ![conferma immagine](./assets/image-confirm.png){width="600" zoomable="yes"}
+   ![Pagina prodotto nella vetrina che mostra la nuova immagine generata](./assets/image-confirm.png){width="600" zoomable="yes"}
 
 ## Genera varianti
 
-Le varianti di generazione di Adobe Commerce sfruttano l’intelligenza artificiale generativa per automatizzare la generazione di contenuti di alta qualità, ottimizzare i messaggi e pubblicare facilmente le risorse nella vetrina.
+Generate Variations di [!DNL Adobe Commerce] sfrutta l&#39;intelligenza artificiale generativa per automatizzare la generazione di contenuti di alta qualità, ottimizzare la messaggistica e pubblicare direttamente le risorse nella vetrina.
 
 ### Genera testo
 
-1. Apri il tuo sito di vetrina utilizzando [Universal Editor](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+1. Apri il tuo sito di vetrina utilizzando [Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 1. Selezionare il blocco di testo da modificare.
 
@@ -262,7 +264,7 @@ Le varianti di generazione di Adobe Commerce sfruttano l’intelligenza artifici
 
 ### Generare contenuti e immagini
 
-1. Apri [Genera varianti](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. Apri [[!DNL Generate Variations]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. Selezionare il modello [!UICONTROL **Banner principale**].
 
@@ -294,12 +296,12 @@ Utilizza i seguenti suggerimenti per risolvere eventuali problemi riscontrati du
    1. Eseguire `aio --help` per visualizzare tutti i comandi e i flag disponibili.
    1. Per comandi specifici, utilizzare il flag `--help`. Ad esempio:
       * `aio console --help`
-      * `aio commerce –help`
+      * `aio commerce --help`
 
 * Se riscontri problemi di accesso non validi:
 
    1. Esegui `aio config clear`.
-   1. Esegui `aio auth login –-force`.
+   1. Esegui `aio auth login --force`.
    1. Accedi al browser.
    1. Seleziona il tuo profilo.
    1. Tornare al terminale per continuare.
