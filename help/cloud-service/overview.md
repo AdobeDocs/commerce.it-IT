@@ -94,7 +94,7 @@ L’integrazione garantisce che le risorse digitali, come immagini di prodotto o
 
 In alternativa, le funzionalità native di [!DNL Adobe Commerce as a Cloud Service] forniscono strumenti di base per la gestione delle risorse digitali per l&#39;archiviazione e la gestione delle risorse digitali.
 
-Per ulteriori informazioni su come integrare [ con ](../aem-assets-integration/overview.md), consulta la [!DNL Product Visuals powered by AEM Assets]guida all&#39;integrazione di AEM Assets[!DNL Adobe Commerce as a Cloud Service].
+Per ulteriori informazioni su come integrare [&#x200B; con &#x200B;](../aem-assets-integration/overview.md), consulta la [!DNL Product Visuals powered by AEM Assets]guida all&#39;integrazione di AEM Assets[!DNL Adobe Commerce as a Cloud Service].
 
 ### [!DNL Product Visuals] o [!DNL AEM Assets]
 
