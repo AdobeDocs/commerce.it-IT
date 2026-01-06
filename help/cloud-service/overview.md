@@ -5,7 +5,7 @@ feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
 workflow-type: tm+mt
 source-wordcount: '1341'
@@ -67,13 +67,13 @@ Questo diagramma illustra il flusso di dati tra [!DNL Adobe Commerce as a Cloud 
 
 ## Commerce Storefront
 
-Utilizza [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront) di Adobe basato su [!DNL Edge Delivery Services] per creare esperienze avanzate in pochi minuti con semplici operazioni di authoring basato su documenti o di modifica visiva con [!DNL Storefront Builder].
+Utilizza [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront?lang=it) di Adobe basato su [!DNL Edge Delivery Services] per creare esperienze avanzate in pochi minuti con semplici operazioni di authoring basato su documenti o di modifica visiva con [!DNL Storefront Builder].
 
 [!DNL Commerce Storefront] è completamente headless con un&#39;architettura separata che fornisce tutti i servizi e i dati di merchandising tramite un livello API GraphQL. Questa architettura consente ai team di sviluppare i propri front-end in modo indipendente da Commerce Foundation, fornendo la flessibilità necessaria per creare e testare nuovi punti di contatto con le tecnologie emergenti.
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] non supporta le vetrine Luma. Se esegui la migrazione da Adobe Commerce su Cloud o on-premise, consulta [vetrine esistenti](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) per informazioni sulla transizione.
+>[!DNL Adobe Commerce as a Cloud Service] non supporta le vetrine Luma. Se esegui la migrazione da Adobe Commerce su Cloud o on-premise, consulta [vetrine esistenti](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=it#existing-storefronts) per informazioni sulla transizione.
 
 ## Servizi di merchandising e servizi di pagamento
 
@@ -198,7 +198,7 @@ Gli sviluppatori possono utilizzare [GraphQL](https://developer.adobe.com/commer
 
 <!-- ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/it/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. -->
 

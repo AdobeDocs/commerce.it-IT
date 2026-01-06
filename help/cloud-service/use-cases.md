@@ -5,7 +5,7 @@ feature: Cloud, Integration
 role: User, Leader
 level: Beginner
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
 workflow-type: tm+mt
 source-wordcount: '1390'
@@ -200,7 +200,7 @@ Considera uno scenario in cui desideri modificare rapidamente lo sfondo di un’
 
 #### Aggiungi immagine a [!DNL Commerce AEM Assets]
 
-1. Dal [Pannello di navigazione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) di [!DNL AEM as a Cloud Service], seleziona [!UICONTROL **Assets**] > [!UICONTROL **File**] > [!UICONTROL **Commerce**] e fai clic sulla risorsa creata nella sezione precedente.
+1. Dal [Pannello di navigazione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) di [!DNL AEM as a Cloud Service], seleziona [!UICONTROL **Assets**] > [!UICONTROL **File**] > [!UICONTROL **Commerce**] e fai clic sulla risorsa creata nella sezione precedente.
 
    ![Cartella Commerce in [!DNL AEM Assets] con immagini prodotto](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -250,7 +250,7 @@ Generate Variations di [!DNL Adobe Commerce] sfrutta l&#39;intelligenza artifici
 
 ### Genera testo
 
-1. Apri il tuo sito di vetrina utilizzando [Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+1. Apri il tuo sito di vetrina utilizzando [Universal Editor](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 1. Selezionare il blocco di testo da modificare.
 
@@ -264,7 +264,7 @@ Generate Variations di [!DNL Adobe Commerce] sfrutta l&#39;intelligenza artifici
 
 ### Generare contenuti e immagini
 
-1. Apri [[!DNL Generate Variations]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. Apri [[!DNL Generate Variations]](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. Selezionare il modello [!UICONTROL **Banner principale**].
 
