@@ -1,7 +1,7 @@
 ---
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: f71795ab6a10a28e6352d7adfcffd11a40e8ef67
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '118'
 ht-degree: 0%
 
 ---
@@ -21,18 +21,24 @@ ht-degree: 0%
 <table style="table-layout:fixed">
   <tr>
     <td style="vertical-align: middle;"><a href="https://developer.adobe.com/commerce/webapi/"><img alt="Developers" src="../assets/icons/developers.svg" /> <strong>Developers</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
     <td style="vertical-align: middle;"><a href="../cloud-service/overview.md"><img alt="Merchants" src="../assets/icons/merchants.svg" /> <strong>Merchants</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/?lang=it"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
   </tr>
 </table>
 
 >[!ENDSHADEBOX]
 -->
 
+## Mappatura dell’istanza di AEM Assets {#aem-assets-instance-mapping}
+
+>[!NOTE]
+>
+>Quando connetti [!DNL Adobe Commerce as a Cloud Service] a [!DNL AEM Assets], l&#39;istanza di Stage [!DNL AEM Assets] viene mappata all&#39;istanza Sandbox [!DNL Adobe Commerce as a Cloud Service] e a qualsiasi altro ambiente non di produzione. L&#39;istanza di produzione [!DNL AEM Assets] è mappata all&#39;istanza di produzione [!DNL Adobe Commerce as a Cloud Service].
+
 ## Informazioni sull’identità IMS e sul single sign-on {#ims-identity-and-sso-config}
 
 La gestione e l’autenticazione delle identità di Adobe Commerce sono gestite da Adobe Identity Management System (IMS) tramite Adobe Admin Console.
 
-Per informazioni sulle opzioni di configurazione delle identità, tra cui Adobe ID, Enterprise ID e Federated ID, e sulle istruzioni per la configurazione del Single Sign-On (SSO) per l&#39;accesso sicuro alle app Adobe, vedi [Configurare l&#39;identità e il Single Sign-On](https://helpx.adobe.com/it/enterprise/using/set-up-identity.html) nella documentazione di *Enterprise Admin Console*.
+Per informazioni sulle opzioni di configurazione delle identità, tra cui Adobe ID, Enterprise ID e Federated ID, e sulle istruzioni per la configurazione del Single Sign-On (SSO) per l&#39;accesso sicuro alle app Adobe, vedi [Configurare l&#39;identità e il Single Sign-On](https://helpx.adobe.com/enterprise/using/set-up-identity.html) nella documentazione di *Enterprise Admin Console*.
