@@ -3,9 +3,9 @@ title: Test e convalida
 description: I test e la convalida garantiscono che  [!DNL Payment Services]  funzioni funzionino come previsto e forniscono le migliori opzioni di pagamento per i clienti
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: b75cad4fd71b5ab9c0199ca47800c36cbd1ae76c
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,35 @@ Prima di esporre [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magen
 Il test di [!DNL Payment Services] in un ambiente sandbox è un passaggio importante di convalida, anche se si tratta di un ambiente simulato connesso solo alla sandbox PayPal, non a banche e commercianti reali.
 
 1. Completa l&#39;estrazione dal tuo Negozio con [Campi carta di credito](payments-options.md#credit-card-fields) o con uno dei [pulsanti di pagamento PayPal](payments-options.md#paypal-smart-buttons). Per ulteriori informazioni sull&#39;utilizzo di carte di credito false per i test, vedere [Verifica delle credenziali](#testing-credentials).
-1. Acquisisci (quando l&#39;azione di pagamento è [impostata su `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [rimborsi](refunds.md) o [annulli](voids.md) l&#39;ordine appena completato. Puoi anche semplicemente [creare una fattura](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} per un ordine, se l&#39;azione di pagamento è impostata su `Authorize` invece di `Authorize and Capture`.
+1. Acquisisci (quando l&#39;azione di pagamento è [impostata su `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [rimborsi](refunds.md) o [annulli](voids.md) l&#39;ordine appena completato. Puoi anche semplicemente [creare una fattura](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} per un ordine, se l&#39;azione di pagamento è impostata su `Authorize` invece di `Authorize and Capture`.
 1. Entro 24-48 ore, visualizzare la transazione e altre informazioni nel [report Pagamenti](payouts.md).
 1. Vedi i dettagli dell&#39;ordine nel [report sullo stato del pagamento dell&#39;ordine](order-payment-status.md).
+
+### Test sugli ambienti di sviluppo locali
+
+Il test dei metodi di pagamento PayPal, PayLater e Venmo negli ambienti di sviluppo locali richiede che l&#39;ambiente sia accessibile da Internet. Questi metodi di pagamento utilizzano un [callback di spedizione lato server](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/) che richiede a PayPal di comunicare con l&#39;istanza di Commerce per recuperare le opzioni di spedizione e calcolare i totali.
+
+>[!INFO]
+>
+>Senza un URL accessibile a Internet, il callback di spedizione non può funzionare, il che si traduce in un flusso di pagamento diverso rispetto alla produzione. Esegui sempre il test con un URL accessibile per garantire risultati accurati.
+
+Per esporre l’ambiente locale:
+
+1. Utilizza un servizio di tunneling come [ngrok](https://ngrok.com/) per creare un URL accessibile al pubblico per l&#39;ambiente locale.
+
+1. Aggiorna la configurazione dell’URL di base di Commerce in modo che corrisponda all’URL non elaborato:
+
+   ```bash
+   bin/magento config:set web/unsecure/base_url https://your-ngrok-url.ngrok.io/
+   bin/magento config:set web/secure/base_url https://your-ngrok-url.ngrok.io/
+   bin/magento cache:flush
+   ```
+
+1. Completa i test con i metodi di pagamento PayPal, PayLater o Venmo.
+
+1. Ripristina la configurazione dell’URL di base originale al termine del test.
+
+Se il tempo di risposta dell&#39;endpoint è inferiore a 5 secondi, PayPal visualizza un messaggio di errore nel pop-up.
 
 ### Verifica delle credenziali
 
