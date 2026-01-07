@@ -123,6 +123,6 @@ Per una panoramica delle soluzioni di pagamento predefinite, incluse le funziona
 
 Se hai bisogno di informazioni o se hai domande non trattate in questa guida su [!DNL Payment Services], contatta il tuo rappresentante commerciale [!DNL Payment Services] o utilizza le risorse disponibili nella tua Home di [!DNL Payment Services]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3447836)
+>[!VIDEO](https://video.tv.adobe.com/v/3448235?captions=ita)
 
 Vedi [Quale [!DNL Payment Services] opzione è adatta?Argomento &#x200B;](compatibility.md#which-payment-services-option-is-right-for-you) per verificare quale è l&#39;opzione [!DNL Payment Services] più adatta alle tue esigenze.
