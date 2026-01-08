@@ -1,8 +1,8 @@
 ---
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 4ddab6bbd62a3cc7c6dff089745c1b5ef5c20f70
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 3%
+source-wordcount: '551'
+ht-degree: 1%
 
 ---
 # Contribuire
@@ -19,7 +19,7 @@ Il progetto aderisce al [Codice di condotta](code-of-conduct.md) di Adobe. Parte
 
 ## Documentazione della Guida per i collaboratori
 
-Consulta la [Guida per i collaboratori](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=it).
+Consulta la [Guida per i collaboratori](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 ## Hai una domanda?
 
@@ -40,10 +40,8 @@ Tutte le richieste devono essere presentate sotto forma di richieste pull e devo
 dai collaboratori al progetto. Leggi la documentazione sulle richieste pull di [GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 per ulteriori informazioni sull’invio di richieste pull.
 
-<!--
-Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
-submitting a pull request!
--->
+Infine, segui il [modello di richiesta pull](PULL_REQUEST_TEMPLATE.md) quando
+invio di una richiesta di pull.
 
 ## Da collaboratore a committente
 
@@ -56,4 +54,52 @@ sentiti libero di rivolgerti ai collaboratori esistenti per parlarne con loro.
 
 ## Problemi di sicurezza
 
-Per segnalare un problema di sicurezza, [segnalalo ai nostri esperti di sicurezza](https://helpx.adobe.com/it/security/alertus.html).
+Per segnalare un problema di sicurezza, [segnalalo ai nostri esperti di sicurezza](https://helpx.adobe.com/security/alertus.html).
+
+## Novità
+
+Se le modifiche introducono nuovi argomenti, aggiornamenti significativi o correzioni che devono essere evidenziati, puoi aggiungere una breve descrizione alla [sezione Novità](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home#whats-new) direttamente dal corpo della richiesta di pull.
+
+Per aggiungere un&#39;evidenziazione Novità:
+
+1. Includi il tag `whatsnew` con la descrizione appropriata nel corpo della richiesta di pull alla fine. La descrizione deve fornire contesto sulla modifica e un collegamento all&#39;argomento o agli argomenti di destinazione. Utilizza il seguente formato (le virgolette dei blocchi di codice sono solo per la rappresentazione, non le includere nel corpo della richiesta di pull):
+
+   ```text
+   whatsnew
+   Short description of the change in the [target topic](https://experienceleague.adobe.com/en/docs/commerce/target-topic.html).
+   ```
+
+   oppure, se sono presenti più argomenti:
+
+   ```text
+   whatsnew
+   Short description of the changes in the [first target topic](https://experienceleague.adobe.com/en/docs/commerce/target-topic.html), [second target topic](https://experienceleague.adobe.com/en/docs/commerce/second-target-topic.html), and [third target topic](https://experienceleague.adobe.com/en/docs/commerce/third-target-topic.html).
+   ```
+
+   è inoltre possibile utilizzare gli elenchi per evidenziare più elementi:
+
+   ```text
+   whatsnew
+   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce/first-topic.html).
+   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce/second-topic.html).
+   ```
+
+   ```text
+   whatsnew
+   The following changes were made to the documentation:
+   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce/first-topic.html).
+   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce/second-topic.html).
+   ```
+
+1. Aggiungi le etichette supportate che indicano il tipo di modifica. Le etichette supportate includono etichette per ogni tipo di modifica, ad esempio:
+
+   - `new-topic` - per nuovi argomenti
+   - `major-update` - per aggiornamenti principali che possono includere modifiche significative al contenuto, alla struttura o alle funzionalità
+   - `technical` - per modifiche tecniche che non sono considerate aggiornamenti principali ma che richiedono comunque attenzione
+
+**Importante:**
+
+1. La parte `whatsnew` deve iniziare dal tag `whatsnew` e trovarsi alla fine del corpo della richiesta di pull.
+1. Le descrizioni delle modifiche devono includere collegamenti di lavoro. Verifica che i collegamenti siano corretti e reindirizza agli argomenti previsti. Se l’argomento è nuovo, verifica che i collegamenti funzionino dopo aver unito la richiesta di pull e pubblicato il nuovo argomento. È consentito correggere i collegamenti dopo l’unione della richiesta di pull.
+
+Ad esempio, cerca nelle richieste pull chiuse nell&#39;archivio di per vedere come vengono formattati gli elementi di rilievo esistenti e confrontarli con la [sezione Novità](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home#whats-new) per vedere come appaiono nella documentazione.
