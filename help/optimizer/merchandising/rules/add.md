@@ -1,11 +1,11 @@
 ---
 title: Creare e gestire le regole
 description: Scopri come creare e gestire le regole di merchandising.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: bd54ff7afb0b6a5d78098225a8f98f81f96a7923
 workflow-type: tm+mt
-source-wordcount: '2103'
+source-wordcount: '2146'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,9 @@ Puoi anche fare clic sull’icona a forma di pin per fissare un prodotto alla po
 
 >[!NOTE]
 >
->È possibile fissare solo i prodotti restituiti nella query.
+>Puoi fissare solo i prodotti visualizzati nei risultati della ricerca per le condizioni della query e della regola configurate.
+>
+>I prodotti devono essere indicizzati, visibili, in magazzino e soddisfare tutti i filtri delle regole per essere idonei al fissaggio. Se un prodotto non viene visualizzato nell’anteprima o nei risultati per la regola, l’operazione di fissaggio non ha alcun effetto.
 
 Gli eventi OR possono essere impostati manualmente:
 
