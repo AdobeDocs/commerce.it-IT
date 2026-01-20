@@ -14,7 +14,7 @@ ht-degree: 0%
 [!DNL Live Search] utilizza diversi tipi di facet e vengono visualizzati nell&#39;elenco *Filtri* solo se pertinenti. L’elenco dei facet disponibili cambia in base ai prodotti restituiti. Le seguenti caratteristiche influiscono sulla loro presentazione e sul loro comportamento:
 
 * Facet bloccati: i facet più comunemente utilizzati possono essere bloccati in alto nell’elenco. I facet rimanenti sono elencati nell&#39;ordine *Tipo di ordinamento* dopo i facet bloccati.
-* Facet dinamici: attributi di prodotto trovati più rilevanti per un set di prodotti e una query da [Adobe AI](https://business.adobe.com/ai.html). Il calcolo prende in considerazione i metadati dell’attributo dell’intero catalogo e determina in fase di query i facet più rilevanti per la query.
+* Facet dinamici: attributi di prodotto trovati più rilevanti per un set di prodotti e una query da [Adobe AI](https://business.adobe.com/it/ai.html). Il calcolo prende in considerazione i metadati dell’attributo dell’intero catalogo e determina in fase di query i facet più rilevanti per la query.
 
   >[!NOTE]
   >
@@ -35,7 +35,7 @@ Al contrario, [implementazioni headless](https://developer.adobe.com/commerce/ph
 
 ### Etichette facet
 
-Per [!DNL Commerce] storefronts, l&#39;etichetta del facet è determinata dalle [*Proprietà attributo*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). Per gli archivi con più visualizzazioni, è possibile definire etichette aggiuntive in *Gestisci etichette*. Per le implementazioni headless, le etichette vengono modificate dall&#39;[area di lavoro faceting](faceting-workspace.md).
+Per [!DNL Commerce] storefronts, l&#39;etichetta del facet è determinata dalle [*Proprietà attributo*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=it). Per gli archivi con più visualizzazioni, è possibile definire etichette aggiuntive in *Gestisci etichette*. Per le implementazioni headless, le etichette vengono modificate dall&#39;[area di lavoro faceting](faceting-workspace.md).
 
 ### Tipo di ordinamento
 

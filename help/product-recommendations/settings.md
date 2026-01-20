@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Impostazioni
 
-Quando si [configura uno spazio dati SaaS](../landing/saas.md#saas-configuration) per Recommendations, lo spazio dati SaaS raccoglie i dati del catalogo e i dati comportamentali della vetrina. [Adobe AI](https://business.adobe.com/ai.html) analizza i dati e calcola le associazioni di prodotti utilizzate per fornire i consigli di prodotto.
+Quando si [configura uno spazio dati SaaS](../landing/saas.md#saas-configuration) per Recommendations, lo spazio dati SaaS raccoglie i dati del catalogo e i dati comportamentali della vetrina. [Adobe AI](https://business.adobe.com/it/ai.html) analizza i dati e calcola le associazioni di prodotti utilizzate per fornire i consigli di prodotto.
 
 Gli ambienti non di produzione per il test o la gestione temporanea di solito non dispongono della quantità o della qualità dei dati comportamentali della vetrina per fornire consigli di prodotto realistici. Il comportamento effettivo degli acquirenti su larga scala può essere acquisito solo in un ambiente di produzione. Per risolvere questo problema, Adobe Commerce consente di utilizzare i consigli di prodotto dell’ambiente di produzione con altri spazi di dati SaaS non di produzione. L’utilizzo di dati vetrina reali in un ambiente non di produzione consente di visualizzare in anteprima i consigli visualizzati dagli acquirenti e di sperimentarli con diversi tipi di consigli e posizioni di posizionamento. Gli acquirenti possono visualizzare in anteprima, ma non fare clic, i consigli provenienti da uno spazio dati SaaS diverso.
 
