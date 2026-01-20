@@ -4,7 +4,7 @@ description: Scopri gli eventi utilizzati da  [!DNL Adobe Commerce Optimizer]  p
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: c102c558-a680-4622-80f0-6e5c34d497e9
-source-git-commit: 15a708db9a9a31798877ea3a400d5a9f6f930bda
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Esistono due tipi di dati utilizzati nei consigli:
 - **Comportamento**: dati del coinvolgimento di un acquirente sul tuo sito, ad esempio visualizzazioni di prodotti, elementi aggiunti a un carrello e acquisti.
 - **Catalogo** - Metadati del prodotto come nome, prezzo, disponibilità e così via.
 
-Adobe Sensei aggrega i dati comportamentali e di catalogo, creando consigli per ogni tipo di consiglio. Il servizio Recommendations distribuisce quindi tali consigli nella vetrina sotto forma di un widget contenente il prodotto consigliato _elementi_.
+Adobe AI aggrega i dati comportamentali e di catalogo, creando consigli per ogni tipo di consiglio. Il servizio Recommendations distribuisce quindi tali consigli nella vetrina sotto forma di un widget contenente il prodotto consigliato _elementi_.
 
 Alcuni tipi di consigli utilizzano i dati comportamentali dei tuoi acquirenti per addestrare modelli di apprendimento automatico per creare consigli personalizzati. Altri tipi di consigli utilizzano solo i dati di catalogo e non utilizzano dati comportamentali. Se desideri iniziare rapidamente a utilizzare i consigli sul tuo sito, puoi utilizzare il tipo di consiglio `More like this`.
 
@@ -86,7 +86,7 @@ Alcuni tipi di consigli utilizzano i dati comportamentali dei tuoi acquirenti pe
 
 Quando puoi iniziare a utilizzare i tipi di consigli che utilizzano dati comportamentali? Dipende. Questo problema è denominato _Avvio a freddo_.
 
-Il problema di _Avvio a freddo_ si riferisce al tempo necessario per l&#39;addestramento e l&#39;efficacia di un modello. Per i consigli, significa attendere che Adobe Sensei raccolga dati sufficienti per addestrare i suoi modelli di apprendimento automatico prima di distribuire unità di consigli sul sito. Maggiore è il numero di dati di cui dispongono i modelli, più accurati e utili sono i consigli. Poiché la raccolta dei dati avviene su un sito live, è meglio avviare questo processo in anticipo.
+Il problema di _Avvio a freddo_ si riferisce al tempo necessario per l&#39;addestramento e l&#39;efficacia di un modello. Per i consigli, significa attendere che Adobe AI raccolga dati sufficienti per addestrare i suoi modelli di apprendimento automatico prima di distribuire unità di consigli sul sito. Maggiore è il numero di dati di cui dispongono i modelli, più accurati e utili sono i consigli. Poiché la raccolta dei dati avviene su un sito live, è meglio avviare questo processo in anticipo.
 
 La tabella seguente fornisce alcune indicazioni generali sul tempo necessario per raccogliere dati sufficienti per ogni tipo di consiglio:
 
@@ -148,7 +148,7 @@ I seguenti eventi sono necessari per popolare il [dashboard delle prestazioni de
 | Tasso di click-through | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
 | vCTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
 
-I seguenti eventi non sono specifici per la funzione Consigli, ma sono necessari per consentire ad Adobe Sensei di interpretare correttamente i dati degli acquirenti:
+I seguenti eventi non sono specifici di Recommendations, ma sono necessari per consentire ad Adobe AI di interpretare correttamente i dati dell’acquirente:
 
 - `view`
 - `add-to-cart`
@@ -174,4 +174,4 @@ Questa tabella descrive gli eventi utilizzati da ogni tipo di consiglio.
 
 ## Supporto
 
-Se noti eventuali discrepanze di dati o se i consigli e i risultati della ricerca non funzionano come previsto, [invia un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Se noti eventuali discrepanze di dati o se i consigli e i risultati della ricerca non funzionano come previsto, [invia un ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).

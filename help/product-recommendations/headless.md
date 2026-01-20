@@ -2,7 +2,7 @@
 title: Headless
 description: Scopri come integrare [!DNL Product Recommendations] in una vetrina headless.
 exl-id: c40dac31-f87e-402a-ba50-e8aa4c1d66aa
-source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Gli integratori personalizzati e headless devono fare riferimento a queste istruzioni Luma e PWA come implementazione suggerita. Esistono molti modi per implementare i consigli di prodotto in soluzioni headless e questa documentazione non copre tutti gli scenari. Gli integratori devono occuparsi di eventi, progettazione e test per le loro implementazioni.
 
-[!DNL Product Recommendations] richiede [dati comportamentali e di catalogo](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=it) per funzionare. Il processo di sincronizzazione dei dati del catalogo rimane invariato in un’implementazione headless, ma sono necessarie modifiche per la raccolta dei dati comportamentali.
+[!DNL Product Recommendations] richiede [dati comportamentali e di catalogo](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html) per funzionare. Il processo di sincronizzazione dei dati del catalogo rimane invariato in un’implementazione headless, ma sono necessarie modifiche per la raccolta dei dati comportamentali.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ Gli integratori personalizzati e headless devono fare riferimento a queste istru
 
 Per integrare [!DNL Product Recommendations] in una vetrina headless, è necessario:
 
-1. Invia dati comportamentali ad Adobe Sensei per analizzare e calcolare i risultati dei consigli di prodotto. Puoi anche inviare dati aggiuntivi per abilitare il reporting di [metriche per i consigli sui prodotti](workspace.md).
+1. Invia dati comportamentali ad Adobe AI per analizzare e calcolare i risultati dei consigli di prodotto. Puoi anche inviare dati aggiuntivi per abilitare il reporting di [metriche per i consigli sui prodotti](workspace.md).
 
 1. Recupera i risultati dei consigli di prodotto ed esegui il rendering di tali risultati sulla pagina.
 
@@ -50,7 +50,7 @@ Puoi eseguire entrambe queste azioni utilizzando gli SDK disponibili, come descr
    | `rec-click` | unità-consiglio |
    | `rec-add-to-cart-click` | unità di consigli (se nel modello di consigli è presente il pulsante &quot;Aggiungi al carrello&quot;) |
 
-1. Quando gli eventi vengono attivati, utilizzare l&#39;[Agente di raccolta eventi Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) per gestire gli eventi e inviarli ad Adobe Sensei.
+1. Quando gli eventi vengono attivati, utilizza l&#39;[Agente di raccolta eventi Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) per gestire gli eventi e inviarli ad Adobe AI.
 
 1. Una volta raccolti i dati comportamentali, puoi [creare](create.md) [!DNL Product Recommendations] nell&#39;amministratore.
 

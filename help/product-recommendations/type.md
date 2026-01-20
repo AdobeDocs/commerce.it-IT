@@ -2,7 +2,7 @@
 title: Tipi di consigli
 description: Scopri i consigli che puoi distribuire in varie pagine del sito.
 exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
-source-git-commit: 67d0b98f3a9317c0db944a176fd99375091a3970
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Questi tipi di consigli consigliano prodotti che sono i più popolari o di tende
 | Articoli più visualizzati | Consiglia i prodotti più visualizzati contando il numero di sessioni in cui si è verificata un’azione di visualizzazione negli ultimi sette giorni.<br/><br/>**Dove usato:**<br/>- Home page<br/>- Categoria<br/>- Dettagli prodotto<br/>- Carrello<br/>- Conferma <br/><br/>**Etichette consigliate:**<br/>- Più popolari<br/>- Di tendenza<br/>- Popolari al momento<br/>- Recentemente popolari<br/>- Prodotti popolari ispirati a questo prodotto (PDP)<br/>- Più venduti |
 | Più acquistati | Consiglia i prodotti acquistati più di frequente dagli acquirenti negli ultimi sette giorni.<br/><br/>**Dove usato:**<br/>- Home page<br/>- Categoria<br/>- Dettagli prodotto<br/>- Carrello<br/>- Conferma <br/><br/>**Etichette consigliate:**<br/> - Più popolari<br/>- Di tendenza<br/>- Popolari al momento<br/>- Recentemente popolari<br/>- Prodotti popolari ispirati a questo prodotto (PDP)<br/>- Più venduti |
 | Più aggiunti al carrello | Consiglia i prodotti aggiunti più frequentemente ai carrelli dagli acquirenti negli ultimi sette giorni. Questo tipo di consiglio può essere utilizzato su tutte le pagine.<br/><br/>**Dove usato:**<br/>- Home page<br/>- Categoria<br/>- Dettagli prodotto<br/>- Carrello<br/>- Conferma <br/><br/>**Etichette consigliate:**<br/> - Più popolari<br/>- Di tendenza<br/>- Popolari al momento<br/>- Recentemente popolari<br/>- Prodotti popolari ispirati a questo prodotto (PDP)<br/>- Più venduti |
-| Di tendenza | Consiglia i prodotti in base al recente momento di popolarità di un prodotto nel tuo sito.<br/><br/>Adobe Sensei aggrega i dati di navigazione e di acquisto nel tuo sito per determinare e classificare i prodotti più popolari tra gli acquirenti. Dato che Trending analizza il recente slancio dei prodotti, è un tipo di raccomandazione efficace per i cataloghi che hanno un fatturato elevato. Se il catalogo è più statico, potrebbe non essere utile a meno che i modelli di acquisto del pubblico non siano altamente variabili.<br/><br/>Se utilizzato nella home page, Trending consiglia prodotti che sono stati utilizzati di recente nell&#39;intero sito. La tendenza non mostra i prodotti che sono costantemente popolari, ma piuttosto quelli che sono diventati di recente popolari. Ad esempio, in presenza di una campagna di marketing e-mail che promuove determinati prodotti, l’aumento di popolarità generato dall’e-mail aumenta la probabilità che i prodotti promossi siano classificati come di tendenza.<br/><br/>**Dove usato:**<br/>- Home page<br/>- Categoria<br/>- Dettagli prodotto<br/>- Carrello<br/>- Conferma <br/><br/>**Etichette consigliate:**<br/>- Di tendenza<br/>- Di tendenza attuale<br/>- Di tendenza recente<br/>- Prodotti caldi<br/>- Prodotti correlati di tendenza (PDP) |
+| Di tendenza | Consiglia i prodotti in base al recente momento di popolarità di un prodotto nel tuo sito.<br/><br/>Adobe AI aggrega i dati relativi alla navigazione e all&#39;acquisto nel sito per determinare e classificare i prodotti più popolari tra gli acquirenti. Dato che Trending analizza il recente slancio dei prodotti, è un tipo di raccomandazione efficace per i cataloghi che hanno un fatturato elevato. Se il catalogo è più statico, potrebbe non essere utile a meno che i modelli di acquisto del pubblico non siano altamente variabili.<br/><br/>Se utilizzato nella home page, Trending consiglia prodotti che sono stati utilizzati di recente nell&#39;intero sito. La tendenza non mostra i prodotti che sono costantemente popolari, ma piuttosto quelli che sono diventati di recente popolari. Ad esempio, in presenza di una campagna di marketing e-mail che promuove determinati prodotti, l’aumento di popolarità generato dall’e-mail aumenta la probabilità che i prodotti promossi siano classificati come di tendenza.<br/><br/>**Dove usato:**<br/>- Home page<br/>- Categoria<br/>- Dettagli prodotto<br/>- Carrello<br/>- Conferma <br/><br/>**Etichette consigliate:**<br/>- Di tendenza<br/>- Di tendenza attuale<br/>- Di tendenza recente<br/>- Prodotti caldi<br/>- Prodotti correlati di tendenza (PDP) |
 
 ## Prestazioni elevate {#highperf}
 
@@ -124,7 +124,7 @@ Il tipo di consiglio _Somiglianza visiva_ offre consigli per altri prodotti nel 
 - Materiale
 - Stile
 
-Adobe Sensei utilizza l’intelligenza artificiale per elaborare e analizzare le immagini nel catalogo e creare gli attributi utilizzati per determinare le somiglianze visive.
+Adobe AI utilizza l’intelligenza artificiale per elaborare e analizzare le immagini nel catalogo e generare gli attributi utilizzati per determinare le somiglianze visive.
 
 >[!NOTE]
 >
@@ -152,7 +152,7 @@ Poiché questo tipo di consiglio non è applicabile alla maggior parte dei catal
 
    Nella pagina [Crea nuovo consiglio](create.md) è ora visualizzato **Somiglianza visiva** come tipo di consiglio selezionabile quando il tipo di pagina è **Dettagli prodotto**.
 
-Dopo aver abilitato i consigli visivi, Adobe Sensei avvia l’elaborazione dell’immagine. Il tempo necessario dipende dalle dimensioni del catalogo.
+Dopo aver abilitato i consigli visivi, Adobe AI avvia l’elaborazione dell’immagine. Il tempo necessario dipende dalle dimensioni del catalogo.
 
 ### Dove usato
 

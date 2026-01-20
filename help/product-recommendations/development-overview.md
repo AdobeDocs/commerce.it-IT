@@ -1,7 +1,8 @@
 ---
 title: Sviluppo per amministratori di Product Recommendations
 description: Panoramica dell’architettura e delle funzioni di sviluppo di Product Recommendations.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 5967259e-c531-4fc7-9abd-cc18433fab33
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%
@@ -10,7 +11,7 @@ ht-degree: 0%
 
 # Sviluppo per amministratori di Product Recommendations
 
-I consigli di prodotto sono un potente strumento di marketing che puoi utilizzare per aumentare le conversioni, incrementare i ricavi e stimolare il coinvolgimento degli acquirenti. I consigli di prodotto vengono visualizzati nella vetrina sotto forma di unità quali &quot;Hanno visualizzato anche i clienti che hanno acquistato questo prodotto&quot;, &quot;Hanno acquistato anche questo prodotto&quot;, &quot;Sono consigliati per te&quot; e così via. I consigli di prodotto di Adobe Commerce sono basati su [Adobe Sensei](https://www.adobe.com/sensei.html), che utilizza algoritmi di intelligenza artificiale e machine learning per eseguire un&#39;analisi approfondita dei dati aggregati degli acquirenti. Quando vengono combinati con il catalogo Commerce, questi dati offrono esperienze altamente coinvolgenti, pertinenti e personalizzate per l’acquirente.
+I consigli di prodotto sono un potente strumento di marketing che puoi utilizzare per aumentare le conversioni, incrementare i ricavi e stimolare il coinvolgimento degli acquirenti. I consigli di prodotto vengono visualizzati nella vetrina sotto forma di unità quali &quot;Hanno visualizzato anche i clienti che hanno acquistato questo prodotto&quot;, &quot;Hanno acquistato anche questo prodotto&quot;, &quot;Sono consigliati per te&quot; e così via. I consigli di prodotto di Adobe Commerce sono basati su [Adobe AI](https://business.adobe.com/ai.html), che utilizza algoritmi di intelligenza artificiale e machine learning per eseguire un&#39;analisi approfondita dei dati aggregati degli acquirenti. Quando vengono combinati con il catalogo Commerce, questi dati offrono esperienze altamente coinvolgenti, pertinenti e personalizzate per l’acquirente.
 
 >[!NOTE]
 >
@@ -18,11 +19,11 @@ I consigli di prodotto sono un potente strumento di marketing che puoi utilizzar
 
 ## Panoramica dell’architettura
 
-Ad alto livello, i consigli di prodotto Commerce vengono distribuiti come SaaS. Il lato Commerce include la vetrina, che contiene l’agente di raccolta eventi e il modello di layout dei consigli, e il back-end, che include i servizi dati, il modulo Esportazione SaaS e l’interfaccia utente amministratore. I servizi di intelligence di Adobe Sensei sono utilizzati lato SaaS.
+Ad alto livello, i consigli di prodotto Commerce vengono distribuiti come SaaS. Il lato Commerce include la vetrina, che contiene l’agente di raccolta eventi e il modello di layout dei consigli, e il back-end, che include i servizi dati, il modulo Esportazione SaaS e l’interfaccia utente amministratore. I servizi di intelligence basati sull’intelligenza artificiale di Adobe sono utilizzati lato SaaS.
 
 ![Diagramma dell&#39;architettura dei consigli di prodotto](assets/arch-diag-sensei.svg)
 
-Una volta installati e configurati i moduli di consigli, la vetrina inizierà a raccogliere i dati comportamentali. Adobe Sensei elabora questi dati comportamentali insieme ai dati del catalogo e calcola le associazioni di prodotti utilizzate dal servizio Recommendations. A questo punto, il commerciante può creare, gestire e distribuire unità di consigli di prodotto nella vetrina direttamente dall’interfaccia utente di amministrazione.
+Una volta installati e configurati i moduli di consigli, la vetrina inizierà a raccogliere i dati comportamentali. Adobe AI elabora questi dati comportamentali insieme ai dati del catalogo e calcola le associazioni di prodotti utilizzate dal servizio Recommendations. A questo punto, il commerciante può creare, gestire e distribuire unità di consigli di prodotto nella vetrina direttamente dall’interfaccia utente di amministrazione.
 
 ## Passaggi successivi
 
