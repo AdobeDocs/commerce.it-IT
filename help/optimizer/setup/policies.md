@@ -2,7 +2,7 @@
 title: Criteri
 description: Scopri come creare e gestire i criteri in [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
 source-git-commit: 4f238b002d1481126d4fec0a249b7f9ff437248e
 workflow-type: tm+mt
