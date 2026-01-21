@@ -1,34 +1,34 @@
 ---
-title: Migra a  [!DNL Adobe Commerce as a Cloud Service]
-description: Scopri come eseguire la migrazione a  [!DNL Adobe Commerce as a Cloud Service].
+title: Migra a [!DNL Adobe Commerce as a Cloud Service]
+description: Scopri come eseguire la migrazione [!DNL Adobe Commerce as a Cloud Service].
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Si applica a Adobe Systems Commerce solo come progetto Cloud Service e Adobe Systems Commerce Optimizer (infrastruttura SaaS gestito da Adobe Systems)."
 role: Developer
 level: Intermediate
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+source-git-commit: af56d52f98a83310b858f82f16693f5323c1b962
 workflow-type: tm+mt
-source-wordcount: '3020'
+source-wordcount: '3016'
 ht-degree: 0%
 
 ---
 
 # Migra a [!DNL Adobe Commerce as a Cloud Service]
 
-[!DNL Adobe Commerce as a Cloud Service] fornisce una guida completa per gli sviluppatori che passano da un&#39;implementazione Adobe Commerce PaaS esistente alla nuova offerta Adobe Commerce as a Cloud Service (SaaS). Adobe Commerce as a Cloud Service rappresenta un passaggio significativo verso un modello SaaS completamente gestito e senza versioni, che offre prestazioni migliorate, scalabilità, operazioni semplificate e una maggiore integrazione con il più ampio [!DNL Adobe Experience Cloud].
+[!DNL Adobe Commerce as a Cloud Service] fornisce una guida completa per gli sviluppatori che passano da un implementazione PaaS Adobe Systems Commerce esistente alla nuova offerta Adobe Systems Commerce as a Cloud Service (SaaS). Adobe Systems Commerce come Cloud Service rappresenta un passaggio significativo a un modello SaaS completamente gestito e senza versione, che offre prestazioni migliorate, scalabilità, operazioni semplificate e una più stretta integrazione con il più ampio [!DNL Adobe Experience Cloud].
 
 >[!NOTE]
 >
->Per ulteriori informazioni sugli strumenti di migrazione, vedere [Strumento di migrazione dati in blocco](./bulk-data.md).
+>Per ulteriori informazioni sugli strumenti di migrazione, vedere Strumento [](./bulk-data.md)per la migrazione dei dati in blocco.
 
-## Comprendere la transizione: confrontare PaaS e SaaS
+## Comprendere il cambiamento: confronto tra PaaS e SaaS
 
 **Differenze chiave**
 
-* [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."} **PaaS (corrente)**: il commerciante gestisce il codice dell&#39;applicazione, gli aggiornamenti, l&#39;applicazione di patch e la configurazione dell&#39;infrastruttura nell&#39;ambiente ospitato di Adobe. [Modello di responsabilità condiviso](https://experienceleague.adobe.com/it/docs/commerce-operations/security-and-compliance/shared-responsibility) per i servizi (MySQL, Elasticsearch e altri).
-* [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."} **SaaS (Nuovo - [!DNL Adobe Commerce as a Cloud Service])**: Adobe gestisce completamente l&#39;applicazione di base, l&#39;infrastruttura e gli aggiornamenti. I commercianti si concentrano sulla personalizzazione tramite punti di estensibilità (API, App Builder, UI SDK). Il codice dell’applicazione core è bloccato.
+* [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Si applica solo ai progetti Adobe Systems Commerce on Cloud (infrastruttura PaaS gestita da Adobe Systems) e ai progetti locali."} **PaaS (corrente)**: il commerciante gestisce il codice dell&#39;applicazione, gli aggiornamenti, l&#39;applicazione di patch e la configurazione dell&#39;infrastruttura nell&#39;ambiente ospitato di Adobe. [Modello di responsabilità condiviso](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) per i servizi (MySQL, Elasticsearch e altri).
+* [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Si applica a Adobe Systems Commerce solo come progetto Cloud Service e Adobe Systems Commerce Optimizer (infrastruttura SaaS gestito da Adobe Systems)."} **SaaS (Nuovo - [!DNL Adobe Commerce as a Cloud Service])**: Adobe gestisce completamente l&#39;applicazione di base, l&#39;infrastruttura e gli aggiornamenti. Gli esercenti concentrarsi personalizzazione tramite punti di estensibilità (API, app Builder interfaccia SDK). Il codice della applicazione core è bloccato.
 
-**Implicazioni di architettura**
+**Implicazioni architettoniche**
 
 * **Piattaforma senza versione**: aggiornamenti continui non significano più aggiornamenti di versione principali per il core.
 * **Microservizi e API-first**: maggiore fiducia nelle API per estensibilità e integrazione.
@@ -37,22 +37,22 @@ ht-degree: 0%
 
 **Nuovi strumenti e concetti**
 
-* [Mesh API per Adobe Developer App Builder](https://developer.adobe.com/app-builder/) e [per Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway)
+* [Adobe Systems Developer app Builder](https://developer.adobe.com/app-builder/) e [API Mesh per Adobe Systems Developer app Builder](https://developer.adobe.com/graphql-mesh-gateway)
 * [Commerce Optimizer](../../optimizer/overview.md)
-* [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it)
-* Provisioning self-service con [Commerce Cloud Manager](../getting-started.md#create-an-instance)
+* [Servizi di distribuzione Edge](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* Provisioning self-service con Commerce Cloud [Manager](../getting-started.md#create-an-instance)
 
 ## Percorsi di migrazione
 
-[!DNL Adobe Commerce as a Cloud Service] supporta più percorsi di migrazione, a seconda della timeline, della vetrina e delle personalizzazioni.
+[!DNL Adobe Commerce as a Cloud Service] Supporta più percorsi di migrazione, a seconda della timeline, della vetrina e delle personalizzazioni.
 
-In alternativa alla migrazione completa, [!DNL Adobe Commerce as a Cloud Service] supporta una migrazione graduale utilizzando Commerce Optimizer o un approccio incrementale.
+In alternativa a una migrazione completa, [!DNL Adobe Commerce as a Cloud Service] supporta una migrazione a fasi, utilizzando Commerce Optimizer o un approccio incrementale.
 
-* **Migrazione incrementale**: questo approccio prevede la migrazione di dati, personalizzazioni e integrazioni in più fasi. Questo approccio è ideale per i grandi commercianti con molte personalizzazioni che desiderano passare gradualmente le loro personalizzazioni complesse e i dati a [!DNL Adobe Commerce as a Cloud Service] al proprio ritmo.
+* **Migrazione** incrementale: questo approccio prevede la migrazione dei dati, delle personalizzazioni e delle integrazioni in più fasi. Questo approccio è ideale per i commercianti di grandi dimensioni con molte personalizzazioni che desiderano transizione gradualmente le personalizzazioni e i dati [!DNL Adobe Commerce as a Cloud Service] complessi al proprio ritmo.
 
-![migrazione incrementale](../assets/incremental.png){width="600" zoomable="yes"}
+![Migrazione incrementale](../assets/incremental.png){width="600" zoomable="yes"}
 
-* **Commerce Optimizer** - Questo approccio consente di eseguire la migrazione iterativa utilizzando Commerce Optimizer come fase di transizione per spostare personalizzazioni e dati complessi in [!DNL Adobe Commerce as a Cloud Service] al proprio ritmo. Commerce Optimizer fornisce l&#39;accesso ai servizi di merchandising basati su visualizzazioni e criteri del catalogo, Commerce Storefront basato su Edge Delivery e [!DNL Product Visuals powered by AEM Assets].
+* **Commerce Optimizer**: questo approccio consente di eseguire la migrazione in modo iterativo, utilizzando Commerce Optimizer come fase di transizione per spostare personalizzazioni e dati complessi al [!DNL Adobe Commerce as a Cloud Service] proprio ritmo. Commerce Optimizer fornisce accesso ai servizi di merchandising basati su Visualizzazioni e criteri del catalogo, Commerce Storefront powered by Edge Delivery e [!DNL Product Visuals powered by AEM Assets].
 
 ![migrazione iterativa](../assets/optimizer.png){width="600" zoomable="yes"}
 
@@ -64,25 +64,25 @@ La tabella seguente fornisce una panoramica del processo di migrazione per diver
 |--------------------|----------------------------------------|----------------------------------------|------------------------------------------------------|----------------------------------------|
 | Migrazione dei dati | Obbligatorio | Obbligatorio | Obbligatorio | Obbligatorio |
 | Vetrina | Migrare a Commerce Storefront con tecnologia Edge Delivery | Migrare a Commerce Storefront con tecnologia Edge Delivery o mantenere | Nessun impatto | Nessun impatto |
-| Mesh API | Crea nuova trama | Crea nuova rete o riconfigura esistente | Crea nuova rete o riconfigura esistente | Crea nuova rete o riconfigura esistente |
-| Integrazioni | Utilizzo del kit di avvio per l&#39;integrazione | Utilizzo del kit di avvio per l&#39;integrazione | Utilizzo del kit di avvio per l&#39;integrazione | Utilizzo del kit di avvio per l&#39;integrazione |
-| Personalizzazioni | Passa ad App Builder e Mesh API | Passa ad App Builder e Mesh API | Passa ad App Builder e Mesh API | Passa ad App Builder e Mesh API |
+| API Mesh | Crea una nuova mesh | Crea una nuova mesh o riconfigura quella esistente | Crea una nuova mesh o riconfigura quella esistente | Crea una nuova mesh o riconfigura quella esistente |
+| Integrazioni | Sfruttare lo starter kit di integrazione | Sfruttare lo starter kit di integrazione | Sfruttare lo starter kit di integrazione | Sfruttare lo starter kit di integrazione |
+| Personalizzazioni | Passa a app Builder e API Mesh | Passa a app Builder e API Mesh | Passa a app Builder e API Mesh | Passa a app Builder e API Mesh |
 | Gestione Assets | Migrazione necessaria se si utilizza OOTB | Migrazione necessaria se si utilizza OOTB | Migrazione necessaria se si utilizza OOTB | Migrazione necessaria se si utilizza OOTB |
 | Estensioni | Migrare ad App Builder | Migrare ad App Builder | Migrare ad App Builder | Migrare ad App Builder |
 
-Come indicato nella tabella, le mitigazioni per ogni migrazione consisteranno in:
+Come indicato nella tabella, le attenuazioni per ogni migrazione consisteranno in:
 
-* **Migrazione dei dati** - Utilizzo degli [strumenti di migrazione](./bulk-data.md) forniti per eseguire la migrazione dei dati dall&#39;istanza esistente a [!DNL Adobe Commerce as a Cloud Service].
+* **Migrazione** dei dati: utilizzo degli strumenti di[ migrazione forniti ](./bulk-data.md)per eseguire la migrazione dei dati dai istanza esistenti a [!DNL Adobe Commerce as a Cloud Service].
 * **Storefront**: gli storefront Commerce esistenti basati su Edge Delivery e gli storefront headless non richiedono alcuna mitigazione, ma gli storefront Luma richiedono la migrazione a Commerce Storefront basati su Edge Delivery. È possibile migrare le vetrine dei negozi PWA Studio a Commerce basate su Edge Delivery o mantenerle nello stato corrente. Adobe fornirà acceleratori per assistere la migrazione della vetrina.
 * **[Rete API](https://developer.adobe.com/graphql-mesh-gateway)**—Crea una nuova rete o modifica quella esistente. Per facilitare questo processo, Adobe fornirà delle maglie preconfigurate.
 * **Integrazioni** - Tutte le integrazioni devono utilizzare il [kit di avvio dell&#39;integrazione](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) o l&#39;[[!DNL Adobe Commerce as a Cloud Service] API REST](https://developer.adobe.com/commerce/webapi/reference/rest/saas/).
 * **Personalizzazioni** - Tutte le personalizzazioni devono essere spostate in App Builder e API Mesh.
-* **Gestione Assets**: la gestione di tutte le risorse richiede la migrazione. Se utilizzi già [!DNL AEM Assets], non è necessario eseguire la migrazione.
-* **Estensioni** - Tutte le estensioni in-process devono essere ricreate come estensioni out-of-process. Entro la fine del 2025, Adobe fornirà l’accesso alle nostre estensioni più popolari per ridurre al minimo i tempi di build.
+* **** Gestione Assets: tutta la gestione risorse richiede la migrazione. Se si sta già utilizzando [!DNL AEM Assets], non è necessario eseguire la migrazione.
+* **Estensioni**: tutte le estensioni all&#39;interno del processo devono essere ricreate come estensioni out-of-process. Entro la fine del 2025, Adobe Systems fornirà accesso alle nostre estensioni più popolari per ridurre al minimo i tempi di versione.
 
-## Fasi di migrazione
+## Fasi della migrazione
 
-Le fasi seguenti descrivono i passaggi e le considerazioni necessari per la migrazione a [!DNL Adobe Commerce as a Cloud Service].
+Nelle fasi seguenti vengono descritti i passaggi e le considerazioni necessari per la migrazione a [!DNL Adobe Commerce as a Cloud Service].
 
 ### Valutazione e pianificazione pre-migrazione
 
@@ -120,44 +120,44 @@ Questa fase è fondamentale per ridurre al minimo i rischi e stabilire un percor
 **Definire l&#39;ambito e la strategia di migrazione:**
 
 * **Migrazione graduale e all-at-once:** Valuta i pro e i contro di ogni approccio.
-* **Identificare i processi aziendali principali:** Assegnare priorità alle funzionalità che devono essere migrate per prime, ad esempio:
-   * Regole di determinazione prezzi complesse
-   * Regole aziendali personalizzate applicate prima che un ordine venga ufficialmente inserito o elaborato
-   * Calcoli delle imposte complessi
-   * Convalide degli indirizzi
-   * Logica personalizzata attivata dopo l’invio di un ordine
-* **Storefront headless e monolitico:** punto decisionale per lo sviluppo di nuove storefront o per l&#39;adattamento di storefront esistenti.
-* **Strategia di integrazione:** Determina in che modo verranno riorganizzate le integrazioni esistenti (Mesh API, App Builder, API diretta).
-* **Strategia di migrazione dati:** determinare se si desidera eseguire la migrazione utilizzando dati cronologici completi, dati parziali o nessun dato migrato.
+* **Identificare i processi aziendali principali:** dare priorità alle funzionalità che devono essere migrate per prime, ad esempio:
+   * Regole di prezzo complesse
+   * Regole aziendali personalizzate applicate prima che un ordine venga ufficialmente effettuato o elaborato
+   * Calcoli fiscali complessi
+   * Convalide indirizzi
+   * Logica personalizzata attivata dopo l&#39;invio di un ordine
+* **Headless vs. vetrina monolitica:** punto di decisione per lo sviluppo di nuove vetrine o l&#39;adattamento di vetrine esistenti.
+* **Strategia di integrazione:** determinare come verranno ri-platformizzate le integrazioni esistenti (API Mesh, app Builder, API diretta).
+* **Strategia di migrazione dei dati:** determinare se si intende eseguire la migrazione utilizzando dati cronologici completi, dati parziali o nessun dato migrato.
 
-**Preparazione e formazione del team:**
+**Preparazione del team e training:**
 
 * Acquisisci familiarità con [!DNL Adobe Commerce as a Cloud Service] concetti, flussi di lavoro di sviluppo e nuovi strumenti.
-* Partecipa a corsi di formazione pratici con le pipeline di distribuzione Adobe App Builder, Edge Delivery Services e [!DNL Adobe Commerce as a Cloud Service].
+* Partecipa a training pratici con Adobe Systems app Builder, Servizi di distribuzione Edge e [!DNL Adobe Commerce as a Cloud Service] pipeline di distribuzione.
 
-**Configurazione e provisioning ambiente:**
+**Configurazione e provisioning dell&#39;ambiente:**
 
-* Esegui il provisioning della sandbox [!DNL Adobe Commerce as a Cloud Service] e degli ambienti di sviluppo con Commerce Cloud Manager.
+* Effettua il provisioning [!DNL Adobe Commerce as a Cloud Service] degli ambienti sandbox e di sviluppo con Commerce Cloud Manager.
 
 ### Fasi di migrazione incrementale
 
 **Refactoring strategico ed esternalizzazione**
 
-Questa fase è costituita dal nucleo della migrazione e si concentra sull&#39;adattamento della base di codice al paradigma nativo per il cloud [!DNL Adobe Commerce as a Cloud Service]. Ciò comporta l’adozione strategica di nuovi servizi Adobe e lo spostamento della logica personalizzata fuori dalla piattaforma Commerce di base.
+Questa fase consiste nel nucleo della migrazione, concentrandosi sull&#39;adattamento della [!DNL Adobe Commerce as a Cloud Service] base di codice al paradigma cloud-nativo;. Ciò comporta l&#39;adozione strategica di nuovi servizi Adobe Systems e lo spostamento della logica personalizzata fuori dalla piattaforma di eCommerce principale.
 
-#### &#x200B;1. Migrare personalizzazioni ed estensioni &quot;in-process&quot; ad App Builder
+#### &#x200B;1. Migrazione delle personalizzazioni e delle estensioni &quot;in-process&quot; a app Builder
 
-Si tratta di una fase cruciale per il raggiungimento di un &quot;nucleo bloccato&quot; e per garantire il futuro della tua soluzione, fondamentale per la filosofia architettonica di [!DNL Adobe Commerce as a Cloud Service].
+Questa è una fase cruciale per ottenere un &quot;nucleo bloccato&quot; e rendere la soluzione a prova di futuro, centrale per la [!DNL Adobe Commerce as a Cloud Service] filosofia architettonica.
 
-* **Esternalizzare la logica complessa in App Builder**: analizza i moduli personalizzati esistenti e le estensioni di terze parti all&#39;interno della base di codice PaaS. Per logiche di business complesse, integrazioni personalizzate o microservizi che non richiedono la manipolazione diretta e in-process del modello dati di base di Commerce, esegui il refactoring e la ripiattaforma come applicazioni senza server all’interno di Adobe Developer App Builder.
-* **Sfrutta la rete API**: per scenari che richiedono dati da più sistemi back-end (ad esempio, il backend Commerce PaaS, i microservizi ERP, CRM e App Builder personalizzati), implementa un livello Mesh API in App Builder. Questo consolida API diverse in un unico endpoint GraphQL performante utilizzato dalla nuova vetrina o da altri servizi, semplificando il recupero di dati complessi.
+* **Esternalizzare la logica complessa in app Builder**: analizza i moduli personalizzati esistenti e le estensioni di terze parti all&#39;interno della tua base di codice PaaS. Per logica di business complesse, integrazioni personalizzate o microservizi che non richiedono la manipolazione diretta e in-process del modello di dati di base di Commerce, esegui il refactoring e ripiattaformali come applicazioni serverless all&#39;interno di Adobe Systems Developer app Builder.
+* **Sfrutta API Mesh**: per gli scenari che richiedono dati da più sistemi back-end (ad esempio, il backend PaaS Commerce, ERP, CRM e microservizi personalizzati di app Builder), implementare un livello API Mesh all&#39;interno di app Builder. Questo consolida API diverse in un unico endpoint GraphQL performante utilizzato dalla nuova vetrina o da altri servizi, semplificando il recupero di dati complessi.
 * **Architettura basata sugli eventi**: utilizza Adobe I/O Events per attivare le azioni di App Builder in base agli eventi che si verificano nell&#39;istanza PaaS (ad esempio aggiornamenti dei prodotti, registrazioni dei clienti, modifiche dello stato degli ordini) o in altri sistemi connessi. Questo favorisce la comunicazione asincrona, riduce l&#39;accoppiamento stretto e migliora la resilienza del sistema.
 
-**Vantaggio**: questo passaggio riduce in modo significativo il debito tecnico associato a personalizzazioni profondamente incorporate, velocizza notevolmente la transizione dell&#39;istanza Commerce a [!DNL Adobe Commerce as a Cloud Service], migliora la scalabilità e la distribuzione indipendente della logica personalizzata e promuove cicli di sviluppo più rapidi per le estensioni.
+**Vantaggio**: questo passaggio riduce significativamente il debito tecnico associato alle personalizzazioni profondamente incorporate, accelera notevolmente la transizione del istanza di Commerce a [!DNL Adobe Commerce as a Cloud Service], migliora la scalabilità e la distribuibilità indipendente della logica personalizzata e promuove cicli di sviluppo più rapidi per le estensioni.
 
-#### &#x200B;2. Adottare i servizi di merchandising Adobe Commerce basati su SaaS e integrare i dati del catalogo
+#### &#x200B;2. Adottare servizi merchandising Adobe Systems Commerce basati su SaaS e integrare i dati del catalogo
 
-Si tratta di un punto di integrazione iniziale fondamentale con due opzioni relative alla gestione dei dati di catalogo:
+Si tratta di un critico punto di integrazione iniziale con due opzioni per quanto riguarda la gestione dei dati di catalogo:
 
 >[!BEGINTABS]
 
@@ -169,7 +169,7 @@ Questa opzione funge da passaggio transitorio, basato su un&#39;integrazione esi
 
 * **Sincronizzazione dati catalogo**: assicurati che l&#39;istanza Adobe Commerce PaaS continui a sincronizzare i dati di prodotto e catalogo con il servizio Adobe Commerce Catalog SaaS esistente. In genere si basa su connettori o moduli consolidati all’interno dell’istanza PaaS. Il servizio catalogo SaaS rimane la fonte autorevole per le funzioni di ricerca e merchandising, derivando i suoi dati dal backend PaaS.
 * **Mesh API per l&#39;ottimizzazione**: anche se la vetrina headless (su Edge Delivery Services) e altri servizi potrebbero utilizzare direttamente i dati del servizio SaaS del catalogo, Adobe consiglia vivamente di utilizzare Mesh API (in App Builder). La funzione Mesh API può unificare le API del servizio SaaS per il catalogo con altre API necessarie dal backend PaaS (ad esempio, controlli di inventario in tempo reale dal database transazionale o attributi di prodotto personalizzati non completamente replicati nel servizio SaaS per il catalogo) in un singolo endpoint GraphQL dalle prestazioni elevate. Ciò consente anche la memorizzazione in cache centralizzata, l’autenticazione e la trasformazione della risposta.
-* **Integrazione di Live Search e Product Recommendations**: configura i servizi SaaS di Live Search e Product Recommendations per [acquisire i dati del catalogo](https://experienceleague.adobe.com/it/docs/commerce/live-search/install#configure-the-data) direttamente dal servizio SaaS del catalogo Adobe Commerce esistente, che a sua volta viene popolato dal backend PaaS.
+* **Integrazione di Live Search e Product Recommendations**: configura i servizi SaaS di Live Search e Product Recommendations per [acquisire i dati del catalogo](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#configure-the-data) direttamente dal servizio SaaS del catalogo Adobe Commerce esistente, che a sua volta viene popolato dal backend PaaS.
 
 **Vantaggio**: consente di accedere più rapidamente a una vetrina headless e a funzioni di merchandising SaaS avanzate sfruttando un servizio SaaS Catalog esistente e operativo e la relativa pipeline di integrazione con il backend PaaS. Tuttavia, mantiene la dipendenza dal backend PaaS per l’origine dati del catalogo principale e non fornisce le funzionalità di aggregazione multiorigine intrinseche al nuovo Composable Catalog Data Model. Questa opzione rappresenta un valido passo avanti verso un&#39;architettura più completa e componibile.
 
@@ -202,28 +202,28 @@ Con le pipeline di dati di merchandising stabilite e le personalizzazioni estern
    * **Opzione 1**: dal servizio SaaS del catalogo esistente (tramite Mesh API) per informazioni sul prodotto e regole di merchandising.
    * **Opzione 2**: da CCDM per informazioni sul prodotto e regole di merchandising.
    * Da Mesh API per tutti i dati orchestrati dal backend legacy (istanza PaaS) o dai servizi App Builder personalizzati (ad esempio, visualizzazione dell’inventario in tempo reale, degli attributi di prodotto personalizzati e dei punti fedeltà).
-* **Migrazione dei contenuti (AEM Services)**: esegui la migrazione dei contenuti statici esistenti (ad esempio, pagine &quot;Chi siamo&quot;, post di blog e banner di marketing) in AEM Services, per alimentare Commerce Storefront. Sfrutta le funzionalità di authoring dei contenuti di AEM e assicurati che le risorse siano ottimizzate per Edge Delivery Services.
-* **Sviluppa componenti core dell&#39;interfaccia utente**: crea componenti critici dell&#39;interfaccia utente per le pagine dei dettagli del prodotto (PDP), le pagine di elenco dei prodotti (PLP) e le pagine di contenuto generale utilizzando i componenti di menu a discesa di Edge Delivery Services e i componenti React/Vue personalizzati. Assegna la priorità ai flussi commerce di base.
-* **Integrazione con carrello/pagamento esistente**: inizialmente, la vetrina Edge Delivery Services orchestrerà un passaggio al tuo Adobe Commerce PaaS esistente (o altra piattaforma di terze parti) per la gestione del carrello e il pagamento. Ciò comporta in genere:
-   * **Reindirizzamento**: reindirizzamento dell&#39;utente al carrello nativo della piattaforma legacy e agli URL di estrazione, passando gli identificatori di sessione e carrello necessari.
-   * **Interazione API diretta** (con orchestrazione App Builder): creazione di componenti dell&#39;interfaccia utente per il carrello e il pagamento personalizzati in Edge Delivery Services che interagiscono direttamente con le API del backend PaaS per il pagamento e il carrello. Questo spesso coinvolge App Builder as a Backend-for-Frontend (BFF) per orchestrare chiamate a più servizi back-end (ad esempio, carrello PaaS, gateway di pagamento e calcolatori di spedizione).
+* **Migrazione dei contenuti (Servizi AEM):** esegui la migrazione dei tuoi contenuto statici esistenti (ad esempio, pagine &quot;Chi siamo&quot;, post di blog e banner marketing) ai Servizi AEM, che alimentano la vetrina del Commercio. Sfrutta le funzionalità authoring dei contenuti di AEM e assicurati che risorse siano ottimizzate per Edge Delivery Services.
+* **Sviluppa componenti** di interfaccia di base: crea componenti di interfaccia critico utente per pagine dettagli prodotto (PDP), pagine di elenco prodotti (PLP) e pagine di contenuto generali utilizzando componenti drop-in di Edge Delivery Services e componenti React/Vue personalizzati. Dai priorità ai flussi di e-commerce di base.
+* **Integrazione con carrello / checkout** esistente: inizialmente, la vetrina di Edge Delivery Services orchestrerà un passaggio al tuo PaaS Adobe Systems Commerce esistente (o altra piattaforma di terze parti) per la gestione del carrello e il checkout. Ciò comporta in genere:
+   * **Reindirizzamento**: reindirizzamento del utente agli URL del nativo carrello e del checkout della piattaforma precedente, trasmettendo gli identificatori necessari della sessione e del carrello.
+   * **Interazione** API diretta (con orchestrazione di app Builder): creazione di componenti personalizzati per il carrello e il checkout interfaccia all&#39;interno di Edge Delivery Services che interagiscono direttamente con le API di carrello e checkout del backend PaaS. Ciò comporta spesso app Builder come back-end-for-frontend (BFF) per orchestrare le chiamate a più servizi back-end (ad esempio, carrello PaaS, gateway di pagamento e calcolatori di spedizione).
 
-**Vantaggio**: offre un&#39;esperienza di vetrina incredibilmente veloce, ottimizzata per SEO e altamente flessibile. Questa fase contribuisce direttamente a migliorare l’esperienza del cliente e getta le basi per future innovazioni front-end.
+**Vantaggio**: offre un&#39;esperienza di vetrina incredibilmente veloce, ottimizzata per SEO e altamente flessibile. Questa fase contribuisce direttamente a un esperienza del cliente superiore e pone le basi per la futura innovazione frontend.
 
 #### &#x200B;4. Migrazione dei dati (processo graduale)
 
-La migrazione dei dati è un processo critico e complesso che viene eseguito contemporaneamente al refactoring e allo sviluppo della vetrina, garantendo la coerenza e l&#39;integrità dei dati.
+La migrazione dei dati è un processo critico e sfaccettato che viene eseguito in concomitanza con il refactoring e lo sviluppo storefront, garantendo la coerenza e l&#39;integrità dei dati.
 
-* **Pulizia e ottimizzazione dei dati esistenti**: prima di qualsiasi migrazione su larga scala, eseguire operazioni complete di pulizia, deduplicazione e convalida dei dati nel database PaaS esistente. Questo passaggio proattivo è fondamentale per ridurre al minimo il trasferimento di problemi di dati legacy e garantire la qualità dei dati nel nuovo ambiente.
+* **Pulisci e ottimizza i dati** esistenti: prima di qualsiasi migrazione su larga scala, esegui pulizia completa dei dati, deduplicazione e convalida sul tuo database PaaS esistente. Questo passaggio proattivo è fondamentale per ridurre al minimo il trasferimento di problemi di dati legacy e garantire la qualità dei dati nel nuovo ambiente.
 
 **Migrazioni di dati in blocco**
 
-La migrazione dei dati in blocco comporta l’acquisizione di un’immagine completa dei dati dall’istanza Adobe Commerce PaaS, la trasformazione dell’intero set di dati e l’importazione in Adobe Commerce as a Cloud Service in un’unica operazione. Questo metodo viene in genere utilizzato per la popolazione iniziale di dati.
+La migrazione in blocco dei dati comporta l&#39;eliminazione completa dei dati dal istanza PaaS di Adobe Systems Commerce, la trasformazione dell&#39;intero set di dati e l&#39;importazione in Adobe Systems Commerce come Cloud Service contemporaneamente. Questo metodo viene in genere utilizzato per la popolazione iniziale di dati.
 
-* **Disponibilità degli strumenti**: a metà luglio 2025 saranno disponibili su richiesta [strumenti per la migrazione di dati in blocco](./bulk-data.md) dedicati per l&#39;utilizzo da parte del cliente per le migrazioni di dati in blocco di Commerce di prime parti. Se i clienti necessitano di assistenza per la migrazione in blocco dei dati in anticipo, Adobe può facilitare il trasferimento di dati per loro conto su richiesta.
+* **Disponibilità degli strumenti**: [Strumenti per la migrazione di dati in blocco](./bulk-data.md) dedicati per l&#39;utilizzo da parte del cliente per le migrazioni di dati in blocco di Commerce di prime parti saranno disponibili su richiesta nel primo trimestre del 2026. Se i clienti necessitano di assistenza per la migrazione in blocco dei dati in anticipo, Adobe può facilitare il trasferimento di dati per loro conto su richiesta.
 
-* **Processo**:
-   * **Esportazione completa dei dati**: estrae un set di dati completo dall&#39;istanza Adobe Commerce PaaS (ad esempio prodotti, categorie, account cliente, dati cronologici degli ordini, blocchi statici e contenuto della pagina).
+* **Procedimento**:
+   * **Esportazione** completa dei dati: Extract un set di dati completo dal tuo istanza PaaS di Adobe Systems Commerce (ad esempio, prodotti, categorie, account cliente, dati storici degli ordini, blocchi statici e contenuto di pagina).
    * **Trasformazione dei dati**: applica le trasformazioni necessarie per allineare i dati estratti ai requisiti dello schema dei nuovi componenti di Adobe Commerce as a Cloud Service, incluso il Composable Catalog Data Model (CCDM), se adottato, e a tutti gli altri servizi o database Adobe pertinenti. Ciò può richiedere script personalizzati o strumenti di mappatura dei dati specializzati.
    * **Importazione iniziale**: importa il set di dati completo trasformato nei rispettivi componenti di Adobe Commerce as a Cloud Service. Per i dati di prodotto e categoria, viene compilato il servizio catalogo scelto (CCDM o SaaS catalogo esistente). Per i dati relativi a clienti e ordini, questo popolerà il backend transazionale o i servizi associati.
    * **Convalida**: convalida rigorosamente i dati importati per garantire la completezza, l&#39;accuratezza e la coerenza in tutti i nuovi sistemi.
@@ -232,7 +232,7 @@ La migrazione dei dati in blocco comporta l’acquisizione di un’immagine comp
 
 Le migrazioni iterative dei dati si concentrano sulla sincronizzazione di modifiche e delta incrementali dall’istanza PaaS di origine ai nuovi componenti Cloud Service, per garantire l’aggiornamento dei dati prima e dopo il cutover.
 
-* **Disponibilità degli strumenti**: gli strumenti progettati specificamente per le migrazioni iterative dei dati saranno disponibili nella seconda metà del 2025.
+* **Disponibilità degli strumenti**: gli strumenti progettati specificamente per le migrazioni iterative dei dati saranno disponibili nel 2026.
 
 * **Processo**:
    * **Identificazione delta**: stabilire meccanismi per identificare le modifiche (creazioni, aggiornamenti ed eliminazioni) nei set di dati critici nell&#39;ambiente PaaS dall&#39;ultima sincronizzazione. Questo può comportare l’acquisizione di dati di modifica (CDC), confronti di marche temporali o trigger basati su eventi.
