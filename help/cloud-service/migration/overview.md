@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Per ulteriori informazioni sugli strumenti di migrazione, vedere Strumento [](./bulk-data.md)per la migrazione dei dati in blocco.
+>Per ulteriori informazioni sugli strumenti di migrazione, vedere Strumento [&#128279;](./bulk-data.md)per la migrazione dei dati in blocco.
 
 ## Comprendere il cambiamento: confronto tra PaaS e SaaS
 
@@ -72,12 +72,12 @@ La tabella seguente fornisce una panoramica del processo di migrazione per diver
 
 Come indicato nella tabella, le attenuazioni per ogni migrazione consisteranno in:
 
-* **Migrazione** dei dati: utilizzo degli strumenti di[ migrazione forniti ](./bulk-data.md)per eseguire la migrazione dei dati dai istanza esistenti a [!DNL Adobe Commerce as a Cloud Service].
+* **Migrazione** dei dati: utilizzo degli strumenti di[&#x200B; migrazione forniti &#x200B;](./bulk-data.md)per eseguire la migrazione dei dati dai istanza esistenti a [!DNL Adobe Commerce as a Cloud Service].
 * **Storefront**: gli storefront Commerce esistenti basati su Edge Delivery e gli storefront headless non richiedono alcuna mitigazione, ma gli storefront Luma richiedono la migrazione a Commerce Storefront basati su Edge Delivery. È possibile migrare le vetrine dei negozi PWA Studio a Commerce basate su Edge Delivery o mantenerle nello stato corrente. Adobe fornirà acceleratori per assistere la migrazione della vetrina.
 * **[Rete API](https://developer.adobe.com/graphql-mesh-gateway)**—Crea una nuova rete o modifica quella esistente. Per facilitare questo processo, Adobe fornirà delle maglie preconfigurate.
 * **Integrazioni** - Tutte le integrazioni devono utilizzare il [kit di avvio dell&#39;integrazione](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) o l&#39;[[!DNL Adobe Commerce as a Cloud Service] API REST](https://developer.adobe.com/commerce/webapi/reference/rest/saas/).
 * **Personalizzazioni** - Tutte le personalizzazioni devono essere spostate in App Builder e API Mesh.
-* **** Gestione Assets: tutta la gestione risorse richiede la migrazione. Se si sta già utilizzando [!DNL AEM Assets], non è necessario eseguire la migrazione.
+* **&#x200B;**&#x200B;Gestione Assets: tutta la gestione risorse richiede la migrazione. Se si sta già utilizzando [!DNL AEM Assets], non è necessario eseguire la migrazione.
 * **Estensioni**: tutte le estensioni all&#39;interno del processo devono essere ricreate come estensioni out-of-process. Entro la fine del 2025, Adobe Systems fornirà accesso alle nostre estensioni più popolari per ridurre al minimo i tempi di versione.
 
 ## Fasi della migrazione
