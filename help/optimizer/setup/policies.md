@@ -2,11 +2,11 @@
 title: Criteri
 description: Scopri come creare e gestire i criteri in [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
-source-git-commit: 845d93e367c8e2495943afe8c7d5d0a4bde990c2
+source-git-commit: 4f238b002d1481126d4fec0a249b7f9ff437248e
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ In questa sezione viene creato un nuovo criterio. Il criterio può essere **STAT
    1. **Attributo** - Immetti un attributo dal catalogo. Ad esempio, &quot;part_category&quot;. Questo nome deve corrispondere esattamente al nome dell’attributo nel catalogo.
    1. **Operatore** - Scegliere l&#39;operatore. Ad esempio, **IN**. &#x200B;
    1. **Valore Source** - Selezionare **STATICO**. &#x200B;
-   1. **Valore** - Immettere un valore dalla definizione di attributo specificata in precedenza. Ad esempio, immettere &quot;freni&quot; per creare un filtro per le parti del freno. &#x200B;Il valore deve corrispondere esattamente al nome dell’attributo.
+   1. **Valore** - Immettere un valore dalla definizione di attributo specificata in precedenza. Ad esempio, immettere &quot;freni&quot; per creare un filtro per le parti del freno.
    1. Per salvare il valore, premere **Invio**.
 
       Se il criterio è progettato per filtrare in base a più valori, immettere ogni valore separatamente.
