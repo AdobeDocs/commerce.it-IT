@@ -2,11 +2,11 @@
 title: Configurare la vetrina
 description: Scopri come configurare la vetrina  [!DNL Adobe Commerce Optimizer] .
 role: Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: e46c55cba21501c6fa12db6c130493b99de0e4da
+source-git-commit: 0cd9749574460374a8fe875f1eff54f2a4a8d614
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1397'
 ht-degree: 0%
 
 ---
@@ -218,26 +218,28 @@ Prima di procedere con i passaggi successivi, assicurati che la vetrina funzioni
 
 Se i problemi persistono:
 
-* Consulta la [documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it)
+* Consulta la [documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
 * Consulta la [Guida per gli sviluppatori di Adobe Commerce Optimizer](https://developer.adobe.com/commerce/services/optimizer/)
-* Visita le [risorse di supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/overview)
+* Visita le [risorse di supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
 
 ## Passaggi successivi
 
 Dopo aver configurato e verificato la vetrina, puoi:
 
-1. **[Installa Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=it#install-and-configure-sidekick)** - Estensione browser per la modifica, la visualizzazione in anteprima e la pubblicazione di contenuti direttamente dal sito Web
+1. **[Installa l&#39;estensione del browser Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)** per modificare, visualizzare in anteprima e pubblicare contenuti direttamente dal sito Web.
 
-2. **[Configura un ambiente di sviluppo locale](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=it#set-up-local-environment)** - Crea un ambiente locale per personalizzare il codice e il contenuto della vetrina
+2. **[Imposta un ambiente di sviluppo locale](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)**—Crea un ambiente locale per personalizzare il codice e il contenuto della vetrina.
 
 ### Scopri ed esplora
 
-* **[Completa il caso d&#39;uso end-to-end](./use-case/admin-use-case.md)**. Ulteriori informazioni sulla configurazione della vetrina e sulla gestione del catalogo tramite [!DNL Adobe Commerce Optimizer]
+* **[Completa il caso d&#39;uso end-to-end](./use-case/admin-use-case.md)**. Ulteriori informazioni sulla configurazione della vetrina e sulla gestione del catalogo tramite [!DNL Adobe Commerce Optimizer].
 
-* **[Esplora la personalizzazione della vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=it)** - Scopri le opzioni avanzate di configurazione e configurazione
+* **[Esplora la personalizzazione della vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/setup/)**: scopri le opzioni di configurazione e configurazione avanzate.
 
-* **[Personalizza l&#39;esperienza della vetrina con i menu a discesa di Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=it)**-Aggiungi componenti predefiniti per migliorare l&#39;esperienza della vetrina
+* **[Usa i menu a discesa di Commerce per personalizzare l&#39;esperienza della vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)**-Aggiungi componenti predefiniti per migliorare la tua esperienza della vetrina.
+
+* **Esegui migrazione al servizio di configurazione Storefront**. Dopo aver creato la vetrina iniziale, puoi eseguire la migrazione della configurazione per utilizzare il servizio di configurazione che supporta casi di utilizzo avanzati, come la configurazione e le sovrapposizioni senza interruzioni. Per informazioni dettagliate, vedere la documentazione del [Servizio di configurazione](https://www.aem.live/docs/config-service-setup) in Adobe Experience Manager.
 
 >[!MORELIKETHIS]
 >
-> Per ulteriori informazioni sull&#39;aggiornamento del contenuto del sito e sull&#39;integrazione con i componenti front-end e i dati back-end di Commerce, consulta la [documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it).
+> Per ulteriori informazioni sull&#39;aggiornamento del contenuto del sito e sull&#39;integrazione con i componenti front-end e i dati back-end di Commerce, consulta la [documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/).
