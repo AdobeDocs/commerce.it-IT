@@ -5,7 +5,7 @@ feature: Storefront
 role: Developer
 level: Beginner
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 source-git-commit: 0cd9749574460374a8fe875f1eff54f2a4a8d614
 workflow-type: tm+mt
 source-wordcount: '250'
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Per configurare [!DNL Adobe Commerce Storefront] con tecnologia [!DNL Edge Delivery Services] per [!DNL Adobe Commerce as a Cloud Service] (SaaS), completare la procedura seguente.
 
-Per informazioni dettagliate e personalizzabili, consulta la [documentazione della vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
+Per informazioni dettagliate e personalizzabili, consulta la [documentazione della vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=it).
 
 1. Aprire lo strumento [creatore del sito](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator).
 
@@ -47,5 +47,5 @@ Per ulteriori informazioni, consulta i seguenti articoli:
 * [Aggiornamento del contenuto della vetrina](./use-cases.md#update-storefront-content): consente di gestire e visualizzare contenuto e dati nella vetrina.
 * [Sperimentazione contestuale](./use-cases.md#contextual-experimentation): crea e gestisci esperimenti nella vetrina.
 * [Genera varianti](./use-cases.md#generate-variations): utilizza IA generativa per automatizzare la generazione di contenuti di alta qualità.
-* [Documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)—Ottieni informazioni dettagliate sull&#39;aggiornamento del contenuto del sito e sull&#39;integrazione con i componenti front-end e i dati back-end di Commerce.
+* [Documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it)—Ottieni informazioni dettagliate sull&#39;aggiornamento del contenuto del sito e sull&#39;integrazione con i componenti front-end e i dati back-end di Commerce.
 * [Servizio di configurazione](https://www.aem.live/docs/config-service-setup): scopri come eseguire la migrazione della configurazione della vetrina da `config.json` per l&#39;utilizzo del servizio di configurazione, che supporta casi di utilizzo avanzati quali la configurazione e le sovrapposizioni senza interruzioni.
