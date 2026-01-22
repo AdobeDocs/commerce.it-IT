@@ -2,11 +2,11 @@
 title: Cos’è Adobe Commerce Optimizer?
 description: Scopri  [!DNL Adobe Commerce Optimizer]  e le sue funzionalità chiave.
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 8cf3e66641cf4bbc6db1da1dec14f7aaa291d6fe
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Con [!DNL Adobe Commerce Optimizer] è possibile:
 
 Guarda il seguente video per una panoramica di alto livello di [!DNL Adobe Commerce Optimizer]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450471?captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Chi trae il massimo vantaggio da [!DNL Adobe Commerce Optimizer]?
 
@@ -84,6 +84,10 @@ Le funzionalità principali includono:
 - **Metriche prima e dopo**: fornisce informazioni in tempo reale sulle prestazioni delle iniziative commerce. Puoi visualizzare prima e dopo i risultati di KPI specifici, valutare l’impatto delle modifiche e ottimizzarli per ottenere risultati migliori. Puoi esportare i risultati in un PDF.
 - **Vetrina Commerce con tecnologia Edge Delivery** - Con la distribuzione Edge, puoi avviare rapidamente il tuo sito utilizzando componenti precompilati della vetrina con funzionalità di e-commerce integrate, tra cui pagine di elenchi di prodotti, pagine di dettagli dei prodotti, carrello e pagamento.
 - **Carrello di terze parti e pagamento** - Utilizza API mesh e App builder per l&#39;integrazione con i sistemi di carrello e pagamento di terze parti.
+
+>[!NOTE]
+>
+>Per informazioni sui limiti di sistema e sulle licenze per le funzionalità [!DNL Adobe Commerce Optimizer], vedere l&#39;argomento [Limiti e limiti](boundaries-limits.md).
 
 ## Architettura
 
