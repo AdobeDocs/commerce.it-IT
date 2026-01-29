@@ -319,7 +319,7 @@ In questo scenario, esiste un problema noto in cui l’abilitazione del widget P
 
 **Opzione 3: sostituire GTM con Adobe Analytics**
 
-- Valuta se eseguire la migrazione a [Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html), se applicabile.
+- Valuta se eseguire la migrazione a [Adobe Analytics](https://business.adobe.com/it/products/adobe-analytics.html), se applicabile.
 - Contatta il team di progettazione clienti per assistenza.
 
 **Chi contattare**: invia un ticket di supporto per aggiornamenti sulla compatibilità GTM o assistenza tecnica clienti.
@@ -444,7 +444,7 @@ Contatta la risorsa appropriata in base alle tue esigenze specifiche.
 - Implementazioni headless o PWA
 - Tracciamento degli eventi personalizzati
 
-Per contattare il supporto Adobe, consulta la [Guida utente del Centro assistenza](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Per contattare il supporto Adobe, consulta la [Guida utente del Centro assistenza](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 ## Domande frequenti
 
