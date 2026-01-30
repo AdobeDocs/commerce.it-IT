@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0aa2a1cac270fd1330666d9a23a6cc201e781427
+source-git-commit: e38c49eb7d6a498238fa1100c9dfa5e57319566a
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '392'
 ht-degree: 3%
 
 ---
@@ -10,6 +10,50 @@ ht-degree: 3%
 ## Novità
 
 Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo elenco sono esclusi tutti gli aggiornamenti minori, ad esempio la modifica della copia.
+
+### 30 gennaio 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Sono state aggiunte ulteriori informazioni alla <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/feature-comparison">pagina di confronto delle funzionalità</a>, incluse nuove infrastrutture, funzionalità operative e informazioni sul marketplace.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/95bb6205404fa4206a618a3e4a340f1d166f0303">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 29 gennaio 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Aggiunta <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/migrate-to-plp">Guida alla migrazione da Search Adapter a PLP Widget</a> con scenari di migrazione dettagliati, procedure dettagliate, indicazioni basate sul ruolo e risoluzione dei problemi per i clienti che passano da Search Adapter obsoleto.</p>
+</td>
+      <td>
+        Feedback, aggiornamento principale, nuovo argomento
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6629007da035fe0e3de6c69745f4c34011ec5d98">commit</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 22 gennaio 2026
 
@@ -23,7 +67,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>Sono state aggiornate le guide all'installazione di Storefront per <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/storefront">Adobe Commerce Optimizer</a> e <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/storefront">Adobe Commerce as a Cloud Service</a> per includere informazioni sulla migrazione della configurazione di Commerce storefront affinché Edge Delivery Services utilizzi il servizio di configurazione anziché il file <code class="language-plaintext highlighter-rouge">config.json</code> nell'archivio boilerplate di storefront. Adobe consiglia di utilizzare il servizio di configurazione per gestire la configurazione delle vetrine distribuite su Edge Delivery Services.</p>
+      <td><p>Sono state aggiornate le guide all'installazione di Storefront per <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront">Adobe Commerce Optimizer</a> e <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">Adobe Commerce as a Cloud Service</a> per includere informazioni sulla migrazione della configurazione di Commerce storefront affinché Edge Delivery Services utilizzi il servizio di configurazione anziché il file <code class="language-plaintext highlighter-rouge">config.json</code> nell'archivio boilerplate di storefront. Adobe consiglia di utilizzare il servizio di configurazione per gestire la configurazione delle vetrine distribuite su Edge Delivery Services.</p>
 </td>
       <td>
         Feedback tecnico
@@ -89,7 +133,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>Sono state aggiornate le <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/release-notes#latest">note sulla versione</a> di Adobe Commerce as a Cloud Service.</p>
+      <td><p>Sono state aggiornate le <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest">note sulla versione</a> di Adobe Commerce as a Cloud Service.</p>
 </td>
       <td>
         Aggiornamento principale
@@ -111,7 +155,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stato aggiornato l'argomento <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/boundaries-limits">Limiti e limiti</a> per Adobe Commerce Optimizer per descrivere i limiti di licenza e i limiti di sistema, aggiungere descrizioni dei limiti e includere indicazioni per la pianificazione della capacità e la prevenzione dei problemi di prestazioni.</p>
+      <td><p>È stato aggiornato l'argomento <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits">Limiti e limiti</a> per Adobe Commerce Optimizer per descrivere i limiti di licenza e i limiti di sistema, aggiungere descrizioni dei limiti e includere indicazioni per la pianificazione della capacità e la prevenzione dei problemi di prestazioni.</p>
 </td>
       <td>
         Feedback tecnico
@@ -133,7 +177,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>Sono state aggiunte note sulla versione per <a href="https://experienceleague.adobe.com/it/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export versione 103.4.16 e 103.4.17</a> e <a href="https://experienceleague.adobe.com/it/docs/commerce/price-indexer/catalog-adapter/release-notes">Catalog Adapter versione 1.10.0</a>.</p>
+      <td><p>Sono state aggiunte note sulla versione per <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export versione 103.4.16 e 103.4.17</a> e <a href="https://experienceleague.adobe.com/en/docs/commerce/price-indexer/catalog-adapter/release-notes">Catalog Adapter versione 1.10.0</a>.</p>
 </td>
       <td>
         Tecnico
@@ -155,7 +199,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stato aggiornato l'argomento <a href="https://experienceleague.adobe.com/it/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">configurazione di AEM</a> nella documentazione sull'integrazione di AEM Assets.</p>
+      <td><p>È stato aggiornato l'argomento <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">configurazione di AEM</a> nella documentazione sull'integrazione di AEM Assets.</p>
 </td>
       <td>
         Aggiornamento principale
@@ -177,7 +221,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>Sono stati aggiunti nuovi argomenti:<br />- <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/manage-results/opportunities">Opportunità</a> per documentare i consigli sull'ottimizzazione del sito basata sull'intelligenza artificiale tramite l'integrazione di Adobe Sites Optimizer, inclusi i flussi di lavoro di rilevamento automatico e correzione automatica per migliorare SEO (Search Engine Optimization), metadati e qualità dei dati dei prodotti.<br />- <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/setup/catalog-layer">Livelli catalogo</a> per spiegare come modificare i dati dei prodotti senza modificare i dati di origine, incluse la gestione della priorità dei livelli e l'integrazione con le funzioni di correzione automatica di Sites Optimizer.</p>
+      <td><p>Sono stati aggiunti nuovi argomenti:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/opportunities">Opportunità</a> per documentare i consigli sull'ottimizzazione del sito basata sull'intelligenza artificiale tramite l'integrazione di Adobe Sites Optimizer, inclusi i flussi di lavoro di rilevamento automatico e correzione automatica per migliorare SEO (Search Engine Optimization), metadati e qualità dei dati dei prodotti.<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer">Livelli catalogo</a> per spiegare come modificare i dati dei prodotti senza modificare i dati di origine, incluse la gestione della priorità dei livelli e l'integrazione con le funzioni di correzione automatica di Sites Optimizer.</p>
 </td>
       <td>
         Aggiornamento principale, nuovo argomento
@@ -199,7 +243,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È ora supportato l'aggiornamento della funzionalità Consigli nella documentazione di Commerce Optimizer come <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations">riquadro di anteprima</a>.</p>
+      <td><p>È ora supportato l'aggiornamento della funzionalità Consigli nella documentazione di Commerce Optimizer come <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations">riquadro di anteprima</a>.</p>
 </td>
       <td>
         Tecnico
