@@ -3,9 +3,9 @@ title: Test e convalida
 description: I test e la convalida garantiscono che  [!DNL Payment Services]  funzioni funzionino come previsto e forniscono le migliori opzioni di pagamento per i clienti
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: b75cad4fd71b5ab9c0199ca47800c36cbd1ae76c
+source-git-commit: 91a4b8fa7228fb91c8ee0bf0a1623d104f061894
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Prima di esporre [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magen
 Il test di [!DNL Payment Services] in un ambiente sandbox è un passaggio importante di convalida, anche se si tratta di un ambiente simulato connesso solo alla sandbox PayPal, non a banche e commercianti reali.
 
 1. Completa l&#39;estrazione dal tuo Negozio con [Campi carta di credito](payments-options.md#credit-card-fields) o con uno dei [pulsanti di pagamento PayPal](payments-options.md#paypal-smart-buttons). Per ulteriori informazioni sull&#39;utilizzo di carte di credito false per i test, vedere [Verifica delle credenziali](#testing-credentials).
-1. Acquisisci (quando l&#39;azione di pagamento è [impostata su `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [rimborsi](refunds.md) o [annulli](voids.md) l&#39;ordine appena completato. Puoi anche semplicemente [creare una fattura](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} per un ordine, se l&#39;azione di pagamento è impostata su `Authorize` invece di `Authorize and Capture`.
+1. Acquisisci (quando l&#39;azione di pagamento è [impostata su `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [rimborsi](refunds.md) o [annulli](voids.md) l&#39;ordine appena completato. Puoi anche semplicemente [creare una fattura](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} per un ordine, se l&#39;azione di pagamento è impostata su `Authorize` invece di `Authorize and Capture`.
 1. Entro 24-48 ore, visualizzare la transazione e altre informazioni nel [report Pagamenti](payouts.md).
 1. Vedi i dettagli dell&#39;ordine nel [report sullo stato del pagamento dell&#39;ordine](order-payment-status.md).
 
@@ -49,6 +49,17 @@ Per esporre l’ambiente locale:
 
 Se il tempo di risposta dell&#39;endpoint è inferiore a 5 secondi, PayPal visualizza un messaggio di errore nel pop-up.
 
+#### Sviluppo locale Apple Pay
+
+Apple Pay richiede una configurazione aggiuntiva per lo sviluppo locale. Apple Pay utilizza la registrazione del dominio per verificare che il tuo sito sia autorizzato ad accettare pagamenti Apple Pay. Apple deve quindi essere in grado di raggiungere il dominio per convalidare un file di verifica del dominio in `/.well-known/apple-developer-merchantid-domain-association`.
+
+Per lo sviluppo locale, l’ambiente deve soddisfare i seguenti requisiti:
+
+* **Accessibile al pubblico**, Apple deve essere in grado di raggiungere il dominio da Internet.
+* **Protocollo HTTPS**, Apple Pay funziona solo su connessioni sicure.
+
+L&#39;utilizzo di un servizio di tunneling come [ngrok](https://ngrok.com/) soddisfa entrambi i requisiti. Dopo aver configurato ngrok come descritto in precedenza, [registra il dominio sandbox](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains) con PayPal utilizzando l&#39;URL **ngrok**.
+
 ### Verifica delle credenziali
 
 Durante il test e la convalida della sandbox è necessario utilizzare numeri di carta di credito falsi, in modo da non creare spese effettive per un account di carta di credito esistente.
@@ -76,5 +87,7 @@ Si consiglia vivamente di testare [!DNL Payment Services] in produzione, con car
 Completa i test di produzione con carte di credito reali e account PayPal, testando l&#39;intero ciclo di vita di un pagamento, inclusa l&#39;acquisizione e il rimborso. Il completamento dell&#39;intero flusso di pagamento e di pagamento durante il test offre un&#39;immagine chiara del funzionamento della funzionalità [!DNL Payment Services] quando gli acquirenti in tempo reale la utilizzano.
 
 È inoltre necessario verificare che le informazioni visualizzate nei rendiconti bancari per i metodi di pagamento utilizzati nei test di produzione siano corrette e previste (inclusa la descrizione della propria attività).
+
+### Test di Apple Pay in produzione
 
 Per testare Apple Pay in modalità di produzione, devi [registrare i domini di produzione](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain).
