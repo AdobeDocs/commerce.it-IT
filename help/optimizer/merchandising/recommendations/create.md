@@ -1,11 +1,11 @@
 ---
 title: Creare e gestire i consigli
 description: Scopri come creare e gestire i consigli.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: ca0e786da6d23364d27d69ccf0fc5ded1f39f46e
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dat
 
    - **Attiva** per abilitare l&#39;unità di consigli nella vetrina.
 
-1. Quando richiesto, copia l’ID del consiglio. Utilizza questo ID per identificare quale unità di consigli viene utilizzata nel menu a discesa dei consigli nella vetrina Edge Delivery Services.
+   Il consiglio viene visualizzato nell’area di lavoro Consigli. Per usare il consiglio nella vetrina, devi trovare il [ID consiglio](#get-recommendation-id).
 
 >[!NOTE]
 >
@@ -50,6 +50,22 @@ Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dat
 >[!IMPORTANT]
 >
 >Alcuni browser potrebbero bloccare gli script critici che impediscono a Recommendations di funzionare come previsto.
+
+## Ottieni ID consiglio
+
+Dopo aver creato un consiglio, devi recuperarne l’ID per implementare l’unità di consigli nella vetrina.
+
+1. Nella pagina **Consigli**, seleziona il consiglio.
+
+1. Fai clic sull&#39;icona delle informazioni (![icona Info](../../assets/info-icon.png)) accanto al nome del consiglio.
+
+   Viene visualizzata la pagina **Dettagli unità consigli**.
+
+   ![Ottieni ID consiglio](../../assets/get-rec-id.png)
+
+1. Nella sezione **ID consiglio**, copia l&#39;ID.
+
+1. Usa questo ID per configurare il [menu a discesa dei consigli](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) nella vetrina di Edge Delivery Services.
 
 ## Gestire i consigli esistenti
 
