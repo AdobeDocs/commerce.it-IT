@@ -3,16 +3,16 @@ title: Corrispondenza automatica personalizzata
 description: Scopri come la corrispondenza automatica personalizzata è particolarmente utile per i commercianti con logica di corrispondenza complessa o che si affidano a un sistema di terze parti che non può popolare i metadati in AEM Assets.
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: ee1dd902a883e5653a9fb8764fac708975c37091
+source-git-commit: dfc4aaf1f780eb4a57aa4b624325fa24e571017d
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 1%
+source-wordcount: '432'
+ht-degree: 0%
 
 ---
 
 # Corrispondenza automatica personalizzata
 
-Se la strategia di corrispondenza automatica predefinita (**Corrispondenza automatica OOTB**) non è allineata ai requisiti aziendali specifici, selezionare l&#39;opzione di corrispondenza personalizzata. Questa opzione supporta l&#39;utilizzo di [Adobe Developer App Builder](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) per sviluppare un&#39;applicazione di corrispondenza personalizzata che gestisca logiche di corrispondenza complesse o risorse provenienti da un sistema di terze parti che non possono popolare i metadati in AEM Assets.
+Se la strategia di corrispondenza automatica predefinita (**Corrispondenza automatica OOTB**) non è allineata ai requisiti aziendali specifici, selezionare l&#39;opzione di corrispondenza personalizzata. Questa opzione supporta l&#39;utilizzo di [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) per sviluppare un&#39;applicazione di corrispondenza personalizzata che gestisca logiche di corrispondenza complesse o risorse provenienti da un sistema di terze parti che non possono popolare i metadati in AEM Assets.
 
 ## Configurare la corrispondenza automatica personalizzata
 
@@ -22,9 +22,99 @@ Se la strategia di corrispondenza automatica predefinita (**Corrispondenza autom
 
 1. Quando selezioni questa regola corrispondente, l&#39;amministratore visualizza campi aggiuntivi per configurare gli **endpoint** e i **parametri di autenticazione** necessari per la logica di corrispondenza personalizzata.
 
+### workspace.json
+
+Il campo **[!UICONTROL Adobe I/O Workspace Configuration]** consente di configurare in modo semplificato la corrispondenza personalizzata importando il file di configurazione di App Builder `workspace.json`.
+
+È possibile scaricare il file `workspace.json` da [Adobe Developer Console](https://developer.adobe.com/console). Il file contiene tutte le credenziali e i dettagli di configurazione per l’area di lavoro App Builder.
+
++++Esempio `workspace.json`
+
+```json
+{
+  "project": {
+    "id": "project_id",
+    "name": "project_name",
+    "title": "title_name",
+    "org": {
+      "id": "id",
+      "name": "Organization_name",
+      "ims_org_id": "ims_id"
+    },
+    "workspace": {
+      "id": "workspace_id",
+      "name": "workspace_name_id",
+      "title": "workspace_title_id",
+      "action_url": "https://action_url.net",
+      "app_url": "https://app_url.net",
+      "details": {
+        "credentials": [
+          {
+            "id": "credential_id",
+            "name": "credential_name_id",
+            "integration_type": "oauth_server_to_server",
+            "oauth_server_to_server": {
+              "client_id": "client_id",
+              "client_secrets": ["secret"],
+              "technical_account_email": "xx@technical_account_email.com",
+              "technical_account_id": "technical_account_id",
+              "scopes": [
+                "AdobeID",
+                "openid",
+                "read_organizations",
+                "additional_info.projectedProductContext",
+                "additional_info.roles",
+                "adobeio_api",
+                "read_client_secret",
+                "manage_client_secrets"
+              ]
+            }
+          }
+        ],
+        "services": [
+          {
+            "code": "AdobeIOManagementAPISDK",
+            "name": "I/O Management API"
+          }
+        ],
+        "runtime": {
+          "namespaces": [
+            {
+              "name": "namespace_name",
+              "auth": "example_auth"
+            }
+          ]
+        },
+        "events": {
+          "registrations": []
+        },
+        "mesh": {}
+      }
+    }
+  }
+}
+```
+
++++
+
+1. Trascina il file `workspace.json` dal progetto App Builder nel campo **[!UICONTROL Adobe I/O Workspace Configuration]**. In alternativa, è possibile fare clic su per sfogliare e selezionare il file.
+
+![Configurazione Workspace](../assets/workspace-configuration.png){width="600" zoomable="yes"}
+
+1. Il sistema automaticamente:
+
+   * Convalida la struttura JSON
+   * Estrae e popola le credenziali OAuth
+   * Recupera le azioni di runtime disponibili per l’area di lavoro
+   * Popola le opzioni a discesa per i campi **[!UICONTROL Product to Asset URL]** e **[!UICONTROL Asset to Product URL]**
+
+1. Seleziona le azioni di runtime appropriate dai menu a discesa per ciascun flusso.
+
+1. Fare clic su **[!UICONTROL Save Config]**.
+
 ## Endpoint API di corrispondenza personalizzati
 
-Quando si crea un&#39;applicazione di corrispondenza personalizzata utilizzando [App Builder](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l&#39;applicazione deve esporre i seguenti endpoint:
+Quando si crea un&#39;applicazione di corrispondenza personalizzata utilizzando [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l&#39;applicazione deve esporre i seguenti endpoint:
 
 * Endpoint **da risorsa App Builder all&#39;URL prodotto**
 * Endpoint **da prodotto App Builder a URL risorsa**
@@ -176,6 +266,6 @@ Il parametro `asset_matches` contiene i seguenti attributi:
 | Attributo | Tipo di dati | Descrizione |
 | --- | --- | --- |
 | `asset_id` | Stringa | Rappresenta l’ID risorsa aggiornato. |
-| `asset_roles` | Stringa | Restituisce tutti i ruoli di risorse disponibili. Utilizza i [ruoli di risorse Commerce](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) supportati come `thumbnail`, `image`, `small_image` e `swatch_image`. |
+| `asset_roles` | Stringa | Restituisce tutti i ruoli di risorse disponibili. Utilizza i [ruoli di risorse Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) supportati come `thumbnail`, `image`, `small_image` e `swatch_image`. |
 | `asset_format` | Stringa | Fornisce i formati disponibili per la risorsa. I valori possibili sono `image` e `video`. |
 | `asset_position` | Stringa | Mostra la posizione della risorsa. |
