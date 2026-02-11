@@ -44,7 +44,7 @@ Rivedi i limiti e le limitazioni seguenti per garantire che [!DNL Product Recomm
 
 ## Limitazioni per i cookie
 
-- Quando la modalità di restrizione dei cookie [1} è attivata e gli acquirenti non hanno accettato i cookie, alcuni tipi di consigli che si basano su dati comportamentali potrebbero non essere visualizzati o mostrare risultati limitati.](setting-cookie.md)
+- Quando la modalità di restrizione dei cookie [1&rbrace; è attivata e gli acquirenti non hanno accettato i cookie, alcuni tipi di consigli che si basano su dati comportamentali potrebbero non essere visualizzati o mostrare risultati limitati.](setting-cookie.md)
 - I tipi di consigli che non si basano su dati comportamentali (ad esempio, _Più visualizzati_, _Somiglianza visiva_) continuano a funzionare quando le restrizioni dei cookie sono abilitate.
 - Quando le restrizioni sui cookie sono abilitate, la funzione Consigli di prodotto non raccoglie né memorizza i dati comportamentali nei cookie o nell’archiviazione locale fino a quando l’acquirente non acconsente.
 
