@@ -3,9 +3,9 @@ title: Opzioni di pagamento
 description: Imposta le opzioni di pagamento per personalizzare i metodi disponibili per i clienti del tuo Negozio.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 999407f00b118441abe39209a15f587ec73fa75d
+source-git-commit: 007674c3b81b95af4c0ec2688a4a98e19ec04d08
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: '1470'
 ht-degree: 0%
 
 ---
@@ -135,6 +135,16 @@ Scopri come disabilitare o abilitare i messaggi [!DNL Pay Later] aggiornando la 
 
 ![Messaggistica posticipata](assets/pay-later-messaging.png){width="500" zoomable="yes"}
 
+### Callback di spedizione lato server per i pulsanti di pagamento PayPal
+
+I metodi di pagamento PayPal, PayLater e Venmo utilizzano un [callback di spedizione lato server](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/) che consente a PayPal di comunicare direttamente con l&#39;istanza Commerce per recuperare le opzioni di spedizione e calcolare i totali in tempo reale.
+
+Questo approccio lato server consente a [!DNL Payment Services] di saltare la finestra a comparsa di conferma dell&#39;ordine, fornendo un&#39;esperienza di acquisto più rapida e semplificata. Poiché le spese e le tasse di spedizione vengono calcolate dinamicamente tramite callback, l&#39;acquirente visualizza i totali accurati direttamente nella pagina di revisione di PayPal o Venmo.
+
+>[!NOTE]
+>
+>L’endpoint di callback deve essere disponibile al pubblico e rispondere entro 5 secondi. Se il tempo di risposta supera questo limite, PayPal visualizza un messaggio di errore nel pop-up. Per informazioni sul test locale di questi metodi di pagamento, vedere [Test sugli ambienti di sviluppo locali](test-validate.md#test-on-local-development-environments).
+
 ### Utilizza solo i pulsanti di pagamento PayPal
 
 Per attivare rapidamente la modalità di produzione del tuo Negozio, puoi configurare _solo_ pulsanti di pagamento PayPal (Venmo, PayPal e così via).- invece di utilizzare anche l&#39;opzione di pagamento con carta di credito PayPal.
@@ -156,11 +166,11 @@ Per **acquisire i pagamenti con il provider di carte di credito esistente _e_ i 
 1. Assicurati che l&#39;archivio sia [in modalità di produzione](configure-admin.md#enable-payment-services).
 1. [Configura i pulsanti di pagamento PayPal desiderati](configure-admin.md#payment-buttons).
 1. Disattiva _l&#39;opzione_ nella sezione **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
-1. Disattiva _l&#39;opzione_ nella sezione **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** e utilizza l&#39;account _[!UICONTROL Credit card fields]_&#x200B;provider di carte di credito esistente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=it#payments)
+1. Disattiva _l&#39;opzione_ nella sezione **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** e utilizza l&#39;account _[!UICONTROL Credit card fields]_provider di carte di credito esistente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)
 
 ## Opzioni di pagamento
 
-Con [!DNL Payment Services] puoi configurare l&#39;esperienza di pagamento per Adobe Commerce in base alle preferenze e ai comportamenti degli acquirenti. Caratteristiche quali il vaulting con carta di credito [1&rbrace; e lo svuotamento automatico dell&#39;ordine garantiscono ai clienti una transazione semplice e senza problemi.](vaulting.md)
+Con [!DNL Payment Services] puoi configurare l&#39;esperienza di pagamento per Adobe Commerce in base alle preferenze e ai comportamenti degli acquirenti. Caratteristiche quali il vaulting con carta di credito [1} e lo svuotamento automatico dell&#39;ordine garantiscono ai clienti una transazione semplice e senza problemi.](vaulting.md)
 
 Con Adobe Commerce e Magento Open Source [!DNL Payment Services], sono disponibili più esperienze di pagamento. Esistono comportamenti diversi per ogni metodo di pagamento a seconda della posizione in cui sei nel processo di pagamento:
 
