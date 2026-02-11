@@ -48,7 +48,7 @@ Nel campo categoria vengono visualizzate le categorie che appartengono alla visu
 
 >[!NOTE]
 >
->Per i commercianti B2B, il filtro Categoria aderisce a qualsiasi [categoria di prodotto specifica per il cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) configurata.
+>Per i commercianti B2B, il filtro Categoria aderisce a qualsiasi [categoria di prodotto specifica per il cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=it) configurata.
 
 Adobe Commerce consiglia di utilizzare la seguente configurazione del filtro categorie quando distribuisci i consigli ai tipi di pagina:
 
@@ -78,11 +78,11 @@ Filtra i prodotti in base alla visibilità, ad esempio: _Catalogo_, _Ricerca_ o 
 
 ### Prezzo
 
-Un filtro basato sul prezzo del prodotto utilizza il prezzo finale per eseguire il confronto. Il prezzo finale include eventuali sconti disponibili per gli acquirenti anonimi. Per i commercianti B2B, il prezzo visualizzato riflette i [prezzi di gruppo specifici per il cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) che hai configurato.
+Un filtro basato sul prezzo del prodotto utilizza il prezzo finale per eseguire il confronto. Il prezzo finale include eventuali sconti disponibili per gli acquirenti anonimi. Per i commercianti B2B, il prezzo visualizzato riflette i [prezzi di gruppo specifici per il cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=it) che hai configurato.
 
 ### Stato del magazzino
 
 I seguenti filtri di esclusione possono essere utilizzati per filtrare i prodotti in base allo stato delle scorte:
 
 - Esaurito - (solo esclusione) esclude i prodotti esauriti.
-- Magazzino basso: (solo esclusione) esclude i prodotti con scorte limitate. Lo stato scorte basse si basa sul valore _Solo X Soglia sinistra_ nella [Configurazione inventario](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).
+- Magazzino basso: (solo esclusione) esclude i prodotti con scorte limitate. Lo stato scorte basse si basa sul valore _Solo X Soglia sinistra_ nella [Configurazione inventario](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html?lang=it).
