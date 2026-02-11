@@ -2,9 +2,9 @@
 title: Filtra prodotti
 description: Definisci le condizioni che includono o escludono l’utilizzo dei prodotti come consigli.
 exl-id: 140bf047-4f6a-48da-b536-d96e78ae3d17
-source-git-commit: 3821893c3df01e2e36ab0142616e52c1c92b4d51
+source-git-commit: 1b10163c39d9f309afd24aa2e808a57e069258f8
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Nel campo categoria vengono visualizzate le categorie che appartengono alla visu
 
 >[!NOTE]
 >
->Per i commercianti B2B, il filtro Categoria aderisce a qualsiasi [categoria di prodotto specifica per il cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=it) configurata.
+>Per i commercianti B2B, il filtro Categoria aderisce a qualsiasi [categoria di prodotto specifica per il cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) configurata.
 
 Adobe Commerce consiglia di utilizzare la seguente configurazione del filtro categorie quando distribuisci i consigli ai tipi di pagina:
 
@@ -78,11 +78,11 @@ Filtra i prodotti in base alla visibilità, ad esempio: _Catalogo_, _Ricerca_ o 
 
 ### Prezzo
 
-Un filtro basato sul prezzo del prodotto utilizza il prezzo finale per eseguire il confronto. Il prezzo finale include eventuali sconti o prezzi speciali disponibili per gli acquirenti anonimi. Per i commercianti B2B, il prezzo visualizzato riflette i [prezzi di gruppo specifici per il cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=it) che hai configurato.
+Un filtro basato sul prezzo del prodotto utilizza il prezzo finale per eseguire il confronto. Il prezzo finale include eventuali sconti disponibili per gli acquirenti anonimi. Per i commercianti B2B, il prezzo visualizzato riflette i [prezzi di gruppo specifici per il cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) che hai configurato.
 
 ### Stato del magazzino
 
 I seguenti filtri di esclusione possono essere utilizzati per filtrare i prodotti in base allo stato delle scorte:
 
 - Esaurito - (solo esclusione) esclude i prodotti esauriti.
-- Magazzino basso: (solo esclusione) esclude i prodotti con scorte limitate. Lo stato scorte basse si basa sul valore _Solo X Soglia sinistra_ nella [Configurazione inventario](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html?lang=it).
+- Magazzino basso: (solo esclusione) esclude i prodotti con scorte limitate. Lo stato scorte basse si basa sul valore _Solo X Soglia sinistra_ nella [Configurazione inventario](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).
