@@ -4,9 +4,9 @@ description: 'Accelera la tua vetrina Adobe Commerce con [!DNL Catalog Service] 
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
-source-git-commit: e582bff6ee8ee7c4213f04bdab984efa94333fb6
+source-git-commit: 4f3f8accd653dbee6fec45c065f55ff04b17bd2d
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1353'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,10 @@ I dati rich view-model forniti da [!DNL Catalog Service] includono dettagli di p
 
 
 ## Panoramica dell’architettura
+
+>[!NOTE]
+>
+>Se implementi il catalogo utilizzando il catalogo componibile con Adobe Commerce Optimizer o Adobe Commerce Optimizer Connector, consulta la [Guida di Adobe Commerce Optimizer](../optimizer/overview.md#architecture) e Guida per gli sviluppatori di Merchandising Services.
 
 [!DNL Catalog Service] utilizza [GraphQL](https://graphql.org/) per richiedere e ricevere i dati del catalogo, inclusi prodotti, attributi di prodotto, inventario e prezzi. GraphQL è un linguaggio di query che un client front-end utilizza per comunicare con l’API (Application Programming Interface) definita su un back-end come Adobe Commerce. GraphQL è un metodo di comunicazione diffuso perché è leggero e consente a un integratore di sistemi di specificare il contenuto e l’ordine di ciascuna risposta.
 
@@ -125,7 +129,7 @@ Catalog Service assicura aggiornamenti e calcoli accurati dei prezzi grazie al s
 
 Il processo di attuazione prevede:
 
-1. [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."} **[Installa e configura Catalog Service](installation.md)**. Installa e configura l&#39;estensione Catalog Service e configura la connessione SaaS utilizzando [!DNL Commerce Services Connector].
+1. [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."} **[Installa e configura Catalog Service](installation.md)**. Installa e configura l&#39;estensione Catalog Service e configura la connessione SaaS utilizzando [!DNL Commerce Services Connector].
 2. **Aggiorna codice vetrina**: integra le query GraphQL di Catalog Service nel tuo front-end.
 3. **Instrada query**: tutte le query di Catalog Service passano attraverso il gateway GraphQL (URL fornito durante l&#39;onboarding)
 4. **Monitoraggio e risoluzione dei problemi relativi alla sincronizzazione dei dati**: verificare prestazioni migliorate e monitorare i risultati
