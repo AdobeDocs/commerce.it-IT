@@ -19,7 +19,7 @@ L&#39;area di lavoro *Performance* fornisce ad insight i termini di ricerca util
 
 ![Prestazioni](assets/performance-unique-searches.png)
 
-Per ulteriori informazioni sulla sincronizzazione dei dati, è inoltre possibile fare riferimento a [Dashboard di gestione dati](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html).
+Per ulteriori informazioni sulla sincronizzazione dei dati, è inoltre possibile fare riferimento a [Dashboard di gestione dati](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=it).
 
 >[!NOTE]
 >
