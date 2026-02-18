@@ -3,16 +3,16 @@ title: Corrispondenza automatica personalizzata
 description: Scopri come la corrispondenza automatica personalizzata è particolarmente utile per i commercianti con logica di corrispondenza complessa o che si affidano a un sistema di terze parti che non può popolare i metadati in AEM Assets.
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: dfc4aaf1f780eb4a57aa4b624325fa24e571017d
+source-git-commit: 6e8d266aeaec4d47b82b0779dfc3786ccaa7d83a
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
 # Corrispondenza automatica personalizzata
 
-Se la strategia di corrispondenza automatica predefinita (**Corrispondenza automatica OOTB**) non è allineata ai requisiti aziendali specifici, selezionare l&#39;opzione di corrispondenza personalizzata. Questa opzione supporta l&#39;utilizzo di [Adobe Developer App Builder](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) per sviluppare un&#39;applicazione di corrispondenza personalizzata che gestisca logiche di corrispondenza complesse o risorse provenienti da un sistema di terze parti che non possono popolare i metadati in AEM Assets.
+Se la strategia di corrispondenza automatica predefinita (**Corrispondenza automatica OOTB**) non è allineata ai requisiti aziendali specifici, selezionare l&#39;opzione di corrispondenza personalizzata. Questa opzione supporta l&#39;utilizzo di [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) per sviluppare un&#39;applicazione di corrispondenza personalizzata che gestisca logiche di corrispondenza complesse o risorse provenienti da un sistema di terze parti che non possono popolare i metadati in AEM Assets.
 
 ## Configurare la corrispondenza automatica personalizzata
 
@@ -114,7 +114,7 @@ Il campo **[!UICONTROL Adobe I/O Workspace Configuration]** consente di configur
 
 ## Endpoint API di corrispondenza personalizzati
 
-Quando si crea un&#39;applicazione di corrispondenza personalizzata utilizzando [App Builder](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l&#39;applicazione deve esporre i seguenti endpoint:
+Quando si crea un&#39;applicazione di corrispondenza personalizzata utilizzando [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l&#39;applicazione deve esporre i seguenti endpoint:
 
 * Endpoint **da risorsa App Builder all&#39;URL prodotto**
 * Endpoint **da prodotto App Builder a URL risorsa**
@@ -125,7 +125,7 @@ Questo endpoint recupera l’elenco di SKU associati a una determinata risorsa:
 
 #### Esempio di utilizzo
 
-```bash
+```javascript
 const { Core } = require('@adobe/aio-sdk')
 
 async function main(params) {
@@ -140,8 +140,11 @@ async function main(params) {
     // ...
     // End of your matching logic
 
+    // Set skip to true if the mapping hasn't changed
+    const skipSync = false;
+
     return {
-        statusCode: 500,
+        statusCode: 200,
         body: {
             asset_id: params.assetId,
             product_matches: [
@@ -150,7 +153,8 @@ async function main(params) {
                     asset_roles: ["thumbnail", "image", "swatch_image", "small_image"],
                     asset_position: 1
                 }
-            ]
+            ],
+            skip: skipSync
         }
     };
 }
@@ -160,7 +164,7 @@ exports.main = main;
 
 **Richiesta**
 
-```bash
+```text
 POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-product
 ```
 
@@ -171,21 +175,28 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 
 **Risposta**
 
-```bash
+```json
 {
   "asset_id": "{ASSET_ID}",
   "product_matches": [
     {
       "product_sku": "{PRODUCT_SKU_1}",
-      "asset_roles": ["thumbnail","image"]
+      "asset_roles": ["thumbnail", "image"]
     },
     {
       "product_sku": "{PRODUCT_SKU_2}",
       "asset_roles": ["thumbnail"]
     }
-  ]
+  ],
+  "skip": false
 }
 ```
+
+| Parametro | Tipo di dati | Descrizione |
+| --- | --- | --- |
+| `asset_id` | Stringa | ID risorsa di cui viene trovata una corrispondenza. |
+| `product_matches` | Array | Elenco di prodotti associati alla risorsa. |
+| `skip` | Booleano | (Facoltativo) Quando `true`, il motore di regole ignora la sincronizzazione per questa risorsa (nessun aggiornamento della mappatura del prodotto). Se `false` o viene omesso, viene eseguita l&#39;elaborazione normale. Vedi [Ignora elaborazione sincronizzazione](#skip-sync-processing). |
 
 ### Endpoint &quot;product to asset URL&quot; di App Builder
 
@@ -193,7 +204,7 @@ Questo endpoint recupera l’elenco delle risorse associate a un determinato SKU
 
 #### Esempio di utilizzo
 
-```bash
+```javascript
 const { Core } = require('@adobe/aio-sdk')
 
 async function main(params) {
@@ -204,8 +215,11 @@ async function main(params) {
     // ...
     // End of your matching logic
 
+    // Set skip to true if the mapping hasn't changed
+    const skipSync = false;
+
     return {
-        statusCode: 500,
+        statusCode: 200,
         body: {
             product_sku: params.productSku,
             asset_matches: [
@@ -215,7 +229,8 @@ async function main(params) {
                     asset_format: "image", // can be "image" or "video"
                     asset_position: 1
                 }
-            ]
+            ],
+            skip: skipSync
         }
     };
 }
@@ -225,7 +240,7 @@ exports.main = main;
 
 **Richiesta**
 
-```bash
+```text
 POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to-asset
 ```
 
@@ -236,36 +251,44 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 
 **Risposta**
 
-```bash
+```json
 {
   "product_sku": "{PRODUCT_SKU}",
   "asset_matches": [
     {
       "asset_id": "{ASSET_ID_1}",
-      "asset_roles": ["thumbnail","image"],
+      "asset_roles": ["thumbnail", "image"],
       "asset_position": 1,
-      "asset_format": image
+      "asset_format": "image"
     },
     {
       "asset_id": "{ASSET_ID_2}",
-      "asset_roles": ["thumbnail"]
+      "asset_roles": ["thumbnail"],
       "asset_position": 2,
-      "asset_format": image     
+      "asset_format": "image"
     }
-  ]
+  ],
+  "skip": false
 }
 ```
 
 | Parametro | Tipo di dati | Descrizione |
 | --- | --- | --- |
-| `productSKU` | Stringa | Rappresenta lo SKU del prodotto aggiornato. |
-| `asset_matches` | Stringa | Restituisce tutte le risorse associate a uno SKU di prodotto specifico. |
+| `product_sku` | Stringa | SKU prodotto corrispondente. |
+| `asset_matches` | Array | Elenco di risorse associate al prodotto. |
+| `skip` | Booleano | (Facoltativo) Quando `true`, il motore di regole ignora la sincronizzazione per questo prodotto (nessun aggiornamento di mappatura risorse). Se `false` o viene omesso, viene eseguita l&#39;elaborazione normale. Vedi [Ignora elaborazione sincronizzazione](#skip-sync-processing). |
 
 Il parametro `asset_matches` contiene i seguenti attributi:
 
 | Attributo | Tipo di dati | Descrizione |
 | --- | --- | --- |
-| `asset_id` | Stringa | Rappresenta l’ID risorsa aggiornato. |
-| `asset_roles` | Stringa | Restituisce tutti i ruoli di risorse disponibili. Utilizza i [ruoli di risorse Commerce](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) supportati come `thumbnail`, `image`, `small_image` e `swatch_image`. |
-| `asset_format` | Stringa | Fornisce i formati disponibili per la risorsa. I valori possibili sono `image` e `video`. |
-| `asset_position` | Stringa | Mostra la posizione della risorsa. |
+| `asset_id` | Stringa | ID risorsa. |
+| `asset_roles` | Array | Ruoli risorsa. Utilizza i [ruoli di risorse Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) supportati come `thumbnail`, `image`, `small_image` e `swatch_image`. |
+| `asset_format` | Stringa | Il formato della risorsa. I valori possibili sono `image` e `video`. |
+| `asset_position` | Numero | Posizione della risorsa nella galleria di prodotti. |
+
+## Ignora elaborazione sincronizzazione
+
+Il parametro `skip` consente alla corrispondenza personalizzata di ignorare l&#39;elaborazione della sincronizzazione per risorse o prodotti specifici.
+
+Quando l&#39;applicazione App Builder restituisce `"skip": true` nella risposta, il motore di regole non invia richieste di aggiornamento o rimozione API a Commerce per quella risorsa o quel prodotto. Questa ottimizzazione riduce le chiamate API non necessarie e migliora le prestazioni.
