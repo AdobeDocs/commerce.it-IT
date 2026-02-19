@@ -1,22 +1,22 @@
 ---
-title: Strumenti di codifica IA per le estensioni
-description: Scopri come utilizzare gli strumenti di intelligenza artificiale per creare estensioni Commerce App Builder.
+title: Strumenti per gli sviluppatori di codifica AI per Adobe Commerce App Builder
+description: Scopri come utilizzare gli strumenti di intelligenza artificiale per creare applicazioni Commerce App Builder.
 feature: App Builder, Cloud
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 role: Developer
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 991a8683b9a333d2699f1ef22f3dc54d7b401573
+source-git-commit: 5d4726f7191f74507524667555ab46838bb2407a
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '2098'
 ht-degree: 0%
 
 ---
 
-# Strumenti di codifica IA per le estensioni
+# Strumenti per gli sviluppatori di codifica AI per Adobe Commerce App Builder
 
-Durante la migrazione a [!DNL Adobe Commerce as a Cloud Service], è possibile utilizzare gli strumenti di codifica AI per convertire le estensioni PHP [!DNL Adobe Commerce] esistenti in estensioni [!DNL Adobe Developer App Builder]. È inoltre possibile utilizzare questi strumenti per creare nuove estensioni [!DNL App Builder].
+Durante la migrazione a [!DNL Adobe Commerce as a Cloud Service], è possibile utilizzare gli strumenti di codifica AI per convertire le estensioni PHP [!DNL Adobe Commerce] esistenti in applicazioni [!DNL Adobe Developer App Builder]. È inoltre possibile utilizzare questi strumenti per creare nuove applicazioni di [!DNL App Builder].
 
 Gli strumenti di codifica IA offrono i seguenti vantaggi:
 
@@ -25,10 +25,26 @@ Gli strumenti di codifica IA offrono i seguenti vantaggi:
 * **Funzioni specifiche di Commerce**: strumenti specializzati per lo sviluppo Adobe Commerce App Builder.
 * **Flussi di lavoro automatizzati**: processi di sviluppo e distribuzione semplificati.
 
+Installando gli strumenti di codifica AI, puoi accedere a:
+
+* Regole: un set di regole specifico per Adobe Commerce e App Builder progettato per guidare e informare lo sviluppo dell’applicazione.
+* Server MCP per sviluppatori
+* Server App Builder MCP
+
+## Aggiornamento alla versione più recente
+
+Dopo l&#39;installazione di [strumenti per sviluppatori di codifica AI](#installation), è possibile eseguire l&#39;aggiornamento alla versione più recente eseguendo il comando seguente:
+
+```bash
+aio commerce extensibility tools-setup
+```
+
+Gli strumenti verranno aggiornati alla versione più recente.
+
 ## Prerequisiti
 
 * Uno dei seguenti agenti di codifica:
-   * [Cursore](https://cursor.com/download) (consigliato)
+   * [Cursore](https://cursor.com/download)
    * [Copilota Github](https://github.com/features/copilot)
    * [CLI Gemini Google](https://github.com/google-gemini/gemini-cli)
    * [Codice Claude](https://www.claude.com/product/claude-code)
@@ -84,7 +100,7 @@ Il processo di configurazione richiede di specificare le opzioni di configurazio
   New directory
 ```
 
-Quando si seleziona l&#39;agente di codifica, Adobe consiglia di selezionare `Cursor` per la migliore esperienza di sviluppo:
+Seleziona l’agente di codifica preferito:
 
 ```shell-session
 ? Which coding agent would you like to use?
@@ -221,10 +237,10 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 ## Richiesta di esempio
 
-Il seguente prompt di esempio crea un’estensione per inviare notifiche quando viene effettuato un ordine.
+Il seguente prompt di esempio crea un&#39;applicazione per inviare notifiche quando viene effettuato un ordine.
 
 ```shell-session
-Implement an Adobe Commerce SaaS extension that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
+Implement an Adobe Commerce SaaS application that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
 
 Order ID -> orderID
 Order Total -> total
@@ -281,14 +297,14 @@ Consulta le seguenti risorse per iniziare:
 
 * [Kit di avvio dell&#39;integrazione](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Modelli di kit di avvio Adobe Commerce](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Modelli di avvio Adobe I/O Events](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Modelli di avvio Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Applicazioni di esempio App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Perché utilizzare queste risorse
 
 * **Modelli comprovati**: i kit di avvio incorporano le best practice e le decisioni di architettura di Adobe
 * **Sviluppo più rapido**: riduce il tempo impiegato per il boilerplate e la configurazione
-* **Coerenza**: assicura che l&#39;estensione segua le convenzioni stabilite
+* **Coerenza**: garantisce che l&#39;applicazione segua le convenzioni stabilite
 * **Manutenzione**: più semplice da mantenere e aggiornare con i seguenti modelli standard
 * **Documentazione**: gli starter kit includono esempi e documentazione
 * **Supporto community**: è più semplice ottenere assistenza quando si utilizzano approcci standard
@@ -297,7 +313,7 @@ Consulta le seguenti risorse per iniziare:
 
 ### Protocollo
 
-Il seguente protocollo in quattro fasi viene applicato automaticamente dal sistema di regole. Gli strumenti devono seguire automaticamente questo protocollo durante lo sviluppo di estensioni:
+Il seguente protocollo in quattro fasi viene applicato automaticamente dal sistema di regole. Gli strumenti devono seguire questo protocollo automaticamente durante lo sviluppo di applicazioni:
 
 * Fase 1: analisi dei requisiti e chiarimento
    * Quando ti vengono poste domande chiarificatrici, fornisci risposte complete.
@@ -314,7 +330,7 @@ Per uno sviluppo complesso che coinvolge più azioni di runtime, punti di contat
 Create a detailed implementation plan for this complex development.
 ```
 
-Le estensioni Adobe Commerce complesse spesso richiedono:
+Le applicazioni Adobe Commerce complesse spesso richiedono:
 
 * Più azioni di runtime
 * Configurazione dell’evento in più punti di contatto
@@ -529,3 +545,31 @@ Evita i seguenti anti-pattern quando utilizzi gli strumenti di codifica AI:
 * **Non aggiungere complessità senza l&#39;analisi della causa principale**. Contattare i file aggiunti non necessari e richiedere indagini appropriate.
 * **Non dichiarare l&#39;esito positivo senza test dei dati reali** - Verifica sempre con i dati effettivi, non solo con i casi limite.
 * **Non dimenticare la pulizia in fase di esecuzione**. Eliminare sempre le azioni orfane dopo modifiche importanti.
+
+## Invio di feedback
+
+Gli sviluppatori interessati a fornire feedback sugli strumenti di codifica AI possono utilizzare il comando `/feedback`.
+
+Questo comando consente di fornire un feedback testuale e di inviare i registri ad Adobe. Tutti i registri inviati saranno bonificati per rimuovere eventuali informazioni private o personali.
+
+>[!TIP]
+>
+>L’esperienza utente varia leggermente a seconda dell’IDE in uso. Il processo seguente descrive l’esperienza in Cursore.
+
+1. Nell&#39;agente digitare `/feedback` e selezionare il comando `commerce-extensibility/feedback`.
+
+1. Fornisci il tuo feedback per gli strumenti nel campo **Feedback** che viene visualizzato nella parte superiore dell&#39;IDE e premi il tasto **Invio**.
+
+   ![Campo di input comando feedback cursore](../assets/feedback-response.png){width="600" zoomable="yes"}
+
+1. Nel campo **Salva localmente**, digitare `yes` o `no` e premere **Invio** per indicare se si desidera salvare una copia locale dei registri.
+
+   ![Il comando di feedback del cursore salva il campo localmente](../assets/feedback-save.png){width="600" zoomable="yes"}
+
+   Se hai selezionato **Sì**, puoi esaminare i registri nella cartella `chats` dopo aver inviato il tuo feedback.
+
+1. Il comando `commerce-extensibility/feedback` viene visualizzato nel campo di input della chat dell&#39;agente. Premi **Invio** o fai clic su **Invia** per inviare il tuo feedback ad Adobe.
+
+>[!NOTE]
+>
+>Se il comando `/feedback` non viene visualizzato, potrebbe essere necessario [aggiornare alla versione più recente](#updating-to-the-latest-version).
