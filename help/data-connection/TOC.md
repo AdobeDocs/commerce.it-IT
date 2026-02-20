@@ -4,23 +4,23 @@ user-guide-description: Questa guida fornisce istruzioni dettagliate per l'utili
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
-source-git-commit: d079ba51ede5272059fa6ac9d4176d484266ba21
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+source-git-commit: 60a8e8f5cedff0c6fa56c563807b9604e3ae1d21
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 2%
+source-wordcount: '138'
+ht-degree: 1%
 
 ---
 
 
 # Estensione [!DNL Data Connection] per Adobe Commerce {#data-connection}
 
-- [Panoramica della guida](overview.md)
+- [Introduzione a [!DNL Data Connection]](overview.md)
 - [Preparazione HIPAA per i servizi Commerce](hipaa-readiness.md)
 - [Gestione delle richieste di accesso a dati personali da parte dei servizi Commerce](handle-privacy-request.md)
 - [Note sulla versione](release-notes.md)
 - Nozioni di base {#fundamentals}
-   - [Installa l&#39;estensione  [!DNL Data Connection] &#x200B;](install.md)
+   - [Installa l&#39;estensione  [!DNL Data Connection] ](install.md)
    - [Connetti a Adobe Experience Platform](connect-data.md)
    - [Tipi di dati Commerce](data-ingestion.md)
    - [Aggiorna schema evento serie temporali](update-xdm.md)
@@ -38,4 +38,4 @@ ht-degree: 2%
 - Casi d’uso {#use-cases}
    - [Utilizzare Adobe Journey Optimizer per inviare un messaggio e-mail per carrello abbandonato](using-ajo.md)
    - [Creare un pubblico in Real-Time CDP utilizzando i dati evento di Commerce](create-audience.md)
-- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=it)
+- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
