@@ -20,7 +20,7 @@ ht-degree: 1%
 - [Gestione delle richieste di accesso a dati personali da parte dei servizi Commerce](handle-privacy-request.md)
 - [Note sulla versione](release-notes.md)
 - Nozioni di base {#fundamentals}
-   - [Installa l&#39;estensione  [!DNL Data Connection] ](install.md)
+   - [Installa l&#39;estensione  [!DNL Data Connection] &#x200B;](install.md)
    - [Connetti a Adobe Experience Platform](connect-data.md)
    - [Tipi di dati Commerce](data-ingestion.md)
    - [Aggiorna schema evento serie temporali](update-xdm.md)
