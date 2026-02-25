@@ -3,10 +3,10 @@ user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: Questa guida fornisce istruzioni dettagliate per l'utilizzo di  [!DNL Adobe Commerce as a Cloud Service].
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: c2d8adefb2d60da5ee251208e2350b6f0c1524b4
+source-git-commit: 52a3e1dcc10f478677764e058ceee494b45dadd4
 workflow-type: tm+mt
-source-wordcount: '61'
-ht-degree: 11%
+source-wordcount: '65'
+ht-degree: 10%
 
 ---
 
@@ -22,14 +22,16 @@ ht-degree: 11%
 - [Responsabilità condivisa](shared-responsibility.md)
 - Migrazione {#migration}
    - [Panoramica](migration/overview.md)
-   - [Strumento di migrazione dati in blocco](migration/bulk-data.md)
-   - [Strumenti di codifica](migration/coding-tools.md)
+   - Strumenti di migrazione {#migration-tools}
+      - [Strumento di migrazione dati in blocco](migration/bulk-data.md)
+      - [Strumenti di codifica](migration/coding-tools.md)
    - [Servizio RAG documentazione](migration/doc-rag.md)
 - Tutorial {#tutorials}
-   - [Prerequisiti del tutorial sull’estensione delle valutazioni](tutorials/tutorial-prerequisites.md)
+   - [Prerequisiti del tutorial](tutorials/tutorial-prerequisites.md)
    - [Esercitazione sull’estensione delle valutazioni](tutorials/ratings-extension.md)
+   - [Esercitazione sull’estensione del metodo di spedizione](tutorials/shipping-method-extension.md)
 - Schemi {#schemas}
    - [Schema GraphQL](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [Schema REST API](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
 - [Note sulla versione](release-notes.md)
-- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/it/docs/commerce/user-guides/home)
+- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
