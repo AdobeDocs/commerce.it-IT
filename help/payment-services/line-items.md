@@ -31,7 +31,7 @@ Gli elementi riga sono abilitati per impostazione predefinita per [!DNL Payment 
 
 1. Espandere la sezione _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
 
-1. Nella sezione _[!UICONTROL Payment Services]_, espandere la sezione_[!UICONTROL Line Items]_.
+1. Nella sezione _[!UICONTROL Payment Services]_, espandere la sezione&#x200B;_[!UICONTROL Line Items]_.
 
 1. Per **[!UICONTROL Line Items Enabled]**, selezionare `Yes` per abilitare (impostazione predefinita) o `No` per disabilitare gli elementi riga.
 
