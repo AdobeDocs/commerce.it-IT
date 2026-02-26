@@ -4,9 +4,9 @@ description: Scopri gli elementi riga per  [!DNL Payment Services]  e come visua
 feature: Payments, Paas, Saas
 role: User
 exl-id: f690ff94-f83d-4525-9d52-1dea25a71060
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,29 @@ Gli elementi riga per [!DNL Payment Services] sono gli elementi inclusi in un or
 
 Queste informazioni sono utili per il servizio clienti, la gestione degli ordini e la fatturazione corretta.
 
-Questa funzionalità è attivata per impostazione predefinita per [!DNL Payment Services]. Per visualizzare gli elementi riga:
+## Configurare gli elementi riga
+
+Gli elementi riga sono abilitati per impostazione predefinita per [!DNL Payment Services]. Per configurare:
+
+1. Nella barra laterale _Admin_, passa a **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+
+1. Vai a **[!UICONTROL Sales]** e seleziona **[!UICONTROL Payment Methods]**.
+
+1. Espandere la sezione _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
+
+1. Nella sezione _[!UICONTROL Payment Services]_, espandere la sezione_[!UICONTROL Line Items]_.
+
+1. Per **[!UICONTROL Line Items Enabled]**, selezionare `Yes` per abilitare (impostazione predefinita) o `No` per disabilitare gli elementi riga.
+
+1. Fai clic su **[!UICONTROL Save Config]** per salvare le modifiche.
+
+>[!IMPORTANT]
+>
+> Se disponi di estensioni di terze parti che aggiungono agli ordini tariffe personalizzate (come le tariffe di gestione), potresti dover disabilitare le voci. [!DNL Payment Services] calcola gli articoli linea in base ai componenti ordine standard di Commerce (articoli, imposte, spedizione e sconti). Le commissioni di terze parti non riconosciute da [!DNL Payment Services] possono causare una mancata corrispondenza tra il totale della riga e il totale dell&#39;ordine, che potrebbe impedire il completamento dell&#39;estrazione.
+
+## Visualizza righe
+
+Per visualizzare gli elementi riga:
 
 1. Passa alla [dashboard esercente PayPal](https://www.paypal.com/merchant/){target=_blank}.
 
@@ -76,7 +98,7 @@ L&#39;oggetto `upc` contiene i seguenti attributi:
 | `type` | stringa! | Il tipo di UPC. |
 | `code` | stringa! | Il codice prodotto UPC dell’articolo. |
 
-+++Esempio di elementi Line
++++Esempio di elementi riga
 
 ```json
 {
@@ -127,7 +149,7 @@ Per ulteriori informazioni su questi campi e sulle relative limitazioni, consult
 
 ## Gestisci righe
 
-Adobe Commerce [calcola l&#39;imposta in base all&#39;importo totale per ogni riga](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}. Ciò può causare problemi di arrotondamento se vengono ordinate più quantità dello stesso articolo o se nel catalogo vengono visualizzati prezzi comprensivi di imposte. In questi casi, la quantità totale può essere divisa in due righe, ma la quantità sarà uguale al totale degli articoli ordinati.
+Adobe Commerce [calcola l&#39;imposta in base all&#39;importo totale per ogni riga](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}. Ciò può causare problemi di arrotondamento se vengono ordinate più quantità dello stesso articolo o se nel catalogo vengono visualizzati prezzi comprensivi di imposte. In questi casi, la quantità totale può essere divisa in due righe, ma la quantità sarà uguale al totale degli articoli ordinati.
 
 > Esempio di elementi riga con problemi di arrotondamento nella vista dashboard esercente
 

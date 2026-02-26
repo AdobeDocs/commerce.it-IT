@@ -3,9 +3,9 @@ title: Opzioni di pagamento
 description: Imposta le opzioni di pagamento per personalizzare i metodi disponibili per i clienti del tuo Negozio.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 007674c3b81b95af4c0ec2688a4a98e19ec04d08
+source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1728'
 ht-degree: 0%
 
 ---
@@ -166,11 +166,48 @@ Per **acquisire i pagamenti con il provider di carte di credito esistente _e_ i 
 1. Assicurati che l&#39;archivio sia [in modalità di produzione](configure-admin.md#enable-payment-services).
 1. [Configura i pulsanti di pagamento PayPal desiderati](configure-admin.md#payment-buttons).
 1. Disattiva _l&#39;opzione_ nella sezione **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
-1. Disattiva _l&#39;opzione_ nella sezione **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** e utilizza l&#39;account _[!UICONTROL Credit card fields]_&#x200B;provider di carte di credito esistente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=it#payments)
+1. Disattiva _l&#39;opzione_ nella sezione **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** e utilizza l&#39;account _[!UICONTROL Credit card fields]_provider di carte di credito esistente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)
+
+## Metodi di pagamento locali
+
+I metodi di pagamento locali (LPM, Local Payment Methods) forniscono supporto per metodi di pagamento locali e specifici per regione, come i bonifici bancari e le soluzioni di pagamento localizzato, insieme alle opzioni esistenti basate su carta. I commercianti possono abilitare o disabilitare i moduli LPM disponibili direttamente nella configurazione di Commerce. I moduli LPM estendono le funzionalità di pagamento di Adobe, supportano le esigenze del mercato europeo, migliorano la localizzazione del pagamento e contribuiscono ad aumentare la conversione, l’adozione da parte degli esercenti e la soddisfazione degli acquirenti.
+
+I moduli LPM disponibili includono:
+
+| Metodo di pagamento | Paesi | Valuta |
+|----------------|-----------|----------|
+| Bancontact | Belgio | EUR |
+| SFUMATURA | Polonia | PIAN |
+| eps | Austria | EUR |
+| iDEAL | Paesi Bassi | EUR |
+| MyBank | Italia | EUR |
+| Przelewy24 | Polonia | EUR, PLN |
+
+Gli LPM vengono visualizzati ai clienti in base al loro indirizzo di fatturazione e alla valuta di base del sito Web. Un metodo di pagamento viene visualizzato solo quando entrambe le condizioni corrispondono ai requisiti del metodo di pagamento.
+
+Per ulteriori informazioni, vedere [Configurazione dei metodi di pagamento locali](configure-admin.md#local-payment-methods).
+
+## Pulsanti di pagamento rapido
+
+Per favorire un’esperienza di pagamento più rapida, all’inizio del flusso di pagamento sono disponibili opzioni di pagamento rapido. I clienti possono completare l&#39;acquisto utilizzando PayPal, PayPal Pay Later, Venmo, Apple Pay o Google Pay.
+
+Una volta abilitati, i pulsanti di pagamento rapido vengono visualizzati all&#39;inizio del processo di pagamento, fornendo un percorso di acquisto più veloce per i clienti che preferiscono i metodi di pagamento del portafoglio digitale.
+
+Per abilitare i pulsanti di pagamento rapido, configura singolarmente ogni metodo di pagamento:
+
+* **PayPal e paga più tardi**: abilita **[!UICONTROL Show buttons at start of checkout]** nelle impostazioni dei [pulsanti di pagamento PayPal](configure-admin.md#paypal-payment-buttons).
+
+* **Apple Pay**: abilita **[!UICONTROL Show Apple Pay at start of checkout]** nelle impostazioni [Apple Pay](configure-admin.md#apple-pay).
+
+* **Google Pay**: abilita **[!UICONTROL Show Google Pay at start of checkout]** nelle impostazioni [Google Pay](configure-admin.md#google-pay).
+
+>[!NOTE]
+>
+>La disponibilità del metodo di pagamento dipende dall&#39;ubicazione dell&#39;acquirente. Per il test della sandbox, utilizza la configurazione [Paese dell&#39;acquirente](sandbox.md#buyers-country) per simulare diverse aree geografiche. Ad esempio, Venmo è disponibile solo negli Stati Uniti. Pay Later (Paga più tardi) è disponibile negli Stati Uniti e nel Regno Unito.
 
 ## Opzioni di pagamento
 
-Con [!DNL Payment Services] puoi configurare l&#39;esperienza di pagamento per Adobe Commerce in base alle preferenze e ai comportamenti degli acquirenti. Caratteristiche quali il vaulting con carta di credito [1&rbrace; e lo svuotamento automatico dell&#39;ordine garantiscono ai clienti una transazione semplice e senza problemi.](vaulting.md)
+Con [!DNL Payment Services] puoi configurare l&#39;esperienza di pagamento per Adobe Commerce in base alle preferenze e ai comportamenti degli acquirenti. Caratteristiche quali il vaulting con carta di credito [1} e lo svuotamento automatico dell&#39;ordine garantiscono ai clienti una transazione semplice e senza problemi.](vaulting.md)
 
 Con Adobe Commerce e Magento Open Source [!DNL Payment Services], sono disponibili più esperienze di pagamento. Esistono comportamenti diversi per ogni metodo di pagamento a seconda della posizione in cui sei nel processo di pagamento:
 
