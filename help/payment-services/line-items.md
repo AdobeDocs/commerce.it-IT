@@ -149,7 +149,7 @@ Per ulteriori informazioni su questi campi e sulle relative limitazioni, consult
 
 ## Gestisci righe
 
-Adobe Commerce [calcola l&#39;imposta in base all&#39;importo totale per ogni riga](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}. Ciò può causare problemi di arrotondamento se vengono ordinate più quantità dello stesso articolo o se nel catalogo vengono visualizzati prezzi comprensivi di imposte. In questi casi, la quantità totale può essere divisa in due righe, ma la quantità sarà uguale al totale degli articoli ordinati.
+Adobe Commerce [calcola l&#39;imposta in base all&#39;importo totale per ogni riga](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}. Ciò può causare problemi di arrotondamento se vengono ordinate più quantità dello stesso articolo o se nel catalogo vengono visualizzati prezzi comprensivi di imposte. In questi casi, la quantità totale può essere divisa in due righe, ma la quantità sarà uguale al totale degli articoli ordinati.
 
 > Esempio di elementi riga con problemi di arrotondamento nella vista dashboard esercente
 
