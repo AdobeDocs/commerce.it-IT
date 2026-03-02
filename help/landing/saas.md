@@ -120,7 +120,7 @@ Per selezionare o creare un progetto SaaS, richiedere le chiavi API [!DNL Commer
 
    Se non vedi la sezione **[!UICONTROL Commerce Services Connector]**, installa i moduli [!DNL Commerce] per il [[!DNL Commerce] servizio](#availableservices) desiderato e assicurati che il pacchetto `magento/module-services-id` sia installato.
 
-1. Nelle sezioni _[!UICONTROL Sandbox API Keys]_e_[!UICONTROL Production API Keys]_, incolla i valori chiave.
+1. Nelle sezioni _[!UICONTROL Sandbox API Keys]_&#x200B;e_[!UICONTROL Production API Keys]_, incolla i valori chiave.
 
    - Le chiavi private devono includere `-----BEGIN PRIVATE KEY-----` all&#39;inizio della chiave e `-----END PRIVATE KEY-----` alla fine.
    - Se non disponi di una copia delle chiavi effettive, chiedi al proprietario della licenza di inserirle, quindi collega i valori nella configurazione.
