@@ -3,9 +3,9 @@ title: Best practice per [!DNL Live Search]
 description: Scopri le best practice per l'implementazione di [!DNL Live Search] nel tuo store.
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: f966a3f6f59c28e9f394d5eb7e41aaef1a992fec
+source-git-commit: c3d431a6536c3c5528b9aee45f03b0b94b4ea64e
 workflow-type: tm+mt
-source-wordcount: '2201'
+source-wordcount: '2892'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Esistono diversi fattori chiave che determinano la rilevanza e l’efficacia dei
 - Dati di prodotto ben strutturati garantiscono che gli algoritmi di ricerca possano far corrispondere efficacemente i prodotti alle query. La bassa qualità dei dati sui prodotti porta a risultati di ricerca poco rilevanti. Per avere un impatto diretto sul successo della strategia di merchandising:
    - Imposta gli attributi corretti come ricercabili con il loro peso corrispondente.
    - Assicurati che i dati all’interno di tali attributi siano pertinenti.
-- Un’esperienza di ricerca ben progettata crea fiducia nei clienti e infonde fiducia nel fatto che troveranno ciò di cui hanno bisogno.
+- Un’esperienza di ricerca ben progettata crea fiducia nei clienti e infonde fiducia nella possibilità di trovare ciò di cui hanno bisogno.
 - Le regole di ricerca sono fondamentali in quanto possono aumentare la visibilità di alcuni prodotti in base alla popolarità, ai nuovi arrivi, ai criteri promozionali o a qualsiasi altra strategia di merchandising per soddisfare le esigenze aziendali.
 - La navigazione a facet consente ai clienti di perfezionare le ricerche e ottenere rapidamente risultati rilevanti.
 
@@ -124,21 +124,92 @@ Ulteriori informazioni sulle regole di ricerca:
    - [Modifica, visualizza, elimina](rules-manage.md)
 - Raccolta dati
    - [[!DNL Live Search] eventi](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
-   - [Agente di raccolta eventi Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)
+   - [Agente di raccolta eventi Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework/)
    - [Eventi Commerce GitHub](https://github.com/adobe/commerce-events/tree/main/examples) 
 
-### Sfruttare i metadati del prodotto
+### Utilizzo dei metadati del prodotto
 
-Assicurati che gli attributi di prodotto precisi e dettagliati siano [configurati come ricercabili](workspace.md#set-attributes-as-searchable). Tieni presente che gli attributi SKU, nome e categoria sono ricercabili per impostazione predefinita e non possono essere esclusi dalla ricerca. Per ottenere risultati ottimali, non utilizzare spazi negli SKU.
+Assicurati che gli attributi di prodotto precisi e dettagliati siano [configurati come ricercabili](workspace.md#set-attributes-as-searchable). Tieni presente che gli attributi SKU, nome e categoria sono ricercabili per impostazione predefinita e non possono essere esclusi dalla ricerca. Per ottenere risultati ottimali, non utilizzare spazi negli SKU.
+
+La scelta degli attributi da rendere ricercabili ha un grande impatto sulla qualità della ricerca. Rendere ricercabili troppi attributi può ridurre la rilevanza e causare corrispondenze impreviste, anche se aumenta il numero di risultati restituiti. Questa sezione spiega come selezionare gli attributi ricercabili deliberatamente per bilanciare copertura e rilevanza.
+
+**Attributi ricercabili consigliati:**
+
+- **Nome prodotto** - Intento elevato, descrive direttamente il prodotto.
+- **Descrizione principale** - Dettagli concisi del prodotto che gli acquirenti si aspettano di trovare.
+- **Marchio** - Gli acquirenti eseguono spesso ricerche per marchio.
+- **Stile/numero modello** - Identificatori specifici con intento di cancellazione.
+- **Funzioni chiave** - Importanti caratteristiche distintive (ad esempio, &quot;impermeabile&quot;, &quot;wireless&quot;).
+- **Materiale/Tessuto** - Per le categorie di moda e mobili.
+
+**Evita di rendere questi attributi ricercabili:**
+
+- **Descrizioni o specifiche lunghe** - Troppo testo crea disturbi e corrispondenze impreviste.
+- **Percorsi categoria** - Può causare risultati irrilevanti a causa di termini di tassonomia ampi.
+- **Codici SKU interni con caratteri misti** - Crea falsi positivi per corrispondenze parziali.
+- **Campi amministrativi** - Note interne o codici magazzino non rilevanti per gli acquirenti.
+- **Contenuto HTML o tag di formattazione** - Il contenuto tecnico non migliora la rilevanza.
+
+#### Problemi comuni causati da attributi ricercabili non corretti
+
+Rendere ricercabili gli attributi errati può frustrare gli acquirenti e creare escalation di supporto.
+
+| Esempio | Scenario | Consiglio |
+|---------|----------|----------------|
+| **Effetti collaterali di stemming e completamento automatico** | Un commerciante rende ricercabili lunghe descrizioni dei prodotti. Un acquirente cerca il &quot;barattolo&quot; (cercando i contenitori). A causa della corrispondenza parziale e di stemming, vengono visualizzati i prodotti con &quot;can&quot; come parte di parole più grandi nelle loro descrizioni, come &quot;American&quot;, &quot;canopy&quot; o &quot;canvas&quot;. Prodotti che non hanno nulla a che vedere con la superficie dell&#39;intento dell&#39;acquirente, e perdono fiducia nella ricerca. | Riduci i campi ricercabili ad attributi ad alto intento come il nome del prodotto e la descrizione principale. Convalida i termini di ricerca principali per identificare le corrispondenze problematiche. Utilizza le regole di merchandising di ricerca o i reindirizzamenti per gestire casi edge specifici noti. |
+| **La classificazione per popolarità amplifica la corrispondenza rumorosa** | Un esercente imposta la classificazione su &quot;Più acquistati&quot; e include i percorsi delle categorie e le descrizioni lunghe come attributi ricercabili. Un acquirente cerca &quot;borsa per laptop&quot;. L&#39;ampia corrispondenza restituisce borse per notebook, accessori per notebook, borse per altri scopi e laptop stessi. Poiché i notebook vengono acquistati più frequentemente rispetto alle borse per notebook, sono in cima alla classifica. Il cliente percepisce la classificazione come errata, anche se il sistema funziona come configurato. | Rimuovi attributi rumorosi che possono essere cercati, come i percorsi delle categorie. Una volta che il set di corrispondenza è più preciso, applica strategie di classificazione basate sulla popolarità. Monitora le analisi di ricerca per identificare le query in cui si verifica questo modello. |
+| **Il percorso della categoria crea falsi positivi** | Un commerciante rende ricercabile l’intero percorso di categoria (ad esempio, &quot;Home > Cucina > Accessori > Piccoli elettrodomestici&quot;). Un acquirente cerca &quot;ufficio domestico&quot;. I prodotti della categoria &quot;Home&quot; corrispondono anche se sono articoli da cucina, perché &quot;Home&quot; esiste nel loro percorso di categoria. Gli elettrodomestici da cucina, l&#39;arredamento della casa e altri prodotti non correlati appaiono nei risultati, diluendo la rilevanza. | Non rendere ricercabili i percorsi delle categorie; utilizza i facet per consentire agli acquirenti di filtrare per categoria. Se il filtro delle categorie è fondamentale per la strategia di ricerca, implementalo tramite regole di merchandising anziché tramite attributi ricercabili. |
+
+#### Ponderare gli attributi ricercabili in modo appropriato
 
 Per aumentare la rilevanza della ricerca, assegnare un peso a ogni attributo ricercabile. Gli attributi con un peso maggiore dovrebbero apparire più in alto nei risultati della ricerca. L’ordinamento in base alla rilevanza è influenzato da più criteri, ad esempio il peso della ricerca. Ciò significa che a volte gli attributi con un peso di ricerca inferiore possono comunque avere maggiore rilevanza degli attributi con un peso di ricerca maggiore. Altri criteri possono includere il numero di corrispondenze in un dato attributo, la posizione del termine di ricerca trovato e la struttura generale del testo prima e dopo un termine di ricerca.
 
+**Priorità peso:**
+
+- **Peso massimo (9-10):** Nome prodotto, marchio
+- **Peso Medium (6-8):** Numero modello, descrizione primaria, caratteristiche chiave
+- **Peso ridotto (3-5):** Descrizioni secondarie, materiali, specifiche
+
 Assicurati che ogni prodotto abbia contenuti rilevanti all’interno di ogni attributo ricercabile. Si sconsiglia di impostare un attributo come ricercabile se contiene grandi quantità di contenuto, in quanto ciò può ridurre la rilevanza dei risultati di ricerca.
+
+#### Risoluzione dei problemi
+
+Se i risultati della ricerca risultano casuali o irrilevanti, utilizza questo elenco di controllo prima di inoltrarli come difetti del prodotto:
+
+1. **Verifica la configurazione dell&#39;attributo ricercabile:**
+
+   - Elenca tutti gli attributi attualmente impostati come ricercabili.
+   - Identifica eventuali attributi ampi o rumorosi (descrizioni lunghe, percorsi di categoria, campi amministrativi).
+   - Rimuovi lo stato ricercabile dagli attributi che non rappresentano l’intento dell’acquirente.
+
+1. **Convalida corrispondenze query rispetto agli attributi di base:**
+
+   - Verifica le query di ricerca più comuni.
+   - Verifica che i risultati corrispondano principalmente al nome del prodotto e al marchio, anziché al testo tangenziale.
+   - Verifica se i risultati imprevisti condividono solo corrispondenze deboli nel contenuto in formato lungo.
+
+1. **Verifica con e senza campi rumorosi:**
+
+   - Rimuove temporaneamente lo stato ricercabile dai campi Percorso categoria e Descrizione lunga.
+   - Esegui nuovamente le query problematiche per verificare se la rilevanza migliora.
+   - Se i risultati migliorano, regola definitivamente la configurazione.
+
+1. **Usa regole merchandising per le eccezioni:**
+
+   - Per specifiche query note che richiedono una gestione speciale, crea regole di ricerca mirate.
+   - Non cercare di risolvere i casi limite rendendo più ricercabili gli attributi.
+   - Utilizza i reindirizzamenti per ricerche di nomi di marchi o per errori ortografici comuni.
+
+1. **Monitora e ripeti:**
+
+   - Utilizza l&#39;[Area di lavoro prestazioni](performance.md) per tenere traccia della percentuale di risultati pari a zero e delle percentuali di click-through.
+   - Rivedi le principali query di ricerca settimanalmente per identificare nuovi pattern.
+   - Regola gli attributi e i pesi ricercabili in base ai dati, non alle ipotesi.
 
 Ulteriori informazioni sugli attributi del prodotto per la ricerca:
 
 - [Imposta attributi come ricercabili](workspace.md#set-attributes-as-searchable)
-- [Assegna peso agli attributi](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Assegna peso agli attributi](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Monitoraggio dei risultati di ricerca
 
