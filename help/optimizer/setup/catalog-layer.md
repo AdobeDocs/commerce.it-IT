@@ -3,10 +3,10 @@ title: Livello catalogo
 description: Scopri come i livelli del catalogo consentono di modificare i dati del prodotto senza modificare i dati di origine originali, in modo da poter personalizzare in modo sicuro e ripristinare le modifiche in qualsiasi momento.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: 4a904527af172a5e35b87410135d55484d07ad84
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1514'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,8 @@ Quando un cliente visualizza la vetrina, il sistema combina i dati del catalogo 
 
 1. **Gestione dei campi**—I diversi tipi di campi vengono elaborati in modo diverso:
 
-   - **Sostituisci campi** - I campi di testo come nome, descrizione e metatitoli vengono sostituiti con i valori definiti nel livello, con il livello di priorità più alto che ha la precedenza.
-   - **Unisci campi** - I campi array come immagini, collegamenti e attributi vengono combinati da più livelli, fornendo una risposta unificata.
+   * **Sostituisci campi** - I campi di testo come nome, descrizione e metatitoli vengono sostituiti con i valori definiti nel livello, con il livello di priorità più alto che ha la precedenza.
+   * **Unisci campi** - I campi array come immagini, collegamenti e attributi vengono combinati da più livelli, fornendo una risposta unificata.
 
 1. **Risoluzione priorità**: il campo dell&#39;ordine determina quale livello ha la precedenza. Quando più livelli modificano lo stesso campo, il livello con il numero di ordine inferiore ha priorità maggiore (ad esempio, l&#39;ordine 1 è il più alto).
 
@@ -36,11 +36,50 @@ Quando un cliente visualizza la vetrina, il sistema combina i dati del catalogo 
 
 I livelli catalogo vengono comunemente utilizzati per:
 
-- **Ottimizzazione SEO**—Sovrascrivi i titoli e le descrizioni dei metadati del prodotto in base ai consigli di IA di [Sites Optimizer](../manage-results/opportunities.md).
-- **Campagne stagionali**: aggiorna temporaneamente nomi di prodotto, descrizioni o immagini per le promozioni senza modificare i dati di origine.
-- **Personalizzazione regionale**: visualizza informazioni di prodotto diverse in base alla posizione geografica o alla lingua.
-- **Test A/B**: verifica diverse presentazioni di prodotti per ottimizzare i tassi di conversione.
-- **Gestione multimarca**—Personalizza gli attributi del prodotto per diverse visualizzazioni del catalogo dei marchi.
+* **Ottimizzazione SEO**—Sovrascrivi i titoli e le descrizioni dei metadati del prodotto in base ai consigli di IA di [Sites Optimizer](../manage-results/opportunities.md).
+* **Campagne stagionali**: aggiorna temporaneamente nomi di prodotto, descrizioni o immagini per le promozioni senza modificare i dati di origine.
+* **Personalizzazione regionale**: visualizza informazioni di prodotto diverse in base alla posizione geografica o alla lingua.
+* **Test A/B**: verifica diverse presentazioni di prodotti per ottimizzare i tassi di conversione.
+* **Gestione multimarca**—Personalizza gli attributi del prodotto per diverse visualizzazioni del catalogo dei marchi.
+* **Visualizzazioni prodotto**: applica le immagini di prodotto da AEM Assets come livello sul catalogo di base.
+
+## Livello AEM-Assets
+
+Quando abiliti [Product Visuals](product-visuals.md), l&#39;integrazione AEM Assets crea e gestisce automaticamente un livello di catalogo dedicato esclusivamente al contenuto di AEM Assets. Il nome del livello predefinito è `AEM-Assets`, tuttavia è possibile specificare un nome personalizzato durante l&#39;onboarding di [nell&#39;integrazione AEM Assets](../../aem-assets-integration/get-started/configure-aco.md).
+
+Questo livello contiene immagini di prodotto sincronizzate da AEM Assets. Come altri livelli del catalogo, viene compilato tramite l&#39;[API dei livelli di prodotto](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank}. Il servizio di integrazione di Assets trasforma i metadati delle risorse AEM e gli URL di consegna nel formato API e invia automaticamente i dati quando le risorse vengono approvate in AEM Assets.
+
+L’integrazione supporta un’origine per tenant (una lingua + un livello).
+
+>[!CAUTION]
+>
+> Assegna il livello AEM-Assets alla vista catalogo. Se il livello non è assegnato, i dati immagine prodotto potrebbero essere sovrascritti in modo imprevisto.
+
+### Come funziona il livello AEM-Assets
+
+1. **Creazione automatica**: il livello viene creato quando l&#39;integrazione AEM Assets è configurata per l&#39;istanza [!DNL Commerce Optimizer].
+
+1. **Sincronizzazione immagine**: quando le risorse vengono approvate in AEM Assets, Assets Integration Service trasforma i dati della risorsa e aggiorna il livello `AEM-Assets` tramite l&#39;API dei livelli di prodotto.
+
+1. **Assegnazione livello**: assegna il livello `AEM-Assets` alle visualizzazioni catalogo in cui desideri visualizzare le immagini AEM Assets.
+
+### Assegnare il livello AEM-Assets a una vista catalogo
+
+Per visualizzare le immagini AEM Assets nella vetrina:
+
+1. Passare a _Store setup_ e fare clic su **[!UICONTROL Catalog views]**.
+
+1. Selezionate la vista catalogo in cui desiderate applicare il livello.
+
+1. Nella sezione livelli catalogo, individua il livello **AEM-Assets**.
+
+1. Attivate il livello per abilitarlo per questa vista catalogo.
+
+1. Fare clic su **[!UICONTROL Save]** per applicare le modifiche.
+
+Una volta assegnate, le API storefront (Catalog Service, Live Search, Product Recommendations e Storefront GraphQL API) restituiscono sia immagini di catalogo di base che immagini AEM Assets per i prodotti.
+
+Per ulteriori informazioni sulla configurazione di Visualizzazioni prodotto, vedi [Visualizzazioni prodotto con AEM Assets](product-visuals.md).
 
 ## Aggiungere un livello di catalogo tramite l’acquisizione dei dati
 
@@ -52,8 +91,8 @@ Puoi aggiungere livelli di catalogo ai prodotti durante il processo di acquisizi
 
 **Prerequisiti:**
 
-- Credenziali API con autorizzazione per accedere al servizio di acquisizione dati
-- SKU di prodotto già presenti nel catalogo di base
+* Credenziali API con autorizzazione per accedere al servizio di acquisizione dati
+* SKU di prodotto già presenti nel catalogo di base
 
 **Passaggi:**
 
@@ -63,7 +102,7 @@ Puoi aggiungere livelli di catalogo ai prodotti durante il processo di acquisizi
 
 1. Verificate che il livello sia stato correttamente acquisito controllando la configurazione della vista catalogo.
 
-Per informazioni dettagliate sulle specifiche API e sugli esempi di payload, consulta [Livelli di prodotto](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers) nella documentazione per gli sviluppatori.
+Per informazioni dettagliate sulle specifiche API e sugli esempi di payload, consulta [Livelli di prodotto](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank} nella documentazione per gli sviluppatori.
 
 ## Aggiungere manualmente un livello catalogo nell’interfaccia utente
 
@@ -91,10 +130,10 @@ L’interfaccia utente per la visualizzazione del catalogo consente di creare e 
 
 1. Configura le proprietà del livello:
 
-   - **Nome livello** - Immettere un nome descrittivo per identificare lo scopo del livello.
-   - **Prodotti**—Selezionare i prodotti a cui si applica questo livello.
-   - **Attributi** - Scegli gli attributi del prodotto da modificare (nome, descrizione, immagini, metatag e così via).
-   - **Valori** - Immettere i nuovi valori per ogni attributo selezionato.
+   * **Nome livello** - Immettere un nome descrittivo per identificare lo scopo del livello.
+   * **Prodotti**—Selezionare i prodotti a cui si applica questo livello.
+   * **Attributi** - Scegli gli attributi del prodotto da modificare (nome, descrizione, immagini, metatag e così via).
+   * **Valori** - Immettere i nuovi valori per ogni attributo selezionato.
 
 1. Fai clic su **Salva** per creare il livello.
 
@@ -134,14 +173,14 @@ Prima di attivare i livelli o modificare le priorità, puoi visualizzare in ante
 
 1. Fate clic sull&#39;interruttore di attivazione per attivare o disattivare il livello.
 
-   - **Attivo** - Il livello viene applicato ai dati del prodotto.
-   - **Inattivo** - Il livello viene mantenuto ma non applicato ai dati del prodotto.
+   * **Attivo** - Il livello viene applicato ai dati del prodotto.
+   * **Inattivo** - Il livello viene mantenuto ma non applicato ai dati del prodotto.
 
 1. La modifica ha effetto immediato sulla vetrina.
 
 **Per eliminare un livello:**
 
-Utilizza l&#39;API di acquisizione dati per [eliminare un livello di catalogo](https://developer.adobe.com/commerce/services/reference/rest/#operation/deleteProductLayers).
+Utilizza l&#39;API di acquisizione dati per [eliminare un livello di catalogo](https://developer.adobe.com/commerce/services/reference/rest/#operation/deleteProductLayers){target=_blank}.
 
 ## Gestire le priorità dei livelli
 
@@ -149,11 +188,11 @@ L&#39;ordine in cui vengono applicati i livelli determina quali valori vengono v
 
 **Informazioni sull&#39;ordine prioritario:**
 
-- A ciascun livello viene assegnato un numero d&#39;ordine (1, 2, 3 e così via)
-- L&#39;ordine 1 ha la priorità più alta e sostituisce tutti gli altri livelli
-- Quando più livelli modificano lo stesso campo, il livello con il numero di ordine inferiore ha la precedenza
-- La priorità si applica solo ai campi di sostituzione (nome, descrizione, metatag)
-- I campi unione (immagini, collegamenti, attributi) combinano i dati di tutti i livelli
+* A ciascun livello viene assegnato un numero d&#39;ordine (1, 2, 3 e così via)
+* L&#39;ordine 1 ha la priorità più alta e sostituisce tutti gli altri livelli
+* Quando più livelli modificano lo stesso campo, il livello con il numero di ordine inferiore ha la precedenza
+* La priorità si applica solo ai campi di sostituzione (nome, descrizione, metatag)
+* I campi unione (immagini, collegamenti, attributi) combinano i dati di tutti i livelli
 
 **Per riordinare le priorità dei livelli:**
 
@@ -177,19 +216,20 @@ L&#39;ordine in cui vengono applicati i livelli determina quali valori vengono v
 
 Segui questi consigli quando lavori con i livelli del catalogo:
 
-- **Utilizza nomi descrittivi**—I livelli dei nomi indicano chiaramente il loro scopo (ad esempio, &quot;Campagna di vacanze 2025&quot; o &quot;Ottimizzazione SEO - Pagine prodotto&quot;).
+* **Utilizza nomi descrittivi**—I livelli dei nomi indicano chiaramente il loro scopo (ad esempio, &quot;Campagna di vacanze 2025&quot; o &quot;Ottimizzazione SEO - Pagine prodotto&quot;).
 
-- **Limita livelli** - Anche se il sistema supporta più livelli, l&#39;utilizzo di troppi livelli può influire sulle prestazioni. Se possibile, consolidare i livelli.
+* **Limita livelli** - Anche se il sistema supporta più livelli, l&#39;utilizzo di troppi livelli può influire sulle prestazioni. Se possibile, consolidare i livelli.
 
 <!--- **Test before activating**—Always preview layer effects before activating them on your live storefront. !!!REMOVE IF PREVIEW NOT AVAILABLE FOR GA!!!-->
 
-- **Logica di priorità del documento** - Tieni traccia dei livelli che devono avere la precedenza per evitare sostituzioni non intenzionali.
+* **Logica di priorità del documento** - Tieni traccia dei livelli che devono avere la precedenza per evitare sostituzioni non intenzionali.
 
-- **Rivedi livelli Sites Optimizer** - Quando si utilizza la correzione automatica di Sites Optimizer, vengono creati livelli con la massima priorità. Presta attenzione quando aggiungi livelli manuali che potrebbero ignorare i consigli di IA. Ulteriori informazioni sull&#39;utilizzo di [Sites Optimizer](../manage-results/opportunities.md).
+* **Rivedi livelli Sites Optimizer** - Quando si utilizza la correzione automatica di Sites Optimizer, vengono creati livelli con la massima priorità. Presta attenzione quando aggiungi livelli manuali che potrebbero ignorare i consigli di IA. Ulteriori informazioni sull&#39;utilizzo di [Sites Optimizer](../manage-results/opportunities.md).
 
-- **Monitoraggio delle prestazioni**: se si notano caricamenti lenti delle pagine dei prodotti, rivedere la configurazione dei livelli e considerare il consolidamento dei livelli.
+* **Monitoraggio delle prestazioni**: se si notano caricamenti lenti delle pagine dei prodotti, rivedere la configurazione dei livelli e considerare il consolidamento dei livelli.
 
 ## Altri argomenti correlati
 
-- [Visualizzazioni catalogo](catalog-view.md) - Configura le visualizzazioni catalogo per diversi storefront
-- [Opportunità](../manage-results/opportunities.md) - Scopri l&#39;ottimizzazione basata sull&#39;intelligenza artificiale utilizzando i livelli del catalogo
+* [Visualizzazioni catalogo](catalog-view.md) - Configura le visualizzazioni catalogo per diversi storefront
+* [Visualizzazioni prodotto](product-visuals.md) - Utilizza AEM Assets per le immagini prodotto
+* [Opportunità](../manage-results/opportunities.md) - Scopri l&#39;ottimizzazione basata sull&#39;intelligenza artificiale utilizzando i livelli del catalogo

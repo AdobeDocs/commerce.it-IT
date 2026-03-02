@@ -2,11 +2,11 @@
 title: Cos’è Adobe Commerce Optimizer?
 description: Scopri  [!DNL Adobe Commerce Optimizer]  e le sue funzionalità chiave.
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 8cf3e66641cf4bbc6db1da1dec14f7aaa291d6fe
+source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Con [!DNL Adobe Commerce Optimizer] è possibile:
 
 Guarda il seguente video per una panoramica di alto livello di [!DNL Adobe Commerce Optimizer]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450471?captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Chi trae il massimo vantaggio da [!DNL Adobe Commerce Optimizer]?
 
@@ -33,7 +33,7 @@ Guarda il seguente video per una panoramica di alto livello di [!DNL Adobe Comme
 
 - I commercianti che desiderano mantenere il sistema di e-commerce back-end esistente e trasformare solo le esperienze della vetrina.
 - Aziende in cui un sistema di terze parti gestisce il carrello e il ciclo di vita del pagamento.
-- Clienti AEM che cercano un modo semplice per gestire il catalogo dei prodotti da un motore di e-commerce di terze parti.
+- [Clienti AEM](setup/product-visuals.md) alla ricerca di un modo semplice per gestire il catalogo prodotti da un motore di e-commerce di terze parti.
 
 ## Presentazione rapida
 
@@ -69,6 +69,7 @@ Crea esperienze personalizzate per gli acquirenti tramite l’individuazione dei
 Definisci le visualizzazioni e i criteri del catalogo. Il catalogo non solo contiene i dati dei prodotti, ma consente anche di definire la struttura aziendale. Inoltre, puoi visualizzare preziose informazioni sulla disponibilità di dati di prodotto per la vetrina, per assicurarti di poterli mostrare immediatamente agli acquirenti.
 
 - **Visualizzazioni catalogo** - Consente di definire la struttura della vendita al dettaglio in business group significativi. Ad esempio, rivenditori per l&#39;industria automobilistica, filiali per conglomerati multimarca o sedi di produzione per i fornitori.
+- **Livelli catalogo** - Modificare i dati di prodotto senza modificare i dati di origine. Quando si utilizza AEM Assets per le immagini del prodotto, il livello AEM-Assets viene applicato tramite [Visualizzazioni prodotto](setup/product-visuals.md). Per ulteriori dettagli, vedere [Livelli catalogo](setup/catalog-layer.md).
 - **Criteri** - Filtri di accesso ai dati che si trovano all&#39;interno delle visualizzazioni catalogo. Le policy garantiscono che il contenuto corretto venga inviato alla destinazione corretta. Ad esempio, punti vendita negozi fisici, mercati, pipeline pubblicitarie (Google, Facebook, Instagram).
 - **Sincronizzazione dati** - Visualizza una panoramica dello stato di sincronizzazione dei dati di prodotto trasferiti dall&#39;origine dati (PIM, ERP e così via) in [!DNL Adobe Commerce Optimizer]. I dati del prodotto vengono visualizzati nelle schede **[!UICONTROL Catalog Service]**, **[!UICONTROL Search]** e **[!UICONTROL Recommendations]**.
 - **Eventi** - Visualizza i dati dell&#39;evento storefront che alimentano l&#39;individuazione dei prodotti e i consigli. La pagina **Eventi** consente al commerciante di verificare che gli eventi della vetrina siano stati implementati correttamente e che gli eventi vengano acquisiti correttamente. Gli esercenti possono utilizzare questa pagina per identificare potenziali problemi e adottare misure per risolvere eventuali problemi.
