@@ -3,7 +3,7 @@ title: Visualizzazioni prodotto con AEM Assets
 description: Scopri come utilizzare AEM Assets per le immagini di prodotto in [!DNL Adobe Commerce Optimizer].
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
 workflow-type: tm+mt
 source-wordcount: '454'
@@ -56,7 +56,7 @@ Prima di abilitare Product Visuals, assicurati di soddisfare i [prerequisiti per
 
 ## Configurazione
 
-Per abilitare l&#39;integrazione, [crea un ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) con i tuoi dettagli di [!DNL Commerce Optimizer] e AEM Assets. Il supporto Adobe configura l’integrazione e registra il tenant con il servizio di integrazione Assets.
+Per abilitare l&#39;integrazione, [crea un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) con i tuoi dettagli di [!DNL Commerce Optimizer] e AEM Assets. Il supporto Adobe configura l’integrazione e registra il tenant con il servizio di integrazione Assets.
 
 Per informazioni sull&#39;onboarding, consulta [Configurare AEM Assets per Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md).
 

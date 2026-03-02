@@ -39,7 +39,7 @@ Prima di configurare l’integrazione, assicurati di disporre di:
 
 ## Onboarding
 
-Per integrare AEM Assets con [!DNL Commerce Optimizer], è necessario [creare un ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Per integrare AEM Assets con [!DNL Commerce Optimizer], è necessario [creare un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 Il supporto Adobe utilizza le informazioni contenute nel ticket per registrare il tenant con Assets Integration Service e configurare l’integrazione.
 
@@ -115,7 +115,7 @@ La risorsa deve essere in uno stato **approvato** per poter attivare la sincroni
 
 >[!CAUTION]
 >
-> Assegna il livello `AEM-Assets` alla [vista catalogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view). Se il livello non è assegnato, i dati immagine prodotto potrebbero essere sovrascritti in modo imprevisto.
+> Assegna il livello `AEM-Assets` alla [vista catalogo](https://experienceleague.adobe.com/it/docs/commerce/optimizer/setup/catalog-view). Se il livello non è assegnato, i dati immagine prodotto potrebbero essere sovrascritti in modo imprevisto.
 
 ## Ssincronizzazione
 
