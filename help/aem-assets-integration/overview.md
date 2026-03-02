@@ -76,7 +76,7 @@ Guarda questi video per scoprire come impostare e utilizzare l’integrazione AE
 
 Guarda questo video per scoprire come Adobe Commerce e AEM Assets collaborano per semplificare i flussi di lavoro dei contenuti:
 
->[!VIDEO](https://video.tv.adobe.com/v/3447837)
+>[!VIDEO](https://video.tv.adobe.com/v/3447893?captions=ita)
 
 >[!TAB Esercitazione ACCS]
 
