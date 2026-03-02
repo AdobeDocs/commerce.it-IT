@@ -209,7 +209,7 @@ Se i risultati della ricerca risultano casuali o irrilevanti, utilizza questo el
 Ulteriori informazioni sugli attributi del prodotto per la ricerca:
 
 - [Imposta attributi come ricercabili](workspace.md#set-attributes-as-searchable)
-- [Assegna peso agli attributi](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Assegna peso agli attributi](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Monitoraggio dei risultati di ricerca
 
