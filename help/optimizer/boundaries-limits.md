@@ -2,11 +2,11 @@
 title: Limiti e limiti
 description: Comprendi [!DNL Adobe Commerce Optimizer]  limiti e limiti per pianificare la capacità e prevenire problemi di prestazioni.
 role: Admin, Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: 42a877f5bad8bda93ec39b8ad633f6ad0ba6b4a5
 workflow-type: tm+mt
-source-wordcount: '1320'
+source-wordcount: '1325'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Il tuo utilizzo deve rimanere entro questi limiti. Il loro superamento può caus
 
 I limiti di licenza possono essere aumentati acquistando i pacchetti di licenza descritti nella sezione [Limiti di licenza e limiti di sistema](#license-limits-and-system-boundaries) oppure negoziando licenze personalizzate per casi d&#39;uso univoci. Contatta il rappresentante del tuo account Adobe per discutere delle tue esigenze.
 
-Per domande sui limiti del sistema, contatta il [Supporto Adobe](https://experienceleague.adobe.com/home?lang=it#support).
+Per domande sui limiti del sistema, contatta il [Supporto Adobe](https://experienceleague.adobe.com/home?lang=en#support).
 
 ## Impedisci problemi di prestazioni
 
@@ -137,7 +137,7 @@ L’allocazione di base per le funzionalità di vetrina del catalogo è determin
 | Attributi ordinabili | Il numero di caratteristiche del prodotto che possono essere configurate per determinare l’ordine dei valori dei risultati di ricerca | 50 | No |
 | Profondità di paginazione della ricerca | Il numero massimo di prodotti accessibili tramite impaginazione (ad esempio, pagina 100 × 100 prodotti/pagina) | 10K | No |
 | Facet | Il numero di attributi di prodotto filtrabili (come Marchio, Colore, Dimensione, Prezzo) che possono essere configurati per aiutare gli acquirenti a perfezionare i risultati di ricerca e sfogliare le categorie | 100<p>Deve essere un attributo filtrabile</p> | No |
-| Opzioni per facet | Il numero di valori di attributi di prodotto filtrabili (come &quot;Rosso&quot;, &quot;Blu&quot; per Colore; &quot;Piccolo&quot;, &quot;Medium&quot; per Dimensione) che gli acquirenti possono selezionare da un elenco | 1000 | No |
+| Opzioni per facet | Il numero di valori di attributi di prodotto filtrabili (come &quot;Rosso&quot;, &quot;Blu&quot; per Colore; &quot;Piccolo&quot;, &quot;Medium&quot; per Dimensione) che gli acquirenti possono selezionare da un elenco | 100 | Sì<p>Può aumentare tramite richiesta di supporto</p> |
 
 {style="table-layout:auto"}
 
@@ -156,7 +156,7 @@ Per i consigli sui prodotti sono disponibili le seguenti funzionalità. Alcune f
 
 | **Capacità** | **Descrizione** | **Allocazione di base** | **Espandibile?** | **Note** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | Capacità di creare estensioni e integrazioni native per il cloud | Basato sul livello GMV<p>Allocazione minima: 1 pacchetto/anno</p> | Sì<p>Aggiungi pacchetti aggiuntivi</p> | Per i limiti definiti per confezione, vedere:<ul><li>[Descrizione del prodotto App Builder](https://helpx.adobe.com/it/legal/product-descriptions/adobe-developer-app-builder.html) per i limiti definiti per la confezione.</li><li>[Impostazioni e limitazioni di sistema](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) nelle *Guide di App Builder Runtime*.</li><li>[Requisiti di archiviazione App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | Capacità di creare estensioni e integrazioni native per il cloud | Basato sul livello GMV<p>Allocazione minima: 1 pacchetto/anno</p> | Sì<p>Aggiungi pacchetti aggiuntivi</p> | Per i limiti definiti per confezione, vedere:<ul><li>[Descrizione del prodotto App Builder](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) per i limiti definiti per la confezione.</li><li>[Impostazioni e limitazioni di sistema](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) nelle *Guide di App Builder Runtime*.</li><li>[Requisiti di archiviazione App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
