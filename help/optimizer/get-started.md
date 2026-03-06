@@ -3,11 +3,11 @@ title: Introduzione
 description: Scopri come iniziare a utilizzare  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: c27b2a8c7dffdcc5d5195cf809d5b475f3e01059
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1032'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Per il test e l&#39;apprendimento, seguire le istruzioni [Load Sample Data](#add
 
 La configurazione e la gestione di [!DNL Adobe Commerce Optimizer] si basano su tre ruoli chiave. Ciascun ruolo ha compiti e responsabilità specifiche:
 
-![Flusso di lavoro basato su ruoli per l&#39;installazione di Adobe Commerce Optimizer con attività di amministratore, sviluppatore e utente](./assets/high-level-workflow.png){zoomable="yes"}
+![Flusso di lavoro basato su ruoli per l&#39;installazione di [!DNL Adobe Commerce Optimizer] con attività di amministratore, sviluppatore e utente](./assets/high-level-workflow.png){zoomable="yes"}
 
 ### Attività di amministratore
 
@@ -105,7 +105,7 @@ Gestisci le istanze da Commerce Cloud Manager.
 
 >[!NOTE]
 >
->Non tutti gli utenti di Adobe Commerce Optimizer hanno accesso a Cloud Manager. L’accesso dipende dal ruolo e dalle autorizzazioni assegnati all’account utente.
+>Non tutti gli utenti [!DNL Adobe Commerce Optimizer] hanno accesso a Cloud Manager. L’accesso dipende dal ruolo e dalle autorizzazioni assegnati all’account utente.
 
 1. Accedi a [Adobe Experience Cloud](https://experience.adobe.com/).
 
@@ -133,13 +133,13 @@ Una volta aperta l’app, passa facilmente da un ambiente all’altro, come sand
 
    Nell’elenco a discesa delle istanze sono elencate tutte le istanze di Optimizer disponibili nell’organizzazione. Seleziona l’istanza da visualizzare.
 
-   ![Elenco a discesa del commutatore di istanza per la selezione degli ambienti Adobe Commerce Optimizer](./assets/context-switcher.png){zoomable="yes"}
+   ![Menu a discesa del commutatore di istanza per selezionare [!DNL Adobe Commerce Optimizer] ambienti](./assets/context-switcher.png){zoomable="yes"}
 
 ### Ottieni dettagli istanza
 
 Per visualizzare i dettagli dell’istanza, fai clic sull’icona delle informazioni accanto al nome dell’istanza.
 
-![Pannello dei dettagli dell&#39;istanza di Adobe Commerce Optimizer che mostra gli endpoint e l&#39;ID istanza](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
+Il pannello dei dettagli dell&#39;istanza ![[!DNL Adobe Commerce Optimizer] mostra gli endpoint e l&#39;ID istanza](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
 
 Tieni presente le seguenti informazioni chiave:
 
@@ -217,6 +217,6 @@ Dopo aver completato la configurazione:
 ### Ottieni aiuto
 
 - **Risorse per sviluppatori**: [Documentazione per sviluppatori](https://developer.adobe.com/commerce/services/optimizer/)
-- **Risorse storefront**: [Documentazione storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it)
-- **Esercitazioni**: [Esercitazioni Commerce Optimizer](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **Supporto**: [Risorse di supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/overview)
+- **Risorse storefront**: [Documentazione storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Esercitazioni**: [Esercitazioni Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **Supporto**: [Risorse di supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)

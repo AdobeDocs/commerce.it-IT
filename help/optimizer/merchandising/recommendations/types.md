@@ -1,18 +1,18 @@
 ---
 title: Tipi di consigli
 description: Scopri i consigli che puoi distribuire in varie pagine del sito.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: f1c4e0ef-a8fe-452d-9870-6d6964b4335d
-source-git-commit: 6fed7dd049019918646a9b871147c2d6ae27ed36
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1605'
 ht-degree: 0%
 
 ---
 
 # Tipi di consigli
 
-Adobe Commerce Optimizer fornisce una vasta serie di consigli che puoi distribuire su varie pagine del sito. Tutti i tipi di consigli sono basati sui dati. Sono basati su dati comportamentali, dati di attributi di prodotto e metriche. Per facilitare la consultazione, i tipi di consigli sono raggruppati come segue:
+[!DNL Adobe Commerce Optimizer] fornisce un&#39;ampia serie di consigli che è possibile distribuire in varie pagine del sito. Tutti i tipi di consigli sono basati sui dati. Sono basati su dati comportamentali, dati di attributi di prodotto e metriche. Per facilitare la consultazione, i tipi di consigli sono raggruppati come segue:
 
 - [Personalizzato](#personalized)
 - [Cross-selling e up-sell](#crossup)

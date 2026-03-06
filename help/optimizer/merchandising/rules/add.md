@@ -1,11 +1,11 @@
 ---
 title: Creare e gestire le regole
 description: Scopri come creare e gestire le regole di merchandising.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: bd54ff7afb0b6a5d78098225a8f98f81f96a7923
+source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '2219'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,13 @@ Per creare una regola, il primo passaggio consiste nell’utilizzare l’editor 
 ## Creare una regola
 
 1. Nella barra a sinistra, passa a _Merchandising_ > **Regole di merchandising**.
-1. Fai clic su **Crea regola** per avviare l&#39;editor di regole.
+1. (Facoltativo) Utilizza il menu a discesa **Vista catalogo** per selezionare la vista catalogo in cui applicare la regola. La regola creata ha l&#39;ambito della vista selezionata (o di tutte le viste catalogo se è selezionato **Tutte le viste**). Per informazioni sul funzionamento dell&#39;ambito della visualizzazione catalogo, vedere [Selezionare la visualizzazione catalogo](workspace.md#select-catalog-view).
+
+   >[!IMPORTANT]
+   >
+   >Questa funzione è attualmente in versione beta.
+
+1. Fare clic su **[!UICONTROL Create rule]** per avviare l&#39;editor di regole.
 
 ![Crea regola](../../assets/create-rule.png)
 
@@ -165,7 +171,7 @@ Gli eventi OR possono essere impostati manualmente:
 
 ## Modificare, visualizzare ed eliminare le regole
 
-Segui queste istruzioni per aggiornare le proprietà delle regole esistenti.
+Segui queste istruzioni per aggiornare le proprietà delle regole esistenti. Non è possibile modificare la vista catalogo (ambito) di una regola dopo averla creata; l&#39;ambito viene impostato al momento della creazione della regola. Vedi [Seleziona visualizzazione catalogo](workspace.md#select-catalog-view).
 
 ### Modifica regola
 

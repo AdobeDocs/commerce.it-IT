@@ -1,11 +1,11 @@
 ---
 title: Creare e gestire i consigli
 description: Scopri come creare e gestire i consigli.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: ca0e786da6d23364d27d69ccf0fc5ded1f39f46e
+source-git-commit: 3d748e83e07a16e58c0c55f12a6c0ad40bbfdead
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1544'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,17 @@ _Unità consigli_
 
 Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dati](../../manage-results/recommendation-performance.md) per misurare impression, visualizzazioni, clic e così via. Nella tabella Consigli vengono visualizzate le metriche di ogni unità di consigli per consentire di prendere decisioni aziendali informate.
 
-1. Nella barra laterale _Adobe Commerce Optimizer_, vai a _Merchandising_ > **Recommendations** per visualizzare l&#39;area di lavoro _Recommendations_.
+1. Nella barra laterale _[!DNL Adobe Commerce Optimizer]_, vai a_ Merchandising _>**Recommendations**per visualizzare l&#39;area di lavoro_ Recommendations _.
+
+1. Nel campo **Vista catalogo**, seleziona la vista catalogo in cui desideri rendere disponibile il consiglio. Ulteriori informazioni sull&#39;utilizzo di [visualizzazioni catalogo per i consigli](../../manage-results/recommendation-performance.md#select-catalog-view).
+
+   >[!IMPORTANT]
+   >
+   >Questa funzione è attualmente in versione beta.
 
 1. Fai clic su **Crea consiglio**.
+
+   Il consiglio creato sarà disponibile nella vista catalogo selezionata in precedenza.
 
 1. Nella sezione _Denomina il consiglio_, inserisci un nome descrittivo per il riferimento interno, ad esempio `Home page most popular`.
 
@@ -35,6 +43,8 @@ Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dat
 
 1. (Facoltativo) Nella sezione _Filtri_, [applica filtri](filters.md) per controllare quali prodotti vengono visualizzati nell&#39;unità di consigli.
 
+1. Utilizza il pannello _Anteprima prodotti consigliati_ per comprendere meglio in che modo i filtri influiscono sui prodotti visualizzati nell&#39;unità di consigli. Scopri come [visualizzare in anteprima i consigli](#preview-recommendations).
+
 1. Al termine, fare clic su una delle seguenti opzioni:
 
    - **Salva come bozza** per modificare l&#39;unità di consigli in un secondo momento. Non è possibile modificare il tipo di consiglio per un&#39;unità di consigli in stato Bozza.
@@ -45,11 +55,33 @@ Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dat
 
 >[!NOTE]
 >
-> Puoi creare fino a 50 unità di consigli attive.
+>Puoi creare fino a 50 unità di consigli attive. Per ulteriori informazioni, vedere [Limiti e limiti](../../boundaries-limits.md).
 
 >[!IMPORTANT]
 >
 >Alcuni browser potrebbero bloccare gli script critici che impediscono a Recommendations di funzionare come previsto.
+
+## Anteprima consigli
+
+Il pannello _Anteprima prodotti consigliati_ è sempre disponibile con una selezione di esempi di prodotti che potrebbero comparire nell&#39;unità consigli quando viene distribuita nella vetrina.
+
+![Anteprima consigli](../../assets/rec-preview.png)
+
+Per testare un consiglio quando si lavora in un ambiente non di produzione, è possibile recuperare i dati dei consigli da un’origine diversa. Questo consente ai commercianti di sperimentare le regole e visualizzare in anteprima i consigli prima di distribuirli in produzione.
+
+| Campo | Descrizione |
+|---|---|
+| Vista catalogo |
+| Nome | Il nome del prodotto. |
+| SKU | Unità di stoccaggio assegnata al prodotto |
+| Prezzo | Il prezzo del prodotto. |
+| Tipo di risultato | Principale: indica che sono stati raccolti dati di formazione sufficienti per visualizzare un consiglio.<br />Backup: indica che non sono stati raccolti dati di formazione sufficienti, quindi viene utilizzato un consiglio di backup per riempire lo slot. Vai a [Dati comportamentali](../../setup/events/overview.md) per ulteriori informazioni sui modelli di apprendimento automatico e sui consigli di backup. |
+
+Quando crei la tua unità di consigli, prova con il tipo di consiglio e i filtri per ottenere un feedback in tempo reale sui prodotti che verranno inclusi. Quando inizi a capire quali prodotti vengono visualizzati, puoi configurare l’unità di consigli in base alle tue esigenze aziendali.
+
+[!DNL Adobe Commerce Optimizer] [filtri](filters.md) consigli per evitare la visualizzazione di prodotti duplicati quando più unità di consigli vengono distribuite in una singola pagina. Di conseguenza, i prodotti visualizzati nel pannello di anteprima potrebbero essere diversi da quelli visualizzati nella vetrina.
+
+Per le impostazioni multi-storefront, multi-lingua o multi-brand, puoi configurare se ogni consiglio si applica a tutte le viste catalogo (globale) o a una singola [vista catalogo](../../setup/catalog-view.md). Ulteriori informazioni su come [impostare la visualizzazione del catalogo](../../manage-results/recommendation-performance.md#select-catalog-view) quando si lavora con i consigli.
 
 ## Ottieni ID consiglio
 
@@ -65,13 +97,13 @@ Dopo aver creato un consiglio, devi recuperarne l’ID per implementare l’unit
 
 1. Nella sezione **ID consiglio**, copia l&#39;ID.
 
-1. Usa questo ID per configurare il [menu a discesa dei consigli](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=it) nella vetrina di Edge Delivery Services.
+1. Usa questo ID per configurare il [menu a discesa dei consigli](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) nella vetrina di Edge Delivery Services.
 
 ## Gestire i consigli esistenti
 
 Puoi modificare, disattivare o eliminare un consiglio esistente.
 
-1. Nella barra laterale _Adobe Commerce Optimizer_, vai a _Merchandising_ > **Recommendations**.
+1. Nella barra laterale _[!DNL Adobe Commerce Optimizer]_, vai a_ Merchandising _>**Recommendations**.
 
 1. Seleziona il consiglio da modificare.
 
@@ -84,13 +116,13 @@ Puoi modificare, disattivare o eliminare un consiglio esistente.
    - Numero di prodotti
    - Filtra prodotti
 
-   Non è possibile modificare il tipo di consiglio.
+   Non puoi modificare il tipo di consiglio o la vista catalogo. La vista Catalogo viene impostata al momento della creazione del consiglio. Per ulteriori informazioni, vedere [selezionare la visualizzazione del catalogo](../../manage-results/recommendation-performance.md#select-catalog-view).
 
 1. Al termine, fare clic su **Salva modifiche**.
 
 ## Indicatori di preparazione
 
-Gli indicatori di preparazione mostrano quali tipi di consigli funzioneranno meglio in base ai dati di catalogo e comportamentali disponibili. È inoltre possibile utilizzare gli indicatori di preparazione per determinare se si sono verificati problemi con la [raccolta eventi](../../setup/events/overview.md) o se non si dispone di traffico sufficiente per popolare il tipo di consiglio.
+Gli indicatori di preparazione mostrano quali tipi di consigli funzionano meglio in base ai dati di catalogo e comportamentali disponibili. Possono inoltre aiutarti a identificare potenziali problemi con la [raccolta eventi](../../setup/events/overview.md) o a determinare se un tipo di consiglio non riceve abbastanza traffico per generare risultati.
 
 Gli indicatori di preparazione sono classificati in [static-based](#static-based) o [dynamic-based](#dynamic-based). Solo dati del catalogo di utilizzo basati su statici; mentre dati comportamentali di utilizzo basati su dinamiche provenienti dai tuoi acquirenti. Questi dati comportamentali vengono utilizzati per [addestrare modelli di apprendimento automatico](../../setup/events/overview.md) per creare consigli personalizzati e calcolare il loro punteggio di preparazione.
 
@@ -100,7 +132,7 @@ Gli indicatori di preparazione indicano quanto il modello è addestrato. Gli ind
 
 La percentuale dell’indicatore di preparazione è derivata da un calcolo che indica quanti prodotti potrebbero essere consigliati a seconda del tipo di consiglio. Le statistiche vengono applicate ai prodotti in base alle dimensioni complessive del catalogo, al volume di interazioni (come visualizzazioni, clic, aggiunte ai carrelli) e alla percentuale di SKU che registrano tali eventi entro una determinata finestra temporale. Ad esempio, durante il traffico di picco durante le festività, gli indicatori di prontezza potrebbero mostrare valori più elevati rispetto ai tempi del volume normale.
 
-In seguito a queste variabili, la percentuale dell’indicatore di prontezza può oscillare. Questo spiega perché potresti vedere che i tipi di consigli sono &quot;Pronti per la distribuzione&quot;.
+In seguito a queste variabili, la percentuale dell’indicatore di prontezza può oscillare. Questa fluttuazione spiega perché potresti vedere che i tipi di consigli sono &quot;Pronti per la distribuzione&quot;.
 
 Gli indicatori di preparazione sono calcolati in base a due fattori:
 
@@ -109,8 +141,8 @@ Gli indicatori di preparazione sono calcolati in base a due fattori:
 
 In base ai fattori di cui sopra, un valore di fattibilità viene calcolato e visualizzato come segue:
 
-- Il 75% o più significa che le raccomandazioni suggerite per quel tipo di raccomandazione saranno altamente pertinenti.
-- Almeno il 50% significa che le raccomandazioni suggerite per quel tipo di raccomandazione saranno meno pertinenti.
+- Il 75% o più significa che le raccomandazioni suggerite per quel tipo di raccomandazione sono altamente pertinenti.
+- Almeno il 50% significa che le raccomandazioni suggerite per quel tipo di raccomandazione sono meno pertinenti.
 - Meno del 50% significa che le raccomandazioni suggerite per quel tipo di raccomandazione potrebbero non essere pertinenti. In questo caso, vengono utilizzati [consigli di backup](../../setup/events/overview.md#backuprecs).
 
 Ulteriori informazioni su [perché gli indicatori di preparazione potrebbero essere bassi](#what-to-do-if-the-readiness-indicator-percent-is-low).
@@ -156,9 +188,9 @@ _Tipo di consiglio_
 >
 >Gli indicatori non possono mai raggiungere il 100%.
 
-La percentuale dell’indicatore di preparazione per i tipi di consigli che dipendono dai dati del catalogo non cambia molto, in quanto il catalogo del commerciante non cambia spesso. Tuttavia, la percentuale dell’indicatore di preparazione per i tipi di consigli basati sui dati comportamentali degli acquirenti può variare spesso a seconda dell’attività giornaliera degli acquirenti.
+L’indicatore di preparazione per i tipi di consigli che dipendono dai dati del catalogo non cambia molto, in quanto il catalogo del commerciante cambia raramente. Tuttavia, l’indicatore di preparazione per i tipi di consigli basati sui dati comportamentali degli acquirenti può cambiare spesso a seconda dell’attività giornaliera degli acquirenti.
 
-#### Cosa fare se la percentuale dell’indicatore di prontezza è bassa
+#### Cosa fare se l’indicatore di prontezza è basso
 
 Una percentuale di preparazione bassa indica che non vi sono molti prodotti del catalogo che possono essere inclusi nei consigli per questo tipo di consigli. Ciò significa che esiste un&#39;elevata probabilità che vengano restituiti [consigli di backup](../../setup/events/overview.md#backuprecs) se si distribuisce comunque questo tipo di consigli.
 
@@ -172,24 +204,5 @@ Di seguito sono elencati i possibili motivi e soluzioni ai punteggi di bassa pro
 - **Basato su dinamica** - Le percentuali basse per gli indicatori basati su dinamica possono essere causate da:
 
    - Campi mancanti nei [eventi storefront](../../setup/events/overview.md) richiesti per i rispettivi tipi di consigli (requestId, contesto di prodotto e così via).
-   - Traffico ridotto nello store, quindi il volume di eventi comportamentali che riceviamo è basso.
-   - La varietà di eventi comportamentali all&#39;interno dello store tra i diversi prodotti è bassa. Ad esempio, se solo il 10% dei prodotti viene visualizzato o acquistato la maggior parte del tempo, i rispettivi indicatori di disponibilità saranno bassi.
-
-## Anteprima consigli
-
-Il pannello _Anteprima prodotti consigliati_ è sempre disponibile con una selezione di esempi di prodotti che potrebbero comparire nell&#39;unità consigli quando viene distribuita nella vetrina.
-
-![Anteprima consigli](../../assets/rec-preview.png)
-
-Per testare un consiglio quando si lavora in un ambiente non di produzione, è possibile recuperare i dati dei consigli da un’origine diversa. Questo consente ai commercianti di sperimentare le regole e visualizzare in anteprima i consigli prima di distribuirli in produzione.
-
-| Campo | Descrizione |
-|---|---|
-| Nome | Il nome del prodotto. |
-| SKU | Unità di stoccaggio assegnata al prodotto |
-| Prezzo | Il prezzo del prodotto. |
-| Tipo di risultato | Principale: indica che sono stati raccolti dati di formazione sufficienti per visualizzare un consiglio.<br />Backup: indica che i dati di formazione raccolti non sono sufficienti, pertanto per riempire lo slot viene utilizzato un consiglio di backup. Vai a [Dati comportamentali](../../setup/events/overview.md) per ulteriori informazioni sui modelli di apprendimento automatico e sui consigli di backup. |
-
-Quando crei la tua unità di consigli, prova con il tipo di consiglio e i filtri per ottenere un feedback in tempo reale sui prodotti che verranno inclusi. Quando inizi a capire quali prodotti vengono visualizzati, puoi configurare l’unità di consigli in base alle tue esigenze aziendali.
-
-[!DNL Adobe Commerce Optimizer] [filtri](filters.md) consigli per evitare la visualizzazione di prodotti duplicati quando più unità di consigli vengono distribuite in una singola pagina. Di conseguenza, i prodotti visualizzati nel pannello di anteprima potrebbero essere diversi da quelli visualizzati nella vetrina.
+   - Traffico ridotto verso l’archivio, pertanto il volume di eventi comportamentali ricevuti è basso.
+   - La varietà di eventi comportamentali all&#39;interno dello store tra i diversi prodotti è bassa. Ad esempio, se solo il 10% dei prodotti viene visualizzato o acquistato la maggior parte del tempo, i rispettivi indicatori di disponibilità sono bassi.

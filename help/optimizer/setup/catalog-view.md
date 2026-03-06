@@ -3,11 +3,11 @@ title: Vista catalogo
 description: Scopri cosa sono le visualizzazioni catalogo e come crearle per organizzare il catalogo dei prodotti in base alla struttura aziendale, alle politiche e ai prezzi.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: 769aafeb261d978623e68c466888924c92632883
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1350'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Visualizzazioni catalogo per servizi di merchandising
 
-Le visualizzazioni catalogo sono alla base di Adobe Commerce Optimizer Merchandising Services e consentono di organizzare il catalogo dei prodotti in base alla struttura aziendale, alle politiche e ai prezzi. Questo modello dati flessibile supporta scenari multi-brand, multi-business unit e multi-lingue, mantenendo al contempo l’efficienza operativa.
+Le visualizzazioni del catalogo sono alla base di [!DNL Adobe Commerce Optimizer] Servizi di merchandising e consentono di organizzare il catalogo prodotti in base alla struttura aziendale, alle politiche e ai prezzi. Questo modello dati flessibile supporta scenari multi-brand, multi-business unit e multi-lingue, mantenendo al contempo l’efficienza operativa.
 
 ## Cosa sono le visualizzazioni catalogo?
 
@@ -31,6 +31,16 @@ Considera le viste catalogo come diversi &quot;obiettivi&quot; attraverso i qual
 - La vista del catalogo del dealer mostra solo i prodotti disponibili per quel dealer specifico
 - Una vista del catalogo regionale potrebbe mostrare prodotti e prezzi specifici per un’area geografica
 - Una vista catalogo marchio può mostrare solo i prodotti di una particolare marca
+
+### Visualizzazione catalogo e origine catalogo
+
+Di seguito viene illustrata la differenza tra una vista catalogo e un&#39;origine catalogo:
+
+- **Visualizzazione catalogo**: visualizzazione configurata del catalogo per esigenze aziendali specifiche. Quando crei una visualizzazione catalogo, selezioni l&#39;origine del catalogo (o le impostazioni locali) da utilizzare, quindi aggiungi [criteri](policies.md) per filtrare i prodotti visibili e collega [listini prezzi](pricebooks.md) per controllare la determinazione prezzi. Un&#39;unica origine di catalogo può alimentare molte visualizzazioni di catalogo (ad esempio, un&#39;origine `en-US` con visualizzazioni di catalogo separate per marchi o aree geografiche diversi). Considera una visualizzazione catalogo come *il modo* in cui esponi tali dati a una vetrina, un canale o un pubblico.
+
+- **Origine catalogo**: il contesto dei dati sottostante che fornisce le informazioni sul prodotto. Un&#39;origine catalogo è in genere una lingua (ad esempio, `en-US`, `fr-CA`) o un sistema esterno come un PIM o un ERP. [!DNL Adobe Commerce Optimizer] acquisisce i dati dei prodotti da una o più origini di catalogo in un catalogo di base unificato. Considera un&#39;origine del catalogo come *da cui* provengono i dati del catalogo non elaborati.
+
+In sintesi, **origine catalogo** è il contesto dati da cui si effettua il pull, mentre **visualizzazione catalogo** è il contesto filtrato, con prezzi e organizzato che si presenta agli acquirenti o ai canali.
 
 ## Creare una vista catalogo
 
@@ -66,6 +76,14 @@ Prima di creare una vista catalogo, assicurati di disporre di:
 La pagina Visualizzazioni catalogo viene aggiornata per visualizzare la nuova visualizzazione del catalogo.&#x200B;
 
 Dopo aver completato questi passaggi, la vista catalogo viene ora configurata per visualizzare prodotti e prezzi in base alle origini e ai criteri selezionati.
+
+### Specificare le viste catalogo per i consigli e le regole di individuazione prodotti
+
+>[!IMPORTANT]
+>
+>Questa funzione è attualmente in versione beta.
+
+È possibile specificare una visualizzazione del catalogo quando si [creano unità di consigli](../merchandising/recommendations/create.md) o [regole di merchandising](../merchandising/rules/add.md).
 
 ## Livelli del catalogo
 

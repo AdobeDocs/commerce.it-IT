@@ -1,11 +1,11 @@
 ---
 title: Prestazioni consigli
 description: La pagina Prestazioni dei consigli fornisce ad insight informazioni sulle prestazioni dei consigli di prodotto.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '953'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,15 @@ Nella pagina Prestazioni dei consigli viene visualizzato un elenco di consigli c
 
 ## Visualizzare un rapporto
 
-1. Scegli l&#39;**origine catalogo**, ad esempio `en-US` dove applicare i consigli.
+1. Scegli la **vista Catalogo**, ad esempio *tutte le viste* a cui applicare i consigli.
+
+   Ulteriori informazioni sulle [visualizzazioni catalogo](#select-catalog-view) nei consigli.
 
 1. Fare clic su **[!UICONTROL Date Range]** e selezionare uno dei seguenti intervalli:
 
    ![Intervallo date consigli](../assets/rec-perf-date-range.png)
 
-   La tabella dei consigli viene aggiornata per visualizzare le metriche per tale intervallo di date.
+   La tabella dei consigli viene aggiornata per visualizzare le metriche per l’intervallo di date e la vista catalogo.
 
 ## Personalizza tabella
 
@@ -60,6 +62,7 @@ Scopri come [creare un nuovo consiglio o gestirne uno esistente](../merchandisin
 | ![Intervallo date](../assets/rec-perf-date-range.png) | Determina l’intervallo di tempo utilizzato per i calcoli delle metriche. |
 | ![Selettore colonna](../assets/icon-show-hide-columns.png) | Determina le colonne visualizzate nella tabella Consigli. |
 | Crea consiglio | Apre la pagina [Crea nuovo consiglio](../merchandising/recommendations/create.md). |
+| [Visualizzazione catalogo](#select-catalog-view) | Seleziona la vista catalogo per filtrare la tabella in modo da mostrare solo i consigli che si applicano alla vista catalogo selezionata. Questa selezione viene utilizzata anche come vista catalogo quando [crei](../merchandising/recommendations/create.md) un nuovo consiglio. Le opzioni sono *Tutte le visualizzazioni* o una [visualizzazione catalogo](../setup/catalog-view.md) specifica. |
 
 ## Descrizioni delle colonne
 
@@ -80,3 +83,34 @@ Scopri come [creare un nuovo consiglio o gestirne uno esistente](../merchandisin
 | Visibilità | Percentuale di unità di consigli registrate per la visualizzazione. |
 | Tasso di click-through | (Percentuale di click-through) Percentuale di unit impression per il consiglio che registra un clic. CTR conta tutte le impression anche se l&#39;unità non entra nella vista dell&#39;acquirente. Se l’unità di consigli non viene visualizzata, è improbabile che venga cliccata. Tuttavia, quelle impressioni non viste contano per il punteggio CTR e riducono la percentuale complessiva di CTR. |
 | vCTR | (Percentuale di click-through visualizzabile) misura i clic solo in base alle impression visualizzabili (consigli effettivamente visualizzati nella parte visibile dello schermo del cliente), fornendo un indicatore più preciso del coinvolgimento del cliente. |
+
+## Seleziona vista catalogo
+
+>[!IMPORTANT]
+>
+>Questa funzione è attualmente in versione beta.
+
+Il selettore **[!UICONTROL Catalog view]** nella pagina **Recommendations** esegue due operazioni:
+
+1. **Filtra la tabella** - Mostra solo i consigli (e le relative metriche) applicabili alla vista catalogo selezionata.
+1. **Imposta l&#39;ambito per i nuovi consigli**. Quando [crei](../merchandising/recommendations/create.md) un consiglio, la vista catalogo selezionata viene utilizzata come ambito dell&#39;unità. Le opzioni sono *Tutte le visualizzazioni* o una [visualizzazione catalogo](../setup/catalog-view.md) specifica.
+
+   - **Tutte le visualizzazioni** - Il consiglio si applica a tutte le visualizzazioni del catalogo (la disponibilità del prodotto è ancora filtrata per visualizzazione).
+   - **Vista catalogo** - Il consiglio si applica solo alla vista catalogo selezionata (ad esempio, una vetrina, una lingua o un marchio).
+
+Specificando una vista catalogo per ogni consiglio, puoi:
+
+- Configura i consigli per tutte le viste catalogo (globale) o per una sola vista catalogo.
+- Visualizza l&#39;anteprima e filtra i prodotti in base alla vista catalogo nella pagina di consigli [crea](../merchandising/recommendations/create.md).
+- Mostra solo i prodotti disponibili per ogni vetrina.
+- Visualizzare le metriche e il comportamento della vetrina per vista catalogo.
+
+### Come la visualizzazione catalogo filtra i prodotti
+
+La disponibilità del prodotto viene applicata per ogni visualizzazione di catalogo anche per le unità di consigli nella selezione **Tutte le visualizzazioni**. Questo funziona in aggiunta a qualsiasi [filtro di inclusione o esclusione](../merchandising/recommendations/filters.md) impostato nell&#39;unità di consigli.
+
+**Esempio: consiglio con filtri di inclusione nella selezione Tutte le visualizzazioni**
+
+- **Tutte le visualizzazioni** sono consigliati gli SKU: SKU_ABC, SKU_CDE, SKU_XYZ.
+- **Visualizzazione catalogo: Kingsbluff** non può vendere SKU_ABC o SKU_CDE. **Visualizzato:** SKU_XYZ più qualsiasi altro SKU valido per Kingsbluff.
+- **Visualizzazione catalogo: Arkbridge** non può vendere gli SKU inclusi. **Visualizzato:** Solo gli SKU consentiti da Arkbridge. Se non ne è disponibile alcuna, l’unità di consigli non viene visualizzata nella vetrina.

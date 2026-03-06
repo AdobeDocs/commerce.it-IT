@@ -1,25 +1,25 @@
 ---
 title: Creare e gestire i sinonimi
 description: Scopri come creare e gestire i sinonimi per  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: d2982a0b-e7df-44e6-b3c9-9b4328635d38
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
 
 # Crea sinonimi
 
-Aumenta il coinvolgimento dei clienti aggiungendo il tuo elenco curato di [!DNL Adobe Commerce Optimizer] sinonimi. È possibile aggiungere fino a 200 sinonimi per negozio.
+Aumenta il coinvolgimento dei clienti aggiungendo il tuo elenco curato di [!DNL Adobe Commerce Optimizer] sinonimi. Puoi aggiungere fino a 200 sinonimi per origine di catalogo.
 
 ![Sinonimo Di Workspace](../../assets/synonym-workspace.png)
 
 ## Passaggio 1: aggiungere un sinonimo
 
 1. Dalla barra a sinistra, vai a _Merchandising_ > **Sinonimi**.
-1. Fare clic sul pulsante **[!UICONTROL Add synonyms]**.
+1. Fare clic sul pulsante **[!UICONTROL Create synonyms]**.
 
 ## Passaggio 2: definire il sinonimo per tipo
 
@@ -27,31 +27,25 @@ Segui le istruzioni per il [tipo di sinonimo](type.md) che desideri creare.
 
 ### Sinonimo bidirezionale
 
-1. Accettare l&#39;opzione **bidirezionale** predefinita.
-
-   ![Aggiungi sinonimo bidirezionale](../../assets/synonym-add-two-way.png)
-
 1. Immettere il termine o la frase **Parola chiave** da trovare.
 1. Immettere i **Espansione** termini che si desidera aggiungere come sinonimi per la parola chiave. Separa più termini con una virgola.
 In questo esempio, la parola chiave da associare è &quot;pantaloni&quot; e l&#39;insieme dei termini di espansione sono &quot;pantaloni, slacks&quot;.
 
-   ![Esempio di sinonimo bidirezionale](../../assets/synonym-add-two-way-example.png)
+   ![Sinonimo bidirezionale](../../assets/synonym-add-two-way.png)
 
 1. Al termine, fare clic su **Salva**.
 
    Il set di sinonimi viene visualizzato nell&#39;elenco con una freccia bidirezionale tra ciascun termine, il che significa che i termini sono intercambiabili.
 
-   ![Sinonimo bidirezionale](../../assets/synonym-two-way.png)
+   ![Esempio di sinonimo bidirezionale](../../assets/synonym-add-two-way-example.png)
 
 ### Sinonimo unidirezionale
 
 1. Fare clic sul tipo di sinonimo **unidirezionale**.
 
-   ![Aggiungi sinonimo unidirezionale](../../assets/synonym-add-one-way.png)
-
 1. Immetti i termini **Parola chiave** e **Espansione**. Separa più termini con una virgola.
 
-   ![Esempio di sinonimo unidirezionale](../../assets/synonym-add-one-way-example.png)
+   ![Sinonimo unidirezionale](../../assets/synonym-add-one-way.png)
 
    In questo esempio, la parola chiave è &quot;pantaloni&quot; e i termini di espansione unidirezionale &quot;capris, peddle-pushers&quot; sono ciascuno un sottoinsieme di &quot;pantaloni&quot;, ma con un significato specifico.
 
@@ -59,7 +53,7 @@ In questo esempio, la parola chiave da associare è &quot;pantaloni&quot; e l&#3
 
    Il set di sinonimi viene visualizzato nell&#39;elenco con una freccia unidirezionale che punta dai termini di espansione alla parola chiave per indicare che i termini sono sottoinsiemi della parola chiave. Un segno più separa ogni termine di espansione.
 
-   ![Sinonimo unidirezionale](../../assets/synonym-one-way.png)
+   ![Esempio di sinonimo unidirezionale](../../assets/synonym-add-one-way-example.png)
 
 ## Passaggio 3: Pubblicare le modifiche
 

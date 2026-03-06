@@ -1,11 +1,11 @@
 ---
 title: Prestazioni di ricerca
 description: La pagina Prestazioni di ricerca fornisce ad insight i termini di ricerca utilizzati dagli acquirenti.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1822'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ La pagina *Prestazioni di ricerca* fornisce ad insight i termini di ricerca util
 
 - Ricerche univoche
 - Posizione media clic
-- Percentuale di click-through
+- Tasso di click-through
 - Tasso di conversione
 - Percentuale risultati zero
 
@@ -110,7 +110,7 @@ Assicurati che i prodotti secondari dei prodotti configurabili dispongano di imm
 
 ### Sfruttare i metadati del prodotto
 
-Assicurati che gli attributi del prodotto [&#x200B; precisi e dettagliati siano configurabili come ricercabili e abbiano un peso assegnato](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Tieni presente che gli attributi SKU, nome e categoria sono ricercabili per impostazione predefinita e non possono essere esclusi dalla ricerca. Per ottenere risultati ottimali, non utilizzare spazi negli SKU.
+Assicurati che gli attributi del prodotto [ precisi e dettagliati siano configurabili come ricercabili e abbiano un peso assegnato](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Tieni presente che gli attributi SKU, nome e categoria sono ricercabili per impostazione predefinita e non possono essere esclusi dalla ricerca. Per ottenere risultati ottimali, non utilizzare spazi negli SKU.
 
 Per aumentare la rilevanza della ricerca, assegnare un peso a ogni attributo ricercabile. Gli attributi con un peso maggiore dovrebbero apparire più in alto nei risultati della ricerca. L’ordinamento in base alla rilevanza è influenzato da più criteri, ad esempio il peso della ricerca. Ciò significa che a volte gli attributi con un peso di ricerca inferiore possono comunque avere maggiore rilevanza degli attributi con un peso di ricerca maggiore. Altri criteri possono includere il numero di corrispondenze in un dato attributo, la posizione del termine di ricerca trovato e la struttura generale del testo prima e dopo un termine di ricerca.
 
@@ -121,7 +121,7 @@ Assicurati che ogni prodotto abbia contenuti rilevanti all’interno di ogni att
 | Dati snapshot | Descrizione |
 |--- |--- |
 | Ricerche univoche | Numero totale di ricerche univoche per l’intervallo di date specificato. Le ricerche multiple dello stesso acquirente, anche se per la stessa query, sono considerate univoche se inviate a più di un&#39;ora di distanza. |
-| Percentuale di click-through | La percentuale di ricerche che si concludono con il cliente che fa clic su un prodotto. Ad esempio, il tasso di click-through è del 50% se l’acquirente cerca &quot;pantaloni&quot; e &quot;camicia&quot; e poi fa clic su un risultato nella ricerca &quot;camicia&quot;. |
+| Tasso di click-through | La percentuale di ricerche che si concludono con il cliente che fa clic su un prodotto. Ad esempio, il tasso di click-through è del 50% se l’acquirente cerca &quot;pantaloni&quot; e &quot;camicia&quot; e poi fa clic su un risultato nella ricerca &quot;camicia&quot;. |
 | Tasso di conversione | La percentuale di prodotti acquistati dal cliente rispetto al numero di prodotti su cui il cliente fa clic per l’intervallo di date specificato. Ad esempio, il tasso di conversione dell’interazione è del 100% se l’acquirente visualizza sei prodotti nella finestra a comparsa, fa clic su uno e effettua un acquisto. <br /><br />Il tasso di conversione non è influenzato dal numero di visualizzazioni di un determinato prodotto. Ad esempio, il tasso di conversione rimane lo stesso se l’acquirente utilizza la ricerca, ma non fa clic su alcun prodotto. |
 | Percentuale risultati zero | Percentuale di ricerche univoche che non restituisce alcun risultato per l’intervallo di date specificato. Ad esempio, il tasso di risultati zero è 66,67% se il cliente cerca &quot;fjjajfjfjf&quot; due volte (senza risultati) e &quot;pantaloni&quot; una volta (con risultati). |
 | Media posizione clic | Posizione relativa del tasso medio di click-through basato su ricerche univoche per l’intervallo di date specificato. |

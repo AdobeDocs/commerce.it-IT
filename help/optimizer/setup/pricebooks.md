@@ -3,11 +3,11 @@ title: Listino prezzi
 description: Scopri come gestire i listini prezzi in [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
-source-git-commit: 1c720bc3ba755639eff2f17912fb3a3446e367f6
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,13 @@ I listini prezzi consentono di definire i prezzi dei prodotti per un&#39;origine
 
 Il listino prezzi base definisce la valuta per se stesso e per tutti i listini prezzi figlio. I listini prezzi figlio ereditano questa valuta e non possono sostituirla.
 
-## Aggiungi listini prezzi a Commerce Optimizer
+## Aggiungi listino prezzi a [!DNL Adobe Commerce Optimizer]
 
-Puoi aggiungere listini prezzi a Commerce Optimizer utilizzando l’API Listino prezzi. Per informazioni su come creare, aggiornare ed eliminare i listini prezzi per [, consulta la &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/)documentazione per sviluppatori[!DNL Adobe Commerce Optimizer].
+È possibile aggiungere listini prezzi a [!DNL Adobe Commerce Optimizer] utilizzando l&#39;API Listino prezzi. Per informazioni su come creare, aggiornare ed eliminare i listini prezzi per [, consulta la ](https://developer.adobe.com/commerce/services/reference/rest/)documentazione per sviluppatori[!DNL Adobe Commerce Optimizer].
 
-## Visualizza listini prezzi in Commerce Optimizer
+## Visualizza listini prezzi in [!DNL Adobe Commerce Optimizer]
 
-Dopo aver acquisito i listini prezzi in Commerce Optimizer, puoi visualizzare l&#39;elenco dei listini prezzi e gli ID corrispondenti nella pagina **Visualizzazione catalogo**.
+Dopo aver acquisito i listini prezzi in [!DNL Adobe Commerce Optimizer], puoi visualizzare l&#39;elenco dei listini prezzi e gli ID corrispondenti nella **visualizzazione catalogo** pagina.
 
 1. Vai a _Configurazione archivio_ e fai clic su **[!UICONTROL Catalog views]**.
 

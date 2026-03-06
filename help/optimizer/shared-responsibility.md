@@ -2,10 +2,11 @@
 title: Responsabilità condivisa
 description: Scopri le responsabilità di sicurezza di ogni parte coinvolta nel tuo  [!DNL Adobe Commerce Optimizer]  progetto.
 role: Admin, Architect, Leader
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: 7c407bfc2becfb0ba6babe5958bcb790c178f406
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+exl-id: 9e09790f-832d-43ab-b2df-6389ad52b43d
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
@@ -43,12 +44,12 @@ Le tabelle di riepilogo seguenti utilizzano il modello RACI per mostrare le resp
 | CDN back-end di supporto | RA |  |
 | Ottenimento di un provider DNS di back-end | RA | |
 | Provisioning degli ambienti di produzione e sandbox | A | R |
-| Accesso a Dynamics for Adobe Commerce Optimizer | R | C |
+| Accesso a Dynamics per [!DNL Adobe Commerce Optimizer] | R | C |
 | Risoluzione dei problemi di sicurezza del cliente back-end | RA | I |
 | Risoluzione dei problemi di sicurezza CDN back-end | RA | |
 | Assistenza ad Adobe nella ricerca sulla sicurezza (scansioni/audit) | RA | |
 | Esecuzione di scansioni PCI ASV | RA | I |
-| Correzione delle scansioni PCI dell&#39;infrastruttura Adobe Commerce Optimizer | R | |
+| Correzione delle scansioni PCI dell&#39;infrastruttura [!DNL Adobe Commerce Optimizer] | R | |
 | Gestione dei segreti del sistema operativo e della piattaforma | RA | |
 | Monitoraggio dei registri di sicurezza back-end | RA | |
 | Controllo dell’assistenza clienti e dell’accesso | A | R |
@@ -56,5 +57,5 @@ Le tabelle di riepilogo seguenti utilizzano il modello RACI per mostrare le resp
 | Test annuali e documentazione del piano di ripristino di emergenza | RA | |
 | Debug e isolamento dei problemi | R | R |
 | Supporto tempestivo del processo di debug e isolamento dei problemi | R | R |
-| Installazione di aggiornamenti e patch in Adobe Commerce Optimizer | RA | I |
-| Qualità applicazione Adobe Commerce Optimizer di base | RA | |
+| Installazione di aggiornamenti e patch in [!DNL Adobe Commerce Optimizer] | RA | I |
+| Qualità applicazione [!DNL Adobe Commerce Optimizer] di base | RA | |
