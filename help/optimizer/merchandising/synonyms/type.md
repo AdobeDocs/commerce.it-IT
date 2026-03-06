@@ -1,7 +1,7 @@
 ---
 title: Tipi di sinonimo
 description: Informazioni sui diversi tipi di sinonimi in [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: a74e48ea-e069-4ccc-a67f-2f85be251fb5
 source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
@@ -36,4 +36,4 @@ Se non viene creato alcun sinonimo e un acquirente cerca **la tabella della cuci
 
 Dopo aver creato un sinonimo, il comportamento di ricerca cambia per cercare la frase esatta **tabella cucina**. Questo potrebbe ridurre il numero di risultati, perché verranno visualizzati solo i prodotti con la frase esatta.
 
-Se desideri cercare i termini separatamente come prima, puoi [creare un ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). Se la domanda è sufficiente, [!DNL Adobe Commerce Optimizer] prenderà in considerazione l&#39;aggiunta di questa funzionalità al prodotto in una versione futura.
+Se desideri cercare i termini separatamente come prima, puoi [creare un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). Se la domanda è sufficiente, [!DNL Adobe Commerce Optimizer] prenderà in considerazione l&#39;aggiunta di questa funzionalità al prodotto in una versione futura.

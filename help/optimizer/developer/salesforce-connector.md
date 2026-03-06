@@ -15,7 +15,7 @@ Basato sulla tecnologia Adobe App Builder, [!DNL Commerce Optimizer Salesforce C
 
 Il connettore offre funzionalità affidabili di sincronizzazione dei dati e la flessibilità necessaria per personalizzare i flussi di lavoro in base alle esigenze aziendali.
 
-Per una serie di esercitazioni video end-to-end, consulta [Scopri Salesforce Commerce Cloud Starter Kit](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
+Per una serie di esercitazioni video end-to-end, consulta [Scopri Salesforce Commerce Cloud Starter Kit](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
 
 ## Funzionalità principali
 

@@ -2,7 +2,7 @@
 title: Configurare la vetrina
 description: Scopri come configurare la vetrina  [!DNL Adobe Commerce Optimizer] .
 role: Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
 source-git-commit: c41134938f7408d062899ecaf3f63d37e1bdbca3
 workflow-type: tm+mt
@@ -57,7 +57,7 @@ Lo strumento Site Creator (Creazione sito) crea un progetto completo di vetrina 
 * **Sito**: pagina di destinazione della vetrina con contenuto standard
 * **Codice**: archivio con file di origine standard
 * **Contenuto**: ambiente di authoring dei documenti con file di contenuto del sito
-* **Configurazione Commerce**: [Configurazione vetrina Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"} per la configurazione specifica dell&#39;istanza
+* **Configurazione Commerce**: [Configurazione vetrina Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=it){target="_blank"} per la configurazione specifica dell&#39;istanza
 
 ### Passaggio 1: generare il progetto
 
@@ -200,8 +200,8 @@ Per verificare i problemi comuni, attenersi alle istruzioni riportate di seguito
 |-------|----------|----------|
 | **L&#39;installazione della sincronizzazione codice non riesce** | Impossibile completare la configurazione di Sincronizzazione codice | <ul><li>Assicurati di avere accesso come amministratore all’organizzazione GitHub.</li><li>Prova a utilizzare un archivio personale invece di un’organizzazione.</li><li>Controlla le autorizzazioni GitHub e riprova.</li></ul> |
 | **Impossibile caricare il sito** | 404 o errori di connessione | <ul><li>Verifica il formato URL del sito: `https://main--{SITE}--{ORG}.aem.live`</li><li>Controlla che l&#39;app di sincronizzazione codice sia installata correttamente.</li><li>Verifica che l’archivio sia pubblico o configurato correttamente.</li></ul> |
-| **Nessun dato prodotto visualizzato** | Le pagine dei prodotti mostrano segnaposto o errori | <ul><li>Verifica i valori di configurazione in `config.json`</li><li>Nell&#39;istanza [!DNL Adobe Commerce Optimizer], controllare la pagina Sincronizzazione dati per verificare che i prodotti di esempio siano stati caricati. Se non sono disponibili prodotti, ricaricare i dati di esempio o aggiungere un prodotto utilizzando [Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request). Attendere alcuni minuti per la propagazione delle modifiche alla configurazione.</li><li>Prova a recuperare i dettagli del prodotto utilizzando la [query sui prodotti](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details) del servizio di merchandising utilizzando le stesse intestazioni configurate nella [configurazione della vetrina di Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"}. Se è possibile recuperare i dati, è probabile che si tratti di un problema di configurazione della vista catalogo o di un errore di indice.</li></ul> |
-| **La ricerca non restituisce alcun risultato** | Pagina risultati ricerca vuota | <ul><li>Verifica di poter recuperare i risultati della ricerca prodotti utilizzando la query [productSearch](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search) di Merchandising Services utilizzando le stesse intestazioni configurate nella [configurazione della vetrina di Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"}. Se è possibile recuperare i dati, è probabile che si tratti di un problema di configurazione della vista catalogo o di un errore di indice.</li><li>Verificare che l&#39;ID della visualizzazione catalogo nella [configurazione vetrina Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"} corrisponda all&#39;ID della visualizzazione catalogo in [!DNL Adobe Commerce Optimizer].</li><li>In [!DNL Adobe Commerce Optimizer] verificare la configurazione dei criteri, delle impostazioni locali e dei listini prezzi utilizzati nella configurazione dell&#39;intestazione della vetrina.</li><li>Verificare che le [impostazioni dei metadati dell&#39;attributo](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) siano impostate correttamente per la ricerca.</li></ul> |
+| **Nessun dato prodotto visualizzato** | Le pagine dei prodotti mostrano segnaposto o errori | <ul><li>Verifica i valori di configurazione in `config.json`</li><li>Nell&#39;istanza [!DNL Adobe Commerce Optimizer], controllare la pagina Sincronizzazione dati per verificare che i prodotti di esempio siano stati caricati. Se non sono disponibili prodotti, ricaricare i dati di esempio o aggiungere un prodotto utilizzando [Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request). Attendere alcuni minuti per la propagazione delle modifiche alla configurazione.</li><li>Prova a recuperare i dettagli del prodotto utilizzando la [query sui prodotti](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details) del servizio di merchandising utilizzando le stesse intestazioni configurate nella [configurazione della vetrina di Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=it){target="_blank"}. Se è possibile recuperare i dati, è probabile che si tratti di un problema di configurazione della vista catalogo o di un errore di indice.</li></ul> |
+| **La ricerca non restituisce alcun risultato** | Pagina risultati ricerca vuota | <ul><li>Verifica di poter recuperare i risultati della ricerca prodotti utilizzando la query [productSearch](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search) di Merchandising Services utilizzando le stesse intestazioni configurate nella [configurazione della vetrina di Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=it){target="_blank"}. Se è possibile recuperare i dati, è probabile che si tratti di un problema di configurazione della vista catalogo o di un errore di indice.</li><li>Verificare che l&#39;ID della visualizzazione catalogo nella [configurazione vetrina Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=it){target="_blank"} corrisponda all&#39;ID della visualizzazione catalogo in [!DNL Adobe Commerce Optimizer].</li><li>In [!DNL Adobe Commerce Optimizer] verificare la configurazione dei criteri, delle impostazioni locali e dei listini prezzi utilizzati nella configurazione dell&#39;intestazione della vetrina.</li><li>Verificare che le [impostazioni dei metadati dell&#39;attributo](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) siano impostate correttamente per la ricerca.</li></ul> |
 
 ### Elenco di controllo per la convalida
 
@@ -218,28 +218,28 @@ Prima di procedere con i passaggi successivi, assicurati che la vetrina funzioni
 
 Se i problemi persistono:
 
-* Consulta la [documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* Consulta la [documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it)
 * Controlla la [[!DNL Adobe Commerce Optimizer] guida per sviluppatori](https://developer.adobe.com/commerce/services/optimizer/)
-* Visita le [risorse di supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
+* Visita le [risorse di supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/overview)
 
 ## Passaggi successivi
 
 Dopo aver configurato e verificato la vetrina, puoi:
 
-1. **[Installa l&#39;estensione del browser Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)** per modificare, visualizzare in anteprima e pubblicare contenuti direttamente dal sito Web.
+1. **[Installa l&#39;estensione del browser Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=it#install-and-configure-sidekick)** per modificare, visualizzare in anteprima e pubblicare contenuti direttamente dal sito Web.
 
-2. **[Imposta un ambiente di sviluppo locale](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)**—Crea un ambiente locale per personalizzare il codice e il contenuto della vetrina.
+2. **[Imposta un ambiente di sviluppo locale](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=it#set-up-local-environment)**—Crea un ambiente locale per personalizzare il codice e il contenuto della vetrina.
 
 ### Scopri ed esplora
 
 * **[Completa il caso d&#39;uso end-to-end](./use-case/admin-use-case.md)**. Ulteriori informazioni sulla configurazione della vetrina e sulla gestione del catalogo tramite [!DNL Adobe Commerce Optimizer].
 
-* **[Esplora la personalizzazione della vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/setup/)**: scopri le opzioni di configurazione e configurazione avanzate.
+* **[Esplora la personalizzazione della vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=it)**: scopri le opzioni di configurazione e configurazione avanzate.
 
-* **[Usa i menu a discesa di Commerce per personalizzare l&#39;esperienza della vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)**-Aggiungi componenti predefiniti per migliorare la tua esperienza della vetrina.
+* **[Usa i menu a discesa di Commerce per personalizzare l&#39;esperienza della vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=it)**-Aggiungi componenti predefiniti per migliorare la tua esperienza della vetrina.
 
 * **Esegui migrazione al servizio di configurazione Storefront**. Dopo aver creato la vetrina iniziale, puoi eseguire la migrazione della configurazione per utilizzare il servizio di configurazione che supporta casi di utilizzo avanzati, come la configurazione e le sovrapposizioni senza interruzioni. Per informazioni dettagliate, vedere la documentazione del [Servizio di configurazione](https://www.aem.live/docs/config-service-setup) in Adobe Experience Manager.
 
 >[!MORELIKETHIS]
 >
-> Per ulteriori informazioni sull&#39;aggiornamento del contenuto del sito e sull&#39;integrazione con i componenti front-end e i dati back-end di Commerce, consulta la [documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/).
+> Per ulteriori informazioni sull&#39;aggiornamento del contenuto del sito e sull&#39;integrazione con i componenti front-end e i dati back-end di Commerce, consulta la [documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it).
