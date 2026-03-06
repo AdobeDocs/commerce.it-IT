@@ -273,7 +273,7 @@ I seguenti elementi sono necessari per completare la sezione [storefront](./rati
 
 * [Google Chrome](https://www.google.com/chrome/) - Necessario per testare la vetrina
 
-* Progetto vetrina connesso all&#39;istanza [!DNL Commerce]. Se non disponi di un progetto storefront, segui i passaggi descritti in [Creare una vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}, inclusa la sezione [Collegare l&#39;archivio ai dati di e-commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}.
+* Progetto vetrina connesso all&#39;istanza [!DNL Commerce]. Se non disponi di un progetto storefront, segui i passaggi descritti in [Creare una vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=it){target="_blank"}, inclusa la sezione [Collegare l&#39;archivio ai dati di e-commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=it#link-repo-to-commerce-data){target="_blank"}.
 
 ### Clona l’archivio della vetrina
 
