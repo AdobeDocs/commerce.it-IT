@@ -66,6 +66,6 @@ Viene visualizzata la visualizzazione [!DNL App Management]. Qui puoi associare,
 
 ## Installazione delle app App Builder
 
-Se devi installare un&#39;app App Builder da Adobe Exchange (ad esempio, un&#39;integrazione predefinita o un&#39;app marketplace), consulta [Installare le app App Builder da Adobe Exchange](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"} per istruzioni dettagliate.
+Se devi installare un&#39;app App Builder da Adobe Exchange (ad esempio, un&#39;integrazione predefinita o un&#39;app marketplace), consulta [Installare le app App Builder da Adobe Exchange](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"} per istruzioni dettagliate.
 
 Dopo aver installato e distribuito un&#39;app, utilizzare [!DNL App Management] per [associarla all&#39;istanza di Commerce](manage-app.md#associate-an-app) e configurarne le impostazioni.
