@@ -2,9 +2,9 @@
 title: Configurare AEM Assets per Commerce Optimizer
 description: Scopri come configurare l'integrazione di AEM Assets per  [!DNL Adobe Commerce Optimizer].
 feature: CMS, Media, Configuration, Integration
-source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
+source-git-commit: 7f0970648663331fea2af19b981c4fd3b3aedcaa
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Prima di configurare l’integrazione, assicurati di disporre di:
 
 ## Onboarding
 
-Per integrare AEM Assets con [!DNL Commerce Optimizer], è necessario [creare un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Per integrare AEM Assets con [!DNL Commerce Optimizer], è necessario [creare un ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 Il supporto Adobe utilizza le informazioni contenute nel ticket per registrare il tenant con Assets Integration Service e configurare l’integrazione.
 
@@ -61,8 +61,6 @@ Dopo che il supporto Adobe elabora il ticket, l’integrazione viene configurata
 Una volta completato l’onboarding:
 
 1. **Registrazione con Assets Integration Service**: il tenant [!DNL Commerce Optimizer] è registrato con Assets Integration Service utilizzando l&#39;ID tenant [!DNL Adobe Commerce Optimizer], l&#39;ID programma AEM, l&#39;ID ambiente AEM e il tenant.
-
-1. **Impostazione dell&#39;autenticazione**: l&#39;autenticazione del token del servizio IMS è configurata tra [!DNL Commerce Optimizer] e il servizio di integrazione Assets per una comunicazione sicura.
 
 1. **Sottoscrizione evento**: Assets Integration Service si abbona a:
 
@@ -115,7 +113,7 @@ La risorsa deve essere in uno stato **approvato** per poter attivare la sincroni
 
 >[!CAUTION]
 >
-> Assegna il livello `AEM-Assets` alla [vista catalogo](https://experienceleague.adobe.com/it/docs/commerce/optimizer/setup/catalog-view). Se il livello non è assegnato, i dati immagine prodotto potrebbero essere sovrascritti in modo imprevisto.
+> Assegna il livello `AEM-Assets` alla [vista catalogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view). Se il livello non è assegnato, i dati immagine prodotto potrebbero essere sovrascritti in modo imprevisto.
 
 ## Ssincronizzazione
 
