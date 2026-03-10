@@ -30,7 +30,7 @@ Prima di associare un’app, assicurati di disporre dei seguenti elementi:
 
 Guarda questo video per scoprire come associare un’app a un’istanza Commerce e configurare le impostazioni.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478944)
+>[!VIDEO](https://video.tv.adobe.com/v/3478963?captions=ita)
 
 ## Associare un’app
 
