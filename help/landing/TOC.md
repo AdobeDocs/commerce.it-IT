@@ -26,7 +26,7 @@ ht-degree: 27%
    - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html?lang=it)
 - Servizi di integrazione {#integration-services}
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html?lang=it)
-   - [[!DNL App Management]](https://experienceleague.adobe.com/en/docs/commerce/app-management/overview)
+   - [[!DNL App Management]](https://experienceleague.adobe.com/it/docs/commerce/app-management/overview)
    - [Connettore servizi](/help/landing/saas.md)
 - Strumenti dati {#data-services}
    - [Esportazione dati SaaS](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html?lang=it)
