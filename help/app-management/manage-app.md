@@ -2,7 +2,7 @@
 title: Gestione dell’app
 description: Associa, configura e annulla l’associazione di applicazioni App Builder all’istanza Commerce.
 feature: App Builder, Extensibility, Integration
-source-git-commit: ab635fecb7b82294bd4a4fd045ed71931e9d265d
+source-git-commit: 4a5174d074a020f6199ed121e0289939612bc5c2
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Un App Manager associa un’applicazione App Builder alla relativa istanza Commerce. Il rendering dei moduli di configurazione viene eseguito in modo dinamico in base allo schema dell’app, pertanto non è necessario alcuno sviluppo personalizzato dell’interfaccia di amministrazione. App Manager configura le impostazioni tramite moduli generati automaticamente da Commerce.
 
-![Gestione app](assets/app-management-ui.png){width="500" zoomable="yes"}
+![Gestione app](assets/app-management-view.png){width="500" zoomable="yes"}
 
 ## Prerequisiti
 
@@ -30,7 +30,7 @@ Prima di associare un’app, assicurati di disporre dei seguenti elementi:
 
 Guarda questo video per scoprire come associare un’app a un’istanza Commerce e configurare le impostazioni.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478963?captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3478944)
 
 ## Associare un’app
 
