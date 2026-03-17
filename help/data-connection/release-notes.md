@@ -3,9 +3,9 @@ title: Note sulla versione
 description: Informazioni aggiornate sulla versione dell'estensione  [!DNL Data Connection]  di Adobe Commerce.
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: 75d4ed88411e6f81d2c4ff8aa5e8db9dfdc6e954
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1307'
 ht-degree: 1%
 
 ---
@@ -24,9 +24,9 @@ Queste note sulla versione contengono aggiornamenti all&#39;estensione [!DNL Dat
 
 Per le modifiche e le correzioni delle funzionalità relative alle estensioni utilizzate dall&#39;estensione [!DNL Data Connection], vedere **Aggiornamenti dei servizi supportati**.
 
-Per informazioni sulle pianificazioni e sul supporto, consulta le [prossime versioni](https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/schedule).
+Per informazioni sulle pianificazioni e sul supporto, consulta le [prossime versioni](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule).
 
-Consulta la documentazione per gli sviluppatori per [scoprire quali versioni di Commerce supportano questo modulo](https://experienceleague.adobe.com/it/docs/commerce-operations/release/product-availability).
+Consulta la documentazione per gli sviluppatori per [scoprire quali versioni di Commerce supportano questo modulo](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Aggiornamenti dei servizi supportati
 
@@ -81,6 +81,14 @@ _12 ottobre 2022_
 ![Nuovo](../assets/new.svg) - Aggiunto supporto per una [vetrina AEM](overview.md#aem-support).
 
 +++
+
+## 3,5,0
+
+_17 marzo 2026_
+
+[!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"} Adobe Commerce versioni 2.4.4 e successive
+
+![Nuovo](../assets/new.svg) aggiunto supporto PHP 8.5.
 
 ## 3.4.0
 
