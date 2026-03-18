@@ -3,9 +3,9 @@ title: Selezione manuale delle risorse
 description: Scopri in che modo il Selettore risorse di AEM integrato nell’amministratore di Commerce consente agli addetti al marketing e ai merchandising di aggiungere facilmente immagini da AEM Assets ad Adobe Commerce, semplificando la gestione delle risorse.
 feature: CMS, Media, Integration
 exl-id: 3c1f906f-3ec3-4eac-a47e-b21792767359
-source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
+source-git-commit: 0fd98bf86555c914f7a5b1e177c31c37764dbf84
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -14,17 +14,17 @@ ht-degree: 0%
 
 **Selettore risorse AEM** consente agli addetti al marketing e ai merchandising di aggiungere facilmente immagini da AEM Assets ad Adobe Commerce, semplificando il processo di gestione delle risorse. Questo metodo garantisce la coerenza del marchio e la conformità limitando la selezione delle risorse a quelle esaminate e approvate in [!DNL DAM (Digital Asset Management system)].
 
-Il **selettore risorse AEM** è disponibile quando l&#39;ID client IMS per il progetto AEM Assets è stato configurato in Amministrazione Commerce. Consulta [Configurare AEM Asset Selector](#configure-the-aem-asset-selector-in-adobe-commerce).
+Il **selettore risorse AEM** è disponibile quando l&#39;ID client IMS per il progetto AEM Assets è stato configurato nell&#39;amministratore di Commerce e gli utenti dispongono delle [autorizzazioni e dell&#39;autenticazione IMS necessarie](../get-started/permissions.md). Consulta [Configurare AEM Asset Selector](#configure-the-aem-asset-selector-in-adobe-commerce).
 
 Quando l&#39;integrazione **AEM Asset Selector** è configurata, gli addetti al marketing e i merchandiser possono:
 
 * Gestisci le immagini delle categorie in modo semplice, garantendone l’allineamento con le linee guida del marchio e della campagna.
 * [!BADGE Solo PaaS]{type=Informative tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe)."} Assegna risorse direttamente in Page Builder per contenuti visivamente avanzati.
-* [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."} Assegna Assets direttamente in Commerce Storefront con tecnologia Edge Delivery Services per contenuti arricchiti visivamente.
+* [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."} Assegna Assets direttamente in Commerce Storefront con tecnologia Edge Delivery Services per contenuti arricchiti visivamente.
 
 >[!NOTE]
 >
-> AEM Asset Selector è un componente front-end di AEM Assets che consente di integrare AEM Assets con le applicazioni di authoring. Per ulteriori informazioni su questo componente, vedi [Selettore risorse micro-front](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} nella *Guida utente di AEM as a Cloud Service*.
+> AEM Asset Selector è un componente front-end di AEM Assets che consente di integrare AEM Assets con le applicazioni di authoring. Per ulteriori informazioni su questo componente, vedi [Selettore risorse micro-front](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} nella *Guida utente di AEM as a Cloud Service*.
 
 ## Vantaggi principali
 
@@ -44,7 +44,7 @@ L’incorporazione di AEM Asset Selector nel pannello di amministrazione di Adob
 
 1. Dall&#39;amministratore di Commerce, passare a **[!UICONTROL Store]** > Configurazione > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
-1. Compila il campo **[!UICONTROL IMS Client ID]**.
+1. Compila il campo **[!UICONTROL IMS Client ID]**. Per informazioni sulle autorizzazioni richieste e su come ottenere questo ID, consulta [Autorizzazioni utente e IMS](../get-started/permissions.md).
 
 1. **Salva** la configurazione.
 
