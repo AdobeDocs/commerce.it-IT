@@ -3,10 +3,10 @@ user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: Questa guida fornisce istruzioni dettagliate per l'utilizzo di  [!DNL Adobe Commerce as a Cloud Service].
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: e15af3dc45e2acebf8f069d56c7d1a01f8757285
+source-git-commit: 48fa526c2d6529cb482c8fe52bffe27c21693cb1
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 10%
+source-wordcount: '81'
+ht-degree: 8%
 
 ---
 
@@ -28,11 +28,14 @@ ht-degree: 10%
    - [Servizio RAG documentazione](migration/doc-rag.md)
 - Tutorial {#tutorials}
    - [Prerequisiti del tutorial](tutorials/tutorial-prerequisites.md)
+   - [Esercitazione sull’estensione delle stime di consegna](tutorials/delivery-estimates-extension.md)
+   - [Esercitazione sull’estensione delle notifiche in magazzino](tutorials/in-stock-notification-extension.md)
+   - [Esercitazione sull’estensione per recensioni di prodotti](tutorials/product-reviews-extension.md)
    - [Esercitazione sull’estensione delle valutazioni](tutorials/ratings-extension.md)
    - [Esercitazione sull’estensione del metodo di spedizione](tutorials/shipping-method-extension.md)
 - Schemi {#schemas}
    - [Schema GraphQL](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [Schema REST API](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
-- [Esercitazioni video](https://experienceleague.adobe.com/it/playlists/accs-getting-started-product-overview){target="_blank"}
+- [Esercitazioni video](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [Note sulla versione](release-notes.md)
-- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/it/docs/commerce/user-guides/home)
+- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
