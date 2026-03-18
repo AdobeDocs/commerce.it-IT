@@ -93,7 +93,7 @@ L&#39;associazione all&#39;immagine selezionata verrà archiviata in Adobe Comme
 
 >[!TIP]
 >
-> [DA.live (Document Authoring)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank} fornisce anche un selettore di risorse per arricchire i dati.
+> [DA.live (Document Authoring)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=it#dalive-document-authoring){target=_blank} fornisce anche un selettore di risorse per arricchire i dati.
 
 ## Video sui prodotti
 
@@ -163,7 +163,7 @@ Dopo aver configurato [AEM Asset Selector](synchronize/asset-selector-integratio
 
 1. Fare clic su **[!UICONTROL Save]** e continuare.
 
-   Per ulteriori informazioni sulla creazione di una categoria, vedere [Completare il contenuto della categoria](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) nella **Guida alla gestione del catalogo di Commerce**.
+   Per ulteriori informazioni sulla creazione di una categoria, vedere [Completare il contenuto della categoria](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) nella **Guida alla gestione del catalogo di Commerce**.
 
 ## Aggiornare una risorsa
 
@@ -173,6 +173,6 @@ Affinché il flusso di lavoro lato Commerce colleghi le risorse ai prodotti tram
 
 Per le procedure AEM Assets, consulta la seguente documentazione:
 
-* [Rielaborazione delle risorse digitali](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [Rielaborazione delle risorse digitali](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [Approva una risorsa](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [Approva una risorsa](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
