@@ -61,7 +61,7 @@ Segui questi passaggi per abilitare il connettore e iniziare a sincronizzare i d
 
 1. **[Ottieni le credenziali API necessarie per stabilire la connessione tra Commerce e Commerce Optimizer](#get-required-values-for-configuring-the-commerce-optimizer-connection)**.
 
-1. **[Abilita l&#39;integrazione [!DNL Adobe Commerce Optimizer] ](#enable-the-adobe-commerce-optimizer-integration)**.
+1. **[Abilita l&#39;integrazione [!DNL Adobe Commerce Optimizer] &#x200B;](#enable-the-adobe-commerce-optimizer-integration)**.
 
 1. **[Verificare che la sincronizzazione dei dati funzioni](#verify-that-the-data-sync-is-working)**.
 
