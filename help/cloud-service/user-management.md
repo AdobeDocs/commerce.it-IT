@@ -264,7 +264,7 @@ Se il tuo account ha accesso a [[!DNL Adobe Experience Manager as a Cloud Servic
    >
    >Per ulteriori informazioni su come queste autorizzazioni influiscono sul tuo accesso a [!DNL AEM Assets], consulta [Profili di prodotto di Cloud Manager](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"}.
 
-   Per i campi di configurazione del Selettore risorse e con compilazione automatica (ID programma, ID ambiente, Mappatura dominio) in Commerce Admin, gli utenti devono anche disporre del profilo di prodotto **Utenti OpenAPI di AEM Assets DM - consegna**. Per ulteriori dettagli, vedere [Autorizzazioni utente e IMS](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions){target="_blank"}.
+   Per i campi di configurazione del Selettore risorse e con compilazione automatica (ID programma, ID ambiente, Mappatura dominio) in Commerce Admin, gli utenti devono anche disporre del profilo di prodotto **Utenti OpenAPI di AEM Assets DM - consegna**. Per ulteriori dettagli, vedere [Autorizzazioni utente e IMS](https://experienceleague.adobe.com/it/docs/commerce/aem-assets-integration/get-started/permissions){target="_blank"}.
 
 1. Fare clic su [!UICONTROL **Applica**].
 
