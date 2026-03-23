@@ -3,7 +3,7 @@ title: Accedi come cliente con codici occasionali
 description: Scopri come utilizzare la funzione Login as Customer OTC per generare codici una tantum per l'autenticazione del cliente in [!DNL Adobe Commerce as a Cloud Service].
 role: Admin
 level: Intermediate
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 source-git-commit: 2de1006ad3cee936d114bcf1b9a98b43a54d8c76
 workflow-type: tm+mt
 source-wordcount: '861'
@@ -65,7 +65,7 @@ Prima di utilizzare la funzione di accesso come cliente, è necessario soddisfar
 
 >[!IMPORTANT]
 >
->L’OTC del codice monouso generato è valido per 30 secondi per impostazione predefinita e viene invalidato dopo un singolo utilizzo. Il TTL può essere configurato inviando un [ticket di supporto](https://experienceleague.adobe.com/home?support-tab=home#support).
+>L’OTC del codice monouso generato è valido per 30 secondi per impostazione predefinita e viene invalidato dopo un singolo utilizzo. Il TTL può essere configurato inviando un [ticket di supporto](https://experienceleague.adobe.com/home?lang=it&support-tab=home#support).
 
 Dopo aver generato il codice una tantum, puoi utilizzarlo accedendo alla vetrina e accedendo utilizzando le seguenti credenziali:
 
