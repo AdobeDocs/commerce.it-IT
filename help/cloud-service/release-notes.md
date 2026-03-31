@@ -36,7 +36,7 @@ Le nuove query GraphQL, `isSubscribedProductAlertStock` e `isSubscribedProductAl
 
 ### Creare attributi di prodotto numerici che supportano valori negativi
 
-Un nuovo tipo di input dell&#39;attributo di prodotto `numeric` [](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) consente ai commercianti di creare attributi decimali che supportano valori negativi. <!-- ACCS-600 -->
+Un nuovo tipo di input dell&#39;attributo di prodotto `numeric` [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) consente ai commercianti di creare attributi decimali che supportano valori negativi. <!-- ACCS-600 -->
 
 ### Eseguire una query sulla configurazione reCAPTCHA per più moduli in una richiesta GraphQL
 
