@@ -4,9 +4,9 @@ description: Informazioni aggiornate sulla versione di  [!DNL Data Export Extens
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 5ce7a8aa82d23312685f052864aed96066c6e6c4
+source-git-commit: c7ad81a2b53e06ea9aab65aa53088a07839bc30d
 workflow-type: tm+mt
-source-wordcount: '2173'
+source-wordcount: '2226'
 ht-degree: 0%
 
 ---
@@ -21,12 +21,17 @@ Gli aggiornamenti includono:
 ![Correzioni](../assets/fix.svg) correzioni e miglioramenti
 ![Bug](../assets/bug.svg) problemi noti
 
-
 >[!NOTE]
 >
 >L’estensione SaaS per l’esportazione dei dati è una raccolta di moduli che viene installata automaticamente con Live Search, Product Recommendations e Catalog Service. Puoi controllare la versione installata nel sistema utilizzando Composer. In alcuni casi, potrebbe essere utile aggiornare l’estensione di esportazione dei dati sul sistema per rilevare correzioni o nuove funzionalità senza aggiornare la versione del servizio Commerce.
 
 ## Versioni del 2026
+
+### Versione 103.4.21
+
+_2 aprile 2026_
+
+![Correzione](../assets/fix.svg) **Maggiore affidabilità della risincronizzazione manuale dell&#39;indicizzatore di autorizzazioni delle categorie**-È stato risolto un problema che poteva causare l&#39;invisibilità temporanea di alcuni prodotti durante l&#39;esecuzione degli indicizzatori in un determinato ordine. Il sistema ora applica l&#39;ordine corretto e attiva automaticamente una risincronizzazione completa quando necessario, assicurando che tutti i prodotti rimangano visibili dopo le operazioni manuali di reindicizzazione. <!--MDEE-1332-->
 
 ### Versione 103.4.20
 
@@ -46,15 +51,13 @@ _6 febbraio 2026_
 
 _2 febbraio 2026_
 
-![Correzione](../assets/fix.svg) è stato risolto un problema a causa del quale i batch di elementi potevano superare il limite consentito durante gli aggiornamenti, causando `items_limit_exceeded` errori durante la sincronizzazione dei dati con [Servizi Commerce](https://experienceleague.adobe.com/it/docs/commerce/user-guides/home) o [Adobe Commerce Optimizer](https://experienceleague.adobe.com/it/docs/commerce/optimizer/setup/data-sync). <!--MDEE-1264-->
+![Correzione](../assets/fix.svg) è stato risolto un problema a causa del quale i batch di elementi potevano superare il limite consentito durante gli aggiornamenti, causando `items_limit_exceeded` errori durante la sincronizzazione dei dati con [Servizi Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) o [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync). <!--MDEE-1264-->
 
 ![Correzione](../assets/fix.svg) È stata migliorata l&#39;affidabilità delle esportazioni di dati di prodotto aggiungendo logica per registrare gli elementi non riusciti durante la raccolta di opzioni di prodotto bundle. <!--CCSAAS-4458-->
 
 ### Versione 103.4.17
 
 _5 gennaio 2026_
-
-### Versione 103.4.17
 
 ![Correzione](../assets/fix.svg) Aggiornamento dell&#39;estensione di esportazione dei dati (`magento/module-data-exporter`) per rimuovere la dipendenza `magento/module-analytics`, che non è più necessaria.<!--MDEE-1260-->
 
@@ -63,7 +66,6 @@ _5 gennaio 2026_
 ![Correzione](../assets/fix.svg) è stato risolto un problema a causa del quale i prodotti con un prezzo di $ 0 o uno sconto del 100% non venivano visualizzati come gratuiti nella vetrina. I prezzi del carrello e della vetrina ora sono costanti. <!--MDEE-1159-->
 
 ![Correzione](../assets/fix.svg) della compatibilità di Symfony 7.4 LTS aggiunta alle estensioni di esportazione dei dati per supportare aggiornamenti e integrazioni futuri. <!--MDEE-1272-->
-
 
 ## Versioni precedenti
 
@@ -77,13 +79,13 @@ _24 novembre 2025_
 
 _22 ottobre 2025_
 
-![Nuovo](../assets/new.svg) È stato aggiunto il supporto per l&#39;estensione dello stato di sincronizzazione dei feed di dati per monitorare e risolvere i problemi relativi ai trasferimenti di dati da Adobe Commerce ai servizi connessi (Catalog Service, Live Search e Product Recommendations). Per informazioni dettagliate sull&#39;installazione e l&#39;utilizzo di questa estensione, vedere [Monitoraggio dello stato di sincronizzazione dei feed di dati](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=it) nella *Guida per l&#39;amministratore di Commerce*. <!--MDEE-954-->
+![Nuovo](../assets/new.svg) È stato aggiunto il supporto per l&#39;estensione dello stato di sincronizzazione dei feed di dati per monitorare e risolvere i problemi relativi ai trasferimenti di dati da Adobe Commerce ai servizi connessi (Catalog Service, Live Search e Product Recommendations). Per informazioni dettagliate sull&#39;installazione e l&#39;utilizzo di questa estensione, vedere [Monitoraggio dello stato di sincronizzazione dei feed di dati](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) nella *Guida per l&#39;amministratore di Commerce*. <!--MDEE-954-->
 
 ### Versione 103.4.14
 
 _10 ottobre 2025_
 
-![Correzione](../assets/fix.svg) è stato risolto un problema che poteva impedire il completamento del processo [mview indexer](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) se la tabella `cde_product_overrides_feed_cl` non era presente. La correzione assicura una reindicizzazione stabile e impedisce errori di processo relativi a questa tabella in ambienti multi-tenant.&quot; <!--MDEE-1175-->
+![Correzione](../assets/fix.svg) è stato risolto un problema che poteva impedire il completamento del processo [mview indexer](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) se la tabella `cde_product_overrides_feed_cl` non era presente. La correzione assicura una reindicizzazione stabile e impedisce errori di processo correlati a questa tabella in ambienti multi-tenant. <!--MDEE-1175-->
 
 ### Versione 103.4.13
 
@@ -103,7 +105,7 @@ _18 settembre 2025_
 
 _29 agosto 2025_
 
-![Nuovo](../assets/new.svg) [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
+![Nuovo](../assets/new.svg) [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
 È stato aggiunto il supporto per attributi di prodotto aggiuntivi per includere nel feed di prodotto i dati di classe fiscale, serie di attributi e inventario dalle configurazioni di prodotto Commerce. I clienti che desiderano includere questi attributi nei feed di esportazione del prodotto devono aggiungere il modulo Attributi prodotto aggiuntivi al proprio progetto Adobe Commerce. Vedi [Aggiungere classe fiscale, set di attributi e attributi di inventario](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 
 ![Correzione](../assets/fix.svg) È stato risolto un problema che causava la sincronizzazione errata degli aggiornamenti dei prodotti eliminati se si verificava un errore durante un indice di prodotti completo. Ora, tutte le eliminazioni di prodotti vengono sincronizzate correttamente anche se si verifica un errore durante il processo di indicizzazione. <!--MDEE-1144-->
@@ -200,7 +202,7 @@ _31 marzo 2025_
 
 _11 marzo 2025_
 
-![Correzione](../assets/new.svg) è stata aggiunta la funzionalità per sincronizzare parzialmente `products`, `productOverrides` e `productAttributes` feed in base a un elenco specificato di SKU di prodotto. Utilizzare la nuova funzionalità aggiungendo l&#39;opzione `--by-ids` al comando resync CLI: <!--MDEE-606-->
+![Nuovo](../assets/new.svg) è stata aggiunta la funzionalità per sincronizzare parzialmente i feed `products`, `productOverrides` e `productAttributes` in base a un elenco specificato di SKU di prodotto. Utilizzare la nuova funzionalità aggiungendo l&#39;opzione `--by-ids` al comando resync CLI: <!--MDEE-606-->
 
 ```shell
 bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
@@ -334,7 +336,7 @@ _5 giugno 2024_
 
 _31 maggio 2024_
 
-![Correzione](../assets/fix.svg) Aggiunta del supporto per la registrazione di controllo del trasferimento dei dati aggiungendo un meccanismo per inviare un evento `data_sent_outside` ogni volta che i dati vengono trasmessi dall&#39;istanza di Commerce a un servizio Commerce <!--MDEE-785-->
+![Correzione](../assets/fix.svg) Aggiunta del supporto per la registrazione di controllo del trasferimento dei dati aggiungendo un meccanismo per inviare un evento `data_sent_outside` ogni volta che i dati vengono trasmessi dall&#39;istanza di Commerce a un servizio Commerce. <!--MDEE-785-->
 
 ### Versione 103.3.3
 
@@ -378,7 +380,7 @@ _30 aprile 2024_
    - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
    - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
 
-- modifica dei nomi delle tabelle di registro: segue lo stesso pattern di denominazione delle tabelle di feed, ma modifica dei nomi delle tabelle di registro aggiunge un suffisso `_cl`.  Esempio: `catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
+- modifica dei nomi delle tabelle di registro: segue lo stesso pattern di denominazione delle tabelle di feed, ma modifica dei nomi delle tabelle di registro aggiunge un suffisso `_cl`. Esempio: `catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
 
 Se disponi di codice personalizzato che fa riferimento a una di queste entità, aggiorna i riferimenti con i nuovi nomi per garantire che il codice continui a funzionare correttamente.
 
@@ -412,7 +414,6 @@ _3 aprile 2024_
 
 ![Correzione](../assets/fix.svg) aggiunto mutex per tutti i feed elaborati.
 
-
 ### Versione 103.2.2
 
 _14 marzo 2024_
@@ -434,3 +435,5 @@ _5 marzo 2024_
 _21 febbraio 2024_
 
 - È stata aggiunta la sincronizzazione di dati multi-thread per prodotti e prezzi.
+
+
