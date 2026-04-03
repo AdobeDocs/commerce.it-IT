@@ -2,7 +2,7 @@
 title: Configurare la vetrina
 description: Scopri come configurare la vetrina  [!DNL Adobe Commerce Optimizer] .
 role: Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
 source-git-commit: b6f7286f223c6253ab9edbead63a4bc4a9baddfe
 workflow-type: tm+mt
@@ -57,7 +57,7 @@ Lo strumento Site Creator (Creazione sito) crea un progetto completo di vetrina 
 * **Sito**: pagina di destinazione della vetrina con contenuto standard
 * **Codice**: archivio con file di origine standard
 * **Contenuto**: ambiente di authoring dei documenti con file di contenuto del sito
-* **Configurazione Commerce**: [Configurazione vetrina Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"} per la configurazione specifica dell&#39;istanza
+* **Configurazione Commerce**: [Configurazione vetrina Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=it){target="_blank"} per la configurazione specifica dell&#39;istanza
 
 ### Passaggio 1: generare il progetto
 
@@ -218,25 +218,25 @@ Prima di procedere con i passaggi successivi, assicurati che la vetrina funzioni
 
 Se i problemi persistono:
 
-* Consulta la [documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/){target="_blank"}
+* Consulta la [documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it){target="_blank"}
 * Consulta la [Guida per gli sviluppatori di Adobe Commerce Optimizer](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
-* Visita le [risorse di supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview){target="_blank"}
+* Visita le [risorse di supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/overview){target="_blank"}
 
 ## Passaggi successivi
 
-* **[Imposta un ambiente di sviluppo locale](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment){target="_blank"}**—Crea un ambiente locale per personalizzare il codice e il contenuto della vetrina.
-* **[Abilita l&#39;editor universale](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/quick-start/universal-editor/){target="_blank"}**-L&#39;editor universale consente di modificare il contenuto della vetrina nel contesto della pagina di cui è stato eseguito il rendering. Il contenuto viene quindi salvato nel progetto di authoring dei documenti (DA.live), dove puoi utilizzare la maggior parte delle app di orchestrazione dei contenuti, ad esempio localizzazione, pubblicazione in blocco, istantanee e altro ancora.
+* **[Imposta un ambiente di sviluppo locale](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=it#set-up-local-environment){target="_blank"}**—Crea un ambiente locale per personalizzare il codice e il contenuto della vetrina.
+* **[Abilita l&#39;editor universale](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/quick-start/universal-editor/?lang=it){target="_blank"}**-L&#39;editor universale consente di modificare il contenuto della vetrina nel contesto della pagina di cui è stato eseguito il rendering. Il contenuto viene quindi salvato nel progetto di authoring dei documenti (DA.live), dove puoi utilizzare la maggior parte delle app di orchestrazione dei contenuti, ad esempio localizzazione, pubblicazione in blocco, istantanee e altro ancora.
 
 ### Scopri ed esplora
 
 * **[Completa il caso d&#39;uso end-to-end](./use-case/admin-use-case.md)**. Ulteriori informazioni sulla configurazione della vetrina e sulla gestione del catalogo tramite [!DNL Adobe Commerce Optimizer].
 
-* **[Esplora la personalizzazione della vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/setup/){target="_blank"}**: scopri le opzioni di configurazione e configurazione avanzate.
+* **[Esplora la personalizzazione della vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=it){target="_blank"}**: scopri le opzioni di configurazione e configurazione avanzate.
 
-* **[Usa i menu a discesa di Commerce per personalizzare l&#39;esperienza della vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/){target="_blank"}**-Aggiungi componenti predefiniti per migliorare la tua esperienza della vetrina.
+* **[Usa i menu a discesa di Commerce per personalizzare l&#39;esperienza della vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=it){target="_blank"}**-Aggiungi componenti predefiniti per migliorare la tua esperienza della vetrina.
 
 * **Esegui migrazione al servizio di configurazione Storefront**. Dopo aver creato la vetrina iniziale, puoi eseguire la migrazione della configurazione per utilizzare il servizio di configurazione che supporta casi di utilizzo avanzati, come la configurazione e le sovrapposizioni senza interruzioni. Per informazioni dettagliate, vedere la documentazione del [Servizio di configurazione](https://www.aem.live/docs/config-service-setup){target="_blank"} in Adobe Experience Manager.
 
 >[!MORELIKETHIS]
 >
-> Per ulteriori informazioni sull&#39;aggiornamento del contenuto del sito e sull&#39;integrazione con i componenti front-end e i dati back-end di Commerce, consulta la [documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/){target="_blank"}.
+> Per ulteriori informazioni sull&#39;aggiornamento del contenuto del sito e sull&#39;integrazione con i componenti front-end e i dati back-end di Commerce, consulta la [documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it){target="_blank"}.
