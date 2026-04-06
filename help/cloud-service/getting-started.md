@@ -5,10 +5,10 @@ feature: Cloud, Integration
 role: Admin, Developer, User
 level: Beginner
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: f71795ab6a10a28e6352d7adfcffd11a40e8ef67
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+source-git-commit: d22ea53810e2e62337f9bd5fd633b0ed40a52b2d
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Seleziona una scheda di seguito per visualizzare gli elementi grafici del flusso
 
 >[!TAB Flusso di lavoro amministratore di sistema e esercente]
 
-Questo diagramma fornisce una panoramica generale del modo in cui amministratori di sistema e commercianti accedono e gestiscono le istanze di [!DNL Adobe Commerce as a Cloud Service]. Per ulteriori informazioni sui flussi di lavoro dell&#39;amministratore, vedere la [Guida di Adobe Admin Console](https://helpx.adobe.com/it/enterprise/admin-guide.html).
+Questo diagramma fornisce una panoramica generale del modo in cui amministratori di sistema e commercianti accedono e gestiscono le istanze di [!DNL Adobe Commerce as a Cloud Service]. Per ulteriori informazioni sui flussi di lavoro dell&#39;amministratore, vedere la [Guida di Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html).
 
 ![Diagramma del flusso di lavoro dell&#39;amministratore di sistema e del commerciante per Adobe Commerce as a Cloud Service](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -172,6 +172,10 @@ Le sezioni seguenti descrivono i processi di base da completare per rendere oper
 
 1. Fai clic su [!UICONTROL **Aggiungi istanza**].
 
+>[!NOTE]
+>
+>Non è possibile copiare o eliminare un&#39;istanza esistente.
+
 {{aem-assets-instance-mapping}}
 
 ### Accedere a un’istanza
@@ -207,7 +211,7 @@ Per impostazione predefinita, [!DNL Adobe Commerce as a Cloud Service] istanze n
 
 Esistono due modi per importare il catalogo in [!DNL Adobe Commerce as a Cloud Service]:
 
-* [**Amministratore Commerce**](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/import/data-import) - Interfaccia intuitiva che consente di importare i dati del catalogo con pochi clic.
+* [**Amministratore Commerce**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - Interfaccia intuitiva che consente di importare i dati del catalogo con pochi clic.
 * [**Importa API JSON**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - API REST che consente di importare i dati del catalogo a livello di programmazione.
 
 ### Configurare la vetrina
@@ -218,4 +222,4 @@ Ora che hai creato un&#39;istanza, puoi [configurare la vetrina](storefront.md) 
 
 * [Note sulla versione](release-notes.md)
 * [Guida alla migrazione](migration/overview.md)
-* [Documentazione di Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it)
+* [Documentazione di Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
