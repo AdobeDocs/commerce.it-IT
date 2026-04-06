@@ -1,13 +1,13 @@
 ---
 title: Servizio RAG documentazione
 description: Scopri come utilizzare il servizio di ricerca della documentazione basato sull’intelligenza artificiale per lo sviluppo di Adobe Commerce.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 28396828516645abec3b42a2c6874afe9134dfb8
+source-git-commit: 6c7055be007d75ff4cf3673da9938d9d79779aef
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Il servizio di documentazione RAG (Retrieval-Augmented Generation) fornisce funz
 
 Questo RAG fornisce un’interfaccia IDE per porre domande su Adobe Commerce e può consigliarti sulle best practice per lo sviluppo di applicazioni e altre attività di migrazione.
 
-Il servizio RAG fa parte del server [Commerce extensibility tools](./coding-tools.md) MCP (Model Context Protocol), che si integra con Cursor e altri assistenti di IA compatibili con MCP.
+Il servizio RAG fa parte del server [Commerce extensibility tools](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"} MCP (Model Context Protocol), che si integra con Cursor e altri assistenti di IA compatibili con MCP.
 
 ## Documentazione disponibile
 
@@ -30,9 +30,9 @@ Nella tabella seguente viene descritta la documentazione attualmente indicizzata
 
 | Categoria | Indice | Contenuto incluso | Parole chiave |
 |-------|---------|---------|------------------------|
-| [Vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it) | commerce-storefront-docs | Edge Delivery Services, drop-in, componenti storefront | vetrina, consegna, EDS, elenco prodotti, pagamento |
+| [Vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services, drop-in, componenti storefront | vetrina, consegna, EDS, elenco prodotti, pagamento |
 | [Estensibilità](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhook, eventi, estensioni, integrazioni | webhook, evento, estensione, mesh API, GraphQL |
-| [Commerce](https://experienceleague.adobe.com/it/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce core (catalogo, clienti, ordini) | catalogo, prodotto, cliente, ordine, inventario |
+| [Commerce](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce core (catalogo, clienti, ordini) | catalogo, prodotto, cliente, ordine, inventario |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, azioni di runtime, estensioni dell’interfaccia utente | app builder, azione runtime, React Spectrum |
 
 Per ulteriori informazioni sulla selezione dell&#39;indice, consultare [Selezione automatica dell&#39;indice](#automatic-index-selection-recommended) e [Selezione esplicita dell&#39;indice](#explicit-index-selection).
