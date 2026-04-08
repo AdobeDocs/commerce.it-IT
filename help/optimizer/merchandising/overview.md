@@ -2,11 +2,11 @@
 title: Panoramica sul merchandising
 description: Informazioni sulle funzionalità di merchandising in [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: 8abc0593c166a2dd861cfb78674918de1d0744de
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Product Discovery offre ai commercianti strumenti potenti per curare e ottimizza
 
 Grazie all&#39;individuazione dei prodotti, è possibile:
 
-* **Configura [facet](./facets/overview.md), [regole di merchandising](./rules/overview.md) e [sinonimi](./synonyms/overview.md)** per guidare gli acquirenti verso i prodotti più rilevanti con attrito minimo.
+* **Configura [facet](./facets/overview.md), [regole di ricerca e categoria per merchandising](./rules/overview.md) e [sinonimi](./synonyms/overview.md)** per guidare gli acquirenti verso i prodotti più rilevanti con attrito minimo.
 * **Crea esperienze di ricerca intuitive e orientate agli obiettivi** che riflettano la tua strategia di merchandising e le priorità stagionali.
 * **Utilizza il faceting dinamico basato sull&#39;intelligenza artificiale e la riclassificazione dei risultati** per adattare i risultati della ricerca in tempo reale in base al comportamento dell&#39;acquirente, aumentando il coinvolgimento e le vendite.
 * **Assicurati che gli elementi promozionali e ad alta priorità siano visualizzati in modo efficace** per allineare i risultati della ricerca agli obiettivi aziendali.

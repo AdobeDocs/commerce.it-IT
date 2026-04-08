@@ -1,34 +1,45 @@
 ---
 title: Regole di merchandising
-description: '[!DNL Adobe Commerce Optimizer] regole di merchandising combinano logica e azioni per modellare l''esperienza di acquisto.'
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+description: '[!DNL Adobe Commerce Optimizer] le regole di merchandising combinano la logica con le azioni per modellare i risultati della ricerca, gli elenchi di prodotti predefiniti e le pagine delle categorie.'
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: 8abc0593c166a2dd861cfb78674918de1d0744de
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
 
 # Regole di merchandising
 
-Le regole di merchandising si riferiscono a un insieme di regole che combinano logica e azioni per modellare l’esperienza di ricerca di un acquirente nel tuo negozio. Puoi utilizzare le regole di merchandising per promuovere, seppellire, fissare o nascondere i prodotti per calibrare i risultati della ricerca in tempo reale per supportare gli obiettivi aziendali.
+Le regole di merchandising combinano la logica con le azioni per modellare l&#39;aspetto dei prodotti in **risultati di ricerca**, in **elenchi di prodotti predefiniti** (**tutti gli elenchi di prodotti**) e in **pagine di categorie** ([regole di categoria](#category-rules) sono in versione beta). Puoi aumentare, seppellire, fissare o nascondere i prodotti e applicare **classificazione intelligente** in modo che le inserzioni riflettano i tuoi obiettivi aziendali.
 
-Ogni regola ha tre componenti principali:
+Ogni **regola di ricerca** ha tre componenti principali:
 
-- Condizioni: le condizioni che attivano un’azione.
-- Eventi: le azioni che hanno luogo quando vengono soddisfatte le condizioni.
-- Dettagli: il nome della regola, l’intervallo di tempo facoltativo e la descrizione.
+- **Condizioni** - Requisiti basati su query che attivano un&#39;azione quando la ricerca dell&#39;acquirente corrisponde.
+- **Eventi** - Azioni che vengono eseguite quando vengono soddisfatte le condizioni (classificazione manuale ed eventi correlati).
+- **Dettagli** - Nome della regola, intervallo di tempo e descrizione facoltativi.
 
-È possibile combinare più condizioni e azioni e pianificare una regola affinché sia attiva per un periodo. Puoi anche impostare una regola predefinita che viene applicata anche quando non è impostato alcun termine di ricerca.
+**Le regole di categoria** utilizzano la **selezione di categorie** invece delle condizioni di query di ricerca. La classificazione intelligente e la classificazione manuale funzionano allo stesso modo della ricerca, con differenze richiamate in [Crea e gestisci regole](add.md).
+
+È possibile combinare più condizioni e azioni per le regole di ricerca e pianificare l&#39;attivazione di qualsiasi regola per un periodo. È inoltre possibile impostare una **regola predefinita** (**Tutti gli elenchi di prodotti**) che viene applicata quando non viene applicata alcuna regola di ricerca o categoria specifica.
+
+## Regole di categoria {#category-rules}
+
+>[!IMPORTANT]
+>
+>Le regole di categoria sono in versione beta.
+
+**Regole categoria** controlla l&#39;ordine dei prodotti in **pagine categoria**. Seleziona una o più categorie, quindi applica la classificazione intelligente (ad esempio, più visualizzati, di tendenza) e le azioni manuali come pin, boost e bury. Non utilizzano le condizioni di query di ricerca. Per i passaggi di configurazione, i tipi di regole e il modo in cui viene applicata la classificazione alla categoria rispetto alla ricerca, vedere [Creare e gestire regole](add.md).
 
 ## Requisiti
 
-Una regola di ricerca semplice può avere una singola condizione e un singolo evento, mentre una regola complessa può avere fino a dieci condizioni che attivano fino a 25 eventi.
+Una **regola di ricerca** semplice può avere una singola condizione e un singolo evento, mentre una regola complessa può avere fino a dieci condizioni che attivano fino a 25 eventi. **Le regole di categoria** seguono gli stessi limiti di eventi per la classificazione manuale; non utilizzano condizioni di query.
+
 Le regole possono avere:
 
-- Fino a dieci condizioni
-- Fino a 25 eventi
+- Fino a dieci **condizioni** (solo regole di ricerca)
+- Fino a 25 **eventi**
 
 Il testo della query può contenere:
 
@@ -50,9 +61,11 @@ Durante la composizione di una regola complessa, può essere utile scriverla con
 
 ## Regola predefinita
 
-È possibile impostare una regola predefinita che viene applicata quando non viene fornito alcun termine di ricerca o non è possibile applicare altre regole di ricerca. Se imposti la regola predefinita su &quot;Più acquistati&quot;, tutte le query assumeranno per impostazione predefinita tale tipo di classificazione, a meno che non vengano precedute da un termine di ricerca più specifico. Nessun termine di ricerca può essere impostato per la regola predefinita.
+È possibile impostare una regola predefinita (**Tutti gli elenchi di prodotti**) che viene applicata quando non viene specificato alcun termine di ricerca o non è possibile applicare altre regole di ricerca. Se si imposta la regola predefinita su &quot;Most Purchased&quot; (Più acquistati), le query vengono impostate per default su tale tipo di classificazione, a meno che non vengano sostituite da un termine di ricerca più specifico. Nessun termine di ricerca può essere impostato per la regola predefinita. **Le regole di categoria** sono separate: si applicano solo alle categorie selezionate e non sostituiscono la regola di elenco predefinita.
 
 ## Ordine di precedenza con più regole
+
+Quanto segue si applica alle **regole di ricerca** e al modo in cui interagiscono per una determinata ricerca. **Le regole di categoria** si applicano per categoria; consulta [Creare e gestire regole](add.md#category-rules) per informazioni su come si adattano alle regole di ricerca e alle regole predefinite.
 
 A un termine di ricerca viene applicata una sola regola di ricerca alla volta.
 Se a una frase di ricerca sono applicabili più regole, vengono applicate tutte queste regole. Se si verifica una collisione tra due regole, `rule 1`, che aumenta lo SKU1 ma `rule 2` nasconde lo stesso SKU, la regola applicata più di recente (`rule 2`) ha la precedenza.
