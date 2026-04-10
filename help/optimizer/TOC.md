@@ -4,7 +4,7 @@ user-guide-description: Documentazione e risorse per  [!DNL Adobe Commerce Optim
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: e5cb31d0daec30b78cebf4173b72a556e7a92dd2
+source-git-commit: 67e254242d93c6f05d4c204cbc39e50116605c6b
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 11%
@@ -18,7 +18,6 @@ ht-degree: 11%
 - [Gestione di utenti e identità](user-management.md)
 - [Responsabilità condivisa](shared-responsibility.md)
 - [Limiti e limiti](boundaries-limits.md)
-- [Note sulla versione](release-notes.md)
 - Gestione dei risultati {#manage-results}
    - [Opportunità](./manage-results/opportunities.md)
    - [Metriche di successo](./manage-results/success-metrics.md)
@@ -66,4 +65,4 @@ ht-degree: 11%
 - Risorse per sviluppatori {#developer}
    - [Guida per gli sviluppatori e riferimenti API](https://developer.adobe.com/commerce/services/optimizer/)
    - [Connettore Commerce Salesforce](./developer/salesforce-connector.md)
-
+- [Note sulla versione](release-notes.md)
