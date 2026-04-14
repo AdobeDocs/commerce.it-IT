@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Corrispondenza automatica personalizzata
 
-Se la strategia di corrispondenza automatica predefinita (**Corrispondenza automatica OOTB**) non è allineata ai requisiti aziendali specifici, selezionare l&#39;opzione di corrispondenza personalizzata. Questa opzione supporta l&#39;utilizzo di [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) per sviluppare un&#39;applicazione di corrispondenza personalizzata che gestisca logiche di corrispondenza complesse o risorse provenienti da un sistema di terze parti che non possono popolare i metadati in AEM Assets.
+Se la strategia di corrispondenza automatica predefinita (**Corrispondenza automatica OOTB**) non è allineata ai requisiti aziendali specifici, selezionare l&#39;opzione di corrispondenza personalizzata. Questa opzione supporta l&#39;utilizzo di [Adobe Developer App Builder](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) per sviluppare un&#39;applicazione di corrispondenza personalizzata che gestisca logiche di corrispondenza complesse o risorse provenienti da un sistema di terze parti che non possono popolare i metadati in AEM Assets.
 
 ## Configurare la corrispondenza automatica personalizzata
 
@@ -114,7 +114,7 @@ Il campo **[!UICONTROL Adobe I/O Workspace Configuration]** consente di configur
 
 ## Endpoint API di corrispondenza personalizzati
 
-Quando si crea un&#39;applicazione di corrispondenza personalizzata utilizzando [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l&#39;applicazione deve esporre i seguenti endpoint:
+Quando si crea un&#39;applicazione di corrispondenza personalizzata utilizzando [App Builder](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l&#39;applicazione deve esporre i seguenti endpoint:
 
 * Endpoint **da risorsa App Builder all&#39;URL prodotto**
 * Endpoint **da prodotto App Builder a URL risorsa**
@@ -283,7 +283,7 @@ Il parametro `asset_matches` contiene i seguenti attributi:
 | Attributo | Tipo di dati | Descrizione |
 | --- | --- | --- |
 | `asset_id` | Stringa | ID risorsa. |
-| `asset_roles` | Array | Ruoli risorsa. Utilizza i [ruoli di risorse Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) supportati come `thumbnail`, `image`, `small_image` e `swatch_image`. |
+| `asset_roles` | Array | Ruoli risorsa. Utilizza i [ruoli di risorse Commerce](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) supportati come `thumbnail`, `image`, `small_image` e `swatch_image`. |
 | `asset_format` | Stringa | Il formato della risorsa. I valori possibili sono `image` e `video`. |
 | `asset_position` | Numero | Posizione della risorsa nella galleria di prodotti. |
 
