@@ -4,10 +4,10 @@ user-guide-description: Documentazione e risorse per  [!DNL Adobe Commerce Optim
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 67e254242d93c6f05d4c204cbc39e50116605c6b
+source-git-commit: fccfd5b75419e2f04537a48098591b53220725a5
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 11%
+source-wordcount: '108'
+ht-degree: 12%
 
 ---
 
@@ -15,6 +15,7 @@ ht-degree: 11%
 
 - [Cos&#39;è  [!DNL Adobe Commerce Optimizer]?](overview.md)
 - [Introduzione](get-started.md)
+- [Integrazioni](./integrations/integrations-overview.md)
 - [Gestione di utenti e identità](user-management.md)
 - [Responsabilità condivisa](shared-responsibility.md)
 - [Limiti e limiti](boundaries-limits.md)
@@ -22,7 +23,7 @@ ht-degree: 11%
    - [Opportunità](./manage-results/opportunities.md)
    - [Metriche di successo](./manage-results/success-metrics.md)
    - [Prestazioni di ricerca](./manage-results/search-performance.md)
-   - [Prestazioni consigli](./manage-results/recommendation-performance.md)
+   - [Prestazioni della funzione Consigli](./manage-results/recommendation-performance.md)
 - Merchandising {#merchandising}
    - [Panoramica](./merchandising/overview.md)
    - Consigli {#recommendations}
@@ -49,10 +50,10 @@ ht-degree: 11%
       - [Best practice](./merchandising/synonyms/best-practice.md)
 - Configurazione store {#setup}
    - [Visualizzazioni catalogo](./setup/catalog-view.md)
-   - [Livelli catalogo](./setup/catalog-layer.md)
+   - [Livelli del catalogo](./setup/catalog-layer.md)
    - [Criteri](./setup/policies.md)
    - [Listino prezzi](./setup/pricebooks.md)
-   - [Visualizzazioni prodotto](./setup/product-visuals.md)
+   - [Elementi visivi del prodotto](./setup/product-visuals.md)
    - [Sincronizzazione dati](./setup/data-sync.md)
    - Eventi {#events}
       - [Panoramica](./setup/events/overview.md)

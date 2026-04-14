@@ -2,9 +2,9 @@
 title: Connettore Commerce Salesforce
 description: Scopri di più su [!DNL Commerce Optimizer SFCC Connector] che fornisce un punto di partenza per integrare Salesforce Commerce B2C con [!DNL Adobe Commerce Optimizer] per sincronizzare i dati del catalogo e implementare e personalizzare il connettore per supportare le operazioni aziendali.
 role: Admin, Developer
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: 0afa51c00ee52a9ff2f81d61cbbbf29378ab7ab3
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1107'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,11 @@ Basato sulla tecnologia Adobe App Builder, [!DNL Commerce Optimizer Salesforce C
 
 Il connettore offre funzionalità affidabili di sincronizzazione dei dati e la flessibilità necessaria per personalizzare i flussi di lavoro in base alle esigenze aziendali.
 
-Per una serie di esercitazioni video end-to-end, consulta [Scopri Salesforce Commerce Cloud Starter Kit](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
+Per una serie di esercitazioni video end-to-end, consulta [Scopri Salesforce Commerce Cloud Starter Kit](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
+
+>[!NOTE]
+>
+>Per una panoramica delle altre integrazioni disponibili per Adobe Commerce Optimizer, vedi [Integrazioni](../integrations/integrations-overview.md).
 
 ## Funzionalità principali
 
