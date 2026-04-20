@@ -3,9 +3,9 @@ title: '[!DNL SaaS Data Export Guide]'
 description: Scopri come utilizzare l’estensione  [!DNL data export] per i servizi SaaS di Adobe Commerce che sincronizza i dati tra Adobe Commerce e i servizi Commerce connessi.
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
-source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
+source-git-commit: c86e66a675f9a53a6ec7b79540ff85d10186bf3f
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -25,15 +25,19 @@ L’esportazione di dati SaaS viene distribuita come estensione PHP. Supporta di
 
 - **Sincronizzazione manuale dall&#39;amministratore o dalla riga di comando**
 
-   - Il [Dashboard di gestione dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) in Commerce Admin fornisce una visualizzazione grafica dello stato di sincronizzazione. È possibile utilizzare il dashboard per eseguire una risincronizzazione completa (_sincronizzazione completa_) di tutti i feed. Tuttavia, Adobe consiglia di eseguire la sincronizzazione completa solo la prima volta che si connette Adobe Commerce a un servizio Commerce. Vedere [Processo di sincronizzazione](data-synchronization.md).
+   - Il [dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) in Commerce Admin fornisce una visualizzazione grafica dello stato di sincronizzazione che mostra i dati del prodotto sincronizzati correttamente con i servizi commerce. È possibile utilizzare il dashboard per eseguire una risincronizzazione completa (_sincronizzazione completa_) di tutti i feed. Tuttavia, Adobe consiglia di eseguire la sincronizzazione completa solo la prima volta che si connette Adobe Commerce a un servizio Commerce. Vedere [Processo di sincronizzazione](data-synchronization.md).
 
-   - Lo strumento da riga di comando [Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) fornisce comandi per sincronizzare feed specifici e include opzioni aggiuntive per personalizzare l&#39;elaborazione dei feed.
+     {{aco-data-sync-verification}}
+
+   - La pagina [Stato sincronizzazione feed dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) fornisce informazioni in tempo reale sullo stato e sulle prestazioni dei feed di esportazione dei dati che trasferiscono i dati di prodotti e categorie da Commerce a servizi esterni quali Product Recommendations, Live Search, Catalog Service o Adobe Commerce Optimizer.
+
+   - Lo strumento da riga di comando [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) fornisce comandi per sincronizzare feed specifici e include opzioni aggiuntive per personalizzare l&#39;elaborazione dei feed.
 
 - **Sincronizzazione automatica con processi cron**
 
-   - [Sincronizzazione dati parziale](data-synchronization.md#partial-synchronization-with-cron-jobs) - I processi Cron attivano una sincronizzazione dati parziale quando un utente amministratore di Commerce aggiorna un&#39;entità. Il processo di esportazione dei dati invia solo questi aggiornamenti ai servizi Commerce connessi. Il processo di sincronizzazione parziale si basa sul meccanismo MView e non richiede alcuna azione da parte dell&#39;utente amministratore o dell&#39;integratore di sistema.
+   - [Sincronizzazione dati parziale](data-synchronization.md#partial-sync) - I processi Cron attivano una sincronizzazione dati parziale quando un utente amministratore di Commerce aggiorna un&#39;entità. Il processo di esportazione dei dati invia solo questi aggiornamenti ai servizi Commerce connessi. Il processo di sincronizzazione parziale si basa sul meccanismo MView e non richiede alcuna azione da parte dell&#39;utente amministratore o dell&#39;integratore di sistema.
 
-   - [Nuovo tentativo automatico per errori di sincronizzazione](data-synchronization.md#failed-items-sync-for-error-recovery). I processi Cron attivano un nuovo tentativo automatico di sincronizzazione quando si verificano errori durante il processo di sincronizzazione dei dati.
+   - [Nuovo tentativo automatico per errori di sincronizzazione](data-synchronization.md#retry-failed-items-sync). I processi Cron attivano un nuovo tentativo automatico di sincronizzazione quando si verificano errori durante il processo di sincronizzazione dei dati.
 
 - **Esporta pianificazione e prestazioni**
 

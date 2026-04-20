@@ -3,9 +3,9 @@ title: Revisione dei registri e risoluzione dei problemi
 description: Scopri come risolvere i problemi di  [!DNL data export]  errori utilizzando i registri di esportazione dei dati e saas.
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
-source-git-commit: a1afed7b635a2b05c5c0e0d1c9bf4a07fc5eef31
+source-git-commit: c86e66a675f9a53a6ec7b79540ff85d10186bf3f
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1091'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 0%
 # Revisione dei registri e risoluzione dei problemi
 
 L&#39;estensione [!DNL data export] fornisce i registri per tenere traccia dei processi di raccolta e sincronizzazione dei dati.
+
+>[!NOTE]
+>
+>È inoltre possibile tenere traccia dello stato e delle prestazioni dei feed di esportazione dei dati per i dati di prodotti e categorie dal dashboard [Stato sincronizzazione feed dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) nell&#39;amministratore.
 
 ## Registri
 
@@ -129,7 +133,7 @@ Se i dati mancano o sono errati nei servizi Commerce, controlla i registri per i
 - Il log degli errori di esportazione dei dati (`commerce-data-export-errors.log`) acquisisce gli errori che si verificano durante la fase di raccolta.
 - Il log degli errori di esportazione SaaS (`saas-export-errors.log`) acquisisce gli errori che si verificano durante la fase di trasmissione.
 
-Se vengono visualizzati errori non correlati alla configurazione o alle estensioni di terze parti, invia un [ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) con il maggior numero di informazioni possibile.
+Se vengono visualizzati errori non correlati alla configurazione o alle estensioni di terze parti, invia un [ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) con il maggior numero di informazioni possibile.
 
 ### Risolvi problemi di sincronizzazione catalogo {#resolvesync}
 
@@ -140,15 +144,15 @@ Quando attivi una risincronizzazione dei dati, l’aggiornamento dei dati può r
 1. Visualizzare la visualizzazione dettagliata del prodotto in questione nei risultati della ricerca.
 1. Copiare l&#39;output JSON e verificare che il contenuto corrisponda a quello presente nel catalogo [!DNL Commerce].
 1. Se il contenuto non corrisponde, apporta una piccola modifica al prodotto nel catalogo, ad esempio aggiungendo uno spazio o un punto.
-1. Attendere la risincronizzazione o [attivare una risincronizzazione manuale](#resync).
+1. Attendere la risincronizzazione o attivare una risincronizzazione manuale dalla CLI o dal dashboard di amministrazione.
 
 #### Sincronizzazione non in esecuzione
 
-Se la sincronizzazione non è in esecuzione su una pianificazione o non è stato sincronizzato nulla, vedere questo articolo [KnowledgeBase](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
+Se la sincronizzazione non è in esecuzione su una pianificazione o non è stato sincronizzato nulla, vedere questo articolo [KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
 
 #### Sincronizzazione non riuscita
 
-Se lo stato della sincronizzazione del catalogo è **Non riuscito**, inviare un [ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Se lo stato della sincronizzazione del catalogo è **Non riuscito**, inviare un [ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 ## Registrazione estesa
 
