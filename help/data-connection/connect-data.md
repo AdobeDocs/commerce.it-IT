@@ -48,7 +48,7 @@ Per creare il progetto, segui i passaggi descritti nell&#39;esercitazione [Auten
 Durante l’esercitazione, assicurati che il progetto presenti quanto segue:
 
 - Accesso ai [profili di prodotto](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-product-profiles) seguenti: **Accesso predefinito a tutti i prodotti** e **Accesso predefinito a tutti i prodotti AEP**.
-- [ ruoli e autorizzazioni corretti configurati](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
+- [&#x200B; ruoli e autorizzazioni corretti configurati](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
 - Se hai deciso di utilizzare i token web JSON (JWT) come metodo di autenticazione server-to-server, devi caricare anche una chiave privata.
 
 Il risultato di questo passaggio crea un file di configurazione da utilizzare nel passaggio successivo.
@@ -162,7 +162,7 @@ Gli eventi di profilo della serie temporale contengono dati sulle informazioni d
 
 1. Assicurati di aver [fornito](#add-service-account-and-credential-details) i dettagli dell&#39;account del servizio e delle credenziali.
 
-1. Assicurati di avere uno schema e un set di dati specificati per l&#39;acquisizione dei dati dell&#39;evento del profilo [](profile-data.md) e per l&#39;acquisizione dei dati dell&#39;evento del profilo della [serie temporale](update-xdm.md#time-series-profile-event-data).
+1. Assicurati di avere uno schema e un set di dati specificati per l&#39;acquisizione dei dati dell&#39;evento del profilo [&#128279;](profile-data.md) e per l&#39;acquisizione dei dati dell&#39;evento del profilo della [serie temporale](update-xdm.md#time-series-profile-event-data).
 
 1. Se desideri inviare i dati del profilo ad Experience Platform, seleziona la casella di controllo **Profili cliente**.
 

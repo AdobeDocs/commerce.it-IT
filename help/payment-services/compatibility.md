@@ -46,7 +46,7 @@ Per utilizzare [!DNL Payment Services], devi prima connettere la tua istanza Com
 
 >[!VIDEO](https://video.tv.adobe.com/v/3447811)
 
-Per ulteriori informazioni sulla configurazione dell&#39;estensione [, vedere ](connect.md)Connect[!DNL Payment Services].
+Per ulteriori informazioni sulla configurazione dell&#39;estensione [, vedere &#x200B;](connect.md)Connect[!DNL Payment Services].
 
 >[!BEGINTABS]
 
