@@ -2,7 +2,7 @@
 title: Aggiungi facet
 description: Scopri come aggiungere attributi di prodotto filtrabili come  [!DNL Live Search] facet.
 exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
-source-git-commit: 15afc6fcd1e6783640dc3980ee06290e017abf37
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Il facet viene aggiunto nella parte inferiore dell&#39;elenco *Facet dinamici* e
 
 1. Quando richiesto, aggiorna la cache.
 
-   Il facet diventa disponibile nella vetrina alla successiva sincronizzazione del catalogo con [!DNL Live Search]. Se il facet non è disponibile dopo due ore, vedere [Sincronizzare i dati del catalogo](install.md#synchronize-catalog-data).
+   Il facet diventa disponibile nella vetrina alla successiva sincronizzazione del catalogo con [!DNL Live Search]. Se il facet non è disponibile dopo due ore, vedere [Sincronizzare i dati del catalogo](install.md#sync).
 
 ## Passaggio 2: modificare le proprietà del facet (facoltativo)
 
@@ -57,7 +57,8 @@ Il facet viene aggiunto nella parte inferiore dell&#39;elenco *Facet dinamici* e
 
 1. Una volta completato il facet, fare clic su **Pubblica modifiche**.
 1. Attendere che il facet venga visualizzato nell&#39;archivio.
-Se il facet non è disponibile dopo due ore, vedere [Verifica esportazione](install.md#synchronize-catalog-data) nelle istruzioni di installazione.
+
+   Se il facet non è disponibile dopo due ore, vedere [Verifica esportazione](install.md#sync) nelle istruzioni di installazione.
 
 ## Descrizioni dei campi
 

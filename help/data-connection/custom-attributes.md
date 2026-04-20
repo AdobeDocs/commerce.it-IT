@@ -4,7 +4,7 @@ description: Scopri come aggiungere attributi di ordine personalizzati ai dati d
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: dcd0b9e7-8d36-4bde-b226-ac19e83f00e4
-source-git-commit: 5b1387e18e059c938aca600cc31951a3f5289e7e
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 2%
@@ -349,7 +349,7 @@ ComponentRegistrar::register(
 
 Per garantire che i nuovi attributi dell&#39;ordine personalizzato possano essere acquisiti dallo schema [!DNL Commerce] in Experience Platform, è necessario estendere lo schema per includere questi campi personalizzati.
 
-Per informazioni su come estendere uno schema XDM esistente per includere questi campi personalizzati, consulta l&#39;articolo [Creare e modificare gli schemi nell&#39;interfaccia utente](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) nella documentazione di Experience Platform. Il campo ID tenant viene generato in modo dinamico; tuttavia, la struttura del campo deve essere simile all’esempio fornito nella documentazione di Experience Platform.
+Per informazioni su come estendere uno schema XDM esistente per includere questi campi personalizzati, consulta l&#39;articolo [Creare e modificare gli schemi nell&#39;interfaccia utente](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) nella documentazione di Experience Platform. Il campo ID tenant viene generato in modo dinamico; tuttavia, la struttura del campo deve essere simile all’esempio fornito nella documentazione di Experience Platform.
 
 >[!IMPORTANT]
 >
@@ -372,5 +372,5 @@ Visualizza la scheda [Personalizzazione dati](connect-data.md#data-customization
 Se viene visualizzato il messaggio `No custom order attributes found.` nella scheda **[!UICONTROL Data Customization]**, confermare quanto segue:
 
 1. Sono stati completati i prerequisiti per abilitare l&#39;estensione [Data Connector](overview.md#prerequisites).
-1. Hai configurato [attributi ordine personalizzati](#add-custom-order-attributes).
+1. Hai configurato [attributi ordine personalizzati](#add-custom-attributes-to-orders).
 1. È stato generato almeno un evento ordine.

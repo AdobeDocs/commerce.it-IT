@@ -1,8 +1,8 @@
 ---
 title: Opportunità
 description: Identifica le opportunità per incrementare il traffico, il coinvolgimento e le conversioni tramite l’integrazione con Adobe Sites Optimizer per miglioramenti intelligenti dei siti basati sui dati.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Si applica solo a  [!DNL Adobe Commerce Optimizer]  progetti (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Si applica solo a  [!DNL Adobe Commerce Optimizer]  progetti (infrastruttura SaaS gestita da Adobe)."
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '1342'
 ht-degree: 0%
@@ -17,7 +17,7 @@ La pagina **Opportunità** consente di identificare e implementare ottimizzazion
 
 ## Cosa sono le opportunità?
 
-Le [opportunità](https://experienceleague.adobe.com/it/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) sono consigli basati sull&#39;intelligenza artificiale che aiutano i merchandising a identificare e risolvere i problemi che influiscono sulle prestazioni del sito di e-commerce. Questi consigli sono basati su [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/it/docs/experience-manager-sites-optimizer/content/home), un servizio basato su cloud che analizza e migliora le prestazioni del sito Web.
+Le [opportunità](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) sono consigli basati sull&#39;intelligenza artificiale che aiutano i merchandising a identificare e risolvere i problemi che influiscono sulle prestazioni del sito di e-commerce. Questi consigli sono basati su [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home), un servizio basato su cloud che analizza e migliora le prestazioni del sito Web.
 
 ## Funzionalità principali
 
@@ -146,7 +146,7 @@ Per implementare un’ottimizzazione suggerita dall’intelligenza artificiale, 
 
 ### Funzionamento dei livelli del catalogo con la correzione automatica
 
-Se nella vista catalogo non esiste un livello Sites Optimizer di Adobe, correggilo automaticamente ne crea uno e gli assegna l&#39;ordine 1 (priorità più alta). Se eliminate questo livello, verrà ricreato alla successiva esecuzione della correzione automatica e sposterà i livelli esistenti in numeri di ordine inferiori. Se il livello Sites Optimizer di Adobe esiste già con un numero di ordine diverso, la correzione automatica non ne modifica la priorità. Se desiderate mantenere un livello di correzione automatica, ma non utilizzarlo immediatamente, potete disattivare il livello. Ulteriori informazioni su come gestire i [livelli catalogo](../setup/catalog-layer.md#activate-or-deactivate-layers).
+Se nella vista catalogo non esiste un livello Sites Optimizer di Adobe, correggilo automaticamente ne crea uno e gli assegna l&#39;ordine 1 (priorità più alta). Se eliminate questo livello, verrà ricreato alla successiva esecuzione della correzione automatica e sposterà i livelli esistenti in numeri di ordine inferiori. Se il livello Sites Optimizer di Adobe esiste già con un numero di ordine diverso, la correzione automatica non ne modifica la priorità. Se desiderate mantenere un livello di correzione automatica, ma non utilizzarlo immediatamente, potete disattivare il livello. Ulteriori informazioni su come gestire i [livelli catalogo](../setup/catalog-layer.md#activate-deactivate-or-delete-layers).
 
 ![Livelli catalogo](../assets/catalog-layers.png)
 
@@ -176,7 +176,7 @@ Le metriche di successo monitorano gli indicatori delle prestazioni chiave, ad e
 
 ## Ulteriori informazioni su Sites Optimizer
 
-Per informazioni dettagliate sulle funzionalità di Sites Optimizer, consulta la [documentazione di Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/it/docs/experience-manager-sites-optimizer/content/home).
+Per informazioni dettagliate sulle funzionalità di Sites Optimizer, consulta la [documentazione di Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home).
 
 Risorse aggiuntive:
 

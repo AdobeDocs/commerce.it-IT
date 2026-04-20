@@ -5,8 +5,8 @@ feature: Cloud, Integration
 role: Admin, Developer, User
 level: Beginner
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: d22ea53810e2e62337f9bd5fd633b0ed40a52b2d
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Come parte del processo di configurazione di [!DNL Adobe Commerce as a Cloud Ser
 In qualità di gruppo combinato, l’amministratore di sistema, il commerciante e lo sviluppatore devono seguire questi passaggi essenziali per rendere operativa l’istanza di Commerce:
 
 1. **Tutti gli utenti**: [Crea un&#39;istanza](#create-an-instance)
-1. **Amministratore di sistema**: [Aggiungere utenti e assegnare ruoli](user-management.md#add-users-and-admins)
+1. **Amministratore di sistema**: [Aggiungere utenti e assegnare ruoli](user-management.md#add-users)
 1. **Commercianti**: [Accedi all&#39;amministratore di Commerce](#access-an-instance) e [importa il tuo catalogo](#import-your-catalog)
 1. **Sviluppatori**: [Configura la vetrina](storefront.md) ed esplora la [piattaforma per sviluppatori](overview.md#developer-platform)
 
@@ -60,7 +60,7 @@ Seleziona una scheda di seguito per visualizzare gli elementi grafici del flusso
 
 >[!TAB Flusso di lavoro amministratore di sistema e esercente]
 
-Questo diagramma fornisce una panoramica generale del modo in cui amministratori di sistema e commercianti accedono e gestiscono le istanze di [!DNL Adobe Commerce as a Cloud Service]. Per ulteriori informazioni sui flussi di lavoro dell&#39;amministratore, vedere la [Guida di Adobe Admin Console](https://helpx.adobe.com/it/enterprise/admin-guide.html).
+Questo diagramma fornisce una panoramica generale del modo in cui amministratori di sistema e commercianti accedono e gestiscono le istanze di [!DNL Adobe Commerce as a Cloud Service]. Per ulteriori informazioni sui flussi di lavoro dell&#39;amministratore, vedere la [Guida di Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html).
 
 ![Diagramma del flusso di lavoro dell&#39;amministratore di sistema e del commerciante per Adobe Commerce as a Cloud Service](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -130,7 +130,7 @@ Le sezioni seguenti descrivono i processi di base da completare per rendere oper
 
 >[!NOTE]
 >
->Prima di poter creare un&#39;istanza, l&#39;amministratore di prodotto o l&#39;amministratore di sistema dell&#39;organizzazione deve aggiungere l&#39;utente come utente del prodotto [!DNL Adobe Commerce as a Cloud Service]. Per ulteriori informazioni, vedere [Aggiungere utenti e amministratori](./user-management.md#add-users-and-admins).
+>Prima di poter creare un&#39;istanza, l&#39;amministratore di prodotto o l&#39;amministratore di sistema dell&#39;organizzazione deve aggiungere l&#39;utente come utente del prodotto [!DNL Adobe Commerce as a Cloud Service]. Per ulteriori informazioni, vedere [Aggiungere utenti e amministratori](./user-management.md#add-users).
 
 [!DNL Adobe Commerce as a Cloud Service] istanze utilizzano un sistema basato sul credito. È possibile creare più istanze, ma ogni istanza richiede crediti disponibili. Il numero di crediti che hai inizialmente dipende dal tuo abbonamento.
 
@@ -211,7 +211,7 @@ Per impostazione predefinita, [!DNL Adobe Commerce as a Cloud Service] istanze n
 
 Esistono due modi per importare il catalogo in [!DNL Adobe Commerce as a Cloud Service]:
 
-* [**Amministratore Commerce**](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/import/data-import) - Interfaccia intuitiva che consente di importare i dati del catalogo con pochi clic.
+* [**Amministratore Commerce**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - Interfaccia intuitiva che consente di importare i dati del catalogo con pochi clic.
 * [**Importa API JSON**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - API REST che consente di importare i dati del catalogo a livello di programmazione.
 
 ### Configurare la vetrina
@@ -222,4 +222,4 @@ Ora che hai creato un&#39;istanza, puoi [configurare la vetrina](storefront.md) 
 
 * [Note sulla versione](release-notes.md)
 * [Guida alla migrazione](migration/overview.md)
-* [Documentazione di Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it)
+* [Documentazione di Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)

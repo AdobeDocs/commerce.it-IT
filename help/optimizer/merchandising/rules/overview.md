@@ -1,9 +1,9 @@
 ---
 title: Regole di merchandising
 description: '[!DNL Adobe Commerce Optimizer] le regole di merchandising combinano la logica con le azioni per modellare i risultati della ricerca, gli elenchi di prodotti predefiniti e le pagine delle categorie.'
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
-source-git-commit: 8abc0593c166a2dd861cfb78674918de1d0744de
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Durante la composizione di una regola complessa, può essere utile scriverla con
 
 ## Ordine di precedenza con più regole
 
-Quanto segue si applica alle **regole di ricerca** e al modo in cui interagiscono per una determinata ricerca. **Le regole di categoria** si applicano per categoria; consulta [Creare e gestire regole](add.md#category-rules) per informazioni su come si adattano alle regole di ricerca e alle regole predefinite.
+Quanto segue si applica alle **regole di ricerca** e al modo in cui interagiscono per una determinata ricerca. **Le regole di categoria** si applicano per categoria; consulta [Creare e gestire regole](add.md) per informazioni su come si adattano alle regole di ricerca e alle regole predefinite.
 
 A un termine di ricerca viene applicata una sola regola di ricerca alla volta.
 Se a una frase di ricerca sono applicabili più regole, vengono applicate tutte queste regole. Se si verifica una collisione tra due regole, `rule 1`, che aumenta lo SKU1 ma `rule 2` nasconde lo stesso SKU, la regola applicata più di recente (`rule 2`) ha la precedenza.

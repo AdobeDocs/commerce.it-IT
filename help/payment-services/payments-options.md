@@ -3,7 +3,7 @@ title: Opzioni di pagamento
 description: Imposta le opzioni di pagamento per personalizzare i metodi disponibili per i clienti del tuo Negozio.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '1728'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Esistono comportamenti diversi per ogni metodo di pagamento a seconda della posi
 
 [!DNL Payment Services] fornisce **Opzioni di pagamento avanzate** (completamente supportate) e **Opzioni di pagamento standard** (pagamento rapido) e flussi di onboarding, a seconda del paese in cui operi.
 
-* **Avanzate** - Tutte le [opzioni di pagamento](../payment-services/payments-options.md) disponibili sono disponibili per gli attuali [paesi completamente supportati](../payment-services/introduction.md#availability). Durante l&#39;onboarding per abilitare i pagamenti live, seleziona l&#39;[opzione di onboarding avanzata](../payment-services/production.md#advanced-onboarding).
+* **Avanzate** - Tutte le [opzioni di pagamento](../payment-services/payments-options.md) disponibili sono disponibili per gli attuali [paesi completamente supportati](compatibility.md#standard-vs-advanced-payment-services-experience). Durante l&#39;onboarding per abilitare i pagamenti live, seleziona l&#39;[opzione di onboarding avanzata](../payment-services/production.md#advanced-onboarding).
 
 * **Standard** - È disponibile un sottoinsieme di opzioni di pagamento (Pagamento rapido) (carte di credito e debito PayPal) per altri paesi supportati disponibili. [I campi della carta di credito](#credit-card-fields) e [Apple Pay](#apple-pay-button) non sono disponibili per questa opzione di onboarding. Durante l&#39;onboarding per abilitare i pagamenti live, seleziona l&#39;[opzione di onboarding standard](../payment-services/production.md#standard-onboarding).
 
@@ -127,11 +127,11 @@ Il pulsante [!DNL Pay Later] è visibile dalla pagina del prodotto, dal mini-car
 
 Consulta le informazioni sulle [offerte Pay Later](https://developer.paypal.com/docs/checkout/pay-later/us/) nella documentazione per gli sviluppatori di PayPal. Utilizza il menu a discesa **Paese** per selezionare un&#39;area di interesse.
 
-Scopri come disabilitare o abilitare i messaggi [!DNL Pay Later] aggiornando la configurazione di [Impostazioni](configure-admin.md#pay-later-button).
+Scopri come disabilitare o abilitare i messaggi [!DNL Pay Later] aggiornando la configurazione di [Impostazioni](configure-admin.md#paypal-payment-buttons).
 
 ##### Facoltativo. Configurare la messaggistica a pagamento posticipato
 
-**Configura messaggi** per [Paga più tardi](configure-admin.md#pay-later-button) consente ai commercianti di modificare gli stili predefiniti per questa opzione di pagamento. Se si imposta **[!UICONTROL Display Pay Later Message]** su `Yes` nella configurazione di [Impostazioni](configure-admin.md#pay-later-button), verrà visualizzato un pulsante modale **[!UICONTROL Configure Messaging]** che consente di impostare gli stili per **[!UICONTROL PayPal Pay Later messaging]**.
+**Configura messaggi** per [Paga più tardi](configure-admin.md#paypal-payment-buttons) consente ai commercianti di modificare gli stili predefiniti per questa opzione di pagamento. Se si imposta **[!UICONTROL Display Pay Later Message]** su `Yes` nella configurazione di [Impostazioni](configure-admin.md#paypal-payment-buttons), verrà visualizzato un pulsante modale **[!UICONTROL Configure Messaging]** che consente di impostare gli stili per **[!UICONTROL PayPal Pay Later messaging]**.
 
 ![Messaggistica posticipata](assets/pay-later-messaging.png){width="500" zoomable="yes"}
 
@@ -157,16 +157,16 @@ Questo consente di:
 
 Per **acquisire pagamenti con _solo_ pulsanti di pagamento PayPal (_non_ l&#39;opzione di pagamento con carta di credito PayPal)**:
 
-1. Assicurati che l&#39;archivio sia [in modalità di produzione](configure-admin.md#enable-payment-services).
-1. [Configura i pulsanti di pagamento PayPal desiderati](configure-admin.md#payment-buttons) in Impostazioni.
-1. Disattiva _l&#39;opzione_ nella sezione **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
+1. Assicurati che l&#39;archivio sia [in modalità di produzione](configure-admin.md#general-configuration).
+1. [Configura i pulsanti di pagamento PayPal desiderati](configure-admin.md#paypal-payment-buttons) in Impostazioni.
+1. Disattiva _l&#39;opzione_ nella sezione **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**._[!UICONTROL Payment buttons]_
 
 Per **acquisire i pagamenti con il provider di carte di credito esistente _e_ i pulsanti di pagamento PayPal**:
 
-1. Assicurati che l&#39;archivio sia [in modalità di produzione](configure-admin.md#enable-payment-services).
-1. [Configura i pulsanti di pagamento PayPal desiderati](configure-admin.md#payment-buttons).
-1. Disattiva _l&#39;opzione_ nella sezione **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
-1. Disattiva _l&#39;opzione_ nella sezione **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** e utilizza l&#39;account _[!UICONTROL Credit card fields]_&#x200B;provider di carte di credito esistente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=it#payments)
+1. Assicurati che l&#39;archivio sia [in modalità di produzione](configure-admin.md#general-configuration).
+1. [Configura i pulsanti di pagamento PayPal desiderati](configure-admin.md#paypal-payment-buttons).
+1. Disattiva _l&#39;opzione_ nella sezione **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**._[!UICONTROL Payment buttons]_
+1. Disattiva _l&#39;opzione_ nella sezione **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** e utilizza l&#39;account _[!UICONTROL Credit card fields]_provider di carte di credito esistente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)
 
 ## Metodi di pagamento locali
 
@@ -207,7 +207,7 @@ Per abilitare i pulsanti di pagamento rapido, configura singolarmente ogni metod
 
 ## Opzioni di pagamento
 
-Con [!DNL Payment Services] puoi configurare l&#39;esperienza di pagamento per Adobe Commerce in base alle preferenze e ai comportamenti degli acquirenti. Caratteristiche quali il vaulting con carta di credito [1&rbrace; e lo svuotamento automatico dell&#39;ordine garantiscono ai clienti una transazione semplice e senza problemi.](vaulting.md)
+Con [!DNL Payment Services] puoi configurare l&#39;esperienza di pagamento per Adobe Commerce in base alle preferenze e ai comportamenti degli acquirenti. Caratteristiche quali il vaulting con carta di credito [1} e lo svuotamento automatico dell&#39;ordine garantiscono ai clienti una transazione semplice e senza problemi.](vaulting.md)
 
 Con Adobe Commerce e Magento Open Source [!DNL Payment Services], sono disponibili più esperienze di pagamento. Esistono comportamenti diversi per ogni metodo di pagamento a seconda della posizione in cui sei nel processo di pagamento:
 

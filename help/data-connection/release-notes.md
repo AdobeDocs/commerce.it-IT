@@ -3,7 +3,7 @@ title: Note sulla versione
 description: Informazioni aggiornate sulla versione dell'estensione  [!DNL Data Connection]  di Adobe Commerce.
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 75d4ed88411e6f81d2c4ff8aa5e8db9dfdc6e954
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '1307'
 ht-degree: 1%
@@ -24,9 +24,9 @@ Queste note sulla versione contengono aggiornamenti all&#39;estensione [!DNL Dat
 
 Per le modifiche e le correzioni delle funzionalità relative alle estensioni utilizzate dall&#39;estensione [!DNL Data Connection], vedere **Aggiornamenti dei servizi supportati**.
 
-Per informazioni sulle pianificazioni e sul supporto, consulta le [prossime versioni](https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/schedule).
+Per informazioni sulle pianificazioni e sul supporto, consulta le [prossime versioni](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule).
 
-Consulta la documentazione per gli sviluppatori per [scoprire quali versioni di Commerce supportano questo modulo](https://experienceleague.adobe.com/it/docs/commerce-operations/release/product-availability).
+Consulta la documentazione per gli sviluppatori per [scoprire quali versioni di Commerce supportano questo modulo](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Aggiornamenti dei servizi supportati
 
@@ -78,7 +78,7 @@ _30 marzo 2023_
 _12 ottobre 2022_
 
 ![Nuovo](../assets/new.svg) - Sono stati aggiunti due [eventi storefront](events.md), `openCart` e `removeFromCart` a Adobe Commerce Storefront Events SDK and Collector.
-![Nuovo](../assets/new.svg) - Aggiunto supporto per una [vetrina AEM](overview.md#aem-support).
+![Nuovo](../assets/new.svg) - Aggiunto supporto per una [vetrina AEM](overview.md#supported-architecture).
 
 +++
 
@@ -194,7 +194,7 @@ _10 ottobre 2023_
 
 [!BADGE Compatibilità]{type=Informative tooltip="Compatibilità"} Adobe Commerce versioni 2.4.4 e successive
 
-Questa è una versione principale. [Modifica](install.md#update-the-data-connection) il file compositore.json principale del progetto.
+Questa è una versione principale. [Modifica](install.md#update) il file compositore.json principale del progetto.
 
 ![Nuovo](../assets/new.svg) - Disponibilità generale per [inviare dati e stato dell&#39;ordine cronologico](connect-data.md#send-historical-order-data) ad Experience Platform.
 ![Nuovo](../assets/new.svg) - Aggiunta del supporto per OAuth 2.0 quando [configuri](connect-data.md#connect-commerce-data-to-adobe-experience-platform) l&#39;estensione [!DNL Data Connection].
@@ -217,7 +217,7 @@ _13 giugno 2023_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.3 e successive
 
-![Nuovo](../assets/new.svg) - (Beta) Aggiunta la possibilità di [inviare dati e stato relativi all&#39;ordine cronologico](connect-data.md#beta-send-historical-order-data) ad Experience Platform.
+![Nuovo](../assets/new.svg) - (Beta) Aggiunta la possibilità di [inviare dati e stato relativi all&#39;ordine cronologico](connect-data.md#send-historical-order-data) ad Experience Platform.
 
 ## 2.2.0.
 

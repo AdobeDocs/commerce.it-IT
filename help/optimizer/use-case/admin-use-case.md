@@ -3,9 +3,9 @@ title: Caso di utilizzo end-to-end per Storefront e Catalog Administrator
 description: Scopri come utilizzare [!DNL Adobe Commerce Optimizer] per gestire il catalogo utilizzando le viste e i criteri del catalogo e come impostare la vetrina in base alla configurazione del catalogo.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '2161'
 ht-degree: 0%
@@ -55,7 +55,7 @@ In questo caso d’uso, stai lavorando con quanto segue:
 
 >[!NOTE]
 >
-> Scopri di più sui file di configurazione della vetrina consultando l&#39;argomento [Esplora la versione standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=it) nella documentazione di Adobe Commerce Storefront.
+> Scopri di più sui file di configurazione della vetrina consultando l&#39;argomento [Esplora la versione standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) nella documentazione di Adobe Commerce Storefront.
 
 ### ‌Soluzioni principali
 
@@ -110,7 +110,7 @@ In definitiva, Carvelo ha due obiettivi principali:
 
 ## &#x200B;1. Accedere all&#39;istanza [!DNL Adobe Commerce Optimizer]
 
-Passa all’URL dell’applicazione Commerce Optimizer preconfigurata con i dati di esempio. Puoi trovare l’URL in Commerce Cloud Manager dai dettagli dell’istanza per il progetto Commerce Optimizer o recuperarlo dall’amministratore di sistema. (Vedi [Accedere a un&#39;istanza](../get-started.md#access-an-instance).)
+Passa all’URL dell’applicazione Commerce Optimizer preconfigurata con i dati di esempio. Puoi trovare l’URL in Commerce Cloud Manager dai dettagli dell’istanza per il progetto Commerce Optimizer o recuperarlo dall’amministratore di sistema. (Vedi [Accedere a un&#39;istanza](../get-started.md#access-the-adobe-commerce-optimizer-application).)
 
 All&#39;avvio di [!DNL Adobe Commerce Optimizer], vengono visualizzati i seguenti elementi:
 
@@ -157,7 +157,7 @@ Utilizzando [!DNL Adobe Commerce Optimizer], il responsabile Commerce:
 1. Creare un nuovo criterio denominato *Categorie di parti Celport* per consentire a Celport di vendere solo parti di freni e sospensioni.
 1. Crea una nuova vista catalogo per la vetrina Celport.
 
-   Questa visualizzazione catalogo utilizza i criteri appena creati *Categorie di parti Celport* e i *Marchi East Coast Inc* esistenti per garantire che Celport possa vendere solo i marchi Bolt e Cruz come parte dell&#39;accordo con East Coast Inc. La visualizzazione catalogo Celport utilizza il listino prezzi `east_coast_inc` per supportare i programmi di prezzo dei prodotti in linea con gli accordi di licenza dei marchi.
+   Questa visualizzazione catalogo utilizza i criteri appena creati *Categorie di parti Celport* e i *marchi East Coast Inc* esistenti per garantire che Celport possa vendere solo i marchi Bolt e Cruz come parte dell&#39;accordo con East Coast Inc. La visualizzazione del catalogo Celport utilizza il listino prezzi `east_coast_inc` per supportare i programmi di prezzo dei prodotti in linea con gli accordi di licenza del marchio.
 1. Aggiorna la configurazione della vetrina commerce per utilizzare i dati della vista del catalogo Celport creata.
 
 Al termine di questa sezione, Celport sarà pronto a vendere i prodotti Carvelo.
@@ -257,7 +257,7 @@ Dopo aver creato la vista Catalogo Celport e i criteri associati, il passaggio s
 
 ## &#x200B;3. Aggiorna la vetrina
 
-L&#39;ultima parte di questo tutorial prevede l&#39;aggiornamento della vetrina che [hai già creato](#prerequisite) per inviare dati al nuovo catalogo Celport. In questa sezione sostituisci l’ID della vista catalogo nel file di configurazione della vetrina con l’ID della vista catalogo di Celport.
+L&#39;ultima parte di questo tutorial prevede l&#39;aggiornamento della vetrina che [hai già creato](#prerequisites) per inviare dati al nuovo catalogo Celport. In questa sezione sostituisci l’ID della vista catalogo nel file di configurazione della vetrina con l’ID della vista catalogo di Celport.
 
 1. Nell’ambiente di sviluppo locale, apri la cartella in cui hai clonato l’archivio GitHub con i file di configurazione boilerplate della vetrina.
 
@@ -447,4 +447,4 @@ Per continuare a conoscere [!DNL Adobe Commerce Optimizer]:
 - Scopri le [configurazioni avanzate dei criteri](../setup/policies.md)
 - Configura [altre visualizzazioni catalogo](../setup/catalog-view.md) per altri dealer
 - Consulta la [documentazione API](https://developer.adobe.com/commerce/services/optimizer/) per la gestione programmatica del catalogo
-- Scopri come configurare i componenti di rilascio per la vetrina Edge Delivery Services per creare esperienze vetrina personalizzate per l’individuazione dei prodotti, raccomandazioni e altre funzionalità. Consulta la [documentazione di Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=it)
+- Scopri come configurare i componenti di rilascio per la vetrina Edge Delivery Services per creare esperienze vetrina personalizzate per l’individuazione dei prodotti, raccomandazioni e altre funzionalità. Consulta la [documentazione di Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)

@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: e4aede88f8470f79e5987afcb7311bf6ef44c16e
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 1%
@@ -26,7 +26,7 @@ Nella barra laterale _Admin_, passa a **[!UICONTROL Sales]** > **[!UICONTROL [!D
 
 >[!TAB Adobe Commerce as a Cloud Service e Commerce Optimizer]
 
-Fino al completamento dell&#39;onboarding, **[!UICONTROL Home]** visualizzerà **[!UICONTROL ACCS Onboarding Required]**. L&#39;avviso è collegato a [configurare il servizio sandbox](sandbox.md#enable-sandbox-testing) (con un account di elaborazione PayPal di prova) o a [abilitare i pagamenti live](production.md#enable-live-payments) se è già stato testato in un altro ambiente:
+Fino al completamento dell&#39;onboarding, **[!UICONTROL Home]** visualizzerà **[!UICONTROL ACCS Onboarding Required]**. L&#39;avviso è collegato a [configurare il servizio sandbox](sandbox.md#sandbox-onboarding) (con un account di elaborazione PayPal di prova) o a [abilitare i pagamenti live](production.md#enable-live-payments) se è già stato testato in un altro ambiente:
 
 ![È necessario effettuare l&#39;onboarding ACS nella Home page di Payment Services](assets/payment-services-home-accs-onboarding.png){width="700" zoomable="yes"}
 
@@ -40,14 +40,14 @@ In questa visualizzazione Home, puoi accedere alla _Home_, _Scopri_ su [!DNL Pay
 
 ## Home
 
-[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
+[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
 
 | Campo | Descrizione |
 |---|---|
 | [!UICONTROL Orders] | Questi rapporti ti consentono di visualizzare rapidamente lo stato dei pagamenti degli ordini e di identificare eventuali problemi. |
 | [!UICONTROL Payouts] | I rapporti Pagamenti mostrano immediatamente informazioni complete sui pagamenti, consentendo la completa trasparenza dell&#39;importo del pagamento, del volume elaborato e dei rapporti dettagliati a livello di transazione per la quadratura finanziaria. |
 
-[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."}
+[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."}
 
 | Campo | Descrizione |
 |---|---|

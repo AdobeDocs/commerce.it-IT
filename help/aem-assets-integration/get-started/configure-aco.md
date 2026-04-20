@@ -2,7 +2,7 @@
 title: Configurare AEM Assets per Commerce Optimizer
 description: Scopri come configurare l'integrazione di AEM Assets per  [!DNL Adobe Commerce Optimizer].
 feature: CMS, Media, Configuration, Integration
-source-git-commit: 7f0970648663331fea2af19b981c4fd3b3aedcaa
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '1129'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Prima di configurare l’integrazione, assicurati di disporre di:
 
 ## Onboarding
 
-Per integrare AEM Assets con [!DNL Commerce Optimizer], è necessario [creare un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Per integrare AEM Assets con [!DNL Commerce Optimizer], è necessario [creare un ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 Il supporto Adobe utilizza le informazioni contenute nel ticket per registrare il tenant con Assets Integration Service e configurare l’integrazione.
 
@@ -85,7 +85,7 @@ Il processo di installazione e configurazione di AEM Assets per [!DNL Commerce O
 
 Assicurati che l’ambiente AEM Assets sia pronto:
 
-1. **Configurazione di AEM Assets**: configurare il profilo metadati di Commerce. Consulta [Configurare un profilo di metadati](configure-aem.md#configure-a-metadata-profile).
+1. **Configurazione di AEM Assets**: configurare il profilo metadati di Commerce. Consulta [Configurare un profilo di metadati](configure-aem.md#step-2-optional-configure-a-metadata-profile).
 
 1. **Abilitazione Dynamic Media**: verifica che Dynamic Media con funzionalità OpenAPI sia abilitato nell&#39;ambiente AEM Assets.
 
@@ -107,13 +107,13 @@ Per istruzioni dettagliate, consulta [Configurare un profilo di metadati](config
 
 Aggiungi metadati Commerce alle immagini del prodotto in AEM Assets.
 
-Consulta il [contenuto del pacchetto AEM Commerce](configure-aem.md#aem-commerce-assets-commerce-package-contents) per le definizioni dei campi e [Configura un profilo di metadati](configure-aem.md#step-2-optional-configure-a-metadata-profile) per i passaggi di configurazione.
+Per le definizioni dei campi, vedere il [contenuto del pacchetto AEM Commerce](configure-aem.md#aem-commerce-assets-commerce-package-contents) e [Configurare un profilo di metadati](configure-aem.md#step-2-optional-configure-a-metadata-profile) per i passaggi di configurazione.
 
 La risorsa deve essere in uno stato **approvato** per poter attivare la sincronizzazione dati. Il salvataggio dei metadati da solo non attiva l&#39;evento.
 
 >[!CAUTION]
 >
-> Assegna il livello `AEM-Assets` alla [vista catalogo](https://experienceleague.adobe.com/it/docs/commerce/optimizer/setup/catalog-view). Se il livello non è assegnato, i dati immagine prodotto potrebbero essere sovrascritti in modo imprevisto.
+> Assegna il livello `AEM-Assets` alla [vista catalogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view). Se il livello non è assegnato, i dati immagine prodotto potrebbero essere sovrascritti in modo imprevisto.
 
 ## Ssincronizzazione
 

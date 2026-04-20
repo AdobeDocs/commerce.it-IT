@@ -1,9 +1,9 @@
 ---
 title: Creare e gestire i consigli
 description: Scopri come creare e gestire i consigli.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: a0863a0d54c5c26b1ae207fd36777e0c515caaf0
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 0%
@@ -19,13 +19,13 @@ _Unità consigli_
 
 Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dati](../../manage-results/recommendation-performance.md) per misurare impression, visualizzazioni, clic e così via. Nella tabella Consigli vengono visualizzate le metriche di ogni unità di consigli per consentire di prendere decisioni aziendali informate.
 
-1. Nella barra laterale _[!DNL Adobe Commerce Optimizer]_, vai a_ Merchandising _>**Recommendations**&#x200B;per visualizzare l&#39;area di lavoro_ Recommendations _.
+1. Nella barra laterale _[!DNL Adobe Commerce Optimizer]_, vai a_ Merchandising _>**Recommendations**per visualizzare l&#39;area di lavoro_ Recommendations _.
 
 1. Nel campo **Vista catalogo**, seleziona la vista catalogo in cui desideri rendere disponibile il consiglio. Ulteriori informazioni sull&#39;utilizzo di [visualizzazioni catalogo per i consigli](../../manage-results/recommendation-performance.md#select-catalog-view).
 
    >[!IMPORTANT]
    >
-   >Questa funzionalità è attualmente in [beta](https://experienceleague.adobe.com/it/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). I partecipanti a Beta dovranno ricreare le unità di consigli esistenti per sfruttare il nuovo ambito di visualizzazione del catalogo.
+   >Questa funzionalità è attualmente in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). I partecipanti a Beta dovranno ricreare le unità di consigli esistenti per sfruttare il nuovo ambito di visualizzazione del catalogo.
 
 1. Fai clic su **Crea consiglio**.
 
@@ -97,7 +97,7 @@ Dopo aver creato un consiglio, devi recuperarne l’ID per implementare l’unit
 
 1. Nella sezione **ID consiglio**, copia l&#39;ID.
 
-1. Usa questo ID per configurare il [menu a discesa dei consigli](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=it) nella vetrina di Edge Delivery Services.
+1. Usa questo ID per configurare il [menu a discesa dei consigli](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) nella vetrina di Edge Delivery Services.
 
 ## Gestire i consigli esistenti
 
@@ -136,16 +136,16 @@ In seguito a queste variabili, la percentuale dell’indicatore di prontezza pu�
 
 Gli indicatori di preparazione sono calcolati in base a due fattori:
 
-- Dimensione sufficiente del set di risultati: nella maggior parte degli scenari sono stati restituiti risultati sufficienti per evitare di utilizzare [consigli di backup](../../setup/events/overview.md#backuprecs)?
+- Dimensione sufficiente del set di risultati: nella maggior parte degli scenari sono stati restituiti risultati sufficienti per evitare di utilizzare [consigli di backup](../../setup/events/overview.md#backup-recommendations)?
 - Sufficiente varietà di set di risultati: i prodotti restituiti rappresentano una varietà di prodotti del catalogo? L’obiettivo con questo fattore è evitare di avere una minoranza di prodotti come unici articoli consigliati in tutto il sito.
 
 In base ai fattori di cui sopra, un valore di fattibilità viene calcolato e visualizzato come segue:
 
 - Il 75% o più significa che le raccomandazioni suggerite per quel tipo di raccomandazione sono altamente pertinenti.
 - Almeno il 50% significa che le raccomandazioni suggerite per quel tipo di raccomandazione sono meno pertinenti.
-- Meno del 50% significa che le raccomandazioni suggerite per quel tipo di raccomandazione potrebbero non essere pertinenti. In questo caso, vengono utilizzati [consigli di backup](../../setup/events/overview.md#backuprecs).
+- Meno del 50% significa che le raccomandazioni suggerite per quel tipo di raccomandazione potrebbero non essere pertinenti. In questo caso, vengono utilizzati [consigli di backup](../../setup/events/overview.md#backup-recommendations).
 
-Ulteriori informazioni su [perché gli indicatori di preparazione potrebbero essere bassi](#what-to-do-if-the-readiness-indicator-percent-is-low).
+Ulteriori informazioni su [perché gli indicatori di preparazione potrebbero essere bassi](#what-to-do-if-the-readiness-indicator-is-low).
 
 ### Basato su statico
 
@@ -192,7 +192,7 @@ L’indicatore di preparazione per i tipi di consigli che dipendono dai dati del
 
 #### Cosa fare se l’indicatore di prontezza è basso
 
-Una percentuale di preparazione bassa indica che non vi sono molti prodotti del catalogo che possono essere inclusi nei consigli per questo tipo di consigli. Ciò significa che esiste un&#39;elevata probabilità che vengano restituiti [consigli di backup](../../setup/events/overview.md#backuprecs) se si distribuisce comunque questo tipo di consigli.
+Una percentuale di preparazione bassa indica che non vi sono molti prodotti del catalogo che possono essere inclusi nei consigli per questo tipo di consigli. Ciò significa che esiste un&#39;elevata probabilità che vengano restituiti [consigli di backup](../../setup/events/overview.md#backup-recommendations) se si distribuisce comunque questo tipo di consigli.
 
 >[!IMPORTANT]
 >

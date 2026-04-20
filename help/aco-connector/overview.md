@@ -2,8 +2,8 @@
 title: Connettore Adobe Commerce Optimizer
 description: Scopri come collegare i dati dal cloud Commerce o dal progetto on-premise a Adobe Commerce Optimizer
 feature: Personalization, Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
-source-git-commit: 11bb5df2488a017065db44504f35612fe54e284c
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Il connettore consente diversi flussi di lavoro chiave:
 
 * **Esporta dati catalogo Commerce in[!DNL Adobe Commerce Optimizer]**. I dati relativi al listino prezzi e al listino prezzi vengono esportati a livello di sito Web e di gruppo di clienti. I dati degli attributi del prodotto e del prodotto vengono esportati al livello `store view`. Per impostazione predefinita, la sincronizzazione dei dati del catalogo è abilitata per tutti gli ambiti di Commerce (siti Web e visualizzazioni dello store).
 
-  Per abilitare questo flusso di lavoro, installare l&#39;estensione PHP `adobe-commerce/commerce-data-export-aco-adapter`, rivedere la configurazione di esportazione e quindi abilitare l&#39;integrazione tra Commerce e Commerce Optimizer dall&#39;amministratore di Commerce. Per istruzioni dettagliate, vedere [Introduzione](#get-started).
+  Per abilitare questo flusso di lavoro, installare l&#39;estensione PHP `adobe-commerce/commerce-data-export-aco-adapter`, rivedere la configurazione di esportazione e quindi abilitare l&#39;integrazione tra Commerce e Commerce Optimizer dall&#39;amministratore di Commerce. Per istruzioni dettagliate, vedere [Introduzione](get-started.md).
 
 * **Mappa il sito Web Commerce e archivia i dati della visualizzazione da esportare in[!DNL Adobe Commerce Optimizer]**
 
