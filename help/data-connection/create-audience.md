@@ -79,9 +79,9 @@ Utilizza questi dati evento per specificare che il pubblico include persone che 
 
    ![Genera regola](assets/build-rule.png)
 
-   Nell&#39;area di lavoro **Generatore di segmenti** è possibile definire le regole e le condizioni per il pubblico.&#x200B; Queste regole e condizioni si basano sui dati di eventi e profili provenienti dall&#39;archivio Commerce e definiscono i criteri che determinano se un utente è idoneo per il pubblico. Ad esempio, puoi creare una regola che includa gli utenti che hanno visualizzato un prodotto specifico o quelli che hanno effettuato un acquisto entro un determinato intervallo di tempo. Ulteriori informazioni su [Generatore di segmenti](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) e sulle regole e condizioni.
+   Nell&#39;area di lavoro **Generatore di segmenti** è possibile definire le regole e le condizioni per il pubblico.&#x200B; Queste regole e condizioni si basano sui dati di eventi e profili provenienti dall&#39;archivio Commerce e definiscono i criteri che determinano se un utente è idoneo per il pubblico. Ad esempio, puoi creare una regola che includa gli utenti che hanno visualizzato un prodotto specifico o quelli che hanno effettuato un acquisto entro un determinato intervallo di tempo. Ulteriori informazioni su [Generatore di segmenti](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/segment-builder) e sulle regole e condizioni.
 
-1. Selezionare la scheda [Eventi](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events).
+1. Selezionare la scheda [Eventi](https://experienceleague.adobe.com/it/docs/experience-platform/segmentation/ui/segment-builder#events).
 
    ![Scheda Eventi](assets/audience-events-tab.png)
 
@@ -109,7 +109,7 @@ Utilizza questi dati evento per specificare che il pubblico include persone che 
 
 >[!IMPORTANT]
 >
->Se non hai già impostato [!DNL Commerce] come destinazione disponibile per la ricezione dei dati, consulta l&#39;argomento [Adobe [!DNL Commerce] Connection](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-commerce).
+>Se non hai già impostato [!DNL Commerce] come destinazione disponibile per la ricezione dei dati, consulta l&#39;argomento [Adobe [!DNL Commerce] Connection](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/catalog/personalization/adobe-commerce).
 
 1. In the **Details** tab of your audience, click **Activate to destination**.
 
@@ -119,7 +119,7 @@ Utilizza questi dati evento per specificare che il pubblico include persone che 
 
 ## 3. View the audience in the Audiences Dashboard
 
-In [!DNL Commerce], you can view all [active](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations) audiences that can be personalized for your [!DNL Commerce] instance using the **Real-Time CDP Audiences** dashboard.
+In [!DNL Commerce], you can view all [active](https://experienceleague.adobe.com/it/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations) audiences that can be personalized for your [!DNL Commerce] instance using the **Real-Time CDP Audiences** dashboard.
 
 To access the **Real-Time CDP Audiences** dashboard, go to the _Admin_ sidebar, then go to **[!UICONTROL Customers]** > **[!UICONTROL Real-time CDP Audience]**.
 
@@ -132,9 +132,9 @@ In the dashboard, look for the audience you created. Notice it is not being used
 This section shows you how to create a cart price rule based on your new audience.
 
 1. Confirm that your new audience is displayed in the **Real-Time CDP Audiences** dashboard.
-1. [Create a cart price rule](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create).
-1. [Set the condition](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition) of the cart price rule using your new audience.
-1. [Set the action](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions) that you want to occur when the product is added to the cart.
+1. [Create a cart price rule](https://experienceleague.adobe.com/it/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create).
+1. [Set the condition](https://experienceleague.adobe.com/it/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition) of the cart price rule using your new audience.
+1. [Set the action](https://experienceleague.adobe.com/it/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions) that you want to occur when the product is added to the cart.
 1. Continue to configure your cart price rule.
 1. Go to the customer view of your sandbox instance.
 1. Add the product you based the audience off of to the cart. Notice that the cart price rule is enabled.

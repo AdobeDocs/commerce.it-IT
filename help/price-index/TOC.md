@@ -17,4 +17,4 @@ ht-degree: 7%
 - Adattatore catalogo {#catalog-adapter}
    - [Panoramica](catalog-adapter.md)
    - [Note sulla versione](release-notes.md)
-- [Torna alla pagina principale dei servizi Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Torna alla pagina principale dei servizi Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=it)
