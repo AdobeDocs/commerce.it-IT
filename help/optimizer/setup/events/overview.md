@@ -4,9 +4,9 @@ description: Scopri gli eventi utilizzati da  [!DNL Adobe Commerce Optimizer]  p
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: c102c558-a680-4622-80f0-6e5c34d497e9
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '1398'
+source-wordcount: '1411'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Alcuni eventi sono necessari per popolare il [dashboard delle prestazioni di ric
 | Area del dashboard | Eventi | Unisci campo |
 | ------------------- | ------------- | ---------- |
 | Ricerche univoche | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
-| Nessuna ricerca di risultati | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
+| Nessuna ricerca di risultati | `page-view`, `search-request-sent`,  `search-response-received` | `searchRequestId` |
 
 ### Consigli
 
@@ -148,7 +148,7 @@ I seguenti eventi sono necessari per popolare il [dashboard delle prestazioni de
 | Tasso di click-through | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
 | vCTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
 
-I seguenti eventi non sono specifici di Recommendations, ma sono necessari per consentire ad Adobe AI di interpretare correttamente i dati dell’acquirente:
+I seguenti eventi non sono specifici per la funzione Consigli, ma sono necessari per consentire ad Adobe AI di interpretare correttamente i dati degli acquirenti:
 
 - `view`
 - `add-to-cart`
@@ -174,4 +174,4 @@ Questa tabella descrive gli eventi utilizzati da ogni tipo di consiglio.
 
 ## Supporto
 
-Se noti eventuali discrepanze di dati o se i consigli e i risultati della ricerca non funzionano come previsto, [invia un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Se noti eventuali discrepanze di dati o se i consigli e i risultati della ricerca non funzionano come previsto, [invia un ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).

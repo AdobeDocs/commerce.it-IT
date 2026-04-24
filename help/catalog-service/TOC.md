@@ -4,10 +4,10 @@ user-guide-description: Questa guida fornisce istruzioni dettagliate per l'utili
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: 2c3a67698927ab9a9840c49a5e46497e4111a7cc
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '48'
-ht-degree: 10%
+source-wordcount: '54'
+ht-degree: 9%
 
 ---
 
@@ -22,6 +22,6 @@ ht-degree: 10%
    - [Catalog Service e Mesh API](mesh.md)
    - [Caso d’uso: visualizzazione dei prezzi tassati](taxes.md)
 - [Note sulla versione](release-notes.md)
-- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/it/docs/commerce/user-guides/home)
+- [Torna alla pagina principale dei servizi Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 

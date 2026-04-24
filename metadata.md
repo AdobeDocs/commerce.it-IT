@@ -5,13 +5,13 @@ product: magento
 type: Documentation
 audience: end-user
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/commerce.it-IT
-index: y
+git-repo: https://github.com/AdobeDocs/commerce.en
+index: true
 role: User
 feature-set: Commerce
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -19,21 +19,21 @@ ht-degree: 0%
 
 # Metadati per uso interno
 
-Il file `metadata.md` include metadati a livello di repository che passano ai file della guida utente `TOC.md` nel repository. Se si desidera modificare il contenuto di metadata.md per qualsiasi guida utente, eseguire questa operazione in qualsiasi file `TOC.md`.
+The `metadata.md` file includes repo-level metadata that passes through to user guide `TOC.md` files in the repo. If you want to change metadata.md content for any user guide, do so in any `TOC.md` file.
 
-| metadati | che cosa fa |
+| metadata | che cosa fa |
 |--- |--- |
 | solution-title | Utilizzato nell’intestazione dell’articolo come collegamento |
 | solution-hub-url | Apre la pagina dell’hub helpx |
-| solution-icon | Visualizza l’icona della soluzione accanto al titolo della soluzione. Non ancora implementato |
+| solution-icon | Displays solution icon next to solution title. Non ancora implementato |
 | getting-started-url | Collegamento alla pagina della guida introduttiva helpx |
 | tutorials-url | Collegamento alle esercitazioni video: esercitazioni helpx o KT |
-| mini-toc-levels | Determina il numero di livelli di intestazione visualizzati nella barra a destra. il valore predefinito è 2 |
-| git-repo | Specifica la posizione dell’archivio principale per uso interno |
+| mini-toc-levels | Determines the number of heading levels that appear in right rail. il valore predefinito è 2 |
+| git-repo | Specifies the location of the master repo for internal use |
 
-Nel file TOC.md
+In TOC.md file
 
-| metadati | che cosa fa |
+| metadata | che cosa fa |
 |--- |--- |
 | user-guide-title | Utilizzato nell’intestazione dell’articolo come collegamento |
 | user-guide-url | Apre la pagina dell’hub helpx |

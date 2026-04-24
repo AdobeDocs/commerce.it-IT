@@ -2,13 +2,13 @@
 title: Responsabilità condivisa
 description: Scopri le responsabilità di sicurezza di ogni parte coinvolta nel tuo  [!DNL Adobe Commerce as a Cloud Service]  progetto.
 feature: Cloud, Security
-role: Admin, Architect, Leader
+role: Admin, Developer, Leader
 level: Intermediate
 exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: 1ce3b6b6b94b1b4e94c0d34c081dec2884d7f0f8
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Le tabelle di riepilogo seguenti utilizzano il modello RACI per mostrare le resp
 
 **R** - Responsabile
 **A** — Responsabile
-**C** — Consultato
+**C** - Consultato
 **I** - Informato
 
 >[!ENDSHADEBOX]

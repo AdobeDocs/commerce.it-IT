@@ -1,11 +1,11 @@
 ---
 title: Prestazioni di ricerca
 description: La pagina Prestazioni di ricerca fornisce ad insight i termini di ricerca utilizzati dagli acquirenti.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1863'
 ht-degree: 0%
 
 ---
@@ -110,7 +110,7 @@ Assicurati che i prodotti secondari dei prodotti configurabili dispongano di imm
 
 ### Sfruttare i metadati del prodotto
 
-Assicurati che gli attributi del prodotto [&#x200B; precisi e dettagliati siano configurabili come ricercabili e abbiano un peso assegnato](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Tieni presente che gli attributi SKU, nome e categoria sono ricercabili per impostazione predefinita e non possono essere esclusi dalla ricerca. Per ottenere risultati ottimali, non utilizzare spazi negli SKU.
+Assicurati che gli attributi del prodotto [ precisi e dettagliati siano configurabili come ricercabili e abbiano un peso assegnato](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Tieni presente che gli attributi SKU, nome e categoria sono ricercabili per impostazione predefinita e non possono essere esclusi dalla ricerca. Per ottenere risultati ottimali, non utilizzare spazi negli SKU.
 
 Per aumentare la rilevanza della ricerca, assegnare un peso a ogni attributo ricercabile. Gli attributi con un peso maggiore dovrebbero apparire più in alto nei risultati della ricerca. L’ordinamento in base alla rilevanza è influenzato da più criteri, ad esempio il peso della ricerca. Ciò significa che a volte gli attributi con un peso di ricerca inferiore possono comunque avere maggiore rilevanza degli attributi con un peso di ricerca maggiore. Altri criteri possono includere il numero di corrispondenze in un dato attributo, la posizione del termine di ricerca trovato e la struttura generale del testo prima e dopo un termine di ricerca.
 

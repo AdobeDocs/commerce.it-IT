@@ -3,11 +3,11 @@ title: Caso di utilizzo end-to-end per Storefront e Catalog Administrator
 description: Scopri come utilizzare [!DNL Adobe Commerce Optimizer] per gestire il catalogo utilizzando le viste e i criteri del catalogo e come impostare la vetrina in base alla configurazione del catalogo.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '2161'
+source-wordcount: '2205'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ In questo caso d’uso, stai lavorando con quanto segue:
 
 >[!NOTE]
 >
-> Scopri di più sui file di configurazione della vetrina consultando l&#39;argomento [Esplora la versione standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=it) nella documentazione di Adobe Commerce Storefront.
+> Scopri di più sui file di configurazione della vetrina consultando l&#39;argomento [Esplora la versione standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) nella documentazione di Adobe Commerce Storefront.
 
 ### ‌Soluzioni principali
 
@@ -108,7 +108,7 @@ In definitiva, Carvelo ha due obiettivi principali:
 
 >[!ENDSHADEBOX]
 
-## &#x200B;1. Accedere all&#39;istanza [!DNL Adobe Commerce Optimizer]
+## &#x200B;1. Accedi all&#39;istanza [!DNL Adobe Commerce Optimizer]
 
 Passa all’URL dell’applicazione Commerce Optimizer preconfigurata con i dati di esempio. Puoi trovare l’URL in Commerce Cloud Manager dai dettagli dell’istanza per il progetto Commerce Optimizer o recuperarlo dall’amministratore di sistema. (Vedi [Accedere a un&#39;istanza](../get-started.md#access-the-adobe-commerce-optimizer-application).)
 
@@ -146,7 +146,7 @@ Kingsbluff dispone dei seguenti criteri:
 
 Nella sezione successiva verranno create una vista catalogo e le policy per il concessionario Celport.
 
-## &#x200B;2. Creare una vista criterio e catalogo
+## &#x200B;2. Creare una vista criteri e catalogo
 
 Il responsabile commerciale di Carvelo deve impostare una nuova vetrina per un dealer chiamato *Celport* che appartiene all&#39;azienda *East Coast Inc*. Celport venderà freni e sospensioni per i marchi Bolt e Cruz.
 
@@ -196,7 +196,7 @@ Creiamo un nuovo criterio denominato *Categorie di parti Celport* per filtrare g
 
 1. Nella finestra di dialogo **[!UICONTROL Filter details]**, fare clic su **[!UICONTROL Save]**.
 
-1. Per abilitare il filtro appena creato, fare clic sui punti azione (...) e selezionare **Abilita**.
+1. Per abilitare il filtro appena creato, fai clic sui punti azione (...) e selezionare **Abilita**.
 
 1. Fare clic su **[!UICONTROL Save]**.
 
@@ -231,7 +231,7 @@ Crea una nuova visualizzazione catalogo per il dealer *Celport* e collega i segu
 
    - **Nome** = *Celport*
    - **Origini catalogo** = *en-US*
-   - **Criteri** (usa elenco a discesa) = *Marchi East Coast Inc*; *Categorie parte Celport*; *Marchio*; *Modello*
+   - **Criteri** (utilizzare l&#39;elenco a discesa) = *Marchi East Coast Inc*; *Categorie parte Celport*; *Marchio*; *Modello*
                          
 1. Fare clic su **[!UICONTROL Add]** per creare la visualizzazione del catalogo.
 
@@ -293,6 +293,8 @@ L&#39;ultima parte di questo tutorial prevede l&#39;aggiornamento della vetrina 
       }
    }
    ```
+
+   +++
 
    L’intestazione della vista catalogo include i seguenti valori:
 
@@ -447,4 +449,4 @@ Per continuare a conoscere [!DNL Adobe Commerce Optimizer]:
 - Scopri le [configurazioni avanzate dei criteri](../setup/policies.md)
 - Configura [altre visualizzazioni catalogo](../setup/catalog-view.md) per altri dealer
 - Consulta la [documentazione API](https://developer.adobe.com/commerce/services/optimizer/) per la gestione programmatica del catalogo
-- Scopri come configurare i componenti di rilascio per la vetrina Edge Delivery Services per creare esperienze vetrina personalizzate per l’individuazione dei prodotti, raccomandazioni e altre funzionalità. Consulta la [documentazione di Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=it)
+- Scopri come configurare i componenti di rilascio per la vetrina Edge Delivery Services per creare esperienze vetrina personalizzate per l’individuazione dei prodotti, raccomandazioni e altre funzionalità. Consulta la [documentazione di Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)
