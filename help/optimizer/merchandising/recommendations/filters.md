@@ -63,7 +63,7 @@ Il filtro dei prezzi utilizza il **prezzo calcolato finale** di ogni prodotto pe
 1. Nell&#39;elenco a sinistra, selezionare **[!UICONTROL Price]**.
 1. Attiva **[!UICONTROL Enable filter]**.
 
-   I valori di prezzo utilizzano la valuta di base del sito Web ****, come indicato nella pagina.
+   I valori di prezzo utilizzano la valuta di base del sito Web **&#x200B;**, come indicato nella pagina.
 
 1. Aprire **[!UICONTROL Include products based on]** (nella scheda **[!UICONTROL Inclusions]**) o il controllo equivalente nella scheda **[!UICONTROL Exclusions]** e scegliere **[!UICONTROL Set price range]**.
 1. Impostare un **[!UICONTROL Min price]** e/o un **[!UICONTROL Max price]** facoltativo utilizzando i campi accanto al simbolo di valuta. È possibile digitare gli importi o utilizzare i controlli **-** e **+** per regolare i valori. Lascia vuoto un limite se non hai bisogno di un minimo o di un massimo. L&#39;intervallo viene confrontato con il prezzo calcolato finale di ciascun prodotto per il listino prezzi attivo del negozio.
