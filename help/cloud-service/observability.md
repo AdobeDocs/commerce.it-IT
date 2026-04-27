@@ -4,7 +4,7 @@ description: Scopri gli strumenti di osservabilità e le funzionalità di teleme
 feature: Cloud, Integration
 role: Admin, Developer
 level: Intermediate
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 source-git-commit: 3c10ecdea3d06295013c9c6e2d6869afd750a0b9
 workflow-type: tm+mt
 source-wordcount: '607'
@@ -74,11 +74,11 @@ La libreria [`@adobe/aio-lib-telemetry`](https://github.com/adobe/aio-lib-teleme
 
 ### Monitoraggio CDN e Real User
 
-[Raccolta di dati Proxy Real User Monitoring (RUM)](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/#proxy-rum-through-the-origin-to-avoid-a-tls-handshake) tramite l&#39;origine CDN per eliminare un handshake TLS aggiuntivo e migliorare la misurazione delle prestazioni front-end.
+[Raccolta di dati Proxy Real User Monitoring (RUM)](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/?lang=it#proxy-rum-through-the-origin-to-avoid-a-tls-handshake) tramite l&#39;origine CDN per eliminare un handshake TLS aggiuntivo e migliorare la misurazione delle prestazioni front-end.
 
 ## Video di osservabilità
 
 I video seguenti forniscono una panoramica di alto livello delle offerte di osservabilità in [!DNL Adobe Commerce as a Cloud Service]:
 
-* [Video sull’osservabilità di App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/observability/overview){target="_blank"}
-* [Video Mesh API](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/api-mesh/getting-started-api-mesh){target="_blank"}
+* [Video sull’osservabilità di App Builder](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/observability/overview){target="_blank"}
+* [Video Mesh API](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/extensibility/api-mesh/getting-started-api-mesh){target="_blank"}
