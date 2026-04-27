@@ -2,9 +2,9 @@
 title: Installa e accedi [!DNL App Management]
 description: Prerequisiti e requisiti di accesso per utilizzare Adobe Commerce [!DNL App Management].
 feature: App Builder, Extensibility, Integration
-source-git-commit: 86c0945bbb0a562de1b66d420dec2a05d4d81e5f
+source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -62,11 +62,11 @@ Per ulteriori informazioni, vedere [Installare o aggiornare Adobe Commerce Admin
 
 1. Passa a **[!UICONTROL Apps]** > **[!UICONTROL App Management]**.
 
-Viene visualizzata la visualizzazione [!DNL App Management]. Qui puoi associare, configurare e gestire le applicazioni App Builder.
+Viene visualizzata la visualizzazione [!DNL App Management]. Qui puoi associare, configurare e gestire le applicazioni App Builder. Per la ricerca, i filtri e l&#39;azione **[!UICONTROL Acquire App]** su quella schermata, vedi [Trovare un&#39;applicazione nell&#39;amministratore](manage-app.md#find-an-application-in-the-admin) in [Gestire l&#39;app](manage-app.md).
 
 ## Installazione delle app App Builder
 
-Se devi installare un&#39;app App Builder da Adobe Exchange (ad esempio, un&#39;integrazione predefinita o un&#39;app marketplace), consulta [Installare le app App Builder da Adobe Exchange](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"} per istruzioni dettagliate.
+Se devi installare un&#39;app App Builder da Adobe Exchange (ad esempio, un&#39;integrazione predefinita o un&#39;app marketplace), consulta [Installare le app App Builder da Adobe Exchange](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"} per istruzioni dettagliate.
 
 Dopo aver installato e distribuito un&#39;app, utilizzare [!DNL App Management] per [associarla all&#39;istanza di Commerce](manage-app.md#associate-an-app) e configurarne le impostazioni.
 
@@ -74,7 +74,7 @@ Dopo aver installato e distribuito un&#39;app, utilizzare [!DNL App Management] 
 
 Alcune applicazioni App Builder utilizzano [webhook di Adobe Commerce](https://developer.adobe.com/commerce/extensibility/webhooks/) in modo che Commerce possa chiamare l&#39;app tramite HTTP quando si verificano determinati eventi (ad esempio, dopo il salvataggio di un prodotto). Gli endpoint del webhook e la logica di sottoscrizione sono definiti dallo sviluppatore **app** quando l&#39;applicazione viene generata e distribuita. Gli amministratori di store non configurano i webhook separatamente in Gestione app.
 
-Dopo aver [associato l&#39;app](https://experienceleague.adobe.com/it/docs/commerce/app-management/manage-app/manage-app) all&#39;istanza di Commerce e aver completato le istruzioni di configurazione dell&#39;app, il comportamento del webhook segue l&#39;implementazione dell&#39;app.
+Dopo aver [associato l&#39;app](https://experienceleague.adobe.com/en/docs/commerce/app-management/manage-app/manage-app) all&#39;istanza di Commerce e aver completato le istruzioni di configurazione dell&#39;app, il comportamento del webhook segue l&#39;implementazione dell&#39;app.
 
 Se [!DNL App Management] non è in grado di attivare l&#39;endpoint di convalida dell&#39;app (ad esempio, l&#39;URL non è raggiungibile o la risposta non soddisfa i requisiti), è possibile che nel dashboard [!DNL App Management] venga visualizzato un errore simile al seguente:
 

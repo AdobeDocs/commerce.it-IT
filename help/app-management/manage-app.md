@@ -2,9 +2,9 @@
 title: Gestione dell’app
 description: Associa, configura e annulla l’associazione di applicazioni App Builder all’istanza Commerce.
 feature: App Builder, Extensibility, Integration
-source-git-commit: 4a5174d074a020f6199ed121e0289939612bc5c2
+source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,22 @@ ht-degree: 0%
 Un App Manager associa un’applicazione App Builder alla relativa istanza Commerce. Il rendering dei moduli di configurazione viene eseguito in modo dinamico in base allo schema dell’app, pertanto non è necessario alcuno sviluppo personalizzato dell’interfaccia di amministrazione. App Manager configura le impostazioni tramite moduli generati automaticamente da Commerce.
 
 ![Gestione app](assets/app-management-view.png){width="500" zoomable="yes"}
+
+## Trovare un’applicazione in Admin
+
+In **[!UICONTROL Apps]** > **[!UICONTROL App Management]**, ogni applicazione viene visualizzata come una scheda. L’elenco può includere ogni app associata all’istanza di Adobe Commerce per l’organizzazione Adobe IMS selezionata. Utilizza i controlli sopra le schede per limitare i risultati:
+
+| Controllo | Descrizione |
+| --- | --- |
+| **Filtra per app...** | Cerca per nome applicazione. |
+| **Stato** | Limita le schede in base allo stato del ciclo di vita. **Tutti gli stati** mostra ogni app; gli altri valori includono **Associati**, **Installati**, **Parzialmente installati** e **Non associati**. Lo stato di ogni scheda corrisponde all’indicatore colorato nell’elenco. |
+| **Modelli di estensibilità** | Limita le schede in base alle funzionalità utilizzate dall’app. **Tutti i modelli di estensibilità** mostrano ogni app; altri valori sono allineati con i badge su ogni scheda, ad esempio **Configurazione aziendale**, **Interfaccia utente amministratore SDK**, **Webhook** e **Eventi**. |
+
+Il testo da cercare ed entrambi i menu a discesa sono applicabili insieme (AND logico). Per visualizzare di nuovo l&#39;elenco completo, impostare di nuovo **Stato** e **Modelli di estensibilità** sulle opzioni **Tutti ...** e cancellare il campo di ricerca.
+
+## Acquisire un’app
+
+**[!UICONTROL Acquire App]** apre una nuova scheda del browser (o una visualizzazione del browser separata) in [Adobe Exchange](https://exchange.adobe.com/experiencecloud){target="_blank"}, dove puoi scoprire le inserzioni sul marketplace relative a Commerce e aggiungere applicazioni alla tua organizzazione Adobe IMS. Una volta acquisita, approvata e distribuita l&#39;app, questa verrà visualizzata in [!DNL App Management] per [associazione e installazione](#associate-an-app).
 
 ## Prerequisiti
 
@@ -30,7 +46,7 @@ Prima di associare un’app, assicurati di disporre dei seguenti elementi:
 
 Guarda questo video per scoprire come associare un’app a un’istanza Commerce e configurare le impostazioni.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478963?captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3478944)
 
 ## Associare un’app
 
