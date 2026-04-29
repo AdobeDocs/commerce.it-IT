@@ -3,9 +3,9 @@ title: '[!DNL SaaS Data Export Guide]'
 description: Scopri come utilizzare l’estensione  [!DNL data export] per i servizi SaaS di Adobe Commerce che sincronizza i dati tra Adobe Commerce e i servizi Commerce connessi.
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
-source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
+source-git-commit: 803e270c5b3119681a6e8c005728a00b3b7875f7
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 0%
 # Guida [!DNL SaaS Data Export]
 
 [!DNL SaaS data export] sincronizza i dati tra un&#39;istanza di Adobe Commerce e i servizi Commerce connessi. Quando si aggiunge Live Search, Product Recommendations o Catalog Service a un&#39;installazione di Adobe Commerce, l&#39;estensione [!DNL Data export] viene installata automaticamente.
+
+>[!NOTE]
+>
+>Se installi il connettore Adobe Commerce Optimizer, viene utilizzata la stessa estensione per l’esportazione dei dati per inviare i feed di catalogo e determinazione prezzi a Adobe Commerce Optimizer utilizzando il Composable Catalog Data Model (CCDM). Per informazioni dettagliate sull&#39;architettura e sulla configurazione, consulta la [guida del connettore Adobe Commerce Optimizer](../aco-connector/overview.md).
 
 L&#39;esportazione di dati SaaS raccoglie ed esporta vari tipi di dati, denominati _feed_, che aggregano tipi specifici di informazioni. A seconda dei servizi Commerce installati, i feed di esportazione dei dati SaaS includono:
 
@@ -25,13 +29,13 @@ L’esportazione di dati SaaS viene distribuita come estensione PHP. Supporta di
 
 - **Sincronizzazione manuale dall&#39;amministratore o dalla riga di comando**
 
-   - Il [dashboard di gestione dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) in Commerce Admin fornisce una visualizzazione grafica dello stato di sincronizzazione che mostra i dati del prodotto sincronizzati correttamente con i servizi commerce. È possibile utilizzare il dashboard per eseguire una risincronizzazione completa (_sincronizzazione completa_) di tutti i feed. Tuttavia, Adobe consiglia di eseguire la sincronizzazione completa solo la prima volta che si connette Adobe Commerce a un servizio Commerce. Vedere [Processo di sincronizzazione](data-synchronization.md).
+   - Il [dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) in Commerce Admin fornisce una visualizzazione grafica dello stato di sincronizzazione che mostra i dati del prodotto sincronizzati correttamente con i servizi commerce. È possibile utilizzare il dashboard per eseguire una risincronizzazione completa (_sincronizzazione completa_) di tutti i feed. Tuttavia, Adobe consiglia di eseguire la sincronizzazione completa solo la prima volta che si connette Adobe Commerce a un servizio Commerce. Vedere [Processo di sincronizzazione](data-synchronization.md).
 
-  {{aco-data-sync-verification}}
+     {{aco-data-sync-verification}}
 
-   - La pagina [Stato sincronizzazione feed dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) fornisce informazioni in tempo reale sullo stato e sulle prestazioni dei feed di esportazione dei dati che trasferiscono i dati di prodotti e categorie da Commerce a servizi esterni quali Product Recommendations, Live Search, Catalog Service o Adobe Commerce Optimizer.
+   - La pagina [Stato sincronizzazione feed dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) fornisce informazioni in tempo reale sullo stato e sulle prestazioni dei feed di esportazione dei dati che trasferiscono i dati di prodotti e categorie da Commerce a servizi esterni quali Product Recommendations, Live Search, Catalog Service o Adobe Commerce Optimizer.
 
-   - Lo strumento da riga di comando [Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) fornisce comandi per sincronizzare feed specifici e include opzioni aggiuntive per personalizzare l&#39;elaborazione dei feed.
+   - Lo strumento da riga di comando [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) fornisce comandi per sincronizzare feed specifici e include opzioni aggiuntive per personalizzare l&#39;elaborazione dei feed.
 
 - **Sincronizzazione automatica con processi cron**
 
