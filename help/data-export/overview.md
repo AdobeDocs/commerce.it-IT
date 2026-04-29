@@ -29,13 +29,13 @@ L’esportazione di dati SaaS viene distribuita come estensione PHP. Supporta di
 
 - **Sincronizzazione manuale dall&#39;amministratore o dalla riga di comando**
 
-   - Il [dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) in Commerce Admin fornisce una visualizzazione grafica dello stato di sincronizzazione che mostra i dati del prodotto sincronizzati correttamente con i servizi commerce. È possibile utilizzare il dashboard per eseguire una risincronizzazione completa (_sincronizzazione completa_) di tutti i feed. Tuttavia, Adobe consiglia di eseguire la sincronizzazione completa solo la prima volta che si connette Adobe Commerce a un servizio Commerce. Vedere [Processo di sincronizzazione](data-synchronization.md).
+   - Il [dashboard di gestione dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) in Commerce Admin fornisce una visualizzazione grafica dello stato di sincronizzazione che mostra i dati del prodotto sincronizzati correttamente con i servizi commerce. È possibile utilizzare il dashboard per eseguire una risincronizzazione completa (_sincronizzazione completa_) di tutti i feed. Tuttavia, Adobe consiglia di eseguire la sincronizzazione completa solo la prima volta che si connette Adobe Commerce a un servizio Commerce. Vedere [Processo di sincronizzazione](data-synchronization.md).
 
      {{aco-data-sync-verification}}
 
-   - La pagina [Stato sincronizzazione feed dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) fornisce informazioni in tempo reale sullo stato e sulle prestazioni dei feed di esportazione dei dati che trasferiscono i dati di prodotti e categorie da Commerce a servizi esterni quali Product Recommendations, Live Search, Catalog Service o Adobe Commerce Optimizer.
+   - La pagina [Stato sincronizzazione feed dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) fornisce informazioni in tempo reale sullo stato e sulle prestazioni dei feed di esportazione dei dati che trasferiscono i dati di prodotti e categorie da Commerce a servizi esterni quali Product Recommendations, Live Search, Catalog Service o Adobe Commerce Optimizer.
 
-   - Lo strumento da riga di comando [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) fornisce comandi per sincronizzare feed specifici e include opzioni aggiuntive per personalizzare l&#39;elaborazione dei feed.
+   - Lo strumento da riga di comando [Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) fornisce comandi per sincronizzare feed specifici e include opzioni aggiuntive per personalizzare l&#39;elaborazione dei feed.
 
 - **Sincronizzazione automatica con processi cron**
 
