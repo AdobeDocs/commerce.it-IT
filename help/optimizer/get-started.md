@@ -3,11 +3,11 @@ title: Introduzione
 description: Scopri come iniziare a utilizzare  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: 5014b605e1e917e1dfa8992d74d8dc0cb058e65f
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Gli sviluppatori gestiscono l’implementazione tecnica e l’integrazione dei d
 | Attività | Descrizione | Collegamento |
 |---|---|---|
 | **Accedi a Developer Console** | Creare progetti e generare credenziali | [Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started) |
-| **Acquisisci dati catalogo** | Importa dati prodotto da sistemi esistenti | Per acquisire i dati direttamente in Adobe Commerce Optimizer, consulta [API di acquisizione dati](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"}.<br><br>Per acquisire dati da Commerce su ambienti cloud, locali o altri sistemi di terze parti, consulta l&#39;argomento [Integrazioni](./integrations/integrations-overview.md){target="_blank"}. |
+| **Acquisisci dati catalogo** | Importa dati prodotto da sistemi esistenti | Per acquisire i dati direttamente in Adobe Commerce Optimizer, consulta [API di acquisizione dati](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"}.<br><br>Per acquisire dati da Commerce in ambienti cloud o locali o in altri sistemi di terze parti, consulta l&#39;argomento [Integrazioni](./integrations/integrations-overview.md){target="_blank"}. |
 | **Configura la vetrina** | Configurare Edge Delivery Services storefront | [Installazione di Storefront](./storefront.md) |
 
 ### Attività merchandiser
@@ -135,6 +135,10 @@ Una volta aperta l’app, passa facilmente da un ambiente all’altro, come sand
 
    ![Menu a discesa del commutatore di istanza per selezionare [!DNL Adobe Commerce Optimizer] ambienti](./assets/context-switcher.png){zoomable="yes"}
 
+>[!NOTE]
+>
+>Se devi tornare a Commerce Cloud Manager per visualizzare i dettagli dell&#39;istanza o gestire le istanze, fai clic sull&#39;icona App ![Icona per aprire Experience Cloud Applications](./assets/apps-icon.png) nell&#39;angolo superiore sinistro della navigazione in alto a Commerce Optimizer.
+
 ### Ottieni dettagli istanza
 
 Per visualizzare i dettagli dell’istanza, fai clic sull’icona delle informazioni accanto al nome dell’istanza.
@@ -144,9 +148,9 @@ Il pannello dei dettagli dell&#39;istanza ![[!DNL Adobe Commerce Optimizer] most
 Tieni presente le seguenti informazioni chiave:
 
 - **Endpoint GraphQL** per recuperare i dati del catalogo Commerce tramite l&#39;API Merchandising
-- **Endpoint Catalog Service** per l&#39;acquisizione dei dati tramite API REST
+- **Endpoint catalogo** per l&#39;acquisizione dei dati del catalogo in Commerce Optimizer tramite l&#39;API REST
 - **URL Commerce Optimizer** per accedere all&#39;applicazione [!DNL Adobe Commerce Optimizer]
-- **ID istanza**: ID tenant univoco che identifica l&#39;istanza
+- **ID istanza**: ID univoco che identifica l&#39;istanza. L&#39;ID istanza viene anche indicato come *tenant_id*.
 
 Se si è uno sviluppatore, è necessario disporre di questi dettagli per configurare l&#39;ambiente di sviluppo e connettersi alle API [!DNL Adobe Commerce Optimizer].
 
@@ -217,6 +221,6 @@ Dopo aver completato la configurazione:
 ### Ottieni aiuto
 
 - **Risorse per sviluppatori**: [Documentazione per sviluppatori](https://developer.adobe.com/commerce/services/optimizer/)
-- **Risorse storefront**: [Documentazione storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it)
-- **Esercitazioni**: [Esercitazioni Commerce Optimizer](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **Supporto**: [Risorse di supporto Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/overview)
+- **Risorse storefront**: [Documentazione storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Esercitazioni**: [Esercitazioni Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **Supporto**: [Risorse di supporto Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
