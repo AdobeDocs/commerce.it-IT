@@ -3,9 +3,9 @@ title: '[!DNL Commerce Storefront Catalog Service Release Notes]'
 description: Informazioni aggiornate sulla versione di  [!DNL Catalog Service]  per Adobe Commerce.
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
-source-git-commit: a3002e93b121c16892d3106e09a0ad55cb99845e
+source-git-commit: a7a48e0150d817d29c147c504353245f12d2089c
 workflow-type: tm+mt
-source-wordcount: '2809'
+source-wordcount: '2873'
 ht-degree: 0%
 
 ---
@@ -33,12 +33,18 @@ Gli aggiornamenti sono suddivisi per tipo:
 
 ## Servizio catalogo vetrina
 
+### versione v1.53
+
+_4 maggio 2026_
+
+![Correzione](../assets/fix.svg) I prezzi dei prodotti della vetrina ora visualizzano il codice valuta corretto (ad esempio, USD) per tutti i tipi di prodotto. In precedenza, alcuni prodotti mostravano `NONE` invece della valuta prevista, con conseguente perdita dei prezzi. Questo aggiornamento garantisce un rendering dei prezzi coerente e accurato in tutta la vetrina.<!--DATA-7115-->
+
 ### versione v1.52
 
 _29 aprile 2026_
 
 ![Nuovo](../assets/new.svg) Limite massimo imposto di 100 SKU per richiesta per Adobe Commerce Optimizer e Adobe Commerce as a Cloud Service
-client in base a [limiti e limiti documentati](https://experienceleague.adobe.com/it/docs/commerce/optimizer/boundaries-limits). <!--DATA-7156-->
+client in base a [limiti e limiti documentati](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits). <!--DATA-7156-->
 
 ### versione v1.51
 
@@ -53,6 +59,12 @@ Questa query è disponibile solo per i clienti che utilizzano Adobe Commerce Opt
 _7 aprile 2026_
 
 ![Nuovo](../assets/new.svg) Per la query [categoryTree](https://developer-stage.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) è ora facoltativo il parametro di input family. Questo consente un recupero più flessibile delle categorie, consentendo l’accesso tramite slug senza dipendere da un parametro di famiglia specifico. Questa query è disponibile solo per [Adobe Commerce Optimizer Merchandising Services](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/).
+
+### versione v1.49
+
+_24 marzo 2026_
+
+![Nuovo](../assets/new.svg) Aggiunto supporto per calcolare e restituire l&#39;intervallo di prezzo per i bundle dinamici. <!--DATA-7014-->
 
 ### versione v1.48
 
@@ -132,7 +144,7 @@ _3 novembre 2025_
 - Controllare le sostituzioni a livello di campo con le maschere di livello
 - Supporto per livelli di contenuto premium, stagionali e ottimizzati per dispositivi mobili
 
-  I livelli vengono recuperati utilizzando la query `products` esistente, vengono applicati sul lato server dalle intestazioni delle richieste e non richiedono modifiche allo schema. Vedi [Livello catalogo](https://experienceleague.adobe.com/it/docs/commerce/optimizer/setup/catalog-layer) nella _Guida di Adobe Commerce Optimizer_.
+  I livelli vengono recuperati utilizzando la query `products` esistente, vengono applicati sul lato server dalle intestazioni delle richieste e non richiedono modifiche allo schema. Vedi [Livello catalogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer) nella _Guida di Adobe Commerce Optimizer_.
 
 ![Correzione](../assets/fix.svg) È ora possibile eseguire una query sui prodotti raggruppati quando il padre non ha alcun prezzo; i prodotti secondari restituiscono i propri ruoli di visibilità.<!--DATA-6779-->
 
@@ -243,7 +255,7 @@ _15 luglio 2025_
 
 _20 giugno 2025_
 
-![Nuovo](../assets/new.svg) **Configurazione gerarchica del listino prezzi**: intervalli di prezzi precisi per i listini prezzi padre-figlio. I calcoli rispettano la gerarchia e le regole ereditate; riducono gli errori di determinazione prezzi quando più listini prezzi sono collegati. Solo Adobe Commerce Optimizer. Consulta [Libri Prezzi](https://experienceleague.adobe.com/it/docs/commerce/optimizer/setup/pricebooks).
+![Nuovo](../assets/new.svg) **Configurazione gerarchica del listino prezzi**: intervalli di prezzi precisi per i listini prezzi padre-figlio. I calcoli rispettano la gerarchia e le regole ereditate; riducono gli errori di determinazione prezzi quando più listini prezzi sono collegati. Solo Adobe Commerce Optimizer. Consulta [Libri Prezzi](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
 
 ![Nuovo](../assets/new.svg) **Chiavi senza distinzione tra maiuscole e minuscole**. Le ricerche di chiavi nelle query non fanno distinzione tra maiuscole e minuscole, riducendo gli errori relativi alle maiuscole e minuscole. <!--DATA-6494, DCAT-2495-->
 
@@ -372,7 +384,7 @@ _23 maggio 2024_
 
 ![Correzione](../assets/fix.svg) <!--DATA-5033-->Il flag `InStock` per i valori delle opzioni ora rispetta lo stato `enabled` con ambito della variante di prodotto.
 
-![Correzione](../assets/fix.svg) <!--DATA-5888-->È stato aggiunto il supporto per i prezzi dei prodotti fino a 16 cifre e 4 cifre decimali. Risincronizza dal [dashboard di gestione dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) o [CLI](../data-export/data-export-cli-commands.md) per applicare gli aggiornamenti.
+![Correzione](../assets/fix.svg) <!--DATA-5888-->È stato aggiunto il supporto per i prezzi dei prodotti fino a 16 cifre e 4 cifre decimali. Risincronizza dal [dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) o [CLI](../data-export/data-export-cli-commands.md) per applicare gli aggiornamenti.
 
 #### Limitazioni note
 
@@ -406,7 +418,7 @@ _22 febbraio 2024_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.4 e successive
 
-![Nuovo](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=it) è ora disponibile per i flussi di dati (Product Recommendations, Live Search, Catalog Service). Richiede `catalog-service` metapackage v3.1.0+.
+![Nuovo](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) è ora disponibile per i flussi di dati (Product Recommendations, Live Search, Catalog Service). Richiede `catalog-service` metapackage v3.1.0+.
 
 ### versione v1.16
 
