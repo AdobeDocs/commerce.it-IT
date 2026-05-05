@@ -3,10 +3,10 @@ title: Livello catalogo
 description: Scopri come i livelli del catalogo consentono di modificare i dati del prodotto senza modificare i dati di origine originali, in modo da poter personalizzare in modo sicuro e ripristinare le modifiche in qualsiasi momento.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+source-git-commit: 00f5aaa4d08e686195096b3fee0dcca2d2ac56d8
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1555'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Quando un cliente visualizza la vetrina, il sistema combina i dati del catalogo 
    * **Sostituisci campi** - I campi di testo come nome, descrizione e metatitoli vengono sostituiti con i valori definiti nel livello, con il livello di priorità più alto che ha la precedenza.
    * **Unisci campi** - I campi array come immagini, collegamenti e attributi vengono combinati da più livelli, fornendo una risposta unificata.
 
-1. **Risoluzione priorità**: il campo dell&#39;ordine determina quale livello ha la precedenza. Quando più livelli modificano lo stesso campo, il livello con il numero di ordine inferiore ha priorità maggiore (ad esempio, l&#39;ordine 1 è il più alto).
+1. **Risoluzione priorità**: il campo dell&#39;ordine determina quale livello ha la precedenza. Quando più livelli modificano lo stesso campo, il livello con il numero di ordine più alto ha priorità più alta (ad esempio, l&#39;ordine 10 è il più alto).
 
 ## Casi di utilizzo del livello catalogo
 
@@ -114,7 +114,7 @@ L’interfaccia utente per la visualizzazione del catalogo consente di creare e 
 
 >[!NOTE]
 >
->Se nella vista catalogo non esiste un livello Sites Optimizer, la funzione di correzione automatica di Sites Optimizer ne crea automaticamente uno e gli assegna l&#39;ordine 1 (priorità più alta). Se eliminate questo livello, questo verrà ricreato alla successiva esecuzione della funzione di correzione automatica in Sites Optimizer e sposterà i livelli esistenti in numeri di ordine inferiori. Se il livello Sites Optimizer esiste già con un numero di ordine diverso, la funzione di correzione automatica non ne modifica la priorità.
+>Se nella vista catalogo non esiste un livello Sites Optimizer, la funzione di correzione automatica di Sites Optimizer ne crea automaticamente uno e gli assegna la priorità più alta (numero più alto). Se eliminate questo livello, questo verrà ricreato alla successiva esecuzione della funzione di correzione automatica in Sites Optimizer e sposterà i livelli esistenti in numeri di ordine inferiori. Se il livello Sites Optimizer esiste già con un numero di ordine diverso, la funzione di correzione automatica non ne modifica la priorità.
 
 >[!TIP]
 >
@@ -189,8 +189,8 @@ L&#39;ordine in cui vengono applicati i livelli determina quali valori vengono v
 **Informazioni sull&#39;ordine prioritario:**
 
 * A ciascun livello viene assegnato un numero d&#39;ordine (1, 2, 3 e così via)
-* L&#39;ordine 1 ha la priorità più alta e sostituisce tutti gli altri livelli
-* Quando più livelli modificano lo stesso campo, il livello con il numero di ordine inferiore ha la precedenza
+* I numeri più alti indicano una priorità più elevata e sostituiscono tutti gli altri livelli
+* Quando più livelli modificano lo stesso campo, il livello con il numero di ordine più alto ha la precedenza
 * La priorità si applica solo ai campi di sostituzione (nome, descrizione, metatag)
 * I campi unione (immagini, collegamenti, attributi) combinano i dati di tutti i livelli
 
