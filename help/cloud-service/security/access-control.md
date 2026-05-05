@@ -2,7 +2,7 @@
 title: Gestione di identità e accessi
 description: Scopri le funzioni di gestione delle identità e degli accessi per Adobe Commerce as a Cloud Service.
 role: Admin, Architect, Leader
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 source-git-commit: 283e9c8b9dd0812bb19640681d1fdf86f0f7fce1
 workflow-type: tm+mt
 source-wordcount: '419'
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce as a Cloud Service] sfrutta l&#39;infrastruttura di identità di livello enterprise di Adobe per garantire un controllo degli accessi sicuro, scalabile e centralizzato in tutti gli ambienti. La gestione delle identità e degli accessi (IAM) in [!DNL Adobe Commerce as a Cloud Service] è progettata per semplificare il provisioning degli utenti, applicare l&#39;accesso con privilegi minimi e supportare la conformità agli standard di sicurezza globali.
 
-- **[!DNL Adobe Identity Management Services (IMS)]**: [!DNL Adobe Commerce as a Cloud Service] utilizza [Adobe Identity Management Services (IMS)](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-integration-overview) per autenticare gli utenti e gestire i diritti. Ciò include il supporto per i provider di identità federati e il controllo dell&#39;accesso basato su [ruolo](../user-management.md).
+- **[!DNL Adobe Identity Management Services (IMS)]**: [!DNL Adobe Commerce as a Cloud Service] utilizza [Adobe Identity Management Services (IMS)](https://experienceleague.adobe.com/it/docs/commerce-admin/start/admin/ims/adobe-ims-integration-overview) per autenticare gli utenti e gestire i diritti. Ciò include il supporto per i provider di identità federati e il controllo dell&#39;accesso basato su [ruolo](../user-management.md).
 
 - **Governance di Admin Console**: gli amministratori gestiscono l&#39;accesso alla vetrina e al backend tramite [!DNL Adobe Admin Console]. È possibile definire l’ambito delle autorizzazioni per funzioni e ruoli specifici, garantendo l’accesso con i privilegi minimi.
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 - **Profili di prodotto**: definisci gli ambiti di accesso per diversi ambienti, ad esempio staging e produzione.
 - **Amministrazione delegata**: gli amministratori di sistema e gli amministratori di prodotto possono gestire l&#39;accesso degli utenti senza il coinvolgimento dell&#39;IT.
 
-Per ulteriori informazioni, consulta [gestione utenti](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management).
+Per ulteriori informazioni, consulta [gestione utenti](https://experienceleague.adobe.com/it/docs/commerce/cloud-service/user-management).
 
 ## Autenticazione API e sicurezza dell’integrazione
 

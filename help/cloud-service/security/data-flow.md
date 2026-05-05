@@ -2,7 +2,7 @@
 title: Architettura di sicurezza e flusso di dati
 description: Scopri l’architettura di sicurezza e il flusso di dati per Adobe Commerce as a Cloud Service.
 role: Admin, Architect, Leader
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 source-git-commit: 0343c4f3ecc182145a97e08eca2790bd1512aa27
 workflow-type: tm+mt
 source-wordcount: '387'
