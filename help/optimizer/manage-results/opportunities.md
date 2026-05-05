@@ -1,7 +1,7 @@
 ---
 title: Opportunità
 description: Identifica le opportunità per incrementare il traffico, il coinvolgimento e le conversioni tramite l’integrazione con Adobe Sites Optimizer per miglioramenti intelligenti dei siti basati sui dati.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Si applica solo a  [!DNL Adobe Commerce Optimizer]  progetti (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Si applica solo a  [!DNL Adobe Commerce Optimizer]  progetti (infrastruttura SaaS gestita da Adobe)."
 source-git-commit: 00f5aaa4d08e686195096b3fee0dcca2d2ac56d8
 workflow-type: tm+mt
 source-wordcount: '1445'
@@ -17,7 +17,7 @@ La pagina **Opportunità** consente di identificare e implementare ottimizzazion
 
 ## Cosa sono le opportunità?
 
-Le [opportunità](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) sono consigli basati sull&#39;intelligenza artificiale che aiutano i merchandising a identificare e risolvere i problemi che influiscono sulle prestazioni del sito di e-commerce. Questi consigli sono basati su [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home), un servizio basato su cloud che analizza e migliora le prestazioni del sito Web.
+Le [opportunità](https://experienceleague.adobe.com/it/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) sono consigli basati sull&#39;intelligenza artificiale che aiutano i merchandising a identificare e risolvere i problemi che influiscono sulle prestazioni del sito di e-commerce. Questi consigli sono basati su [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/it/docs/experience-manager-sites-optimizer/content/home), un servizio basato su cloud che analizza e migliora le prestazioni del sito Web.
 
 ## Funzionalità principali
 
@@ -176,7 +176,7 @@ Le metriche di successo monitorano gli indicatori delle prestazioni chiave, ad e
 
 ## Ulteriori informazioni su Sites Optimizer
 
-Per informazioni dettagliate sulle funzionalità di Sites Optimizer, consulta la [documentazione di Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home).
+Per informazioni dettagliate sulle funzionalità di Sites Optimizer, consulta la [documentazione di Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/it/docs/experience-manager-sites-optimizer/content/home).
 
 Risorse aggiuntive:
 
