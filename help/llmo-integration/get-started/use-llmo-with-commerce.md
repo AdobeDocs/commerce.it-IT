@@ -3,7 +3,7 @@ title: Usa  [!DNL Adobe LLM Optimizer] con [!DNL Adobe Commerce]
 description: Naviga nelle opportunità Commerce in LLM Optimizer, rivedi PDP e arricchisci il catalogo, distribuisci aggiornamenti a [!DNL Adobe Commerce], verifica in Admin e storefront e scopri come le sostituzioni e le opportunità dei segni di acquisizione non sono aggiornate.
 role: Admin, User
 recommendations: noCatalog
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 source-git-commit: 47348a44ff7c5f890c10594f44cae6e771be046f
 workflow-type: tm+mt
 source-wordcount: '1175'
