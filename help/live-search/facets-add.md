@@ -2,18 +2,22 @@
 title: Aggiungi facet
 description: Scopri come aggiungere attributi di prodotto filtrabili come  [!DNL Live Search] facet.
 exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: 3c6ca2398cf80649e2dbe127b1835b0a057d3534
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
 
 # Aggiungi facet
 
-Qualsiasi attributo di prodotto filtrabile può essere utilizzato come facet. Il pannello *Aggiungi facet* elenca i facet correnti e semplifica l&#39;assegnazione di attributi di prodotto aggiuntivi come facet. Durante questo processo in tre fasi, viene scelto un attributo da utilizzare come facet, le proprietà vengono modificate se necessario e le modifiche pubblicate nella vetrina.
+Qualsiasi attributo di prodotto filtrabile può essere utilizzato come facet ad eccezione dello stato delle scorte (`quantity_and_stock_status`). Il pannello *[!UICONTROL Add facets]* elenca i facet correnti e semplifica l&#39;assegnazione di attributi di prodotto aggiuntivi come facet. Durante questo processo in tre fasi, viene scelto un attributo da utilizzare come facet, le proprietà vengono modificate se necessario e le modifiche pubblicate nella vetrina.
 
 ![Aggiungi facet](assets/facets-add.png)
+
+>[!NOTE]
+>
+>Per informazioni sulla gestione della visualizzazione dei prodotti in base allo stato delle scorte, vedere [Gestione dei prodotti esauriti](manage-out-of-stock-products.md).
 
 ## Passaggio 1: aggiungere un facet
 
