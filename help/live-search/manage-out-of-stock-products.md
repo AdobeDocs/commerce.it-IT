@@ -64,7 +64,7 @@ Utilizzare questo approccio quando non si instrada la richiesta tramite il [widg
 Per mantenere i prodotti esauriti nel set di risultati ma sempre dopo i prodotti in magazzino quando si ordina per rilevanza, Adobe può abilitare un flag di funzione interno per il tuo ambiente.
 
 - Questo flag di funzione non è esposto nell&#39;interfaccia utente di amministrazione di [!DNL Live Search].
-- Per richiederlo, [contatta il supporto Adobe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"} e fai riferimento alla funzionalità per spostare i prodotti esauriti alla fine dei risultati della ricerca.
+- Per richiederlo, [contatta il supporto Adobe](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"} e fai riferimento alla funzionalità per spostare i prodotti esauriti alla fine dei risultati della ricerca.
 
 >[!NOTE]
 >
@@ -87,4 +87,4 @@ Per nascondere o rimuovere la priorità dei prodotti esauriti nel catalogo, util
 >[!MORELIKETHIS]
 >
 > - [Cerca regole di merchandising](rules.md)
-> - [Configurare le opzioni globali di Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/configuration)
+> - [Configurare le opzioni globali di Inventory management](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/configuration/configuration)
