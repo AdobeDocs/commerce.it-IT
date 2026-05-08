@@ -5,7 +5,7 @@ role: Admin, Leader, User
 feature: Integration, Personalization, Services, Saas
 recommendations: noDisplay
 badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
-source-git-commit: c9cd8ca208a22d4166b2271aa11a9e9acd871d3f
+source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 13%
@@ -17,7 +17,7 @@ ht-degree: 13%
 - [Panoramica](home.md)
 - Informazioni sulla versione {#release-information}
    - [Note sulla versione](/help/landing/release-notes-all.md)
-- [Soluzioni di prodotto](product-solutions.md)
+- {hide-from-toc}[Soluzioni di prodotto](product-solutions.md)
 - Servizi Commerce {#commerce-services}
    - [[!DNL AEM Assets Integration]](https://experienceleague.adobe.com/it/docs/commerce/aem-assets-integration/overview)
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html?lang=it)
@@ -28,7 +28,7 @@ ht-degree: 13%
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html?lang=it)
    - [[!DNL App Management]](https://experienceleague.adobe.com/it/docs/commerce/app-management/overview)
    - [Connettore servizi](/help/landing/saas.md)
-   - [Integra [!DNL Adobe Commerce] con [!DNL Adobe LLM Optimizer]](https://experienceleague.adobe.com/docs/commerce/llmo-integration/overview.html)
+   - [Integra [!DNL Adobe Commerce] con [!DNL Adobe LLM Optimizer]](https://experienceleague.adobe.com/docs/commerce/llmo-integration/overview.html?lang=it)
 - Strumenti dati {#data-services}
    - [Esportazione dati SaaS](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html?lang=it)
    - [Indicizzazione dei prezzi SaaS](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html?lang=it)

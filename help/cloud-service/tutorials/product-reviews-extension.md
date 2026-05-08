@@ -8,8 +8,7 @@ role: Developer
 level: Intermediate
 type: Tutorial
 hide: true
-hidefromtoc: true
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
 workflow-type: tm+mt
 source-wordcount: '2533'
 ht-degree: 0%
@@ -171,31 +170,31 @@ L’agente ti offre la possibilità di creare un piano di implementazione dettag
 - Se si desidera un piano revisionabile che può essere eseguito in fasi con maggiore controllo, selezionare la prima opzione.
 - Se desideri che l&#39;agente esegua l&#39;implementazione completa con un intervento minimo, seleziona la seconda opzione.
 
-### Step 5: Deploy the extension
+### Passaggio 5: distribuire l’estensione
 
-After the agent completes the implementation, deploy the extension:
+Dopo che l&#39;agente ha completato l&#39;implementazione, distribuisci l&#39;estensione:
 
 ```bash
 aio app deploy
 ```
 
-If the agent added `require-adobe-auth: true` to the actions, ask it to remove authentication so that the endpoints can be called directly from the storefront:
+Se l&#39;agente ha aggiunto `require-adobe-auth: true` alle azioni, chiedergli di rimuovere l&#39;autenticazione in modo che gli endpoint possano essere chiamati direttamente dalla vetrina:
 
 ```shell-session
 Remove the requirement to provide a valid Adobe IMS access token from all product-reviews actions.
 ```
 
-Then redeploy:
+Quindi ridistribuisci:
 
 ```bash
 aio app deploy
 ```
 
-### Step 6: Create mock data and pre-populate for testing
+### Passaggio 6: creare dati fittizi e precompilare per il test
 
-Create a mock data file, and use curl to pre-populate the API so that you have sample review and Q&amp;A content for testing in the CLI and storefront.
+Crea un file di dati fittizio e utilizza curl per precompilare l’API in modo da disporre di contenuti di revisione e domande e risposte di esempio per i test in CLI e storefront.
 
-1. Create a file `docs/mock-product-reviews-data.json` (or similar) with sample data. Ad esempio:
+1. Creare un file `docs/mock-product-reviews-data.json` (o simile) con dati di esempio. Ad esempio:
 
    ```json
    {
@@ -209,9 +208,9 @@ Create a mock data file, and use curl to pre-populate the API so that you have s
    }
    ```
 
-1. Use curl to POST the data to your deployed API.
+1. Utilizza curl per pubblicare i dati nell’API implementata.
 
-   Replace `<your-runtime-url>` with your actual App Builder runtime URL (for example, `https://1172492-prodreviewqa135-stage.adobeioruntime.net`):
+   Sostituisci `<your-runtime-url>` con l&#39;URL di runtime effettivo di App Builder (ad esempio, `https://1172492-prodreviewqa135-stage.adobeioruntime.net`):
 
    ```bash
    API_URL="https://<your-runtime-url>/api/v1/web/product-reviews"
@@ -236,7 +235,7 @@ Create a mock data file, and use curl to pre-populate the API so that you have s
      -d '{"sku":"ADB153","type":"answer","questionId":"<QUESTION-UUID>","content":"Yes, it comes in blue and red.","user":"seller@example.com"}'
    ```
 
-1. Verify the data with GET requests:
+1. Verifica i dati con le richieste di GET:
 
    ```bash
    curl -s "$API_URL/reviews-get?sku=ADB153"
@@ -245,13 +244,13 @@ Create a mock data file, and use curl to pre-populate the API so that you have s
 
 >[!TIP]
 >
->Use SKU `ADB153` for a product that has both review and Q&amp;A content, and `ADB152` for a product with no reviews. This data configuration enables testing both populated and empty states in the storefront.
+>Utilizzare SKU `ADB153` per un prodotto con contenuti di revisione e domande e risposte e `ADB152` per un prodotto senza revisioni. Questa configurazione di dati consente di testare sia gli stati popolati che quelli vuoti nella vetrina.
 
 ### Passaggio 7: testare l’estensione
 
-Ask the agent to provide testing steps, or use the curl examples from the preceding step. Negli esempi seguenti vengono illustrati i comandi di test tipici.
+Chiedi all&#39;agente di fornire i passaggi di test o utilizza gli esempi curl del passaggio precedente. Negli esempi seguenti vengono illustrati i comandi di test tipici.
 
-**Submit a review:**
+**Invia una recensione:**
 
 ```bash
 API_URL="https://<your-runtime-url>/api/v1/web/product-reviews"
@@ -260,13 +259,13 @@ curl -s -X POST "$API_URL/reviews-post" \
   -d '{"sku":"ADB153","rating":5,"review":"Excellent!","user":"test@example.com"}'
 ```
 
-**List reviews:**
+**Elenco recensioni:**
 
 ```bash
 curl -s "$API_URL/reviews-get?sku=ADB153"
 ```
 
-**Submit a question:**
+**Invia una domanda:**
 
 ```bash
 curl -s -X POST "$API_URL/qa-post" \
@@ -274,7 +273,7 @@ curl -s -X POST "$API_URL/qa-post" \
   -d '{"sku":"ADB153","type":"question","content":"Is this dishwasher safe?","user":"test@example.com"}'
 ```
 
-**Submit an answer** (use the `id` from the question response as `questionId`):
+**Invia una risposta** (utilizza `id` dalla risposta alla domanda come `questionId`):
 
 ```bash
 curl -s -X POST "$API_URL/qa-post" \
@@ -294,7 +293,7 @@ Copia questo file nel progetto storefront in modo che l&#39;agente storefront po
 
 ## Connetti alla vetrina
 
-This section guides you through implementing the storefront portion of the product reviews and Q&amp;A extension using [!DNL Edge Delivery Services] and AI-assisted development tools. Aggiungi al PDP un blocco di recensione del prodotto che visualizza sia il contenuto di revisione che quello di domanda e risposta e che consente agli acquirenti di inviare nuovi contenuti.
+Questa sezione ti guida attraverso l&#39;implementazione della sezione vetrina delle recensioni dei prodotti e dell&#39;estensione Q&amp;A tramite [!DNL Edge Delivery Services] e strumenti di sviluppo assistiti da AI. Aggiungi al PDP un blocco di recensione del prodotto che visualizza sia il contenuto di revisione che quello di domanda e risposta e che consente agli acquirenti di inviare nuovi contenuti.
 
 >[!NOTE]
 >
@@ -382,29 +381,29 @@ L’agente ti offre la possibilità di creare un piano di implementazione dettag
 - Se si desidera un piano revisionabile che può essere eseguito in fasi con maggiore controllo, selezionare la prima opzione.
 - Se desideri che l&#39;agente esegua l&#39;implementazione completa con un intervento minimo, seleziona la seconda opzione.
 
-Durante l’implementazione, l’agente crea e modifica i file di blocco. Guarda il codice generato e fai domande o reindirizza l’agente secondo necessità. If the block does not render, ask the agent to analyze the section decoration and block discovery pattern — the block element must be a direct child of the section so the framework can find it.
+Durante l’implementazione, l’agente crea e modifica i file di blocco. Guarda il codice generato e fai domande o reindirizza l’agente secondo necessità. Se non viene eseguito il rendering del blocco, chiedere all&#39;agente di analizzare la decorazione di sezione e il pattern di individuazione del blocco. L&#39;elemento del blocco deve essere un figlio diretto della sezione in modo che il framework possa trovarlo.
 
-### Step 6: Add the block to the product page in Document Authoring
+### Passaggio 6: aggiungere il blocco alla pagina del prodotto in Authoring dei documenti
 
-Add the product review block to the product page template so it appears on all PDPs. Use the Document Authoring service (da.live) to add and configure the block.
+Aggiungi il blocco di recensione prodotto al modello della pagina di prodotto in modo che venga visualizzato su tutti i PDP. Utilizza il servizio di authoring dei documenti (da.live) per aggiungere e configurare il blocco.
 
-1. Open your document authoring service, for example [da.live](https://da.live/)
+1. Apri il servizio di authoring dei documenti, ad esempio [da.live](https://da.live/)
 
-1. Click on your project space, open the **products** folder and select **default** (`products/default`).
+1. Fai clic sullo spazio del progetto, apri la cartella **products** e seleziona **default** (`products/default`).
 
-1. Add a new block section.
+1. Aggiungi una nuova sezione blocco.
 
-   In the block table, add a row with the block name **product-review** (or the block name your agent created).
+   Nella tabella dei blocchi, aggiungi una riga con il nome del blocco **product-review** (o il nome del blocco creato dall&#39;agente).
 
-1. Configure the block with the required settings:
-   - **apiBaseUrl** — Your App Builder runtime URL (for example, `https://<namespace>-<app-name>-stage.adobeioruntime.net`).
-   - **sku** — Leave empty to use the current product&#39;s SKU on the PDP, or enter a specific SKU to display reviews for that product only.
+1. Configura il blocco con le impostazioni richieste:
+   - **apiBaseUrl** — L&#39;URL di runtime di App Builder (ad esempio, `https://<namespace>-<app-name>-stage.adobeioruntime.net`).
+   - **sku** — Lasciare vuoto per usare lo SKU del prodotto corrente nel PDP o immettere uno SKU specifico per visualizzare solo le recensioni per quel prodotto.
 
-1. Click **[!UICONTROL Publish]** to publish your changes.
+1. Fai clic su **[!UICONTROL Publish]** per pubblicare le modifiche.
 
-### Step 7: Start the server and test
+### Passaggio 7: avviare il server e testare
 
-After you add the block to the product page in Document Authoring, start the development server and test the block.
+Dopo aver aggiunto il blocco alla pagina del prodotto in Document Authoring, avvia il server di sviluppo e verifica il blocco.
 
 1. Avvia il server di sviluppo locale:
 
@@ -412,13 +411,13 @@ After you add the block to the product page in Document Authoring, start the dev
    npm run start
    ```
 
-1. In a browser, navigate to a product page that has pre-populated reviews and Q&amp;A content. Ad esempio:
+1. In un browser, accedi a una pagina di prodotto con contenuti di domande e risposte precompilati. Ad esempio:
 
    ```shell-session
    http://localhost:3000/products/<product-slug>/ADB153
    ```
 
-1. Verify that the product review block displays reviews and Q&amp;A content, and that the submission forms work.
+1. Verifica che nel blocco di recensione del prodotto siano visualizzati le recensioni e il contenuto delle domande e risposte e che i moduli di invio funzionino.
 
 Puoi eseguire test manuali o chiedere all’agente di utilizzare le funzionalità del browser per eseguire test per tuo conto:
 
@@ -426,7 +425,7 @@ Puoi eseguire test manuali o chiedere all’agente di utilizzare le funzionalit�
 Run complete browser testing. Use the following product page 'http://localhost:3000/products/<product-slug>/ADB153'
 ```
 
-### Step 8: Clean up
+### Passaggio 8: Pulire
 
 Dopo aver saltato o completato il test, l&#39;agente ti chiede di procedere alla fase finale di **pulizia**. Una volta confermata, l’agente archivia tutti gli artefatti della documentazione creati durante l’implementazione.
 
@@ -438,17 +437,17 @@ Se riscontri dei problemi durante l’esercitazione, utilizza i seguenti suggeri
 
 | Sintomo | Causa | Correzione |
 |---------|-------|-----|
-| GET or POST returns 500 &quot;Cannot find module&quot; | The product-reviews actions use `require("../../utils")` or `require("../../constants")`, which escape the package bundle. Those files are not included when the package is deployed. | Make the product-reviews package self-contained. Add `actions/product-reviews/lib/constants.js` and `actions/product-reviews/lib/utils.js`, and update all four actions to require from `../lib/...` instead of `../../`. |
-| GET returns 500 with &quot;key must match pattern&quot; | State keys use colons (for example, `reviews:ADB153`). `aio-lib-state` allows only `[a-zA-Z0-9-_.]`. | Change prefixes from `reviews:` and `qa:` to `reviews.` and `qa.`. Add a `stateKey(prefix, sku)` helper that sanitizes the SKU (replace invalid chars with `_`). |
-| POST returns 500 with &quot;value must be string&quot; | `aio-lib-state` accepts only string values. The code passes arrays or objects to `state.put()`. | Serialize with `JSON.stringify()` when writing and `JSON.parse()` when reading. Update all four actions. |
+| GET o POST restituisce 500 &quot;Impossibile trovare il modulo&quot; | Le azioni di revisione dei prodotti utilizzano `require("../../utils")` o `require("../../constants")`, che determinano l&#39;escape del bundle del pacchetto. Tali file non vengono inclusi durante la distribuzione del pacchetto. | Rendi il pacchetto di recensioni dei prodotti autonomo. Aggiungi `actions/product-reviews/lib/constants.js` e `actions/product-reviews/lib/utils.js` e aggiorna tutte e quattro le azioni da richiedere a `../lib/...` invece di `../../`. |
+| GET restituisce 500 con &quot;la chiave deve corrispondere al pattern&quot; | Le chiavi di stato utilizzano i due punti (ad esempio, `reviews:ADB153`). `aio-lib-state` consente solo `[a-zA-Z0-9-_.]`. | Modificare i prefissi da `reviews:` e `qa:` in `reviews.` e `qa.`. Aggiungi un helper `stateKey(prefix, sku)` che bonifica lo SKU (sostituisci caratteri non validi con `_`). |
+| POST restituisce 500 con &quot;il valore deve essere una stringa&quot; | `aio-lib-state` accetta solo valori stringa. Il codice passa array o oggetti a `state.put()`. | Serializzare con `JSON.stringify()` durante la scrittura e `JSON.parse()` durante la lettura. Aggiorna tutte e quattro le azioni. |
 
 {style="table-layout:auto"}
 
-### Storefront (Edge Delivery Services)
+### Vetrina (Edge Delivery Services)
 
 | Sintomo | Causa | Correzione |
 |---------|-------|-----|
-| Block does not render on test page | The block element is nested inside an extra `div`, so after `decorateSections` the block selector (`div.section > div > div`) does not match. | Make the block a direct child of the section. Structure: `section > div.product-review` (or equivalent block class). Avoid `section > div > div.product-review`. |
+| Il blocco non viene riprodotto nella pagina di prova | L&#39;elemento del blocco è nidificato all&#39;interno di un `div` aggiuntivo, quindi dopo `decorateSections` il selettore del blocco (`div.section > div > div`) non corrisponde. | Rendi il blocco un figlio diretto della sezione. Struttura: `section > div.product-review` (o classe di blocco equivalente). Evita `section > div > div.product-review`. |
 | Token CSS non validi | Il blocco utilizza token di progettazione che non esistono in `styles/styles.css` (ad esempio, `--color-error-100`, `--type-detail-font-size`). | Chiedere all&#39;agente di convalidare i token rispetto al progetto `styles/styles.css` e sostituire i token non validi con quelli esistenti (ad esempio, `--color-alert-*`, `--type-details-caption-*`). |
 
 {style="table-layout:auto"}

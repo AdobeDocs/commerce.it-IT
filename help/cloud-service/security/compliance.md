@@ -1,9 +1,9 @@
 ---
 title: Conformità e certificazioni
 description: Scopri le certificazioni e la conformità per Adobe Commerce as a Cloud Service.
-role: Admin, Architect, Leader
+role: Admin, Developer, Leader
 badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: 89c4d174d982d55c111b9fa4e6b87e70cb566ca1
+source-git-commit: feb48068137c6a63e6594167fe969c3aa4b044c4
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%

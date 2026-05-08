@@ -4,8 +4,7 @@ description: Scopri come utilizzare il servizio di ricerca della documentazione 
 badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 role: Developer
 hide: true
-hidefromtoc: true
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 0%

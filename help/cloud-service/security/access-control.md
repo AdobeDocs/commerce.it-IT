@@ -1,9 +1,9 @@
 ---
 title: Gestione di identità e accessi
 description: Scopri le funzioni di gestione delle identità e degli accessi per Adobe Commerce as a Cloud Service.
-role: Admin, Architect, Leader
+role: Admin, Developer, Leader
 badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: 283e9c8b9dd0812bb19640681d1fdf86f0f7fce1
+source-git-commit: feb48068137c6a63e6594167fe969c3aa4b044c4
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%

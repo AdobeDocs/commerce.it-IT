@@ -3,7 +3,7 @@ user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: Questa guida fornisce istruzioni dettagliate per l'utilizzo di  [!DNL Adobe Commerce as a Cloud Service].
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: fb7d70be0a9325d20f3e9392a32e896fe1e1e833
+source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 4%
@@ -32,7 +32,7 @@ ht-degree: 4%
    - Strumenti di migrazione {#migration-tools}
       - [Strumento di migrazione dati in blocco](migration/bulk-data.md)
       - [Strumenti di codifica](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-   - [Servizio RAG documentazione](migration/doc-rag.md)
+   - {hide-from-toc}[Servizio RAG documentazione](migration/doc-rag.md)
 - [Accedi come cliente](https://experienceleague.adobe.com/it/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [Endpoint REST per conto gift card](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
 - [Attivazione delle e-mail tramite REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
@@ -40,9 +40,9 @@ ht-degree: 4%
    - [Prerequisiti del tutorial](tutorials/tutorial-prerequisites.md)
    - [Esercitazione sull’estensione delle valutazioni](tutorials/ratings-extension.md)
    - [Esercitazione sull’estensione del metodo di spedizione](tutorials/shipping-method-extension.md)
-   - [Esercitazione sull’estensione delle stime di consegna](tutorials/delivery-estimates-extension.md)
-   - [Esercitazione sull’estensione delle notifiche in magazzino](tutorials/in-stock-notification-extension.md)
-   - [Esercitazione sull’estensione per recensioni di prodotti](tutorials/product-reviews-extension.md)
+   - {hide-from-toc}[Esercitazione sull&#39;estensione delle stime di consegna](tutorials/delivery-estimates-extension.md)
+   - {hide-from-toc}[Esercitazione sull&#39;estensione delle notifiche Stock](tutorials/in-stock-notification-extension.md)
+   - {hide-from-toc}[Esercitazione sull&#39;estensione delle recensioni dei prodotti](tutorials/product-reviews-extension.md)
 - Schemi {#schemas}
    - [Schema GraphQL](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [Schema REST API](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}

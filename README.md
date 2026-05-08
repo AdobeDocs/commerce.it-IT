@@ -1,8 +1,8 @@
 ---
 source-git-commit: e761e54e7bd7997f3f40b1dfc1293012931111b0
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 5%
+source-wordcount: '506'
+ht-degree: 0%
 
 ---
 # Documentazione tecnica di Adobe Commerce
@@ -11,7 +11,7 @@ Apprezziamo i contributi della community e dei dipendenti Adobe esterni ai team 
 
 ## Codice di condotta di Adobe Open Source
 
-Questo progetto ha adottato il [Codice di condotta di Adobe Open Source](code-of-conduct.md) o il [Codice di condotta di .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Per ulteriori informazioni, consulta l’articolo [Contribuzione](contributing.md).
+Questo progetto ha adottato il [Codice di condotta di Adobe Open Source](code-of-conduct.md) o il codice di condotta di [.NET Foundation](https://dotnetfoundation.org/code-of-conduct). Per ulteriori informazioni, consulta l&#39;articolo [Contribuzione](contributing.md).
 
 ## Informazioni sui contributi ai contenuti di Adobe
 
@@ -44,7 +44,7 @@ Per informazioni dettagliate, consulta la [Guida per i collaboratori per la docu
 Tutti gli articoli in questo archivio utilizzano GitHub Flavored Markdown. Se non conosci Markdown, consulta:
 
 - [Nozioni di base su Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-- [Foglio di riferimento per il markdown stampabile](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+- [Foglio di riferimento per markdown stampabile](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Hook di pre-commit per l’ottimizzazione delle immagini
 

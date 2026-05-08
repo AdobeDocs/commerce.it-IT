@@ -8,8 +8,7 @@ role: Developer
 level: Intermediate
 type: Tutorial
 hide: true
-hidefromtoc: true
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
 workflow-type: tm+mt
 source-wordcount: '3398'
 ht-degree: 0%
@@ -698,21 +697,21 @@ Se riscontri dei problemi durante l’esercitazione, utilizza i seguenti suggeri
 
 ### Back-end (App Builder)
 
-| Sintomo | Causa | Fix |
+| Sintomo | Causa | Correzione |
 |---------|-------|-----|
-| Admin UI config action returns `400 Bad Request` with &quot;Request defines parameters that are not allowed (reserved properties)&quot; | The frontend hook is sending `__ow_method` in the request body. Properties prefixed with `__ow_` are reserved by OpenWhisk and rejected when the action has `final: true`. | Send a custom `method` property instead of `__ow_method`. The backend action reads `params.method` first, then falls back to `params.__ow_method` (which Runtime provides automatically). |
-| `aio app deploy` fails with &quot;maxVersion is required in productDependencies&quot; | The CLI validation requires both `minVersion` and `maxVersion` in `app.config.yaml` product dependencies. | Add a `maxVersion` value to each `productDependencies` entry in `app.config.yaml`. |
-| Deployment command fails | Credentials not configured before deploy. `.env`, workspace selection, and OAuth sync must happen first. | Follow the correct order: `cp env.dist .env` > `aio app use --merge` > `npm run sync-oauth-credentials` > `aio app deploy`. |
+| L&#39;azione di configurazione dell&#39;interfaccia utente di amministrazione restituisce `400 Bad Request` con &quot;La richiesta definisce parametri non consentiti (proprietà riservate)&quot; | L&#39;hook front-end invia `__ow_method` nel corpo della richiesta. Le proprietà con prefisso `__ow_` sono riservate da OpenWhisk e rifiutate quando l&#39;azione ha `final: true`. | Invia una proprietà `method` personalizzata invece di `__ow_method`. L&#39;azione di backend legge prima `params.method`, quindi torna a `params.__ow_method` (fornito automaticamente da Runtime). |
+| `aio app deploy` ha esito negativo con &quot;maxVersion è obbligatorio in productDependencies&quot; | La convalida CLI richiede sia `minVersion` che `maxVersion` in `app.config.yaml` dipendenze prodotto. | Aggiungere un valore `maxVersion` a ogni voce `productDependencies` in `app.config.yaml`. |
+| Comando di distribuzione non riuscito | Credenziali non configurate prima della distribuzione. `.env`, la selezione dell&#39;area di lavoro e la sincronizzazione OAuth devono essere eseguite per prime. | Segui l&#39;ordine corretto: `cp env.dist .env` > `aio app use --merge` > `npm run sync-oauth-credentials` > `aio app deploy`. |
 
 {style="table-layout:auto"}
 
-### Storefront (Edge Delivery Services)
+### Vetrina (Edge Delivery Services)
 
-| Sintomo | Causa | Fix |
+| Sintomo | Causa | Correzione |
 |---------|-------|-----|
-| PDP delivery estimate not appearing for logged-in shoppers | The PDP block does not initialize the `account` drop-in, so `getCustomerAddress()` fails silently and no estimate is fetched. | Use `CORE_FETCH_GRAPHQL.fetchGraphQl()` directly to query shopper addresses instead of relying on the account drop-in API. This works on any page. |
-| PDP still not showing after GraphQL fix | Typo in method name: `CORE_FETCH_GRAPHQL.fetch()` was used instead of `CORE_FETCH_GRAPHQL.fetchGraphQl()`. | Use the correct method name: `fetchGraphQl` (capital Q, lowercase l). |
-| Checkout delivery dates not appearing on first load | Il listener di eventi `checkout/updated` è stato registrato dopo l&#39;attivazione di `checkout/initialized`, quindi i dati iniziali non sono stati rilevati. | Aggiungere un listener `checkout/initialized` con `{ eager: true }` per rilevare gli eventi emessi prima della registrazione. Mantieni il listener `checkout/updated` per le modifiche successive. |
+| La stima della consegna PDP non viene visualizzata per gli acquirenti connessi | Il blocco PDP non inizializza l&#39;eliminazione di `account`, pertanto `getCustomerAddress()` non riesce in modo invisibile all&#39;utente e non viene recuperata alcuna stima. | Utilizza `CORE_FETCH_GRAPHQL.fetchGraphQl()` direttamente per eseguire query sugli indirizzi dell&#39;acquirente invece di affidarti all&#39;API di rilascio dell&#39;account. Funziona su qualsiasi pagina. |
+| Il PDP non viene ancora visualizzato dopo la correzione di GraphQL | È stato utilizzato un errore di battitura nel nome del metodo: `CORE_FETCH_GRAPHQL.fetch()` invece di `CORE_FETCH_GRAPHQL.fetchGraphQl()`. | Utilizzare il nome di metodo corretto: `fetchGraphQl` (Q maiuscola, l minuscola). |
+| Le date di consegna del pagamento non vengono visualizzate al primo caricamento | Il listener di eventi `checkout/updated` è stato registrato dopo l&#39;attivazione di `checkout/initialized`, quindi i dati iniziali non sono stati rilevati. | Aggiungere un listener `checkout/initialized` con `{ eager: true }` per rilevare gli eventi emessi prima della registrazione. Mantieni il listener `checkout/updated` per le modifiche successive. |
 | La stima della consegna al carrello non viene visualizzata | `block.appendChild(fragment)` sposta tutti gli elementi secondari fuori dal frammento, quindi `fragment.querySelector('.cart__delivery-estimate')` restituisce null. | Query da `block` anziché `fragment` dopo l&#39;operazione di accodamento. |
 | La spedizione con tariffa fissa non mostra alcuna data di consegna al momento del pagamento | Per progettazione: `CARRIER_MAP` associa solo DPS a standard e Fedex a express. La tariffa fissa non ha un gestore corrispondente nell’API esterna. | Non è un bug. Per aggiungere stime per altri gestori, estendere `CARRIER_MAP` in `scripts/delivery-estimates.js` e configurare il gestore nell&#39;estensione back-end. |
 
