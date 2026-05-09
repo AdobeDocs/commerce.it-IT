@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4b38ce9b1585fa7414e323b08bf8d09d6da46a6c
+source-git-commit: feb450ecd425d7e3ce7f8e354aeb294bb7d5d1ce
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1333'
 ht-degree: 1%
 
 ---
@@ -503,58 +503,6 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
         Nuovo argomento
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ab635fecb7b82294bd4a4fd045ed71931e9d265d">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 6 marzo 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Aggiunta dell'integrazione storefront all'<a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/tutorials/ratings-extension">esercitazione sulle valutazioni</a>.</p>
-</td>
-      <td>
-        Aggiornamento principale
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.it-IT/pull/15">richiesta pull</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 3 marzo 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata pubblicata la <a href="https://experienceleague.adobe.com/it/docs/commerce/aco-optimizer-connector/overview">documentazione di Adobe Commerce Optimizer Connector v1.0.9</a> per la versione di disponibilità generale.</p>
-</td>
-      <td>
-        Aggiornamento principale, nuovo argomento, tecnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/216958e287993d1a212fb59fdaa8e2ba3e931b97">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Sono state aggiornate le <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/release-notes">note sulla versione</a> di Adobe Commerce as a Cloud Service con la versione Sandbox più recente.</p>
-</td>
-      <td>
-        Aggiornamento principale
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6fc1fbd8b70459e6473b48fdc4bb6fc75f6dc559">commit</a></td>
     </tr>
   </tbody>
 </table>
