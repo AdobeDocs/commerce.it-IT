@@ -5,9 +5,21 @@ feature: App Builder, Cloud
 badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 role: Developer
 level: Intermediate
-source-git-commit: 2c851da1dc521f5309031fc091be88f9ca39cd8f
+TQID: https://experienceleague.adobe.com/ZbqP1MO-QrqAtocvmgFStqaluqQdzMm4LXlY3o4o3xY
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2438'
+source-wordcount: 2634
 ht-degree: 0%
 
 ---
@@ -44,7 +56,7 @@ Gli strumenti verranno aggiornati alla versione più recente.
 * Qualsiasi agente di codifica che supporta [abilità agente](https://agentskills.io/home#adoption), ad esempio:
 
    * [Cursore](https://cursor.com/download)
-   * [Codice Claude](https://www.claude.com/product/claude-code)
+   * [Claude Code](https://www.claude.com/product/claude-code)
    * [Copilota GitHub](https://github.com/features/copilot)
    * [Windsurf](https://windsurf.com)
    * [CLI Gemini](https://github.com/google-gemini/gemini-cli)
@@ -65,9 +77,9 @@ Gli strumenti verranno aggiornati alla versione più recente.
 
 1. Installa i seguenti plug-in:
 
-   * [Commerce Adobe I/O CLI](https://github.com/adobe-commerce/aio-cli-plugin-commerce)
+   * [ADOBE I/O CLI COMMERCE](https://github.com/adobe-commerce/aio-cli-plugin-commerce)
    * [Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime)
-   * [CLI di App Builder](https://github.com/adobe/aio-cli-plugin-app-dev)
+   * [APP BUILDER CLI](https://github.com/adobe/aio-cli-plugin-app-dev)
 
    ```bash
    aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
@@ -293,7 +305,7 @@ Durante la chat con il tuo agente di codifica, devi selezionare la modalità **P
 Il metodo di selezione della modalità **Piano** varia a seconda dell&#39;agente utilizzato. Per le istruzioni relative, consulta la documentazione dell’agente. Ad esempio:
 
 * [Cursore](https://cursor.com/docs/agent/modes)
-* [Codice Claude](https://code.claude.com/docs/en/common-workflows#when-to-use-plan-mode)
+* [Claude Code](https://code.claude.com/docs/en/common-workflows#when-to-use-plan-mode)
 * [CLI Gemini](https://geminicli.com/docs/cli/plan-mode/)
 
 ### Elenco di controllo
@@ -331,10 +343,10 @@ Questo consente anche di sfruttare i modelli di Adobe e di basarsi su modelli e 
 
 Consulta le seguenti risorse per iniziare:
 
-* [Kit di avvio dell&#39;integrazione](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
-* [Kit di avvio estrazione](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
+* [Kit di avvio dell’integrazione](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
+* [Kit di avvio per il pagamento](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [Modelli di kit di avvio Adobe Commerce](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Modelli di avvio Adobe I/O Events](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Modelli di Adobe I/O Events Starter](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Applicazioni di esempio App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Perché utilizzare queste risorse

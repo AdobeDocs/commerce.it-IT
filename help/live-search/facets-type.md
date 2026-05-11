@@ -2,9 +2,20 @@
 title: Tipi di facet
 description: '[!DNL Live Search] facet sono dinamici e vengono visualizzati nell''elenco Filtri quando necessario.'
 exl-id: cd05c0c5-1028-4d66-951d-0b61c1ecc440
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+TQID: https://experienceleague.adobe.com/8cO5HLAkJLHHqyL-cYb3USCk4E9q1KSRJQ1fOGK0HB4
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: 428
 ht-degree: 0%
 
 ---
@@ -14,7 +25,7 @@ ht-degree: 0%
 [!DNL Live Search] utilizza diversi tipi di facet e vengono visualizzati nell&#39;elenco *Filtri* solo se pertinenti. L’elenco dei facet disponibili cambia in base ai prodotti restituiti. Le seguenti caratteristiche influiscono sulla loro presentazione e sul loro comportamento:
 
 * Facet bloccati: i facet più comunemente utilizzati possono essere bloccati in alto nell’elenco. I facet rimanenti sono elencati nell&#39;ordine *Tipo di ordinamento* dopo i facet bloccati.
-* Facet dinamici: attributi di prodotto trovati più rilevanti per un set di prodotti e una query da [Adobe AI](https://business.adobe.com/it/ai.html). Il calcolo prende in considerazione i metadati dell’attributo dell’intero catalogo e determina in fase di query i facet più rilevanti per la query.
+* Facet dinamici - Attributi del prodotto trovati più rilevanti per un set di prodotti e una query da [Adobe AI](https://business.adobe.com/it/ai.html). Il calcolo prende in considerazione i metadati dell’attributo dell’intero catalogo e determina in fase di query i facet più rilevanti per la query.
 
   >[!NOTE]
   >

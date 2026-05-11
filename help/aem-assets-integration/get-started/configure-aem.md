@@ -3,10 +3,21 @@ title: Configurare il progetto AEM Assets per supportare i metadati di Commerce
 description: Abilita la sincronizzazione perfetta delle risorse tra Adobe Commerce e AEM Assets aggiungendo i metadati richiesti per l’integrazione.
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
-source-git-commit: ac880333814d9d9a45e658e2a637cd9634dbfb1f
+TQID: https://experienceleague.adobe.com/QPlM-eeRjJ0gwmpGO4SSYR4PLtL97O-NeozWorDWtv0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: da3860b0-d637-47df-bef0-273751180266
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 0%
+source-wordcount: 1450
+ht-degree: 1%
 
 ---
 
@@ -16,13 +27,13 @@ Quando si utilizza AEM Assets as a Digital Asset Management System (DAM) for Com
 
 Completa i seguenti passaggi per configurare il progetto AEM Assets con il codice pacchetto e i metadati richiesti per gestire le risorse Commerce dall’ambiente di authoring AEM:
 
-1. [Scopri di più su &#x200B;](#aem-commerce-assets-commerce-package-contents)
+1. [Informazioni sul contenuto del pacchetto `assets-commerce`](#aem-commerce-assets-commerce-package-contents)
 
 1. [Completa i passaggi di installazione per configurare il progetto AEM Assets per il supporto dei metadati Commerce](#step-1-install-the-assets-commerce-package)
 
 ## contenuti del pacchetto AEM Commerce assets-commerce
 
-Adobe fornisce un codice pacchetto di AEM Commerce `assets-commerce` per aggiungere risorse dello spazio dei nomi e dello schema dei metadati Commerce alla configurazione dell&#39;ambiente Experience Manager Assets as a Cloud Service.
+Adobe fornisce un codice pacchetto AEM Commerce `assets-commerce` per aggiungere risorse dello spazio dei nomi e dello schema dei metadati di Commerce alla configurazione dell&#39;ambiente Experience Manager Assets as a Cloud Service.
 
 Questo codice di pacchetto aggiunge le seguenti risorse all’ambiente di authoring AEM Assets:
 
@@ -44,7 +55,7 @@ Questo codice di pacchetto aggiunge le seguenti risorse all’ambiente di author
 
 >[!NOTE]
 >
-> Per ulteriori informazioni sul [codice pacchetto AEM Commerce](https://github.com/ankumalh/assets-commerce), vedere la pagina **leggimi**.
+> Per ulteriori informazioni sul **codice pacchetto AEM Commerce**, vedere la pagina [leggimi](https://github.com/ankumalh/assets-commerce).
 
 ## Prerequisiti
 
@@ -193,7 +204,7 @@ Il componente Interfaccia utente dati prodotto viene aggiunto automaticamente in
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Facoltativo. Per sincronizzare automaticamente le risorse Commerce approvate durante il caricamento nell&#39;ambiente AEM Assets, impostare su _[!UICONTROL Review Status]_&#x200B;il valore predefinito per il campo `Basic` nella scheda `approved`.
+1. Facoltativo. Per sincronizzare automaticamente le risorse Commerce approvate durante il caricamento nell&#39;ambiente AEM Assets, impostare su `approved` il valore predefinito per il campo _[!UICONTROL Review Status]_&#x200B;nella scheda `Basic`.
 
 1. Salva l’aggiornamento.
 

@@ -4,10 +4,27 @@ description: Scopri come [!DNL Commerce] i servizi gestiscono le richieste di ac
 role: Admin, Leader
 feature: Security, Compliance
 exl-id: 1408ca77-6956-4519-93a6-bc9be9bffeff
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+TQID: https://experienceleague.adobe.com/KhsveSMPR0tKmNzViEaWWHDu8fWve0GZjwsl2oyvx1k
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+subfeature_v2:
+  - id: bcbf87e7-9b75-4596-bffe-0f376b4c73a7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 0%
+source-wordcount: 595
+ht-degree: 1%
 
 ---
 
@@ -18,7 +35,7 @@ Adobe Experience Platform Privacy Service fornisce un’API RESTful e un’inter
 Per ulteriori informazioni su Privacy Service e su come creare e gestire le richieste di privacy, consulta la documentazione di Adobe Experience Platform:
 
 * [Panoramica di Privacy Service](https://experienceleague.adobe.com/it/docs/experience-platform/privacy/home)
-* [Gestione dei processi relativi alla privacy nell&#39;interfaccia utente di Privacy Service](https://experienceleague.adobe.com/it/docs/experience-platform/privacy/ui/user-guide)
+* [Gestione dei processi relativi alla privacy nell’interfaccia utente di Privacy Service](https://experienceleague.adobe.com/it/docs/experience-platform/privacy/ui/user-guide)
 
 ## Gestire le richieste di privacy dei dati di singoli utenti
 
@@ -64,8 +81,8 @@ Per **richieste delete**, assicurarsi che la casella di controllo &quot;Commerce
 
 Per inviare le richieste di accesso ed eliminazione tramite l’API Privacy, devi autenticare e gestire le autorizzazioni per Privacy Service:
 
-* [Autenticazione e accesso all&#39;API Privacy Service](https://experienceleague.adobe.com/it/docs/experience-platform/privacy/api/getting-started)
-* [Gestione delle autorizzazioni per Privacy Service](https://experienceleague.adobe.com/it/docs/experience-platform/privacy/permissions)
+* [Autenticazione e accesso all’API di Privacy Service](https://experienceleague.adobe.com/it/docs/experience-platform/privacy/api/getting-started)
+* [Gestire le autorizzazioni per Privacy Service](https://experienceleague.adobe.com/it/docs/experience-platform/privacy/permissions)
 
 **Intestazioni richieste**
 

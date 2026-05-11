@@ -3,9 +3,30 @@ title: Connettere dati Commerce a Adobe Experience Platform
 description: Scopri come collegare i dati Commerce a Adobe Experience Platform.
 feature: Personalization, Integration, Configuration
 exl-id: 8ba33277-38a5-45af-86e0-906cfb3b998d
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/Hof7ftSKKkdMzoJ7eXLr9D2jv-U1LfFnMiFuGwzJpYE
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: 3071
 ht-degree: 0%
 
 ---
@@ -111,7 +132,7 @@ Per ulteriori informazioni sugli eventi [storefront](events.md#storefront-events
    >
    >Se si seleziona **Eventi back office**, tutti i dati back office vengono inviati al server Edge di Experience Platform. Se un acquirente sceglie di rinunciare alla raccolta dei dati, devi impostare esplicitamente la preferenza relativa alla privacy dell’acquirente in Experience Platform. Questo è diverso dagli eventi di vetrina in cui l’agente di raccolta gestisce già il consenso in base alle preferenze dell’acquirente. [ulteriori](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html?lang=it) informazioni sull&#39;impostazione delle preferenze di privacy di un acquirente in Experience Platform.
 
-1. (Ignora questo passaggio se utilizzi un tuo AEP Web SDK.) [Crea](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=it#create) uno stream di dati in Adobe Experience Platform o seleziona uno stream di dati esistente da utilizzare per la raccolta. Immetti l&#39;ID dello stream di dati nel campo **ID dello stream di dati**.
+1. Se utilizzi un AEP Web SDK, salta questo passaggio. [Creare](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=it#create) uno stream di dati in Adobe Experience Platform o selezionare uno stream di dati esistente da utilizzare per la raccolta. Immetti l&#39;ID dello stream di dati nel campo **ID dello stream di dati**.
 
 1. Immettere il **ID set di dati** che si desidera includere nei dati di Commerce. Per trovare l’ID del set di dati:
 

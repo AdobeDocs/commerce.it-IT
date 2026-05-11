@@ -3,9 +3,24 @@ title: Raccogli dati
 description: Scopri come gli eventi raccolgono i dati per  [!DNL Product Recommendations].
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+TQID: https://experienceleague.adobe.com/efHRMj3u3w-xvUgMnEYDpX0D-BDCUyjhhrkMaa3n-xg
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: 1019
 ht-degree: 0%
 
 ---
@@ -14,7 +29,7 @@ ht-degree: 0%
 
 Quando installi e configuri [[!DNL Product Recommendations]](install-configure.md), il modulo distribuisce la raccolta di dati comportamentali nella vetrina. Questo meccanismo raccoglie dati comportamentali anonimi dagli acquirenti e potenzia [!DNL Product Recommendations]. Ad esempio, l&#39;evento `view` viene utilizzato per calcolare il tipo di consiglio `Viewed this, viewed that` e l&#39;evento `place-order` per calcolare il tipo di consiglio `Bought this, bought that`.
 
-Per ulteriori informazioni sui dati comportamentali raccolti dagli eventi [, consulta la &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)documentazione per sviluppatori[!DNL Product Recommendations].
+Per ulteriori informazioni sui dati comportamentali raccolti dagli eventi [!DNL Product Recommendations], consulta la [documentazione per sviluppatori](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations).
 
 >[!NOTE]
 >
@@ -31,7 +46,7 @@ Esistono due tipi di dati utilizzati in Product Recommendations:
 - **Comportamento**: dati del coinvolgimento di un acquirente sul tuo sito, ad esempio visualizzazioni di prodotti, elementi aggiunti a un carrello e acquisti.
 - **Catalogo** - Metadati del prodotto come nome, prezzo, disponibilità e così via.
 
-Quando installi il modulo `magento/product-recommendations`, Adobe AI aggrega i dati comportamentali e di catalogo, creando consigli di prodotto per ogni tipo di consiglio. Il servizio Consigli di prodotto distribuisce quindi tali consigli nella vetrina sotto forma di un widget contenente il prodotto consigliato _elementi_.
+Quando installi il modulo `magento/product-recommendations`, Adobe AI aggrega i dati comportamentali e di catalogo e crea consigli di prodotto per ogni tipo di consiglio. Il servizio Consigli di prodotto distribuisce quindi tali consigli nella vetrina sotto forma di un widget contenente il prodotto consigliato _elementi_.
 
 Alcuni tipi di consigli utilizzano i dati comportamentali dei tuoi acquirenti per addestrare modelli di apprendimento automatico per creare consigli personalizzati. Altri tipi di consigli utilizzano solo i dati di catalogo e non utilizzano dati comportamentali. Se desideri iniziare rapidamente a utilizzare i consigli di prodotto sul tuo sito, puoi utilizzare i seguenti tipi di consigli solo catalogo:
 
@@ -42,7 +57,7 @@ Alcuni tipi di consigli utilizzano i dati comportamentali dei tuoi acquirenti pe
 
 Quando puoi iniziare a utilizzare i tipi di consigli che utilizzano dati comportamentali? Dipende. Questo problema è denominato _Avvio a freddo_.
 
-Il problema di _Avvio a freddo_ si riferisce al tempo necessario per l&#39;addestramento e l&#39;efficacia di un modello. Per i consigli di prodotto, significa attendere che Adobe AI raccolga un numero sufficiente di dati per addestrare i suoi modelli di apprendimento automatico prima di distribuire unità di consigli sul sito. Maggiore è il numero di dati di cui dispongono i modelli, più accurati e utili sono i consigli. Poiché la raccolta dati viene eseguita su un sito attivo, è consigliabile avviare questo processo in anticipo installando e configurando il modulo `magento/production-recommendations`.
+Il problema di _Avvio a freddo_ si riferisce al tempo necessario per l&#39;addestramento e l&#39;efficacia di un modello. Per i consigli di prodotto, significa attendere che Adobe AI raccolga dati sufficienti per addestrare i suoi modelli di apprendimento automatico prima di distribuire unità di consigli sul sito. Maggiore è il numero di dati di cui dispongono i modelli, più accurati e utili sono i consigli. Poiché la raccolta dati viene eseguita su un sito attivo, è consigliabile avviare questo processo in anticipo installando e configurando il modulo `magento/production-recommendations`.
 
 La tabella seguente fornisce alcune indicazioni generali sul tempo necessario per raccogliere dati sufficienti per ogni tipo di consiglio:
 

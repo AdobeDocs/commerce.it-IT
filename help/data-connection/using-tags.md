@@ -3,9 +3,23 @@ title: Raccogliere dati Commerce tramite tag Adobe Experience Platform
 description: Scopri come raccogliere dati Commerce utilizzando i tag Adobe Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: dab333e8-5f71-4f3e-9660-6363b0e230c8
+TQID: https://experienceleague.adobe.com/7HNafiIenZfLrAhILPMwuUzRDzBVuClvDchJBGEg6bs
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2563'
+source-wordcount: 2655
 ht-degree: 0%
 
 ---
@@ -57,7 +71,7 @@ Poiché la raccolta dei dati tramite i tag è diversa dall’utilizzo di Adobe C
 
 Quando aggiorni gli elementi dati e le regole nei tag Adobe Experience Platform con dati evento specifici per Adobe Commerce, puoi adottare alcuni passaggi comuni.
 
-Aggiungiamo ad esempio l&#39;evento Adobe Commerce `signOut` ai tag Adobe Experience Platform. I passaggi descritti di seguito, fatta eccezione per i valori specifici impostati, descrivono come aggiungere [elementi dati](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html?lang=it#data-element) e [regole](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html?lang=it#create-a-rule), applicabili a tutti gli eventi Adobe Commerce che si stanno aggiungendo ai tag.
+Aggiungiamo ad esempio l&#39;evento Adobe Commerce `signOut` ai tag Adobe Experience Platform. I passaggi descritti di seguito, fatta eccezione per i valori specifici impostati, descrivono come aggiungere [elementi dati](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#data-element) e [regole](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#create-a-rule), applicabili a tutti gli eventi Adobe Commerce che si stanno aggiungendo ai tag.
 
 1. Creare un elemento dati:
 
@@ -116,20 +130,20 @@ Ripeti i passaggi precedenti nei tag per ciascuno degli eventi Adobe Commerce de
 
 Per ciascuno dei seguenti eventi, mappa gli eventi Adobe Commerce nel tuo XDM seguendo i passaggi precedenti.
 
-- [&#39;signOut&#39;](#signout)
-- [&quot;signIn&quot;](#signin)
-- [&quot;createAccount&quot;](#createaccount)
-- [&quot;editAccount&quot;](#editaccount)
-- [&quot;pageView&quot;](#pageview)
-- [&quot;productView&quot;](#productview)
-- [&quot;searchRequestSent&quot;](#searchrequestsent)
-- [&quot;searchResponseReceived&quot;](#searchresponsereceived)
-- [&quot;addToCart&quot;](#addtocart)
-- [&quot;openCart&quot;](#opencart)
-- [&#39;viewCart&#39;](#viewcart)
-- [&quot;removeFromCart&quot;](#removefromcart)
-- [&quot;beginCheckout&quot;](#initiatecheckout)
-- [&quot;placeOrder&quot;](#placeorder)
+- [`signOut`](#signout)
+- [`signIn`](#signin)
+- [`createAccount`](#createaccount)
+- [`editAccount`](#editaccount)
+- [`pageView`](#pageview)
+- [`productView`](#productview)
+- [`searchRequestSent`](#searchrequestsent)
+- [`searchResponseReceived`](#searchresponsereceived)
+- [`addToCart`](#addtocart)
+- [`openCart`](#opencart)
+- [`viewCart`](#viewcart)
+- [`removeFromCart`](#removefromcart)
+- [`initiateCheckout`](#initiatecheckout)
+- [`placeOrder`](#placeorder)
 
 ### disconnetti
 
@@ -726,7 +740,7 @@ Crea i seguenti elementi dati:
    - **Tipo di elemento dati**: `Data Layer Computed State`
    - **[Percorso facoltativo]**: `productContext.pricing.regularPrice`
 
-1. Prodotto  prezzo:
+1. Prezzo del prodotto:
 
    - **Nome**: `product price`
    - **Estensione**: `Core`
@@ -969,7 +983,7 @@ Crea i seguenti elementi dati:
    - **Tipo di elemento dati**: `Data Layer Computed State`
    - **[Percorso facoltativo]**: `productContext.pricing.regularPrice`
 
-1. Prodotto  prezzo:
+1. Prezzo del prodotto:
 
    - **Nome**: `product price`
    - **Estensione**: `Core`
@@ -1425,7 +1439,7 @@ Quando installi l&#39;estensione [!DNL Data Connection] in Adobe Commerce, il co
 
 1. Configurare Adobe Experience Platform Web SDK Extension con l&#39;elemento dati `%consent%`:
 
-   ![Aggiorna SDK con il consenso](assets/config-sdk-consent.png)
+   ![Aggiorna SDK con consenso](assets/config-sdk-consent.png)
    _Aggiorna SDK con il consenso_
 
 ## Avvisi

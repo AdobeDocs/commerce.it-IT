@@ -4,10 +4,24 @@ description: Scopri come utilizzare l'estensione  [!DNL Data Connection] per con
 role: Admin, Leader
 feature: Security, Compliance
 exl-id: 8851e6d2-c466-4d8e-bfa4-20d0ad6522b5
-source-git-commit: 290e3310bd7940c4ccd11317d273b75cc974223b
+TQID: https://experienceleague.adobe.com/PxrtL1nHtJsRJuAehDVKRk0ZuJz0ta7i84j1K6An1QU
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 0%
+source-wordcount: 601
+ht-degree: 1%
 
 ---
 
@@ -43,7 +57,7 @@ Per una panoramica delle etichette di utilizzo dei dati e del loro ruolo all&#39
 
 Segui i passaggi descritti nell&#39;esercitazione [gestire le etichette di utilizzo dei dati per uno schema](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/tutorials/labels) per scoprire come applicare le etichette allo schema [!DNL Commerce].
 
-Per informazioni sulle etichette disponibili da applicare ai campi dello schema [, consulta il &#x200B;](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/labels/reference#sensitive)glossario delle etichette sensibili[!DNL Commerce]. L&#39;etichetta `RHD`, ad esempio, identifica informazioni protette sulla salute (PHI) o informazioni relative a un paziente che Adobe consente contrattualmente di caricare.
+Per informazioni sulle etichette disponibili da applicare ai campi dello schema [!DNL Commerce], consulta il [glossario delle etichette sensibili](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/labels/reference#sensitive). L&#39;etichetta `RHD`, ad esempio, identifica informazioni protette sulla salute (PHI) o informazioni relative a un paziente che Adobe consente contrattualmente di caricare.
 
 Quando i dati di [!DNL Commerce] sono etichettati come sensibili, è possibile applicare criteri per impedire operazioni sui dati che costituiscono violazioni dei criteri. Ulteriori informazioni sull&#39;[applicazione dei criteri](https://experienceleague.adobe.com/it/docs/experience-platform/data-governance/enforcement/overview) in Experience Platform.
 

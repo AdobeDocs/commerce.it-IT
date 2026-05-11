@@ -2,9 +2,23 @@
 title: Flusso di lavoro di implementazione
 description: Scopri i passaggi per implementare correttamente [!DNL Product Recommendations] sulla vetrina.
 exl-id: 4a784d04-8be6-473f-afb3-264af06c850a
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+TQID: https://experienceleague.adobe.com/-nvORlxBNwoCcZb6s-OvaX8TtIh28Q-fjeUxsDXpe9E
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: 563
 ht-degree: 0%
 
 ---
@@ -13,7 +27,7 @@ ht-degree: 0%
 
 [!DNL Product Recommendations] utilizza sia i dati comportamentali che quelli del catalogo:
 
-- Comportamento: dati del coinvolgimento di un acquirente sul tuo sito, ad esempio visualizzazioni di prodotti, elementi aggiunti al carrello e acquisti. Adobe Commerce e Adobe AI non raccolgono informazioni personali identificabili.
+- Comportamento: dati del coinvolgimento di un acquirente sul tuo sito, ad esempio visualizzazioni di prodotti, elementi aggiunti al carrello e acquisti. Adobe Commerce e Adobe AI non raccolgono informazioni personali.
 
 - Catalogo: metadati del prodotto come nome, prezzo e disponibilità.
 

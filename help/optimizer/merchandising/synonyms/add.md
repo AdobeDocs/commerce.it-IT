@@ -3,9 +3,19 @@ title: Creare e gestire i sinonimi
 description: Scopri come creare e gestire i sinonimi per  [!DNL Adobe Commerce Optimizer].
 badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: d2982a0b-e7df-44e6-b3c9-9b4328635d38
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/YtlgC9okQYDboZg-A0bcnLUVFRH4IVEeBLMeshGad4s
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: 606
 ht-degree: 0%
 
 ---
@@ -86,7 +96,7 @@ Per facilitare la ricerca di un sinonimo, è possibile filtrare l&#39;elenco per
 
 ## Modifica sinonimo
 
-1. Trovare il sinonimo da modificare e fare clic su **Altre** (...) opzioni.
+1. Trovare il sinonimo da modificare e fare clic su **Altro** (...) opzioni.
 
 1. Fai clic su **Modifica**.
 La parola chiave è il primo termine dell&#39;elenco e ogni termine è separato da una virgola. È possibile aggiornare la parola chiave e i termini di espansione, ma non è possibile modificare il tipo di sinonimo.
@@ -96,7 +106,7 @@ La parola chiave è il primo termine dell&#39;elenco e ogni termine è separato 
 
 ## Elimina sinonimo
 
-1. Trovare il sinonimo da eliminare nell&#39;elenco e fare clic su **Altre** (...) opzioni.
+1. Trovare il sinonimo da eliminare nell&#39;elenco e fare clic su **Altro** (...) opzioni.
 1. Fare clic su **Elimina**.
 1. Quando richiesto, fare clic su **Elimina sinonimo** per confermare.
 
