@@ -3,11 +3,15 @@ title: Listino prezzi
 description: Scopri come gestire i listini prezzi in [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/-vL79MMePcUdhE-gPwjFJZStZUtNLKAUxpePm4Fvmfk
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: 384
 ht-degree: 0%
 
 ---
@@ -22,7 +26,7 @@ Il listino prezzi base definisce la valuta per se stesso e per tutti i listini p
 
 ## Aggiungi listino prezzi a [!DNL Adobe Commerce Optimizer]
 
-È possibile aggiungere listini prezzi a [!DNL Adobe Commerce Optimizer] utilizzando l&#39;API Listino prezzi. Per informazioni su come creare, aggiornare ed eliminare i listini prezzi per [, consulta la &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/)documentazione per sviluppatori[!DNL Adobe Commerce Optimizer].
+È possibile aggiungere listini prezzi a [!DNL Adobe Commerce Optimizer] utilizzando l&#39;API Listino prezzi. Per informazioni su come creare, aggiornare ed eliminare i listini prezzi per [!DNL Adobe Commerce Optimizer], consulta la [documentazione per sviluppatori](https://developer.adobe.com/commerce/services/reference/rest/).
 
 ## Visualizza listini prezzi in [!DNL Adobe Commerce Optimizer]
 

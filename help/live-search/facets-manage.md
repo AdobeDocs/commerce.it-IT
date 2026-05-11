@@ -1,9 +1,15 @@
 ---
 title: Gestisci facet
 description: Scopri come gestire i  [!DNL Live Search]  facet esistenti.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 5062bb1f-ce6f-4244-a1df-65ae1ce868b9
+TQID: https://experienceleague.adobe.com/KWh5KwVRNJO3XLiG9xbqhBsGkt99BgY0hPnPbxDd8vY
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: 481
 ht-degree: 0%
 
 ---
@@ -28,14 +34,14 @@ Consulta [Impostazioni](settings.md) per configurare intervalli e raggruppamenti
 
    ![Facet filtro](assets/facets-filter-by-cropped.png)
 
-1. Per modificare le proprietà del facet, fare clic su **Altre** (...) opzioni.
+1. Per modificare le proprietà del facet, fare clic su **Altro** (...) opzioni.
 1. Fai clic su **Modifica**
 
    ![Modifica opzioni](assets/facet-edit-menu.png)
 
 1. Per modificare l&#39;etichetta del facet, effettuate una delle seguenti operazioni:
 
-   * Per una vetrina [!DNL Commerce], modifica l&#39;[etichetta attributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=it).
+   * Per una vetrina [!DNL Commerce], modifica l&#39;[etichetta attributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
    * Per un’implementazione headless, fai clic sul valore nella prima colonna e modifica il testo in base alle esigenze.
 
    ![Modifica etichetta](assets/facet-edit-label.png)
@@ -85,7 +91,7 @@ L&#39;ordine delle sfaccettature fissate può essere modificato spostando la rig
 
 ## Elimina facet
 
-1. Trovare il facet nell&#39;elenco e fare clic su **Altre** (...) opzioni.
+1. Trova il facet nell&#39;elenco e fai clic su **Altro** (...) opzioni.
 1. Fare clic su **Elimina**.
 1. Quando viene richiesto di confermare, fare clic su **Elimina facet**.
 Il facet viene rimosso dalla vetrina dopo la pubblicazione delle modifiche.

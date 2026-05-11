@@ -3,9 +3,14 @@ title: Sincronizzazione catalogo
 description: Scopri come esportare i dati di prodotto dal server  [!DNL Commerce]  a  [!DNL Commerce Services].
 feature: Catalog Management, Data Import/Export, Catalog Service
 exl-id: 99f96b93-b036-490c-8c57-40463a0de365
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+TQID: https://experienceleague.adobe.com/-X5W4TJNW6pduPsWH-SLuAXrfP7iReCpaVg5qeu2odA
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: 567
 ht-degree: 0%
 
 ---
@@ -14,9 +19,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Il Dashboard di sincronizzazione del catalogo è ora il Dashboard di gestione dati. Questo dashboard rinnovato ora supporta [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+, [[!DNL Live Search]](../live-search/overview.md) v4.1.0+ e [[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+. I clienti possono ottenere Data Management Dashboard aggiornando all’ultima versione di uno di questi servizi. Ulteriori informazioni sono disponibili nella documentazione di [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=it). Questo argomento corrente rimane valido per gli utenti che devono ancora effettuare l’aggiornamento e che dispongono ancora della dashboard Sincronizzazione catalogo.
+> Il Dashboard di sincronizzazione del catalogo è ora il Dashboard di gestione dati. Questo dashboard rinnovato ora supporta [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+, [[!DNL Live Search]](../live-search/overview.md) v4.1.0+ e [[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+. I clienti possono ottenere Data Management Dashboard aggiornando all’ultima versione di uno di questi servizi. Ulteriori informazioni sono disponibili nella documentazione di [Data Management Dashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html). Questo argomento corrente rimane valido per gli utenti che devono ancora effettuare l’aggiornamento e che dispongono ancora della dashboard Sincronizzazione catalogo.
 
-Adobe Commerce utilizza gli indicizzatori per compilare i dati del catalogo nelle tabelle. Il processo viene attivato automaticamente da [eventi](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html?lang=it#events-that-trigger-full-reindexing), ad esempio una modifica al prezzo di un prodotto o al livello di inventario.
+Adobe Commerce utilizza gli indicizzatori per compilare i dati del catalogo nelle tabelle. Il processo viene attivato automaticamente da [eventi](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing), ad esempio una modifica al prezzo di un prodotto o al livello di inventario.
 
 Il servizio Catalog Sync sposta i dati del prodotto da un&#39;istanza [!DNL Adobe Commerce] alla piattaforma [!DNL Commerce Services] su base continuativa per mantenere aggiornati i dati. Ad esempio, [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) richiede le informazioni del catalogo corrente per restituire con precisione i consigli con nomi, prezzi e disponibilità corretti. Utilizzare il dashboard _Sincronizzazione catalogo_ per osservare e gestire il processo di sincronizzazione o l&#39;interfaccia della riga di comando per attivare una sincronizzazione del catalogo e reindicizzare i dati del prodotto per l&#39;utilizzo da parte di [!DNL Commerce Services]. Vedi [Riferimento interfaccia riga di comando](../data-export/data-export-cli-commands.md) nella _Guida all&#39;esportazione dati SaaS_.
 

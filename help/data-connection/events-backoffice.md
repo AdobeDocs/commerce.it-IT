@@ -4,9 +4,14 @@ description: Scopri i dati acquisiti da ogni evento di back office.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: 65cf8150-1a14-4d4c-aa0c-1545109e4fe7
-source-git-commit: 6ffa18a9f66b6be8cd40bda5aedc911b26fe0e1d
+TQID: https://experienceleague.adobe.com/ARHjckt-D38iqChgfJpiVGXO8Pz2YN6Oj5HFWmwCVEA
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '3619'
+source-wordcount: 3714
 ht-degree: 0%
 
 ---
@@ -15,13 +20,13 @@ ht-degree: 0%
 
 Nell&#39;elenco seguente sono elencati gli eventi di back office di Commerce disponibili quando si installa l&#39;estensione [!DNL Data Connection]. I dati raccolti da questi eventi vengono inviati a Adobe Experience Platform. Puoi anche creare [eventi personalizzati](custom-events.md) per raccogliere dati aggiuntivi non forniti come predefiniti.
 
-Oltre ai dati raccolti dai seguenti eventi, si ottengono anche [altri dati](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=it) forniti da Adobe Experience Platform Web SDK.
+Oltre ai dati raccolti dai seguenti eventi, si ottengono anche [altri dati](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) forniti da Adobe Experience Platform Web SDK.
 
 Gli eventi di back office contengono dati lato server. Questi dati comprendono [informazioni sullo stato dell&#39;ordine](#order-status), ad esempio se un ordine è stato effettuato, annullato, rimborsato, spedito o completato. I dati lato server includono anche [informazioni sugli eventi del profilo cliente](#customer-profile-events), ad esempio se è stato creato, aggiornato o eliminato un account.
 
 >[!NOTE]
 >
->Tutti gli eventi di back office includono il campo [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=it), che include l&#39;indirizzo e-mail dell&#39;acquirente, se disponibile, e ECID.
+>Tutti gli eventi di back office includono il campo [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html), che include l&#39;indirizzo e-mail dell&#39;acquirente, se disponibile, e ECID.
 
 ## Stato ordine
 
@@ -408,7 +413,7 @@ Gli eventi profilo acquisiti dal lato server includono informazioni sull&#39;acc
 
 >[!NOTE]
 >
->Ogni evento del profilo cliente include anche il campo [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=it), che include l&#39;ID cliente Commerce generato dal sistema come identificatore primario del profilo e un ID e-mail utilizzato come identificatore secondario. [Scopri](custom-identities.md) come creare attributi di identità personalizzati per migliorare l&#39;identificazione del profilo cliente.
+>Ogni evento del profilo cliente include anche il campo [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html), che include l&#39;ID cliente Commerce generato dal sistema come identificatore primario del profilo e un ID e-mail utilizzato come identificatore secondario. [Scopri](custom-identities.md) come creare attributi di identità personalizzati per migliorare l&#39;identificazione del profilo cliente.
 
 ### accountCreated
 

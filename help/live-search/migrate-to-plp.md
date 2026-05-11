@@ -1,9 +1,14 @@
 ---
 title: Migrazione dalla scheda di ricerca al widget PLP
 description: Scopri come migrare dalla scheda di ricerca obsoleta al widget per pagina elenco prodotti  [!DNL Live Search] .
-source-git-commit: 8811f0f271928fbc827e5a0164542da473c57224
+TQID: https://experienceleague.adobe.com/YAwhAbTVeYpGYKh4dTe1umcfgoRUOg8QPZNIiGFjKVo
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: 2121
 ht-degree: 0%
 
 ---
@@ -319,7 +324,7 @@ In questo scenario, esiste un problema noto in cui l’abilitazione del widget P
 
 **Opzione 3: sostituire GTM con Adobe Analytics**
 
-- Valuta se eseguire la migrazione a [Adobe Analytics](https://business.adobe.com/it/products/adobe-analytics.html), se applicabile.
+- Valuta se eseguire la migrazione a [Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html), se applicabile.
 - Contatta il team di progettazione clienti per assistenza.
 
 **Chi contattare**: invia un ticket di supporto per aggiornamenti sulla compatibilità GTM o assistenza tecnica clienti.
@@ -444,7 +449,7 @@ Contatta la risorsa appropriata in base alle tue esigenze specifiche.
 - Implementazioni headless o PWA
 - Tracciamento degli eventi personalizzati
 
-Per contattare il supporto Adobe, consulta la [Guida utente del Centro assistenza](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Per contattare il supporto Adobe, consulta la [Guida utente del Centro assistenza](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 ## Domande frequenti
 

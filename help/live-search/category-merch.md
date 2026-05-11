@@ -3,10 +3,15 @@ title: Merchandising categorie
 description: Utilizza  [!DNL Live Search] merchandising per categorie per un'esperienza di acquisto più veloce.
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+TQID: https://experienceleague.adobe.com/2omWXwNttfwW04upO-QlQlRa41w9vgpdlPOYVFOX7-4
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: 1131
 ht-degree: 0%
 
 ---
@@ -17,7 +22,7 @@ Il merchandising per categorie consente ai proprietari dei negozi di applicare [
 
 Questo video è un’introduzione alla categoria Merchandising.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448859?captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
 La funzione è accessibile nell&#39;amministratore da **Marketing** > SEO &amp; Search > **[!DNL Live Search]** > **Category Merchandising**.
 
@@ -42,7 +47,7 @@ Puoi cercare una categoria o sottocategoria nel campo &quot;Ricerca per categori
 Il merchandising per categorie utilizza gli stessi tipi di classificazione utilizzati per [singoli prodotti](rules-workspace.md).
 Esistono due tipi di classificazione: intelligente e manuale.
 
-**La classificazione intelligente** sfrutta l&#39;analisi dei dati comportamentali in vetrina da parte di [Adobe AI](https://business.adobe.com/it/ai.html) per ordinare tutti i prodotti all&#39;interno delle categorie scelte in base a un determinato algoritmo. Una volta scelta una classificazione intelligente, l’ordine specifico dei prodotti dovrebbe cambiare nel tempo in quanto i dati sottostanti vengono rianalizzati da Adobe AI su base continuativa. Ad esempio, i prodotti con tendenze principali cambiano automaticamente nel tempo in base alle preferenze dell’acquirente.
+**La classificazione intelligente** sfrutta l&#39;analisi dei dati comportamentali in vetrina da parte di [Adobe AI](https://business.adobe.com/ai.html) per ordinare tutti i prodotti all&#39;interno delle categorie scelte in base a un determinato algoritmo. Una volta scelta una classificazione intelligente, l’ordine specifico dei prodotti dovrebbe cambiare nel tempo in quanto i dati sottostanti vengono rianalizzati da Adobe AI su base continuativa. Ad esempio, i prodotti con tendenze principali cambiano automaticamente nel tempo in base alle preferenze dell’acquirente.
 I metodi di classificazione intelligenti sono:
 
 * Più acquistati: classifica i prodotti in base alla frequenza con cui sono stati acquistati dagli acquirenti nei sette giorni precedenti.

@@ -2,11 +2,15 @@
 title: Criteri
 description: Scopri come creare e gestire i criteri in [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/hUwBKWEcFOlkC2WOwBtDDitnj-nu-kixJ9WuencZIe4
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: 917
 ht-degree: 0%
 
 ---
@@ -83,11 +87,11 @@ In questa sezione viene creato un nuovo criterio. Il criterio può essere **STAT
 
 1. Fare clic sul pulsante **[!UICONTROL Save]** nella finestra di dialogo dei dettagli del filtro. &#x200B;
 
-1. Fai clic sui punti azione (...) accanto al filtro creato e seleziona **Abilita**. Da qui, puoi anche **Modificare**, **Disabilitare** o **Eliminare** il filtro.
+1. Fai clic sui punti azione (...) accanto al filtro creato e selezionare **Abilita**. Da qui, puoi anche **Modificare**, **Disabilitare** o **Eliminare** il filtro.
 
    La colonna **Stato** contiene un&#39;icona verde e la parola &quot;Abilitato&quot;.
 
-1. Fare clic sul pulsante **[!UICONTROL Save]** per salvare il nuovo criterio&#x200B; Se il pulsante non è attivo, verificare che il nome del criterio sia stato aggiunto facendo clic sull&#39;icona della matita accanto a **Nuovo criterio**.
+1. Fare clic sul pulsante **[!UICONTROL Save]** per salvare il nuovo criterio.&#x200B; Se il pulsante non è attivo, verificare che il nome del criterio sia stato aggiunto facendo clic sull&#39;icona della matita accanto a **Nuovo criterio**.
 
 1. Per verificare il nuovo criterio, torna all’elenco dei criteri facendo clic sulla freccia indietro. &#x200B;Verranno elencati i nuovi criteri.
 
@@ -124,11 +128,11 @@ In questa sezione viene creato un nuovo criterio. Il criterio può essere **STAT
 
 1. Fare clic sul pulsante **[!UICONTROL Save]** nella finestra di dialogo dei dettagli del filtro. &#x200B;
 
-1. Fai clic sui punti azione (...) accanto al filtro creato e seleziona **Abilita**. Da qui, puoi anche **Modificare**, **Disabilitare** o **Eliminare** il filtro.
+1. Fai clic sui punti azione (...) accanto al filtro creato e selezionare **Abilita**. Da qui, puoi anche **Modificare**, **Disabilitare** o **Eliminare** il filtro.
 
    La colonna **Stato** contiene un&#39;icona verde e la parola &quot;Abilitato&quot;.
 
-1. Fare clic sul pulsante **[!UICONTROL Save]** per salvare il nuovo criterio&#x200B; Se il pulsante non è attivo, verificare che il nome del criterio sia stato aggiunto facendo clic sull&#39;icona della matita accanto a **Nuovo criterio**.
+1. Fare clic sul pulsante **[!UICONTROL Save]** per salvare il nuovo criterio.&#x200B; Se il pulsante non è attivo, verificare che il nome del criterio sia stato aggiunto facendo clic sull&#39;icona della matita accanto a **Nuovo criterio**.
 
 1. Per verificare il nuovo criterio, torna all’elenco dei criteri facendo clic sulla freccia indietro. &#x200B;Verranno elencati i nuovi criteri.
 

@@ -1,11 +1,16 @@
 ---
 title: Creare e gestire le regole
 description: Scopri come creare e gestire le regole di merchandising per le pagine di ricerca, gli elenchi di prodotti predefiniti e le categorie.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: 0d1ebaddada8be82645164368ebfbb6dd0a569cd
+TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2714'
+source-wordcount: 2760
 ht-degree: 0%
 
 ---
@@ -21,7 +26,7 @@ Per creare una regola, apri l&#39;editor di regole, scegli un **tipo di regola**
 
    >[!IMPORTANT]
    >
-   >Le visualizzazioni del catalogo sono attualmente in [beta](https://experienceleague.adobe.com/it/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). I partecipanti a Beta dovranno ricreare eventuali regole di merchandising esistenti per sfruttare il nuovo ambito di visualizzazione del catalogo.
+   >Le visualizzazioni del catalogo sono attualmente in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). I partecipanti a Beta dovranno ricreare eventuali regole di merchandising esistenti per sfruttare il nuovo ambito di visualizzazione del catalogo.
 
 1. Fare clic su **[!UICONTROL Create rule]** per avviare l&#39;editor di regole.
 
@@ -208,7 +213,7 @@ Segui queste istruzioni per aggiornare le proprietà delle regole esistenti. Non
 
 ### Modifica regola
 
-1. Nell&#39;area di lavoro *Regole di merchandising*, individua la regola nella griglia che desideri modificare e fai clic su **Altre** (...) opzioni.
+1. Nell&#39;area di lavoro *Regole di merchandising*, individua la regola nella griglia da modificare e fai clic su **Altro** (...) opzioni.
 1. Fai clic su **Modifica** per accedere all&#39;editor di regole.
 1. Aggiorna condizioni, operatori ed eventi in base alle esigenze.
 1. Se necessario, aggiorna i campi nome, data di inizio e di fine e descrizione. Tutti i nomi delle regole devono essere univoci.
@@ -220,13 +225,13 @@ La regola viene aggiunta all&#39;elenco nell&#39;area di lavoro *Rules*. Anche s
 
 Questa opzione consente di visualizzare rapidamente tutti i parametri della regola, mantenendo la tabella *Rules*.
 
-1. Nell&#39;area di lavoro *Regole di merchandising*, individuare la regola nella griglia che si desidera modificare e fare clic su **Altre** (...) opzioni.
+1. Nell&#39;area di lavoro *Regole di merchandising*, individuare la regola nella griglia da modificare e fare clic su **Altro** (...) opzioni.
 1. Fai clic su **Visualizza dettagli** per visualizzare i parametri della regola.
 1. Scegliere **Modifica** o **Elimina** oppure fare clic sulla X per chiudere il pannello.
 
 ### Elimina regola
 
-1. Nell&#39;area di lavoro *Regole*, individuare la regola nella griglia che si desidera modificare e fare clic su **Altre** (...) opzioni.
+1. Nell&#39;area di lavoro *Regole*, individuare la regola nella griglia che si desidera modificare e fare clic su **Altro** (...) opzioni.
 1. Fare clic su **Elimina**.
 
 ## Descrizioni dei campi {#field-descriptions}

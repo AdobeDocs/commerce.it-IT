@@ -3,10 +3,15 @@ title: Note sulla versione
 description: Informazioni aggiornate sulla versione dell'estensione  [!DNL Data Connection]  di Adobe Commerce.
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/kjXCkifzTRTjVJZuy3fb6VPhQkblOaT7-GxwJP4Dv3Y
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 1%
+source-wordcount: 1350
+ht-degree: 2%
 
 ---
 
@@ -24,9 +29,9 @@ Queste note sulla versione contengono aggiornamenti all&#39;estensione [!DNL Dat
 
 Per le modifiche e le correzioni delle funzionalità relative alle estensioni utilizzate dall&#39;estensione [!DNL Data Connection], vedere **Aggiornamenti dei servizi supportati**.
 
-Per informazioni sulle pianificazioni e sul supporto, consulta le [prossime versioni](https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/schedule).
+Per informazioni sulle pianificazioni e sul supporto, consulta le [prossime versioni](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule).
 
-Consulta la documentazione per gli sviluppatori per [scoprire quali versioni di Commerce supportano questo modulo](https://experienceleague.adobe.com/it/docs/commerce-operations/release/product-availability).
+Consulta la documentazione per gli sviluppatori per [scoprire quali versioni di Commerce supportano questo modulo](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Aggiornamenti dei servizi supportati
 
@@ -82,7 +87,7 @@ _12 ottobre 2022_
 
 +++
 
-## 3,5,0
+## 3.5.0
 
 _17 marzo 2026_
 
@@ -98,7 +103,7 @@ _16 settembre 2025_
 
 ![Nuovo](../assets/new.svg) [!DNL Data Connection] ora rispetta completamente la modalità di restrizione dei cookie impedendo la raccolta e l&#39;archiviazione dei dati nei cookie/nell&#39;archiviazione locale quando le restrizioni sono abilitate.
 
-## 3,3,0
+## 3.3.0
 
 _21 marzo 2025_
 
@@ -106,7 +111,7 @@ _21 marzo 2025_
 
 ![Nuovo](../assets/new.svg) aggiunto supporto PHP 8.4.
 
-## 3.2.1.
+## 3.2.1
 
 _17 gennaio 2025_
 
@@ -134,7 +139,7 @@ _27 agosto 2024_
 ![Nuovo](../assets/new.svg) - Se partecipi alla versione beta, assicurati che il tuo file `composer.json` abbia le seguenti caratteristiche a livello di radice: `"minimum-stability": "beta"`. Aggiungi anche `composer require "magento/customers-connector: ^1.2.0"` per inviare i profili cliente dall&#39;istanza Commerce a SaaS.
 ![Nuovo](../assets/new.svg) - Questa versione contiene le patch rilasciate nelle versioni 3.1.1, 3.1.2, 3.1.3 e 3.1.4.
 
-## 3.1.4.
+## 3.1.4
 
 _9 agosto 2024_
 
@@ -142,7 +147,7 @@ _9 agosto 2024_
 
 ![Correzione](../assets/fix.svg) - Il metapackage `experience-platform-connector` è stato aggiornato per rimuovere altri esportatori e indicizzatori di dati inutilizzati.
 
-## 3.1.3.
+## 3.1.3
 
 _22 luglio 2024_
 
@@ -150,7 +155,7 @@ _22 luglio 2024_
 
 ![Correzione](../assets/fix.svg) - Il metapackage `experience-platform-connector` è stato aggiornato per rimuovere gli esportatori e gli indicizzatori di dati inutilizzati.
 
-## 3.1.2.
+## 3.1.2
 
 _5 giugno 2024_
 
@@ -159,7 +164,7 @@ _5 giugno 2024_
 ![Correzione](../assets/fix.svg) - È stato risolto un problema che causava l&#39;utilizzo di un formato di data errato durante l&#39;avvio di una [sincronizzazione cronologica](connect-data.md#specify-order-history-date-range).
 ![Correzione](../assets/fix.svg) - È stato risolto un problema a causa del quale l&#39;evento `startCheckout` non veniva inviato in Adobe Commerce 2.4.7.
 
-## 3.1.1.
+## 3.1.1
 
 _4 aprile 2024_
 
@@ -178,7 +183,7 @@ _4 marzo 2024_
 ![Nuovo](../assets/new.svg) - Aggiunta della possibilità di [aggiungere attributi personalizzati](custom-attributes.md).
 ![Nuovo](../assets/new.svg) - Aggiunta la possibilità di [raccogliere e inviare record del profilo](connect-data.md#send-customer-profile-data) e dati ad Experience Platform.
 
-## 3.1.0.
+## 3.1.0
 
 _16 novembre 2023_
 
@@ -188,7 +193,7 @@ _16 novembre 2023_
 ![Correzione](../assets/fix.svg) - Aggiunta la possibilità di registrare la risposta di errore se Adobe IMS non è in grado di generare il token di accesso.
 ![Correzione](../assets/fix.svg) - È stato aggiunto un messaggio di notifica se si tenta di sincronizzare gli ordini cronologici ma non sono state specificate le credenziali dell&#39;account.
 
-## 3,0,0
+## 3.0.0
 
 _10 ottobre 2023_
 
@@ -200,7 +205,7 @@ Questa è una versione principale. [Modifica](install.md#update) il file composi
 ![Nuovo](../assets/new.svg) - Aggiunta del supporto per OAuth 2.0 quando [configuri](connect-data.md#connect-commerce-data-to-adobe-experience-platform) l&#39;estensione [!DNL Data Connection].
 ![Nuovo](../assets/new.svg) - Supporto terminato per Adobe Commerce 2.4.3.
 
-## 2.3.0.
+## 2.3.0
 
 _27 giugno 2023_
 
@@ -219,7 +224,7 @@ _13 giugno 2023_
 
 ![Nuovo](../assets/new.svg) - (Beta) Aggiunta la possibilità di [inviare dati e stato relativi all&#39;ordine cronologico](connect-data.md#send-historical-order-data) ad Experience Platform.
 
-## 2.2.0.
+## 2.2.0
 
 _30 marzo 2023_
 
@@ -228,7 +233,7 @@ _30 marzo 2023_
 ![Nuovo](../assets/new.svg) - Le dipendenze `commerce-data-export` e `saas-export` sono state unite all&#39;estensione `experience-platform-connector`. In precedenza, era necessario installare queste dipendenze separatamente. Queste dipendenze, insieme alla configurazione dell&#39;esercente, consentono l&#39;elaborazione lato server di [eventi back office](events-backoffice.md).
 ![Nuovo](../assets/new.svg) - Aggiunto nuovo evento di back office denominato [`orderShipmentCompleted`](events-backoffice.md#ordershipmentcompleted).
 
-## 2.1.1.
+## 2.1.1
 
 _28 febbraio 2023_
 
@@ -236,7 +241,7 @@ _28 febbraio 2023_
 
 ![Nuovo](../assets/new.svg) - Aggiunta del supporto per PHP 8.2 per tutte le estensioni [!DNL Data Connection].
 
-## 2.1.0.
+## 2.1.0
 
 _17 gennaio 2023_
 
@@ -245,7 +250,7 @@ _17 gennaio 2023_
 ![Nuovo](../assets/new.svg) - Aggiornamento dell&#39;[[!DNL Data Connection] estensione Admin](connect-data.md) per consentire di specificare la propria AEP Web SDK (alloy).
 ![Correzione](../assets/fix.svg) è stato modificato in utilizzando `identityMap` invece di `personID` durante l&#39;impostazione dell&#39;identità primaria per tutti i dati inviati al server Edge.
 
-## 2.0.1.
+## 2.0.1
 
 _10 novembre 2022_
 
@@ -253,7 +258,7 @@ _10 novembre 2022_
 
 ![Correzione](../assets/fix.svg) - Ora il contesto Adobe Experience Platform viene impostato solo dopo il caricamento di Storefront Event Collector e Storefront Event SDK.
 
-## 2,0,0
+## 2.0.0
 
 _12 ottobre 2022_
 
@@ -262,7 +267,7 @@ _12 ottobre 2022_
 ![Nuovo](../assets/new.svg) - Aggiunta la possibilità di specificare il proprio AEP Web SDK quando [connette](connect-data.md) l&#39;istanza Adobe Commerce all&#39;Experience Platform.
 ![Correzione](../assets/fix.svg) - È stato aggiornato il requisito dell&#39;ambito dello stream di dati in modo che gli ID dello stream di dati debbano essere inclusi nell&#39;ambito del sito Web anziché della visualizzazione archivio.
 
-## 1,0,0
+## 1.0.0
 
 _9 agosto 2022_
 
