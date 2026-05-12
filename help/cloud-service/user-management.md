@@ -18,9 +18,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 118e2865ce9d4903b9a82254e0f56fc76c9fdadf
 workflow-type: tm+mt
-source-wordcount: 1787
+source-wordcount: 1822
 ht-degree: 0%
 
 ---
@@ -53,10 +53,15 @@ I seguenti ruoli sono disponibili per [!DNL Adobe Commerce as a Cloud Service]. 
 
 * [**Sviluppatori**](https://helpx.adobe.com/it/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} - Gli sviluppatori dispongono di autorizzazioni utente e vengono aggiunti all&#39;istanza di Commerce come utente sviluppatore. Possono utilizzare [[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}, [configurare gli eventi](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"} e [creare webhook](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}.
 
-* Amministratori: esistono tre diversi tipi di amministratori:
+* Amministratori: esistono diversi tipi di ruoli di amministratore:
    * [Amministratori di sistema](https://helpx.adobe.com/it/enterprise/using/admin-roles.html){target="_blank"} - L&#39;amministratore di sistema ha accesso a tutti i prodotti e i profili di prodotto dell&#39;organizzazione tramite Admin Console.
    * [Amministratori di prodotto](#add-a-product-admin) - Gli amministratori di prodotto possono [gestire utenti, ruoli e autorizzazioni per il prodotto](#add-users) in [!DNL Adobe Admin Console] e [gestire gli utenti nell&#39;amministratore di Commerce](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}.
    * [Amministratori del profilo di prodotto](#add-developers-and-product-profile-admins) - Gli amministratori del profilo di prodotto non hanno accesso all&#39;amministratore Adobe Commerce, ma possono gestire gli utenti per il prodotto in [!DNL Adobe Admin Console].
+   * Amministratori del supporto: gli amministratori del supporto possono creare e gestire ticket di supporto.
+
+>[!NOTE]
+>
+>Se desideri che un utente abbia la possibilità di creare ticket di supporto, gli deve essere assegnato il ruolo **Amministratore supporto** in Admin Console.
 
 Per informazioni dettagliate sulle autorizzazioni concesse a ogni ruolo all&#39;interno di Adobe Commerce, vedi [risorse per il ruolo](#role-resources).
 
