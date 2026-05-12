@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c3e995d46b7cfca3186b7599e22b825f0efa80f1
 workflow-type: tm+mt
-source-wordcount: 2996
+source-wordcount: 3052
 ht-degree: 1%
 
 ---
@@ -117,6 +117,15 @@ _31 maggio 2024_
 _27 ottobre 2023_
 
 ![Nuovo](../assets/new.svg) Il widget PLP [!DNL Live Search] ora supporta i campioni colore.
+
+
+## [!DNL Live Search] 4.7.1
+
+_12 maggio 2026_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.4 e successive
+
+![Correzione](../assets/fix.svg) è stato risolto un problema a causa del quale gli script popopover della vetrina [!DNL Live Search] causavano errori Content Security Policy (CSP) quando CSP era configurato in modalità limitata e gli script in linea erano disabilitati. L&#39;estensione ora utilizza un rendering sicuro per questi script, in modo che le pagine vengano caricate senza violazioni script-src CSP.
 
 ## [!DNL Live Search] 4.7.0
 
