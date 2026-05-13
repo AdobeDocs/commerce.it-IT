@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 22f44afb7221c735785b6e9a38fb70c733cf0942
 workflow-type: tm+mt
-source-wordcount: 2709
+source-wordcount: 2742
 ht-degree: 0%
 
 ---
@@ -54,6 +54,12 @@ Gli aggiornamenti sono suddivisi per tipo:
 ## Servizio catalogo vetrina
 
 ### Maggio 2026
+
+**Data di rilascio**: 13 maggio 2026
+<!--v1.54-->
+
+![Nuovo](../assets/new.svg) **Ordinamento categorie in GraphQL**. Il tipo di GraphQL `CategoryView` include ora un campo posizione, pertanto gli storefront possono visualizzare le categorie nell&#39;ordine configurato dai commercianti nella gerarchia del catalogo.
+<!--DATA-7166-->
 
 **Data di rilascio**: 4 maggio 2026
 <!-- v1.53 -->
