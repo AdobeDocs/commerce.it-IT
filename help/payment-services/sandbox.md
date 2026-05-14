@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 2c6c812fd25feecfe5133d6623a1c814003d579c
+source-git-commit: 5312d23f050d9007132f7f14b17caf13ab52c7df
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Quando l’onboarding in Sandbox PayPal viene approvato, dovresti visualizzare u
 
 ### Reimposta l’account sandbox
 
-Se hai creato un account sandbox PayPal durante il processo di onboarding di PayPal sandbox, devi reimpostare la sandbox di onboarding perché o non puoi verificare l’e-mail.
+Se hai creato un account sandbox di PayPal durante il processo di onboarding di PayPal nella sandbox, devi reimpostare la sandbox di onboarding perché non puoi verificare l’e-mail.
 
 Per ripristinare l’account sandbox:
 
