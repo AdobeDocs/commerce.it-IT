@@ -1,10 +1,11 @@
 ---
 user-guide-title: Guida all'integrazione di [!DNL AEM Assets]
+breadcrumb-title: Integrazione di [!DNL AEM Assets]
 user-guide-description: Informazioni complete sull’integrazione di AEM Assets per amministratori e addetti al marketing di Adobe Commerce e Magento Open Source.
 feature: CMS, Page Content
-source-git-commit: 0fd98bf86555c914f7a5b1e177c31c37764dbf84
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '96'
 ht-degree: 4%
 
 ---
@@ -29,4 +30,4 @@ ht-degree: 4%
    - [Corrispondenza automatica personalizzata](synchronize/custom-match.md)
    - [Selezione manuale delle risorse](synchronize/asset-selector-integration.md)
 - [Gestire le risorse multimediali di Commerce](manage-assets.md)
-- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/it/docs/commerce/user-guides/home)
+- [Torna alla pagina principale dei servizi Commerce](https://experienceleague.adobe.com/it/docs/commerce/user-guides/home)
