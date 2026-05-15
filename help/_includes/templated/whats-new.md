@@ -1,7 +1,7 @@
 ---
-source-git-commit: feb450ecd425d7e3ce7f8e354aeb294bb7d5d1ce
+source-git-commit: c435c7751fca8c46077cbab3534bd9f47cd03b2b
 workflow-type: tm+mt
-source-wordcount: '1333'
+source-wordcount: '1144'
 ht-degree: 1%
 
 ---
@@ -429,80 +429,6 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
         Nuovo argomento
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/0fd98bf86555c914f7a5b1e177c31c37764dbf84">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 12 marzo 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Aggiornate <a href="https://experienceleague.adobe.com/it/docs/commerce/aem-assets-integration/manage-assets">Gestione risorse multimediali di Commerce</a> e <a href="https://experienceleague.adobe.com/it/docs/commerce/aem-assets-integration/synchronize/default-match">Corrispondenza automatica predefinita</a> con indicazioni di navigazione più chiare per gli utenti che configurano risorse di prodotto in AEM Assets.</p>
-</td>
-      <td>
-        Tecnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a0eaaf0de53962b37c7b52f3e7e13aac4c62e372">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 11 marzo 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Sono state aggiornate le <a href="https://experienceleague.adobe.com/it/docs/commerce/aem-assets-integration/release-notes">note sulla versione dell'integrazione di AEM Assets</a> con v1.3.4: supporto per Adobe Commerce 2.4.9-beta1 e PHP 8.5 e popolamento automatico della mappatura del dominio nell'interfaccia utente di configurazione.</p>
-</td>
-      <td>
-        Tecnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/85579e3f2f8fc49f46f9201f31908602ee5d3259">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 10 marzo 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Sono state aggiornate le <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/release-notes">note sulla versione</a> di Adobe Commerce as a Cloud Service con la versione più recente negli ambienti di produzione.</p>
-</td>
-      <td>
-        Aggiornamento principale
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/dd9b660729f7c8616347d3222fdfb3b83a774e56">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>È stata aggiunta una nuova guida alla documentazione di <a href="https://experienceleague.adobe.com/it/docs/commerce/app-management/overview">Gestione app</a> per introdurre Gestione app e come associare, configurare e gestire le applicazioni App Builder con la tua istanza Commerce.</p>
-</td>
-      <td>
-        Nuovo argomento
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ab635fecb7b82294bd4a4fd045ed71931e9d265d">commit</a></td>
     </tr>
   </tbody>
 </table>
