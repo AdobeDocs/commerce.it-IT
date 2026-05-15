@@ -1,9 +1,10 @@
 ---
 user-guide-title: Guida [!DNL Live Search]
+breadcrumb-title: '[!DNL Live Search]'
 user-guide-description: Questa guida fornisce istruzioni dettagliate per l'utilizzo di  [!DNL Live Search]  da Adobe Commerce.
 role: Admin
 feature: Services, Search
-source-git-commit: d6228861f479efd92886f8c8d70a785aee164c9e
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 8%
@@ -47,4 +48,4 @@ ht-degree: 8%
    - [GraphQL](graphql.md)
    - [Impostazioni](settings.md)
 - [Guida per gli sviluppatori](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)
-- [Torna alla pagina principale dei servizi Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=it)
+- [Torna alla pagina principale dei servizi Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

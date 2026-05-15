@@ -1,9 +1,10 @@
 ---
 user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
+breadcrumb-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: Questa guida fornisce istruzioni dettagliate per l'utilizzo di  [!DNL Adobe Commerce as a Cloud Service].
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 4%
@@ -33,7 +34,7 @@ ht-degree: 4%
       - [Strumento di migrazione dati in blocco](migration/bulk-data.md)
       - [Strumenti di codifica](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
    - {hide-from-toc}[Servizio RAG documentazione](migration/doc-rag.md)
-- [Accedi come cliente](https://experienceleague.adobe.com/it/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+- [Accedi come cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [Endpoint REST per conto gift card](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
 - [Attivazione delle e-mail tramite REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - Tutorial {#tutorials}
@@ -47,6 +48,6 @@ ht-degree: 4%
    - [Schema GraphQL](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [Schema REST API](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
 - [Agente sviluppatore](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-- [Tutorial video](https://experienceleague.adobe.com/it/playlists/accs-getting-started-product-overview){target="_blank"}
+- [Tutorial video](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [Note sulla versione](release-notes.md)
-- [Torna alla pagina principale dei servizi Commerce](https://experienceleague.adobe.com/it/docs/commerce/user-guides/home)
+- [Torna alla pagina principale dei servizi Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

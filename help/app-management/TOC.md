@@ -1,11 +1,12 @@
 ---
 user-guide-title: '[!DNL App Management]'
+breadcrumb-title: '[!DNL App Management]'
 user-guide-description: Associa, configura e gestisci le applicazioni App Builder con la tua istanza Adobe Commerce.
 feature: App Builder, Extensibility, Integration
-source-git-commit: ab635fecb7b82294bd4a4fd045ed71931e9d265d
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
-source-wordcount: '27'
-ht-degree: 7%
+source-wordcount: '34'
+ht-degree: 5%
 
 ---
 
@@ -17,4 +18,4 @@ ht-degree: 7%
 - Gestione dell’app {#manage-app}
    - [Gestione dell’app](manage-app.md)
    - [Risoluzione dei problemi](troubleshooting.md)
-- [Torna alla home page dei servizi di Commerce](https://experienceleague.adobe.com/it/docs/commerce/user-guides/home)
+- [Torna alla pagina principale dei servizi Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
