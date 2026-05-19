@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 4288998fdae56112dc9ddcebfc42b85b9f5d8c00
 workflow-type: tm+mt
-source-wordcount: 3633
+source-wordcount: 4032
 ht-degree: 0%
 
 ---
@@ -42,11 +42,51 @@ Le seguenti note sulla versione contengono aggiornamenti a [!DNL Adobe Commerce 
 >
 >Se utilizzi Adobe Commerce on-premise o Adobe Commerce sull&#39;infrastruttura cloud, consulta le [note sulla versione di Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/release/notes/overview).
 
-## Maggio 2026 - #1 sulla versione {#latest}
+## Maggio 2026 - #2 sulla versione {#latest}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+[!BADGE Sandbox]{type=Caution tooltip="Gli elementi elencati sono attualmente disponibili solo negli ambienti Sandbox. Adobe rende disponibili le nuove versioni negli ambienti Sandbox per fornire il tempo di testare le modifiche imminenti prima che la versione sia disponibile negli ambienti di produzione."}
+
+I seguenti elementi saranno rilasciati negli ambienti di produzione il 21 maggio 2026.
+
+>[!BEGINSHADEBOX]
+
+### Tracciare le spedizioni utilizzando vettori predefiniti e personalizzati
+
+Il tracciamento degli ordini è ora affidabile per i vettori di spedizione predefiniti e personalizzati in [!DNL Commerce Admin], consentendo ai commercianti di fornire esperienze di tracciamento coerenti dopo l&#39;acquisto. In precedenza, la selezione di un vettore come UPS o FedEx e l’applicazione di un ID di tracciamento potevano impedire la visualizzazione del collegamento di tracciamento, pertanto non è necessaria alcuna azione da parte dell’esercente per ripristinare questo comportamento. Il supporto per il collegamento di tracciamento è disponibile anche per [gestori personalizzati](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-reference/) creati con [!DNL App Builder Integration Starter Kit]. <!-- ACCS-891 -->
+
+### Visualizzare i tipi di input degli attributi nella griglia Attributi prodotto
+
+Una nuova colonna [!UICONTROL **Tipo attributo**] è ora visibile nella griglia Attributi prodotto in ([!UICONTROL **Arches**] > _[!UICONTROL Attributes]_>[!UICONTROL **Prodotto**]), che visualizza il tipo di input (come campo di testo, a discesa o sì/no) per ogni attributo di prodotto, inclusi i tipi forniti dalle estensioni. In questo modo è più facile identificare e gestire gli attributi quando si utilizzano set di attributi di grandi dimensioni. <!-- ACCS-925 -->
+
+### Miglioramenti e correzioni di bug
+
+In questa versione sono inclusi i miglioramenti, le ottimizzazioni e le correzioni di bug seguenti:
+
+* È stato risolto un problema a causa del quale l&#39;endpoint REST POST `V1/async/custom-email/send` restituiva un errore di convalida `UnstructuredArray`. L&#39;endpoint asincrono ora funziona in modo coerente con l&#39;endpoint POST `V1/custom-email/send` sincrono. <!-- ACCS-921 -->
+
+* È stato risolto un problema a causa del quale gli attributi serializzabili personalizzati su entità come Società venivano involontariamente cancellati durante l’aggiornamento dell’entità tramite REST senza includere gli attributi personalizzati nel payload. Gli attributi personalizzati vengono ora mantenuti quando non vengono forniti. <!-- ACCS-946 -->
+
+* È stato risolto un errore di tipo &quot;consumer is not authorized&quot; che poteva impedire gli accessi guest GraphQL se l&#39;intestazione `X-Adobe-Company` era presente nella richiesta. <!-- ACCS-949 -->
+
+* È stato risolto un problema che impediva la modifica o l&#39;eliminazione di una società in [!DNL Commerce Admin] e causava l&#39;errore &quot;Nessuna entità di questo tipo&quot; dopo l&#39;assegnazione di un cliente alla società tramite l&#39;endpoint REST di PUT `V1/customers/companies`. <!-- ACCS-856 -->
+
+* È stato risolto un problema relativo agli stati della griglia ordini cliente non aggiornati. <!-- CCSAAS-4915 -->
+
+* È stato risolto un problema in [!DNL Commerce Admin] a causa del quale i file allegati come esempi e collegamenti su prodotti scaricabili restituivano un errore `404` quando si accedeva dalla pagina di modifica del prodotto. <!-- CCSAAS-4394 -->
+
+* È stato corretto un errore di tipo &quot;Chiave array &#39;simple_sku&#39; non definita&quot; che poteva verificarsi durante la creazione di una spedizione per un ordine contenente prodotti configurabili. <!-- CCSAAS-4877 -->
+
+* La query GraphQL `guestOrderByToken` ora restituisce un messaggio di errore più informativo quando viene chiamata con un token non valido, invece di un errore interno del server. <!-- CCSAAS-4921 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## Maggio 2026 - #1 sulla versione
 
 [!BADGE Produzione]{type=Neutral tooltip="Gli elementi elencati sono attualmente disponibili negli ambienti di produzione."}
-
-<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
 I seguenti elementi sono stati rilasciati negli ambienti di produzione il 7 maggio 2026.
 
