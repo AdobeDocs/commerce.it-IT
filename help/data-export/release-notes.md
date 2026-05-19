@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 8f424228d96072636ac24a2d50dd58e5c8d655da
 workflow-type: tm+mt
-source-wordcount: 2840
+source-wordcount: 2868
 ht-degree: 0%
 
 ---
@@ -40,6 +40,12 @@ Gli aggiornamenti includono:
 >L’estensione SaaS per l’esportazione dei dati è una raccolta di moduli che viene installata automaticamente con Live Search, Product Recommendations e Catalog Service. Puoi controllare la versione installata nel sistema utilizzando Composer. In alcuni casi, potrebbe essere utile aggiornare l’estensione di esportazione dei dati sul sistema per rilevare correzioni o nuove funzionalità senza aggiornare la versione del servizio Commerce.
 
 ## Versioni del 2026
+
+### Versione 103.4.25
+
+_19 maggio 2026_
+
+![Correzione](../assets/fix.svg) **Pulizia ottimizzata dei dati di feed obsoleti** I record di feed lasciati da entità eliminate vengono ora rimossi in modo più efficiente, riducendo l&#39;utilizzo dell&#39;archiviazione del database.<!--MDEE-1355-->
 
 ### Versione 103.4.24
 
