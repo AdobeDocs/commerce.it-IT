@@ -14,9 +14,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 5dc61e0351e338c4d184d7d882decff49b13a12b
 workflow-type: tm+mt
-source-wordcount: 1450
+source-wordcount: 1708
 ht-degree: 1%
 
 ---
@@ -47,6 +47,8 @@ Questo codice di pacchetto aggiunge le seguenti risorse all’ambiente di author
 
    * Attributi del tipo di metadati personalizzati `commerce:roles` e `commerce:positions` per mostrare come viene visualizzata la risorsa in Commerce.
 
+   * Metadati multifield di testo alternativo (_[!UICONTROL Alt texts]_) che consentono agli editor di immettere testo alternativo con chiave per il codice di visualizzazione dell&#39;archivio di Commerce. Questo non cambia il modo in cui le immagini del prodotto vengono assegnate o definite nell’ambito del catalogo. Vedi [Testo alternativo nei metadati di AEM Assets](#localized-alt-text-in-aem-assets-metadata).
+
 * Modulo schema metadati con scheda Commerce che include i campi `Eligible for Commerce` e `Product Data` per l&#39;assegnazione di tag alle risorse Commerce. Il modulo fornisce inoltre opzioni per mostrare o nascondere i campi `roles` e `position` dall&#39;interfaccia utente di AEM Assets.
 
   ![Scheda Commerce per modulo schema metadati AEM Assets](../assets/assets-configure-metadata-schema-form-editor.png){width="600" zoomable="yes"}
@@ -56,6 +58,33 @@ Questo codice di pacchetto aggiunge le seguenti risorse all’ambiente di author
 >[!NOTE]
 >
 > Per ulteriori informazioni sul **codice pacchetto AEM Commerce**, vedere la pagina [leggimi](https://github.com/ankumalh/assets-commerce).
+
+## Testo alternativo nei metadati di AEM Assets
+
+Il multifield _[!UICONTROL Alt texts]_&#x200B;è disponibile nell&#39;editor metadati risorse di AEM Assets nella scheda **[!UICONTROL Commerce]**&#x200B;quando si modifica un&#39;immagine idonea.
+
+>[!IMPORTANT]
+>
+> Il comportamento di visualizzazione per punto vendita si applica solo al testo alternativo. L’integrazione di AEM Assets non sincronizza diverse immagini di prodotto per ogni vista store di Adobe Commerce. Le immagini dei prodotti di AEM continuano a essere sincronizzate con Commerce con lo stesso comportamento di assegnazione della galleria utilizzato prima di questa versione.
+
+Il campo multiplo contiene una riga per ogni visualizzazione store di Commerce. Ogni riga dispone di due input:
+
+* **[!UICONTROL Store View Code]** — Identificatore della visualizzazione archivio (ad esempio `default` o `en_US`).
+
+* **[!UICONTROL Alt Text]** — Testo alternativo per la visualizzazione archivio, limitato a 255 caratteri.
+
+Selezionare **[!UICONTROL Add]** per aggiungere altre righe per altre visualizzazioni dello store. Per rimuovere una riga, selezionare l&#39;icona **[!UICONTROL Delete]** sulla riga per rimuoverla.
+
+![Testi Alt con più campi con input Codice visualizzazione archivio e Testo Alt](../assets/commerce-metadata-alt-texts-multifield.png){width="600" zoomable="yes"}
+
+Quando si salva, la convalida lato client blocca l&#39;invio se una riga presenta un _[!UICONTROL Store View Code]_&#x200B;vuoto o se due righe utilizzano lo stesso codice di visualizzazione archivio (senza distinzione maiuscole/minuscole).
+
+Le voci di testo alternative vengono mantenute nei metadati delle risorse JCR come due proprietà `String[]` allineate all&#39;indice:
+
+* `commerce:altTextStoreViews`: memorizzare il codice di visualizzazione per ogni riga.
+* `commerce:altTextValues`: Corrispondenza del testo alternativo nello stesso indice di ogni voce in `commerce:altTextStoreViews`.
+
+Quando queste risorse vengono sincronizzate con Adobe Commerce, nella galleria di supporti del prodotto viene scritto del testo alternativo per la visualizzazione del negozio per i codici di visualizzazione del negozio corrispondenti. La mappatura immagine sottostante è invariata.
 
 ## Prerequisiti
 
