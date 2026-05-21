@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: bf3acd889f099a2ee9aed2665b86c37347d10a46
+source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
 workflow-type: tm+mt
-source-wordcount: 3073
+source-wordcount: 3060
 ht-degree: 1%
 
 ---
@@ -279,7 +279,7 @@ _13 novembre 2023_
 ### Aggiornamenti
 
 ![Correzione](../assets/fix.svg) Il widget PLP [!DNL Live Search] è ora abilitato per impostazione predefinita per le nuove installazioni.
-![Correzione](../assets/fix.svg) La scheda di ricerca è obsoleta. In futuro, l&#39;adattatore di ricerca verrà aggiornato solo per risolvere i problemi di sicurezza.
+![Correzione](../assets/fix.svg) La scheda di ricerca è obsoleta.
 ![Correggi](../assets/fix.svg) Stili CSS riconfigurati per isolare meglio le classi widget.
 ![Correzione](../assets/fix.svg) correzioni di bug minori
 

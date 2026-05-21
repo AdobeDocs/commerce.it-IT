@@ -16,16 +16,16 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
 workflow-type: tm+mt
-source-wordcount: 2121
+source-wordcount: 2102
 ht-degree: 0%
 
 ---
 
 # Migrazione dall&#39;adattatore di ricerca al widget PLP
 
-La scheda di ricerca è stata [obsoleta](release-notes.md#live-search-400) a partire da [!DNL Live Search] 4.0.0 e riceverà solo gli aggiornamenti di sicurezza. Il widget [Product Listing Page (PLP)](plp-styling.md) è la soluzione supportata per tutte le [!DNL Live Search] implementazioni successive. Questa guida ti aiuta a capire quando la migrazione è semplice e quando è necessario un lavoro aggiuntivo.
+La scheda di ricerca è stata [obsoleta](release-notes.md#live-search-400) a partire da [!DNL Live Search] 4.0.0. Il widget [Product Listing Page (PLP)](plp-styling.md) è la soluzione supportata per tutte le [!DNL Live Search] implementazioni successive. Questa guida ti aiuta a capire quando la migrazione è semplice e quando è necessario un lavoro aggiuntivo.
 
 ## Prerequisiti
 
@@ -312,7 +312,6 @@ In questo scenario, esiste un problema noto in cui l’abilitazione del widget P
 **Opzione 1: continuare con la scheda di ricerca (solo provvisoria)**
 
 - Mantieni la scheda di ricerca abilitata se GTM è business-critical.
-- Comprendere che riceverai solo aggiornamenti di sicurezza.
 - Pianifica la migrazione quando viene risolta la compatibilità GTM.
 - Contatta il supporto Adobe per aggiornamenti sulla compatibilità GTM.
 
@@ -467,7 +466,7 @@ Risposte alle domande frequenti sulla migrazione dalla scheda di ricerca al widg
 
 **Q: la scheda di ricerca riceverà correzioni di bug o aggiornamenti di funzionalità?**
 
-R: No. L&#39;adattatore di ricerca è obsoleto e riceverà solo gli aggiornamenti di protezione. Correzioni di bug, miglioramenti delle prestazioni e nuove funzioni sono disponibili solo nel widget PLP. In caso di problemi con la scheda di ricerca, la soluzione consigliata è la migrazione al widget PLP.
+R: No. L&#39;adattatore di ricerca è obsoleto. Correzioni di bug, miglioramenti delle prestazioni e nuove funzioni sono disponibili solo nel widget PLP. In caso di problemi con la scheda di ricerca, la soluzione consigliata è la migrazione al widget PLP.
 
 **Q: la migrazione interromperà la mia vetrina?**
 
