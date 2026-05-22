@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 63f363c970a8a147cb6f564a52a41818023451c4
 workflow-type: tm+mt
-source-wordcount: 1047
+source-wordcount: 1104
 ht-degree: 0%
 
 ---
@@ -34,9 +34,11 @@ Le seguenti note sulla versione contengono aggiornamenti a [!DNL Adobe Commerce 
 
 ## Maggio 2026
 
-Attualmente non sono presenti [[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour) versioni questo mese. Consulta Aggiornamenti API di seguito.
-
 >[!BEGINSHADEBOX]
+
+### Miglioramento intelligente della classificazione
+
+[Le regole di merchandising](./merchandising/rules/add.md#intelligent-ranking-boost) per la ricerca, gli elenchi di prodotti predefiniti e le [pagine categoria](./merchandising/rules/add.md#rule-types) (beta) ora includono **[!UICONTROL Intelligent Ranking Boost]**. Puoi regolare il livello di influenza delle strategie come **Most viewed** o **Trending** sull&#39;ordine dei prodotti in base alla rilevanza testuale dei segnali di ricerca e comportamentali negli elenchi delle categorie. L&#39;anteprima della regola riflette l&#39;impostazione. L’incremento viene applicato al momento della query, pertanto non è necessaria una risincronizzazione del catalogo quando lo modifichi.
 
 ### Aggiornamenti API
 
