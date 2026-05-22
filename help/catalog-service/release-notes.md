@@ -4,18 +4,13 @@ description: Informazioni aggiornate sulla versione di  [!DNL Catalog Service]  
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
 TQID: https://experienceleague.adobe.com/-yxW4sTuk7LPjGy5YsQ65phtkBLiByg8SmBaQPHMevM
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 22f44afb7221c735785b6e9a38fb70c733cf0942
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 4bd744e26afca4519fb1c04edcb7d2a118369ff9
 workflow-type: tm+mt
-source-wordcount: 2742
+source-wordcount: 2782
 ht-degree: 0%
 
 ---
@@ -55,6 +50,12 @@ Gli aggiornamenti sono suddivisi per tipo:
 
 ### Maggio 2026
 
+**Data di rilascio**: 20 maggio 2026
+<!-- v1.55 -->
+
+![Nuovo](../assets/new.svg) Limite massimo imposto di 100 SKU per richiesta per i client Adobe Commerce e Adobe Commerce as a Cloud Service, in base a [limiti e limiti documentati](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits).
+<!--DATA-7163-->
+
 **Data di rilascio**: 13 maggio 2026
 <!--v1.54-->
 
@@ -72,7 +73,7 @@ Gli aggiornamenti sono suddivisi per tipo:
 <!--v1.52-->
 
 ![Nuovo](../assets/new.svg) Limite massimo imposto di 100 SKU per richiesta per Adobe Commerce Optimizer e Adobe Commerce as a Cloud Service
-client in base a [limiti e limiti documentati](https://experienceleague.adobe.com/it/docs/commerce/optimizer/boundaries-limits). <!--DATA-7156-->
+client in base a [limiti e limiti documentati](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits). <!--DATA-7156-->
 
 **Data di rilascio**: 17 aprile 2026
 <!--v1.51-->
@@ -256,7 +257,7 @@ Si applica a:
 **Data di rilascio**: 20 giugno 2025
 <!-- v1.37 -->
 
-![Nuovo](../assets/new.svg) **Configurazione gerarchica del listino prezzi**: intervalli di prezzi precisi per i listini prezzi padre-figlio. I calcoli rispettano la gerarchia e le regole ereditate; riducono gli errori di determinazione prezzi quando più listini prezzi sono collegati. Solo Adobe Commerce Optimizer. Consulta [Libri Prezzi](https://experienceleague.adobe.com/it/docs/commerce/optimizer/setup/pricebooks).
+![Nuovo](../assets/new.svg) **Configurazione gerarchica del listino prezzi**: intervalli di prezzi precisi per i listini prezzi padre-figlio. I calcoli rispettano la gerarchia e le regole ereditate; riducono gli errori di determinazione prezzi quando più listini prezzi sono collegati. Solo Adobe Commerce Optimizer. Consulta [Libri Prezzi](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
 
 ![Nuovo](../assets/new.svg) **Chiavi senza distinzione tra maiuscole e minuscole**. Le ricerche di chiavi nelle query non fanno distinzione tra maiuscole e minuscole, riducendo gli errori relativi alle maiuscole e minuscole. <!--DATA-6494, DCAT-2495-->
 
@@ -393,7 +394,7 @@ Versione principale: [modello dati catalogo componibile](https://developer.adobe
 
 <!--DATA-5033-->
 
-![Correzione](../assets/fix.svg) aggiunta del supporto per i prezzi dei prodotti fino a 16 cifre e 4 cifre decimali. Risincronizza dal [dashboard di gestione dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) o [CLI](../data-export/data-export-cli-commands.md) per applicare gli aggiornamenti.
+![Correzione](../assets/fix.svg) aggiunta del supporto per i prezzi dei prodotti fino a 16 cifre e 4 cifre decimali. Risincronizza dal [dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) o [CLI](../data-export/data-export-cli-commands.md) per applicare gli aggiornamenti.
 <!--DATA-5033-->
 
 #### Limitazioni note
@@ -430,7 +431,7 @@ Per ulteriori dettagli ed esempi, vedere [Catalog Service and API Mesh](mesh.md)
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.4 e successive
 
-![Nuovo](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=it) è ora disponibile per i flussi di dati (Product Recommendations, Live Search, Catalog Service). Richiede `catalog-service` metapackage v3.1.0+.
+![Nuovo](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) è ora disponibile per i flussi di dati (Product Recommendations, Live Search, Catalog Service). Richiede `catalog-service` metapackage v3.1.0+.
 
 **Data di rilascio**: 13 febbraio 2024
 <!-- v1.16 -->
