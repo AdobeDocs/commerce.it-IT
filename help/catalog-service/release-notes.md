@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 22f44afb7221c735785b6e9a38fb70c733cf0942
+source-git-commit: 4bd744e26afca4519fb1c04edcb7d2a118369ff9
 workflow-type: tm+mt
-source-wordcount: 2742
+source-wordcount: 2782
 ht-degree: 0%
 
 ---
@@ -54,6 +54,12 @@ Gli aggiornamenti sono suddivisi per tipo:
 ## Servizio catalogo vetrina
 
 ### Maggio 2026
+
+**Data di rilascio**: 20 maggio 2026
+<!-- v1.55 -->
+
+![Nuovo](../assets/new.svg) Limite massimo imposto di 100 SKU per richiesta per i client Adobe Commerce e Adobe Commerce as a Cloud Service, in base a [limiti e limiti documentati](https://experienceleague.adobe.com/it/docs/commerce/optimizer/boundaries-limits).
+<!--DATA-7163-->
 
 **Data di rilascio**: 13 maggio 2026
 <!--v1.54-->
