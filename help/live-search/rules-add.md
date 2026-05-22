@@ -3,18 +3,13 @@ title: Aggiungi regole
 description: Scopri come creare regole di Search Merchandising.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
 TQID: https://experienceleague.adobe.com/QnJ-q-Y-ccQ7HKEt2RgPYQFeWcBnhjwSDOtKjlF7Rp0
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 657c4b3123407580dfeb2c021a5a1ba515e82115
 workflow-type: tm+mt
-source-wordcount: 2085
+source-wordcount: 2547
 ht-degree: 0%
 
 ---
@@ -26,7 +21,7 @@ Per creare una regola, il primo passaggio consiste nell’utilizzare l’editor 
 ## Aggiungi una regola
 
 1. In Amministrazione, vai a **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
-1. Imposta **Ambito** per identificare la [visualizzazione archivio](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=it#scope-settings) in cui si applica la regola.
+1. Imposta **Ambito** per identificare la [visualizzazione archivio](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) in cui si applica la regola.
 1. Fare clic sull&#39;area di lavoro **Ricerca merchandising**.
 1. Fai clic su **Aggiungi regola** per avviare l&#39;editor di regole.
 
@@ -85,7 +80,7 @@ Una regola può avere fino a dieci condizioni. L&#39;operatore logico che unisce
 
 1. Per aggiungere un&#39;altra condizione, fare clic su **Aggiungi condizione** e ripetere il processo.
 
-## Classificazione intelligente
+## Classificazione intelligente {#intelligent-ranking}
 
 La classificazione intelligente combina i comportamenti degli utenti e le statistiche del sito per determinare la classificazione del prodotto.
 I proprietari dei negozi possono impostare i seguenti tipi di strategie di classificazione:
@@ -99,11 +94,38 @@ I proprietari dei negozi possono impostare i seguenti tipi di strategie di class
 * Tendenza: considera gli eventi di visualizzazione della pagina delle ultime 72 ore per gli eventi in background e 24 ore per gli eventi in primo piano.
 * Nessuno: i prodotti vengono ordinati in base alla rilevanza.
 
-Selezionare il tipo di strategia per la regola. Nella finestra **Verifica regola** vengono visualizzati i risultati previsti.
+Selezionare il tipo di strategia per la regola. Nella finestra **[!UICONTROL Test your rule]** vengono visualizzati i risultati previsti.
 
-### Come funziona il punteggio di classificazione intelligente
+### Miglioramento intelligente della classificazione {#intelligent-ranking-boost}
 
-La classificazione intelligente determina l&#39;ordine finale del prodotto combinando due fattori chiave: **rilevanza testuale** e **segnali comportamentali**. Comprendere come questi fattori interagiscono consente di impostare aspettative realistiche per i risultati della ricerca.
+Per **Consigliato per te**, **Più visualizzato**, **Più acquistato**, **Più aggiunto al carrello** e **Di tendenza**, l&#39;editor mostra **[!UICONTROL Intelligent Ranking Boost]** (il fattore di incremento). Non viene utilizzato quando si seleziona **Nessuno**.
+
+Usare questo controllo per bilanciare l&#39;influenza dei **segnali comportamentali** sull&#39;ordinamento rispetto a **rilevanza testuale** nella ricerca e rispetto ad altri segnali di classificazione nelle **pagine categoria** e nelle **inserzioni predefinite**. L&#39;incremento è disponibile per **regole query di ricerca**, **regole predefinite** e **regole merchandising categoria**; ogni regola memorizza il proprio valore.
+
+| Comportamento | Dettaglio |
+| --- | --- |
+| Predefinito | `5` (equivalente al precedente moltiplicatore comportamentale fisso). |
+| Intervallo | Da `1` (minore influenza sul comportamento) a `100` (maggiore influenza). |
+| Ambito | Si applica solo alle query o alle inserzioni a cui la regola è destinata. Altre regole mantengono i propri valori di incremento. |
+| Anteprima | L’anteprima della regola utilizza lo stesso incremento dei risultati live per quella regola. |
+| Indicizzazione | Applicato al **momento della query**. Non è necessaria la risincronizzazione del catalogo o la reindicizzazione completa solo perché è stata modificata questa impostazione. |
+
+**Quando aumentare o ridurre l&#39;incremento**
+
+* **Aumenta** l&#39;incremento quando strategie come **Più visualizzati** dovrebbero presentare SKU con un coinvolgimento maggiore per query ambigue o ampie, senza dover fissare manualmente ogni slot.
+* **Abbassa** l&#39;incremento quando vuoi che la qualità della corrispondenza testuale guidi l&#39;elenco in modo più rigoroso e i dati comportamentali dovrebbero spostare l&#39;ordine solo leggermente.
+
+**Quando utilizzare la classificazione manuale**
+
+Utilizza **pin**, **boost** o **bury** quando hai bisogno di prodotti specifici in posizioni esatte o visibilità garantita indipendentemente dai segnali a livello di catalogo. **[!UICONTROL Intelligent Ranking Boost]** ottimizza un peso comportamentale **globale** per tale regola; non sostituisce il controllo a livello di SKU.
+
+>[!NOTE]
+>
+> Un **[!UICONTROL Intelligent Ranking Boost]** elevato può superare un **incremento manuale** sullo stesso prodotto. Se una SKU potenziata è inferiore a quanto previsto in **[!UICONTROL Test your rule]** o nella vetrina, abbassare **[!UICONTROL Intelligent Ranking Boost]** o **pin** il prodotto in una posizione specifica. Entrambe le modifiche spostano il prodotto con classificazione manuale più in alto nei risultati.
+
+### Funzionamento del punteggio di classificazione intelligente (ricerca)
+
+Per **regole di ricerca** (e la query di prova nell&#39;editor regole), la classificazione intelligente determina l&#39;ordine finale del prodotto combinando due fattori chiave: **rilevanza testuale** e **segnali comportamentali**. Comprendere come questi fattori interagiscono consente di impostare aspettative realistiche per i risultati della ricerca.
 
 **Componenti punteggio:**
 
@@ -112,19 +134,23 @@ La classificazione intelligente determina l&#39;ordine finale del prodotto combi
    * Frequenza di occorrenza delle parole corrispondenti.
    * Lunghezza (in lettere) dei nomi/delle descrizioni dei prodotti.
 
-* **Segnali comportamentali**: aumento limitato applicato al punteggio di rilevanza del testo. Quando selezioni una strategia di classificazione intelligente come &quot;Più visualizzati&quot; o &quot;Più acquistati&quot;, i prodotti con segnali comportamentali più elevati ricevono un incremento fisso dei punteggi. Tuttavia, questo incremento ha un limite definito.
+* **Segnali comportamentali**: aumento limitato applicato al punteggio di rilevanza del testo. Quando selezioni una strategia di classificazione intelligente come &quot;Più visualizzato&quot; o &quot;Più acquistato&quot;, i prodotti con segnali comportamentali più elevati ricevono un peso relativo maggiore. La forza di questo peso è controllata da **[!UICONTROL Intelligent Ranking Boost]** (vedi [Aumento classificazione intelligente](#intelligent-ranking-boost)); l&#39;aumento rimane limitato, ma puoi aumentare quanto sposta l&#39;ordine.
 
 **Perché il prodotto più visualizzato potrebbe non essere visualizzato per primo:**
 
-La rilevanza testuale in genere domina la classificazione perché il suo punteggio è illimitato, mentre gli aumenti comportamentali sono fissi. Di conseguenza, i prodotti con corrispondenze testuali forti spesso superano quelli con segnali di coinvolgimento più elevati. Gli aumenti comportamentali da soli possono non compensare le grandi lacune nella rilevanza del testo. La classificazione intelligente affronta questo problema prendendo in considerazione sia la qualità della corrispondenza che l’interazione con l’acquirente, migliorando la rilevanza complessiva. Tuttavia, la qualità della corrispondenza del testo rimane il principale driver di classificazione.
+La rilevanza testuale domina spesso la classificazione perché il suo punteggio è illimitato, mentre l’influenza comportamentale è limitata dal modello di incremento. I prodotti con corrispondenze testuali molto forti possono comunque superare le SKU con un coinvolgimento maggiore a meno che non si aumenti **[!UICONTROL Intelligent Ranking Boost]** per quella regola. Anche con valori di incremento più elevati, un intervallo di rilevanza del testo estremo potrebbe non invertire completamente l’elenco, in quanto la qualità della corrispondenza del testo rimane un driver principale. Convalida sempre i risultati in **[!UICONTROL Test your rule]** per le query di destinazione.
 
 **Esempio:**
 
-Un commerciante utilizza la strategia di classificazione intelligente &quot;Più visualizzato&quot; e cerca &quot;candela&quot;. Si aspettano che lo SKU del prodotto YAN-K-E-512 appaia all’inizio dei risultati perché ha il conteggio di visualizzazioni più alto. Tuttavia, altri prodotti sono classificati più in alto:
+Un commerciante utilizza la strategia di classificazione intelligente &quot;Most viewed&quot; (Più visualizzati) e cerca **candle**. Si aspettano che lo SKU del prodotto YAN-K-E-512 appaia all’inizio dei risultati perché ha il conteggio di visualizzazioni più alto. Tuttavia, altri prodotti sono classificati più in alto:
 
-* **Candela Texas** (prima posizione): ha un nome di prodotto più breve e più chiaro che crea un punteggio di rilevanza del testo molto elevato. Anche se ha meno visualizzazioni di YAN-K-E-512, la sua corrispondenza testuale superiore supera l&#39;incremento comportamentale.
+* **Candela Texas** (prima posizione): ha un nome di prodotto più breve e più chiaro che crea un punteggio di rilevanza del testo molto elevato. Anche se ha meno visualizzazioni di **YAN-K-E-512**, la sua corrispondenza di testo superiore supera l&#39;aumento del comportamento.
 
-* **YAN-K-E-512** (posizione più bassa): nonostante il percentile di visualizzazione più alto nei dati comportamentali &quot;Più visualizzati&quot;, il nome complesso basato su SKU genera un punteggio di rilevanza del testo più basso. L’impulso comportamentale fisso non è sufficiente per superare questo vuoto di rilevanza del testo.
+* **YAN-K-E-512** (posizione più bassa): nonostante il percentile di visualizzazione più alto nei dati comportamentali &quot;Più visualizzati&quot;, il nome complesso basato su SKU genera un punteggio di rilevanza del testo più basso. Nel **[!UICONTROL Intelligent Ranking Boost]** (`5`) predefinito, l&#39;influenza sul comportamento potrebbe non essere sufficiente per superare tale spazio vuoto di testo. Aumentando l&#39;incremento è possibile spostare **YAN-K-E-512** in alto tra i prodotti che già corrispondono alla query. Anche **YAN-K-E-512** deve corrispondere alla query: almeno un attributo ricercabile per tale SKU deve includere **candle**, altrimenti non verrà visualizzato nei risultati e l&#39;incremento non può essere applicato.
+
+**Esempio (query ampia):**
+
+Per una query come **wood**, diversi prodotti possono condividere una rilevanza testuale simile, mentre i conteggi delle visualizzazioni sono diversi. Con la selezione di **Most viewed** (Più visualizzati), l&#39;aumento di **[!UICONTROL Intelligent Ranking Boost]** rende più probabile che lo SKU rilevante storicamente più visualizzato superi le corrispondenze più leggere. Riducendo la spinta, i risultati si avvicinano all&#39;ordine puramente testuale.
 
 Consulta [regole di ricerca](./best-practice.md#search-rules) per scoprire come migliorare la reperibilità dei prodotti utilizzando le regole.
 
@@ -245,3 +271,9 @@ Le informazioni immesse vengono visualizzate nel pannello [Dettagli regola](rule
 | Data di inizio | Data di inizio della regola, se pianificata. |
 | Data di fine | Data di fine della regola, se pianificata. |
 | Descrizione | Breve descrizione della regola. |
+
+### Controlli di classificazione intelligenti
+
+| Campo | Descrizione |
+| --- | --- |
+| [!UICONTROL Intelligent Ranking Boost] | Quando è selezionata una strategia intelligente diversa da **Nessuno**, questa impostazione controlla il modo in cui i segnali comportamentali influenzano la classificazione per quella regola. `5` predefinito; intervallo consentito `1`-`100`. Applicata al momento della query; l’anteprima della regola corrisponde al comportamento live per la regola configurata. |

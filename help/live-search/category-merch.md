@@ -3,19 +3,15 @@ title: Merchandising categorie
 description: Utilizza  [!DNL Live Search] merchandising per categorie per un'esperienza di acquisto più veloce.
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 TQID: https://experienceleague.adobe.com/2omWXwNttfwW04upO-QlQlRa41w9vgpdlPOYVFOX7-4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
 workflow-type: tm+mt
-source-wordcount: 1131
+source-wordcount: 1171
 ht-degree: 0%
 
 ---
@@ -26,7 +22,7 @@ Il merchandising per categorie consente ai proprietari dei negozi di applicare [
 
 Questo video è un’introduzione alla categoria Merchandising.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448859?captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
 La funzione è accessibile nell&#39;amministratore da **Marketing** > SEO &amp; Search > **[!DNL Live Search]** > **Category Merchandising**.
 
@@ -34,7 +30,7 @@ La funzione è accessibile nell&#39;amministratore da **Marketing** > SEO &amp; 
 >
 >Il merchandising delle categorie è disponibile con [!DNL Live Search] [3.0.0 o versione successiva](release-notes.md). Se l&#39;area di lavoro di merchandising delle categorie è visualizzata ma non contiene dati, aggiornare il modulo [!DNL Live Search].
 
-![Merchandising per categoria](assets/category_workspace.png)
+![Area di lavoro merchandising per categorie](assets/category_workspace.png)
 
 La vista Merchandising per categorie mostra le regole di categoria definite, con le colonne per:
 
@@ -51,7 +47,7 @@ Puoi cercare una categoria o sottocategoria nel campo &quot;Ricerca per categori
 Il merchandising per categorie utilizza gli stessi tipi di classificazione utilizzati per [singoli prodotti](rules-workspace.md).
 Esistono due tipi di classificazione: intelligente e manuale.
 
-**La classificazione intelligente** sfrutta l&#39;analisi dei dati comportamentali in vetrina da parte di [Adobe AI](https://business.adobe.com/it/ai.html) per ordinare tutti i prodotti all&#39;interno delle categorie scelte in base a un determinato algoritmo. Una volta scelta una classificazione intelligente, l’ordine specifico dei prodotti dovrebbe cambiare nel tempo in quanto i dati sottostanti vengono rianalizzati da Adobe AI su base continuativa. Ad esempio, i prodotti con tendenze principali cambiano automaticamente nel tempo in base alle preferenze dell’acquirente.
+**La classificazione intelligente** sfrutta l&#39;analisi dei dati comportamentali in vetrina da parte di [Adobe AI](https://business.adobe.com/ai.html) per ordinare tutti i prodotti all&#39;interno delle categorie scelte in base a un determinato algoritmo. Una volta scelta una classificazione intelligente, l’ordine specifico dei prodotti dovrebbe cambiare nel tempo in quanto i dati sottostanti vengono rianalizzati da Adobe AI su base continuativa. Ad esempio, i prodotti con tendenze principali cambiano automaticamente nel tempo in base alle preferenze dell’acquirente.
 I metodi di classificazione intelligenti sono:
 
 * Più acquistati: classifica i prodotti in base alla frequenza con cui sono stati acquistati dagli acquirenti nei sette giorni precedenti.
@@ -60,6 +56,9 @@ I metodi di classificazione intelligenti sono:
 * Consigliato per te: in base al comportamento precedente e attuale di ogni acquirente sul posto, classifica i prodotti in base alla probabilità che interagisca con ciascuno.
 * Tendenza: classifica i prodotti in base alle recenti acquisizioni di popolarità in base alle visualizzazioni.
 * Nessuno: classifica i prodotti in base all’ordine predefinito.
+
+
+Per qualsiasi metodo di classificazione intelligente ad eccezione di **Nessuno**, è possibile impostare **[!UICONTROL Intelligent Ranking Boost]** nell&#39;editor delle regole per ottimizzare l&#39;effetto dei segnali comportamentali sull&#39;ordine dei prodotti. Per informazioni dettagliate su valori predefiniti, limiti, comportamento di anteprima e confronto tra incremento e **Classificazione manuale**, consulta [Incremento intelligente della classificazione](rules-add.md#intelligent-ranking-boost).
 
 **Classificazione manuale** consente agli utenti di ignorare l&#39;ordinamento automatico del prodotto definendo regole manuali di pin, boost, sotterramento e nascondi.
 
@@ -104,7 +103,7 @@ Per creare una regola di categoria:
    ![Seleziona una categoria](assets/category_select.png)
 
 1. Nella visualizzazione _Aggiungi regola di categoria_, seleziona il metodo di classificazione intelligente da applicare alla categoria.
-La pagina Anteprima categoria mostra i risultati effettivi della classificazione selezionata, utilizzando i dati di Live Search.
+La pagina Anteprima categoria mostra i risultati effettivi della classificazione selezionata, utilizzando i dati di [!DNL Live Search].
 1. Fai clic su **Salva e pubblica** per salvare la regola.
 
 ![Seleziona il metodo di classificazione intelligente](assets/category_ranking.png)
