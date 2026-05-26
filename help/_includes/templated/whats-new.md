@@ -1,7 +1,7 @@
 ---
-source-git-commit: bfbfd43620580b8db464b823be6f0f64c97c261d
+source-git-commit: 976bc4114790473d3bdcab6c06684f0c955893ee
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1103'
 ht-degree: 1%
 
 ---
@@ -225,7 +225,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8f2cc1e79ede56192a8ab03194b0f69854f89f7b">commit</a></td>
     </tr>
     <tr>
-      <td><p>Documentazione di <a href="https://experienceleague.adobe.com/it/docs/commerce/aem-assets-integration/release-notes">Integrazione AEM Assets v1.3.5</a> e correzione di <a href="https://experienceleague.adobe.com/it/docs/commerce/aem-assets-integration/synchronize/custom-match">Corrispondenza automatica personalizzata</a> campi di richiesta API (<code class="language-plaintext highlighter-rouge">eventData</code>, <code class="language-plaintext highlighter-rouge">productSku</code>).</p>
+      <td><p>Documentazione di <a href="https://experienceleague.adobe.com/it/docs/commerce/aem-assets-integration/release-notes">Integrazione AEM Assets v1.3.5</a> e correzione di <a href="https://experienceleague.adobe.com/it/docs/commerce/aem-assets-integration/synchronize/custom-match">Corrispondenza automatica personalizzata</a> campi di richiesta API (<code>eventData</code>, <code>productSku</code>).</p>
 </td>
       <td>
         Nuovo argomento
@@ -371,58 +371,6 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
         Aggiornamento principale
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4a60783dbed189475bcd0090c949cd76b0566f54">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 27 marzo 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Sono state aggiornate le <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/release-notes">note sulla versione</a> di Adobe Commerce as a Cloud Service con le informazioni più recenti sulla versione Sandbox.</p>
-</td>
-      <td>
-        Aggiornamento principale
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ccecbf0dcbb0cb02d7874beba5d4b14d7f04cd44">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 25 marzo 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Aggiornamento di <a href="https://experienceleague.adobe.com/it/docs/commerce/app-management/install">Installa e accedi a Gestione app</a> con una sezione dei webhook di Commerce e uno screenshot per gli errori di convalida dei webhook nel dashboard Gestione app.</p>
-</td>
-      <td>
-        Tecnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/86c0945bbb0a562de1b66d420dec2a05d4d81e5f">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Sono state aggiornate le <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/release-notes#latest">note sulla versione</a> per spostare in produzione la versione n. 2 di marzo.</p>
-</td>
-      <td>
-        Aggiornamento principale
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/522240cfd305bb00026ba477dc94e0bd2de30f06">commit</a></td>
     </tr>
   </tbody>
 </table>
