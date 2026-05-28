@@ -14,9 +14,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 5b2babd2aed812d6679c2614e10e052dd5196f76
+source-git-commit: de02e13e169ab336bac09ebff90c44b3b707efce
 workflow-type: tm+mt
-source-wordcount: 1717
+source-wordcount: 1775
 ht-degree: 1%
 
 ---
@@ -135,21 +135,29 @@ Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Media con funzion
 
 1. Passa a AEM Cloud Manager, seleziona un programma e [crea ambienti di produzione e di staging](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) che desideri integrare con Adobe Commerce.
 
-1. Configura una [pipeline di distribuzione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) oppure verifica che la pipeline possa distribuire modifiche all&#39;ambiente selezionato.
-
 1. [Clona l&#39;archivio Git gestito da Adobe](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access) per il programma selezionato.
+
+   ![Credenziali archivio Cloud Manager e comando clone](../assets/cloud-manager-repository-info.png){width="600" zoomable="yes"}
+
+   In Cloud Manager **Pipeline**, selezionare **[!UICONTROL Access Repo Info]** per aprire **[!UICONTROL Repository Info]**. Copia il valore **[!UICONTROL URL]** o **[!UICONTROL Git command line]**, genera una password di accesso, se necessario, quindi clona localmente con il client Git.
 
 1. Da GitHub scaricare il codice del pacchetto dall&#39;[archivio Commerce di AEM Assets](https://github.com/ankumalh/assets-commerce).
 
 1. Dall&#39;[ambiente di sviluppo AEM locale](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview), copia manualmente il codice scaricato nell&#39;archivio gestito Adobe esistente.
 
-1. In tutti i file `filter.xml` e `pom.xml` del progetto, sostituisci tutte le occorrenze di `<my-app>` con il nome dell&#39;app.
+1. In tutti i file `filter.xml` e `pom.xml` del progetto, sostituisci tutte le occorrenze di &lt;my-app> con il nome dell&#39;app.
 
    >[!NOTE]
    >
    > In alternativa, puoi installare il codice personalizzato nella configurazione del progetto AEM Assets come pacchetto **Maven**.
 
 1. Apporta le modifiche e invia il ramo di sviluppo locale all’archivio Git di Cloud Manager.
+
+1. Configura una [pipeline di distribuzione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) oppure verifica che la pipeline possa distribuire modifiche all&#39;ambiente selezionato.
+
+   ![Pipeline Cloud Manager](../assets/cloud-manager-pipelines.png){width="600" zoomable="yes"}
+
+   Quando la pipeline esiste, apri il menu delle azioni (**...**) a **[!UICONTROL Run]**, **[!UICONTROL Edit]**, **[!UICONTROL View/Edit variables]** o altre azioni. Consulta la documentazione della pipeline Cloud Manager collegata in precedenza.
 
 1. Da AEM Cloud Manager, [aggiorna l&#39;ambiente AEM utilizzando la pipeline per distribuire il codice](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
 
@@ -161,7 +169,7 @@ Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Media con funzion
 
 ### La scheda Commerce non è visibile nelle proprietà
 
-Se la scheda **Commerce** non viene visualizzata nelle proprietà, è necessario crearne manualmente una nell&#39;editor schema metadati.
+Se la scheda **Commerce** non viene visualizzata nelle proprietà, è necessario completare manualmente i passaggi seguenti nell&#39;editor schema metadati:
 
 1. Passa all’editor schema metadati.
 
