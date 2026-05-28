@@ -2,24 +2,19 @@
 title: Strumento di migrazione dati in blocco
 description: Scopri come utilizzare lo strumento di migrazione dei dati in blocco per migrare i dati dall'istanza esistente di Adobe Commerce on Cloud a  [!DNL Adobe Commerce as a Cloud Service].
 feature: Cloud
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 role: Developer
 level: Intermediate
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
 TQID: https://experienceleague.adobe.com/4Zx1cFtsyfuy21Af6Ov9pU7ndMW35NyCwlcdlKNTk6Q
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 6a3bacace012153f6b8f7c87192d19bf349a2446
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: 729
 ht-degree: 0%
 
 ---
@@ -52,8 +47,7 @@ Le sezioni seguenti descrivono in dettaglio questi passaggi.
 
 Lo strumento di migrazione dei dati in blocco è disponibile come segue:
 
-- **T1 2026** (non ancora disponibile) - Dopo la versione iniziale dello strumento di migrazione dati in blocco, potrai accedervi inviando un ticket di supporto.
-- **T1 2026** (non ancora disponibile) - Dopo il rilascio pubblico dello strumento di migrazione dati in blocco, sarà accessibile da questa pagina.
+Questo strumento è attualmente disponibile tramite gli accordi di progettazione implementati. Se ti interessa utilizzare questo strumento, contatta il tuo rappresentante Adobe.
 
 ## Creare un ambiente di destinazione
 
