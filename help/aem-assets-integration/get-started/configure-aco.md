@@ -97,7 +97,7 @@ Leggi questa sezione **prima** di scegliere un nome di livello catalogo nel tick
 
 ## Onboarding
 
-Per integrare AEM Assets con [!DNL Commerce Optimizer], è necessario [creare un ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Per integrare AEM Assets con [!DNL Commerce Optimizer], è necessario [creare un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 Il supporto Adobe utilizza le informazioni contenute nel ticket per registrare il tenant con Assets Integration Service e configurare l’integrazione.
 
@@ -123,7 +123,7 @@ Una volta completato l’onboarding:
    * Eventi AEM Assets (risorsa approvata, aggiornata, rimossa)
    * [!DNL Commerce Optimizer] eventi catalogo (prodotto creato, aggiornato)
 
-Configura la [vista catalogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) in modo che in vetrina e nelle API vengano visualizzati i dati immagine basati su AEM:
+Configura la [vista catalogo](https://experienceleague.adobe.com/it/docs/commerce/optimizer/setup/catalog-view) in modo che in vetrina e nelle API vengano visualizzati i dati immagine basati su AEM:
 
 * **Origine del catalogo (impostazioni locali)** - Selezionare le stesse impostazioni locali specificate nel ticket di supporto (ad esempio **`en-US`**). L’integrazione registra una lingua per tenant; una mancata corrispondenza impedisce la visualizzazione delle immagini sincronizzate nella vista catalogo prevista.
 * **Livello catalogo** - Assegna il livello **`AEM-Assets`** (o il nome del livello personalizzato dal ticket) a tale vista catalogo.
