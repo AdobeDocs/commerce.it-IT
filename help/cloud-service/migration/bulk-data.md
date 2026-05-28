@@ -17,9 +17,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 6a3bacace012153f6b8f7c87192d19bf349a2446
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: 729
 ht-degree: 0%
 
 ---
@@ -52,8 +52,7 @@ Le sezioni seguenti descrivono in dettaglio questi passaggi.
 
 Lo strumento di migrazione dei dati in blocco è disponibile come segue:
 
-- **T1 2026** (non ancora disponibile) - Dopo la versione iniziale dello strumento di migrazione dati in blocco, potrai accedervi inviando un ticket di supporto.
-- **T1 2026** (non ancora disponibile) - Dopo il rilascio pubblico dello strumento di migrazione dati in blocco, sarà accessibile da questa pagina.
+Questo strumento è attualmente disponibile tramite gli accordi di progettazione implementati. Se ti interessa utilizzare questo strumento, contatta il tuo rappresentante Adobe.
 
 ## Creare un ambiente di destinazione
 
