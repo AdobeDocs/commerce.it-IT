@@ -2,9 +2,9 @@
 title: Configurare AEM Assets per Commerce Optimizer
 description: Scopri come configurare l'integrazione di AEM Assets per  [!DNL Adobe Commerce Optimizer].
 feature: CMS, Media, Configuration, Integration
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: 42f0e0cb72c6429eb6f08f1922c4171195a78d2b
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1460'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 L&#39;integrazione di AEM Assets per [!DNL Adobe Commerce Optimizer] consente ai commercianti di utilizzare AEM Assets come soluzione centralizzata per la gestione delle risorse digitali per le immagini dei prodotti. Questa guida descrive la configurazione specifica di [!DNL Commerce Optimizer].
 
 A differenza di Adobe Commerce (PaaS) o Adobe Commerce as a Cloud Service (ACCS), [!DNL Commerce Optimizer] non dispone di un&#39;interfaccia utente di configurazione amministratore. Per abilitare l&#39;integrazione, creare un ticket di supporto con i dettagli di [!DNL Adobe Commerce Optimizer] e AEM Assets. Il supporto Adobe configura l’integrazione e registra il tenant con il servizio di integrazione Assets.
+
+**Prepara AEM Assets prima di inviare il ticket.** La registrazione del tenant presuppone che il lato AEM sia utilizzabile per Commerce. Ad esempio, dopo aver distribuito il pacchetto AEM Commerce `assets-commerce` in modo che i metadati e gli eventi funzionino come descritto. **L&#39;apertura di un ticket prima della configurazione di AEM può ritardare l&#39;onboarding.**
 
 Il diagramma seguente offre una panoramica della sincronizzazione dei prodotti tra [!DNL Adobe Commerce Optimizer] e l&#39;integrazione di AEM Assets.
 
@@ -35,13 +37,71 @@ Prima di configurare l’integrazione, assicurati di disporre di:
 * Un&#39;istanza [!DNL Adobe Commerce Optimizer] attiva con adesione a Product Visuals o qualsiasi licenza AEM Assets con Dynamic Media.
 * Accesso a un ambiente AEM Assets as a Cloud Service.
 * Sia [!DNL Commerce Optimizer] che AEM Assets nella stessa organizzazione Adobe IMS.
-* Dynamic Media con OpenAPI abilitata nell’ambiente AEM Assets.
+* Dynamic Media con OpenAPI abilitato nell&#39;ambiente AEM Assets (consulta [Configurare il progetto AEM Assets](configure-aem.md#prerequisites) per i passaggi di abilitazione).
+
+## Configurare prima AEM Assets
+
+Completa i passaggi di AEM Assets **prima** di [aprire un ticket di supporto](#onboarding) per la registrazione del tenant. Il modello di installazione corrisponde a Adobe Commerce as a Cloud Service. Vedere [Configurare il progetto AEM Assets per il supporto dei metadati di Commerce](configure-aem.md).
+
+### Passaggio 1: distribuire il pacchetto AEM Commerce
+
+Installa e distribuisci il pacchetto `assets-commerce` nel progetto AEM in modo che siano disponibili schemi di metadati, eventi e interfaccia utente di Commerce.
+
+Completare la procedura completa in [Installare il pacchetto `assets-commerce`](configure-aem.md#step-1-install-the-assets-commerce-package). Prima di aprire un ticket di supporto, effettua le seguenti operazioni:
+
+1. Clona l&#39;archivio Git di Cloud Manager e copia il codice dell&#39;[archivio Commerce di AEM Assets](https://github.com/ankumalh/assets-commerce) nel progetto.
+
+1. In tutti i file `filter.xml` e `pom.xml` del progetto, sostituisci tutte le occorrenze di &lt;my-app> con il nome dell&#39;app.
+
+1. Eseguire il commit, il push, l&#39;esecuzione della pipeline di distribuzione e verificare che la scheda **[!UICONTROL Commerce]** sia visualizzata nelle proprietà della risorsa.
+
+Consulta [Installare il pacchetto `assets-commerce`](configure-aem.md#step-1-install-the-assets-commerce-package) per le schermate di Cloud Manager, i passaggi della pipeline e la risoluzione dei problemi se manca la scheda **[!UICONTROL Commerce]**.
+
+### Passaggio 2: abilitare Dynamic Media con OpenAPI
+
+Dynamic Media con funzionalità OpenAPI deve essere abilitato nell’ambiente AEM Assets. I percorsi self-service (ad esempio Cloud Manager per i visualizzatori di prodotto) e le route di supporto Adobe sono descritti in [Configura il progetto AEM Assets](configure-aem.md#prerequisites).
+
+### Passaggio 3: applicare i metadati di Commerce e approvare le risorse
+
+Aggiungi metadati Commerce alle immagini del prodotto in AEM Assets. Per le definizioni dei campi, vedi [Contenuto del pacchetto AEM Commerce](configure-aem.md#aem-commerce-assets-commerce-package-contents).
+
+La risorsa deve essere in uno stato **approvato** per poter attivare la sincronizzazione dati. Il salvataggio dei metadati da solo non attiva l&#39;evento.
+
+### Passaggio 4: facoltativo — configurare un profilo di metadati Commerce
+
+Se scegli di utilizzare i profili di metadati di AEM per semplificare l&#39;authoring, configurali **dopo** che il pacchetto viene distribuito e il tuo team comprende i campi Commerce obbligatori; lo stesso pattern facoltativo di **Configurare il progetto AEM Assets**.
+
+Consulta [Configurare un profilo di metadati](configure-aem.md#step-2-optional-configure-a-metadata-profile).
+
+## Limitazioni
+
+L&#39;integrazione di [!DNL Commerce Optimizer] presenta le seguenti limitazioni:
+
+### Vincoli relativi ai livelli
+
+Leggi questa sezione **prima** di scegliere un nome di livello catalogo nel ticket di supporto. La scelta o la condivisione di livelli senza questo contesto è una causa frequente di casi di supporto prevenibili.
+
+**Utilizza un livello dedicato per il contenuto di AEM Assets.** I payload inviati da AEM Assets popolano un catalogo Commerce Optimizer **layer**. I valori in tale livello **sovrascrivono** gli attributi del catalogo di base in cui vengono forniti i campi. Quando l’integrazione omette un campo nel payload, i valori corrispondenti in quel livello possono essere sovrascritti con valori vuoti. La condivisione di un livello con flussi di lavoro Commerce non correlati, o il riutilizzo di un livello che già memorizza dati di prodotto non AEM-Assets, può causare **perdita di dati non intenzionale** o sovrascritture confuse. Pianifica la scelta del livello **prima** di aprire il ticket di supporto e riservane il nome (ad esempio **`AEM-Assets`** predefinito) principalmente per la sincronizzazione delle immagini del prodotto basata su AEM.
+
+>[!IMPORTANT]
+>
+>L&#39;integrazione supporta **un&#39;origine catalogo per tenant**: una singola lingua e **un livello denominato**. Al momento, la configurazione di più livelli AEM-Assets o di più impostazioni locali per lo stesso tenant non è supportata.
+
+### Altri vincoli
+
+* **Solo immagini**: l&#39;integrazione non supporta video o altri tipi di file multimediali in questa fase.
+* **Nessuna immagine categoria**: la sincronizzazione immagine categoria non è disponibile. Le immagini delle categorie da AEM Assets per il selettore Assets (inserimento nell’interfaccia utente) non sono supportate.
+* **Nessuna distinzione tra più siti**: l&#39;integrazione non gestisce più siti. Un&#39;immagine associata a un prodotto viene visualizzata allo stesso modo su tutti i canali e i criteri.
+* **Posizione/ordinamento immagine**: la posizione e l&#39;ordinamento delle immagini non sono supportati.
+* **Il prodotto deve esistere**: se il prodotto non esiste in [!DNL Commerce Optimizer], il livello non viene creato per la mappatura prodotto-risorsa.
 
 ## Onboarding
 
-Per integrare AEM Assets con [!DNL Commerce Optimizer], è necessario [creare un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Per integrare AEM Assets con [!DNL Commerce Optimizer], è necessario [creare un ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 Il supporto Adobe utilizza le informazioni contenute nel ticket per registrare il tenant con Assets Integration Service e configurare l’integrazione.
+
+Prima di inviare il ticket, assicurati di aver completato [la configurazione di AEM Assets](#configure-aem-assets-first).
 
 Includi le seguenti informazioni nel ticket di supporto:
 
@@ -49,71 +109,26 @@ Includi le seguenti informazioni nel ticket di supporto:
 * **ID programma AEM**.
 * **ID ambiente AEM**.
 * **Regola corrispondente**: corrisponde per SKU o [corrispondenza esterna (App Builder)](../synchronize/custom-match.md){target=_blank}.
-* **Livello**: il nome del livello del catalogo con cui registrare il tenant. Se necessario, specifica un nome personalizzato. In caso contrario, viene utilizzato il valore predefinito `AEM-Assets`.
-* **Impostazioni locali**: le impostazioni locali di origine del catalogo con cui registrare il tenant (ad esempio, `en-US`).
-
->[!IMPORTANT]
->
-> L’integrazione supporta un’origine per tenant, ovvero la combinazione di una lingua e un livello.
+* **Livello**: il nome del livello del catalogo con cui registrare il tenant (vedi **Vincoli relativi ai livelli**). Specificare un nome personalizzato solo se intenzionale. In caso contrario, verrà utilizzato il nome predefinito **`AEM-Assets`**.
+* **Impostazioni locali**: le impostazioni locali di origine del catalogo con cui registrare il tenant (ad esempio, `en-US`). Deve corrispondere alle impostazioni internazionali utilizzate nella vista catalogo e nei dati del catalogo prodotti.
 
 Dopo che il supporto Adobe elabora il ticket, l’integrazione viene configurata e il tenant viene registrato con il servizio di integrazione Assets.
 
 Una volta completato l’onboarding:
 
-1. **Registrazione con Assets Integration Service**: il tenant [!DNL Commerce Optimizer] è registrato con Assets Integration Service utilizzando l&#39;ID tenant [!DNL Adobe Commerce Optimizer], l&#39;ID programma AEM, l&#39;ID ambiente AEM e il tenant.
+1. **Registrazione con Assets Integration Service**: il tenant [!DNL Commerce Optimizer] è registrato con Assets Integration Service utilizzando l&#39;ID tenant [!DNL Adobe Commerce Optimizer], l&#39;ID programma AEM, l&#39;ID ambiente AEM, la regola corrispondente, le impostazioni locali e il nome del livello forniti nel ticket.
 
 1. **Sottoscrizione evento**: Assets Integration Service si abbona a:
 
    * Eventi AEM Assets (risorsa approvata, aggiornata, rimossa)
    * [!DNL Commerce Optimizer] eventi catalogo (prodotto creato, aggiornato)
 
-### Limitazioni
+Configura la [vista catalogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) in modo che in vetrina e nelle API vengano visualizzati i dati immagine basati su AEM:
 
-L&#39;integrazione di [!DNL Commerce Optimizer] presenta le seguenti limitazioni:
+* **Origine del catalogo (impostazioni locali)** - Selezionare le stesse impostazioni locali specificate nel ticket di supporto (ad esempio **`en-US`**). L’integrazione registra una lingua per tenant; una mancata corrispondenza impedisce la visualizzazione delle immagini sincronizzate nella vista catalogo prevista.
+* **Livello catalogo** - Assegna il livello **`AEM-Assets`** (o il nome del livello personalizzato dal ticket) a tale vista catalogo.
 
-* **Livello singolo per commerciante**: l&#39;integrazione AEM Assets supporta un livello AEM-Assets per commerciante (un&#39;origine per tenant). Al momento, la configurazione di più livelli per esercente non è supportata.
-* **Solo immagini** - L&#39;integrazione non supporta video o altri tipi di file multimediali.
-* **Nessuna immagine categoria** - La sincronizzazione immagine categoria non è disponibile. Le immagini delle categorie da AEM Assets per il selettore Assets (inserimento nell’interfaccia utente) non sono supportate.
-* **Nessuna distinzione tra più siti**. L&#39;integrazione non gestisce più siti. Un&#39;immagine associata a un prodotto viene visualizzata allo stesso modo su tutti i canali e i criteri.
-* **Posizione/ordinamento immagine**. La posizione e l&#39;ordinamento delle immagini non sono supportati.
-* **Il prodotto deve esistere**. Se il prodotto non esiste in [!DNL Commerce Optimizer], il livello non verrà creato per la mappatura prodotto-risorsa.
-* **Sovrascrittura campo livello** - I valori in un livello sovrascrivono il catalogo di base. Se un campo non viene inviato nel payload del livello, può essere sovrascritto con un valore vuoto. Utilizza un livello dedicato per il contenuto di AEM Assets; il riutilizzo di un livello esistente per altri scopi può causare una perdita di dati non intenzionale.
-
-### Configurare AEM Assets
-
-Il processo di installazione e configurazione di AEM Assets per [!DNL Commerce Optimizer] è lo stesso di Adobe Commerce as a Cloud Service. Consulta [Configurare il progetto AEM Assets per supportare i metadati di Commerce](configure-aem.md) per i passaggi completi.
-
-Assicurati che l’ambiente AEM Assets sia pronto:
-
-1. **Configurazione di AEM Assets**: configurare il profilo metadati di Commerce. Consulta [Configurare un profilo di metadati](configure-aem.md#step-2-optional-configure-a-metadata-profile).
-
-1. **Abilitazione Dynamic Media**: verifica che Dynamic Media con funzionalità OpenAPI sia abilitato nell&#39;ambiente AEM Assets.
-
-## Configurare AEM Assets
-
-Per abilitare la sincronizzazione prodotto-risorsa, configura l’ambiente AEM Assets.
-
-### Passaggio 1: abilitare Dynamic Media con OpenAPI
-
-Dynamic Media con OpenAPI deve essere abilitato nell’ambiente AEM Assets. Product Visuals e le nuove licenze AEM Assets consentono di abilitarlo in modo autonomo tramite Cloud Manager. Le licenze AEM Assets precedenti richiedono il supporto Adobe per abilitarlo. Consulta [Configurare il progetto AEM Assets](configure-aem.md#prerequisites) per i passaggi di abilitazione.
-
-### Passaggio 2: facoltativo. Configurare il profilo di metadati Commerce
-
-Configura il profilo metadati in AEM Assets per memorizzare i metadati specifici di Commerce.
-
-Per istruzioni dettagliate, consulta [Configurare un profilo di metadati](configure-aem.md#step-2-optional-configure-a-metadata-profile).
-
-### Passaggio 3: Applicare i metadati alle risorse
-
-Aggiungi metadati Commerce alle immagini del prodotto in AEM Assets.
-
-Per le definizioni dei campi, vedere il [contenuto del pacchetto AEM Commerce](configure-aem.md#aem-commerce-assets-commerce-package-contents) e [Configurare un profilo di metadati](configure-aem.md#step-2-optional-configure-a-metadata-profile) per i passaggi di configurazione.
-
-La risorsa deve essere in uno stato **approvato** per poter attivare la sincronizzazione dati. Il salvataggio dei metadati da solo non attiva l&#39;evento.
-
->[!CAUTION]
->
-> Assegna il livello `AEM-Assets` alla [vista catalogo](https://experienceleague.adobe.com/it/docs/commerce/optimizer/setup/catalog-view). Se il livello non è assegnato, i dati immagine prodotto potrebbero essere sovrascritti in modo imprevisto.
+Se le impostazioni locali o il livello non sono assegnati correttamente, è possibile che i dati dell&#39;immagine **non vengano visualizzati** o che si comportino in modo imprevisto, anche se la sincronizzazione è riuscita a monte.
 
 ## Ssincronizzazione
 
