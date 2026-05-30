@@ -1,7 +1,7 @@
 ---
-source-git-commit: 976bc4114790473d3bdcab6c06684f0c955893ee
+source-git-commit: dcb3300c80fb74d597cee66e981acb426490d34b
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1201'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,30 @@ ht-degree: 1%
 ## Novità
 
 Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo elenco sono esclusi tutti gli aggiornamenti minori, ad esempio la modifica della copia.
+
+### 28 maggio 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><ul>
+  <li>È stato migliorato <a href="https://experienceleague.adobe.com/it/docs/commerce/aem-assets-integration/get-started/configure-aco">Configurare AEM Assets per l'onboarding di Commerce Optimizer</a> in modo che la configurazione di AEM Assets preceda la registrazione del tenant, con indicazioni più chiare sui livelli di catalogo dedicati e sulle limitazioni relative ai livelli.<br />- È stato aggiornato <a href="https://experienceleague.adobe.com/it/docs/commerce/aem-assets-integration/get-started/configure-aem">Configurare il progetto AEM Assets</a> con passaggi di installazione riordinati e schermate di Cloud Manager per l'accesso all'archivio e la distribuzione della pipeline.<br />- È stata chiarita la selezione dell'ID programma e dell'ID ambiente basati su IMS in <a href="https://experienceleague.adobe.com/it/docs/commerce/aem-assets-integration/get-started/setup-synchronization">Configurare l'integrazione</a>.</li>
+</ul>
+</td>
+      <td>
+        Aggiornamento principale
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/de94aaad29313b3e8254d11d8801ba0d7efff3dc">commit</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 22 maggio 2026
 
@@ -23,7 +47,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>Sono state aggiunte note sulla versione per gli aggiornamenti API a <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/release-notes">Adobe Commerce Optimizer</a> e Commerce <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/release-notes">Catalog Service</a> per la versione del 20 maggio 2026, che ora applica il limite documentato di 100 SKU per richiesta durante il recupero dei dati del prodotto. Vedi <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/boundaries-limits">Limiti e limiti</a>.</p>
+      <td><p>Sono state aggiunte note sulla versione per gli aggiornamenti API a <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/release-notes">Adobe Commerce Optimizer</a> e Commerce <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/release-notes">Catalog Service</a> per la versione del 20 maggio 2026, che ora applica il limite documentato di 100 SKU per richiesta durante il recupero dei dati del prodotto.</p>
 </td>
       <td>
         Tecnico
