@@ -6,11 +6,22 @@ recommendations: noCatalog
 badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
 TQID: https://experienceleague.adobe.com/1dcKMjOut1GtiOevvGJECsaU7URFmYg-mQ-m9wi7n4Y
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2: id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: dba482e5-29a8-4127-afa2-c4b913512ef8id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2:
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: dba482e5-29a8-4127-afa2-c4b913512ef8
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 423b35b15e845e49b1cf36910ffbad775de9758c
 workflow-type: tm+mt
 source-wordcount: 1332
@@ -166,7 +177,7 @@ Il pannello dei dettagli dell&#39;istanza ![[!DNL Adobe Commerce Optimizer] most
 
 Tieni presente le seguenti informazioni chiave:
 
-- **Endpoint GraphQL** Endpoint GraphQL utilizzato dalla vetrina per eseguire query sui dati di catalogo e merchandising da questa istanza tramite l&#39;[API servizio merchandising](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target=&quot;_blank}
+- **Endpoint GraphQL** Endpoint GraphQL utilizzato dalla vetrina per eseguire query sui dati di catalogo e merchandising da questa istanza tramite l&#39;[API servizio merchandising](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target=_blank}
 - **Endpoint catalogo** endpoint REST API utilizzato per acquisire prodotti e prezzi in Adobe Commerce Optimizer dal sistema commerce o PIM. Visualizza [API di acquisizione dati](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)
 - **URL Commerce Optimizer** Apre l&#39;interfaccia utente amministratore di [Adobe Commerce Optimizer Studio](overview.md) per configurare e gestire le visualizzazioni catalogo, i criteri e il merchandising.
 - **ID istanza**: identificatore univoco (ID tenant) per questa istanza di Adobe Commerce Optimizer, utilizzato da storefront, API e strumenti per connettersi all&#39;ambiente corretto.
