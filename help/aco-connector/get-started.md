@@ -2,10 +2,10 @@
 title: Introduzione al connettore Adobe Commerce Optimizer
 description: Scopri come installare e configurare il connettore, personalizzare la configurazione di esportazione, connettersi a Adobe Commerce Optimizer e monitorare lo stato di sincronizzazione dei dati.
 feature: Personalization, Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
-source-git-commit: c86e66a675f9a53a6ec7b79540ff85d10186bf3f
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+source-git-commit: f041c315da8bf20af7ecc2c869eaf578a767f66d
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1280'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 # Introduzione
 
 Installa e configura il connettore Commerce Optimizer per sincronizzare i dati del catalogo Adobe Commerce con [!DNL Adobe Commerce Optimizer], quindi monitora lo stato di sincronizzazione dei dati per garantire che la vetrina sia aggiornata.
+
+{{aco-integration-environment-alignment}}
 
 ## Requisiti per l’utilizzo dell’integrazione
 
@@ -24,7 +26,7 @@ Installa e configura il connettore Commerce Optimizer per sincronizzare i dati d
 
 * Licenza [!DNL Adobe Commerce Optimizer] con istanza sandbox predisposta.
 
-* [Chiavi di autenticazione](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) per scaricare il metapacchetto del connettore Commerce tramite Composer.
+* [Chiavi di autenticazione](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) per scaricare il metapacchetto del connettore Commerce tramite Composer.
 
 * Accesso amministratore a un&#39;istanza sandbox [Adobe Commerce Optimizer](../optimizer/get-started.md).
 
@@ -32,9 +34,9 @@ L’utente di Adobe Commerce che configura l’integrazione deve disporre di:
 
 * Accesso amministratore all’amministrazione di Adobe Commerce.
 
-* [Accesso alla riga di comando al server applicazioni Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/project/user-access).
+* [Accesso alla riga di comando al server applicazioni Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access).
 
-* Accesso per sviluppatori all&#39;organizzazione [IMS](https://experienceleague.adobe.com/it/docs/core-services/interface/administration/organizations?) in cui è stato eseguito il provisioning del progetto [!DNL Adobe Commerce Optimizer].
+* Accesso per sviluppatori all&#39;organizzazione [IMS](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?) in cui è stato eseguito il provisioning del progetto [!DNL Adobe Commerce Optimizer].
 
 >[!BEGINSHADEBOX]
 
@@ -47,7 +49,7 @@ Se è installata una delle seguenti estensioni, disinstallarle prima di installa
 * Servizio catalogo Adobe Commerce (`magento/catalog-service`, `magento/catalog-service-installer`)
 * Dashboard di gestione dati (`magento-catalog-sync-admin`)
 
-I dati associati a queste estensioni sono ancora disponibili nel database di Commerce. Tuttavia, non viene esportato in [!DNL Adobe Commerce Optimizer] quando il connettore è abilitato. Per implementare le funzionalità di ricerca e merchandising fornite da queste estensioni dopo l&#39;abilitazione del connettore, configurale dalla [[!DNL Adobe Commerce Optimizer] interfaccia utente amministratore](https://experienceleague.adobe.com/it/docs/commerce/optimizer/overview#quick-tour).
+I dati associati a queste estensioni sono ancora disponibili nel database di Commerce. Tuttavia, non viene esportato in [!DNL Adobe Commerce Optimizer] quando il connettore è abilitato. Per implementare le funzionalità di ricerca e merchandising fornite da queste estensioni dopo l&#39;abilitazione del connettore, configurale dalla [[!DNL Adobe Commerce Optimizer] interfaccia utente amministratore](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview#quick-tour).
 
 >[!IMPORTANT]
 >
@@ -65,7 +67,7 @@ Segui questi passaggi per abilitare il connettore e iniziare a sincronizzare i d
 
 1. **[Ottieni le credenziali API necessarie per stabilire la connessione tra Commerce e Commerce Optimizer](#get-required-connection-details)**.
 
-1. **[Abilita l&#39;integrazione [!DNL Adobe Commerce Optimizer] &#x200B;](#enable-the-adobe-commerce-optimizer-integration)**.
+1. **[Abilita l&#39;integrazione [!DNL Adobe Commerce Optimizer] ](#enable-the-adobe-commerce-optimizer-integration)**.
 
 1. **[Verificare che la sincronizzazione dei dati funzioni](#verify-that-the-data-sync-is-working)**.
 
@@ -90,9 +92,9 @@ Al termine dell’implementazione, l’opzione Commerce Optimizer è disponibile
 >
 >Per istruzioni dettagliate sull’installazione dell’estensione, consulta le seguenti guide:
 >
->[Installa estensione su Adobe Commerce su infrastruttura cloud](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+>[Installa estensione su Adobe Commerce su infrastruttura cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
 >
->[Installa l&#39;estensione in Adobe Commerce locale](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/tutorials/extensions)
+>[Installa l&#39;estensione in Adobe Commerce locale](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)
 
 ### Ottieni i dettagli di connessione richiesti
 
@@ -166,7 +168,7 @@ Utilizzando le credenziali da server a server OAuth e i dettagli dell&#39;istanz
 
    ![[!DNL Adobe Commerce Optimizer] pagina di configurazione](/help/aco-connector/assets/aco-connector-admin-installation.png){width="500" zoomable="yes"}
 
-1. Dalla riga di comando, [utilizzare SSH](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/secure-connections) per connettersi all&#39;ambiente di staging di Commerce.
+1. Dalla riga di comando, [utilizzare SSH](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) per connettersi all&#39;ambiente di staging di Commerce.
 
 1. Esegui il seguente comando Commerce CLI per configurare l’integrazione, sostituendo i valori segnaposto con i valori per il progetto Commerce Optimizer:
 
@@ -181,7 +183,7 @@ bin/magento aco:config:init --org_id=your-org --tenant_id=your-tenant --client_i
 ## Verifica che la sincronizzazione dei dati funzioni
 
 Dopo aver abilitato l’integrazione, la sincronizzazione dei dati inizia automaticamente. A seconda delle dimensioni del catalogo, la sincronizzazione iniziale può richiedere da alcuni minuti a diverse ore.
-Puoi monitorare e verificare che la sincronizzazione funzioni dalla pagina [Stato sincronizzazione feed dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) disponibile nell&#39;amministratore.
+Puoi monitorare e verificare che la sincronizzazione funzioni dalla pagina [Stato sincronizzazione feed dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) disponibile nell&#39;amministratore.
 
 1. **Verifica lo stato di sincronizzazione nell&#39;amministratore di Commerce:**
 
@@ -211,6 +213,6 @@ Puoi monitorare e verificare che la sincronizzazione funzioni dalla pagina [Stat
 
 1. **Configura una vetrina Commerce in Edge Delivery Services**
 
-   Segui la [documentazione di configurazione di Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=it) per connettere la tua vetrina all&#39;istanza [!DNL Adobe Commerce Optimizer] e iniziare a distribuire esperienze di e-commerce personalizzate.
+   Segui la [documentazione di configurazione di Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/) per connettere la tua vetrina all&#39;istanza [!DNL Adobe Commerce Optimizer] e iniziare a distribuire esperienze di e-commerce personalizzate.
 
 

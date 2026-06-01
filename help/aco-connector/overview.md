@@ -2,28 +2,16 @@
 title: Connettore Adobe Commerce Optimizer
 description: Scopri come collegare i dati dal cloud Commerce o dal progetto on-premise a Adobe Commerce Optimizer
 feature: Personalization, Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 TQID: https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: be4140fb3305b354e8a11463131182a3b571d2f2
 workflow-type: tm+mt
-source-wordcount: 1233
+source-wordcount: 1177
 ht-degree: 0%
 
 ---
@@ -60,12 +48,6 @@ In questa architettura:
 - Il connettore esporta i feed di catalogo, prezzo e categoria
 - Commerce Optimizer acquisisce e normalizza i dati di feed in Origini catalogo, Listini prezzi e Visualizzazioni catalogo
 - Le vetrine (Commerce storefront su Edge Delivery o build headless personalizzate) richiamano le API GraphQL di Commerce Optimizer per l’individuazione e i consigli e chiamano Commerce o un’altra piattaforma di terze parti connessa per operazioni di carrello e pagamento
-
-## Funzionamento del connettore con Adobe Commerce {#how-it-works}
-
-- Commerce Optimizer acquisisce e normalizza i dati di feed in Origini catalogo, Listini prezzi e Visualizzazioni catalogo.
-
-- Gli store front (Commerce storefront su Edge Delivery o build headless personalizzate) richiamano le API GraphQL di Commerce Optimizer per l’individuazione e i consigli e chiamano Commerce o un’altra piattaforma di terze parti connessa per le operazioni di carrello e pagamento.
 
 ## Funzionamento del connettore con Adobe Commerce
 
