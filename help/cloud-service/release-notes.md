@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 4288998fdae56112dc9ddcebfc42b85b9f5d8c00
+source-git-commit: be8fbcd77dc56b2193eee20d7a06a315ac1abb9f
 workflow-type: tm+mt
-source-wordcount: 4032
+source-wordcount: 4189
 ht-degree: 0%
 
 ---
@@ -42,15 +42,19 @@ Le seguenti note sulla versione contengono aggiornamenti a [!DNL Adobe Commerce 
 >
 >Se utilizzi Adobe Commerce on-premise o Adobe Commerce sull&#39;infrastruttura cloud, consulta le [note sulla versione di Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/release/notes/overview).
 
-## Maggio 2026 - #2 sulla versione {#latest}
+## Giugno 2026 - #1 sulla versione {#latest}
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
 [!BADGE Sandbox]{type=Caution tooltip="Gli elementi elencati sono attualmente disponibili solo negli ambienti Sandbox. Adobe rende disponibili le nuove versioni negli ambienti Sandbox per fornire il tempo di testare le modifiche imminenti prima che la versione sia disponibile negli ambienti di produzione."}
 
-I seguenti elementi saranno rilasciati negli ambienti di produzione il 21 maggio 2026.
+I seguenti elementi verranno rilasciati negli ambienti di produzione il 4 giugno 2026.
 
 >[!BEGINSHADEBOX]
+
+### Aggiungere e modificare i codici coupon personalizzati in Amministrazione
+
+I commercianti possono ora creare e modificare codici coupon personalizzati direttamente da [!DNL Commerce Admin] sulle regole di prezzo del carrello manuale. Un nuovo pulsante [!UICONTROL **Aggiungi coupon personalizzato**] è disponibile nella sezione [!UICONTROL **Gestisci codici coupon**] quando si modifica una regola del prezzo del carrello. <!-- CCSAAS-4508 -->
 
 ### Tracciare le spedizioni utilizzando vettori predefiniti e personalizzati
 
@@ -59,6 +63,14 @@ Il tracciamento degli ordini è ora affidabile per i vettori di spedizione prede
 ### Visualizzare i tipi di input degli attributi nella griglia Attributi prodotto
 
 Una nuova colonna [!UICONTROL **Tipo attributo**] è ora visibile nella griglia Attributi prodotto in ([!UICONTROL **Arches**] > _[!UICONTROL Attributes]_>[!UICONTROL **Prodotto**]), che visualizza il tipo di input (come campo di testo, a discesa o sì/no) per ogni attributo di prodotto, inclusi i tipi forniti dalle estensioni. In questo modo è più facile identificare e gestire gli attributi quando si utilizzano set di attributi di grandi dimensioni. <!-- ACCS-925 -->
+
+### Personalizzare l’intestazione Risposta per le e-mail personalizzate
+
+Gli esercenti possono ora configurare l&#39;intestazione [!UICONTROL **Reply-To**] utilizzata dall&#39;endpoint [POST /rest/V1/custom-email/send](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/), in modo che le risposte dei clienti possano essere indirizzate a un indirizzo diverso rispetto al mittente. <!-- ACCS-1037 -->
+
+### Visualizzare i prezzi dei livelli nella pagina di modifica del prodotto in ambienti di catalogo condivisi di grandi dimensioni
+
+I commercianti con un numero elevato di cataloghi condivisi possono ora accedere alla scheda [!UICONTROL **Prezzi livello**] di sola lettura nella pagina di modifica del prodotto in [!DNL Commerce Admin]. <!-- CCSAAS-4922 -->
 
 ### Miglioramenti e correzioni di bug
 
@@ -70,7 +82,7 @@ In questa versione sono inclusi i miglioramenti, le ottimizzazioni e le correzio
 
 * È stato risolto un errore di tipo &quot;consumer is not authorized&quot; che poteva impedire gli accessi guest GraphQL se l&#39;intestazione `X-Adobe-Company` era presente nella richiesta. <!-- ACCS-949 -->
 
-* È stato risolto un problema che impediva la modifica o l&#39;eliminazione di una società in [!DNL Commerce Admin] e causava l&#39;errore &quot;Nessuna entità di questo tipo&quot; dopo l&#39;assegnazione di un cliente alla società tramite l&#39;endpoint REST di PUT `V1/customers/companies`. <!-- ACCS-856 -->
+* È stato risolto un problema che impediva la modifica o l&#39;eliminazione di una società in [!DNL Commerce Admin] e causava l&#39;errore &quot;Nessuna entità di questo tipo&quot; dopo l&#39;assegnazione di un cliente alla società tramite l&#39;endpoint REST PUT `V1/customers/companies`. <!-- ACCS-856 -->
 
 * È stato risolto un problema relativo agli stati della griglia ordini cliente non aggiornati. <!-- CCSAAS-4915 -->
 
@@ -79,6 +91,10 @@ In questa versione sono inclusi i miglioramenti, le ottimizzazioni e le correzio
 * È stato corretto un errore di tipo &quot;Chiave array &#39;simple_sku&#39; non definita&quot; che poteva verificarsi durante la creazione di una spedizione per un ordine contenente prodotti configurabili. <!-- CCSAAS-4877 -->
 
 * La query GraphQL `guestOrderByToken` ora restituisce un messaggio di errore più informativo quando viene chiamata con un token non valido, invece di un errore interno del server. <!-- CCSAAS-4921 -->
+
+* La query GraphQL `customer` ora restituisce un messaggio di errore più informativo quando non è possibile caricare gli ordini dei clienti. <!-- ACCS-867 -->
+
+* L&#39;endpoint REST GET `V1/customers/{customerId}` ora restituisce il campo di configurazione `assistance_allowed`. <!-- USF-4132 -->
 
 {{accs-release}}
 
@@ -355,7 +371,7 @@ In questa versione sono inclusi i miglioramenti, le ottimizzazioni e le correzio
 
 * È stato corretto un timeout della pagina di modifica del prodotto che poteva verificarsi con cataloghi condivisi di grandi dimensioni. <!-- CCSAAS-4657 -->
 
-* Riabilitazione degli endpoint REST API per GET `/V1/directory/countries` e GET `/V1/directory/countries/:countryId` per le integrazioni amministratore, consentendo ai client di cercare dati validi per paese e area geografica. <!-- ACCS-518 -->
+* Riabilitazione degli endpoint REST API GET `/V1/directory/countries` e GET `/V1/directory/countries/:countryId` per le integrazioni amministratore, consentendo ai client di cercare dati validi per paese e area geografica. <!-- ACCS-518 -->
 
 * È stato risolto un problema di timeout che poteva verificarsi nell’API REST quando un utente disponeva di un catalogo condiviso di grandi dimensioni. <!-- ACCS-4657 -->
 
