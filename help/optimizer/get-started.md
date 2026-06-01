@@ -22,9 +22,9 @@ topic_v2:
   - id: dba482e5-29a8-4127-afa2-c4b913512ef8
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 423b35b15e845e49b1cf36910ffbad775de9758c
 workflow-type: tm+mt
-source-wordcount: 1181
+source-wordcount: 1332
 ht-degree: 0%
 
 ---
@@ -32,6 +32,17 @@ ht-degree: 0%
 # Introduzione
 
 Questa guida illustra come configurare [!DNL Adobe Commerce Optimizer] dall&#39;inizio alla fine. Questa guida descrive tutti i ruoli. Per informazioni dettagliate sui contenuti specifici per gli sviluppatori, consultare la [documentazione per gli sviluppatori](https://developer.adobe.com/commerce/services/optimizer/).
+
+## Tipi di istanze e isolamento dell’ambiente
+
+Adobe Commerce Optimizer utilizza istanze separate per ambienti diversi, ad esempio **sandbox** e **production**. Ogni istanza ha il proprio ID istanza e i propri dati isolati, incluse le viste del catalogo, i criteri, la configurazione della ricerca e i consigli di prodotto.
+
+Durante l’integrazione con Adobe Commerce as a Cloud Service, piattaforme commerce di terze parti o vetrine Edge Delivery Services, gli ambienti corrispondono sempre:
+
+- Connetti **istanze di Sandbox Optimizer** ad ambienti commerce e storefront non di produzione.
+- Connetti **istanze Production Optimizer** agli ambienti Production Commerce e Storefront.
+
+La combinazione di ambienti sandbox con ambienti di produzione causa dati di catalogo incoerenti, comportamenti di ricerca e merchandising imprevisti e metriche inaffidabili. Utilizza il tipo di istanza e l’ID dell’istanza in Commerce Cloud Manager come fonte di verità durante la configurazione delle integrazioni.
 
 ## Prerequisiti
 
@@ -140,21 +151,23 @@ La colonna Prodotto indica per quale applicazione Commerce è stato eseguito il 
 
 Utilizza gli strumenti Filtro e Ricerca per trovare rapidamente istanze specifiche in base alla data di creazione, all’area geografica, al creatore, al tipo di prodotto, all’ambiente o allo stato.
 
-### Accedere all&#39;applicazione [!DNL Adobe Commerce Optimizer]
+### Accedi all&#39;interfaccia di amministrazione [!DNL Adobe Commerce Optimizer Studio]
 
-Una volta aperta l’app, passa facilmente da un ambiente all’altro, come sandbox e produzione, per visualizzare dati e impostazioni per ciascuno di essi senza tornare a Commerce Cloud Manager.
+Una volta aperta l’app, passa facilmente da un ambiente all’altro, come sandbox e produzione, per visualizzare dati e impostazioni per ciascuno di essi, senza dover tornare a Commerce Cloud Manager.
 
-1. In Commerce Cloud Manager fare clic sul nome dell&#39;istanza per aprire l&#39;applicazione [!DNL Adobe Commerce Optimizer].
+1. Da Commerce Cloud Manager, fare clic sul nome dell&#39;istanza per aprire [!DNL Adobe Commerce Optimizer Studio].
 
 1. Passa da [!DNL Adobe Commerce Optimizer] istanze all&#39;altra senza uscire dall&#39;applicazione.
 
-   Nell’elenco a discesa delle istanze sono elencate tutte le istanze di Optimizer disponibili nell’organizzazione. Seleziona l’istanza da visualizzare.
+   - Fai clic sull’elenco a discesa delle istanze per visualizzare tutte le istanze di Optimizer disponibili nell’organizzazione.
 
-   ![Menu a discesa del commutatore di istanza per selezionare [!DNL Adobe Commerce Optimizer] ambienti](./assets/context-switcher.png){zoomable="yes"}
+     ![Menu a discesa del commutatore di istanza per selezionare [!DNL Adobe Commerce Optimizer] ambienti](./assets/context-switcher.png){zoomable="yes"}
+
+- Seleziona l’istanza da visualizzare.
 
 >[!NOTE]
 >
->Se devi tornare a Commerce Cloud Manager per visualizzare i dettagli dell&#39;istanza o gestire le istanze, fai clic sull&#39;icona App ![Icona per aprire Experience Cloud Applications](./assets/apps-icon.png) nell&#39;angolo superiore sinistro della navigazione in alto a Commerce Optimizer.
+>Per tornare a Commerce Cloud Manager per visualizzare i dettagli dell&#39;istanza o gestire le istanze, fare clic sull&#39;icona ![Icona per aprire Experience Cloud Applications](./assets/apps-icon.png) (Apps) nell&#39;angolo superiore sinistro della navigazione superiore di Commerce Optimizer.
 
 ### Ottieni dettagli istanza
 
@@ -164,10 +177,10 @@ Il pannello dei dettagli dell&#39;istanza ![[!DNL Adobe Commerce Optimizer] most
 
 Tieni presente le seguenti informazioni chiave:
 
-- **Endpoint GraphQL** per recuperare i dati del catalogo Commerce tramite l&#39;API Merchandising
-- **Endpoint catalogo** per l&#39;acquisizione dei dati del catalogo in Commerce Optimizer tramite l&#39;API REST
-- **URL Commerce Optimizer** per accedere all&#39;applicazione [!DNL Adobe Commerce Optimizer]
-- **ID istanza**: ID univoco che identifica l&#39;istanza. L&#39;ID istanza viene anche indicato come *tenant_id*.
+- **Endpoint GraphQL** Endpoint GraphQL utilizzato dalla vetrina per eseguire query sui dati di catalogo e merchandising da questa istanza tramite l&#39;[API servizio merchandising](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target=_blank}
+- **Endpoint catalogo** endpoint REST API utilizzato per acquisire prodotti e prezzi in Adobe Commerce Optimizer dal sistema commerce o PIM. Visualizza [API di acquisizione dati](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)
+- **URL Commerce Optimizer** Apre l&#39;interfaccia utente amministratore di [Adobe Commerce Optimizer Studio](overview.md) per configurare e gestire le visualizzazioni catalogo, i criteri e il merchandising.
+- **ID istanza**: identificatore univoco (ID tenant) per questa istanza di Adobe Commerce Optimizer, utilizzato da storefront, API e strumenti per connettersi all&#39;ambiente corretto.
 
 Se si è uno sviluppatore, è necessario disporre di questi dettagli per configurare l&#39;ambiente di sviluppo e connettersi alle API [!DNL Adobe Commerce Optimizer].
 
@@ -186,7 +199,7 @@ Se necessario, aggiorna il nome e la descrizione dell’istanza.
 ## Aggiungi dati di esempio
 
 Adobe fornisce un archivio GitHub con dati e strumenti di esempio per aiutarti ad apprendere e testare le funzionalità di [!DNL Adobe Commerce Optimizer].
-I dati di esempio si basano sullo [scenario aziendale Carvelo](./use-case/admin-use-case.md) e includono:
+I dati di esempio si basano sullo [scenario aziendale di Carvelo](./use-case/admin-use-case.md) e includono:
 
 - Catalogo dei prodotti con parti per autoveicoli
 - Più listini prezzi e scenari di determinazione prezzi

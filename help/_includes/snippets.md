@@ -1,11 +1,18 @@
 ---
-source-git-commit: aaefe284749df25953c2581f000af2989bcc8fb2
+source-git-commit: edc47115830f5ca7ec1e485de1ddf9939de2586d
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
 # snippet Commerce
+
+
+## Allineamento dell’ambiente di integrazione ACO {#aco-integration-environment-alignment}
+
+>[!IMPORTANT]
+>
+>Collega sempre le istanze Sandbox Optimizer agli ambienti non di produzione e le istanze di produzione agli ambienti di produzione. Gli ambienti non corrispondenti causano incoerenza nei dati di catalogo, nei risultati di ricerca e nei consigli.
 
 
 ## Servizi di merchandising per Optimizer {#aco-merchandising-services}

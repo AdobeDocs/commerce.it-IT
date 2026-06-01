@@ -3,9 +3,9 @@ title: Introduzione al connettore Adobe Commerce Optimizer
 description: Scopri come installare e configurare il connettore, personalizzare la configurazione di esportazione, connettersi a Adobe Commerce Optimizer e monitorare lo stato di sincronizzazione dei dati.
 feature: Personalization, Integration, Configuration
 badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
-source-git-commit: c86e66a675f9a53a6ec7b79540ff85d10186bf3f
+source-git-commit: f041c315da8bf20af7ecc2c869eaf578a767f66d
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1280'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 # Introduzione
 
 Installa e configura il connettore Commerce Optimizer per sincronizzare i dati del catalogo Adobe Commerce con [!DNL Adobe Commerce Optimizer], quindi monitora lo stato di sincronizzazione dei dati per garantire che la vetrina sia aggiornata.
+
+{{aco-integration-environment-alignment}}
 
 ## Requisiti per l’utilizzo dell’integrazione
 

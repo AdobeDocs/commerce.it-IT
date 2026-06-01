@@ -21,9 +21,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: be4140fb3305b354e8a11463131182a3b571d2f2
 workflow-type: tm+mt
-source-wordcount: 1233
+source-wordcount: 1177
 ht-degree: 0%
 
 ---
@@ -60,12 +60,6 @@ In questa architettura:
 - Il connettore esporta i feed di catalogo, prezzo e categoria
 - Commerce Optimizer acquisisce e normalizza i dati di feed in Origini catalogo, Listini prezzi e Visualizzazioni catalogo
 - Le vetrine (Commerce storefront su Edge Delivery o build headless personalizzate) richiamano le API GraphQL di Commerce Optimizer per l’individuazione e i consigli e chiamano Commerce o un’altra piattaforma di terze parti connessa per operazioni di carrello e pagamento
-
-## Funzionamento del connettore con Adobe Commerce {#how-it-works}
-
-- Commerce Optimizer acquisisce e normalizza i dati di feed in Origini catalogo, Listini prezzi e Visualizzazioni catalogo.
-
-- Gli store front (Commerce storefront su Edge Delivery o build headless personalizzate) richiamano le API GraphQL di Commerce Optimizer per l’individuazione e i consigli e chiamano Commerce o un’altra piattaforma di terze parti connessa per le operazioni di carrello e pagamento.
 
 ## Funzionamento del connettore con Adobe Commerce
 
