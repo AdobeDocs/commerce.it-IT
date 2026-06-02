@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 63f363c970a8a147cb6f564a52a41818023451c4
+source-git-commit: 29b54d68ec20d000f4cc1ffe8080c5919457ff8c
 workflow-type: tm+mt
-source-wordcount: 1104
+source-wordcount: 1191
 ht-degree: 0%
 
 ---
@@ -42,11 +42,24 @@ Le seguenti note sulla versione contengono aggiornamenti a [!DNL Adobe Commerce 
 
 ### Aggiornamenti API
 
+_28 maggio 2026_
+
+<!-- v1.2 -->
+
+![Correzione](../assets/fix.svg) **Struttura di navigazione completa**. Le categorie discendenti con tag sono ora incluse correttamente nelle strutture `navigation` filtrate dalla famiglia quando nel percorso esiste un nodo intermedio senza tag. Questa correzione assicura che gli acquirenti vedano tutte le categorie pertinenti nella navigazione, semplificando la navigazione e l’individuazione degli articoli.
+<!--DATA-7183-->
+
+![Correzione](../assets/fix.svg) **Gestione slug vuota in `categoryTree` richieste**—È stato risolto un problema a causa del quale la query [`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) restituiva un errore interno del server quando l&#39;argomento `slugs` includeva una stringa vuota. I valori di slug vuoti vengono ora ignorati, pertanto gli storefront e le integrazioni continuano a risolvere i dati di categoria senza richieste non riuscite.
+<!--DATA-7184-->
+
+![Correzione](../assets/fix.svg) **`searchCategory`richieste restituiscono risultati alfabetizzati senza distinzione tra maiuscole e minuscole**. La query `searchCategory` ordina ora i risultati della ricerca in ordine alfabetico senza distinzione tra maiuscole e minuscole, garantendo un ordinamento coerente e prevedibile. Le categorie con prefissi più brevi vengono visualizzate per prime quando i nomi sono identici.
+<!--COMOPT-2142-->
+
 _4 maggio 2026_
 
 <!--v1.53-->
 
-I prezzi dei prodotti nei negozi ora visualizzano il codice valuta corretto (ad esempio, USD) per tutti i tipi di prodotto. In precedenza, alcuni prodotti mostravano `NONE` invece della valuta prevista, con conseguente perdita dei prezzi.
+**Visualizzazione valuta corretta**. I prezzi dei prodotti di vetrina ora visualizzano il codice valuta corretto (ad esempio, USD) per tutti i tipi di prodotto. In precedenza, alcuni prodotti mostravano `NONE` invece della valuta prevista, con conseguente perdita dei prezzi.
 
 <!--DATA-7115-->
 
