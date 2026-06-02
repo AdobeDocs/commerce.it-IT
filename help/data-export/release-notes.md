@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 8f424228d96072636ac24a2d50dd58e5c8d655da
+source-git-commit: d35a3ad39c504c5c6eb1073737babae252a3127d
 workflow-type: tm+mt
-source-wordcount: 2868
+source-wordcount: 2818
 ht-degree: 0%
 
 ---
@@ -40,6 +40,14 @@ Gli aggiornamenti includono:
 >L’estensione SaaS per l’esportazione dei dati è una raccolta di moduli che viene installata automaticamente con Live Search, Product Recommendations e Catalog Service. Puoi controllare la versione installata nel sistema utilizzando Composer. In alcuni casi, potrebbe essere utile aggiornare l’estensione di esportazione dei dati sul sistema per rilevare correzioni o nuove funzionalità senza aggiornare la versione del servizio Commerce.
 
 ## Versioni del 2026
+
+### Versione 103.4.26
+
+_2 giugno 2026_
+
+![Correzione](../assets/fix.svg) **Aggiornamenti del feed di prodotto dopo modifiche alla valuta**-Quando si modificano le impostazioni della valuta dell&#39;archivio, i prodotti interessati vengono nuovamente messi in coda per l&#39;esportazione in modo che Live Search, Catalog Service, Product Recommendations e altri servizi Commerce connessi visualizzino prezzi aggiornati. <!--MDEE-1376-->
+
+![Correzione](../assets/fix.svg) **Le categorie figlio riflettono lo stato padre disabilitato**-Quando si disabilita una categoria principale, le categorie figlio vengono ora esportate come inattive in modo che i servizi Commerce connessi non considerino i prodotti di tali categorie come individuabili. <!--MDEE-1369-->
 
 ### Versione 103.4.25
 
@@ -74,7 +82,7 @@ _20 aprile 2026_
 
 ![Correzione](../assets/fix.svg) **Errori SQL risolti durante l&#39;eliminazione degli attributi EAV statici**-Il plug-in ProductAttributeDelete non genera più errori SQL durante l&#39;eliminazione degli attributi EAV statici, garantendo una gestione degli attributi più fluida e una maggiore affidabilità del sistema. <!--MDEE-1336-->
 ![Correzione](../assets/fix.svg) **Esportazione del percorso di categoria fissa dopo lo spostamento della categoria**- Assicura che il feed delle categorie aggiorni correttamente `url_path` quando una categoria viene spostata in un altro elemento padre, impedendo percorsi di categoria mancanti o non aggiornati nei servizi Commerce connessi.<!--MDEE-1331-->
-![Correzione](../assets/fix.svg) **Gli aggiornamenti delle categorie pianificati migliorati per i prodotti correlati**. Gli aggiornamenti pianificati per gli URL delle categorie ora interessano solo le categorie previste, preservando l&#39;integrità dei dati e impedendo modifiche non intenzionali ai prodotti correlati. Ora le modifiche pianificate all’URL della categoria vengono applicate correttamente ai dati esportati, mantenendo la navigazione della vetrina e i servizi collegati allineati al catalogo corrente.
+![Correzione](../assets/fix.svg) **Gli aggiornamenti delle categorie pianificati migliorati per i prodotti correlati**-Gli aggiornamenti pianificati per gli URL delle categorie ora interessano solo le categorie previste, preservando l&#39;integrità dei dati e impedendo modifiche non intenzionali ai prodotti correlati. Ora le modifiche pianificate all’URL della categoria vengono applicate correttamente ai dati esportati, mantenendo la navigazione della vetrina e i servizi collegati allineati al catalogo corrente.
 <!--MDEE-1321-->
 
 ### Versione 103.4.22
