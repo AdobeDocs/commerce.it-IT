@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: be8fbcd77dc56b2193eee20d7a06a315ac1abb9f
+source-git-commit: 9e4bf260a145815f97a69251005309edb480ae11
 workflow-type: tm+mt
-source-wordcount: 4189
+source-wordcount: 4182
 ht-degree: 0%
 
 ---
@@ -44,17 +44,17 @@ Le seguenti note sulla versione contengono aggiornamenti a [!DNL Adobe Commerce 
 
 ## Giugno 2026 - #1 sulla versione {#latest}
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Produzione]{type=Neutral tooltip="Gli elementi elencati sono attualmente disponibili negli ambienti di produzione."}
 
-[!BADGE Sandbox]{type=Caution tooltip="Gli elementi elencati sono attualmente disponibili solo negli ambienti Sandbox. Adobe rende disponibili le nuove versioni negli ambienti Sandbox per fornire il tempo di testare le modifiche imminenti prima che la versione sia disponibile negli ambienti di produzione."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-I seguenti elementi verranno rilasciati negli ambienti di produzione il 4 giugno 2026.
+I seguenti elementi sono stati rilasciati negli ambienti di produzione il 4 giugno 2026.
 
 >[!BEGINSHADEBOX]
 
 ### Aggiungere e modificare i codici coupon personalizzati in Amministrazione
 
-I commercianti possono ora creare e modificare codici coupon personalizzati direttamente da [!DNL Commerce Admin] sulle regole di prezzo del carrello manuale. Un nuovo pulsante [!UICONTROL **Aggiungi coupon personalizzato**] è disponibile nella sezione [!UICONTROL **Gestisci codici coupon**] quando si modifica una regola del prezzo del carrello. <!-- CCSAAS-4508 -->
+Gli esercenti ora possono [creare e modificare codici coupon personalizzati](https://experienceleague.adobe.com/it/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon#method-3-custom-coupon-codes) direttamente da [!DNL Commerce Admin] sulle regole del prezzo del carrello manuale. Un nuovo pulsante [!UICONTROL **Aggiungi coupon personalizzato**] è disponibile nella sezione [!UICONTROL **Gestisci codici coupon**] quando si modifica una regola del prezzo del carrello. <!-- CCSAAS-4508 -->
 
 ### Tracciare le spedizioni utilizzando vettori predefiniti e personalizzati
 
