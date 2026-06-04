@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: d35a3ad39c504c5c6eb1073737babae252a3127d
+source-git-commit: f472cadb124207b04b158b410b7fe1db8f5a9f7d
 workflow-type: tm+mt
-source-wordcount: 2818
+source-wordcount: 2855
 ht-degree: 0%
 
 ---
@@ -40,6 +40,13 @@ Gli aggiornamenti includono:
 >L’estensione SaaS per l’esportazione dei dati è una raccolta di moduli che viene installata automaticamente con Live Search, Product Recommendations e Catalog Service. Puoi controllare la versione installata nel sistema utilizzando Composer. In alcuni casi, potrebbe essere utile aggiornare l’estensione di esportazione dei dati sul sistema per rilevare correzioni o nuove funzionalità senza aggiornare la versione del servizio Commerce.
 
 ## Versioni del 2026
+
+### Versione 103.4.27
+
+_4 giugno 2026_
+
+![Correzione](../assets/fix.svg) **I prodotti bundle rimangono visibili dopo gli aggiornamenti simultanei del catalogo**-È stato corretto un problema a causa del quale i prodotti bundle non venivano visualizzati nella vetrina quando i prodotti configurabili e bundle venivano aggiornati contemporaneamente. Dopo aver aggiornato `magento/module-data-exporter` alla versione 103.4.27, il feed dei prodotti viene automaticamente pianificato per la risincronizzazione al fine di correggere le incoerenze dei dati del bundle esistenti in [!DNL Catalog Service], [!DNL Live Search] e altri servizi Commerce connessi.
+<!--MDEE-1379-->
 
 ### Versione 103.4.26
 
