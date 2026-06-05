@@ -1,7 +1,7 @@
 ---
-source-git-commit: dcb3300c80fb74d597cee66e981acb426490d34b
+source-git-commit: 61e34c6fb4a004789bffa43c5b9356ad4edc685e
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1182'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,80 @@ ht-degree: 1%
 ## Novità
 
 Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo elenco sono esclusi tutti gli aggiornamenti minori, ad esempio la modifica della copia.
+
+### 3 giugno 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Sono state aggiunte le <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/release-notes">note sulla versione</a> di produzione per Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Aggiornamento principale
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8ec59cfc8c9d4d1e804adefe7f88806843e3caa3">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>È stato aggiunto il meccanismo di blocco del feed <a href="https://experienceleague.adobe.com/it/docs/commerce/saas-data-export/feed-lock-mechanism">per l'esportazione di dati SaaS</a> per spiegare in che modo i blocchi del feed impediscono conflitti di sincronizzazione simultanei e come interpretare i normali messaggi ignorati inclusi nel registro di esportazione dei dati di Commerce (<code>commerce-data-export.log</code>).</p>
+</td>
+      <td>
+        Nuovo argomento
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/cb045b490482649a65bac9d763062700a90e9ecd">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2 giugno 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>L'amministratore di Commerce aggiunge un elenco <a href="https://experienceleague.adobe.com/it/docs/commerce/aem-assets-integration/get-started/sync-status">Stato sincronizzazione</a> incentrato sulle risorse per cercare, filtrare e risolvere i problemi di AEM Assets sincronizzato in base agli attributi delle risorse.</p>
+</td>
+      <td>
+        Aggiornamento principale
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a1cb3a063d9c4595220ca431356d34e6cbe8ea33">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 1 giugno 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stata aggiunta la sandbox <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/release-notes">note sulla versione</a> per Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Aggiornamento principale
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/3e5f1a5366cb57cbdd1ed3f5721a82cd0c5c5271">commit</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 28 maggio 2026
 
@@ -321,80 +395,6 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
         Aggiornamento principale
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/7845129c055619e09fbf7c5f860795be6bf81533">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2 aprile 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Sono stati aggiornati <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/recommendations/filters">Filtri per consigli</a> con procedure filtro per prezzi e prodotti, comportamento del prezzo finale basato sul listino prezzi per filtrare e visualizzare i prezzi e nuove schermate per l'interfaccia utente Filtra prodotti.</p>
-</td>
-      <td>
-        Aggiornamento principale
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6d67df3c05f1202e361d0c8972d6f1bf7a5b8854">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 1 aprile 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata aggiornata la <a href="https://experienceleague.adobe.com/it/docs/commerce/payment-services/configure/payments-home">Home page di Payment Services</a>, <a href="https://experienceleague.adobe.com/it/docs/commerce/payment-services/financial-reports/reporting">Generazione rapporti</a> e <a href="https://experienceleague.adobe.com/it/docs/commerce/payment-services/get-started/onboard">Panoramica sull'onboarding</a> con schermate SaaS/ACCS e indicazioni sull'interfaccia utente (banner di onboarding, Home dedicata alle transazioni, griglia delle transazioni).</p>
-</td>
-      <td>
-        Aggiornamento principale
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/79c71b55e463d7e9570fe67b664b4e77a0d741f7">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Aggiunte le <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/release-notes">note sulla versione</a> di produzione di aprile per Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Aggiornamento principale
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a28d4b467dc51f70509ab19dbdbaf2cd3f59a208">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 31 marzo 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Aggiorna le <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/release-notes">note sulla versione</a> di Adobe Commerce as a Cloud Service con la distribuzione sandbox più recente.</p>
-</td>
-      <td>
-        Aggiornamento principale
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4a60783dbed189475bcd0090c949cd76b0566f54">commit</a></td>
     </tr>
   </tbody>
 </table>
