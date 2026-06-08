@@ -4,10 +4,16 @@ description: Configura le impostazioni per  [!DNL Adobe Commerce Optimizer].
 badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: 6ac223de-8e03-4842-8b67-92ce321d323d
 TQID: https://experienceleague.adobe.com/9-BMXoWad0bbvsnwgHQrs19ZC9ngGrVE9J7PszcX4Zc
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
 source-wordcount: 867
@@ -127,7 +133,7 @@ Dopo aver abilitato la ricerca semantica, nella stessa scheda puoi regolare quan
   >
   > La ricerca semantica è supportata solo per **cataloghi inglesi**. Se si seleziona un&#39;altra lingua nella scheda **[Lingua](#language)**, **[!UICONTROL Enable semantic search]** verrà disabilitato.
 
-- **[!UICONTROL Fuzzy search]** — Attiva **2} per trovare corrispondenze vicine per le query di ricerca, in modo da correggere errori di battitura e variazioni minori.**
+- **[!UICONTROL Fuzzy search]** — Attiva **2&rbrace; per trovare corrispondenze vicine per le query di ricerca, in modo da correggere errori di battitura e variazioni minori.**
 - **[!UICONTROL Fuzzy search similarity threshold]** — Imposta la somiglianza minima (come percentuale) necessaria per la visualizzazione delle corrispondenze fuzzy. Le soglie inferiori restituiscono corrispondenze più approssimative; aumenta la soglia se i risultati sfocati si sentono troppo ampi.
 
 Per i vantaggi, le indicazioni sulla convalida, le best practice, la risoluzione dei problemi e le limitazioni, vedere [Ricerca semantica](setup/semantic-search.md).
