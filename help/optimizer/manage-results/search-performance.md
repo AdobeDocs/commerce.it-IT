@@ -15,9 +15,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
-source-wordcount: 1863
+source-wordcount: 1905
 ht-degree: 0%
 
 ---
@@ -64,6 +64,7 @@ La sezione seguente fornisce le strategie da utilizzare per migliorare la funzio
 Esistono diversi fattori chiave che determinano la rilevanza e l’efficacia dei risultati della ricerca:
 
 - Dati di prodotto ben strutturati garantiscono che gli algoritmi di ricerca possano far corrispondere efficacemente i prodotti alle query. I dati sui prodotti di bassa qualità portano a risultati di ricerca meno rilevanti. Per avere un impatto diretto sul successo della strategia di merchandising:
+   - Configura [ricerca semantica](../setup/semantic-search.md) per la corrispondenza basata su linguaggio naturale e intento.
    - Imposta gli [attributi corretti come ricercabili](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) con il relativo peso.
    - Assicurati che i dati all’interno di tali attributi siano pertinenti.
 - Un’esperienza di ricerca ben progettata crea fiducia nei clienti e infonde fiducia nel fatto che troveranno ciò di cui hanno bisogno.
@@ -92,6 +93,7 @@ Per ottimizzare i risultati della ricerca con [!DNL Adobe Commerce Optimizer], m
 
   Per ridurre la percentuale di risultati pari a zero, puoi effettuare le seguenti operazioni:
 
+   - Conferma che [la ricerca semantica](../setup/semantic-search.md) sia abilitata nella scheda **[Ricerca avanzata](../settings.md#advanced-search)** in Impostazioni. La ricerca semantica è attivata per impostazione predefinita per [!DNL Adobe Commerce Optimizer] clienti; non sono richieste modifiche alla vetrina o agli sviluppatori. I risultati vengono aggiornati al termine dell’indicizzazione.
    - Offri termini di ricerca alternativi o correlati, ad esempio [sinonimi](../merchandising/synonyms/overview.md) quando non vengono trovate corrispondenze esatte.
    - Esamina regolarmente le query senza risultati per identificare i pattern e apportare le modifiche necessarie al catalogo dei prodotti e alle impostazioni di ricerca.
 

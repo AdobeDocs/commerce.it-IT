@@ -18,9 +18,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
 workflow-type: tm+mt
-source-wordcount: 264
+source-wordcount: 237
 ht-degree: 0%
 
 ---
@@ -35,10 +35,8 @@ Product Discovery offre ai commercianti strumenti potenti per curare e ottimizza
 
 Grazie all&#39;individuazione dei prodotti, è possibile:
 
+* **Utilizza [ricerca semantica](../setup/semantic-search.md)** — Abilitata per impostazione predefinita in [Impostazioni](../settings.md#advanced-search) per migliorare la rilevanza per le query basate su linguaggio naturale e intento. Non sono richieste modifiche alla configurazione degli attributi o alla vetrina.
 * **Configura [facet](./facets/overview.md), [regole di ricerca e categoria per merchandising](./rules/overview.md) e [sinonimi](./synonyms/overview.md)** per guidare gli acquirenti verso i prodotti più rilevanti con attrito minimo.
-* **Crea esperienze di ricerca intuitive e orientate agli obiettivi** che riflettano la tua strategia di merchandising e le priorità stagionali.
-* **Utilizza il faceting dinamico basato sull&#39;intelligenza artificiale e la riclassificazione dei risultati** per adattare i risultati della ricerca in tempo reale in base al comportamento dell&#39;acquirente, aumentando il coinvolgimento e le vendite.
-* **Assicurati che gli elementi promozionali e ad alta priorità siano visualizzati in modo efficace** per allineare i risultati della ricerca agli obiettivi aziendali.
 
 ## Consigli
 

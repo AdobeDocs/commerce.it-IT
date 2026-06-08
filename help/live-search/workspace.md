@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
-source-wordcount: 2317
+source-wordcount: 2318
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Inizialmente l&#39;[ambito](https://experienceleague.adobe.com/docs/commerce-adm
 | [Cerca nel merchandising](rules.md) | Forma l’esperienza di ricerca con regole logiche che attivano le azioni pianificate. Puoi promuovere, seppellire, fissare o nascondere i prodotti per calibrare i risultati della ricerca e supportare gli obiettivi aziendali. |
 | [Merchandising categoria](category-merch.md) | Applica regole e merchandising intelligente a livello di categoria. |
 | [GraphQL](graphql.md) | Gli sviluppatori che hanno effettuato l’accesso all’amministratore del tuo archivio possono comporre e verificare le query con i dati del catalogo effettivo. Per ulteriori informazioni, vai a [Panoramica di GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) nella documentazione per gli sviluppatori di [!DNL Live Search]. |
-| [Impostazioni](settings.md) | Determina il modo in cui i valori del facet di prezzo vengono raggruppati per intervallo di prezzi nella vetrina e imposta il linguaggio di indicizzazione. |
+| [Impostazioni](settings.md) | Gestire la ricerca semantica (attivata per impostazione predefinita per [!DNL Adobe Commerce as a Cloud Service]), configurare il raggruppamento dei facet di prezzo per la vetrina e impostare il linguaggio di indicizzazione. |
 
 ## Imposta attributi come ricercabili
 

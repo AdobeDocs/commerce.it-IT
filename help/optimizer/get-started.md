@@ -22,9 +22,9 @@ topic_v2:
   - id: dba482e5-29a8-4127-afa2-c4b913512ef8
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 423b35b15e845e49b1cf36910ffbad775de9758c
+source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
 workflow-type: tm+mt
-source-wordcount: 1332
+source-wordcount: 1349
 ht-degree: 0%
 
 ---
@@ -124,6 +124,7 @@ I commercianti ottimizzano e personalizzano l’esperienza di acquisto tramite l
 | Attività | Descrizione | Collegamento |
 |---|---|---|
 | **Individuazione prodotto** | Configurare la ricerca e il filtro | [Panoramica sul merchandising](./merchandising/overview.md) |
+| **Impostazioni di ricerca** | Gestisci ricerca semantica (attivata per impostazione predefinita) e tuning facoltativo | [Impostazioni - Ricerca avanzata](./settings.md#advanced-search) e [Ricerca semantica](./setup/semantic-search.md) |
 | **Consigli** | Configurare i consigli di prodotto basati sull’intelligenza artificiale | [Consigli di prodotto](./merchandising/recommendations/overview.md) |
 | **Tracciamento delle prestazioni** | Monitorare le metriche di successo | [Metriche di successo](./manage-results/success-metrics.md) |
 
@@ -167,7 +168,7 @@ Una volta aperta l’app, passa facilmente da un ambiente all’altro, come sand
 
 >[!NOTE]
 >
->Per tornare a Commerce Cloud Manager per visualizzare i dettagli dell&#39;istanza o gestire le istanze, fare clic sull&#39;icona ![Icona per aprire Experience Cloud Applications](./assets/apps-icon.png) (Apps) nell&#39;angolo superiore sinistro della navigazione superiore di Commerce Optimizer.
+>Per tornare a Commerce Cloud Manager per visualizzare i dettagli dell&#39;istanza o gestire le istanze, fare clic sull&#39;icona ![Icona per aprire applicazioni Experience Cloud](./assets/apps-icon.png) (app) nell&#39;angolo superiore sinistro della navigazione superiore di Commerce Optimizer.
 
 ### Ottieni dettagli istanza
 

@@ -12,9 +12,9 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
 workflow-type: tm+mt
-source-wordcount: 101
+source-wordcount: 158
 ht-degree: 0%
 
 ---
@@ -22,3 +22,5 @@ ht-degree: 0%
 # Sinonimi
 
 I sinonimi consentono di espandere la query di ricerca in modo da includere parole che gli acquirenti potrebbero utilizzare e che differiscono da quelle incluse nel catalogo. Non vuoi perdere una vendita perché qualcuno sta cercando un &quot;divano&quot;, mentre il tuo prodotto è elencato come &quot;divano&quot;. È possibile acquisire un&#39;ampia gamma di termini di ricerca immettendo tutte le possibili parole che i clienti potrebbero utilizzare per trovare i prodotti.
+
+[La ricerca semantica](../../setup/semantic-search.md) è attivata per impostazione predefinita e può anche corrispondere a termini e linguaggio naturali simili comprendendo il significato anziché il testo esatto. La ricerca semantica può ridurre la necessità di alcuni sinonimi generici (ad esempio, &quot;divano&quot; e &quot;divano&quot;); si possono comunque desiderare sinonimi per termini specifici del marchio o altamente tecnici. È possibile utilizzare sinonimi e ricerche semantiche insieme.
