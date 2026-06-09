@@ -2,28 +2,16 @@
 title: Connettore Adobe Commerce Optimizer
 description: Scopri come collegare i dati dal cloud Commerce o dal progetto on-premise a Adobe Commerce Optimizer
 feature: Personalization, Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 TQID: https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: be4140fb3305b354e8a11463131182a3b571d2f2
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: b954ce1acf338978acad4fbb2ec5e01db174bbf9
 workflow-type: tm+mt
-source-wordcount: 1177
+source-wordcount: 1167
 ht-degree: 0%
 
 ---
@@ -52,7 +40,7 @@ Commerce rimane il tuo sistema di record per prodotti, prezzi e struttura del ca
 
 Il diagramma seguente illustra l’architettura end-to-end del connettore, da Adobe Commerce a Commerce Optimizer, fino a storefront e sistemi di pagamento.
 
-![Diagramma dell&#39;architettura end-to-end di Commerce Optimizer Connector Commerce](./assets/aco-connector-end2end-architecture.png){width="700" zoomable="yes"}
+![Diagramma dell&#39;architettura end-to-end del connettore Adobe Commerce Optimizer](./assets/aco-connector-end2end-architecture.png){width="700" zoomable="yes"}
 
 In questa architettura:
 
@@ -89,31 +77,18 @@ Questi flussi di lavoro descrivono come i team configurano e utilizzano il conne
 
 ### Configurazione iniziale {#initial-setup}
 
-1. **Installa il pacchetto del connettore in Adobe Commerce** utilizzando il Compositore:
 
-   `composer require adobe-commerce/commerce-data-export-aco-adapter`
+I passaggi di alto livello per l’installazione e la configurazione:
 
-1. **Configurare l&#39;autenticazione e i dettagli dell&#39;ambiente** in Commerce Admin o tramite CLI:
+1. Installa il pacchetto del connettore per Adobe Commerce.
 
-   ```terminal
-   bin/magento aco:config:init \
-     --org_id=<your-org> \
-     --tenant_id=<your-tenant> \
-     --client_id=<your-client-id> \
-     --client_secret=<your-secret> \
-     --region=na1 \
-     --type=production
-   ```
+1. Configurare l’autenticazione e i dettagli dell’ambiente.
 
-1. **Mappatura ambiti Commerce a Commerce Optimizer:**
+1. Mappare gli ambiti Commerce a Commerce Optimizer.
 
-   - Conferma quali siti Web e visualizzazioni dello store devono essere inclusi nell&#39;ambito
-   - Assicurati che i gruppi di clienti e le regole di prezzo siano modellati come previsto
+1. Verificare la connettività.
 
-1. **Verifica connettività:**
-
-   - Esegui una sincronizzazione dei test e verifica che Origini catalogo, Listini prezzi e prodotti iniziali siano visualizzati in Commerce Optimizer
-   - Utilizzare la pagina Stato di sincronizzazione feed dati in Commerce e le dashboard di sincronizzazione dati in Commerce Optimizer per la convalida
+Per istruzioni dettagliate, vedere [Passaggi di configurazione](./get-started.md#configuration-steps) nella guida _Introduzione_.
 
 ### Sincronizzazione dei dati in corso {#ongoing-sync}
 
@@ -121,11 +96,16 @@ Dopo la configurazione iniziale, il connettore supporta:
 
 - **Sincronizzazione catalogo completa** per la migrazione iniziale o modifiche strutturali di grandi dimensioni
 - **Sincronizzazioni delta** per aggiornamenti continui quando cambiano prodotti o prezzi
-- **Risincronizza comandi** per i feed di destinazione (incluse le categorie della versione 1.0.12):
+- **Risincronizza comandi** per i feed di destinazione
 
-   - `bin/magento saas:resync --feed=products`
-   - `bin/magento saas:resync --feed=prices`
-   - `bin/magento saas:resync --feed=categories`
+Per il connettore Adobe Commerce Optimizer sono disponibili i seguenti feed:
+
+- `products` - dati prodotti
+- `productAttributes` - metadati per attributi prodotto
+- `priceBooks` - listini prezzi
+- `prices` - prezzi dei prodotti
+- `categories` - dati categorie
+Per informazioni dettagliate sull&#39;utilizzo dell&#39;interfaccia della riga di comando (CLI) di Commerce per le operazioni di risincronizzazione, vedere il comando di risincronizzazione [CLI](../data-export/data-export-cli-commands.md#sync-using-cli-commands){target="blank"}.
 
 ### Configurare merchandising e vetrine {#merchandising-storefronts}
 

@@ -5,10 +5,10 @@ user-guide-description: Documentazione e risorse per  [!DNL Adobe Commerce Optim
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 8b93be7e618c7a93803e62eabb1cd38ebe8b45ba
+source-git-commit: 8d947f52d4a8be8fdb74675ff72145ded76d32bc
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 12%
+source-wordcount: '118'
+ht-degree: 11%
 
 ---
 
@@ -50,6 +50,7 @@ ht-degree: 12%
       - [Tipi](./merchandising/synonyms/type.md)
       - [Best practice](./merchandising/synonyms/best-practice.md)
 - Configurazione store {#setup}
+   - [Origini del catalogo](./setup/catalog-source.md)
    - [Visualizzazioni catalogo](./setup/catalog-view.md)
    - [Livelli del catalogo](./setup/catalog-layer.md)
    - [Criteri](./setup/policies.md)
