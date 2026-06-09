@@ -22,7 +22,7 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
 source-wordcount: 2205
 ht-degree: 0%
@@ -248,7 +248,7 @@ Crea una nuova visualizzazione catalogo per il dealer *Celport* e collega i segu
 
    - **Nome** = *Celport*
    - **Origini catalogo** = *en-US*
-   - **Criteri** (utilizzare l&#39;elenco a discesa) = *Marchi East Coast Inc*; *Categorie parte Celport*; *Marchio*; *Modello*
+   - **Criteri** (usa elenco a discesa) = *Marchi East Coast Inc*; *Categorie parte Celport*; *Marchio*; *Modello*
                          
 1. Fare clic su **[!UICONTROL Add]** per creare la visualizzazione del catalogo.
 
@@ -299,7 +299,7 @@ L&#39;ultima parte di questo tutorial prevede l&#39;aggiornamento della vetrina 
             "base-currency-code": "USD",
             "environment": "Production",
             "store-id": 1,
-            "store-name": "ACO Demo",
+            "store-name": "Commerce Optimizer Demo",
             "store-url": "https://www.aemshop.net",
             "store-view-id": 1,
             "store-view-name": "Default Store View",
@@ -332,14 +332,14 @@ L&#39;ultima parte di questo tutorial prevede l&#39;aggiornamento della vetrina 
 
 1. Sostituire il valore `ac-price-book-id` con `"east_coast_inc"`.
 
-   Dopo aver apportato queste modifiche, il file `config.json` dovrebbe essere simile al seguente, con i segnaposto `ACO-tenant-id` e `celport-catalog-view-id` sostituiti dai valori:
+   Dopo aver apportato queste modifiche, il file `config.json` dovrebbe essere simile al seguente, con i segnaposto `commerce-optimizer-tenant-id` e `celport-catalog-view-id` sostituiti dai valori:
 
    ```json
    {
      "public": {
         "default": {
         "commerce-core-endpoint": "https://www.aemshop.net/graphql",
-        "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/{{ACO-tenant-id}}/graphql",
+        "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/{{commerce-optimizer-tenant-id}}/graphql",
         "headers": {
             "cs": {
                 "ac-view-id": "{{celport-catalog-view-id}}",
@@ -351,7 +351,7 @@ L&#39;ultima parte di questo tutorial prevede l&#39;aggiornamento della vetrina 
                 "base-currency-code": "USD",
                 "environment": "Production",
                 "store-id": 1,
-                "store-name": "ACO Demo",
+                "store-name": "Commerce Optimizer Demo",
                 "store-url": "https://www.aemshop.net",
                 "store-view-id": 1,
                 "store-view-name": "Default Store View",

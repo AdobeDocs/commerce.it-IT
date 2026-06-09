@@ -4,9 +4,9 @@ description: Scopri come utilizzare AEM Assets per le immagini di prodotto in [!
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
 badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ L’integrazione ha due flussi principali:
 
 * **Da AEM Assets**: quando una risorsa viene approvata, rifiutata o rimossa, l&#39;evento passa attraverso la pipeline di Adobe al servizio di integrazione di Assets. Il servizio associa le risorse ai prodotti utilizzando una strategia di corrispondenza `match-by-SKU` o personalizzata, quindi invia le mappature `product-asset` a [!DNL Commerce Optimizer], dove vengono memorizzate come livelli di prodotto.
 
-* **Da ACO**: quando un prodotto viene aggiornato in [!DNL Commerce Optimizer], l&#39;evento passa attraverso la pipeline di Adobe al servizio di integrazione di Assets. Il servizio sincronizza con ACO eventuali mappature di risorse corrispondenti.
+* **Da[!DNL Commerce Optimizer]**: quando un prodotto viene aggiornato in [!DNL Commerce Optimizer], l&#39;evento passa attraverso la pipeline di Adobe al servizio di integrazione di Assets. Il servizio sincronizza eventuali mapping di risorse corrispondenti in [!DNL Commerce Optimizer].
 
 Le immagini aggiornate sono disponibili tramite le API vetrina (Catalog Service, Live Search, Product Recommendations).
 

@@ -19,9 +19,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 4d08de7974c79dc6fe20366e0164f6078e83be5f
 workflow-type: tm+mt
-source-wordcount: 1384
+source-wordcount: 1216
 ht-degree: 0%
 
 ---
@@ -37,23 +37,13 @@ Le visualizzazioni catalogo definiscono il modo in cui il catalogo dei prodotti 
 - **Quali prodotti sono visibili** in base alla struttura aziendale (marchi, aree geografiche, rivenditori)
 - **Prezzi visualizzati** tramite listini prezzi collegati
 - **Come vengono filtrati i prodotti** utilizzando i criteri (attributi come marchio, modello, categoria)
-- **Origine del catalogo utilizzata** in base ad attributi quali le impostazioni locali
+- **Che cosa viene utilizzata [l&#39;origine del catalogo](catalog-source.md)** in base ad attributi come le impostazioni locali
 
 Considera le viste catalogo come diversi &quot;obiettivi&quot; attraverso i quali i clienti vedono il tuo catalogo. Ad esempio:
 
 - La vista del catalogo del dealer mostra solo i prodotti disponibili per quel dealer specifico
 - Una vista del catalogo regionale potrebbe mostrare prodotti e prezzi specifici per un’area geografica
 - Una vista catalogo marchio può mostrare solo i prodotti di una particolare marca
-
-### Visualizzazione catalogo e origine catalogo
-
-Di seguito viene illustrata la differenza tra una vista catalogo e un&#39;origine catalogo:
-
-- **Visualizzazione catalogo**: visualizzazione configurata del catalogo per esigenze aziendali specifiche. Quando crei una visualizzazione catalogo, selezioni l&#39;origine del catalogo (o le impostazioni locali) da utilizzare, quindi aggiungi [criteri](policies.md) per filtrare i prodotti visibili e collega [listini prezzi](pricebooks.md) per controllare la determinazione prezzi. Un&#39;unica origine di catalogo può alimentare molte visualizzazioni di catalogo (ad esempio, un&#39;origine `en-US` con visualizzazioni di catalogo separate per marchi o aree geografiche diversi). Considera una visualizzazione catalogo come *il modo* in cui esponi tali dati a una vetrina, un canale o un pubblico.
-
-- **Origine catalogo**: il contesto dei dati sottostante che fornisce le informazioni sul prodotto. Un&#39;origine catalogo è in genere una lingua (ad esempio, `en-US`, `fr-CA`) o un sistema esterno come un PIM o un ERP. [!DNL Adobe Commerce Optimizer] acquisisce i dati dei prodotti da una o più origini di catalogo in un catalogo di base unificato. Considera un&#39;origine del catalogo come *da cui* provengono i dati del catalogo non elaborati.
-
-In sintesi, **origine catalogo** è il contesto dati da cui si effettua il pull, mentre **visualizzazione catalogo** è il contesto filtrato, con prezzi e organizzato che si presenta agli acquirenti o ai canali.
 
 ## Creare una vista catalogo
 
@@ -74,7 +64,7 @@ Prima di creare una vista catalogo, assicurati di disporre di:
 1. Configura i dettagli di visualizzazione del catalogo:
 
    - **Nome** - Immettere il nome della visualizzazione del catalogo, ad esempio `Celport`. &#x200B;
-   - **Origini catalogo** - Selezionare l&#39;origine del catalogo (impostazioni locali), ad esempio `en-US`.
+   - **Origini catalogo** - Selezionare l&#39;[origine catalogo](catalog-source.md), ad esempio `en-US`.
    - **Livelli catalogo**-Rivedi i livelli acquisiti e la priorità.
    - **Criteri**: utilizzare il menu a discesa per selezionare i criteri rilevanti. Ad esempio, &quot;Marchio&quot;, &quot;Modello&quot;. &#x200B;Assicurarsi di avere già [creato un criterio](policies.md).
 
@@ -217,6 +207,7 @@ I dati del catalogo filtrati vengono consegnati a varie destinazioni, tra cui ve
 
 ## Altri argomenti correlati
 
+- [Origini catalogo](catalog-source.md) - Definisci l&#39;ambito di autorizzazione di prodotti, attributi e categorie per il comportamento di ricerca, filtro e ordinamento
 - [Livelli catalogo](catalog-layer.md) - Scopri come modificare i dati di prodotto senza modificare l&#39;origine originale
 - [Criteri](policies.md) - Crea criteri per filtrare i prodotti nelle visualizzazioni catalogo
 - [Listini prezzi](pricebooks.md) - Gestisce le strutture di determinazione prezzi per segmenti cliente diversi

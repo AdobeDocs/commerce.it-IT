@@ -14,9 +14,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: 483
+source-wordcount: 484
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Se non trovi prodotti specifici nella pagina **Sincronizzazione dati**, devi avv
 
 ## Monitorare lo stato di sincronizzazione dei dati
 
-Per i progetti che utilizzano Adobe Commerce come origine dati a monte tramite il connettore Commerce Optimizer, è possibile monitorare il processo di esportazione dei dati e avviare le operazioni di risincronizzazione dalla [pagina Stato sincronizzazione feed dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in Amministrazione Commerce.
+Per i progetti che utilizzano Adobe Commerce come origine dati a monte tramite il connettore Adobe Commerce Optimizer, è possibile monitorare il processo di esportazione dei dati e avviare le operazioni di risincronizzazione dalla [pagina Stato sincronizzazione feed dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in Amministrazione Commerce.
 
 ## Argomenti correlati
 
