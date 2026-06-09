@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4bd744e26afca4519fb1c04edcb7d2a118369ff9
+source-git-commit: acc520f67bdd1bdafd34b356b59bb32145192497
 workflow-type: tm+mt
-source-wordcount: 2782
+source-wordcount: 2682
 ht-degree: 0%
 
 ---
@@ -468,7 +468,7 @@ Utilizza API Mesh e l’API core di GraphQL per:
 
 ![New](../assets/new.svg) Catalog Service supporta il flag `inStock` per le varianti di prodotto.
 ![Nuovo](../assets/new.svg) I campi `urlKey` e `externalId` sono stati aggiunti allo schema di GraphQL.
-Sono ora supportati ![Nuovi](../assets/new.svg) prodotti scaricabili e gift card.
+![Nuovi](../assets/new.svg) prodotti scaricabili e gift card sono ora supportati.
 
 ### Settembre 2023
 
@@ -477,7 +477,7 @@ Sono ora supportati ![Nuovi](../assets/new.svg) prodotti scaricabili e gift card
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.4 e successive
 
-![New](../assets/new.svg) Catalog Service ora utilizza l&#39;indicizzazione dei prezzi SaaS [.](../price-index/price-indexing.md)
+![New](../assets/new.svg) Catalog Service ora utilizza l&#39;indicizzazione dei prezzi SaaS [&#128279;](../price-index/price-indexing.md).
 ![Correzione](../assets/fix.svg) Questa versione contiene correzioni di bug e miglioramenti sul lato servizio.
 
 ### Luglio 2023
@@ -566,8 +566,8 @@ Sono ora supportati ![Nuovi](../assets/new.svg) prodotti scaricabili e gift card
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.x e successive
 
 ![Nuovo](../assets/new.svg) supporto per prodotti raggruppati e raggruppati.
-![Nuovo](../assets/new.svg) Aggiunte Override Di Visibilità B2B. È ora possibile cercare i prodotti e aggiungerli al carrello per gruppi di clienti specifici.
-Il servizio ![Correzione](../assets/fix.svg) è ora più stabile e offre prestazioni migliorate.
+![New](../assets/new.svg) Aggiunte Override Di Visibilità B2B. È ora possibile cercare i prodotti e aggiungerli al carrello per gruppi di clienti specifici.
+Il servizio ![Fix](../assets/fix.svg) è ora più stabile e offre prestazioni migliorate.
 
 ### Settembre 2022
 
@@ -607,6 +607,16 @@ Aggiornamenti al metapacchetto PHP del servizio catalogo (`magento/catalog-servi
 - Per i clienti di Adobe Commerce as a Cloud Service, l’ultima versione viene installata nel tuo ambiente.
 
 - Per Adobe Commerce on-premise o sul cloud, Adobe consiglia di utilizzare Composer per aggiornare il metapacchetto Catalog Service negli ambienti cloud all’ultima versione.
+
+### Versione v3.4.0
+
+**Data di rilascio**: 8 giugno 2026
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.4 e successive
+
+![Nuovo](../assets/new.svg) **Supporto per il monitoraggio dello stato di sincronizzazione dei feed di dati**. Sono state aggiornate le dipendenze del metapacchetto di Catalog Service per includere l&#39;estensione dello stato di Data Exporter (`magento/module-data-exporter-status`). In questo modo [il monitoraggio dello stato di sincronizzazione del feed dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) verrà attivato dall&#39;amministratore di Commerce senza richiedere ulteriori passaggi di installazione o configurazione
+
+![Nuovo](../assets/new.svg) Sono state aggiornate le dipendenze per mantenere la compatibilità tra Catalog Service e lo stack di Commerce.
 
 ### Versione v3.3.0
 
