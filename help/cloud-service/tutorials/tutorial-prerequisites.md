@@ -7,16 +7,12 @@ feature-set: Commerce
 role: Developer
 level: Intermediate
 type: Tutorial
-TQID: https://experienceleague.adobe.com/UvtVXuUjbanuVWqNG3-bYQh6IzY1OuDjGYpojtXHMHY
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+TQID: 'https://experienceleague.adobe.com/aF6iiuFf5sCDyT0gmYmh8h94ZhMWr0DbIKrG1pI0G6I'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
 source-wordcount: 1291
 ht-degree: 0%
@@ -407,7 +403,7 @@ I seguenti elementi sono necessari per completare la sezione [storefront](./rati
 
 * [Google Chrome](https://www.google.com/chrome/) - Necessario per testare la vetrina
 
-* Progetto vetrina connesso all&#39;istanza [!DNL Commerce]. Se non disponi di un progetto storefront, segui i passaggi descritti in [Creare una vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=it){target="_blank"}, inclusa la sezione [Collegare l&#39;archivio ai dati di e-commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=it#link-repo-to-commerce-data){target="_blank"}.
+* Progetto vetrina connesso all&#39;istanza [!DNL Commerce]. Se non disponi di un progetto storefront, segui i passaggi descritti in [Creare una vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}, inclusa la sezione [Collegare l&#39;archivio ai dati di e-commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}.
 
 ### Clona l’archivio della vetrina
 

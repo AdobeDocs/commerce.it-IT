@@ -1,25 +1,15 @@
 ---
 title: Servizio RAG documentazione
 description: Scopri come utilizzare il servizio di ricerca della documentazione basato sull’intelligenza artificiale per lo sviluppo di Adobe Commerce.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 role: Developer
 hide: true
-TQID: https://experienceleague.adobe.com/eGNktkTH-i2HV8iEFTfSFtGlsyr4ZUVuRXxj9XcwbZk
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+TQID: 'https://experienceleague.adobe.com/Sh2qzDm-gTh-ugtuHxLq8maftPM4vVyeFNf0RI31rPY'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
 source-wordcount: 1027
 ht-degree: 0%
@@ -44,9 +34,9 @@ Nella tabella seguente viene descritta la documentazione attualmente indicizzata
 
 | Categoria | Indice | Contenuto incluso | Parole chiave |
 |-------|---------|---------|------------------------|
-| [Vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it) | commerce-storefront-docs | Edge Delivery Services, drop-in, componenti storefront | vetrina, consegna, EDS, elenco prodotti, pagamento |
+| [Vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services, drop-in, componenti storefront | vetrina, consegna, EDS, elenco prodotti, pagamento |
 | [Estensibilità](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhook, eventi, estensioni, integrazioni | webhook, evento, estensione, mesh API, GraphQL |
-| [Commerce](https://experienceleague.adobe.com/it/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce core (catalogo, clienti, ordini) | catalogo, prodotto, cliente, ordine, inventario |
+| [Commerce](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce core (catalogo, clienti, ordini) | catalogo, prodotto, cliente, ordine, inventario |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, azioni di runtime, estensioni dell’interfaccia utente | app builder, azione runtime, React Spectrum |
 
 Per ulteriori informazioni sulla selezione dell&#39;indice, consultare [Selezione automatica dell&#39;indice](#automatic-index-selection-recommended) e [Selezione esplicita dell&#39;indice](#explicit-index-selection).

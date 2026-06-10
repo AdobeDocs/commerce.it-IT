@@ -8,9 +8,13 @@ role: Developer
 level: Intermediate
 type: Tutorial
 hide: true
-source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
+TQID: 'https://experienceleague.adobe.com/vsy2xSV-3oVjPNc0JUzsunl3ooiWjWrWo1poXHB1TgY'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
-source-wordcount: '2533'
+source-wordcount: 2533
 ht-degree: 0%
 
 ---
@@ -21,7 +25,7 @@ Questa esercitazione ti guida attraverso la creazione di un&#39;estensione che c
 
 Vengono create due parti:
 
-- **Estensione App Builder**: API REST con operazioni GET e POST per creare e visualizzare contenuti di revisione e domande e risposte dei prodotti con convalida, impaginazione e persistenza in `aio-lib-state`.
+- **Estensione App Builder**: un&#39;API REST con operazioni GET e POST per creare e visualizzare contenuti di revisione e domande e risposte con convalida, impaginazione e persistenza in `aio-lib-state`.
 - **Integrazione con Storefront**: blocco di revisione dei prodotti nel PDP che visualizza le recensioni e le domande e risposte, con moduli che consentono agli acquirenti di inviare recensioni, domande e risposte.
 
 >[!NOTE]
@@ -52,8 +56,8 @@ Se uno dei comandi precedenti non restituisce i risultati previsti, vedere i [pr
 
 Inoltre, verifica quanto segue:
 
-- È presente un&#39;istanza [!DNL Adobe Commerce as a Cloud Service] con dati di prodotto. Consulta [Istanze del servizio Commerce Cloud](https://experienceleague.adobe.com/it/docs/commerce/cloud-service/overview){target="_blank"}.
-- Si dispone di un progetto vetrina connesso all&#39;istanza [!DNL Commerce]. In caso contrario, seguire i passaggi descritti in [Creare una vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=it){target="_blank"}.
+- È presente un&#39;istanza [!DNL Adobe Commerce as a Cloud Service] con dati di prodotto. Consulta [Istanze del servizio Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}.
+- Si dispone di un progetto vetrina connesso all&#39;istanza [!DNL Commerce]. In caso contrario, seguire i passaggi descritti in [Creare una vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}.
 - CLI `aem` installato:
 
   ```bash
@@ -135,7 +139,7 @@ L&#39;agente restituisce una serie di domande a cui deve rispondere prima di pot
 1. **API REST — host e consumatori** — L&#39;API REST CRUD deve far parte di questa app App Builder (azioni web su Adobe I/O Runtime) che le vetrine chiamano? Chi lo chiamerà (EDS Storefront, custom/headless storefront, o entrambi)? Hai bisogno di un accesso CORS o pubblico (non autenticato) oppure i chiamanti useranno le chiavi API o OAuth?
 1. **Modello dati** — Cosa deve rappresentare una &quot;revisione&quot; o una &quot;domanda&quot;? Identificatore cliente (solo e-mail o anche ID cliente)? Identificatore del prodotto (solo SKU o SKU + visualizzazione punto vendita)? Lo stesso cliente può inviare più recensioni per la stessa SKU?
 1. **Persistenza** - `aio-lib-state` è il posto giusto per mantenere le recensioni e le domande e risposte oppure si dispone di un archivio esterno? Il progetto deve presupporre più tenant o tenant singolo?
-1. **Semantica di impaginazione**: per Q&amp;A GET, `limit` è applicabile solo alle domande (con risposte nidificate) o al conteggio totale di domande più risposte?
+1. **Semantica di impaginazione** - Per Q&amp;A GET, `limit` è applicabile solo alle domande (con risposte nidificate) o al conteggio totale di domande più risposte?
 
 **Risposte di esempio:**
 
@@ -235,7 +239,7 @@ Crea un file di dati fittizio e utilizza curl per precompilare l’API in modo d
      -d '{"sku":"ADB153","type":"answer","questionId":"<QUESTION-UUID>","content":"Yes, it comes in blue and red.","user":"seller@example.com"}'
    ```
 
-1. Verifica i dati con le richieste di GET:
+1. Verifica i dati con le richieste GET:
 
    ```bash
    curl -s "$API_URL/reviews-get?sku=ADB153"
