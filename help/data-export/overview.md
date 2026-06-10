@@ -4,31 +4,24 @@ description: Scopri come utilizzare l’estensione  [!DNL data export] per i ser
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
 TQID: https://experienceleague.adobe.com/OHE1GBUEd8hHFPwFlO9fJa3Y0wK2xZ0HOYnwUn0-DSk
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
 workflow-type: tm+mt
-source-wordcount: 569
+source-wordcount: 571
 ht-degree: 0%
 
 ---
 
 # Guida [!DNL SaaS Data Export]
 
-[!DNL SaaS data export] sincronizza i dati tra un&#39;istanza di Adobe Commerce e i servizi Commerce connessi. Quando si aggiunge Live Search, Product Recommendations o Catalog Service a un&#39;installazione di Adobe Commerce, l&#39;estensione [!DNL Data export] viene installata automaticamente.
+[!DNL SaaS data export] sincronizza i dati tra un&#39;istanza di Adobe Commerce e i servizi Commerce connessi. Quando aggiungi Live Search, Product Recommendations, Catalog Service o [!DNL Adobe Commerce Optimizer Connector] a un&#39;installazione di Adobe Commerce, l&#39;estensione [!DNL Data export] viene installata automaticamente.
 
 >[!NOTE]
 >
->Se installi il connettore Adobe Commerce Optimizer, viene utilizzata la stessa estensione per l’esportazione dei dati per inviare i feed di catalogo e determinazione prezzi a Adobe Commerce Optimizer utilizzando il Composable Catalog Data Model (CCDM). Per informazioni dettagliate sull&#39;architettura e sulla configurazione, consulta la [guida del connettore Adobe Commerce Optimizer](../aco-connector/overview.md).
+>Se installi [!DNL Adobe Commerce Optimizer Connector], la stessa estensione [!DNL Data Export] raccoglie il catalogo e i feed di determinazione prezzi da [!DNL Adobe Commerce]. Il connettore esegue quindi la mappatura e invia tali feed a [!DNL Adobe Commerce Optimizer] utilizzando il Composable Catalog Data Model (CCDM). Consulta la [[!DNL Adobe Commerce Optimizer Connector] panoramica](../aco-connector/overview.md) per la configurazione e l&#39;architettura e la [pipeline di sincronizzazione del connettore](../aco-connector/connector-sync-pipeline.md) per il comportamento di sincronizzazione dopo l&#39;esportazione.
 
 L&#39;esportazione di dati SaaS raccoglie ed esporta vari tipi di dati, denominati _feed_, che aggregano tipi specifici di informazioni. A seconda dei servizi Commerce installati, i feed di esportazione dei dati SaaS includono:
 
@@ -41,13 +34,13 @@ L’esportazione di dati SaaS viene distribuita come estensione PHP. Supporta di
 
 - **Sincronizzazione manuale dall&#39;amministratore o dalla riga di comando**
 
-   - Il [dashboard di gestione dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) in Commerce Admin fornisce una visualizzazione grafica dello stato di sincronizzazione che mostra i dati del prodotto sincronizzati correttamente con i servizi commerce. È possibile utilizzare il dashboard per eseguire una risincronizzazione completa (_sincronizzazione completa_) di tutti i feed. Tuttavia, Adobe consiglia di eseguire la sincronizzazione completa solo la prima volta che si connette Adobe Commerce a un servizio Commerce. Vedere [Processo di sincronizzazione](data-synchronization.md).
+   - Il [dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) in Commerce Admin fornisce una visualizzazione grafica dello stato di sincronizzazione che mostra i dati del prodotto sincronizzati correttamente con i servizi commerce. È possibile utilizzare il dashboard per eseguire una risincronizzazione completa (_sincronizzazione completa_) di tutti i feed. Tuttavia, Adobe consiglia di eseguire la sincronizzazione completa solo la prima volta che si connette Adobe Commerce a un servizio Commerce. Vedere [Processo di sincronizzazione](data-synchronization.md).
 
      {{aco-data-sync-verification}}
 
-   - La pagina [Stato sincronizzazione feed dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) fornisce informazioni in tempo reale sullo stato e sulle prestazioni dei feed di esportazione dei dati che trasferiscono i dati di prodotti e categorie da Commerce a servizi esterni quali Product Recommendations, Live Search, Catalog Service o Adobe Commerce Optimizer.
+   - La pagina [Stato sincronizzazione feed dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) fornisce informazioni in tempo reale sullo stato e sulle prestazioni dei feed di esportazione dei dati che trasferiscono i dati di prodotti e categorie da Commerce a servizi esterni quali Product Recommendations, Live Search, Catalog Service o Adobe Commerce Optimizer.
 
-   - Lo strumento da riga di comando [Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) fornisce comandi per sincronizzare feed specifici e include opzioni aggiuntive per personalizzare l&#39;elaborazione dei feed.
+   - Lo strumento da riga di comando [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) fornisce comandi per sincronizzare feed specifici e include opzioni aggiuntive per personalizzare l&#39;elaborazione dei feed.
 
 - **Sincronizzazione automatica con processi cron**
 
