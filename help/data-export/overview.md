@@ -15,20 +15,20 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
 workflow-type: tm+mt
-source-wordcount: 569
+source-wordcount: 571
 ht-degree: 0%
 
 ---
 
 # Guida [!DNL SaaS Data Export]
 
-[!DNL SaaS data export] sincronizza i dati tra un&#39;istanza di Adobe Commerce e i servizi Commerce connessi. Quando si aggiunge Live Search, Product Recommendations o Catalog Service a un&#39;installazione di Adobe Commerce, l&#39;estensione [!DNL Data export] viene installata automaticamente.
+[!DNL SaaS data export] sincronizza i dati tra un&#39;istanza di Adobe Commerce e i servizi Commerce connessi. Quando aggiungi Live Search, Product Recommendations, Catalog Service o [!DNL Adobe Commerce Optimizer Connector] a un&#39;installazione di Adobe Commerce, l&#39;estensione [!DNL Data export] viene installata automaticamente.
 
 >[!NOTE]
 >
->Se installi il connettore Adobe Commerce Optimizer, viene utilizzata la stessa estensione per l’esportazione dei dati per inviare i feed di catalogo e determinazione prezzi a Adobe Commerce Optimizer utilizzando il Composable Catalog Data Model (CCDM). Per informazioni dettagliate sull&#39;architettura e sulla configurazione, consulta la [guida del connettore Adobe Commerce Optimizer](../aco-connector/overview.md).
+>Se installi [!DNL Adobe Commerce Optimizer Connector], la stessa estensione [!DNL Data Export] raccoglie il catalogo e i feed di determinazione prezzi da [!DNL Adobe Commerce]. Il connettore esegue quindi la mappatura e invia tali feed a [!DNL Adobe Commerce Optimizer] utilizzando il Composable Catalog Data Model (CCDM). Consulta la [[!DNL Adobe Commerce Optimizer Connector] panoramica](../aco-connector/overview.md) per la configurazione e l&#39;architettura e la [pipeline di sincronizzazione del connettore](../aco-connector/connector-sync-pipeline.md) per il comportamento di sincronizzazione dopo l&#39;esportazione.
 
 L&#39;esportazione di dati SaaS raccoglie ed esporta vari tipi di dati, denominati _feed_, che aggregano tipi specifici di informazioni. A seconda dei servizi Commerce installati, i feed di esportazione dei dati SaaS includono:
 
