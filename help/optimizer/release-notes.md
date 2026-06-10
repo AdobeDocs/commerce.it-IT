@@ -4,21 +4,15 @@ description: Informazioni sulla versione mensili per  [!DNL Adobe Commerce Optim
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 29b54d68ec20d000f4cc1ffe8080c5919457ff8c
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: bd4c59c451d7b08de7dc6ef00da2556fb9a6696f
 workflow-type: tm+mt
-source-wordcount: 1191
+source-wordcount: 1319
 ht-degree: 0%
 
 ---
@@ -31,6 +25,22 @@ Le seguenti note sulla versione contengono aggiornamenti a [!DNL Adobe Commerce 
 * Aggiornamenti a [API REST per l&#39;acquisizione dei dati](https://developer.adobe.com/commerce/services/reference/rest/) e [API GraphQL per il recupero dei dati del catalogo vetrina](https://developer.adobe.com/commerce/services/reference/graphql/).
 
   {{aco-api-updates-and-dropins}}
+
+## Giugno 2026
+
+>[!BEGINSHADEBOX]
+
+### Ricerca semantica
+
+[!DNL Adobe Commerce Optimizer] ora supporta **[la ricerca semantica]** nella scheda [**Ricerca avanzata**](./settings.md#advanced-search) in **[!UICONTROL Settings]**. La ricerca semantica utilizza l’intelligenza artificiale per far corrispondere i prodotti in base al significato e al contesto, insieme alla ricerca per parole chiave, riducendo le pagine di ricerca vuote per le query in linguaggio naturale. Per impostazione predefinita, questa opzione è abilitata per i cataloghi in inglese idonei. Facoltativamente, è possibile regolare **[!UICONTROL Semantic boost]**, **[!UICONTROL Similarity threshold]** e **[!UICONTROL Fuzzy search]** nella stessa scheda. Non sono richieste modifiche alla configurazione degli attributi o alla vetrina. [Ulteriori informazioni](./setup/semantic-search.md).
+
+### Filtri per prezzi consigli (beta)
+
+Le unità di raccomandazione del prodotto ora supportano [**filtri prezzo**](./merchandising/recommendations/filters.md#price) nel passaggio **[!UICONTROL Filter products]**. Includi o escludi i candidati utilizzando gli intervalli minimo e massimo di **static** o le regole di **dynamic** nella pagina dei dettagli del prodotto che confrontano i prodotti consigliati con il **prezzo calcolato finale** del prodotto attualmente visualizzato dal listino prezzi attivo della vetrina. Le regole di prezzo filtrano il set di candidati. Non riclassificano i prodotti. [Ulteriori informazioni](./merchandising/recommendations/filters.md#price).
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## Maggio 2026
 
@@ -87,7 +97,7 @@ _29 aprile 2026_
 
 <!--v1.52 release-->
 
-**Richiesta batch richieste**: l&#39;API GraphQL ora applica un massimo di 100 SKU per richiesta quando si recuperano i dati del catalogo. Vedi [limiti e limiti documentati](https://experienceleague.adobe.com/it/docs/commerce/optimizer/boundaries-limits#product-discovery).
+**Richiesta batch richieste**: l&#39;API GraphQL ora applica un massimo di 100 SKU per richiesta quando si recuperano i dati del catalogo. Vedi [limiti e limiti documentati](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery).
 
 <!--DATA-7156-->
 
@@ -281,7 +291,7 @@ _23 settembre 2025_
 
 ### Area geografica UE ora disponibile
 
-L’area di produzione UE (**eu1**) è disponibile per le organizzazioni IMS. Quando [aggiungi un&#39;istanza  [!DNL Commerce Optimizer] &#x200B;](./get-started.md#step-1-create-an-instance) in Cloud Manager, scegli **[!UICONTROL European Union]** come **[!UICONTROL Region]** (solo produzione).
+L’area di produzione UE (**eu1**) è disponibile per le organizzazioni IMS. Quando [aggiungi un&#39;istanza  [!DNL Commerce Optimizer] ](./get-started.md#step-1-create-an-instance) in Cloud Manager, scegli **[!UICONTROL European Union]** come **[!UICONTROL Region]** (solo produzione).
 
 Gli URL di produzione di base per la regione dell’Unione Europea sono:
 
