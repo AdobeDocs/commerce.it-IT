@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 29b54d68ec20d000f4cc1ffe8080c5919457ff8c
+source-git-commit: bd4c59c451d7b08de7dc6ef00da2556fb9a6696f
 workflow-type: tm+mt
-source-wordcount: 1191
+source-wordcount: 1319
 ht-degree: 0%
 
 ---
@@ -31,6 +31,22 @@ Le seguenti note sulla versione contengono aggiornamenti a [!DNL Adobe Commerce 
 * Aggiornamenti a [API REST per l&#39;acquisizione dei dati](https://developer.adobe.com/commerce/services/reference/rest/) e [API GraphQL per il recupero dei dati del catalogo vetrina](https://developer.adobe.com/commerce/services/reference/graphql/).
 
   {{aco-api-updates-and-dropins}}
+
+## Giugno 2026
+
+>[!BEGINSHADEBOX]
+
+### Ricerca semantica
+
+[!DNL Adobe Commerce Optimizer] ora supporta **[la ricerca semantica]** nella scheda [**Ricerca avanzata**](./settings.md#advanced-search) in **[!UICONTROL Settings]**. La ricerca semantica utilizza l’intelligenza artificiale per far corrispondere i prodotti in base al significato e al contesto, insieme alla ricerca per parole chiave, riducendo le pagine di ricerca vuote per le query in linguaggio naturale. Per impostazione predefinita, questa opzione è abilitata per i cataloghi in inglese idonei. Facoltativamente, è possibile regolare **[!UICONTROL Semantic boost]**, **[!UICONTROL Similarity threshold]** e **[!UICONTROL Fuzzy search]** nella stessa scheda. Non sono richieste modifiche alla configurazione degli attributi o alla vetrina. [Ulteriori informazioni](./setup/semantic-search.md).
+
+### Filtri per prezzi consigli (beta)
+
+Le unità di raccomandazione del prodotto ora supportano [**filtri prezzo**](./merchandising/recommendations/filters.md#price) nel passaggio **[!UICONTROL Filter products]**. Includi o escludi i candidati utilizzando gli intervalli minimo e massimo di **static** o le regole di **dynamic** nella pagina dei dettagli del prodotto che confrontano i prodotti consigliati con il **prezzo calcolato finale** del prodotto attualmente visualizzato dal listino prezzi attivo della vetrina. Le regole di prezzo filtrano il set di candidati. Non riclassificano i prodotti. [Ulteriori informazioni](./merchandising/recommendations/filters.md#price).
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## Maggio 2026
 
