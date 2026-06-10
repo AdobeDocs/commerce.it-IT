@@ -2,7 +2,7 @@
 title: '[!DNL Adobe Commerce Optimizer Connector]'
 description: Scopri l'integrazione di  [!DNL Adobe Commerce Optimizer Connector] tra [!DNL Adobe Commerce] e [!DNL Adobe Commerce Optimizer] per la sincronizzazione del catalogo, la ricerca e la distribuzione in vetrina.
 feature: Integration, Storefront, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA'
 product_v2:
@@ -118,7 +118,7 @@ Per ulteriori dettagli, vedi i seguenti argomenti:
 
 ### Configurare merchandising e vetrine {#merchandising-storefronts}
 
-Quando i dati di [!DNL Adobe Commerce] saranno disponibili in [!DNL Adobe Commerce Optimizer], utilizza [[!DNL Commerce Optimizer] Studio](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview#quick-tour) per collegare le esperienze di merchandising e vetrina al catalogo sincronizzato.
+Quando i dati di [!DNL Adobe Commerce] saranno disponibili in [!DNL Adobe Commerce Optimizer], utilizza [[!DNL Commerce Optimizer] Studio](https://experienceleague.adobe.com/it/docs/commerce/optimizer/overview#quick-tour) per collegare le esperienze di merchandising e vetrina al catalogo sincronizzato.
 
 **Per configurare merchandising e storefront in [!DNL Commerce Optimizer] Studio:**
 
