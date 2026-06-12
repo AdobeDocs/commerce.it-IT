@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->La funzionalità seguente è in [versione beta privata](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
+>La funzionalità seguente è in [versione beta privata](https://experienceleague.adobe.com/it/docs/commerce-operations/release/beta).
 
 [!DNL Live Search] classifica i risultati in modo che gli acquirenti possano vedere per primi i prodotti più rilevanti. Il servizio fornisce l&#39;impulso più forte ai prodotti il cui testo del catalogo **corrisponde** a quello che l&#39;acquirente digita, quindi favorisce le corrispondenze in cui i termini di query appaiono insieme in modo significativo e infine include corrispondenze più ampie (compreso il comportamento che supporta la corrispondenza in stile di completamento automatico).
 
@@ -81,7 +81,7 @@ La rilevanza non è determinata solo dalla corrispondenza delle frasi. Diversi s
 - Incrementa da **esatta / vicino** corrispondenza frase
 - Incrementa quando **tutti i termini di query** vengono visualizzati nel campo **same**
 - **Classificazione intelligente** (se abilitata), che combina rilevanza testuale e segnali comportamentali. Vedere [Funzionamento del punteggio di classificazione intelligente](rules-add.md#how-intelligent-ranking-scoring-works)
-- **[Peso della ricerca](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)** per ogni attributo e altri fattori di rilevanza testuali (ad esempio, la frequenza con cui si verificano i termini e la lunghezza del nome o della descrizione). Nell&#39;amministratore [!DNL Adobe Commerce] configurare **Use in Search** e **Search Weight** per gli attributi del prodotto.
+- **[Peso della ricerca](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/search/search-results)** per ogni attributo e altri fattori di rilevanza testuali (ad esempio, la frequenza con cui si verificano i termini e la lunghezza del nome o della descrizione). Nell&#39;amministratore [!DNL Adobe Commerce] configurare **Use in Search** e **Search Weight** per gli attributi del prodotto.
 - **[Cerca regole di merchandising](rules.md)** come pin, boost e bury
 
 Poiché questi segnali interagiscono, un prodotto che corrisponde solo al livello più ampio può talvolta essere classificato al di sopra di una corrispondenza di frase più stretta, ad esempio quando **i pesi di ricerca** o la frequenza del termine in un campo di peso elevato superano una corrispondenza di frase più debole in un altro punto.
