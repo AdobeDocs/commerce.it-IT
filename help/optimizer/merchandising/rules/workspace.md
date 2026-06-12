@@ -1,7 +1,7 @@
 ---
 title: Workspace delle regole di merchandising
 description: Scopri come utilizzare l’area di lavoro Regole di merchandising.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: 3deac529-731d-44b9-87f3-3c9cb36e28e7
 TQID: https://experienceleague.adobe.com/YTwJtajv57YUgirNdUi174VyCkZozV79V3AW1bRktJY
 product_v2:

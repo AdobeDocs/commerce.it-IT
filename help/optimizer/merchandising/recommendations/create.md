@@ -1,7 +1,7 @@
 ---
 title: Creare e gestire i consigli
 description: Scopri come creare e gestire i consigli.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 TQID: https://experienceleague.adobe.com/4w6G-IgBjgmYYnnEpbK0HML9pSi3quLDxJfuCp9tV84
 product_v2:
@@ -106,7 +106,7 @@ Dopo aver creato un consiglio, devi recuperarne l’ID per implementare l’unit
 
 1. Nella sezione **ID consiglio**, copia l&#39;ID.
 
-1. Usa questo ID per configurare il [menu a discesa dei consigli](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) nella vetrina di Edge Delivery Services.
+1. Usa questo ID per configurare il [menu a discesa dei consigli](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=it) nella vetrina di Edge Delivery Services.
 
 ## Gestire i consigli esistenti
 
