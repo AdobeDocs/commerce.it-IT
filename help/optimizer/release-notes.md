@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: bd4c59c451d7b08de7dc6ef00da2556fb9a6696f
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 1319
+source-wordcount: 1316
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Le unità di raccomandazione del prodotto ora supportano [**filtri prezzo**](./m
 
 ### Miglioramento intelligente della classificazione
 
-[Le regole di merchandising](./merchandising/rules/add.md#intelligent-ranking-boost) per la ricerca, gli elenchi di prodotti predefiniti e le [pagine categoria](./merchandising/rules/add.md#rule-types) (beta) ora includono **[!UICONTROL Intelligent Ranking Boost]**. Puoi regolare il livello di influenza delle strategie come **Most viewed** o **Trending** sull&#39;ordine dei prodotti in base alla rilevanza testuale dei segnali di ricerca e comportamentali negli elenchi delle categorie. L&#39;anteprima della regola riflette l&#39;impostazione. L’incremento viene applicato al momento della query, pertanto non è necessaria una risincronizzazione del catalogo quando lo modifichi.
+[Le regole di merchandising](./merchandising/rules/add.md#intelligent-ranking-boost) per la ricerca, gli elenchi di prodotti predefiniti e le [pagine categoria](./merchandising/rules/add.md#rule-types) ora includono **[!UICONTROL Intelligent Ranking Boost]**. Puoi regolare il livello di influenza delle strategie come **Most viewed** o **Trending** sull&#39;ordine dei prodotti in base alla rilevanza testuale dei segnali di ricerca e comportamentali negli elenchi delle categorie. L&#39;anteprima della regola riflette l&#39;impostazione. L’incremento viene applicato al momento della query, pertanto non è necessaria una risincronizzazione del catalogo quando lo modifichi.
 
 ### Aggiornamenti API
 
@@ -89,7 +89,7 @@ _4 maggio 2026_
 
 >[!BEGINSHADEBOX]
 
-### Regole catalogo (beta)
+### Regole del catalogo
 
 [Regole categoria](./merchandising/rules/add.md) estendono le regole di merchandising in modo da poter indirizzare le categorie e controllare l&#39;ordine dei prodotti sulle pagine delle categorie con la stessa classificazione e le stesse azioni (pin, boost, bury) della ricerca.
 
@@ -145,7 +145,7 @@ I bundle dinamici ora restituiscono una fascia di prezzo calcolata. <!--DATA-701
 
 >[!BEGINSHADEBOX]
 
-### Vista catalogo per regole e consigli di merchandising (beta)
+### Vista catalogo per regole e consigli di merchandising
 
 È ora possibile specificare una visualizzazione del catalogo quando si [creano unità di consigli](./merchandising/recommendations/create.md) o [regole di merchandising](./merchandising/rules/add.md).
 

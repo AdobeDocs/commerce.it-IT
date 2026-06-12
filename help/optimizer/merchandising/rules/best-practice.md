@@ -12,16 +12,16 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 841e772971e7ec18d37fa8ba137b27b8950fc569
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 404
+source-wordcount: 398
 ht-degree: 0%
 
 ---
 
 # Best practice per le regole di merchandising
 
-Per ottimizzare la conversione e i ricavi, implementa **regole di ricerca** efficaci, una **regola di elenco predefinita** avanzata e **[regole di categoria](add.md#rule-types)** (versione beta). Regola le classificazioni utilizzando dati di vendita, azioni, promozioni e [classificazione intelligente](add.md#intelligent-ranking).
+Per ottimizzare la conversione e i ricavi, implementa **regole di ricerca** efficaci, una **regola di elenco predefinita** avanzata e **[regole di categoria](add.md#rule-types)**. Regola le classificazioni utilizzando dati di vendita, azioni, promozioni e [classificazione intelligente](add.md#intelligent-ranking).
 
 È fondamentale stabilire una regola **predefinita** ben ponderata. La [regola predefinita](overview.md#default-rule) determina il modo in cui i risultati della ricerca vengono inizialmente ordinati quando non si applica alcuna regola di ricerca più specifica, migliorando così l&#39;individuazione e la probabilità di acquisto. Esamina regolarmente in modo da tenere il passo con le esigenze e le campagne dei clienti.
 
@@ -38,10 +38,6 @@ Per ottimizzare la conversione e i ricavi, implementa **regole di ricerca** effi
 - Utilizza sempre il pannello &quot;Test della regola&quot; per visualizzare in anteprima come la tua strategia di classificazione intelligente influisce sui risultati effettivi della ricerca per query diverse.
 
 ## Suggerimenti per le regole di categoria
-
->[!IMPORTANT]
->
->Le regole di categoria sono in versione beta.
 
 - Utilizza [regole di categoria](add.md#rule-types) nelle **pagine di categoria** con traffico elevato o margine elevato in cui l&#39;ordine curato è importante quanto la ricerca, ad esempio raccolte stagionali o reparti in primo piano.
 - Allinea **classificazione intelligente** (ad esempio, di tendenza, più visualizzato) al modo in cui gli acquirenti sfogliano tale categoria; le pagine delle categorie non utilizzano il testo delle query di ricerca come fanno le regole di ricerca. Vedi [Classificazione intelligente](add.md#intelligent-ranking). Per i metodi intelligenti diversi da **Nessuno**, utilizza **[Incremento classificazione intelligente](add.md#intelligent-ranking-boost)** e anteprima categoria per ottimizzare la forza comportamentale per la regola di categoria.

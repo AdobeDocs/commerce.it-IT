@@ -16,9 +16,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 841e772971e7ec18d37fa8ba137b27b8950fc569
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 3222
+source-wordcount: 3074
 ht-degree: 0%
 
 ---
@@ -32,10 +32,6 @@ Per creare una regola, apri l&#39;editor di regole, scegli un **tipo di regola**
 1. Nella barra a sinistra, passa a _Merchandising_ > **Regole di merchandising**.
 1. (Facoltativo) Utilizza il menu a discesa **Vista catalogo** per selezionare la vista catalogo in cui applicare la regola. La regola creata ha l&#39;ambito della vista selezionata (o di tutte le viste catalogo se è selezionato **Tutte le viste**). Per informazioni sul funzionamento dell&#39;ambito della visualizzazione catalogo, vedere [Selezionare la visualizzazione catalogo](workspace.md#select-catalog-view).
 
-   >[!IMPORTANT]
-   >
-   >Le visualizzazioni del catalogo sono attualmente in [beta](https://experienceleague.adobe.com/it/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). I partecipanti a Beta dovranno ricreare eventuali regole di merchandising esistenti per sfruttare il nuovo ambito di visualizzazione del catalogo.
-
 1. Fare clic su **[!UICONTROL Create rule]** per avviare l&#39;editor di regole.
 
 ![Crea regola](../../assets/create-rule.png)
@@ -47,7 +43,7 @@ Ogni tipo di regola dispone di un’icona di informazioni nell’editor con una 
 | Tipo di regola | Finalità |
 | --- | --- |
 | **Regola per tutti i prodotti** | Classificazione e merchandising predefiniti tra gli elenchi di prodotti quando non si applica alcuna regola di ricerca o categoria più specifica. Puoi creare una sola regola di questo tipo, non può contenere condizioni. |
-| **Regola categoria** (Beta) | Applica il merchandising e la classificazione a una o più categorie selezionate, controllando l’ordine dei prodotti nelle pagine delle categorie. |
+| **Regola categoria** | Applica il merchandising e la classificazione a una o più categorie selezionate, controllando l’ordine dei prodotti nelle pagine delle categorie. |
 | **Regola di ricerca** | Applica il merchandising e la classificazione quando gli acquirenti eseguono una ricerca che corrisponde alle condizioni di query della regola. |
 
 Nella sezione **Genera la regola**, puoi definire il nome della regola, la pianificazione, se la regola si applica a tutte le inserzioni o a condizioni di ricerca specifiche, e i tipi di classificazione.
@@ -103,10 +99,6 @@ Una regola può avere fino a dieci condizioni. L&#39;operatore logico che unisce
 1. Imposta [Classificazione intelligente](#intelligent-ranking) e [Classificazione manuale](#manual-ranking) come descritto nelle sezioni seguenti. Gli stessi controlli si applicano alle pagine delle categorie, con le eventuali differenze indicate.
 
 >[!TAB Regola categoria]
-
->[!IMPORTANT]
->
->Le regole di categoria sono in versione beta.
 
 Le regole di categoria controllano il modo in cui i prodotti vengono ordinati nelle **pagine di categoria**. È possibile combinare **regole categoria** con **classificazione intelligente** (inclusi i segnali basati sull&#39;intelligenza artificiale) e **azioni manuali** quali pin, boost e bury, in modo da poter curare l&#39;individuazione, eseguire promozioni e allineare le pagine categoria con la strategia senza affidarsi a strumenti esterni.
 

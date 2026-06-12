@@ -14,16 +14,16 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 838
+source-wordcount: 760
 ht-degree: 0%
 
 ---
 
 # Regole di merchandising
 
-Le regole di merchandising combinano la logica con le azioni per modellare l&#39;aspetto dei prodotti in **risultati di ricerca**, in **elenchi di prodotti predefiniti** (**tutti gli elenchi di prodotti**) e in **pagine di categorie** ([regole di categoria](#category-rules) sono in versione beta). Puoi aumentare, seppellire, fissare o nascondere i prodotti e applicare **classificazione intelligente** in modo che le inserzioni riflettano i tuoi obiettivi aziendali.
+Le regole di merchandising combinano la logica con le azioni per modellare l&#39;aspetto dei prodotti in **risultati di ricerca**, in **elenchi di prodotti predefiniti** (**tutti gli elenchi di prodotti**) e in **pagine di categorie**. Puoi aumentare, seppellire, fissare o nascondere i prodotti e applicare **classificazione intelligente** in modo che le inserzioni riflettano i tuoi obiettivi aziendali.
 
 Ogni **regola di ricerca** ha tre componenti principali:
 
@@ -36,10 +36,6 @@ Ogni **regola di ricerca** ha tre componenti principali:
 È possibile combinare più condizioni e azioni per le regole di ricerca e pianificare l&#39;attivazione di qualsiasi regola per un periodo. È inoltre possibile impostare una **regola predefinita** (**Tutti gli elenchi di prodotti**) che viene applicata quando non viene applicata alcuna regola di ricerca o categoria specifica.
 
 ## Regole di categoria {#category-rules}
-
->[!IMPORTANT]
->
->Le regole di categoria sono in versione beta.
 
 **Regole categoria** controlla l&#39;ordine dei prodotti in **pagine categoria**. Seleziona una o più categorie, quindi applica la classificazione intelligente (ad esempio, più visualizzati, di tendenza) e le azioni manuali come pin, boost e bury. Non utilizzano le condizioni di query di ricerca. Per i passaggi di configurazione, i tipi di regole e il modo in cui viene applicata la classificazione alla categoria rispetto alla ricerca, vedere [Creare e gestire regole](add.md).
 

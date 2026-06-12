@@ -14,9 +14,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 964
+source-wordcount: 958
 ht-degree: 0%
 
 ---
@@ -96,10 +96,6 @@ Scopri come [creare un nuovo consiglio o gestirne uno esistente](../merchandisin
 | vCTR | (Percentuale di click-through visualizzabile) misura i clic solo in base alle impression visualizzabili (consigli effettivamente visualizzati nella parte visibile dello schermo del cliente), fornendo un indicatore più preciso del coinvolgimento del cliente. |
 
 ## Seleziona vista catalogo
-
->[!IMPORTANT]
->
->Questa funzione è attualmente in versione beta.
 
 Il selettore **[!UICONTROL Catalog view]** nella pagina **Recommendations** esegue due operazioni:
 

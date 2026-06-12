@@ -16,9 +16,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 1615
+source-wordcount: 1573
 ht-degree: 0%
 
 ---
@@ -35,10 +35,6 @@ Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dat
 1. Nella barra laterale _[!DNL Adobe Commerce Optimizer]_, vai a_ Merchandising _>**Recommendations**&#x200B;per visualizzare l&#39;area di lavoro_ Recommendations _.
 
 1. Nel campo **Vista catalogo**, seleziona la vista catalogo in cui desideri rendere disponibile il consiglio. Ulteriori informazioni sull&#39;utilizzo di [visualizzazioni catalogo per i consigli](../../manage-results/recommendation-performance.md#select-catalog-view).
-
-   >[!IMPORTANT]
-   >
-   >Questa funzionalità è attualmente in [beta](https://experienceleague.adobe.com/it/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). I partecipanti a Beta dovranno ricreare le unità di consigli esistenti per sfruttare il nuovo ambito di visualizzazione del catalogo.
 
 1. Fai clic su **Crea consiglio**.
 
