@@ -2,26 +2,22 @@
 title: Best practice per le regole di merchandising
 description: Scopri le best practice per implementare le regole di merchandising per le pagine di ricerca, inserzioni predefinite e categorie.
 role: Admin, Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: cc8d0879-c253-4ad4-8e7d-e066dff9112d
 TQID: https://experienceleague.adobe.com/DrdrBBXeMyqQr16h1LrlSoet3F6ihn57LBmPFBUXmTs
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 841e772971e7ec18d37fa8ba137b27b8950fc569
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 404
+source-wordcount: 398
 ht-degree: 0%
 
 ---
 
 # Best practice per le regole di merchandising
 
-Per ottimizzare la conversione e i ricavi, implementa **regole di ricerca** efficaci, una **regola di elenco predefinita** avanzata e **[regole di categoria](add.md#rule-types)** (versione beta). Regola le classificazioni utilizzando dati di vendita, azioni, promozioni e [classificazione intelligente](add.md#intelligent-ranking).
+Per ottimizzare la conversione e i ricavi, implementa **regole di ricerca** efficaci, una **regola di elenco predefinita** avanzata e **[regole di categoria](add.md#rule-types)**. Regola le classificazioni utilizzando dati di vendita, azioni, promozioni e [classificazione intelligente](add.md#intelligent-ranking).
 
 È fondamentale stabilire una regola **predefinita** ben ponderata. La [regola predefinita](overview.md#default-rule) determina il modo in cui i risultati della ricerca vengono inizialmente ordinati quando non si applica alcuna regola di ricerca più specifica, migliorando così l&#39;individuazione e la probabilità di acquisto. Esamina regolarmente in modo da tenere il passo con le esigenze e le campagne dei clienti.
 
@@ -38,10 +34,6 @@ Per ottimizzare la conversione e i ricavi, implementa **regole di ricerca** effi
 - Utilizza sempre il pannello &quot;Test della regola&quot; per visualizzare in anteprima come la tua strategia di classificazione intelligente influisce sui risultati effettivi della ricerca per query diverse.
 
 ## Suggerimenti per le regole di categoria
-
->[!IMPORTANT]
->
->Le regole di categoria sono in versione beta.
 
 - Utilizza [regole di categoria](add.md#rule-types) nelle **pagine di categoria** con traffico elevato o margine elevato in cui l&#39;ordine curato è importante quanto la ricerca, ad esempio raccolte stagionali o reparti in primo piano.
 - Allinea **classificazione intelligente** (ad esempio, di tendenza, più visualizzato) al modo in cui gli acquirenti sfogliano tale categoria; le pagine delle categorie non utilizzano il testo delle query di ricerca come fanno le regole di ricerca. Vedi [Classificazione intelligente](add.md#intelligent-ranking). Per i metodi intelligenti diversi da **Nessuno**, utilizza **[Incremento classificazione intelligente](add.md#intelligent-ranking-boost)** e anteprima categoria per ottimizzare la forza comportamentale per la regola di categoria.
