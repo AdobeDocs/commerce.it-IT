@@ -17,9 +17,9 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
+source-git-commit: af45543a52d1c88149574dc22cdef37af01404c8
 workflow-type: tm+mt
-source-wordcount: 267
+source-wordcount: 353
 ht-degree: 0%
 
 ---
@@ -33,6 +33,18 @@ Queste note sulla versione descrivono tutte le versioni di [!DNL Adobe Commerce 
 ![Problema noto](../assets/bug.svg) Problemi noti
 
 ## Versioni del 2026
+
+### Versione 1.0.14
+
+_11 giugno 2026_
+
+![Correzione](../assets/fix.svg) **Compatibilità PHP 8.5** - [!DNL Adobe Commerce Optimizer Connector] ora supporta PHP 8.5, quindi puoi aggiornare l&#39;ambiente [!DNL Adobe Commerce] senza interrompere la funzionalità del connettore o la sincronizzazione del catalogo. <!--MDEE-1388-->
+
+![Correzione](../assets/fix.svg) **Aggiornamento dei listini prezzi dopo le modifiche alla valuta** - I prezzi aggiornati vengono automaticamente rispecchiati in Adobe Commerce Optimizer dopo le modifiche alla valuta. <!--MDEE-1384-->
+
+![Correzione](../assets/fix.svg) **La navigazione rispetta le categorie padre disabilitate o nascoste**. I prodotti di gerarchie di categorie disabilitate o nascoste non vengono più visualizzati in modo imprevisto nelle esperienze di navigazione.<!--MDEE-1385-->
+
+![Correzione](../assets/fix.svg) **URL di categoria coerenti dopo gli aggiornamenti di staging** - I collegamenti alle categorie e la navigazione rimangono accurati dopo l&#39;applicazione degli aggiornamenti di staging. <!--MDEE-1395-->
 
 ### Versione 1.0.13
 
