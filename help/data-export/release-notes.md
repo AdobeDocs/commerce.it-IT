@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: fad62add01dfb6155f30bcfe791eb66de210b7a1
 workflow-type: tm+mt
-source-wordcount: 2857
+source-wordcount: 2903
 ht-degree: 0%
 
 ---
@@ -40,6 +40,12 @@ Gli aggiornamenti includono:
 >L’estensione SaaS per l’esportazione dei dati è una raccolta di moduli che viene installata automaticamente con Live Search, Product Recommendations e Catalog Service. Puoi controllare la versione installata nel sistema utilizzando Composer. In alcuni casi, potrebbe essere utile aggiornare l’estensione di esportazione dei dati sul sistema per rilevare correzioni o nuove funzionalità senza aggiornare la versione del servizio Commerce.
 
 ## Versioni del 2026
+
+### Versione 103.4.28
+
+_11 giugno 2026_
+
+![Correzione](../assets/fix.svg) **URL di categoria accurati dopo aggiornamenti pianificati**-È stato risolto un problema a causa del quale le modifiche all&#39;URL di categoria pianificati potevano lasciare dei tag duplicati o non aggiornati nei servizi Commerce connessi. I collegamenti di navigazione per categorie e per categorie di prodotti ora mostrano l’URL aggiornato dopo l’applicazione della modifica.
 
 ### Versione 103.4.27
 
