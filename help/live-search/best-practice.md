@@ -15,9 +15,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
+source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
 workflow-type: tm+mt
-source-wordcount: 3008
+source-wordcount: 3006
 ht-degree: 0%
 
 ---
@@ -34,6 +34,8 @@ Esistono diversi fattori chiave che determinano la rilevanza e l’efficacia dei
 - Un’esperienza di ricerca ben progettata crea fiducia nei clienti e infonde fiducia nella possibilità di trovare ciò di cui hanno bisogno.
 - Le regole di ricerca sono fondamentali in quanto possono aumentare la visibilità di alcuni prodotti in base alla popolarità, ai nuovi arrivi, ai criteri promozionali o a qualsiasi altra strategia di merchandising per soddisfare le esigenze aziendali.
 - La navigazione a facet consente ai clienti di perfezionare le ricerche e ottenere rapidamente risultati rilevanti.
+
+Per capire in che modo [!DNL Live Search] assegna priorità a **corrispondenze esatte e vicine, corrispondenze dello stesso campo e tra campi diversi** e come questi fattori interagiscono con i pesi e le regole di ricerca, vedere [Corrispondenza e classificazione della ricerca](search-relevance-matching.md).
 
 Per gestire [!DNL Live Search], vai a **Marketing** > *SEO &amp; Search* > **[!DNL Live Search]** nell&#39;amministratore Adobe [!DNL Commerce]. 
 
