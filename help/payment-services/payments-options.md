@@ -129,7 +129,7 @@ L&#39;estrazione di [!DNL Google Pay] **express** può mostrare **metodi di sped
 * I codici aggiunti nel foglio paga [!DNL Google Pay] possono essere rimossi solo dal foglio paga, non dalla pagina del carrello di Commerce.
 * In Adobe Commerce 2.4.4-2.4.6, la riga di sconto nel foglio paga di [!DNL Google Pay] potrebbe non mostrare alcun valore a causa di una limitazione della piattaforma.
 * In Adobe Commerce 2.4.7, il valore dello sconto potrebbe non essere visualizzato nel foglio paga [!DNL Google Pay] per alcuni prodotti (principalmente prodotti scaricabili) a causa di una limitazione della piattaforma nella risposta di GraphQL.
-* Se viene applicata una regola [del prezzo del carrello](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html) automatica (ad esempio, &quot;$50 di sconto quando si spendono più di $200&quot;), questa viene combinata con qualsiasi codice applicato dall&#39;acquirente nel foglio paga. I totali visualizzati nel foglio paga [!DNL Google Pay] potrebbero essere diversi dal riepilogo dell&#39;ordine.
+* Se viene applicata una regola [del prezzo del carrello](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html?lang=it) automatica (ad esempio, &quot;$50 di sconto quando si spendono più di $200&quot;), questa viene combinata con qualsiasi codice applicato dall&#39;acquirente nel foglio paga. I totali visualizzati nel foglio paga [!DNL Google Pay] potrebbero essere diversi dal riepilogo dell&#39;ordine.
 
 ### [!DNL PayPal Payment Buttons]
 
@@ -208,7 +208,7 @@ Per **acquisire i pagamenti con il provider di carte di credito esistente _e_ i 
 1. Assicurati che l&#39;archivio sia [in modalità di produzione](configure-admin.md#general-configuration).
 1. [Configura i pulsanti di pagamento PayPal desiderati](configure-admin.md#paypal-payment-buttons).
 1. Disattiva _l&#39;opzione **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;nella sezione&#x200B;_[!UICONTROL Payment buttons]_._
-1. Disattiva _l&#39;opzione **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)**&#x200B;nella sezione&#x200B;_[!UICONTROL Credit card fields]_ e utilizza l&#39;account [provider di carte di credito esistente](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)._
+1. Disattiva _l&#39;opzione **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)**&#x200B;nella sezione&#x200B;_[!UICONTROL Credit card fields]_ e utilizza l&#39;account [provider di carte di credito esistente](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=it#payments)._
 
 ## Metodi di pagamento locali
 
