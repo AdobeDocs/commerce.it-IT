@@ -20,7 +20,7 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: da5950c0f2071f48f163dd02f6c38953804ae152
+source-git-commit: 717ecbc9c6aa41f8a504579de8ce55f514cc4307
 workflow-type: tm+mt
 source-wordcount: 946
 ht-degree: 0%
@@ -71,7 +71,7 @@ Per una frase di ricerca come `Brauseschlauch chrom`:
 - **Tutte le parole nello stesso campo** - Cerca **brauseschlauch** e **chrom** nell&#39;attributo **same** ricercabile, ancora senza decomposizione (ad esempio, entrambi in **name**).
 - **Parole in campi diversi** — Decompone **Brauseschlauch** in **brause** e **schlauch**. Tali token devono essere visualizzati nel campo **same** (non necessariamente come frase adiacente). **chrom** può corrispondere in un campo **differente** (ad esempio, **brause** e **schlauch** in **name**, **chrom** in **color**).
 
-Imposta **Lingua** su **Tedesco** nella scheda [Lingua](./settings.md#language) in [Impostazioni](./settings.md) in modo che vengano applicate le regole di decomposizione. Convalida le query tedesche di alto valore in una vetrina prima di abilitare le modifiche nella produzione.
+Imposta **Lingua** su **Tedesco** nella scheda [Lingua](../settings.md#language) in [Impostazioni](../settings.md) in modo che vengano applicate le regole di decomposizione. Convalida le query tedesche di alto valore in una vetrina prima di abilitare le modifiche nella produzione.
 
 La decomposizione è basata su regole e può aggiungere casi limite a questo livello. Se manca una parola secondaria nel dizionario, la tokenizzazione può essere incompleta e restituire corrispondenze più ampie di quanto previsto. Ad esempio, **gas** mancante da **gaszähler** potrebbe emettere solo **zahl** o **stat** mancante da **termostato**. Lo stemmer può anche produrre radici impreviste (ad esempio, **schrauber** che deriva da **schraub** o **schelle** a **schell**). Adobe aggiorna il dizionario e le sostituzioni di origine per i casi noti, man mano che vengono identificati dei problemi.
 
@@ -81,9 +81,9 @@ La rilevanza non è determinata solo dalla corrispondenza delle frasi. Diversi s
 
 - Incrementa da **esatta / vicino** corrispondenza frase
 - Incrementa quando **tutti i termini di query** vengono visualizzati nel campo **same**
-- **Classificazione intelligente** (se abilitata), che combina rilevanza testuale e segnali comportamentali. Vedere [Funzionamento del punteggio di classificazione intelligente](./merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
-- **[Peso della ricerca](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/search/search-results)** per ogni attributo e altri fattori di rilevanza testuali (ad esempio, la frequenza con cui si verificano i termini e la lunghezza del nome o della descrizione). In *Impostazioni*, configura gli attributi che partecipano alla ricerca per parole chiave e i relativi **[pesi di ricerca per parole chiave](./settings.md)**.
-- **[Regole di merchandising](./merchandising/rules/overview.md)** come pin, boost e bury
+- **Classificazione intelligente** (se abilitata), che combina rilevanza testuale e segnali comportamentali. Vedere [Funzionamento del punteggio di classificazione intelligente](../merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
+- **[Peso della ricerca](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/search/search-results)** per ogni attributo e altri fattori di rilevanza testuali (ad esempio, la frequenza con cui si verificano i termini e la lunghezza del nome o della descrizione). In *Impostazioni*, configura gli attributi che partecipano alla ricerca per parole chiave e i relativi **[pesi di ricerca per parole chiave](../settings.md)**.
+- **[Regole di merchandising](../merchandising/rules/overview.md)** come pin, boost e bury
 
 Poiché questi segnali interagiscono, un prodotto che corrisponde solo al livello più ampio può talvolta essere classificato al di sopra di una corrispondenza di frase più stretta, ad esempio quando **i pesi di ricerca** o la frequenza del termine in un campo di peso elevato superano una corrispondenza di frase più debole in un altro punto.
 
@@ -97,8 +97,8 @@ Gli attributi configurati con il **peso minimo di ricerca** (peso **1**) e **non
 
 ## Argomenti correlati
 
-- [Impostazioni](./settings.md)
-- [Prestazioni di ricerca](./manage-results/search-performance.md)
-- [Panoramica sulle regole di merchandising](./merchandising/rules/overview.md)
-- [Aggiungi regole di ricerca](./merchandising/rules/add.md)
-- [Panoramica dei sinonimi](./merchandising/synonyms/overview.md)
+- [Impostazioni](../settings.md)
+- [Prestazioni di ricerca](search-performance.md)
+- [Panoramica sulle regole di merchandising](../merchandising/rules/overview.md)
+- [Aggiungi regole di ricerca](../merchandising/rules/add.md)
+- [Panoramica dei sinonimi](../merchandising/synonyms/overview.md)
