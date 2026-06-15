@@ -4,18 +4,11 @@ description: Scopri come utilizzare l’estensione  [!DNL data export] per i ser
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
 TQID: https://experienceleague.adobe.com/OHE1GBUEd8hHFPwFlO9fJa3Y0wK2xZ0HOYnwUn0-DSk
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
 workflow-type: tm+mt
 source-wordcount: 571
 ht-degree: 0%
@@ -41,13 +34,13 @@ L’esportazione di dati SaaS viene distribuita come estensione PHP. Supporta di
 
 - **Sincronizzazione manuale dall&#39;amministratore o dalla riga di comando**
 
-   - Il [dashboard di gestione dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) in Commerce Admin fornisce una visualizzazione grafica dello stato di sincronizzazione che mostra i dati del prodotto sincronizzati correttamente con i servizi commerce. È possibile utilizzare il dashboard per eseguire una risincronizzazione completa (_sincronizzazione completa_) di tutti i feed. Tuttavia, Adobe consiglia di eseguire la sincronizzazione completa solo la prima volta che si connette Adobe Commerce a un servizio Commerce. Vedere [Processo di sincronizzazione](data-synchronization.md).
+   - Il [dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) in Commerce Admin fornisce una visualizzazione grafica dello stato di sincronizzazione che mostra i dati del prodotto sincronizzati correttamente con i servizi commerce. È possibile utilizzare il dashboard per eseguire una risincronizzazione completa (_sincronizzazione completa_) di tutti i feed. Tuttavia, Adobe consiglia di eseguire la sincronizzazione completa solo la prima volta che si connette Adobe Commerce a un servizio Commerce. Vedere [Processo di sincronizzazione](data-synchronization.md).
 
      {{aco-data-sync-verification}}
 
-   - La pagina [Stato sincronizzazione feed dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) fornisce informazioni in tempo reale sullo stato e sulle prestazioni dei feed di esportazione dei dati che trasferiscono i dati di prodotti e categorie da Commerce a servizi esterni quali Product Recommendations, Live Search, Catalog Service o Adobe Commerce Optimizer.
+   - La pagina [Stato sincronizzazione feed dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) fornisce informazioni in tempo reale sullo stato e sulle prestazioni dei feed di esportazione dei dati che trasferiscono i dati di prodotti e categorie da Commerce a servizi esterni quali Product Recommendations, Live Search, Catalog Service o Adobe Commerce Optimizer.
 
-   - Lo strumento da riga di comando [Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) fornisce comandi per sincronizzare feed specifici e include opzioni aggiuntive per personalizzare l&#39;elaborazione dei feed.
+   - Lo strumento da riga di comando [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) fornisce comandi per sincronizzare feed specifici e include opzioni aggiuntive per personalizzare l&#39;elaborazione dei feed.
 
 - **Sincronizzazione automatica con processi cron**
 
@@ -62,3 +55,4 @@ L’esportazione di dati SaaS viene distribuita come estensione PHP. Supporta di
    - Nei casi in cui la sincronizzazione deve essere eseguita più rapidamente, l’esportazione dei dati SaaS offre opzioni di personalizzazione per migliorare le prestazioni di elaborazione delle esportazioni. Consulta [Migliorare le prestazioni di esportazione dei dati](customize-export-processing.md).
 
 - **Tracciare e risolvere i problemi relativi alle attività di esportazione dei dati**. Utilizzare i registri di esportazione dei dati e saas-esportazione per esaminare lo stato di sincronizzazione e i payload dei feed durante il processo di sincronizzazione e indicizzazione. Consulta [Registrazione e risoluzione dei problemi](troubleshooting-logging.md).
+

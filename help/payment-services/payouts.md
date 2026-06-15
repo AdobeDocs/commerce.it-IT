@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: a0f9ddbf3d0f291855cb51fd70a782c48b8efc6c
+source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1373'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 # Rapporto Pagamenti
 
 [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] offre report completi che consentono di ottenere una chiara visualizzazione delle transazioni, degli ordini e dei pagamenti del tuo Negozio.
+
+>[!NOTE]
+>
+>Le visualizzazioni Pagamenti seguenti sono disponibili da [!DNL Payment Services] **[!UICONTROL Home]** su Adobe Commerce sul cloud e on-premise. Non sono visualizzati nel dashboard [!DNL Payment Services] per [!DNL Adobe Commerce as a Cloud Service] o [!DNL Adobe Commerce Optimizer]. Vedere [[!DNL Payment Services] Home](payments-home.md).
 
 Sono disponibili due visualizzazioni di reporting Pagamenti per consentirti di visualizzare informazioni approfondite su tutti i tuoi pagamenti:
 
@@ -27,7 +31,7 @@ Le visualizzazioni Pagamenti mostrano immediatamente informazioni complete sui p
 
 >[!NOTE]
 >
->I report pagamenti mostrano solo gli ordini acquisiti (l&#39;azione di pagamento è impostata su [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html?lang=it#set-payment-services-as-payment-method)) o [contrassegnati come `Invoiced`](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
+>I report pagamenti mostrano solo gli ordini acquisiti (l&#39;azione di pagamento è impostata su [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)) o [contrassegnati come `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
 
 ## Visualizzazione dati pagamenti
 
@@ -69,7 +73,7 @@ La visualizzazione dati Pagamenti include le seguenti informazioni.
 
 La visualizzazione del rapporto Pagamenti è disponibile nella visualizzazione Pagamenti di Servizi di pagamento. Include tutte le informazioni disponibili sui pagamenti per il/i tuo/i negozio/i.
 
-Nella barra laterale _Amministratore_, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**&#x200B;per visualizzare la visualizzazione dettagliata del report Pagamenti nella tabella.
+Nella barra laterale _Amministratore_, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**per visualizzare la visualizzazione dettagliata del report Pagamenti nella tabella.
 
 ![Transazioni di pagamento nell&#39;amministratore](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
@@ -89,7 +93,7 @@ Nella visualizzazione del report Pagamenti è possibile selezionare l&#39;origin
 
 ![Selezione origini dati](assets/datasource.png){width="300" zoomable="yes"}
 
-Se _[!UICONTROL Live]_&#x200B;è l&#39;origine dati selezionata, è possibile visualizzare le informazioni del report per gli archivi in modalità di produzione. Se&#x200B;_[!UICONTROL Sandbox]_ è l&#39;origine dati selezionata, è possibile visualizzare gli archivi di informazioni del report in modalità sandbox.
+Se _[!UICONTROL Live]_è l&#39;origine dati selezionata, è possibile visualizzare le informazioni del report per gli archivi in modalità di produzione. Se_[!UICONTROL Sandbox]_ è l&#39;origine dati selezionata, è possibile visualizzare gli archivi di informazioni del report in modalità sandbox.
 
 Le selezioni delle origini dati funzionano come segue:
 
@@ -155,7 +159,7 @@ I rapporti di pagamento includono le seguenti informazioni.
 | [!UICONTROL Code] | Codice transazione che indica il credito (*CR*) o il debito (*DR*) |
 | [!UICONTROL Reference ID] | ID transazione originale per cui è correlato questo evento |
 | [!UICONTROL Invoice] | ID fattura (uno per ordine) della transazione |
-| [!UICONTROL Commerce order] | ID ordine Commerce <br> <br>Per visualizzare le [informazioni ordine](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/order-management/orders/orders) correlate, fare clic sull&#39;ID. |
+| [!UICONTROL Commerce order] | ID ordine Commerce <br> <br>Per visualizzare le [informazioni ordine](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders) correlate, fare clic sull&#39;ID. |
 | [!UICONTROL Commerce trans] | ID transazione Commerce |
 | [!UICONTROL Pay method] | Tipo di carta di credito—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*—e provider di carta associato (ad esempio *Visa* o *MasterCard*) |
 | [!UICONTROL TRANS AMT] | Importo della transazione |
@@ -185,19 +189,19 @@ Questi tipi di operazioni possono essere annotati nelle transazioni di pagamento
 | ------------ | -------------------- |
 | [!UICONTROL PAYMENT] | Soldi trasferiti tra un acquirente e un venditore per un ordine |
 | [!UICONTROL AUTH] | Autorizzazione e autorizzazione di operazioni annullate |
-| [!UICONTROL BONUS] | — |
+| [!UICONTROL BONUS] | -- |
 | [!UICONTROL CHARGEBACK] | Transazioni di storno con commissione di rettifica e commissione di rettifica |
-| [!UICONTROL CORRECTION] | — |
-| [!UICONTROL CURRENCY_CONVERSION] | — |
-| [!UICONTROL DEPOSIT] | — |
-| [!UICONTROL DISBURSEMENT] | — |
-| [!UICONTROL DISPUTE] | — |
+| [!UICONTROL CORRECTION] | -- |
+| [!UICONTROL CURRENCY_CONVERSION] | -- |
+| [!UICONTROL DEPOSIT] | -- |
+| [!UICONTROL DISBURSEMENT] | -- |
+| [!UICONTROL DISPUTE] | -- |
 | [!UICONTROL FEES] | Tariffe partner, commissioni di pagamento e transazioni di storno delle tariffe |
-| [!UICONTROL HOLD] | — |
-| [!UICONTROL HOLD_RELEASE] | — |
-| [!UICONTROL INCENTIVES] | — |
-| [!UICONTROL OTHERS] | — |
+| [!UICONTROL HOLD] | -- |
+| [!UICONTROL HOLD_RELEASE] | -- |
+| [!UICONTROL INCENTIVES] | -- |
+| [!UICONTROL OTHERS] | -- |
 | [!UICONTROL RECOUP] | Recuperi da conti bancari o perdite |
-| [!UICONTROL REFUND] | — |
-| [!UICONTROL REVERSAL] | — |
-| [!UICONTROL WITHDRAWAL] | — |
+| [!UICONTROL REFUND] | -- |
+| [!UICONTROL REVERSAL] | -- |
+| [!UICONTROL WITHDRAWAL] | -- |
