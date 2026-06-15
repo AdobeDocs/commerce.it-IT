@@ -1,11 +1,13 @@
 ---
 title: Note sulla versione [!DNL Payment Services]
 description: Consulta le note sulla versione per informazioni su tutte le  [!DNL Payment Services]  versioni.
+role: Admin, User
+level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: e0f8437d1d4592e8bff2f718352977832d64a100
+source-git-commit: 29747e38a2800997c251f24f70b6356aada9fab9
 workflow-type: tm+mt
-source-wordcount: '5019'
+source-wordcount: '5401'
 ht-degree: 0%
 
 ---
@@ -32,6 +34,10 @@ Per ulteriori informazioni sulle prossime versioni, sul supporto del prodotto e 
 Queste note sulla versione descrivono le modifiche e le correzioni apportate alle funzioni e sono state rilasciate al di fuori delle normali versioni del servizio ospitato.
 
 +++Aggiornamenti dei servizi in hosting
+
+_8 giugno 2026_
+
+![Nuovo problema](../assets/new.svg)<!-- Issue PAY-6510 --> Per [!DNL Adobe Commerce as a Cloud Service], l&#39;interfaccia utente del dashboard [!DNL Payment Services] in [!DNL Commerce Admin] consente ai commercianti di aprire il report [Transazioni](reporting.md#transactions-report-view) direttamente dal dashboard. Questo dashboard SaaS espone solo il reporting di **selected** (non tutti i report o i punti di ingresso Home disponibili su Adobe Commerce nel cloud e on-premise); vedi [[!DNL Payment Services] Home](payments-home.md). Per le note sulla versione di ACCS e la tempistica, vedere [Visualizzare il report Transazioni di Payment Services](../cloud-service/release-notes.md#view-the-payment-services-transactions-report).
 
 _21 gennaio 2026_
 
@@ -77,7 +83,7 @@ _9 giugno 2023_
 
 ![È stato risolto il problema](../assets/fix.svg)<!-- Issue PAY-4486-->. In precedenza, il pulsante PayPal PayLater non veniva visualizzato nel checkout per gli esercenti britannici. La questione è risolta.
 
-![Problema risolto](../assets/fix.svg)<!-- Issue PAY-4485--> Le visualizzazioni di visualizzazione dei dati dei report sono ora visualizzate nella Home di [!DNL Payment Services] quando[!DNL Payment Services] è disabilitato.
+![Problema risolto](../assets/fix.svg)<!-- Issue PAY-4485--> Le visualizzazioni di visualizzazione dei dati dei report sono ora visualizzate nella Home di [!DNL Payment Services] quando [!DNL Payment Services] è disabilitato.
 
 _25 gennaio 2023_
 
@@ -110,6 +116,28 @@ _28 giugno 2021_
 >[!NOTE]
 >
 > Le versioni si verificano spesso per fornire nuove funzioni e correzioni, in base alle esigenze. La pianificazione della versione non è corretta.
+
+## v2.15.0
+
+_15 giugno 2026_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.4 e successive
+
+![Nuovo](../assets/new.svg)<!-- PAY-6564 --> Ora, [!DNL Google Pay] pagamento rapido può mostrare i metodi di spedizione nel foglio di pagamento di Google utilizzando i callback di spedizione lato client, quindi gli acquirenti selezionano la spedizione prima di confermare il pagamento. Gli esercenti possono mostrare o nascondere un passaggio di revisione separato di Google Pay utilizzando **[!UICONTROL Skip Review]** nella [configurazione di Google Pay](configure-admin.md#google-pay). Quando il passaggio di revisione viene saltato, le opzioni di spedizione rimangono nel foglio quando l&#39;indirizzo del wallet o il metodo di spedizione cambia.
+
+![Nuovo](../assets/new.svg)<!-- PAY-6565 --> Ora gli acquirenti possono applicare un codice promozionale nel foglio paga espresso [!DNL Google Pay], indipendentemente dal fatto che venga visualizzato o meno il passaggio di revisione di Google Pay. È possibile applicare un solo codice per foglio paga, anche nei negozi che consentono più coupon per ordine. Consulta [Opzioni di pagamento](payments-options.md#google-pay-button) per ulteriori informazioni.
+
+![Nuovo](../assets/new.svg)<!-- PAY-6567 --> Ora, [!DNL Apple Pay] checkout rapido è disponibile in Chrome, Firefox e Microsoft Edge, oltre a Safari. Sul desktop, gli acquirenti possono scansionare un codice QR con un iPhone che esegue iOS 18 o versioni successive per completare il pagamento nel foglio paga di Apple. I posizionamenti rapidi (ad esempio, nella pagina dei dettagli del prodotto) devono essere abilitati nella [configurazione Apple Pay](configure-admin.md#apple-pay).
+
+![Nuovo](../assets/new.svg)<!-- PAY-6566 --> Ora gli acquirenti possono applicare o rimuovere un singolo codice sconto nel foglio paga espresso di [!DNL Apple Pay] e aggiornare i totali nel foglio. Crea e abilita normalmente le regole di prezzo del carrello nell’Amministratore.
+
+![Nuovo](../assets/new.svg)<!-- PAY-6151 --> Ora, [!DNL Apple Pay] sui dettagli del prodotto Luma e sulle pagine di pagamento viene eseguito il rendering tramite Payments SDK in modo che l’esperienza corrisponda all’integrazione PayPal più recente utilizzata per il pagamento rapido.
+
+![Nuovo](../assets/new.svg)<!-- PAY-6611 --> Nella pagina dei dettagli dell&#39;ordine [!DNL Adobe Commerce] vengono ora visualizzati ulteriori dettagli di pagamento per le transazioni elaborate tramite [!DNL Payment Services], inclusi l&#39;ID transazione [!DNL PayPal], l&#39;ID di debug PayPal, l&#39;e-mail del pagatore, l&#39;idoneità per la protezione dei commercianti e i codici di verifica AVS/CVV. Per ulteriori informazioni, vedere [3DS](security.md#3ds).
+
+![È stato risolto un problema](../assets/fix.svg)<!-- PAY-6513 --> che causava la visualizzazione di un messaggio di errore [!DNL Apple Pay] nella pagina di completamento dell&#39;ordine dopo un tentativo di pagamento non riuscito e un successivo pagamento.
+
+![È stato risolto un problema](../assets/fix.svg)<!-- PAY-6585 --> che causava la visualizzazione di un errore **[!UICONTROL Please select a state/region]** nel foglio paga espresso di [!DNL Apple Pay] per gli indirizzi britannici ed europei in cui lo stato non era un campo obbligatorio.
 
 ## v2.14.0
 
@@ -574,7 +602,7 @@ _18 novembre 2022_
 
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-3880 --> Un acquirente ora può [archiviare (salvare) le informazioni sulla sua carta di credito durante l&#39;acquisto](vaulting.md) per utilizzarle in un acquisto successivo per lo stesso o un altro negozio all&#39;interno dello stesso account esercente.
 
-![New](../assets/new.svg)<!-- Issue PAY-3950 --> I commercianti possono ora abilitare la funzionalità [Commerce per l&#39;acquisto immediato](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html?lang=it) per i loro negozi in modo che gli acquirenti possano (utilizzare [informazioni sulla carta di credito in deposito](vaulting.md)) accelerare il pagamento.
+![New](../assets/new.svg)<!-- Issue PAY-3950 --> I commercianti possono ora abilitare la funzionalità [Commerce per l&#39;acquisto immediato](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) per i loro negozi in modo che gli acquirenti possano (utilizzare [informazioni sulla carta di credito in deposito](vaulting.md)) accelerare il pagamento.
 
 ## v1.4.1
 

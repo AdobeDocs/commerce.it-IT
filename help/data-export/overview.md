@@ -15,7 +15,7 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
+source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
 workflow-type: tm+mt
 source-wordcount: 571
 ht-degree: 0%
@@ -62,3 +62,4 @@ L’esportazione di dati SaaS viene distribuita come estensione PHP. Supporta di
    - Nei casi in cui la sincronizzazione deve essere eseguita più rapidamente, l’esportazione dei dati SaaS offre opzioni di personalizzazione per migliorare le prestazioni di elaborazione delle esportazioni. Consulta [Migliorare le prestazioni di esportazione dei dati](customize-export-processing.md).
 
 - **Tracciare e risolvere i problemi relativi alle attività di esportazione dei dati**. Utilizzare i registri di esportazione dei dati e saas-esportazione per esaminare lo stato di sincronizzazione e i payload dei feed durante il processo di sincronizzazione e indicizzazione. Consulta [Registrazione e risoluzione dei problemi](troubleshooting-logging.md).
+

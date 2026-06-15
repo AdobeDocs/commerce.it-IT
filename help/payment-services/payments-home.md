@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '483'
 ht-degree: 1%
 
 ---
@@ -37,6 +37,10 @@ Al termine dell&#39;onboarding (o in un&#39;istanza già configurata), **[!UICON
 >[!ENDTABS]
 
 In questa visualizzazione Home, puoi accedere alla _Home_, _Scopri_ su [!DNL Payment Services], configurare l&#39;estensione _Impostazioni_ o ottenere _Guida_. Utilizza **[!UICONTROL View Report]** (SaaS) o i punti di ingresso **[!UICONTROL Orders]** e **[!UICONTROL Payouts]** (Adobe Commerce sul cloud e on-premise) per aprire il reporting; vedi [Reporting](reporting.md).
+
+>[!NOTE]
+>
+>In [!DNL Adobe Commerce as a Cloud Service] e [!DNL Adobe Commerce Optimizer], il [!DNL Payment Services] **dashboard** espone solo **selected** report: si ottiene il report [Transazioni](reporting.md) da **[!UICONTROL Home]** (vedere la tabella SaaS seguente). Le aree **[!UICONTROL Orders]** e **[!UICONTROL Payouts]** nella Home, con i relativi grafici e report collegati, sono applicabili solo ad Adobe Commerce nel cloud e on-premise ([PaaS](#home)). Per una panoramica dei rapporti sui flussi di cassa nelle distribuzioni, vedere [Financial Reporting](financial-reporting.md).
 
 ## Home
 

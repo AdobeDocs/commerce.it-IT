@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: d0d0634283493f61faae94bebb9da1c8bd177e55
 workflow-type: tm+mt
-source-wordcount: 1391
+source-wordcount: 1439
 ht-degree: 0%
 
 ---
@@ -59,9 +59,13 @@ Nella barra laterale _Admin_, passa a **[!UICONTROL Sales]** > **[!UICONTROL [!D
 
 >[!TAB Adobe Commerce as a Cloud Service e Commerce Optimizer]
 
-Le stesse funzionalità di reporting si applicano alle distribuzioni SaaS. Le breadcrumb mostrano **[!UICONTROL Home]** > **[!UICONTROL Transactions]** e la griglia include colonne quali **[!UICONTROL Order ID]**, **[!UICONTROL PayPal Transaction ID]**, **[!UICONTROL Customer ID]**, **[!UICONTROL Transaction Date]**, **[!UICONTROL Payment Method]**, **[!UICONTROL Payment Detail]**, **[!UICONTROL Card Last Four]**, **[!UICONTROL Result]** e **[!UICONTROL Response Code]**.
+Per queste distribuzioni SaaS, il rapporto Tabular Transactions (Transazioni tabulari) nel dashboard corrisponde alle funzionalità descritte in questo argomento (filtri, colonne, origine dati, download e così via). Le breadcrumb mostrano **[!UICONTROL Home]** > **[!UICONTROL Transactions]** e la griglia include colonne quali **[!UICONTROL Order ID]**, **[!UICONTROL PayPal Transaction ID]**, **[!UICONTROL Customer ID]**, **[!UICONTROL Transaction Date]**, **[!UICONTROL Payment Method]**, **[!UICONTROL Payment Detail]**, **[!UICONTROL Card Last Four]**, **[!UICONTROL Result]** e **[!UICONTROL Response Code]**.
 
 ![Visualizzazione report transazioni in SaaS](assets/transactions-report-view-saas.png){width="800" zoomable="yes"}
+
+>[!NOTE]
+>
+>Il dashboard SaaS [!DNL Payment Services] non include tutti i report o i punti di ingresso Home visualizzati per Adobe Commerce sul cloud e on-premise. Vedi [[!DNL Payment Services] Home](payments-home.md) per ciò che è disponibile per distribuzione.
 
 >[!ENDTABS]
 
