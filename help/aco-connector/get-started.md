@@ -5,12 +5,24 @@ feature: Integration, Configuration
 badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 autotag-review: '2026-06-09T16:55:50.934Z'
 TQID: 'https://experienceleague.adobe.com/AcZ6CNyuIdUlfVHXhyQEYuThfLNd4WWqMMY82tjMMCc'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: c32adafa-ed01-4b31-997e-2413013911b0id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-subfeature_v2: id: e126554b-28f9-4290-b58c-10b888b88174id: a40ebd6b-b542-4432-a730-1803ef74518d
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+subfeature_v2:
+  - id: e126554b-28f9-4290-b58c-10b888b88174
+  - id: a40ebd6b-b542-4432-a730-1803ef74518d
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
 workflow-type: tm+mt
 source-wordcount: 1184
@@ -73,7 +85,7 @@ Segui questi passaggi per abilitare [!DNL Commerce Optimizer Connector] e inizia
 
 1. **[Personalizzare la configurazione di esportazione dei dati](#customize-the-commerce-scopes-export-configuration)** dall&#39;amministratore.
 
-1. **[Abilita l&#39;integrazione [!DNL Adobe Commerce Optimizer] ](#enable-the-adobe-commerce-optimizer-integration)**.
+1. **[Abilita l&#39;integrazione [!DNL Adobe Commerce Optimizer] &#x200B;](#enable-the-adobe-commerce-optimizer-integration)**.
 
 1. **[Verificare che la sincronizzazione dei dati funzioni](#verify-that-the-data-sync-is-working)**.
 
@@ -164,7 +176,7 @@ Salva i seguenti valori dalla pagina delle credenziali:
 
 ### Ottieni dettagli istanza [!DNL Adobe Commerce Optimizer]
 
-Ottieni l&#39;ID _tenant_ dal campo _[!DNL Instance Id]_nell&#39;istanza [[!DNL Instance details] page](../optimizer/get-started.md#manage-instances) di [!DNL Adobe Commerce Optimizer] o dall&#39;URL utilizzato per accedere all&#39;istanza. Ad esempio, in `https://experience.adobe.com/#/@<your organization>/in:<tenant ID>/commerce-optimizer-studio/home`.
+Ottieni l&#39;ID _tenant_ dal campo _[!DNL Instance Id]_&#x200B;nell&#39;istanza [[!DNL Instance details] page](../optimizer/get-started.md#manage-instances) di [!DNL Adobe Commerce Optimizer] o dall&#39;URL utilizzato per accedere all&#39;istanza. Ad esempio, in `https://experience.adobe.com/#/@<your organization>/in:<tenant ID>/commerce-optimizer-studio/home`.
 
 1. Dall&#39;amministratore di Commerce, selezionare **[!UICONTROL Adobe Commerce Optimizer]** per visualizzare la pagina di configurazione con le istruzioni.
 
