@@ -2,9 +2,9 @@
 title: Cos'è  [!DNL Adobe Commerce Optimizer]?
 description: Scopri  [!DNL Adobe Commerce Optimizer]  e le sue funzionalità chiave.
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: e68d731bbcc168439c9a56a7cb778648a7c473e9
+source-git-commit: 3e759c0d7e51082b70ea9a1fcc5757b60a8aab61
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 0%
@@ -21,12 +21,12 @@ Con [!DNL Adobe Commerce Optimizer] è possibile:
 - Acquisisci i dati del catalogo da qualsiasi origine.
 - Definire le visualizzazioni e i criteri del catalogo aziendale.
 - Crea ricerche e consigli personalizzati utilizzando IA e ML.
-- Migliora la rilevanza dell&#39;individuazione del prodotto con una classificazione che dà priorità a **corrispondenze esatte e vicine** e corrispondenze dello stesso campo; vedi [Corrispondenza ricerca e classificazione](search-relevance-matching.md).
+- Migliora la rilevanza dell&#39;individuazione del prodotto con una classificazione che dà priorità a **corrispondenze esatte e vicine** e corrispondenze dello stesso campo; vedi [Corrispondenza ricerca e classificazione](./manage-results/search-relevance-matching.md).
 - Visualizzare i dati fondamentali sulla disponibilità dei prodotti, compresi lo stato di sincronizzazione e i dati degli eventi storefront, per un&#39;implementazione e una risoluzione dei problemi accurate.
 
 Guarda il seguente video per una panoramica di alto livello di [!DNL Adobe Commerce Optimizer]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450471?captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Chi trae il massimo vantaggio da [!DNL Adobe Commerce Optimizer]?
 
