@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 29747e38a2800997c251f24f70b6356aada9fab9
+source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
 workflow-type: tm+mt
-source-wordcount: '5401'
+source-wordcount: '5400'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Queste note sulla versione descrivono le modifiche e le correzioni apportate all
 
 _8 giugno 2026_
 
-![Nuovo problema](../assets/new.svg)<!-- Issue PAY-6510 --> Per [!DNL Adobe Commerce as a Cloud Service], l&#39;interfaccia utente del dashboard [!DNL Payment Services] in [!DNL Commerce Admin] consente ai commercianti di aprire il report [Transazioni](reporting.md#transactions-report-view) direttamente dal dashboard. Questo dashboard SaaS espone solo il reporting di **selected** (non tutti i report o i punti di ingresso Home disponibili su Adobe Commerce nel cloud e on-premise); vedi [[!DNL Payment Services] Home](payments-home.md). Per le note sulla versione di ACCS e la tempistica, vedere [Visualizzare il report Transazioni di Payment Services](../cloud-service/release-notes.md#view-the-payment-services-transactions-report).
+![Nuovo problema](../assets/new.svg)<!-- Issue PAY-6510 --> Per [!DNL Adobe Commerce as a Cloud Service], l&#39;interfaccia utente del dashboard [!DNL Payment Services] in [!DNL Commerce Admin] consente ai commercianti di aprire il report [Transazioni](reporting.md#transactions-report-view) direttamente dal dashboard. Questo dashboard SaaS espone solo il reporting di **selected** (non tutti i report o i punti di ingresso Home disponibili su Adobe Commerce nel cloud e on-premise); vedi [[!DNL Payment Services] Home](payments-home.md). Per le note sulla versione e la tempistica di [!DNL Adobe Commerce as a Cloud Service], consulta [Visualizzare il report Transazioni servizi di pagamento](../cloud-service/release-notes.md#view-the-payment-services-transactions-report).
 
 _21 gennaio 2026_
 
@@ -602,7 +602,7 @@ _18 novembre 2022_
 
 ![Nuovo](../assets/new.svg)<!-- Issue PAY-3880 --> Un acquirente ora può [archiviare (salvare) le informazioni sulla sua carta di credito durante l&#39;acquisto](vaulting.md) per utilizzarle in un acquisto successivo per lo stesso o un altro negozio all&#39;interno dello stesso account esercente.
 
-![New](../assets/new.svg)<!-- Issue PAY-3950 --> I commercianti possono ora abilitare la funzionalità [Commerce per l&#39;acquisto immediato](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) per i loro negozi in modo che gli acquirenti possano (utilizzare [informazioni sulla carta di credito in deposito](vaulting.md)) accelerare il pagamento.
+![New](../assets/new.svg)<!-- Issue PAY-3950 --> I commercianti possono ora abilitare la funzionalità [Commerce per l&#39;acquisto immediato](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html?lang=it) per i loro negozi in modo che gli acquirenti possano (utilizzare [informazioni sulla carta di credito in deposito](vaulting.md)) accelerare il pagamento.
 
 ## v1.4.1
 
