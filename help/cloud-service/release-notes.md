@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
+source-git-commit: 776aa6f6d887c93686539897e936fe8d3898e462
 workflow-type: tm+mt
-source-wordcount: 4182
+source-wordcount: 4439
 ht-degree: 0%
 
 ---
@@ -47,7 +47,45 @@ Le seguenti note sulla versione contengono aggiornamenti a [!DNL Adobe Commerce 
 >
 >Se utilizzi Adobe Commerce on-premise o Adobe Commerce sull&#39;infrastruttura cloud, consulta le [note sulla versione di Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/release/notes/overview).
 
-## Giugno 2026 - #1 sulla versione {#latest}
+## Giugno 2026 - #2 sulla versione {#latest}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+[!BADGE Sandbox]{type=Caution tooltip="Gli elementi elencati sono attualmente disponibili solo negli ambienti Sandbox. Adobe rende disponibili le nuove versioni negli ambienti Sandbox per fornire il tempo di testare le modifiche imminenti prima che la versione sia disponibile negli ambienti di produzione."}
+
+I seguenti elementi sono attualmente disponibili solo negli ambienti Sandbox e il loro trasferimento negli ambienti di produzione è pianificato per luglio.
+
+>[!BEGINSHADEBOX]
+
+### Filtra ordini e fatture per società
+
+Gli endpoint REST API `GET /V1/orders` e `GET /V1/invoices` supportano ora il filtro per `company_id` e `company_name`, consentendo integrazioni B2B per recuperare ordini o fatture per una società specifica in una singola richiesta. <!-- ACCS-1111, CCSAAS-5076 -->
+
+### Visualizzare la cronologia delle modifiche degli ordini nell’amministratore
+
+Nella pagina dei dettagli dell&#39;ordine [!DNL Commerce Admin] viene ora visualizzata la catena di modifica completa per un ordine che include l&#39;ordine originale e tutti gli ordini figlio creati tramite modifiche successive. Gli esercenti possono spostarsi tra gli ordini, attivare o disattivare la visibilità degli ordini annullati e accedere a tutte le fatture, le spedizioni, le note di accredito e i commenti degli ordini associati direttamente dalla vista a catena.<!-- ACCS-968 -->
+
+>[!NOTE]
+>
+>Per abilitare questa funzione, contatta il tuo Customer Success Manager Adobe Commerce.
+
+### Visualizza risorse sincronizzate in [!DNL AEM Assets]
+
+L&#39;integrazione di [!DNL AEM Assets] ora include una pagina [!UICONTROL **Stato sincronizzazione**] ([!UICONTROL **Archivi**] > [!UICONTROL **AEM Assets**] > [!UICONTROL **Stato sincronizzazione**]) con una visualizzazione elenco incentrata sulle risorse di tutte le risorse sincronizzate, inclusi i filtri, le colonne ordinabili come la data dell&#39;ultima sincronizzazione e i dettagli degli errori per le sincronizzazioni non riuscite.<!-- ACAP-1246 -->
+
+### Miglioramenti e correzioni di bug
+
+In questa versione sono inclusi i miglioramenti, le ottimizzazioni e le correzioni di bug seguenti:
+
+* I cataloghi condivisi di grandi dimensioni ora sono più facili da gestire nell’amministratore, con tempi di caricamento migliorati e una minore probabilità di timeout. <!-- CCSAAS-4946, CCSAAS-4925, CCSAAS-1245, CCSAAS-1246 -->
+
+* È stato risolto un errore di creazione della spedizione che si verificava durante la creazione di spedizioni per ordini contenenti prodotti configurabili. <!-- ACCS-1095 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## Giugno 2026 - #1 sulla versione
 
 [!BADGE Produzione]{type=Neutral tooltip="Gli elementi elencati sono attualmente disponibili negli ambienti di produzione."}
 
