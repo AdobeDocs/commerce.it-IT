@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders, Paas, Saas
-source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
+source-git-commit: 09630af055b4d59f37fba2d3c398042161a7afa0
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2254'
 ht-degree: 0%
 
 ---
@@ -108,9 +108,22 @@ Durante l&#39;estrazione del cliente o quando un amministratore crea una fattura
 
 Rileva quando una transazione di acquisizione in sospeso entra nello stato `Completed` in modo che gli esercenti possano riprendere l&#39;elaborazione dell&#39;ordine interessato.
 
-Per assicurarti che questo processo funzioni come previsto, gli esercenti devono configurare un nuovo processo cron. Una volta configurato il processo per l’esecuzione automatica, non sono previsti altri interventi da parte del commerciante.
+>[!NOTE]
+>
+>Il monitoraggio asincrono è disabilitato per impostazione predefinita. Se disabilitato, gli ordini con una transazione di acquisizione `Pending` non vengono spostati automaticamente in `Payment Review`. Per abilitare questo comportamento, attiva il monitoraggio asincrono seguendo la procedura riportata di seguito.
 
-Consulta [Configurare i processi cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=it). Una volta configurato, il nuovo processo viene eseguito ogni 30 minuti per recuperare gli aggiornamenti per gli ordini con stato `Payment Review`.
+Attiva monitoraggio asincrono: [!BADGE Solo PaaS]{type=Informative tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
+
+1. Abilita l&#39;impostazione `async_status_updates`. Poiché questa impostazione non è disponibile in Admin, abilitala dalla riga di comando:
+
+   ```bash
+   bin/magento config:set payment/payment_services/async_status_updates 1
+   ```
+
+1. Abilita e pianifica il processo cron `sync_order_payment_status` in modo che gli aggiornamenti dello stato vengano recuperati automaticamente. Consulta [Configurare i processi cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=it).
+
+Una volta abilitate l&#39;impostazione e il processo cron, il processo cron viene eseguito ogni 10 minuti per recuperare gli aggiornamenti per gli ordini con stato `Payment Review`. Dopo la configurazione, non è richiesta alcuna azione aggiuntiva da parte dell&#39;esercente durante il normale funzionamento.
+
 
 Gli esercenti possono controllare lo stato aggiornato del pagamento tramite la visualizzazione rapporto Stato pagamento ordine.
 
