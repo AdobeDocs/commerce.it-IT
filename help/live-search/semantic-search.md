@@ -3,9 +3,9 @@ title: Ricerca semantica
 description: Abilita la ricerca semantica AI per  [!DNL Live Search]  dalle impostazioni. Non è richiesta alcuna modifica alla configurazione degli attributi o alla vetrina.
 role: Admin
 recommendations: noCatalog
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ I commercianti on-premise e Adobe Commerce on-premise devono abilitare manualmen
 
    I risultati della ricerca vengono aggiornati al termine dell’indicizzazione. Per un catalogo di medie dimensioni, l’indicizzazione può richiedere fino a mezz’ora. Per cataloghi di grandi dimensioni con milioni di prodotti, può richiedere alcune ore.
 
-### Per i clienti ACS
+### Per [!DNL Adobe Commerce as a Cloud Service] clienti
 
 I clienti [!DNL Adobe Commerce as a Cloud Service] utilizzano la stessa area di lavoro **Impostazioni** nell&#39;amministratore [!DNL Live Search]. La ricerca semantica è **abilitata per impostazione predefinita** per i cataloghi inglesi idonei. Confermare che **[!UICONTROL Semantic search]** è abilitato o disabilitarlo se non si desidera una corrispondenza semantica nella vetrina.
 
