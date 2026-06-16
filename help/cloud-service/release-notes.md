@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 776aa6f6d887c93686539897e936fe8d3898e462
+source-git-commit: 469111676c7ac8bdf66f8f42bd26745ce7f88928
 workflow-type: tm+mt
-source-wordcount: 4439
+source-wordcount: 4489
 ht-degree: 0%
 
 ---
@@ -60,6 +60,10 @@ I seguenti elementi sono attualmente disponibili solo negli ambienti Sandbox e i
 ### Filtra ordini e fatture per società
 
 Gli endpoint REST API `GET /V1/orders` e `GET /V1/invoices` supportano ora il filtro per `company_id` e `company_name`, consentendo integrazioni B2B per recuperare ordini o fatture per una società specifica in una singola richiesta. <!-- ACCS-1111, CCSAAS-5076 -->
+
+### Elencare modelli e-mail personalizzati tramite l’API
+
+Il nuovo endpoint REST API di `GET /V1/custom-email/templates` restituisce i [modelli e-mail personalizzati](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/), inclusi l&#39;ID, il codice e l&#39;oggetto di ogni modello. Le integrazioni possono utilizzare un ID modello restituito con l&#39;endpoint `POST /V1/custom-email/send` invece di cercare l&#39;ID manualmente. <!-- CCSAAS-5089 -->
 
 ### Visualizzare la cronologia delle modifiche degli ordini nell’amministratore
 
@@ -571,7 +575,7 @@ Sono state apportate le seguenti modifiche ai componenti di rilascio B2B:
 
    * **[Gestione società](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/?lang=it)** - Abilita la gestione del profilo società e le autorizzazioni basate sui ruoli per le vetrine di Adobe Commerce.
    * **[Commutatore società](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/?lang=it)** - Fornisce un componente dell&#39;interfaccia utente che consente agli utenti di passare da un&#39;azienda all&#39;altra a cui sono associati.
-   * **[Ordini di acquisto](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/?lang=it)** - Gestisce i flussi di lavoro degli ordini di acquisto, le regole di approvazione e la cronologia degli ordini di acquisto per le transazioni B2B.
+   * **[Ordini di acquisto](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/)** - Gestisce i flussi di lavoro degli ordini di acquisto, le regole di approvazione e la cronologia degli ordini di acquisto per le transazioni B2B.
    * **[Gestione dei preventivi](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/?lang=it)** - Abilita i preventivi negoziabili per i clienti B2B con flussi di lavoro di richiesta, negoziazione e approvazione.
    * **[Elenchi di richieste](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=it)** - Fornisce gli strumenti per la creazione e la gestione degli elenchi di richieste per acquisti ripetuti e ordini in blocco.
 
