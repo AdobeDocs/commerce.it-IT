@@ -41,7 +41,7 @@ Ogni operazione di sincronizzazione dei feed, sia attivata da un processo cron c
 1. Se il blocco è **acquisito**, il processo registra il nome e il PID per scopi diagnostici, quindi esegue la sincronizzazione.
 1. Quando la sincronizzazione viene completata o non riesce, il blocco viene rilasciato incondizionatamente in modo che il successivo processo cron pianificato possa procedere normalmente.
 
-Solo un&#39;operazione di sincronizzazione può mantenere il blocco del feed alla volta, indipendentemente dal fatto che sia stato avviato da cron o CLI. Il blocco del feed è implementato tramite `LockManagerInterface` di [!DNL Adobe Commerce]. Il back-end predefinito è MySQL, che utilizza le funzioni `GET_LOCK` e `RELEASE_LOCK`. Per configurare un provider di blocchi diverso, vedere [Configurare il provider di blocchi](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}.
+Solo un&#39;operazione di sincronizzazione può mantenere il blocco del feed alla volta, indipendentemente dal fatto che sia stato avviato da cron o CLI. Il blocco del feed è implementato tramite `LockManagerInterface` di [!DNL Adobe Commerce]. Il back-end predefinito è MySQL, che utilizza le funzioni `GET_LOCK` e `RELEASE_LOCK`. Per configurare un provider di blocchi diverso, vedere [Configurare il provider di blocchi](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}.
 
 ## Messaggi di registro previsti
 
@@ -62,4 +62,4 @@ Questo messaggio viene visualizzato quando si tenta di eseguire una sincronizzaz
 > - [Sincronizzare i dati con l&#39;esportazione dei dati SaaS](sync-overview.md)
 > - [Sincronizzare i feed utilizzando Commerce CLI](data-export-cli-commands.md)
 > - [Pipeline di sincronizzazione del connettore](../aco-connector/connector-sync-pipeline.md)
-> - [Configurare il provider del blocco](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}
+> - [Configurare il provider del blocco](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}

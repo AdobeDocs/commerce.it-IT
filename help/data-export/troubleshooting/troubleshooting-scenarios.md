@@ -4,7 +4,7 @@ description: Scopri come diagnosticare e risolvere comportamenti di sincronizzaz
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -84,9 +84,9 @@ La correzione immediata per questo problema è una soluzione alternativa: config
 1. Dalla vetrina Commerce, apri i risultati della ricerca. Quindi, seleziona il prodotto in questione per aprirne la vista dettagliata.
 1. Copiare l&#39;output JSON e verificare che corrisponda a quello presente nel catalogo [!DNL Commerce].
 1. Se il contenuto non corrisponde, apporta una modifica minore al prodotto nel catalogo, ad esempio aggiungendo uno spazio o un punto, per forzare il rilevamento della modifica.
-1. Attendere la risincronizzazione o attivare una risincronizzazione manuale dalla CLI o dalla pagina [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) nell&#39;amministratore.
+1. Attendere la risincronizzazione o attivare una risincronizzazione manuale dalla CLI o dalla pagina [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) nell&#39;amministratore.
 
-Per ulteriori informazioni sulla risoluzione dei problemi relativi ai dati del catalogo in [!DNL Product Recommendations], vedere [Risoluzione dei problemi relativi al modulo Consigli di prodotto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce) nella Knowledge Base di Commerce.
+Per ulteriori informazioni sulla risoluzione dei problemi relativi ai dati del catalogo in [!DNL Product Recommendations], vedere [Risoluzione dei problemi relativi al modulo Consigli di prodotto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce) nella Knowledge Base di Commerce.
 
 ## Sincronizzazione dati non in esecuzione secondo pianificazione {#sync-not-on-schedule}
 
@@ -96,8 +96,8 @@ Per ulteriori informazioni sulla risoluzione dei problemi relativi ai dati del c
 
 **Soluzione:**
 
-- [Verificare che i processi cron siano in esecuzione](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
-- Verificare che gli indicizzatori per i feed seguenti siano impostati su **[!UICONTROL Update by Schedule]**: Attributi catalogo, Prodotto, Sostituzioni prodotto e Variante prodotto. Controllare da [[!UICONTROL Index Management]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) nell&#39;amministratore di Commerce o utilizzare CLI: `bin/magento indexer:show-mode | grep -i feed`.
+- [Verificare che i processi cron siano in esecuzione](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+- Verificare che gli indicizzatori per i feed seguenti siano impostati su **[!UICONTROL Update by Schedule]**: Attributi catalogo, Prodotto, Sostituzioni prodotto e Variante prodotto. Controllare da [[!UICONTROL Index Management]](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/index-management) nell&#39;amministratore di Commerce o utilizzare CLI: `bin/magento indexer:show-mode | grep -i feed`.
 
 ## Stato della sincronizzazione del catalogo non riuscito {#catalog-sync-failed}
 
@@ -110,7 +110,7 @@ Per ulteriori informazioni sulla risoluzione dei problemi relativi ai dati del c
 1. Per informazioni dettagliate sull’errore, consulta i registri degli errori di esportazione dei dati. Consulta [Esaminare i registri e risolvere i problemi](logging.md) per il formato del registro e le opzioni di registrazione estese:
    - `var/log/commerce-data-export-errors.log` per errori durante la raccolta dati.
    - `var/log/saas-export-errors.log` per gli errori durante l&#39;invio dei dati.
-1. Se l&#39;errore non è correlato alla configurazione o a un&#39;estensione di terze parti, [invia un ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) con le voci di registro pertinenti.
+1. Se l&#39;errore non è correlato alla configurazione o a un&#39;estensione di terze parti, [invia un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) con le voci di registro pertinenti.
 
 ## Il registro mostra i messaggi &quot;operazione ignorata - elaborazione bloccata&quot; {#process-locked}
 

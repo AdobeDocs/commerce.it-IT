@@ -36,7 +36,7 @@ Per le distribuzioni Adobe Commerce su cloud, on-premise o Adobe Commerce as a C
 
 - **[Pagina Stato sincronizzazione feed dati](../optimizer/setup/data-sync.md)**. Controllare lo stato di esportazione del feed per le distribuzioni connesse a [!DNL Live Search], [!DNL Product Recommendations] o [!DNL Catalog Service]. Questo dashboard mostra lo stato di esportazione del feed per ogni feed, inclusi eventuali errori rilevati. Una vista di dettaglio mostra lo stato di esportazione del feed per i singoli elementi del feed.
 
-- **[Dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**: gli utenti amministratori possono visualizzare e tenere traccia dei dati esportati e sincronizzati correttamente nei servizi Commerce connessi. Questa dashboard mostra i dati del prodotto sincronizzati con i servizi Commerce.
+- **[Dashboard di gestione dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**: gli utenti amministratori possono visualizzare e tenere traccia dei dati esportati e sincronizzati correttamente nei servizi Commerce connessi. Questa dashboard mostra i dati del prodotto sincronizzati con i servizi Commerce.
 
 >[!NOTE]
 >
