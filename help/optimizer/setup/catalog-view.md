@@ -1,25 +1,17 @@
 ---
 title: Vista catalogo
 description: Scopri cosa sono le visualizzazioni catalogo e come crearle per organizzare il catalogo dei prodotti in base alla struttura aziendale, alle politiche e ai prezzi.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
 TQID: https://experienceleague.adobe.com/Jmze0Pq3kSNMIXqkkML-hmmlZnv-XKgeEgRB8Q8NZ6s
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 1210
 ht-degree: 0%
@@ -37,7 +29,7 @@ Le visualizzazioni catalogo definiscono il modo in cui il catalogo dei prodotti 
 - **Quali prodotti sono visibili** in base alla struttura aziendale (marchi, aree geografiche, rivenditori)
 - **Prezzi visualizzati** tramite listini prezzi collegati
 - **Come vengono filtrati i prodotti** utilizzando i criteri (attributi come marchio, modello, categoria)
-- **Che cosa viene utilizzata [l&#39;origine del catalogo](catalog-source.md)** in base ad attributi come le impostazioni locali
+- **Che cosa viene utilizzata [l&#39;origine del catalogo](catalog-sources.md)** in base ad attributi come le impostazioni locali
 
 Considera le viste catalogo come diversi &quot;obiettivi&quot; attraverso i quali i clienti vedono il tuo catalogo. Ad esempio:
 
@@ -64,7 +56,7 @@ Prima di creare una vista catalogo, assicurati di disporre di:
 1. Configura i dettagli di visualizzazione del catalogo:
 
    - **Nome** - Immettere il nome della visualizzazione del catalogo, ad esempio `Celport`. &#x200B;
-   - **Origini catalogo** - Selezionare l&#39;[origine catalogo](catalog-source.md), ad esempio `en-US`.
+   - **Origini catalogo** - Selezionare l&#39;[origine catalogo](catalog-sources.md), ad esempio `en-US`.
    - **Livelli catalogo**-Rivedi i livelli acquisiti e la priorità.
    - **Criteri**: utilizzare il menu a discesa per selezionare i criteri rilevanti. Ad esempio, &quot;Marchio&quot;, &quot;Modello&quot;. &#x200B;Assicurarsi di avere già [creato un criterio](policies.md).
 
@@ -203,7 +195,7 @@ I dati del catalogo filtrati vengono consegnati a varie destinazioni, tra cui ve
 
 ## Altri argomenti correlati
 
-- [Origini catalogo](catalog-source.md) - Definisci l&#39;ambito di autorizzazione di prodotti, attributi e categorie per il comportamento di ricerca, filtro e ordinamento
+- [Origini catalogo](catalog-sources.md) - Definisci l&#39;ambito di autorizzazione di prodotti, attributi e categorie per il comportamento di ricerca, filtro e ordinamento
 - [Livelli catalogo](catalog-layer.md) - Scopri come modificare i dati di prodotto senza modificare l&#39;origine originale
 - [Criteri](policies.md) - Crea criteri per filtrare i prodotti nelle visualizzazioni catalogo
 - [Listini prezzi](pricebooks.md) - Gestisce le strutture di determinazione prezzi per segmenti cliente diversi

@@ -2,36 +2,24 @@
 title: Pipeline di sincronizzazione catalogo
 description: Scopri come funziona la pipeline di sincronizzazione  [!DNL Adobe Commerce Optimizer Connector] , inclusa la trasformazione dei feed, le pianificazioni cron, il controllo dell'ambito e la gestione degli errori.
 feature: Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 autotag-review: '2026-06-09T16:21:52.214Z'
 TQID: 'https://experienceleague.adobe.com/EXUQzAd0I6Hnq4twzhaBZZnv0jLjeGBuTx-QgQz-5MA'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: cc250cf1-34eb-4863-80d0-d170d45ea067id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 625
+source-wordcount: 662
 ht-degree: 1%
 
 ---
 
 # Pipeline di sincronizzazione del connettore
 
-Basato su [[!DNL SaaS Data Export]](https://experienceleague.adobe.com/it/docs/commerce/saas-data-export/overview), **[!DNL Adobe Commerce Optimizer Connector]** associa i dati raccolti dagli indicizzatori [!DNL SaaS Data Export] al formato richiesto da [!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API] e gestisce l&#39;autenticazione, l&#39;invio in batch e il controllo di sincronizzazione basato sull&#39;ambito. Le sezioni seguenti descrivono come funziona tale sincronizzazione.
+Basato su [[!DNL SaaS Data Export]](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview), **[!DNL Adobe Commerce Optimizer Connector]** associa i dati raccolti dagli indicizzatori [!DNL SaaS Data Export] al formato richiesto da [!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API] e gestisce l&#39;autenticazione, l&#39;invio in batch e il controllo di sincronizzazione basato sull&#39;ambito. Le sezioni seguenti descrivono come funziona tale sincronizzazione.
 
 Contesto correlato:
 
@@ -47,26 +35,29 @@ Il diagramma seguente mostra la sincronizzazione dei dati da [!DNL Adobe Commerc
 
 Quando i dati del catalogo cambiano in [!DNL Adobe Commerce], la sincronizzazione si sposta attraverso queste fasi.
 
-1. **Rilevamento modifiche entità** — (ogni 1 minuto) Un processo cron (`indexer_reindex_all_invalid`) rileva [!DNL Adobe Commerce] modifiche entità e attiva [!DNL SaaS Data Export], che assembla gli elementi feed e ne tiene traccia dello stato.
+1. **Rilevamento modifiche entità** — (ogni 1 minuto) Un processo cron (`indexer_reindex_all_invalid`) rileva [!DNL Adobe Commerce] modifiche entità e attiva [!DNL SaaS Data Export], che assembla gli elementi feed.
 1. **Trasformazione**: [!DNL Commerce Optimizer Connector] seleziona i feed assemblati, mappa le entità e gli ambiti [!DNL Adobe Commerce] ai formati richiesti dall&#39;API [!DNL Commerce Optimizer] e prepara il payload per la trasmissione.
 1. **Trasmissione**: i dati trasformati vengono inviati tramite HTTP POST (`/v1/catalog/<feed name>`) tramite [!DNL Adobe I/O Gateway] a [!DNL Commerce Optimizer], che convalida e mantiene i feed in ingresso.
+1. **Risultati persistenti** — Stato della risposta API persistente nelle [tabelle di feed](reference/connector-reference.md#supported-feeds).
 1. **Nuovo tentativo non riuscito** (ogni 5 minuti). Un processo cron separato (`*_resend_failed_items`) rileva eventuali elementi di feed non riusciti e li invia nuovamente tramite la stessa pipeline.
 
 ### Processi cron pianificati
 
-Due gruppi di cron automatizzano la pipeline secondo una pianificazione fissa.
+I seguenti processi cron automatizzano la pipeline secondo una pianificazione fissa.
 
-| Gruppo Cron | Finalità | Pianificazione |
-| ---------- | ------- | -------- |
-| `indexer_reindex_all_invalid` | Ascolta aggiornamenti di entità, assembla elementi feed, persiste stato feed | Ogni 1 minuto |
-| `*_resend_failed_items` | Controlla gli elementi di feed non riusciti e li invia nuovamente a [!DNL Commerce Optimizer] | Ogni 5 minuti |
+| Gruppo Cron | Processo Cron | Finalità | Pianificazione |
+|-------------------------------------|-------------------------------|------------------------------------------------------------------------------|----------------|
+| `index` | `indexer_update_all_views` | Ascolta aggiornamenti di entità, assembla elementi feed, persiste stato feed | Ogni 1 minuto |
+| `index` | `indexer_reindex_all_invalid` | Eseguire la risincronizzazione completa per gli indici di feed contrassegnati come &quot;Reindicizzazione richiesta&quot; | Ogni 1 minuto |
+| `resync_failed_feeds_data_exporter` | `*_resend_failed_items` | Controlla gli elementi di feed non riusciti e li invia nuovamente a [!DNL Commerce Optimizer] | Ogni 5 minuti |
+| `commerce_data_export` | `cleanup_deleted_feed_items` | Pulisce gli elementi di feed eliminati sincronizzati oltre il periodo di conservazione (7 giorni) | Ogni giorno alle 2:00 |
 
 L&#39;estensione **[!DNL SaaS Data Export]** gestisce la raccolta di feed e il tracciamento dello stato. Il livello del connettore mappa entità e ambiti nel formato richiesto dall&#39;API [!DNL Commerce Optimizer] e li invia tramite `POST /v1/catalog/<feed name>`.
 
 #### Requisiti
 
-- [Commerce cron deve essere in esecuzione](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}.
-- Gli indicizzatori dei feed devono utilizzare la modalità **[!UICONTROL Update by Schedule]**. Vedere [Verifica configurazione applicazione Commerce](../data-export/data-synchronization.md#verify-commerce-application-configuration){target="_blank"}.
+- [Commerce cron deve essere in esecuzione](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}.
+- Gli indicizzatori dei feed devono utilizzare la modalità **[!UICONTROL Update by Schedule]**. Vedere [Sincronizzazione parziale](../data-export/sync-overview.md#partial-sync){target="_blank"}.
 
 ## Controllo sincronizzazione basato su ambito
 
@@ -88,7 +79,7 @@ Per informazioni dettagliate sulla personalizzazione dell&#39;ambito di sincroni
 | Errori transitori | Riprovato ogni 5 minuti |
 | Sincronizzazione completa o cataloghi di grandi dimensioni | Da minuti a ore |
 
-Monitorare lo stato per feed dalla pagina [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) nell&#39;amministrazione di Commerce. Vedere [Verificare che la sincronizzazione dei dati funzioni](./get-started.md#verify-that-the-data-sync-is-working).
+Monitorare lo stato per feed dalla pagina [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) nell&#39;amministrazione di Commerce. Vedere [Verificare che la sincronizzazione dei dati funzioni](./data-sync-manage.md#verify-that-the-data-sync-is-working).
 
 ## Invio di feed e gestione degli errori
 
