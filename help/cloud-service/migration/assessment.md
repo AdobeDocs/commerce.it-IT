@@ -15,8 +15,8 @@ feature_v2:
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-nudge: true
-source-git-commit: 48171a525ad5e5f4b02da89753df6ea7e7ff9926
+nudge: true1
+source-git-commit: 99ad11aa255d35dcee4ffa80b4a38916d0c21766
 workflow-type: tm+mt
 source-wordcount: 2505
 ht-degree: 0%
@@ -33,10 +33,6 @@ ht-degree: 0%
 Una valutazione della migrazione Commerce è un’analisi automatizzata dell’implementazione Adobe Commerce esistente. Gli strumenti di Adobe scansionano la base di codice di Commerce e producono un rapporto strutturato che elenca tutto ciò che è stato creato, personalizzato o modificato. Il report indica quindi come le personalizzazioni apportate alla base di codice influiscono sulla migrazione a [!DNL Adobe Commerce as a Cloud Service].
 
 Il rapporto viene consegnato come file HTML che puoi aprire con qualsiasi browser. Non è richiesto alcun accesso all’ambiente di produzione, tranne che per la condivisione iniziale della base di codice del progetto.
-
->[!TIP]
->
->Contatta l’account manager della soluzione per richiedere una valutazione della migrazione dell’istanza esistente.
 
 **La valutazione fornisce:**
 
@@ -320,4 +316,8 @@ Manages custom shipping rate calculations based on customer account tier and ord
       - [Kit di avvio per il pagamento](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 - Sviluppo storefront
    - [Panoramica](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it)
-   - [Competenze di IA per la vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/?lang=it)
+   - [Competenze di IA per la vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/)
+
+>[!TIP]
+>
+>Contatta l’account manager della soluzione per richiedere una valutazione della migrazione dell’istanza esistente.
