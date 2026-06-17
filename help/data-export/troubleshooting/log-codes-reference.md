@@ -1,21 +1,35 @@
 ---
 title: Riferimento codici di registro di [ !Data Export]
 description: Elenco di riferimento per codici di registro, messaggi e livelli di gravità dell’esportazione dei dati, per risolvere i problemi di sincronizzazione e decidere quando è necessaria una risincronizzazione parziale o completa.
+autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services
 exl-id: c1341863-1ec4-4d67-8ff2-821ef0a61f33
-source-git-commit: c3c0574667e49a2449858f992983df404b90fc07
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: ea4d7562942cdf1f827f9926dd3fb7278d084f37
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: 568
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Data Export] riferimento codici di registro
 
 Questa pagina fornisce un riferimento per i messaggi del registro di esportazione dei dati per facilitare la risoluzione dei problemi di sincronizzazione e determinare quando è necessaria una risincronizzazione parziale o completa. Include solo i codici di registro di errore, avviso e criticità emessi dall&#39;estensione [!DNL Data Export].
 
-Per informazioni sui file di registro e indicazioni sulla risoluzione dei problemi, vedere [Esaminare i registri e risolvere i problemi](troubleshooting-logging.md).
+Per informazioni sui file di registro e indicazioni sulla risoluzione dei problemi, vedere [Esaminare i registri e risolvere i problemi](logging.md).
 
 ## Dettagli codice di registro
 
@@ -35,7 +49,7 @@ I codici sono assegnati solo a `error`, `warning` e `critical` messaggi di regis
 
 Codici di registro relativi a errori o avvisi che si verificano durante la raccolta di dati dalle entità di origine, in genere all&#39;interno dei provider di dati.
 - Le entità interessate possono essere elaborate con dati parziali o ignorate completamente in caso di errore. Per ulteriori informazioni, consulta il messaggio di registro.
-- Gli avvisi possono indicare un’integrazione errata con l’estensione Esportazione dati da parte di moduli di terze parti; tuttavia, le operazioni di sincronizzazione in genere continuano.
+- Gli avvisi possono indicare un’integrazione errata con l’estensione Esportazione dati da parte di moduli di terze parti. Tuttavia, le operazioni di sincronizzazione in genere continuano.
 
 | Codice di registro | Livello | Messaggio | Percorso file |
 |----------|---------|------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
@@ -138,3 +152,9 @@ Codici di registro relativi a errori durante il processo di indicizzazione o dov
 | CDE04-18 | avvertenza | `CDE04-18 Fixture generator: failed to filter indexer changelog tables from fixture SQL: {message}` | `commerce-data-export/CatalogDataExporter/Plugin/FilterChangeLogTable.php:43` |
 | CDE04-19 | avvertenza | `CDE04-19 The identifier for a feed item is empty. Sync is skipped for the entity.` | `commerce-data-export/DataExporter/Model/Indexer/FeedIndexProcessorCreateUpdate.php:439` |
 | CDE04-20 | avvertenza | `CDE04-20 Unexpected call: feed "{feed_name}" is not locked, trace: {stack_trace}` | `commerce-data-export/DataExporter/Model/Indexer/FeedIndexer.php:204` |
+
+>[!MORELIKETHIS]
+>
+> - [Esaminare i registri e risolvere i problemi](logging.md)
+> - [Risoluzione dei problemi](troubleshooting-scenarios.md)
+> - [Schema tabella feed](../reference/feed-table-reference.md)

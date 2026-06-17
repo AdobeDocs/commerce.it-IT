@@ -1,11 +1,15 @@
 ---
 title: Revisione dei registri e risoluzione dei problemi
 description: Scopri come risolvere i problemi di  [!DNL data export]  errori utilizzando i registri di esportazione dei dati e saas.
+autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
 TQID: https://experienceleague.adobe.com/PkV4L0RpfA-jeja0Fd6JCDriE6wwjd25Qou0JhG5o8E
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
@@ -14,9 +18,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 1155
+source-wordcount: 1007
 ht-degree: 0%
 
 ---
@@ -46,7 +50,7 @@ Se non visualizzi i dati previsti per un servizio Adobe Commerce, utilizza i reg
 
 Ogni record di registro ha la seguente struttura.
 
-```
+```text
 [<log record datetime>] report.<log level>:
 {
    "feed": "<feed name>",
@@ -99,7 +103,7 @@ In questo esempio, i valori `status` forniscono informazioni sull&#39;operazione
 
 +++ **Esempio: log di risincronizzazione completo per il feed di prezzo**
 
-```
+```text
 Price feed full resync:
 
 [2024-03-05T21:00:51.754687+00:00] report.INFO: {"feed":"prices","operation":"full sync","status":"Initialize","elapsed":"383 ms","pid":"14469","caller":"bin\/magento saas:resync --feed=prices"} [] []
@@ -148,22 +152,7 @@ Se vengono visualizzati errori non correlati alla configurazione o alle estensio
 
 ### Risolvi problemi di sincronizzazione catalogo {#resolvesync}
 
-Quando attivi una risincronizzazione dei dati, l’aggiornamento dei dati può richiedere fino a un’ora e può essere incluso nei componenti dell’interfaccia utente, ad esempio le unità per la ricerca live e per la generazione di consigli. Se riscontri ancora delle discrepanze tra il catalogo e i dati nella vetrina di Commerce, o se la sincronizzazione del catalogo non è riuscita, fai riferimento a quanto segue:
-
-#### Discrepanza dei dati
-
-1. Visualizzare la visualizzazione dettagliata del prodotto in questione nei risultati della ricerca.
-1. Copiare l&#39;output JSON e verificare che il contenuto corrisponda a quello presente nel catalogo [!DNL Commerce].
-1. Se il contenuto non corrisponde, apporta una piccola modifica al prodotto nel catalogo, ad esempio aggiungendo uno spazio o un punto.
-1. Attendere la risincronizzazione o attivare una risincronizzazione manuale dalla CLI o dal dashboard di amministrazione.
-
-#### Sincronizzazione non in esecuzione
-
-Se la sincronizzazione non è in esecuzione su una pianificazione o non è stato sincronizzato nulla, vedere questo articolo [KnowledgeBase](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
-
-#### Sincronizzazione non riuscita
-
-Se lo stato della sincronizzazione del catalogo è **Non riuscito**, inviare un [ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Per la risoluzione dei problemi relativi alla sincronizzazione dei cataloghi, tra cui discrepanze di dati, sincronizzazione non in esecuzione e stato di sincronizzazione non riuscita, vedere [Risoluzione dei problemi](troubleshooting-scenarios.md).
 
 ## Registrazione estesa
 
@@ -173,7 +162,7 @@ Utilizza le variabili di ambiente per estendere i registri con dati aggiuntivi p
 
 Includere il payload del feed nel registro di esportazione SaaS aggiungendo la variabile di ambiente `EXPORTER_EXTENDED_LOG=1` quando si sincronizza nuovamente il feed.
 
-```shell script
+```shell
 EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
 ```
 
@@ -185,7 +174,7 @@ Per l&#39;estensione di esportazione dei dati Commerce SaaS (`magento/module-dat
 
 La conservazione dei dati di payload nella tabella di indice non è consigliata negli ambienti di produzione, ma può essere utile in un ambiente di sviluppo. Includere il payload del feed nell&#39;indice aggiungendo la variabile di ambiente `PERSIST_EXPORTED_FEED=1` quando si risincronizza il feed.
 
-```shell script
+```shell
 PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 ```
 
@@ -195,12 +184,18 @@ Se il processo di reindicizzazione di un feed specifico richiede un tempo eccess
 
 Eseguire il profiler aggiungendo la variabile di ambiente `EXPORTER_PROFILER=1` quando si esegue il comando reindex.
 
-```
+```shell
 EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
 ```
 
 I dati del profiler vengono memorizzati nel log di esportazione dei dati (`var/log/commerce-data-export.log`) nel seguente formato:
 
-```
+```text
 <Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>
 ```
+
+>[!MORELIKETHIS]
+>
+> - [Risoluzione dei problemi](troubleshooting-scenarios.md) — Risoluzione dei problemi di sincronizzazione del catalogo e delle discrepanze nei dati.
+> - [Riferimento codici di registro](log-codes-reference.md) - Cercare i codici di registro di esportazione.
+> - [Sincronizzare i feed utilizzando Commerce CLI](../data-export-cli-commands.md) — Eseguire le risincronizzazioni dei feed di destinazione.

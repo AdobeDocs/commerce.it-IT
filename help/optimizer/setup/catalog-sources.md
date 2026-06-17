@@ -1,5 +1,5 @@
 ---
-title: Origine catalogo
+title: Origini del catalogo
 description: Scopri cosa sono le origini del catalogo e come definiscono l’ambito autorevole di prodotti, attributi e categorie per il comportamento di ricerca, filtro e ordinamento.
 role: Admin, Developer
 recommendations: noCatalog
@@ -23,20 +23,20 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
+source-git-commit: 94ba07437d532d0d101c166f58114c2aa0bd4be4
 workflow-type: tm+mt
-source-wordcount: 450
+source-wordcount: 446
 ht-degree: 0%
 
 ---
 
-# Origine catalogo
+# Origini del catalogo
 
-Un’origine catalogo rappresenta un ambito autorevole di prodotti, attributi e categorie. Le origini del catalogo in genere vengono mappate in base ai limiti della lingua, del pubblico o del sistema di origine e determinano il comportamento di ricerca, filtro e ordinamento.
+Le origini del catalogo rappresentano ambiti autorevoli di prodotti, attributi e categorie. In genere vengono mappati sui limiti della lingua, del pubblico o del sistema di origine e determinano il comportamento di ricerca, filtro e ordinamento.
 
-## Origine del catalogo e concetti correlati
+## Origini del catalogo e concetti correlati
 
-Il modo in cui un&#39;origine catalogo si relaziona con altri concetti di [!DNL Adobe Commerce Optimizer] consente di modellare correttamente i dati:
+Il modo in cui le origini del catalogo si relazionano con altri concetti di [!DNL Adobe Commerce Optimizer] consente di modellare correttamente i dati:
 
 * **Origine catalogo**: il contesto dei dati sottostante che fornisce le informazioni sul prodotto. Un&#39;origine catalogo è in genere una lingua (ad esempio, `en-US`, `fr-CA`) o un sistema esterno come un PIM o un ERP. I prodotti, i metadati degli attributi e le categorie hanno tutti un ambito per origine di catalogo. Considera un&#39;origine del catalogo come *da cui* provengono i dati del catalogo non elaborati e *come* influisce sull&#39;individuazione del prodotto (risultati di ricerca, filtraggio e comportamento di ordinamento).
 
@@ -46,7 +46,7 @@ Il modo in cui un&#39;origine catalogo si relaziona con altri concetti di [!DNL 
 
 ## Regole e limitazioni
 
-* Un’origine catalogo viene creata acquisendo un prodotto tramite l’API di acquisizione dati. Per ulteriori informazioni, consulta [Developer Docs - Data Ingestion](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/).
+* Ogni origine di catalogo viene creata acquisendo un prodotto tramite l’API di acquisizione dati. Per ulteriori informazioni, consulta [Developer Docs - Data Ingestion](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/).
 * L’univocità del prodotto è determinata da SKU + origine catalogo.
 * Gli acquirenti non accedono direttamente alle origini del catalogo. I dati del catalogo sono esposti alla vetrina tramite [visualizzazioni catalogo](catalog-view.md).
 

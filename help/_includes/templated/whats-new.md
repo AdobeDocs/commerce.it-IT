@@ -1,7 +1,7 @@
 ---
-source-git-commit: 61e34c6fb4a004789bffa43c5b9356ad4edc685e
+source-git-commit: 2cae607e49298fa07c35e59bfc1e8388fe3b58cf
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1184'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8ec59cfc8c9d4d1e804adefe7f88806843e3caa3">commit</a></td>
     </tr>
     <tr>
-      <td><p>È stato aggiunto il meccanismo di blocco del feed <a href="https://experienceleague.adobe.com/it/docs/commerce/saas-data-export/feed-lock-mechanism">per l'esportazione di dati SaaS</a> per spiegare in che modo i blocchi del feed impediscono conflitti di sincronizzazione simultanei e come interpretare i normali messaggi ignorati inclusi nel registro di esportazione dei dati di Commerce (<code>commerce-data-export.log</code>).</p>
+      <td><p>È stato aggiunto il meccanismo di blocco del feed <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/feed-lock-mechanism">per l'esportazione di dati SaaS</a> per spiegare in che modo i blocchi del feed impediscono conflitti di sincronizzazione simultanei e come interpretare i normali messaggi ignorati inclusi nel registro di esportazione dei dati di Commerce (<code>commerce-data-export.log</code>).</p>
 </td>
       <td>
         Nuovo argomento

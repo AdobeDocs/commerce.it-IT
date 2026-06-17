@@ -1,6 +1,7 @@
 ---
 title: Introduzione a  [!DNL Live Search]
 description: Scopri i requisiti di sistema e i passaggi di installazione per  [!DNL Live Search]  da Adobe Commerce.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
 badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
@@ -24,9 +25,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 2934
+source-wordcount: 2883
 ht-degree: 0%
 
 ---
@@ -67,7 +68,7 @@ Questo articolo è destinato agli sviluppatori o agli integratori di sistemi del
 >
 > **Idoneità HIPAA**
 >
->Se utilizzi Adobe Commerce con l’estensione HIPAA-Ready e il componente aggiuntivo Healthcare, non elaborare alcuna informazione sanitaria protetta (PHI) tramite LiveSearch> Live Search non è un servizio compatibile con HIPAA.
+>Se si utilizza Adobe Commerce con l&#39;estensione HIPAA-Ready e il componente aggiuntivo Healthcare, non elaborare alcuna informazione sanitaria protetta (PHI) tramite LiveSearch> Live Search non è un servizio compatibile con HIPAA.
 >
 >Per informazioni dettagliate, vedere [Preparazione HIPAA in Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) e la guida [Operazioni](https://experienceleague.adobe.com/it/docs/commerce-admin/start/compliance/hipaa-ready-service/operations), che elenca Live Search tra i servizi Commerce non conformi HIPAA.
 
@@ -238,7 +239,7 @@ Utilizza [Dashboard di gestione dati](https://experienceleague.adobe.com/it/docs
 
 ![Dashboard di gestione dati](assets/data-management-dashboard.png)
 
-È inoltre possibile eseguire i comandi di sincronizzazione e risolvere i problemi relativi al processo di sincronizzazione utilizzando [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) e i registri delle estensioni di esportazione dei dati.
+È inoltre possibile eseguire i comandi di sincronizzazione e risolvere i problemi del processo di sincronizzazione utilizzando [Commerce CLI](../data-export/data-export-cli-commands.md) e i [log dell&#39;estensione dell&#39;esportazione dei dati](../data-export/troubleshooting/logging.md).
 
 #### Aggiornamenti futuri del prodotto
 
@@ -307,7 +308,7 @@ Se tutto funziona correttamente, [!DNL Live Search] è installato, connesso e pr
 
 Se si verificano problemi nella vetrina, controllare il file `var/log/system.log` per individuare eventuali errori o errori di comunicazione API sul lato servizi.
 
-Per consentire a [!DNL Live Search] di attraversare un firewall, aggiungere `commerce.adobe.io` al inserisco nell&#39;elenco Consentiti di.
+Per consentire a [!DNL Live Search] di passare attraverso un firewall, aggiungere `commerce.adobe.io` al inserisco nell&#39;elenco Consentiti di.
 
 ## &#x200B;7. Verificare che gli eventi acquisiscano i dati {#capture}
 
