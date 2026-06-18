@@ -4,7 +4,7 @@ description: Scopri come allegare file come PDF, manuali e fogli dati ai prodott
 feature: Catalog Management, Products, Integration
 role: Admin, Developer
 level: Intermediate
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 autotag-review: '2026-06-18T16:03:48.301Z'
 TQID: 'https://experienceleague.adobe.com/fFbsXGO54L1lSuQULqfP7A-BJKSYggdt7cy-GDvaSzU'
 product_v2:
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 # Aggiungere file ai prodotti
 
-[!DNL Adobe Commerce as a Cloud Service] supporta un tipo di input per l&#39;attributo &quot;File&quot; [product](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types){target="_blank"} che consente ai commercianti di allegare file, ad esempio PDF, manuali, certificati e fogli dati direttamente ai prodotti. I file sono memorizzati nell’archiviazione multimediale Amazon S3 e sono accessibili tramite la vetrina tramite GraphQL o tramite integrazioni tramite l’API REST.
+[!DNL Adobe Commerce as a Cloud Service] supporta un tipo di input per l&#39;attributo &quot;File&quot; [product](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/product-attributes/attributes-input-types){target="_blank"} che consente ai commercianti di allegare file, ad esempio PDF, manuali, certificati e fogli dati direttamente ai prodotti. I file sono memorizzati nell’archiviazione multimediale Amazon S3 e sono accessibili tramite la vetrina tramite GraphQL o tramite integrazioni tramite l’API REST.
 
 Esistono tre modi per caricare i file negli attributi del file di prodotto:
 
@@ -45,15 +45,15 @@ Esistono tre modi per caricare i file negli attributi del file di prodotto:
 
 Prima di caricare i file, è necessario creare un attributo di file e assegnarlo a un set di attributi.
 
-* [Crea un attributo di file](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} - Imposta **[!UICONTROL Catalog Input Type for Store Owner]** su **[!UICONTROL File]**.
+* [Crea un attributo di file](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} - Imposta **[!UICONTROL Catalog Input Type for Store Owner]** su **[!UICONTROL File]**.
 
-* [Assegnare l&#39;attributo a un set di attributi](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets#create-an-attribute-set){target="_blank"}. Trascinare il nuovo attributo di file nel gruppo desiderato.
+* [Assegnare l&#39;attributo a un set di attributi](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/product-attributes/create/attribute-sets#create-an-attribute-set){target="_blank"}. Trascinare il nuovo attributo di file nel gruppo desiderato.
 
-* Configura i tipi e le dimensioni di file consentiti nella configurazione di [Attributi file di prodotto](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/product-file-attributes).
+* Configura i tipi e le dimensioni di file consentiti nella configurazione di [Attributi file di prodotto](https://experienceleague.adobe.com/it/docs/commerce-admin/config/catalog/product-file-attributes).
 
 ## Caricare file tramite Admin
 
-Dopo aver [creato un attributo di file](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} e averlo assegnato a un set di attributi, puoi caricare i file direttamente dalla pagina di modifica del prodotto.
+Dopo aver [creato un attributo di file](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} e averlo assegnato a un set di attributi, puoi caricare i file direttamente dalla pagina di modifica del prodotto.
 
 1. Nella barra laterale _Admin_, passa a **[!UICONTROL Catalog]** > **[!UICONTROL Products]**.
 
@@ -80,7 +80,7 @@ Il processo prevede quattro fasi:
 
 ## Carica tramite importazione prodotto
 
-Puoi allegare i file ai prodotti in blocco utilizzando l&#39;[API di importazione](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"} o l&#39;interfaccia utente di importazione amministratore. Gli attributi del file di prodotto supportano l&#39;importazione solo da URL esterni, che seguono lo stesso approccio di [Metodo 2 per l&#39;importazione di immagini di prodotto](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}. Commerce scarica il file dall’URL fornito e lo salva nell’archiviazione multimediale S3.
+Puoi allegare i file ai prodotti in blocco utilizzando l&#39;[API di importazione](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"} o l&#39;interfaccia utente di importazione amministratore. Gli attributi del file di prodotto supportano l&#39;importazione solo da URL esterni, che seguono lo stesso approccio di [Metodo 2 per l&#39;importazione di immagini di prodotto](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}. Commerce scarica il file dall’URL fornito e lo salva nell’archiviazione multimediale S3.
 
 >[!NOTE]
 >
@@ -104,7 +104,7 @@ sku,name,additional_attributes
 ADB112,"My Product",file_upload=https://example.com/files/manual.pdf
 ```
 
-In entrambi i casi, l&#39;URL deve essere accessibile al pubblico e l&#39;estensione e la dimensione del file devono essere conformi alle [limitazioni configurate](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/product-file-attributes){target="_blank"}.
+In entrambi i casi, l&#39;URL deve essere accessibile al pubblico e l&#39;estensione e la dimensione del file devono essere conformi alle [limitazioni configurate](https://experienceleague.adobe.com/it/docs/commerce-admin/config/catalog/product-file-attributes){target="_blank"}.
 
 ## Recuperare i file tramite GraphQL
 
