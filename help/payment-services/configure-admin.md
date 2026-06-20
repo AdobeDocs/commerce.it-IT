@@ -56,7 +56,7 @@ Puoi abilitare [!DNL Payment Services] per il tuo archivio e _[!UICONTROL Mercha
 
 Se esegui una singola istanza di Commerce con **più siti Web** (e visualizzazioni dello store), per alcuni siti Web potrebbe essere necessario un **account esercente PayPal diverso**. [!DNL Payment Services] consente di completare l&#39;onboarding di **PayPal con ambito sito Web** nell&#39;amministratore dopo la configurazione e l&#39;onboarding dell&#39;istanza nell&#39;ambito **global** (predefinito).
 
-Nelle versioni precedenti, la mappatura dell&#39;account PayPal a livello di sito Web richiedeva in genere di [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#Solution) o il rappresentante Adobe. Utilizzare l&#39;azione **[!UICONTROL Connect different account for website]** quando si soddisfano i prerequisiti seguenti.
+Nelle versioni precedenti, la mappatura dell&#39;account PayPal a livello di sito Web richiedeva in genere di [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=it#Solution) o il rappresentante Adobe. Utilizzare l&#39;azione **[!UICONTROL Connect different account for website]** quando si soddisfano i prerequisiti seguenti.
 
 ### Prerequisiti (ambito globale)
 
