@@ -1,7 +1,7 @@
 ---
-source-git-commit: 71c8c06fbc4e8717d02b1da3001985f7203a8adf
+source-git-commit: 7a4031966113a9131b85a7d0bfc4a3add606d2f7
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1690'
 ht-degree: 1%
 
 ---
@@ -445,28 +445,6 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
         Aggiornamento principale
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/eb10bd0ff636f70360e1ca35e51b6643ad1f70d4">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 20 aprile 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stato chiarito dove monitorare l'esportazione e la sincronizzazione dei dati SaaS: <a href="https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard">Dashboard di gestione dati</a>, <a href="https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status">Stato sincronizzazione feed dati</a> e <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/setup/data-sync">Sincronizzazione dati Commerce Optimizer</a>.</p>
-</td>
-      <td>
-        Feedback tecnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fcb9d4ae76bf0336fbad0dbff6518ed661d5b23b">commit</a></td>
     </tr>
   </tbody>
 </table>
