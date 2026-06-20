@@ -68,4 +68,4 @@ Per un catalogo di comportamenti specifici causati da configurazione errata o in
 
 ## Diagnostica [!DNL SaaS Data Export]
 
-Per informazioni sulla diagnostica [!DNL SaaS Data Export] di livello inferiore, inclusi i percorsi dei log e i comandi di risincronizzazione dei feed, vedere la [[!DNL SaaS Data Export] guida alla risoluzione dei problemi](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}.
+Per informazioni sulla diagnostica [!DNL SaaS Data Export] di livello inferiore, inclusi i percorsi dei log e i comandi di risincronizzazione dei feed, vedere la [[!DNL SaaS Data Export] guida alla risoluzione dei problemi](https://experienceleague.adobe.com/it/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}.

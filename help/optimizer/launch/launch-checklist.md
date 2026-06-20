@@ -235,7 +235,7 @@ Conferma il comportamento di CDN, DNS e cache.
 
 ▢ La configurazione CDN utilizza l&#39;endpoint GraphQL di produzione (`yourproject.com/graphql`) per le estensioni e gli script Sidekick (ad esempio, la generazione di sitemap e l&#39;importazione di immagini).
 ▢ Quando utilizzi Adobe Commerce Fastly, è disponibile un token di eliminazione CDN e [la configurazione del sito](https://tools.aem.live/tools/cdn-setup/index.html) include `authToken` e `serviceId`.
-▢ [La configurazione CDN](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/){target="_blank"} convalida la memorizzazione nella cache e l&#39;annullamento della validità.
+▢ [La configurazione CDN](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/?lang=it){target="_blank"} convalida la memorizzazione nella cache e l&#39;annullamento della validità.
 ▢ Per [impostazioni di più archivi](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/indexing/?lang=it#multi-store-setups){target="_blank"}, le richieste di Catalog Service e [!DNL Live Search] includono un buster della cache specifico per l&#39;archivio (ad esempio, un parametro di query o una regola CDN).
 ▢ L&#39;invalidazione push funziona in modo completo (pubblica una modifica, quindi verifica nel dominio di produzione).
 ▢ TTL DNS sufficientemente basso prima del cutover.
