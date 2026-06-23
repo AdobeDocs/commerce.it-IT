@@ -34,9 +34,9 @@ La maggior parte delle attività di sincronizzazione viene elaborata automaticam
 
 Per le distribuzioni Adobe Commerce su cloud, on-premise o Adobe Commerce as a Cloud Service, visualizza e gestisci il processo di sincronizzazione dalle seguenti risorse di amministrazione di Commerce:
 
-- **[Pagina stato sincronizzazione feed dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)**. Controllare lo stato di esportazione del feed per le distribuzioni connesse a [!DNL Live Search], [!DNL Product Recommendations] o [!DNL Catalog Service]. Questo dashboard mostra lo stato di esportazione del feed per ogni feed, inclusi eventuali errori rilevati. Una vista di dettaglio mostra lo stato di esportazione del feed per i singoli elementi del feed.
+- **[Pagina stato sincronizzazione feed dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)**. Controllare lo stato di esportazione del feed per le distribuzioni connesse a [!DNL Live Search], [!DNL Product Recommendations] o [!DNL Catalog Service]. Questo dashboard mostra lo stato di esportazione del feed per ogni feed, inclusi eventuali errori rilevati. Una vista di dettaglio mostra lo stato di esportazione del feed per i singoli elementi del feed.
 
-- **[Dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**: gli utenti amministratori possono visualizzare e tenere traccia dei dati esportati e sincronizzati correttamente nei servizi Commerce connessi. Questa dashboard mostra i dati del prodotto sincronizzati con i servizi Commerce.
+- **[Dashboard di gestione dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**: gli utenti amministratori possono visualizzare e tenere traccia dei dati esportati e sincronizzati correttamente nei servizi Commerce connessi. Questa dashboard mostra i dati del prodotto sincronizzati con i servizi Commerce.
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ Per le distribuzioni Adobe Commerce su cloud, on-premise o Adobe Commerce as a C
 
 Per le distribuzioni Commerce on-premise o sul cloud integrate con [!DNL Commerce Optimizer], visualizzare e gestire il processo di sincronizzazione utilizzando le risorse seguenti:
 
-- **[Pagina Stato sincronizzazione feed dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** - Controlla lo stato di esportazione del feed del connettore dall&#39;amministratore di Commerce. Questa pagina mostra se i dati del catalogo sono stati esportati correttamente da [!DNL Adobe Commerce], inclusi i dettagli di errore per feed e per elemento.
+- **[Pagina Stato sincronizzazione feed dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** - Controlla lo stato di esportazione del feed del connettore dall&#39;amministratore di Commerce. Questa pagina mostra se i dati del catalogo sono stati esportati correttamente da [!DNL Adobe Commerce], inclusi i dettagli di errore per feed e per elemento.
 
 - **[Pagina di sincronizzazione dati](../optimizer/setup/data-sync.md)**: la pagina di sincronizzazione dati offre una panoramica dello stato di sincronizzazione dei dati di prodotto provenienti dall&#39;origine del catalogo a monte in [!DNL Commerce Optimizer].
 

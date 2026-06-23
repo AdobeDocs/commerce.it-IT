@@ -86,7 +86,7 @@ Dopo aver collegato un’istanza di Adobe Commerce al servizio Commerce, esegui 
 Con la sincronizzazione parziale, l’esportazione di dati SaaS invia automaticamente aggiornamenti dall’applicazione Commerce, come modifiche al nome del prodotto o aggiornamenti dei prezzi, ai servizi commerce connessi.
 Affinché la sincronizzazione parziale funzioni, l&#39;applicazione Commerce richiede la seguente configurazione:
 
-- [La pianificazione delle attività è abilitata tramite processi cron](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
+- [La pianificazione delle attività è abilitata tramite processi cron](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=it)
 - Tutti gli indici di esportazione dei dati SaaS sono configurati in modalità `Update by Schedule`.
 
 ### Ritenta sincronizzazione elementi non riusciti {#retry-failed-items-sync}
@@ -119,7 +119,7 @@ Gli elementi feed vengono inviati come batch JSON autenticati compressi Gzip tra
 
 Oltre agli errori a livello HTTP, gli errori a livello di applicazione, ad esempio errori di elaborazione locale o interruzioni di rete, sono pianificati per un nuovo tentativo automatico da parte dei processi cron `*_resend_failed_items`.
 
-Monitorare lo stato per feed dalla pagina [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) nell&#39;amministrazione di Commerce.
+Monitorare lo stato per feed dalla pagina [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) nell&#39;amministrazione di Commerce.
 
 >[!MORELIKETHIS]
 >
