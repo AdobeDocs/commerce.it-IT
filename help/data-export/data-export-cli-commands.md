@@ -16,9 +16,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: ef1a9efc579d8d21c145e6981235489a2e4ea203
 workflow-type: tm+mt
-source-wordcount: 670
+source-wordcount: 728
 ht-degree: 0%
 
 ---
@@ -96,6 +96,10 @@ Obbligatorio. Specifica l&#39;entità feed da risincronizzare.
 >
 >I moduli installati determinano i feed da risincronizzare. `productOverrides` richiede ad esempio [!DNL Adobe Commerce] nel cloud, nei locali o Commerce as a Cloud Service e `orders` richiede il modulo Ordini di vendita.
 
+>[!NOTE]
+>
+>Il comando `saas:resync` trasmette solo i nuovi elementi, gli elementi aggiornati e gli elementi che in precedenza non erano stati esportati. Gli elementi il cui hash di contenuto non è stato modificato dall&#39;ultima esportazione vengono ignorati.
+
 **Esempio:**
 
 ```shell
@@ -107,6 +111,10 @@ bin/magento saas:resync --feed products
 Risincronizza parzialmente entità specifiche in base ai loro ID. Supporta `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants` e `categoryPermissions` feed.
 
 Per impostazione predefinita, quando si utilizza l&#39;opzione `--by-ids` si specificano valori utilizzando i valori SKU del prodotto. Per utilizzare gli ID prodotto, aggiungere l&#39;opzione `--id-type=productId`.
+
+>[!NOTE]
+>
+>A differenza di una risincronizzazione standard, `--by-ids` ignora la verifica hash e forza l&#39;invio delle entità specificate ai servizi Commerce connessi indipendentemente dal fatto che il contenuto sia stato modificato dopo l&#39;ultima esportazione.
 
 **Esempi:**
 

@@ -20,14 +20,14 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 19de20caafd45e3a00896d0d4b29b7e96dfe94e1
 workflow-type: tm+mt
-source-wordcount: 296
+source-wordcount: 301
 ht-degree: 1%
 
 ---
 
-# Moduli di connettore ed endpoint di feed
+# Moduli di connettore ed endpoint di feed per il connettore Adobe Commerce Optimizer
 
 Questo riferimento elenca i pacchetti del modulo [!DNL Adobe Commerce Optimizer Connector], gli endpoint API di feed supportati e i percorsi chiave di configurazione archiviati in `core_config_data`. Per informazioni sull&#39;interazione di questi componenti durante la sincronizzazione, vedere [Pipeline di sincronizzazione del connettore](../connector-sync-pipeline.md).
 
