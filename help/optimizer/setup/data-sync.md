@@ -14,7 +14,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: c7633056caec2fcec318f8ebcc9664cfc7b3b9b4
 workflow-type: tm+mt
 source-wordcount: 484
 ht-degree: 0%
@@ -34,7 +34,7 @@ La pagina **Sincronizzazione dati** si trova in *Configurazione* > **Sincronizza
 La pagina **Sincronizzazione dati** contiene i campi seguenti:
 
 | Campo | Descrizione |
-|--- |--- |
+| --- | --- |
 | Origine catalogo | Impostazioni locali specifiche per i dati sincronizzati. |
 | [!DNL Catalog Service] | Visualizza l&#39;ultimo aggiornamento di sincronizzazione, il totale dei prodotti ricevuti, un campo di ricerca e una tabella dei prodotti sincronizzati per [!DNL Catalog Service]. |
 | Individuazione prodotto | Visualizza l&#39;ultimo aggiornamento di sincronizzazione, il totale dei prodotti ricevuti, un campo di ricerca e una tabella dei prodotti sincronizzati da cercare. |
@@ -61,12 +61,11 @@ Se non trovi prodotti specifici nella pagina **Sincronizzazione dati**, devi avv
 >
 >Il tempo necessario per completare la sincronizzazione varia in base alle dimensioni del catalogo e al volume di dati aggiornati.
 
-## Monitorare lo stato di sincronizzazione dei dati
+## Verificare che la sincronizzazione dei dati funzioni
 
-Per i progetti che utilizzano Adobe Commerce come origine dati a monte tramite il connettore Adobe Commerce Optimizer, è possibile monitorare il processo di esportazione dei dati e avviare le operazioni di risincronizzazione dalla [pagina Stato sincronizzazione feed dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) in Amministrazione Commerce.
+Per i progetti che utilizzano Adobe Commerce come origine dati a monte tramite il connettore Adobe Commerce Optimizer, puoi monitorare il processo di esportazione dei dati e avviare le operazioni di risincronizzazione dalla pagina Stato sincronizzazione feed dati. Per ulteriori dettagli, vedere [Verificare che la sincronizzazione dei dati funzioni](../../aco-connector/data-sync-manage.md#verify-that-the-data-sync-is-working) nella documentazione di _Adobe Commerce Optimizer Connector_.
 
 ## Argomenti correlati
 
 - [Connettore Adobe Commerce Optimizer](../../aco-connector/overview.md){target="_blank"}
-
 

@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: 586
+source-wordcount: 437
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ https://<region>-<environment>.api.commerce.adobe.com/<tenantId>/graphql
 
 - `<region>` è l&#39;area cloud in cui è distribuita l&#39;istanza.
 - `<environment>` è il tipo di ambiente, ad esempio `sandbox`. Se l’ambiente è la produzione, questo valore viene omesso.
-- `<tenantId>` è l&#39;identificatore univoco per l&#39;istanza specifica della tua organizzazione all&#39;interno di Adobe Experience Cloud.
+- `<tenantId>` è l&#39;identificatore univoco dell&#39;istanza specifica della tua organizzazione in Adobe Experience Cloud.
 
 Per informazioni dettagliate sull&#39;utilizzo dell&#39;API GraphQL di Catalog Service, vedere la [Guida di Catalog Service per Adobe Commerce](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/) nella documentazione di *Adobe Commerce Developer*.
 
@@ -71,7 +71,7 @@ Per altre integrazioni, consulta la documentazione di configurazione del progett
 
 ### Configurazione del firewall
 
-Per consentire a [!DNL Catalog Service] di attraversare un firewall, aggiungere `commerce.adobe.io` al inserisco nell&#39;elenco Consentiti di.
+Per consentire a [!DNL Catalog Service] di passare attraverso un firewall, aggiungere `commerce.adobe.io` al inserisco nell&#39;elenco Consentiti di.
 
 ## Catalog Service e Mesh API
 
@@ -81,12 +81,8 @@ Per informazioni dettagliate sull&#39;installazione e la configurazione, vedere 
 
 ## Monitorare e risolvere i problemi di esportazione dei dati
 
-L&#39;amministratore di Commerce fornisce strumenti per il monitoraggio e la risoluzione dei problemi relativi all&#39;esportazione dei dati da Commerce a servizi connessi:
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
-- **[Dashboard di gestione dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**: controlla la sincronizzazione dei dati tra [!DNL Catalog Service] e l&#39;istanza di Adobe Commerce. Il dashboard mostra lo stato di sincronizzazione complessivo ed elenca tutti i prodotti sincronizzati.
+Utilizzare [Commerce CLI](../data-export/data-export-cli-commands.md) per risincronizzare manualmente i feed quando necessario. Per le opzioni di risincronizzazione e i passaggi aggiuntivi per la risoluzione dei problemi, vedi [Gestione sincronizzazione](../data-export/data-sync-manage.md) nella _Guida all&#39;esportazione dei dati SaaS_.
 
-- **[Pagina stato sincronizzazione feed dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)**—Monitora lo stato di esportazione di tutti i feed dati per garantire la coerenza dei dati. Questa pagina ti avvisa in caso di problemi che si verificano durante il processo di esportazione, in modo da poterli risolvere rapidamente. Lo stato &quot;Completato&quot; indica che i dati sono stati esportati e saranno disponibili nei servizi Commerce connessi al termine del processo di sincronizzazione dei dati.
-
->[!NOTE]
->
->Se la pagina Stato di sincronizzazione feed dati non è disponibile in Commerce Admin for Commerce on Cloud o nelle distribuzioni locali, segui le [istruzioni di installazione dell&#39;estensione](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension) per abilitarla.
+{{install-data-sync-feed-status}}

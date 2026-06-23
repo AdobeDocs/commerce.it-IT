@@ -15,9 +15,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 029d78d5c87bf75ccc26b8af462081f8e08d1176
 workflow-type: tm+mt
-source-wordcount: 398
+source-wordcount: 475
 ht-degree: 0%
 
 ---
@@ -71,7 +71,17 @@ bin/magento saas:resync --feed=scopesWebsite
 bin/magento saas:resync --feed=prices
 ```
 
-### Prezzi per tipi di prodotto personalizzati
+## Monitorare l’avanzamento della sincronizzazione
+
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
+
+Utilizzare [Commerce CLI](../data-export/data-export-cli-commands.md) per risincronizzare manualmente i feed quando necessario. Per le opzioni di risincronizzazione e i passaggi aggiuntivi per la risoluzione dei problemi, vedi [Gestione sincronizzazione](../data-export/data-sync-manage.md) nella _Guida all&#39;esportazione dei dati SaaS_.
+
+>[!NOTE]
+>
+>Se la pagina Stato di sincronizzazione feed dati non è disponibile in Commerce Admin for Commerce on Cloud o nelle distribuzioni locali, segui le [istruzioni di installazione dell&#39;estensione](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension) per abilitarla.
+
+## Prezzi per tipi di prodotto personalizzati
 
 I calcoli dei prezzi sono supportati per i tipi di prodotto personalizzati, ad esempio il prezzo di base, il prezzo speciale, il prezzo di gruppo, il prezzo delle regole di catalogo e così via.
 
@@ -102,7 +112,7 @@ Se si dispone di un tipo di prodotto personalizzato che utilizza una formula spe
        */
        public function afterGet(ProductPrice $subject, array $result, array $values) : array
        {
-           // Override the output $result with your data for the corresponding products (see original method for details) 
+           // Override the output $result with your data for the corresponding products (see original method for details)
            return $result;
        }
    }
