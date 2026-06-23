@@ -4,21 +4,13 @@ description: Scopri come utilizzare i comandi CLI di Commerce per gestire i feed
 autotag-review: '2026-06-17T15:08:59.000Z'
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
 TQID: 'https://experienceleague.adobe.com/Vi8hMKOBjTPkSQp0t8DCkjZsJ8s3Q5GSbSXyX2gmWRo'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: cc250cf1-34eb-4863-80d0-d170d45ea067
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: ef1a9efc579d8d21c145e6981235489a2e4ea203
 workflow-type: tm+mt
-source-wordcount: 670
+source-wordcount: 728
 ht-degree: 0%
 
 ---
@@ -34,7 +26,7 @@ Il comando `saas:resync` nel pacchetto `magento/saas-export` consente di gestire
 Adobe sconsiglia di utilizzare il comando `saas:resync` regolarmente. Gli scenari tipici per l’utilizzo del comando sono:
 
 - Sincronizzazione iniziale
-- Sincronizza i dati con un nuovo spazio dati dopo aver modificato l&#39;[ID spazio dati SaaS](https://experienceleague.adobe.com/it/docs/commerce-admin/config/services/saas)
+- Sincronizza i dati con un nuovo spazio dati dopo aver modificato l&#39;[ID spazio dati SaaS](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
 - Risoluzione dei problemi
 
 Monitorare le operazioni di sincronizzazione nel file `var/log/saas-export.log`.
@@ -45,7 +37,7 @@ Monitorare le operazioni di sincronizzazione nel file `var/log/saas-export.log`.
 >
 >La sincronizzazione iniziale viene eseguita automaticamente quando sono abilitati Live Search o Product Recommendations. Non sono necessari comandi manuali.
 >
->Per le distribuzioni di [!DNL Adobe Commerce Optimizer Connector], il comando `aco:config:init` pianifica la sincronizzazione completa iniziale invalidando tutti gli indicizzatori del feed del connettore. Vedi [Abilitare l&#39;integrazione [!DNL Commerce Optimizer] &#x200B;](../aco-connector/get-started.md#enable-the-adobe-commerce-optimizer-integration) e [Gestire la sincronizzazione in [!DNL Commerce Optimizer]](../aco-connector/data-sync-manage.md).
+>Per le distribuzioni di [!DNL Adobe Commerce Optimizer Connector], il comando `aco:config:init` pianifica la sincronizzazione completa iniziale invalidando tutti gli indicizzatori del feed del connettore. Vedi [Abilitare l&#39;integrazione [!DNL Commerce Optimizer] ](../aco-connector/get-started.md#enable-the-adobe-commerce-optimizer-integration) e [Gestire la sincronizzazione in [!DNL Commerce Optimizer]](../aco-connector/data-sync-manage.md).
 
 Quando si attiva `saas:resync` dalla riga di comando, a seconda delle dimensioni del catalogo, l&#39;aggiornamento dei dati può richiedere da alcuni minuti ad alcune ore.
 
@@ -96,6 +88,10 @@ Obbligatorio. Specifica l&#39;entità feed da risincronizzare.
 >
 >I moduli installati determinano i feed da risincronizzare. `productOverrides` richiede ad esempio [!DNL Adobe Commerce] nel cloud, nei locali o Commerce as a Cloud Service e `orders` richiede il modulo Ordini di vendita.
 
+>[!NOTE]
+>
+>Il comando `saas:resync` trasmette solo i nuovi elementi, gli elementi aggiornati e gli elementi che in precedenza non erano stati esportati. Gli elementi il cui hash di contenuto non è stato modificato dall&#39;ultima esportazione vengono ignorati.
+
 **Esempio:**
 
 ```shell
@@ -107,6 +103,10 @@ bin/magento saas:resync --feed products
 Risincronizza parzialmente entità specifiche in base ai loro ID. Supporta `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants` e `categoryPermissions` feed.
 
 Per impostazione predefinita, quando si utilizza l&#39;opzione `--by-ids` si specificano valori utilizzando i valori SKU del prodotto. Per utilizzare gli ID prodotto, aggiungere l&#39;opzione `--id-type=productId`.
+
+>[!NOTE]
+>
+>A differenza di una risincronizzazione standard, `--by-ids` ignora la verifica hash e forza l&#39;invio delle entità specificate ai servizi Commerce connessi indipendentemente dal fatto che il contenuto sia stato modificato dopo l&#39;ultima esportazione.
 
 **Esempi:**
 

@@ -5,14 +5,10 @@ role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: ca62c653-29b9-45cf-b2d4-8cb693b08aac
 TQID: https://experienceleague.adobe.com/mK-o11X-G7WZgCL9BmVnDMfTDBg3lDemTNkxqkhyMZM
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 19de20caafd45e3a00896d0d4b29b7e96dfe94e1
 workflow-type: tm+mt
 source-wordcount: 292
 ht-degree: 0%
@@ -29,8 +25,8 @@ In questo argomento, API Mesh viene utilizzato per visualizzare i prezzi dei pro
 
 Per visualizzare le imposte nella pagina Dettagli prodotto, è necessario configurarle.
 
-1. [Impostare le aliquote](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html?lang=it).
-1. Abilita la visualizzazione delle imposte [&#x200B; nel catalogo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html?lang=it#step-1%3A-configure-catalog-prices-display-settings) e impostala su `Including and Excluding Tax` o `Including Tax`.
+1. [Impostare le aliquote](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html).
+1. Abilita la visualizzazione delle imposte [ nel catalogo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings) e impostala su `Including and Excluding Tax` o `Including Tax`.
 
 Verifica che Catalog Service funzioni controllando una pagina di dettagli prodotto.
 
@@ -47,10 +43,10 @@ Nel file `mesh.json`, sostituire i valori `name`, `endpoint` e `x-api-key`.
     "meshConfig": {
       "sources": [
         {
-          "name": "<NAME OF MESH>",
+          "name": "<NAME_OF_MESH>",
           "handler": {
             "graphql": {
-              "endpoint": "<COMMERCE INSTANCE GQL ENDPOINT URL>"
+              "endpoint": "<COMMERCE_INSTANCE_GQL_ENDPOINT_URL>"
             }
           },
           "transforms": [

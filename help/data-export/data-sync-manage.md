@@ -3,23 +3,13 @@ title: Visualizzare e gestire il processo di sincronizzazione
 description: Scopri come visualizzare e gestire il processo di sincronizzazione di  [!DNL SaaS Data Export]  utilizzando la dashboard di gestione dati e la pagina Stato sincronizzazione feed dati.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: e7d9c056ef8d565b4a143b05ff4e06d607fbfa8e
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 98d604a71c2062a44070b207fc43b9d9b1c434fd
 workflow-type: tm+mt
-source-wordcount: 544
+source-wordcount: 557
 ht-degree: 0%
 
 ---
@@ -34,9 +24,9 @@ La maggior parte delle attività di sincronizzazione viene elaborata automaticam
 
 Per le distribuzioni Adobe Commerce su cloud, on-premise o Adobe Commerce as a Cloud Service, visualizza e gestisci il processo di sincronizzazione dalle seguenti risorse di amministrazione di Commerce:
 
-- **[Pagina stato sincronizzazione feed dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)**. Controllare lo stato di esportazione del feed per le distribuzioni connesse a [!DNL Live Search], [!DNL Product Recommendations] o [!DNL Catalog Service]. Questo dashboard mostra lo stato di esportazione del feed per ogni feed, inclusi eventuali errori rilevati. Una vista di dettaglio mostra lo stato di esportazione del feed per i singoli elementi del feed.
+- **[Pagina stato sincronizzazione feed dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)**. Controllare lo stato di esportazione del feed per le distribuzioni connesse a [!DNL Live Search], [!DNL Product Recommendations] o [!DNL Catalog Service]. Questo dashboard mostra lo stato di esportazione del feed per ogni feed, inclusi eventuali errori rilevati. Una vista di dettaglio mostra lo stato di esportazione del feed per i singoli elementi del feed.
 
-- **[Dashboard di gestione dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**: gli utenti amministratori possono visualizzare e tenere traccia dei dati esportati e sincronizzati correttamente nei servizi Commerce connessi. Questa dashboard mostra i dati del prodotto sincronizzati con i servizi Commerce.
+- **[Dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**: gli utenti amministratori possono visualizzare e tenere traccia dei dati esportati e sincronizzati correttamente nei servizi Commerce connessi. Questa dashboard mostra i dati del prodotto sincronizzati con i servizi Commerce.
 
 >[!NOTE]
 >
@@ -46,7 +36,7 @@ Per le distribuzioni Adobe Commerce su cloud, on-premise o Adobe Commerce as a C
 
 Per le distribuzioni Commerce on-premise o sul cloud integrate con [!DNL Commerce Optimizer], visualizzare e gestire il processo di sincronizzazione utilizzando le risorse seguenti:
 
-- **[Pagina Stato sincronizzazione feed dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** - Controlla lo stato di esportazione del feed del connettore dall&#39;amministratore di Commerce. Questa pagina mostra se i dati del catalogo sono stati esportati correttamente da [!DNL Adobe Commerce], inclusi i dettagli di errore per feed e per elemento.
+- **[Pagina Stato sincronizzazione feed dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** - Controlla lo stato di esportazione del feed del connettore dall&#39;amministratore di Commerce. Questa pagina mostra se i dati del catalogo sono stati esportati correttamente da [!DNL Adobe Commerce], inclusi i dettagli di errore per feed e per elemento.
 
 - **[Pagina di sincronizzazione dati](../optimizer/setup/data-sync.md)**: la pagina di sincronizzazione dati offre una panoramica dello stato di sincronizzazione dei dati di prodotto provenienti dall&#39;origine del catalogo a monte in [!DNL Commerce Optimizer].
 
@@ -70,7 +60,7 @@ Utilizza le seguenti opzioni per risincronizzare manualmente i dati del feed.
 | Attività | Opzione | Note |
 | --- | --- | --- |
 | Risincronizzazione degli elementi di feed selezionati non riusciti o problematici | **[!UICONTROL Data Feed Sync Status]pagina** | Monitora e risincronizza gli elementi di feed selezionati dall’amministratore di Commerce. Vedere [Verificare che la sincronizzazione dei dati funzioni](#verify-that-the-data-sync-is-working). |
-| Risincronizzazione completa di tutti i feed | **[!UICONTROL Data Management Dashboard]** | Esegui una risincronizzazione completa di tutti i feed dall’amministratore di Commerce; Adobe consiglia di eseguire questa operazione principalmente quando ti connetti a un servizio Commerce per la prima volta. Vedere [Verificare che la sincronizzazione dei dati funzioni](#verify-that-the-data-sync-is-working). |
+| Risincronizzazione completa di tutti i feed | **[!UICONTROL Data Management Dashboard]** | Esegui una risincronizzazione completa di tutti i feed dall’amministratore di Commerce; Adobe consiglia di eseguire questa operazione principalmente quando ti connetti a un servizio Commerce per la prima volta. Gli elementi il cui hash di contenuto non è stato modificato dall&#39;ultima esportazione vengono ignorati. Vedere [Verificare che la sincronizzazione dei dati funzioni](#verify-that-the-data-sync-is-working). |
 | Risincronizzazione del feed di destinazione con il controllo operativo | **CLI Commerce** | Utilizza il comando `saas:resync` per le risincronizzazioni dei feed di destinazione. Consulta [Sincronizzare i feed utilizzando Commerce CLI](data-export-cli-commands.md). |
 
 >[!MORELIKETHIS]
