@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7a4031966113a9131b85a7d0bfc4a3add606d2f7
+source-git-commit: b5e8f023260bd5bfffb76084c175a01cd6a61ff3
 workflow-type: tm+mt
-source-wordcount: '1690'
-ht-degree: 1%
+source-wordcount: '1783'
+ht-degree: 0%
 
 ---
 # Nuovo modello
@@ -10,6 +10,36 @@ ht-degree: 1%
 ## Novità
 
 Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo elenco sono esclusi tutti gli aggiornamenti minori, ad esempio la modifica della copia.
+
+### 23 giugno 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Sono state aggiornate le linee guida per la verifica della sincronizzazione dei dati del catalogo nella documentazione del servizio Commerce. Gli argomenti relativi all'installazione e alla configurazione dei servizi ora utilizzano un flusso di lavoro coerente in due passaggi: confermare l'esportazione nella <a href="https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status">pagina Stato sincronizzazione feed dati</a>, quindi confermare la consegna nella <a href="https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard">Dashboard di gestione dati</a>, con istruzioni aggiornate in <a href="https://experienceleague.adobe.com/it/docs/commerce/catalog-service/get-started#monitor-and-troubleshoot-data-export">Introduzione a Catalog Service</a>, <a href="https://experienceleague.adobe.com/it/docs/commerce/live-search/install#monitor-sync-progress">Installazione Live Search</a>, <a href="https://experienceleague.adobe.com/it/docs/commerce/product-recommendations/getting-started/install-configure#monitor-and-troubleshoot-data-synchronization">Installazione raccomandazioni prodotto</a> e <a href="https://experienceleague.adobe.com/it/docs/commerce/saas-data-export/data-synchronization/data-sync-manage#verify-that-the-data-sync-is-working">Gestione sincronizzazione</a> nella <em>Guida all'esportazione dati SaaS</em>.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/82bdfd342d2d745721ed2b35f2dbfd8fa394ab5a">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>È stato aggiunto un nuovo riferimento allo schema del feed <a href="https://experienceleague.adobe.com/it/docs/commerce/aco-optimizer-connector/reference/feed-table-reference">Adobe Commerce Optimizer Connector</a> ed è stata aggiornata la <a href="https://experienceleague.adobe.com/it/docs/commerce/saas-data-export/data-synchronization/sync-overview">sincronizzazione dell'esportazione dei dati SaaS</a>, la <a href="https://experienceleague.adobe.com/it/docs/commerce/saas-data-export/data-synchronization/data-sync-manage">gestione manuale della sincronizzazione</a>, i <a href="https://experienceleague.adobe.com/it/docs/commerce/saas-data-export/reference/data-export-cli-commands">comandi di risincronizzazione CLI di Commerce</a> e le <a href="https://experienceleague.adobe.com/it/docs/commerce/saas-data-export/reference/feed-table-reference">indicazioni sullo schema della tabella del feed</a>.</p>
+</td>
+      <td>
+        Aggiornamento principale, nuovo argomento
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/601d02435f388096d59ce7f8e2a9e3e7c8bec65b">commit</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 17 giugno 2026
 
@@ -385,66 +415,6 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
         Feedback, aggiornamento principale
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fc4ac765d4bcbb8b2a0217f33b6f8a4b353e5b33">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 27 aprile 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata aggiunta la pagina <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/overview">osservabilità</a> per Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Feedback, nuovo argomento
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bf83f213d1774845c4c99f3b154e9fb3220c3cd1">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Aggiornato <a href="https://experienceleague.adobe.com/it/docs/commerce/app-management/manage-app/manage-app">Gestisci la tua app</a> con le istruzioni per trovare le applicazioni nei filtri dei modelli di amministrazione (ricerca, stato ed estensibilità) e nel percorso di acquisizione dell'app per Adobe Exchange, con i collegamenti della <a href="https://experienceleague.adobe.com/it/docs/commerce/app-management/overview">panoramica sulla gestione delle app</a> e <a href="https://experienceleague.adobe.com/it/docs/commerce/app-management/install">Installa e accedi alla gestione delle app</a>.</p>
-</td>
-      <td>
-        Aggiornamento principale
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/780cef7af3574cd846fd7ee82d7814f2ebe9d6cc">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Sono state aggiunte le <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/release-notes">note sulla versione</a> di produzione per Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Aggiornamento principale
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/41035e75111d370e5dc40c17607337ae75f11fa0">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 24 aprile 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata aggiunta la sandbox <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/release-notes">note sulla versione</a> per Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Aggiornamento principale
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/eb10bd0ff636f70360e1ca35e51b6643ad1f70d4">commit</a></td>
     </tr>
   </tbody>
 </table>
