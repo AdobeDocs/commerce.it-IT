@@ -3,7 +3,7 @@ title: Ricerca semantica
 description: Abilita la ricerca semantica AI per  [!DNL Live Search]  dalle impostazioni. Non è richiesta alcuna modifica alla configurazione degli attributi o alla vetrina.
 role: Admin
 recommendations: noCatalog
-source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
+source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 0%
@@ -106,3 +106,4 @@ Al termine dell’indicizzazione e dopo l’attivazione della ricerca semantica,
 - [Impostazioni](settings.md#semantic-search)
 - [Sinonimi](synonyms.md)
 - [Prestazioni](performance.md)
+
