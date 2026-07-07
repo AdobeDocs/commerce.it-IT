@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
+source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
 workflow-type: tm+mt
 source-wordcount: '5400'
 ht-degree: 0%
@@ -717,3 +717,4 @@ _29 novembre 2021_
 ![Problema noto](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] report [&#x200B; potrebbero non essere sincronizzati immediatamente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=it).
 
 ![Problema noto](../assets/bug.svg)<!-- Issue PAY-2475 --> Il tuo [account sandbox PayPal](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=it) per [!DNL Payment Services] non può essere verificato se crei tale account durante l&#39;onboarding.
+
