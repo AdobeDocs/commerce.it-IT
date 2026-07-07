@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 7ab609a2da3173f4be31bb0927418c4b9ec05ff4
 workflow-type: tm+mt
-source-wordcount: 4489
+source-wordcount: 4655
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Le seguenti note sulla versione contengono aggiornamenti a [!DNL Adobe Commerce 
 >
 >Se utilizzi Adobe Commerce on-premise o Adobe Commerce sull&#39;infrastruttura cloud, consulta le [note sulla versione di Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/release/notes/overview).
 
-## Giugno 2026 - #2 sulla versione {#latest}
+## Luglio 2026 - #1 sulla versione {#latest}
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
@@ -64,6 +64,27 @@ Gli endpoint REST API `GET /V1/orders` e `GET /V1/invoices` supportano ora il fi
 ### Elencare modelli e-mail personalizzati tramite l’API
 
 Il nuovo endpoint REST API di `GET /V1/custom-email/templates` restituisce i [modelli e-mail personalizzati](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/), inclusi l&#39;ID, il codice e l&#39;oggetto di ogni modello. Le integrazioni possono utilizzare un ID modello restituito con l&#39;endpoint `POST /V1/custom-email/send` invece di cercare l&#39;ID manualmente. <!-- CCSAAS-5089 -->
+
+### Gestire l’intera catena degli ordini tramite l’API REST
+
+>[!IMPORTANT]
+>
+>Questa funzione è sperimentale e deve essere abilitata contattando il Customer Success Manager di Adobe Commerce o creando un ticket di supporto.
+
+I nuovi endpoint REST API di `orderChain` consentono alle integrazioni di modificare un ordine utilizzando il relativo ID e risolvere automaticamente l&#39;intera catena di ordini modificati:
+
+| Metodo | Endpoint | Descrizione |
+| --- | --- | --- |
+| `POST` | `/V1/orderChain/{orderId}/invoice` | Creare una fattura per l&#39;ordine, risolvendo gli articoli da fatturare lungo la catena dell&#39;ordine. |
+| `POST` | `/V1/orderChain/{id}/cancel` | Annulla l&#39;ordine corrente nella catena. |
+| `POST` | `/V1/orderChain/{id}/hold` | Blocca l&#39;ordine. |
+| `POST` | `/V1/orderChain/{id}/unhold` | Rimuovere il blocco dall&#39;ordine. |
+| `POST` | `/V1/orderChain/{id}/emails` | Invia una notifica e-mail dell’ordine. |
+| `POST` | `/V1/orderChain/{id}/comments` | Aggiungi un commento all’ordine. |
+| `GET` | `/V1/orderChain/{id}/comments` | Recuperate i commenti dell&#39;ordine. |
+| `GET` | `/V1/orderChain/{id}/statuses` | Recupera lo stato dell&#39;ordine corrente. |
+
+`GET` endpoint che supportano il filtro per fatture, spedizioni, note di credito e restituzioni ora supportano il filtro per `order_original_id`. Il filtro per `order_original_id` restituisce dettagli sull&#39;intera catena di ordini, non solo sul singolo ordine. Un endpoint di esempio che supporta questa funzionalità è `GET /V1/invoices`. <!-- ACCS-1004, ACCS-1005 -->
 
 ### Visualizzare la cronologia delle modifiche degli ordini nell’amministratore
 
@@ -84,6 +105,10 @@ In questa versione sono inclusi i miglioramenti, le ottimizzazioni e le correzio
 * I cataloghi condivisi di grandi dimensioni ora sono più facili da gestire nell’amministratore, con tempi di caricamento migliorati e una minore probabilità di timeout. <!-- CCSAAS-4946, CCSAAS-4925, CCSAAS-1245, CCSAAS-1246 -->
 
 * È stato risolto un errore di creazione della spedizione che si verificava durante la creazione di spedizioni per ordini contenenti prodotti configurabili. <!-- ACCS-1095 -->
+
+* È stato risolto un problema in [!DNL Commerce Admin] a causa del quale il menu di navigazione sinistro poteva scomparire. <!-- ACCS-1035 -->
+
+* Sono state migliorate le prestazioni di assegnazione e annullamento dell’assegnazione nei cataloghi condivisi. <!-- ACCS-1324, CCSAAS-5177, CCSAAS-5190, CCSAAS-5192 -->
 
 {{accs-release}}
 
