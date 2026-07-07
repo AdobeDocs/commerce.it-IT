@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 55d4fefaa15a09e475bcda93f23801319b56db70
 workflow-type: tm+mt
-source-wordcount: 2903
+source-wordcount: 3115
 ht-degree: 0%
 
 ---
@@ -45,6 +45,13 @@ Gli aggiornamenti includono:
 
 ## Versioni del 2026
 
+### Versione 103.4.29
+
+_6 luglio 2026_
+
+![Correzione](../assets/fix.svg) ordina i collegamenti dei prodotti per evitare la sincronizzazione casuale. <!--MDEE-1391-->
+![Correzione](../assets/fix.svg) Il feed di prezzo invia il prezzo di base invece del prezzo della regola di catalogo per i siti Web UTC-negativi dopo la mezzanotte UTC. <!--MDEE-1401-->
+
 ### Versione 103.4.28
 
 _11 giugno 2026_
@@ -56,7 +63,6 @@ _11 giugno 2026_
 _4 giugno 2026_
 
 ![Correzione](../assets/fix.svg) **I prodotti bundle rimangono visibili dopo gli aggiornamenti simultanei del catalogo**-È stato corretto un problema a causa del quale i prodotti bundle non venivano visualizzati nella vetrina quando i prodotti configurabili e bundle venivano aggiornati contemporaneamente. Dopo aver aggiornato `magento/module-data-exporter` alla versione 103.4.27, il feed dei prodotti viene automaticamente pianificato per la risincronizzazione al fine di correggere le incoerenze dei dati del bundle esistenti in [!DNL Catalog Service], [!DNL Live Search] e altri servizi Commerce connessi.
-<!--MDEE-1379-->
 
 ### Versione 103.4.26
 
@@ -77,10 +83,8 @@ _19 maggio 2026_
 _5 maggio 2026_
 
 ![Correzione](../assets/fix.svg) **Risoluzione dei problemi più semplice dai registri di esportazione**-Molti errori e avvisi relativi alle esportazioni ora includono codici di registro coerenti. Questi codici consentono di tracciare i problemi più rapidamente quando si lavora con il supporto o con la documentazione. Per informazioni dettagliate, vedere [Riferimento codici di registro](troubleshooting/log-codes-reference.md).
-<!--MDEE-1276-->
 
 ![Correzione](../assets/fix.svg) **Risincronizzazione automatica quando cambiano le etichette delle opzioni di attributo**-Modifica delle etichette delle opzioni dell&#39;attributo del prodotto per una visualizzazione archivio (inclusi gli attributi a selezione multipla) ora mette in coda i prodotti interessati per l&#39;esportazione di nuovo in modo che Live Search, Product Recommendations, Catalog Service e altri servizi Commerce connessi visualizzino le etichette del facet e del filtro aggiornate nelle visualizzazioni acquirente. In precedenza, le modifiche apportate solo alle etichette potevano lasciare i cataloghi SaaS con parole non aggiornate fino a quando una modifica più ampia del prodotto non attivava la sincronizzazione.
-<!--MDEE-1337-->
 
 ![Correzione](../assets/fix.svg) **Stato affidabile e visibilità quando mancano i dati dell&#39;ambito predefinito**-L&#39;esportazione del prodotto gestisce le lacune nell&#39;ambito amministratore predefinito in modo che i servizi connessi vengano attivati, disabilitati e visualizzati correttamente. I valori specifici dello store impostati hanno comunque la precedenza.
 
@@ -98,9 +102,7 @@ _5 maggio 2026_
 _20 aprile 2026_
 
 ![Correzione](../assets/fix.svg) **Errori SQL risolti durante l&#39;eliminazione degli attributi EAV statici**-Il plug-in ProductAttributeDelete non genera più errori SQL durante l&#39;eliminazione degli attributi EAV statici, garantendo una gestione degli attributi più fluida e una maggiore affidabilità del sistema. <!--MDEE-1336-->
-![Correzione](../assets/fix.svg) **Esportazione del percorso di categoria fissa dopo lo spostamento della categoria**- Assicura che il feed delle categorie aggiorni correttamente `url_path` quando una categoria viene spostata in un altro elemento padre, impedendo percorsi di categoria mancanti o non aggiornati nei servizi Commerce connessi.<!--MDEE-1331-->
-![Correzione](../assets/fix.svg) **Gli aggiornamenti delle categorie pianificati migliorati per i prodotti correlati**-Gli aggiornamenti pianificati per gli URL delle categorie ora interessano solo le categorie previste, preservando l&#39;integrità dei dati e impedendo modifiche non intenzionali ai prodotti correlati. Ora le modifiche pianificate all’URL della categoria vengono applicate correttamente ai dati esportati, mantenendo la navigazione della vetrina e i servizi collegati allineati al catalogo corrente.
-<!--MDEE-1321-->
+![Correzione](../assets/fix.svg) **Esportazione del percorso di categoria fissa dopo lo spostamento della categoria**- Assicura che il feed delle categorie aggiorni correttamente `url_path` quando una categoria viene spostata in un altro elemento padre, impedendo percorsi di categoria mancanti o non aggiornati nei servizi Commerce connessi.![Correzione](../assets/fix.svg) **Gli aggiornamenti delle categorie pianificati migliorati per i prodotti correlati**. Gli aggiornamenti pianificati per gli URL delle categorie ora interessano solo le categorie previste, preservando l&#39;integrità dei dati e impedendo modifiche non intenzionali ai prodotti correlati. Ora le modifiche pianificate all’URL della categoria vengono applicate correttamente ai dati esportati, mantenendo la navigazione della vetrina e i servizi collegati allineati al catalogo corrente.
 
 ### Versione 103.4.22
 
