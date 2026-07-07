@@ -6,33 +6,14 @@ seo-description: Access the product documentation for hosted services that help 
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
 TQID: https://experienceleague.adobe.com/zKL5fNTECsNOKZfEl7OUSYHTo-wrh81z3-C7wB1SoWM
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: da3860b0-d637-47df-bef0-273751180266
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 976bc4114790473d3bdcab6c06684f0c955893ee
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: da3860b0-d637-47df-bef0-273751180266id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: ee8113dcf4e6d4d91fdf6cc69078d6104315a33f
 workflow-type: tm+mt
-source-wordcount: 1291
+source-wordcount: 1314
 ht-degree: 0%
 
 ---
@@ -77,7 +58,7 @@ I servizi di vetrina sono un gruppo di funzioni basate sull’intelligenza artif
       <div>
          <a href="../catalog-service/overview.md">
          <strong>Servizio catalogo</strong>
-         </a>
+         
       </div>
       <p>
          <em>Offri ai tuoi clienti un'esperienza di prodotto ottimizzata migliorando le prestazioni, migliorando la scalabilità e aumentando le conversioni.</em>
@@ -103,7 +84,7 @@ I servizi di vetrina sono un gruppo di funzioni basate sull’intelligenza artif
       <div>
          <a href="../product-recommendations/overview.md">
          <strong>Consigli di prodotto</strong>
-         </a>
+         
       </div>
       <p>
          <em>Aggiungi consigli basati sull'intelligenza artificiale in base al comportamento degli acquirenti, alle tendenze popolari, alla somiglianza dei prodotti e altro ancora.</em>
@@ -116,7 +97,7 @@ I servizi di vetrina sono un gruppo di funzioni basate sull’intelligenza artif
       <div>
          <a href="../payment-services/guide-overview.md">
          <strong>Servizi di pagamento</strong>
-         </a>
+         
       </div>
       <p>
          <em>Aumenta la soddisfazione dei clienti con diversi metodi di pagamento, incluse rate senza interessi e visualizzazioni semplificate dell'elaborazione dei pagamenti, degli ordini e delle fatture.</em>
@@ -151,22 +132,10 @@ Per servizi di integrazione si intendono le funzionalità che consentono di coll
       <div>
           <a href="../aem-assets-integration/overview.md">
          <strong>Integrazione AEM Assets</strong>
-         </a>
+         
       </div>
       <p>
          <em>Gestione semplificata delle risorse digitali mediante un sistema integrato con Adobe Experience Manager per la gestione dei contenuti rich media.</em>
-      </p>
-      <br/>
-      <a href="../llmo-integration/overview.md">
-      <img alt="Ottimizzazione LLM" src="../assets/icons/gauge4.svg" width="40">
-      </a>
-      <div>
-          <a href="../llmo-integration/overview.md">
-         Integrazione di <strong>[!DNL Adobe LLM Optimizer]</strong>
-         </a>
-      </div>
-      <p>
-         <em>Connetti il catalogo a [!DNL Adobe LLM Optimizer] per monitorare la visualizzazione dei prodotti nelle risposte basate sull'intelligenza artificiale e distribuire gli aggiornamenti approvati del nome e della descrizione del prodotto dalle opportunità in [!DNL Adobe Commerce].</em>
       </p>
    </td>
    <td valign="top">
@@ -176,7 +145,7 @@ Per servizi di integrazione si intendono le funzionalità che consentono di coll
       <div>
          <a href="../app-management/overview.md">
          <strong>Gestione app</strong>
-         </a>
+         
       </div>
       <p>
          <em>Associa, configura e gestisci le applicazioni App Builder con la tua istanza Commerce tramite l'interfaccia utente amministratore.</em>
@@ -201,8 +170,7 @@ Gli strumenti dati consentono di gestire e ottimizzare il flusso di informazioni
          </a>
       </div>
       <p>
-         <em>Sincronizza automaticamente i dati di catalogo, ordine e inventario da Adobe Commerce ai servizi connessi. Utilizza i comandi CLI di Commerce o il <strong>dashboard di gestione dati</strong> per gestire l'elaborazione della sincronizzazione.</em>
-      </p>
+         <em>Sincronizza automaticamente i dati di catalogo, ordine e inventario da Adobe Commerce ai servizi connessi. Utilizza i comandi CLI di Commerce o il <strong>dashboard di gestione dati</strong> per gestire l'elaborazione della sincronizzazione.</em></p>
    </td>
    <td valign="top">
       <a href="../price-index/price-indexing.md">
@@ -211,24 +179,23 @@ Gli strumenti dati consentono di gestire e ottimizzare il flusso di informazioni
       <div>
           <a href="../price-index/price-indexing.md">
          <strong>Indicizzatore prezzi SaaS</strong>
-         </a>
+         
       </div>
       <p>
          <em>Ottimizzare le prestazioni del sito eseguendo l'offload delle attività a uso intensivo di risorse, come l'indicizzazione e il calcolo dei prezzi, dall'applicazione Commerce all'infrastruttura cloud di Adobe.</em>
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
       <img alt="Sincronizzazione dei dati del monitor" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong>Dashboard di gestione dati</strong>
-         </a>
+         
       </div>
       <p>
-         <em>Monitora facilmente la sincronizzazione dei dati di Commerce e attiva la risincronizzazione da un dashboard unificato in Commerce Admin. Ottieni informazioni preziose sulla disponibilità dei dati per una visualizzazione tempestiva agli acquirenti.</em>
-      </p>
+         <em>Monitora facilmente la sincronizzazione dei dati di Commerce e attiva la risincronizzazione da un dashboard unificato in Commerce Admin. Ottieni informazioni preziose sulla disponibilità dei dati per una visualizzazione tempestiva agli acquirenti.</em></p>
    </td>
 </table>
 
@@ -248,7 +215,7 @@ Sia che si tratti di scalare l&#39;azienda, migliorare le esperienze dei clienti
 | Creare esperienze personalizzate omni-channel | I dati di e-commerce vengono inseriti in un silos, impedendo la distribuzione di esperienze personalizzate tra i canali. | Utilizza [Connessione dati](../data-connection/overview.md) per inviare dati comportamentali, transazionali e di profilo a Adobe Experience Platform. Crea segmenti di clienti sofisticati, crea campagne carrello abbandonate, rivolgiti a tipi di pubblico simili e analizza le tendenze stagionali nell’intero percorso di clienti. |
 | Gestione semplificata delle risorse digitali | La gestione delle immagini dei prodotti e dei rich media su più sistemi richiede molto tempo ed è soggetta ad errori. | L&#39;[integrazione AEM Assets](../aem-assets-integration/overview.md) fornisce una gestione centralizzata delle risorse collegando Adobe Commerce a un progetto Adobe Experience Manager Assets, semplificando i flussi di lavoro e garantendo esperienze di marchio coerenti in tutti i punti di contatto. |
 | Ottimizzare l’elaborazione dei pagamenti | Opzioni di pagamento limitate e esperienze di pagamento scadenti stanno danneggiando la soddisfazione del cliente e la conversione. | [Servizi di pagamento](../payment-services/guide-overview.md) offre più metodi di pagamento, incluse le rate senza interessi, con un dashboard unificato per la gestione di pagamenti, ordini e fatture. |
-| Gestire la sincronizzazione dei dati su larga scala | L&#39;indicizzazione ad uso intensivo di risorse rallenta il sito e non è possibile tenere traccia facilmente dei problemi di sincronizzazione dei dati. | [Esportazione dati SaaS](../data-export/overview.md), [Indicizzatore prezzo SaaS](../price-index/price-indexing.md) e [Dashboard di gestione dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) sincronizzano automaticamente i dati di catalogo, ordine e inventario, scaricano i calcoli dei prezzi nell&#39;infrastruttura cloud di Adobe e forniscono visibilità in tempo reale sullo stato di sincronizzazione. |
+| Gestire la sincronizzazione dei dati su larga scala | L&#39;indicizzazione ad uso intensivo di risorse rallenta il sito e non è possibile tenere traccia facilmente dei problemi di sincronizzazione dei dati. | [Esportazione dati SaaS](../data-export/overview.md), [Indicizzatore prezzo SaaS](../price-index/price-indexing.md) e [Dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) sincronizzano automaticamente i dati di catalogo, ordine e inventario, scaricano i calcoli dei prezzi nell&#39;infrastruttura cloud di Adobe e forniscono visibilità in tempo reale sullo stato di sincronizzazione. |
 | Recuperare i clienti perduti e ridurre i rendimenti | Gli elevati tassi di abbandono dei clienti e di rendimento dei prodotti influiscono sulla redditività. | Combina [Connessione dati](../data-connection/overview.md) con Adobe Journey Optimizer e Real-Time CDP per identificare i pattern di ritorno, creare campagne di recupero, segmentare i clienti per comportamento e inviare campagne di ricoinvolgimento personalizzate tramite e-mail e SMS. |
 | Decisioni di merchandising basate sui dati | Non sai quali prodotti promuovere o quando eseguire le promozioni. | [Live Search](../live-search/overview.md) fornisce informazioni approfondite sulle prestazioni di ricerca e strumenti di merchandising per accedere a metriche chiave, analizzare i termini di ricerca e utilizzare regole di merchandising intelligenti per aumentare o sotterrare i prodotti in base al comportamento reale dei clienti e agli obiettivi aziendali. |
 | Garanzia di conformità con i dati sensibili | È necessario gestire i dati sensibili dei clienti mantenendo la conformità HIPAA. | [Connessione dati](../data-connection/overview.md) è compatibile con HIPAA e consente di condividere i dati di back office con Experience Platform, mantenendo al contempo la conformità e gestendo in modo sistematico le richieste di accesso a dati personali. |
