@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ff5d3ee7f421c8fee9a40a71ea1de366fd5e6d47
+source-git-commit: 616ad9e9b45a66f127a55ef87dd6c6b9c0b470c8
 workflow-type: tm+mt
-source-wordcount: 2946
+source-wordcount: 3024
 ht-degree: 0%
 
 ---
@@ -593,6 +593,16 @@ Aggiornamenti al metapacchetto PHP del servizio catalogo (`magento/catalog-servi
 - Per i clienti di Adobe Commerce as a Cloud Service, l’ultima versione viene installata nel tuo ambiente.
 
 - Per Adobe Commerce on-premise o sul cloud, Adobe consiglia di utilizzare Composer per aggiornare il metapacchetto Catalog Service negli ambienti cloud all’ultima versione.
+
+### Versione v3.5.0
+
+**Data di rilascio**: 10 luglio 2026
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.4 e successive
+
+![Nuovo](../assets/new.svg) **Sincronizzazione chiave URL per categoria pubblicata in staging** - Sono state aggiornate le dipendenze del metapacchetto del servizio catalogo per includere il modulo Esportatore dati di staging catalogo (`magento/module-catalog-staging-data-exporter`). Questo modulo riesporta i feed di prodotto quando si applica una modifica della categoria `url_key` pubblicata in staging, in modo che le modifiche del catalogo pubblicate in staging vengano propagate correttamente al catalogo SaaS (Catalog Service, Live Search e Product Recommendations).
+
+![Nuovo](../assets/new.svg) Sono state aggiornate le dipendenze per mantenere la compatibilità tra Catalog Service e lo stack di Commerce.
 
 ### Versione v3.4.0
 
