@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 55d4fefaa15a09e475bcda93f23801319b56db70
+source-git-commit: ee2211b243171ebfc9ca744f169c786943c40ad9
 workflow-type: tm+mt
-source-wordcount: 3115
+source-wordcount: 3256
 ht-degree: 0%
 
 ---
@@ -45,12 +45,19 @@ Gli aggiornamenti includono:
 
 ## Versioni del 2026
 
+### Versione 103.4.30
+
+_10 luglio 2026_
+
+![Correzione](../assets/fix.svg) è stata corretta la funzionalità Filtro griglia stato feed in base all&#39;ID nella pagina Stato sincronizzazione feed dati in Amministrazione Commerce, in modo che i record di feed corrispondenti vengano visualizzati correttamente quando si filtra in base all&#39;ID feed. <!--MDEE-1396-->
+![New](../assets/new.svg) ha aggiunto un&#39;opzione `--force` al comando `bin/magento saas:resync` per risincronizzare tutti i feed di dati selezionati anche quando sono già visualizzati come sincronizzati, semplificando gli scenari di risincronizzazione e ripristino completi. <!--MDEE-1334-->
+
 ### Versione 103.4.29
 
 _6 luglio 2026_
 
-![Correzione](../assets/fix.svg) ordina i collegamenti dei prodotti per evitare la sincronizzazione casuale. <!--MDEE-1391-->
-![Correzione](../assets/fix.svg) Il feed di prezzo invia il prezzo di base invece del prezzo della regola di catalogo per i siti Web UTC-negativi dopo la mezzanotte UTC. <!--MDEE-1401-->
+![Correzione](../assets/fix.svg) è stato risolto un problema che causava la variazione dell&#39;ordine dei collegamenti di prodotti correlati, di upselling e di cross-selling nel feed dei prodotti, con conseguente reinvio dei prodotti invariati a ogni esecuzione di `bin/magento saas:resync --feed products`. Questi collegamenti ora vengono esportati in un ordine coerente, pertanto i prodotti vengono risincronizzati solo quando cambiano effettivamente. <!--MDEE-1391-->
+![Correzione](../assets/fix.svg) è stato risolto un problema a causa del quale i feed dei prezzi inviavano prezzi base completi invece dei prezzi delle regole del catalogo per i siti Web nei fusi orari precedenti a UTC (ad esempio, Stati Uniti e Canada) nelle prime ore del mattino in UTC. I prezzi delle regole di catalogo ora vengono consegnati correttamente indipendentemente dal fuso orario di un sito web. <!--MDEE-1401-->
 
 ### Versione 103.4.28
 
