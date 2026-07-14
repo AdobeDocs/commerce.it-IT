@@ -18,7 +18,7 @@ ht-degree: 1%
 
 - [Introduzione a [!DNL Data Connection]](overview.md)
 - Nozioni di base {#fundamentals}
-   - [Installa l&#39;estensione  [!DNL Data Connection] ](install.md)
+   - [Installa l&#39;estensione  [!DNL Data Connection] &#x200B;](install.md)
    - [Tipi di dati Commerce](data-ingestion.md)
    - [Aggiorna schema evento serie temporali](update-xdm.md)
    - [Aggiorna schema record profilo](profile-data.md)
