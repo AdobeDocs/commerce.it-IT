@@ -5,16 +5,12 @@ role: Admin, Developer
 feature: Install
 exl-id: 853ef2d1-85cb-41a8-9b07-887a758ed401
 TQID: https://experienceleague.adobe.com/EbYHB6L9Q7bZNnoz3-yT4aaBcRiLiatvjO-hQyGOwoo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
-source-wordcount: 476
+source-wordcount: 491
 ht-degree: 0%
 
 ---
@@ -28,6 +24,10 @@ Prima di installare l&#39;estensione, [controlla i prerequisiti](overview.md#pre
 L&#39;estensione [!DNL Data Connection] è disponibile nel [Marketplace Adobe](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). Quando installi questa estensione dalla riga di comando del server, questa si connette all&#39;installazione di Adobe Commerce come [servizio](../landing/saas.md). Al termine del processo, **[!DNL Data Connection]** e **Commerce Services Connector** sono visualizzati nel menu **System** in **Services** in Commerce _Admin_.
 
 Visualizzazione amministratore dell&#39;estensione ![[!DNL Data Connection]](assets/epc-adminui.png)
+
+>[!NOTE]
+>
+>Dopo l&#39;installazione, configurare [!DNL Data Connection] in Admin. Vedere [Ambito di configurazione](connect-data.md#configuration-scope) per le impostazioni globali e quelle relative all&#39;ambito del sito Web.
 
 >[!IMPORTANT]
 >
@@ -85,7 +85,7 @@ Completa l’installazione in base al tipo di distribuzione: Adobe Commerce su i
 
 #### Infrastruttura cloud
 
-Nell&#39;infrastruttura Adobe Commerce on Cloud, abilita la variabile globale `ENABLE_EVENTING` in `.magento.env.yaml`. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html?lang=it#enable_eventing).
+Nell&#39;infrastruttura Adobe Commerce on Cloud, abilita la variabile globale `ENABLE_EVENTING` in `.magento.env.yaml`. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing).
 
 ```bash
 stage:
@@ -162,7 +162,7 @@ Per eseguire l&#39;aggiornamento a una versione principale, ad esempio da 2.0.0 
 1. **Salva** `composer.json`. Quindi, esegui quanto segue dalla riga di comando:
 
    ```bash
-   composer update magento/experience-platform-connector –-with-dependencies
+   composer update magento/experience-platform-connector --with-dependencies
    ```
 
    Oppure, per gli esercenti B2B:
@@ -173,4 +173,4 @@ Per eseguire l&#39;aggiornamento a una versione principale, ad esempio da 2.0.0 
 
 ## Disinstalla l&#39;estensione [!DNL Data Connection] {#uninstall}
 
-Per disinstallare l&#39;estensione [!DNL Data Connection], consultare [moduli di disinstallazione](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html?lang=it).
+Per disinstallare l&#39;estensione [!DNL Data Connection], consultare [moduli di disinstallazione](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).

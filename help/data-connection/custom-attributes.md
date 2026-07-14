@@ -5,19 +5,11 @@ role: Admin, Developer
 feature: Personalization, Integration
 exl-id: dcd0b9e7-8d36-4bde-b226-ac19e83f00e4
 TQID: https://experienceleague.adobe.com/L0LoTkKV0LCiO3mj8W1cKyK-A0HO0z32zu1ZSNC9GR4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
 source-wordcount: 616
 ht-degree: 2%
@@ -362,7 +354,7 @@ ComponentRegistrar::register(
 
 Per garantire che i nuovi attributi dell&#39;ordine personalizzato possano essere acquisiti dallo schema [!DNL Commerce] in Experience Platform, è necessario estendere lo schema per includere questi campi personalizzati.
 
-Per informazioni su come estendere uno schema XDM esistente per includere questi campi personalizzati, consulta l&#39;articolo [Creare e modificare gli schemi nell&#39;interfaccia utente](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) nella documentazione di Experience Platform. Il campo ID tenant viene generato in modo dinamico; tuttavia, la struttura del campo deve essere simile all’esempio fornito nella documentazione di Experience Platform.
+Per informazioni su come estendere uno schema XDM esistente per includere questi campi personalizzati, consulta l&#39;articolo [Creare e modificare gli schemi nell&#39;interfaccia utente](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) nella documentazione di Experience Platform. Il campo ID tenant viene generato in modo dinamico; tuttavia, la struttura del campo deve essere simile all’esempio fornito nella documentazione di Experience Platform.
 
 >[!IMPORTANT]
 >
@@ -384,6 +376,6 @@ Visualizza la scheda [Personalizzazione dati](connect-data.md#data-customization
 
 Se viene visualizzato il messaggio `No custom order attributes found.` nella scheda **[!UICONTROL Data Customization]**, confermare quanto segue:
 
-1. Sono stati completati i prerequisiti per abilitare l&#39;estensione [Data Connector](overview.md#prerequisites).
+1. Sono stati completati i prerequisiti per abilitare l&#39;estensione [!DNL Data Connection]. Consulta [Prerequisiti](overview.md#prerequisites).
 1. Hai configurato [attributi ordine personalizzati](#add-custom-attributes-to-orders).
 1. È stato generato almeno un evento ordine.

@@ -3,14 +3,18 @@ title: Ricerca semantica
 description: Abilita la ricerca semantica AI per  [!DNL Live Search]  dalle impostazioni. Non è richiesta alcuna modifica alla configurazione degli attributi o alla vetrina.
 role: Admin
 recommendations: noCatalog
-source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
+source-git-commit: 33d9172b2d0455a061c00781128a9f2fe804af7b
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
 
 # Ricerca semantica
+
+>[!AVAILABILITY]
+>
+>La ricerca semantica è disponibile per i commercianti che utilizzano Adobe Commerce versione 2.4.4 e successive.
 
 La ricerca semantica utilizza l&#39;intelligenza artificiale per capire cosa significano gli acquirenti, non solo le parole esatte che digitano. Query come &quot;abito per un matrimonio in spiaggia&quot; o &quot;scarpe comode per stare in piedi tutto il giorno&quot; possono restituire prodotti rilevanti anche quando il catalogo non utilizza quelle frasi esatte.
 
