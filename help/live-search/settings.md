@@ -7,9 +7,9 @@ product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+source-git-commit: 1f5246b6f5853f8b53a356ae2d6d58077b07a9a5
 workflow-type: tm+mt
-source-wordcount: 650
+source-wordcount: 679
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ Utilizza l&#39;area di lavoro **Impostazioni** per configurare la ricerca semant
 ![Impostazioni](assets/settings.png)
 
 ## Ricerca semantica {#semantic-search}
+
+>[!AVAILABILITY]
+>
+>La ricerca semantica è disponibile per i commercianti che utilizzano Adobe Commerce versione 2.4.4 e successive.
 
 La ricerca semantica utilizza l’intelligenza artificiale per far corrispondere i prodotti in base al significato e al contesto, non solo alle parole chiave esatte. Quando **[!UICONTROL Semantic search]** è abilitato, gli acquirenti che utilizzano un linguaggio naturale o un testo che non corrisponde al testo del catalogo possono comunque trovare prodotti rilevanti. [!DNL Live Search] offre la corrispondenza semantica e parola chiave in un&#39;unica esperienza di ricerca unificata nella vetrina. La ricerca semantica funziona insieme alla configurazione esistente. [regole di ricerca](rules.md), [sinonimi](synonyms.md), [facet](facets.md), aumenti e [merchandising categoria](category-merch.md) continuano ad essere applicati.
 
@@ -72,8 +76,7 @@ Per i vantaggi, le indicazioni sulla convalida, le best practice, la risoluzione
 
 L&#39;impostazione della lingua indica a [!DNL Live Search] quale lingua aspettarsi durante la lettura del catalogo e la scrittura dell&#39;indice.
 
-Le lingue hanno diversi insiemi di regole per la grammatica: come le parole vengono separate, tempi dei verbi e forme delle parole, ad esempio.
-L’impostazione Lingua assicura che al meccanismo di indicizzazione venga applicato l’insieme corretto di regole.
+Le lingue hanno diversi insiemi di regole per la grammatica: come le parole vengono separate, tempi dei verbi e forme delle parole, ad esempio.L’impostazione Lingua assicura che al meccanismo di indicizzazione venga applicato l’insieme corretto di regole.
 
 Impostare l&#39;impostazione Lingua sulla lingua principale del catalogo. Quando si modifica la lingua dell’indice, possono essere necessari da 5 a 60 minuti per riflettere la modifica nella vetrina, a seconda delle dimensioni e della complessità del catalogo.
 

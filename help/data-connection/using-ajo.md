@@ -16,7 +16,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
 source-wordcount: 1395
 ht-degree: 0%
@@ -36,7 +36,7 @@ Crea un carrello abbandonato, sfoglia le e-mail o notifica utilizzando i dati pr
 | **Definizione** | Clic o azioni eseguite dai clienti sul sito. | Informazioni sul ciclo di vita e dettagli di ciascun ordine (passato e corrente). |
 | **Eventi acquisiti da Adobe Commerce** | [pageView](https://experienceleague.adobe.com/it/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/it/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/it/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/it/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/it/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/it/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/it/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Storico ordini](https://experienceleague.adobe.com/it/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
 
-### Quali sono stati i risultati ottenuti dagli altri clienti?
+### Quali sono stati i risultati ottenuti dagli altri clienti? {#what-have-other-customers-achieved}
 
 I clienti Adobe [!DNL Commerce] hanno ottenuto un impatto significativo sul business implementando campagne di abbandono personalizzate con Adobe [!DNL Commerce], Adobe [!DNL Journey Optimizer] e Adobe [!DNL Real-Time CDP].
 

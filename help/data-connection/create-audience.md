@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
-source-wordcount: 1132
+source-wordcount: 1107
 ht-degree: 0%
 
 ---
@@ -37,16 +37,7 @@ Crea tipi di pubblico in Real-Time CDP utilizzando dati provenienti da eventi di
 
 ## Quali sono stati i risultati ottenuti dagli altri clienti?
 
-I clienti Adobe [!DNL Commerce] hanno ottenuto un impatto significativo sul business attivando tipi di pubblico incorporati in Real-Time CDP e distribuendoli alla loro istanza [!DNL Commerce].
-
-Un retailer di abbigliamento globale e multi-brand ha ottenuto:
-
-- Una fonte di verità con 10 milioni di profili cliente unificati
-- Oltre 40 tipi di pubblico univoci di &quot;clienti ad alto intento&quot; creati per interagire con i diversi canali
-
-Una società di bevande globale ha raccolto:
-
-- 98 milioni di profili cliente da oltre 100 paesi
+I clienti Adobe [!DNL Commerce] hanno ottenuto un impatto significativo sul business attivando tipi di pubblico incorporati in Real-Time CDP e distribuendoli alla loro istanza [!DNL Commerce]. Per i risultati relativi ai clienti derivanti dai dati evento di Commerce, vedere [Utilizzare Adobe Journey Optimizer per inviare un&#39;e-mail del carrello abbandonata](using-ajo.md#what-have-other-customers-achieved).
 
 ## Iniziamo
 

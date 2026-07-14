@@ -14,21 +14,23 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 5ba5dfa23580b5eefa8271277e78c6ea67879b90
 workflow-type: tm+mt
-source-wordcount: 1019
+source-wordcount: 1028
 ht-degree: 0%
 
 ---
 
 # Aggiornare gli schemi evento serie temporali per l’acquisizione dei dati di Commerce
 
-Uno dei [passaggi di onboarding](overview.md#onboarding-steps) per l&#39;utilizzo dell&#39;estensione [!DNL Data Connection] consiste nell&#39;accedere all&#39;area di lavoro dello stream di dati e [creare uno stream di dati](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=it) specifico per Adobe Commerce. Quando crei tale flusso di dati, devi anche selezionare uno schema che descriva i dati che intendi acquisire. Tale schema deve includere gruppi di campi specifici per l’e-commerce.
+Uno dei passaggi per [abilitare l&#39;estensione  [!DNL Data Connection]](overview.md#enable-extension) consiste nell&#39;accedere all&#39;area di lavoro dello stream di dati e [creare uno stream di dati](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=it) specifico per Adobe Commerce. Quando crei tale flusso di dati, devi anche selezionare uno schema che descriva i dati che intendi acquisire. Tale schema deve includere gruppi di campi specifici per l’e-commerce.
 
 Questo articolo fornisce i gruppi di campi che lo schema deve includere per raccogliere correttamente i seguenti dati delle serie temporali forniti dagli eventi di Adobe Commerce:
 
-- [Comportamento](events.md) - Include eventi di vetrina, profilo, ricerca e B2B.
-- [Back office](events-backoffice.md) - Include lo stato dell&#39;ordine ed eventi di profilo.
+- [Comportamento](events.md) - Include eventi di vetrina, di ricerca e B2B.
+- [Back office](events-backoffice.md) - Include lo stato dell&#39;ordine e la serie temporale [eventi profilo](events-backoffice.md#customer-profile-events).
+
+Per i *record* del profilo, vedere [Aggiornare lo schema dei record del profilo](profile-data.md).
 
 Ulteriori informazioni su [dati della serie temporale](data-ingestion.md).
 

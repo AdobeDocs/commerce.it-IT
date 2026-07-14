@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 7ab609a2da3173f4be31bb0927418c4b9ec05ff4
+source-git-commit: eb561a73951ba42542a8b08340a7df9cc30477d3
 workflow-type: tm+mt
-source-wordcount: 4655
+source-wordcount: 4657
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Le seguenti note sulla versione contengono aggiornamenti a [!DNL Adobe Commerce 
 
 [!BADGE Sandbox]{type=Caution tooltip="Gli elementi elencati sono attualmente disponibili solo negli ambienti Sandbox. Adobe rende disponibili le nuove versioni negli ambienti Sandbox per fornire il tempo di testare le modifiche imminenti prima che la versione sia disponibile negli ambienti di produzione."}
 
-I seguenti elementi sono attualmente disponibili solo negli ambienti Sandbox e il loro trasferimento negli ambienti di produzione è pianificato per luglio.
+I seguenti elementi sono attualmente disponibili solo negli ambienti Sandbox e il loro trasferimento negli ambienti di produzione è pianificato per il 28 luglio 2026.
 
 >[!BEGINSHADEBOX]
 
