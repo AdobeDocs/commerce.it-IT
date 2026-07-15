@@ -15,7 +15,7 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 41c5b4267888595926ae1bae48f73c928e6547ad
 workflow-type: tm+mt
 source-wordcount: 1675
 ht-degree: 0%
@@ -158,7 +158,7 @@ Quando salvi la configurazione, il sistema genera gli ID del progetto SaaS e del
 
 ## Configurare Adobe I/O Events per Commerce
 
-L’integrazione di AEM Assets utilizza il servizio Adobe I/O Events per inviare dati evento personalizzati tra l’istanza di Commerce e Experience Cloud. I dati dell’evento vengono utilizzati per coordinare i flussi di lavoro per l’integrazione AEM Assets.
+L’integrazione di AEM Assets utilizza il servizio Adobe I/O Events per inviare dati evento personalizzati tra l’istanza di Commerce ed Experience Cloud. I dati dell’evento vengono utilizzati per coordinare i flussi di lavoro per l’integrazione AEM Assets.
 
 Prima di configurare Adobe I/O Events, verifica la configurazione del processo RabbitMQ e cron per il progetto Commerce:
 
@@ -246,7 +246,7 @@ Per generare le credenziali, aggiungi l’integrazione all’istanza di Commerce
 
 1. Verificare l&#39;identità facendo clic su **Conferma identità**.
 
-   Il sistema verifica la tua identità autenticandosi su Experience Cloud con il tuo Adobe Id.
+   Il sistema verifica la tua identità autenticandosi in Experience Cloud con il tuo Adobe Id.
 
 1. Configurare le risorse API.
 

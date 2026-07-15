@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: a6a91fbd6cc6907d070998f67eb0b9c8171dda23
+source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
 workflow-type: tm+mt
-source-wordcount: 948
+source-wordcount: 965
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ Prima di configurare l’integrazione di AEM Assets, verifica di aver completato
 
 * [!BADGE Solo PaaS]{type=Informative tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe)."} [Installa i pacchetti Adobe Commerce](configure-commerce.md) per aggiungere l&#39;estensione e generare le credenziali e le connessioni necessarie per utilizzare l&#39;estensione.
 
-* [Autorizzazioni utente e IMS](permissions.md) - Richiesti per il selettore risorse e i campi di configurazione con compilazione automatica (ID programma, ID ambiente, mappatura dominio).
+* [Autorizzazioni utente e IMS](permissions.md): configura le autorizzazioni richieste per i campi Selettore risorse e di configurazione con compilazione automatica (ID programma, ID ambiente, Mappatura dominio).
 
 ## Configurare la connessione
 
@@ -63,11 +63,11 @@ Prima di configurare l’integrazione di AEM Assets, verifica di aver completato
 
 1. Selezionare l&#39;ambiente AEM Assets **[!UICONTROL Program ID]** e **[!UICONTROL Environment ID]** dai menu a discesa.
 
-   I selettori vengono visualizzati quando l&#39;utente amministratore di Commerce soddisfa [le autorizzazioni utente e IMS](permissions.md#user-permissions-and-ims) per l&#39;esperienza: **le integrazioni Adobe Commerce as a Cloud Service**, **Adobe Commerce Optimizer** e **Adobe Commerce sull&#39;infrastruttura cloud** possono popolare questi campi automaticamente dalla sessione collegata a IMS anziché fare affidamento sugli ID incollati.
+   I selettori vengono visualizzati quando l&#39;utente amministratore di Commerce dispone delle [autorizzazioni utente](permissions.md#user-permissions-and-ims) richieste per l&#39;esperienza: **le integrazioni di Adobe Commerce as a Cloud Service**, **Adobe Commerce Optimizer** e **Adobe Commerce nell&#39;infrastruttura cloud** possono compilare automaticamente questi campi dalla sessione collegata a IMS anziché fare affidamento sugli ID incollati.
 
-   Se i selettori non sono disponibili, copiare **[!UICONTROL Program ID]** e **[!UICONTROL Environment ID]** da AEM Cloud Manager o derivarli dall&#39;URL dell&#39;autore: `https://author-<ProgramID>-<EnvironmentID>.adobeaemcloud.com/` (sostituire i segnaposto con gli identificatori).
+   Se i selettori non sono disponibili, copia **[!UICONTROL Program ID]** e **[!UICONTROL Environment ID]** da AEM Cloud Manager oppure derivali dall&#39;URL dell&#39;autore: `https://author-<ProgramID>-<EnvironmentID>.adobeaemcloud.com/` (sostituisci i segnaposto con gli identificatori).
 
-   Cancellare **[!UICONTROL Use system value]** per entrambi i campi prima di incollare o selezionare manualmente nuovi valori.
+   È necessario cancellare **[!UICONTROL Use system value]** per entrambi i campi prima di incollare o selezionare manualmente nuovi valori.
 
    ![Modulo di integrazione AEM Assets con ID programma e selettori ID ambiente](../assets/aem-assets-view.png){width="600" zoomable="yes"}
 
@@ -90,13 +90,13 @@ Prima di configurare l’integrazione di AEM Assets, verifica di aver completato
 
 ### Sincronizzazione SLA
 
-L’integrazione garantisce i seguenti livelli di prestazioni di sincronizzazione:
+Service level agreement (SLA) per l’integrazione garantisce i seguenti livelli di prestazioni di sincronizzazione:
 
 * `< 5 minutes for 99% of updates`
 
 * `< 30 minutes for 99.9% of updates`
 
-In questo modo le pagine dei prodotti visualizzano sempre le immagini più aggiornate, mantenendo accurati e accattivanti i contenuti della vetrina.
+Questo livello di servizio assicura che le pagine dei prodotti visualizzino sempre le immagini più aggiornate, mantenendo contenuti precisi e accattivanti dal punto di vista visivo.
 
 ### Configurare il proprietario della visualizzazione
 

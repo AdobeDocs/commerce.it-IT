@@ -3,9 +3,9 @@ title: Note sulla versione dell’integrazione AEM Assets
 description: Consulta le note sulla versione per informazioni su tutte le versioni di Integrazione di AEM Assets.
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: e055a3d44eda7e7f082a884c316ad437ea9ac15e
+source-git-commit: e269b5a3bbd246530ba77d8c50467e2b0f4e2f7e
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1352'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ _14 maggio 2026_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versione 2.4.5 e successive.
 
-![Nuovo problema](../assets/new.svg)<!-- Issue ACAP-1268 --> Quando si importano immagini o risorse da AEM in una raccolta multimediale di prodotti Commerce, il testo alternativo viene ora trasferito come parte della sincronizzazione. Il testo alternativo può essere impostato per ogni visualizzazione store in AEM Assets. Vedi [Testo alternativo nei metadati di AEM Assets](configure-aem.md#alt-text-in-aem-assets-metadata){target=_blank}.
+![Nuovo problema](../assets/new.svg)<!-- Issue ACAP-1268 --> Quando si importano immagini o risorse da AEM in una raccolta multimediale di prodotti Commerce, il testo alternativo viene ora trasferito come parte della sincronizzazione. Il testo alternativo può essere impostato per ogni visualizzazione store in AEM Assets. Vedi [Testo alternativo localizzato nei metadati di AEM Assets](metadata.md#localized-alt-text-in-aem-assets-metadata){target=_blank}.
 
 ## v1.3.5
 
