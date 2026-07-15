@@ -93,7 +93,7 @@ Per scoprire come impostare e utilizzare l’integrazione di AEM Assets con Adob
 
 Per scoprire come Adobe Commerce e AEM Assets collaborano per semplificare i flussi di lavoro dei contenuti, guarda questo video:
 
->[!VIDEO](https://video.tv.adobe.com/v/3447837)
+>[!VIDEO](https://video.tv.adobe.com/v/3447893?captions=ita)
 
 >[!TAB Esercitazione su Adobe Commerce as a Cloud Service]
 
