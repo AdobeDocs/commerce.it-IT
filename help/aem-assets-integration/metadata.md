@@ -2,10 +2,15 @@
 title: Metadati Commerce in AEM Assets
 description: Scopri lo spazio dei nomi di Commerce, lo schema dei metadati e il testo alternativo aggiunto dall’integrazione AEM Assets all’ambiente di authoring AEM Assets.
 feature: CMS, Media, Integration
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: da3860b0-d637-47df-bef0-273751180266
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: da3860b0-d637-47df-bef0-273751180266
 source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
 workflow-type: tm+mt
 source-wordcount: 749
@@ -66,7 +71,7 @@ Questo codice di pacchetto aggiunge le seguenti risorse all’ambiente di author
 
 ## Testo alternativo localizzato nei metadati di AEM Assets
 
-Il multifield _[!UICONTROL Alt texts]_è disponibile nell&#39;editor metadati risorse di AEM Assets nella scheda **[!UICONTROL Commerce]**quando si modifica un&#39;immagine idonea.
+Il multifield _[!UICONTROL Alt texts]_&#x200B;è disponibile nell&#39;editor metadati risorse di AEM Assets nella scheda **[!UICONTROL Commerce]**&#x200B;quando si modifica un&#39;immagine idonea.
 
 >[!IMPORTANT]
 >
@@ -82,7 +87,7 @@ Selezionare **[!UICONTROL Add]** per aggiungere altre righe per altre visualizza
 
 ![Testi Alt con più campi con input Codice visualizzazione archivio e Testo Alt](assets/commerce-metadata-alt-texts-multifield.png){width="600" zoomable="yes"}
 
-Quando si salva, la convalida lato client blocca l&#39;invio se una riga presenta un _[!UICONTROL Store View Code]_vuoto o se due righe utilizzano lo stesso codice di visualizzazione archivio (senza distinzione maiuscole/minuscole).
+Quando si salva, la convalida lato client blocca l&#39;invio se una riga presenta un _[!UICONTROL Store View Code]_&#x200B;vuoto o se due righe utilizzano lo stesso codice di visualizzazione archivio (senza distinzione maiuscole/minuscole).
 
 Le voci di testo alternative vengono mantenute nei metadati delle risorse JCR come due proprietà `String[]` allineate all&#39;indice:
 
