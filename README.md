@@ -1,7 +1,7 @@
 ---
-source-git-commit: e761e54e7bd7997f3f40b1dfc1293012931111b0
+source-git-commit: bdde436394667a2d5477fbc44eac5b90bd865c68
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ Questo progetto ha adottato il [Codice di condotta di Adobe Open Source](code-of
 
 ## Informazioni sui contributi ai contenuti di Adobe
 
-Consulta la [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=it).
+Consulta la [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Il modo in cui contribuisci dipende da chi sei e dal tipo di modifiche con cui desideri contribuire:
 
 ### Modifiche minori
 
-Se stai apportando aggiornamenti minori, visita l&#39;articolo e fai clic sull&#39;area di feedback visualizzata in fondo all&#39;articolo, fai clic su **Opzioni di feedback dettagliate**, quindi fai clic su **Suggerisci una modifica** per passare al file Markdown di origine su GitHub. Utilizza l’interfaccia utente di GitHub per apportare modifiche. Per ulteriori informazioni, consulta la [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=it).
+Se stai apportando aggiornamenti minori, visita l&#39;articolo e fai clic sull&#39;area di feedback visualizzata in fondo all&#39;articolo, fai clic su **Opzioni di feedback dettagliate**, quindi fai clic su **Suggerisci una modifica** per passare al file Markdown di origine su GitHub. Utilizza l’interfaccia utente di GitHub per apportare modifiche. Per ulteriori informazioni, consulta la [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Le correzioni minori o i chiarimenti inviati per la documentazione e gli esempi di codice in questo archivio sono coperti dalle condizioni d’uso di Adobe.
 
@@ -31,13 +31,13 @@ Se fai parte della community Adobe e desideri creare un nuovo articolo o inviare
 
 ### Modifiche sostanziali da parte dei dipendenti Adobe
 
-Se sei un autore tecnico, un responsabile di programma o uno sviluppatore del team di prodotto per una soluzione Adobe Experience Cloud ed è tuo compito creare o contribuire ad articoli tecnici, devi utilizzare l&#39;archivio privato all&#39;indirizzo `https://git.corp.adobe.com/AdobeDocs`.
+Se sei un autore, un responsabile di programma o uno sviluppatore del team di prodotto per una soluzione Adobe Experience Cloud ed è tuo compito creare o contribuire ad articoli tecnici, devi utilizzare l&#39;archivio privato all&#39;indirizzo `https://git.corp.adobe.com/AdobeDocs`.
 
 ## Strumenti e configurazione
 
 I collaboratori della community possono utilizzare l’interfaccia utente di GitHub per apportare modifiche di base o eseguire il fork dell’archivio per apportare contributi principali.
 
-Per informazioni dettagliate, consulta la [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=it).
+Per informazioni dettagliate, consulta la [Guida per i collaboratori per la documentazione di Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 ## Come utilizzare Markdown per formattare l’argomento
 
@@ -60,10 +60,11 @@ Dopo aver clonato l’archivio, esegui:
 
 ### Funzionamento degli hook
 
-- Rileva automaticamente i file immagine di staging (PNG, JPG, JPEG, GIF, SVG)
-- Esegui `image_optim` per comprimere e ottimizzare le immagini
+- Rileva automaticamente i file immagine di staging (PNG, JPEG, GIF, SVG)
+- Esegui `image_optim` per comprimere e ottimizzare le immagini raster (PNG, JPEG, GIF)
 - Riposiziona automaticamente nell&#39;area intermedia le immagini ottimizzate
-- Assicurati che tutte le immagini salvate siano ottimizzate correttamente
+- Assicurati che tutte le immagini raster salvate siano ottimizzate correttamente
+- Controlla i file SVG in staging in base a un limite di dimensioni e interrompi il commit se un SVG lo supera
 
 ### Vantaggi
 
@@ -76,7 +77,9 @@ Per istruzioni dettagliate sulla configurazione, la risoluzione dei problemi e l
 
 ## Attività di rastremazione disponibili
 
-Questo archivio utilizza le attività di rastremazione fornite dal gem `adobe-comdox-exl-rake-tasks`. Per visualizzare tutte le attività disponibili, eseguire le operazioni seguenti:
+Questo archivio utilizza le attività di rastremazione fornite da
+[`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks)
+gemma. Per visualizzare tutte le attività disponibili, eseguire le operazioni seguenti:
 
 ```bash
 cd _jekyll
