@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
+source-git-commit: 27cbf66e4851f0d21ecc039fd53aa838b4c211ba
 workflow-type: tm+mt
-source-wordcount: 1404
+source-wordcount: 1365
 ht-degree: 0%
 
 ---
@@ -32,6 +32,19 @@ Le seguenti note sulla versione contengono aggiornamenti a [!DNL Adobe Commerce 
 
   {{aco-api-updates-and-dropins}}
 
+## Luglio 2026
+
+>[!BEGINSHADEBOX]
+
+_20 luglio 2026_
+
+![Correzione](../assets/fix.svg) **Prestazioni di navigazione tra categorie**—Sono state applicate ottimizzazioni delle prestazioni al servizio delle categorie, con conseguente aumento della velocità effettiva e riduzione della latenza P99 per la query `CategoryNavigation`, con conseguente miglioramento della reattività del servizio e dell&#39;esperienza utente complessiva con carico elevato.
+<!--DATA-7131 DATA-7250-->
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
 ## Giugno 2026
 
 >[!BEGINSHADEBOX]
@@ -40,7 +53,8 @@ _24 giugno 2026_
 
 <!-- v1.3 -->
 
-![Nuovo](../assets/new.svg) **Nuovo campo `canEditQuantity`**—Aggiunto `canEditQuantity` a `ProductViewOptionValueProduct` in Catalog Service GraphQL. Espone l&#39;impostazione facoltativa della quantità **Definita dall&#39;utente** per le selezioni del bundle dall&#39;amministratore Commerce, in modo che i consumatori di vetrina possano determinare se la quantità di una selezione del bundle è modificabile.
+![Nuovo](../assets/new.svg) **Nuovo campo `canEditQuantity`**—Aggiunto `canEditQuantity` a `ProductViewOptionValueProduct` in Catalog Service GraphQL. Espone l&#39;impostazione facoltativa della quantità **Definita dall&#39;utente** per le selezioni del bundle da Commerce Admin, in modo che i consumatori di vetrina possano determinare se la quantità di una selezione del bundle è modificabile.
+<!--COMOPT-2050-->
 
 ### Ricerca semantica
 
@@ -69,10 +83,13 @@ _28 maggio 2026_
 <!-- v1.2 -->
 
 ![Correzione](../assets/fix.svg) **Struttura di navigazione completa**. Le categorie discendenti con tag sono ora incluse correttamente nelle strutture `navigation` filtrate dalla famiglia quando nel percorso esiste un nodo intermedio senza tag. Questa correzione assicura che gli acquirenti vedano tutte le categorie pertinenti nella navigazione, semplificando la navigazione e l’individuazione degli articoli.
+<!--DATA-7183-->
 
 ![Correzione](../assets/fix.svg) **Gestione slug vuota in `categoryTree` richieste**—È stato risolto un problema a causa del quale la query [`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) restituiva un errore interno del server quando l&#39;argomento `slugs` includeva una stringa vuota. I valori di slug vuoti vengono ora ignorati, pertanto gli storefront e le integrazioni continuano a risolvere i dati di categoria senza richieste non riuscite.
+<!--DATA-7184-->
 
 ![Correzione](../assets/fix.svg) **`searchCategory`richieste restituiscono risultati alfabetizzati senza distinzione tra maiuscole e minuscole**. La query `searchCategory` ordina ora i risultati della ricerca in ordine alfabetico senza distinzione tra maiuscole e minuscole, garantendo un ordinamento coerente e prevedibile. Le categorie con prefissi più brevi vengono visualizzate per prime quando i nomi sono identici.
+<!--COMOPT-2142-->
 
 _4 maggio 2026_
 
