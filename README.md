@@ -1,7 +1,7 @@
 ---
-source-git-commit: bdde436394667a2d5477fbc44eac5b90bd865c68
+source-git-commit: 9de8e747353a9042d5b6d7c150688e705c21d2c6
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -60,11 +60,11 @@ Dopo aver clonato l’archivio, esegui:
 
 ### Funzionamento degli hook
 
-- Rileva automaticamente i file immagine di staging (PNG, JPEG, GIF, SVG)
-- Esegui `image_optim` per comprimere e ottimizzare le immagini raster (PNG, JPEG, GIF)
+- Rileva automaticamente i file di immagine di staging (`.png`, `.jpeg`, `.jpg`, `.gif`, `.svg`)
+- Esegui `image_optim` per comprimere e ottimizzare le immagini raster (`.png`, `.jpeg`, `.jpg`, `.gif`)
 - Riposiziona automaticamente nell&#39;area intermedia le immagini ottimizzate
 - Assicurati che tutte le immagini raster salvate siano ottimizzate correttamente
-- Controlla i file SVG in staging in base a un limite di dimensioni e interrompi il commit se un SVG lo supera
+- Controlla i file SVG in staging rispetto a un limite di dimensioni e interrompi il commit se da `help/` viene fatto riferimento a un SVG di dimensioni eccessive (in caso contrario, solo avvertenza)
 
 ### Vantaggi
 
