@@ -7,7 +7,7 @@ feature: Payments, Checkout, Configuration, Security, Paas, Saas
 exl-id: 440296bb-a6ff-408b-8195-3027916e4f84
 source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
@@ -57,4 +57,4 @@ Queste opzioni di configurazione non sono compatibili con Payment Services e lâ€
 
 Consulta la documentazione di Signifyd per informazioni sulla [configurazione dell&#39;estensione](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#configuringmagento2extension).
 
-Per ulteriori informazioni sui flussi di lavoro degli ordini[, consulta la documentazione di Signifyd.](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#howmagento2works)
+Per ulteriori informazioni sui flussi di lavoro degli ordini[&#128279;](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#howmagento2works), consulta la documentazione di Signifyd.

@@ -5,7 +5,7 @@ exl-id: 2b3721a1-9c9d-4e3f-ab7d-5bd61573dcb4
 feature: Payments, Checkout, Paas, Saas
 source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
