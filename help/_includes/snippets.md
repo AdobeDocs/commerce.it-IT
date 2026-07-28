@@ -1,7 +1,7 @@
 ---
-source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
+source-git-commit: 039f848c37235195a3ffcc90238dad77513a9ec3
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
@@ -104,3 +104,9 @@ Per informazioni sulle opzioni di configurazione delle identità, tra cui Adobe 
 | Servizi | Vetrina |
 | --- | --- |
 | [Integrazione AEM Assets](../aem-assets-integration/release-notes.md)<br>[Connettore Commerce Optimizer](../aco-connector/release-notes.md) | [Informazioni sulla versione di Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=it)<br>[Storefront changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=it) |
+
+## Accesso anticipato allo strumento di migrazione dei dati in blocco {#bulk-data-early-access}
+
+>[!IMPORTANT]
+>
+>Lo strumento di migrazione dei dati in blocco è attualmente in fase di accesso anticipato. L’accesso viene fornito esclusivamente tramite il processo di coinvolgimento Commerce Deployed Engineering (CDE). Per una panoramica dello strumento e dei relativi requisiti di idoneità, vedere [Strumento di migrazione dati in blocco](../cloud-service/migration/bulk-data/migration-tool.md).
