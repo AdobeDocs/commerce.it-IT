@@ -54,7 +54,7 @@ Prima di iniziare, verifica di aver completato ogni elemento nella [Lista di con
 
 Configurare l’ambiente per la migrazione in blocco dei dati:
 
->[!VIDEO](https://video.tv.adobe.com/v/3496121)
+>[!VIDEO](https://video.tv.adobe.com/v/3496128?captions=ita)
 
 1. Estrarre il contenuto di `ccsaas-migration-tools.tar.gz`.
 
@@ -97,7 +97,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 ### Configurare le credenziali OAuth di origine
 
->[!VIDEO](https://video.tv.adobe.com/v/3496142)
+>[!VIDEO](https://video.tv.adobe.com/v/3496148?captions=ita)
 
 Questi quattro valori firmano le richieste dallo strumento di migrazione alle API dell’archivio di origine. Per ottenerle, apri l&#39;origine [!UICONTROL Admin] e passa a [!UICONTROL **Sistema**] > [!UICONTROL **Estensioni**] > [!UICONTROL **Integrazioni**]. Creare o aprire un&#39;integrazione, quindi copiare i valori in `.env`:
 
@@ -142,7 +142,7 @@ Prima della migrazione, assicurati che le seguenti impostazioni siano coerenti t
 
 ### Configurare le credenziali SaaS e IMS di destinazione
 
->[!VIDEO](https://video.tv.adobe.com/v/3496167)
+>[!VIDEO](https://video.tv.adobe.com/v/3496173?captions=ita)
 
 Queste sono le impostazioni IMS e API di [!DNL Adobe Commerce as a Cloud Service] per la destinazione. È necessario disporre dell’ID tenant, dell’ID organizzazione, delle credenziali server-to-server di IMS OAuth e dell’host IMS corretto per l’ambiente. Coordina con il tuo team di Adobe per l’accesso a organizzazione, tenant e profilo. Non tentare di dedurre o stimare valori sensibili.
 
@@ -247,7 +247,7 @@ CDMS_PORT=443
 
 ## Configurare il file di connessione al database
 
->[!VIDEO](https://video.tv.adobe.com/v/3496152)
+>[!VIDEO](https://video.tv.adobe.com/v/3496163?captions=ita)
 
 Il file `.my.cnf` fornisce le impostazioni di connessione [!DNL MySQL] per il lato di estrazione dello strumento di migrazione. Per crearlo, copia `.my.cnf.example` in `.my.cnf` nella directory principale del progetto. Il nome della sezione deve corrispondere a `SOURCE_CONNECTION_NAME` in `.env`.
 
