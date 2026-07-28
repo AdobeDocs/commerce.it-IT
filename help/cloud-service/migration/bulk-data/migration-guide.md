@@ -2,7 +2,7 @@
 title: Eseguire una migrazione dati in blocco
 description: Scopri come configurare ed eseguire una migrazione di dati in blocco da un’istanza Adobe Commerce PaaS o on-premise ad Adobe Commerce as a Cloud Service con CLI.
 feature: Cloud
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:07.600Z'
@@ -130,7 +130,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 >[!NOTE]
 >
->Se utilizzi per la prima volta Cloud CLI, devi aggiungere anche la chiave pubblica SSH al tuo account. Per istruzioni, consulta la [Guida alle connessioni sicure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections).
+>Se utilizzi per la prima volta Cloud CLI, devi aggiungere anche la chiave pubblica SSH al tuo account. Per istruzioni, consulta la [Guida alle connessioni sicure](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/secure-connections).
 
 ### Allinea impostazioni amministratore Commerce
 
