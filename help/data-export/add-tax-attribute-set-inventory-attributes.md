@@ -5,29 +5,13 @@ autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/
 TQID: https://experienceleague.adobe.com/AWc-yAn-TyiBXQONoF2ZG9SFjj2u92CKbKvAY8mEVEE
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: c1256247-af4b-46d8-9dca-0c654ecfa157id: c18ed297-2187-4aec-affb-9d9654eca6fcid: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 7c592b78454fdfafb377b101e366c8213ce43a0a
 workflow-type: tm+mt
-source-wordcount: 822
+source-wordcount: 835
 ht-degree: 0%
 
 ---
@@ -36,9 +20,9 @@ ht-degree: 0%
 
 Il modulo Adobe Commerce Extra Product Attributes estende i feed di dati di prodotto. Include attributi di prodotto aggiuntivi dalle configurazioni di prodotto Adobe Commerce:
 
-* [Classificazione fiscale](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/site-store/taxes/tax-class)
-* [Set di attributi](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
-* [Inventario](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options)
+* [Classificazione fiscale](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/tax-class)
+* [Set di attributi](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
+* [Inventario](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options)
 
 Una volta installato, il modulo funziona automaticamente. Acquisisce ed esporta gli attributi aggiuntivi durante la sincronizzazione del prodotto. Non è richiesta alcuna configurazione aggiuntiva.
 
@@ -46,18 +30,18 @@ Una volta installato, il modulo funziona automaticamente. Acquisisce ed esporta 
 
 * **Miglioramento automatico**: arricchisce i feed di prodotto con attributi di classe fiscale, set di attributi e inventario
 * **Integrazione perfetta**: fornisce il contesto essenziale per i sistemi e i servizi esterni
-* **Nessuna configurazione**: funziona immediatamente dopo l&#39;installazione
+* **Nessuna configurazione**: funzioni immediatamente dopo l&#39;installazione
 * **Aggiornamenti in tempo reale**: sincronizzazione automatica con le modifiche apportate al prodotto
 
 ## Funzioni e attributi esportati
 
 Il modulo aggiunge tre attributi aggiuntivi ai feed di dati di prodotto esistenti:
 
-* `ac_tax_class`
-* `ac_attribute_set`
-* `ac_inventory`
+* `[ac_tax_class](#tax-class-information-ac_tax_class)`
+* `[ac_attribute_set](attribute-set-information-ac_attribute_set)`
+* `[ac_inventory](advanced-inventory-data-ac_inventory)`
 
-### &#x200B;1. Informazioni classe fiscale (`ac_tax_class`)
+### Informazioni classe fiscale (`ac_tax_class`) {#tax-class-information-ac_tax_class}
 
 **Scopo**: fornisce informazioni sulla classificazione fiscale per ciascun prodotto
 
@@ -84,7 +68,7 @@ Quando si esportano dati di classi di imposta in Commerce Catalog Services, tali
 * Integrazione con i servizi di calcolo delle imposte esterni
 * Categorizzazione dei prodotti per i sistemi contabili
 
-### &#x200B;2. Informazioni sul set di attributi (`ac_attribute_set`)
+### Informazioni sul set di attributi (`ac_attribute_set`) {#attribute-set-information-ac_attribute_set}
 
 **Scopo**: identifica il set di attributi assegnato a ciascun prodotto
 
@@ -113,7 +97,7 @@ Quando si esportano i dati del set di attributi in Commerce Catalog Services, ve
 * Gestione e organizzazione del catalogo
 * Integrazione di sistemi di terze parti che richiede il contesto del set di attributi
 
-### &#x200B;3. Dati inventario avanzati (`ac_inventory`)
+### Dati inventario avanzati (`ac_inventory`) {#advanced-inventory-data-ac_inventory}
 
 **Scopo**: fornisce le impostazioni di gestione dell&#39;inventario per ciascun prodotto
 
@@ -125,9 +109,9 @@ Quando si esportano i dati del set di attributi in Commerce Catalog Services, ve
 * `cartMinQty` (virgola mobile): quantità minima consentita nel carrello
 * `cartMaxQty` (virgola mobile): quantità massima consentita nel carrello
 * `backorders` (stringa): criterio ordine arretrato. Il valore è uno dei seguenti:
-   * `"no"`: nessun ordine inevaso consentito
-   * `"allow"`: quantità consentita inferiore a 0
-   * `"allow_notify"`: consenti quantità inferiore a 0 e notifica al cliente
+  * `"no"`: nessun ordine inevaso consentito
+  * `"allow"`: quantità consentita inferiore a 0
+  * `"allow_notify"`: consenti quantità inferiore a 0 e notifica al cliente
 * `enableQtyIncrements` (booleano): se gli incrementi di quantità sono abilitati
 * `qtyIncrements` (virgola mobile): valore di incremento quantità richiesto
 
@@ -161,26 +145,25 @@ Il modulo Attributi prodotto aggiuntivi migliora i feed di prodotto esistenti. I
 
 * **Feed prodotti** (`products`): migliorato con i tre attributi aggiuntivi
 
-   * Aggiunge gli attributi `ac_tax_class`, `ac_attribute_set` e `ac_inventory` a ciascun record di prodotto
-   * Mantiene invariati i dati di prodotto originali
-   * Mantiene la compatibilità con le versioni precedenti dei consumatori di feed esistenti
+  * Aggiunge gli attributi `ac_tax_class`, `ac_attribute_set` e `ac_inventory` a ciascun record di prodotto
+  * Mantiene invariati i dati di prodotto originali
+  * Mantiene la compatibilità con le versioni precedenti dei consumatori di feed esistenti
 
 * **Feed attributi prodotto** (`productAttributes`): migliorato con i metadati degli attributi per i nuovi attributi
 
-   * Registra automaticamente i metadati per i tre nuovi attributi nel feed `productAttributes`
-   * Fornisce i dettagli di configurazione degli attributi (tipi di dati, impostazioni di visibilità e così via)
-   * Aiuta i sistemi esterni a comprendere il nuovo schema di attributi
+  * Registra automaticamente i metadati per i tre nuovi attributi nel feed `productAttributes`
+  * Fornisce i dettagli di configurazione degli attributi (tipi di dati, impostazioni di visibilità e così via)
+  * Aiuta i sistemi esterni a comprendere il nuovo schema di attributi
 
 ## Installare l’estensione
 
 **Requisiti**
 
-* PHP 8.1, 8.2, 8.3 o 8.4
-* Adobe Commerce 2.4.4+
+* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+. Per ulteriori dettagli, vedere [Requisiti di sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
 * [Estensione Adobe Commerce Data Export](manage-extension.md#update-a-module-to-a-specific-version), versione 103.4.11 o successiva
 * Accedi a [repo.magento.com](https://repo.magento.com)
 
-  Per generare le chiavi e ottenere i diritti necessari, vedere [Ottenere le chiavi di autenticazione](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Per le installazioni cloud, consulta la [Guida di Commerce sull&#39;infrastruttura cloud](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
+  Per generare le chiavi e ottenere i diritti necessari, vedere [Ottenere le chiavi di autenticazione](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Per le installazioni cloud, consulta la [Guida di Commerce sull&#39;infrastruttura cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
 * Accedere alla riga di comando del server applicazioni Adobe Commerce.
 
 ### Passaggi per l’installazione
@@ -193,8 +176,8 @@ composer require adobe-commerce/module-extra-product-attributes
 
 Per i passaggi dettagliati dell’installazione, consulta le seguenti guide:
 
-* [Installare l’estensione su Adobe Commerce su infrastruttura cloud](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure-store/extensions)
-* [Installare l’estensione Adobe Commerce on-premise](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/tutorials/extensions)
+* [Installazione dell’estensione per Adobe Commerce su infrastruttura cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+* [Installare l’estensione su Adobe Commerce on-premise](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)
 
 ## Sincronizzare i dati del prodotto
 
@@ -215,16 +198,16 @@ bin/magento saas:resync --feed=productAttributes
 **Attributi aggiuntivi mancanti per i prodotti:**
 
 * Verificare che il modulo sia installato e attivato correttamente
-* Esegui i comandi di risincronizzazione per aggiornare i dati del prodotto
+* Per aggiornare i dati del prodotto, eseguire i comandi di risincronizzazione
 * Verifica che i prodotti abbiano assegnazioni valide per la classe fiscale e la serie di attributi
 
 **I dati di inventario non sono corretti:**
 
 * Verificare che le impostazioni di inventario siano configurate correttamente in Amministrazione
 * Verifica sostituzioni inventario specifiche per il sito Web
-* Verifica che il modulo [Inventory management](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/guide-overview) funzioni correttamente
+* Verifica che il modulo [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) funzioni correttamente
 
-Per ulteriori dettagli, consulta la [Guida di Inventory management](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/guide-overview) nella *documentazione di Adobe Commerce Merchant*.
+Per ulteriori dettagli, consulta la [Guida di Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) nella *documentazione di Adobe Commerce Merchant*.
 
 **Problemi relativi alle prestazioni:**
 
