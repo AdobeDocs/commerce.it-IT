@@ -14,9 +14,9 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 88c74f789dc398afa8f40ee2258450e83f134d87
 workflow-type: tm+mt
-source-wordcount: 454
+source-wordcount: 506
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Per ulteriori informazioni sulla configurazione dell&#39;estensione [!DNL Paymen
 
 ![verifica](assets/icon-check.png) Prezzi standard
 
-![verifica](assets/icon-check.png) **Disponibile in XX paesi**
+![verifica](assets/icon-check.png) **Disponibile in più di 200 paesi**
 
 [![ulteriori informazioni](assets/learn-more-button.svg)](onboard.md)
 
@@ -99,7 +99,7 @@ Per ulteriori informazioni sulla configurazione dell&#39;estensione [!DNL Paymen
 
 ![verifica](assets/icon-check.png) (funzionalità di determinazione prezzi L2/L3 - solo Stati Uniti)
 
-![verifica](assets/icon-check.png) **Disponibile solo negli Stati Uniti, in Canada (CA) e in Australia (AUS). Francia (FR), Regno Unito (UK)**
+![check](assets/icon-check.png) disponibile in 37 paesi. Australia, Austria, Belgio, Bulgaria, Canada, Cina, Cipro, Repubblica ceca, Danimarca, Estonia, Finlandia, Francia, Germania, Grecia, Hong Kong, Irlanda, Italia, Giappone, Lettonia, Liechtenstein, Lituania, Lussemburgo, Malta, Messico, Norvegia, Paesi Bassi, Polonia, Portogallo, Romania, Singapore, Slovacchia, Slovenia, Spagna, Svezia, Regno Unito, Stati Uniti. **Tariffe negoziate disponibili in Stati Uniti (USA), Canada (CA), Australia (AU), Francia (FR), Regno Unito (GB), Italia (IT), Paesi Bassi (NL), Germania (DE)**
 
 [![ulteriori informazioni](assets/learn-more-button.svg)](onboard.md)
 

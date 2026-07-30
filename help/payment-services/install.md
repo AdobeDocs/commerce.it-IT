@@ -7,7 +7,7 @@ feature: Payments, Checkout, Install, Upgrade, Paas
 badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ Questo metodo viene utilizzato per installare l&#39;estensione [!DNL Payment Ser
 
 >[!NOTE]
 >
-> [!DNL Payment Services] 1.6.1 è compatibile con le versioni 7.x di PHP. Tuttavia, si consiglia vivamente di aggiornare alla versione più recente di [!DNL Payment Services].
+> [!DNL Payment Services] 1.6.1 è compatibile con le versioni 7.x di PHP. Tuttavia, si consiglia vivamente di eseguire l&#39;aggiornamento alla versione più recente di [!DNL Payment Services].
 
 ## Aggiornare l’estensione
 
