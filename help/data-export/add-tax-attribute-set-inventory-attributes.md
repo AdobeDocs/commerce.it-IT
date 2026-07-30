@@ -25,9 +25,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 7c592b78454fdfafb377b101e366c8213ce43a0a
 workflow-type: tm+mt
-source-wordcount: 822
+source-wordcount: 835
 ht-degree: 0%
 
 ---
@@ -46,18 +46,18 @@ Una volta installato, il modulo funziona automaticamente. Acquisisce ed esporta 
 
 * **Miglioramento automatico**: arricchisce i feed di prodotto con attributi di classe fiscale, set di attributi e inventario
 * **Integrazione perfetta**: fornisce il contesto essenziale per i sistemi e i servizi esterni
-* **Nessuna configurazione**: funziona immediatamente dopo l&#39;installazione
+* **Nessuna configurazione**: funzioni immediatamente dopo l&#39;installazione
 * **Aggiornamenti in tempo reale**: sincronizzazione automatica con le modifiche apportate al prodotto
 
 ## Funzioni e attributi esportati
 
 Il modulo aggiunge tre attributi aggiuntivi ai feed di dati di prodotto esistenti:
 
-* `ac_tax_class`
-* `ac_attribute_set`
-* `ac_inventory`
+* `[ac_tax_class](#tax-class-information-ac_tax_class)`
+* `[ac_attribute_set](attribute-set-information-ac_attribute_set)`
+* `[ac_inventory](advanced-inventory-data-ac_inventory)`
 
-### &#x200B;1. Informazioni classe fiscale (`ac_tax_class`)
+### Informazioni classe fiscale (`ac_tax_class`) {#tax-class-information-ac_tax_class}
 
 **Scopo**: fornisce informazioni sulla classificazione fiscale per ciascun prodotto
 
@@ -84,7 +84,7 @@ Quando si esportano dati di classi di imposta in Commerce Catalog Services, tali
 * Integrazione con i servizi di calcolo delle imposte esterni
 * Categorizzazione dei prodotti per i sistemi contabili
 
-### &#x200B;2. Informazioni sul set di attributi (`ac_attribute_set`)
+### Informazioni sul set di attributi (`ac_attribute_set`) {#attribute-set-information-ac_attribute_set}
 
 **Scopo**: identifica il set di attributi assegnato a ciascun prodotto
 
@@ -113,7 +113,7 @@ Quando si esportano i dati del set di attributi in Commerce Catalog Services, ve
 * Gestione e organizzazione del catalogo
 * Integrazione di sistemi di terze parti che richiede il contesto del set di attributi
 
-### &#x200B;3. Dati inventario avanzati (`ac_inventory`)
+### Dati inventario avanzati (`ac_inventory`) {#advanced-inventory-data-ac_inventory}
 
 **Scopo**: fornisce le impostazioni di gestione dell&#39;inventario per ciascun prodotto
 
@@ -125,9 +125,9 @@ Quando si esportano i dati del set di attributi in Commerce Catalog Services, ve
 * `cartMinQty` (virgola mobile): quantità minima consentita nel carrello
 * `cartMaxQty` (virgola mobile): quantità massima consentita nel carrello
 * `backorders` (stringa): criterio ordine arretrato. Il valore è uno dei seguenti:
-   * `"no"`: nessun ordine inevaso consentito
-   * `"allow"`: quantità consentita inferiore a 0
-   * `"allow_notify"`: consenti quantità inferiore a 0 e notifica al cliente
+  * `"no"`: nessun ordine inevaso consentito
+  * `"allow"`: quantità consentita inferiore a 0
+  * `"allow_notify"`: consenti quantità inferiore a 0 e notifica al cliente
 * `enableQtyIncrements` (booleano): se gli incrementi di quantità sono abilitati
 * `qtyIncrements` (virgola mobile): valore di incremento quantità richiesto
 
@@ -161,22 +161,21 @@ Il modulo Attributi prodotto aggiuntivi migliora i feed di prodotto esistenti. I
 
 * **Feed prodotti** (`products`): migliorato con i tre attributi aggiuntivi
 
-   * Aggiunge gli attributi `ac_tax_class`, `ac_attribute_set` e `ac_inventory` a ciascun record di prodotto
-   * Mantiene invariati i dati di prodotto originali
-   * Mantiene la compatibilità con le versioni precedenti dei consumatori di feed esistenti
+  * Aggiunge gli attributi `ac_tax_class`, `ac_attribute_set` e `ac_inventory` a ciascun record di prodotto
+  * Mantiene invariati i dati di prodotto originali
+  * Mantiene la compatibilità con le versioni precedenti dei consumatori di feed esistenti
 
 * **Feed attributi prodotto** (`productAttributes`): migliorato con i metadati degli attributi per i nuovi attributi
 
-   * Registra automaticamente i metadati per i tre nuovi attributi nel feed `productAttributes`
-   * Fornisce i dettagli di configurazione degli attributi (tipi di dati, impostazioni di visibilità e così via)
-   * Aiuta i sistemi esterni a comprendere il nuovo schema di attributi
+  * Registra automaticamente i metadati per i tre nuovi attributi nel feed `productAttributes`
+  * Fornisce i dettagli di configurazione degli attributi (tipi di dati, impostazioni di visibilità e così via)
+  * Aiuta i sistemi esterni a comprendere il nuovo schema di attributi
 
 ## Installare l’estensione
 
 **Requisiti**
 
-* PHP 8.1, 8.2, 8.3 o 8.4
-* Adobe Commerce 2.4.4+
+* [Adobe Commerce](https://business.adobe.com/it/products/magento/magento-commerce.html) 2.4.4+. Per ulteriori dettagli, vedere [Requisiti di sistema](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/system-requirements).
 * [Estensione Adobe Commerce Data Export](manage-extension.md#update-a-module-to-a-specific-version), versione 103.4.11 o successiva
 * Accedi a [repo.magento.com](https://repo.magento.com)
 
@@ -193,8 +192,8 @@ composer require adobe-commerce/module-extra-product-attributes
 
 Per i passaggi dettagliati dell’installazione, consulta le seguenti guide:
 
-* [Installare l’estensione su Adobe Commerce su infrastruttura cloud](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure-store/extensions)
-* [Installare l’estensione Adobe Commerce on-premise](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/tutorials/extensions)
+* [Installazione dell’estensione per Adobe Commerce su infrastruttura cloud](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+* [Installare l’estensione su Adobe Commerce on-premise](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/tutorials/extensions)
 
 ## Sincronizzare i dati del prodotto
 
@@ -215,7 +214,7 @@ bin/magento saas:resync --feed=productAttributes
 **Attributi aggiuntivi mancanti per i prodotti:**
 
 * Verificare che il modulo sia installato e attivato correttamente
-* Esegui i comandi di risincronizzazione per aggiornare i dati del prodotto
+* Per aggiornare i dati del prodotto, eseguire i comandi di risincronizzazione
 * Verifica che i prodotti abbiano assegnazioni valide per la classe fiscale e la serie di attributi
 
 **I dati di inventario non sono corretti:**

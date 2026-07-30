@@ -15,9 +15,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 029d78d5c87bf75ccc26b8af462081f8e08d1176
+source-git-commit: 75da477c3725f754495f5b13f99d65c66a2bf5ae
 workflow-type: tm+mt
-source-wordcount: 475
+source-wordcount: 491
 ht-degree: 0%
 
 ---
@@ -36,9 +36,9 @@ Con l’indicizzazione dei prezzi SaaS abilitata, il flusso di dati cambia. L&#3
 
 Tutti i commercianti possono beneficiare dell’indicizzazione dei prezzi SaaS, ma i commercianti che hanno progetti con le seguenti caratteristiche possono realizzare i maggiori vantaggi:
 
-* **Cambiamenti di prezzo costanti**-Commercianti che richiedono modifiche ripetute ai loro prezzi per soddisfare obiettivi strategici come promozioni frequenti, sconti stagionali o riduzioni di inventario.
-* **Più siti Web e/o gruppi di clienti**-Commercianti con cataloghi di prodotti condivisi su più siti Web (domini/marchi) e/o gruppi di clienti.
-* **Molti prezzi univoci per siti Web o gruppi di clienti**-Commercianti con cataloghi di prodotti condivisi estesi che contengono prezzi univoci per siti Web o gruppi di clienti. Alcuni esempi includono i commercianti B2B che hanno prezzi pre-negoziati o marchi con diverse strategie di prezzo.
+* **Variazioni di prezzo costanti** - Mercanti che richiedono modifiche ripetute ai prezzi per soddisfare obiettivi strategici quali promozioni frequenti, sconti stagionali o riduzioni di scorte.
+* **Più siti Web e/o gruppi di clienti** - Commercianti con cataloghi di prodotti condivisi su più siti Web (domini/marchi) e/o gruppi di clienti.
+* **Molti prezzi univoci per siti Web o gruppi di clienti** - Commercianti con cataloghi di prodotti condivisi e completi che contengono prezzi univoci per siti Web o gruppi di clienti. Alcuni esempi includono i commercianti B2B che hanno prezzi pre-negoziati o marchi con diverse strategie di prezzo.
 
 ## Usa indicizzazione prezzi SaaS
 
@@ -46,16 +46,15 @@ L’indicizzazione dei prezzi SaaS viene abilitata automaticamente quando si ins
 
 ### Requisiti
 
-* Adobe Commerce 2.4.4+
+* [Adobe Commerce](https://business.adobe.com/it/products/magento/magento-commerce.html) 2.4.4+. Per ulteriori dettagli, vedere [Requisiti di sistema](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
 
 ### Prerequisiti
 
 * Con la versione più recente dell&#39;estensione Commerce deve essere installato uno dei servizi Commerce seguenti:
 
-   * [Servizio catalogo](../catalog-service/overview.md)
-   * [Live Search](../live-search/overview.md)
-   * [Consigli di prodotto](../product-recommendations/guide-overview.md)
-
+  * [Servizio catalogo](../catalog-service/overview.md)
+  * [Live Search](../live-search/overview.md)
+  * [Consigli di prodotto](../product-recommendations/guide-overview.md)
 
 >[!NOTE]
 >
@@ -79,11 +78,11 @@ Utilizzare [Commerce CLI](../data-export/data-export-cli-commands.md) per risinc
 
 >[!NOTE]
 >
->Se la pagina Stato di sincronizzazione feed dati non è disponibile in Commerce Admin for Commerce on Cloud o nelle distribuzioni locali, segui le [istruzioni di installazione dell&#39;estensione](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension) per abilitarla.
+>Per abilitare la pagina Stato di sincronizzazione feed dati se non è disponibile in Commerce Admin for Commerce on Cloud o nelle distribuzioni locali, segui le [istruzioni di installazione dell&#39;estensione](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension).
 
 ## Prezzi per tipi di prodotto personalizzati
 
-I calcoli dei prezzi sono supportati per i tipi di prodotto personalizzati, ad esempio il prezzo di base, il prezzo speciale, il prezzo di gruppo, il prezzo delle regole di catalogo e così via.
+I calcoli dei prezzi sono supportati per i tipi di prodotto personalizzati, ad esempio i prezzi di base, speciali, di gruppo e delle regole di catalogo.
 
 Se si dispone di un tipo di prodotto personalizzato che utilizza una formula specifica per calcolare il prezzo finale, è possibile estendere il comportamento del feed del prezzo del prodotto.
 

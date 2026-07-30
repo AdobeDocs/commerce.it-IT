@@ -25,16 +25,16 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
+source-git-commit: df9b8455e52b2721ba92971b1d0fddb92da8159a
 workflow-type: tm+mt
-source-wordcount: 2842
+source-wordcount: 2803
 ht-degree: 0%
 
 ---
 
 # Configurazione per il successo con [!DNL Live Search]
 
-Adobe Commerce [!DNL Live Search] e [[!DNL Catalog Service]](../catalog-service/guide-overview.md) collaborano per fornire una soluzione di ricerca efficiente, pertinente e intuitiva che consenta ai clienti di trovare rapidamente ciò di cui hanno bisogno. In particolare, [!DNL Catalog Service] fa emergere i dati del catalogo per i servizi SaaS, ad esempio [!DNL Live Search] da utilizzare.
+Adobe Commerce [!DNL Live Search] e [[!DNL Catalog Service]](../catalog-service/guide-overview.md) collaborano per fornire una soluzione di ricerca efficiente, pertinente e intuitiva. Questa soluzione consente ai clienti di trovare rapidamente ciò di cui hanno bisogno. In particolare, [!DNL Catalog Service] fa emergere i dati del catalogo per i servizi SaaS, ad esempio [!DNL Live Search] da utilizzare.
 
 Questo articolo fornisce istruzioni dettagliate per l&#39;implementazione di [!DNL Live Search] con [!DNL Catalog Service].
 
@@ -44,9 +44,7 @@ Questo articolo è destinato agli sviluppatori o agli integratori di sistemi del
 
 ## Requisiti
 
-- [Adobe Commerce](https://business.adobe.com/it/products/magento/magento-commerce.html) 2.4.4+
-- PHP 8.1, 8.2, 8.3 o 8.4
-- [!DNL Composer]
+- [Adobe Commerce](https://business.adobe.com/it/products/magento/magento-commerce.html) 2.4.4+. Per ulteriori dettagli, vedere [Requisiti di sistema](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
 - Esecuzione di processi cron e indicizzatori
 
 >[!IMPORTANT]
@@ -68,13 +66,13 @@ Questo articolo è destinato agli sviluppatori o agli integratori di sistemi del
 >
 > **Idoneità HIPAA**
 >
->Se si utilizza Adobe Commerce con l&#39;estensione HIPAA-Ready e il componente aggiuntivo Healthcare, non elaborare alcuna informazione sanitaria protetta (PHI) tramite LiveSearch> Live Search non è un servizio compatibile con HIPAA.
+>Se si utilizza Adobe Commerce con l&#39;estensione HIPAA-Ready e il componente aggiuntivo Healthcare, non elaborare alcuna informazione sanitaria protetta (PHI) tramite Live Search> Live Search non è un servizio compatibile con HIPAA.
 >
 >Per informazioni dettagliate, vedere [Preparazione HIPAA in Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) e la guida [Operazioni](https://experienceleague.adobe.com/it/docs/commerce-admin/start/compliance/hipaa-ready-service/operations), che elenca Live Search tra i servizi Commerce non conformi HIPAA.
 
 ## Panoramica del flusso di lavoro
 
-A un livello avanzato, l&#39;onboarding di [!DNL Live Search] richiede:
+Per l&#39;onboarding di [!DNL Live Search] è necessario:
 
 1. [Installa](#install) l&#39;estensione [!DNL Live Search]
 1. [Configurare](#configure) le chiavi API
@@ -211,7 +209,7 @@ Scopri come configurare le chiavi API nell’articolo [Commerce Services Connect
 
 ## &#x200B;3. Sincronizza dati catalogo {#sync}
 
-[!DNL Live Search] sposta i dati del catalogo nell&#39;infrastruttura SaaS di Adobe. I dati vengono indicizzati e i risultati della ricerca vengono consegnati da questo indice direttamente alla vetrina. A seconda delle dimensioni e della complessità, l’indicizzazione può richiedere da 30 minuti a un paio d’ore.
+[!DNL Live Search] sposta i dati del catalogo nell&#39;infrastruttura SaaS di Adobe. I dati vengono indicizzati e i risultati della ricerca vengono consegnati da questo indice direttamente alla vetrina. A seconda delle dimensioni e della complessità, l’indicizzazione può richiedere da 30 minuti a diverse ore.
 
 Per avviare la sincronizzazione iniziale dei dati del catalogo con i servizi SaaS, eseguire i comandi seguenti nell&#39;ordine indicato:
 
@@ -245,12 +243,12 @@ Dopo la sincronizzazione iniziale, possono essere necessari fino a 15 minuti per
 
 ## &#x200B;4. Verifica che i dati siano stati esportati {#verify}
 
-Oltre a utilizzare la pagina Stato di sincronizzazione feed dati e il dashboard di gestione dati, è possibile verificare i dati del catalogo esportati da Adobe Commerce direttamente nel database e verificare che i dati siano stati sincronizzati correttamente in [!DNL Live Search] utilizzando l&#39;area di lavoro di GraphQL [!DNL Live Search].
+È possibile verificare i dati del catalogo esportati da Adobe Commerce nel database e verificare che i dati siano stati sincronizzati correttamente in [!DNL Live Search] utilizzando l&#39;area di lavoro di GraphQL [!DNL Live Search].
 
 - Dal database, utilizzare le query SQL per cercare le voci nelle tabelle seguenti:
 
-   - `cde_products_feed`
-   - `cde_product_attributes_feed`
+  - `cde_products_feed`
+  - `cde_product_attributes_feed`
 
   >[!NOTE]
   >
@@ -258,8 +256,8 @@ Oltre a utilizzare la pagina Stato di sincronizzazione feed dati e il dashboard 
 
 - Utilizza il [parco giochi GraphQL](https://experienceleague.adobe.com/it/docs/commerce/live-search/live-search-admin/graphql) con la query predefinita (consulta [riferimento GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) per ulteriori dettagli) per verificare quanto segue:
 
-   - Il conteggio dei prodotti restituito si avvicina a quello previsto per la visualizzazione Store.
-   - Vengono restituiti i facet.
+  - Il conteggio dei prodotti restituito si avvicina a quello previsto per la visualizzazione Store.
+  - Vengono restituiti i facet.
 
 Per ulteriori informazioni, vedere [[!DNL Live Search] catalogo non sincronizzato](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) nella Knowledge Base del supporto tecnico.
 
@@ -269,7 +267,7 @@ La corretta configurazione dei dati di prodotto garantisce buoni risultati di ri
 
 ### Abilita widget elenco prodotti
 
-Quando si installa [!DNL Live Search] 4.0.0+, i widget dell&#39;elenco prodotti sono attivati per impostazione predefinita. Quando i widget sono attivati, viene utilizzato un componente diverso dell’interfaccia utente per i risultati della ricerca e per le pagine dell’elenco di prodotti per la navigazione delle categorie. Questo componente dell&#39;interfaccia utente effettua chiamate dirette all&#39;[API Catalog Service](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/), il che si traduce in tempi di risposta più rapidi.
+Quando si installa [!DNL Live Search] 4.0.0+, per impostazione predefinita il sistema abilita i widget dell&#39;elenco prodotti. Quando i widget sono attivati, viene utilizzato un componente diverso dell’interfaccia utente per i risultati della ricerca e per le pagine dell’elenco di prodotti per la navigazione delle categorie. Questo componente dell&#39;interfaccia utente effettua chiamate dirette all&#39;[API Catalog Service](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search), il che si traduce in tempi di risposta più rapidi.
 
 Se la versione di [!DNL Live Search] è precedente alla 4.0.0+, è necessario abilitare manualmente il widget Elenco prodotti.
 
@@ -314,7 +312,7 @@ Assicurati che gli eventi storefront distribuiti sul tuo sito funzionino. Questo
 
 - Rivedi gli [eventi](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search) necessari per [!DNL Live Search].
 - Assicurati che il [dashboard di Live Search](performance.md) visualizzi i dati dagli ambienti non di produzione.
-- [Verifica raccolta eventi](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/).
+- [Verifica raccolta eventi](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify).
 
 ## &#x200B;8. Personalizza per la vetrina {#customize}
 
@@ -425,7 +423,7 @@ Adobe consiglia di chiamare direttamente le API SaaS, in particolare l’endpoin
 - Migliorare le prestazioni e ridurre il carico del processore ignorando il database Commerce/processo Graphql
 - Sfruttare la federazione [!DNL Catalog Service] per chiamare [!DNL Live Search], [!DNL Catalog Service] e [!DNL Product Recommendations] da un singolo endpoint.
 
-Per alcuni casi d&#39;uso, potrebbe essere meglio chiamare [!DNL Catalog Service] per i dettagli del prodotto e casi simili. Per ulteriori informazioni, vedere [refineProduct](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/).
+Per alcuni casi d&#39;uso, potrebbe essere meglio chiamare [!DNL Catalog Service] per i dettagli del prodotto e casi simili. Per ulteriori informazioni, vedere [refineProduct](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product).
 
 Se hai un&#39;implementazione headless personalizzata, vedi le [!DNL Live Search] implementazioni di riferimento:
 
@@ -479,7 +477,7 @@ La versione più recente di [!DNL Live Search] utilizza già [!DNL Catalog Servi
 | Cinese | Cina | zh_CN | zh_Hans_CN |
 | Cinese | Taiwan | zh_TW | zh_Hant_TW |
 
-Se il widget rileva che l’impostazione della lingua di amministrazione di Commerce corrisponde a una lingua supportata, per impostazione predefinita viene utilizzata tale lingua. In caso contrario, il widget viene impostato automaticamente su Inglese. In Amministrazione, l&#39;impostazione della lingua viene configurata passando a _[!UICONTROL Stores]_> [!UICONTROL Settings] >_[!UICONTROL Configuration]_ > _[!UICONTROL General]_> [!UICONTROL Country Options].
+Se il widget rileva che l’impostazione della lingua di amministrazione di Commerce corrisponde a una lingua supportata, per impostazione predefinita viene utilizzata tale lingua. In caso contrario, il widget utilizza per impostazione predefinita l’inglese. In Amministrazione, l&#39;impostazione della lingua viene configurata passando a _[!UICONTROL Stores]_> [!UICONTROL Settings] >_[!UICONTROL Configuration]_ > _[!UICONTROL General]_> [!UICONTROL Country Options].
 
 Gli amministratori possono inoltre impostare la lingua dell&#39;[indice di ricerca](settings.md#language) per garantire risultati di ricerca migliori.
 
@@ -498,7 +496,7 @@ Dopo l&#39;abilitazione di [!DNL Live Search], l&#39;estensione Esportazione dat
 
 ### Inventory management
 
-[!DNL Live Search] supporta le funzionalità [Inventory management](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/introduction) in Commerce (precedentemente noto come Multi-Source Inventory o MSI). Per abilitare il supporto completo, è necessario [aggiornare](install.md#updating-live-search) il modulo di dipendenza `commerce-data-export` alla versione 102.2.0+.
+[!DNL Live Search] supporta le funzionalità [Inventory management](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/introduction) in Commerce. Per abilitare il supporto completo, è necessario [aggiornare](install.md#updating-live-search) il modulo di dipendenza `commerce-data-export` alla versione 102.2.0+.
 
 [!DNL Live Search] restituisce un valore booleano che indica se un prodotto è disponibile all&#39;interno di Inventory management, ma non contiene informazioni sull&#39;origine che contiene il titolo.
 
@@ -521,7 +519,7 @@ Il formato del prezzo supporta l&#39;impostazione di configurazione delle impost
 
 ### Supporto per vetrina headless
 
-Facoltativamente, potrebbe essere necessario installare il modulo `module-data-services-graphql` che espande la copertura GraphQL esistente dell&#39;applicazione per includere i campi necessari per la raccolta dei dati comportamentali della vetrina.
+Se necessario, installare il modulo `module-data-services-graphql` che espande la copertura GraphQL esistente dell&#39;applicazione per includere i campi necessari per la raccolta dei dati comportamentali della vetrina.
 
 ```bash
 composer require magento/module-data-services-graphql
@@ -539,7 +537,7 @@ Questo modulo aggiunge contesti aggiuntivi alle query GraphQL:
 
 ### Supporto PWA
 
-[!DNL Live Search] funziona con PWA Studio, ma gli utenti potrebbero vedere lievi differenze rispetto ad altre implementazioni di Commerce. Le funzionalità di base, come la ricerca e la pagina di elenco dei prodotti, funzionano in Venia, ma alcune permutazioni di Graphql potrebbero non funzionare correttamente. Potrebbero esserci anche differenze di prestazioni.
+[!DNL Live Search] funziona con PWA Studio, ma gli sviluppatori di vetrine potrebbero notare lievi differenze rispetto ad altre implementazioni di Commerce, in particolare in alcuni scenari basati su GraphQL e nelle caratteristiche di risposta complessiva.
 
 - L&#39;implementazione PWA corrente di [!DNL Live Search] richiede più tempo di elaborazione per restituire i risultati della ricerca rispetto a [!DNL Live Search] con la vetrina nativa di Commerce.
 - [!DNL Live Search] in PWA non supporta [gestione eventi](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Di conseguenza, la generazione di rapporti di ricerca e il merchandising intelligente non funzionano sui punti vendita di PWA.
@@ -567,4 +565,4 @@ Per utilizzare [!DNL Live Search] con PWA Studio, gli integratori devono anche:
 
 ### Cookie
 
-[!DNL Live Search] raccoglie i dati di interazione dell&#39;utente per migliorare la funzionalità di ricerca e memorizza tali informazioni nei cookie del browser. Questa raccolta di dati richiede il consenso degli utenti quando sono abilitate le restrizioni sui cookie. [!DNL Live Search] e [!DNL Product Recommendations] condividono lo stesso meccanismo di raccolta dati e la stessa gestione dei cookie. Per ulteriori informazioni sulle restrizioni dei cookie e sulla conformità alla privacy, consulta [Gestire le restrizioni dei cookie](../product-recommendations/setting-cookie.md).
+Per migliorare la funzionalità di ricerca, [!DNL Live Search] raccoglie i dati di interazione dell&#39;utente e memorizza tali informazioni nei cookie del browser. Questa raccolta di dati richiede il consenso degli utenti quando sono abilitate le restrizioni sui cookie. [!DNL Live Search] e [!DNL Product Recommendations] condividono lo stesso meccanismo di raccolta dati e la stessa gestione dei cookie. Per ulteriori informazioni sulle restrizioni dei cookie e sulla conformità alla privacy, consulta [Gestire le restrizioni dei cookie](../product-recommendations/setting-cookie.md).
