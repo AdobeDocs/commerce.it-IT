@@ -4,21 +4,13 @@ description: Scopri come accedere a  [!DNL Catalog Service]  e integrarlo con ap
 role: Admin, Developer
 exl-id: ee178e67-519d-4283-8de8-2634ae1f347a
 TQID: https://experienceleague.adobe.com/KBdWesEoKJu-qWsY-Ny1Om-msUkyUPfUTQWftEqSg1g
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+last-update: 2026-06-23
+source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
 workflow-type: tm+mt
 source-wordcount: 437
 ht-degree: 0%
@@ -35,14 +27,14 @@ Dopo aver abilitato [!DNL Catalog Service], puoi accedere al servizio e utilizza
 
 [!DNL Catalog Service] è disponibile come API GraphQL a cui è possibile accedere dall&#39;amministratore Commerce o da qualsiasi applicazione front-end che supporta le query GraphQL. Il servizio è disponibile sia in ambienti SaaS che PaaS.
 
-[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
+[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
 
 | Ambiente | Endpoint |
 | ------------ | ----------: |
 | **Test** | `https://catalog-service-sandbox.adobe.io/graphql` |
 | **Produzione** | `https://catalog-service.adobe.io/graphql` |
 
-[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."}
+[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."}
 
 | Ambiente | Endpoint |
 | ----------- | --------:|
@@ -65,7 +57,7 @@ Per informazioni dettagliate sull&#39;utilizzo dell&#39;API GraphQL di Catalog S
 
 Per l&#39;integrazione con una vetrina headless, è necessario aggiornare la configurazione della vetrina per abilitare la comunicazione tra la vetrina e [!DNL Catalog Service] per recuperare i dati di prodotti e categorie.
 
-Se utilizzi Adobe Commerce storefront su Edge Delivery Services, aggiungi l’endpoint Catalog Service alla configurazione della vetrina. Per informazioni dettagliate, consulta la [documentazione di Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=it#storefront-configuration).
+Se utilizzi Adobe Commerce storefront su Edge Delivery Services, aggiungi l’endpoint Catalog Service alla configurazione della vetrina. Per informazioni dettagliate, consulta la [documentazione di Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/#storefront-configuration).
 
 Per altre integrazioni, consulta la documentazione di configurazione del progetto per informazioni dettagliate su come configurare le integrazioni tra il servizio e le origini dati back-end.
 
