@@ -27,7 +27,7 @@ ht-degree: 0%
 
 L&#39;indicizzazione dei prezzi SaaS ottimizza le prestazioni del sito ripartendo le attività a uso intensivo di risorse, come l&#39;indicizzazione e il calcolo dei prezzi, dall&#39;applicazione Commerce all&#39;infrastruttura cloud di Adobe. Questo approccio consente ai commercianti di scalare rapidamente le risorse per accelerare i tempi di indicizzazione dei prezzi e fornire aggiornamenti dei prezzi allo storefront e ai servizi Commerce connessi in modo più rapido.
 
-Il diagramma seguente mostra il flusso di dati di indicizzazione ai servizi SaaS quando Commerce utilizza il processo di indicizzazione dei prezzi [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) incluso nell&#39;applicazione Commerce:
+Il diagramma seguente mostra il flusso di dati di indicizzazione ai servizi SaaS quando Commerce utilizza il processo di indicizzazione dei prezzi [&#128279;](https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cli/manage-indexers) incluso nell&#39;applicazione Commerce:
 
 ![Flusso di dati predefinito](assets/old_way.png)
 
@@ -47,7 +47,7 @@ L’indicizzazione dei prezzi SaaS viene abilitata automaticamente quando si ins
 
 ### Requisiti
 
-* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+. Per ulteriori dettagli, vedere [Requisiti di sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
+* [Adobe Commerce](https://business.adobe.com/it/products/magento/magento-commerce.html) 2.4.4+. Per ulteriori dettagli, vedere [Requisiti di sistema](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
 
 ### Prerequisiti
 
@@ -79,7 +79,7 @@ Utilizzare [Commerce CLI](../data-export/data-export-cli-commands.md) per risinc
 
 >[!NOTE]
 >
->Per abilitare la pagina Stato di sincronizzazione feed dati se non è disponibile in Commerce Admin for Commerce on Cloud o nelle distribuzioni locali, segui le [istruzioni di installazione dell&#39;estensione](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension).
+>Per abilitare la pagina Stato di sincronizzazione feed dati se non è disponibile in Commerce Admin for Commerce on Cloud o nelle distribuzioni locali, segui le [istruzioni di installazione dell&#39;estensione](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension).
 
 ## Prezzi per tipi di prodotto personalizzati
 
