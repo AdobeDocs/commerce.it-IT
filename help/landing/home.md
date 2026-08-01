@@ -30,9 +30,10 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: ee8113dcf4e6d4d91fdf6cc69078d6104315a33f
+last-update: 2026-07-24
+source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
 workflow-type: tm+mt
-source-wordcount: 1314
+source-wordcount: 1221
 ht-degree: 0%
 
 ---
@@ -77,7 +78,7 @@ I servizi di vetrina sono un gruppo di funzioni basate sull’intelligenza artif
       <div>
          <a href="../catalog-service/overview.md">
          <strong>Servizio catalogo</strong>
-         
+         </a>
       </div>
       <p>
          <em>Offri ai tuoi clienti un'esperienza di prodotto ottimizzata migliorando le prestazioni, migliorando la scalabilità e aumentando le conversioni.</em>
@@ -103,7 +104,7 @@ I servizi di vetrina sono un gruppo di funzioni basate sull’intelligenza artif
       <div>
          <a href="../product-recommendations/overview.md">
          <strong>Consigli di prodotto</strong>
-         
+         </a>
       </div>
       <p>
          <em>Aggiungi consigli basati sull'intelligenza artificiale in base al comportamento degli acquirenti, alle tendenze popolari, alla somiglianza dei prodotti e altro ancora.</em>
@@ -116,7 +117,7 @@ I servizi di vetrina sono un gruppo di funzioni basate sull’intelligenza artif
       <div>
          <a href="../payment-services/guide-overview.md">
          <strong>Servizi di pagamento</strong>
-         
+         </a>
       </div>
       <p>
          <em>Aumenta la soddisfazione dei clienti con diversi metodi di pagamento, incluse rate senza interessi e visualizzazioni semplificate dell'elaborazione dei pagamenti, degli ordini e delle fatture.</em>
@@ -151,7 +152,7 @@ Per servizi di integrazione si intendono le funzionalità che consentono di coll
       <div>
           <a href="../aem-assets-integration/overview.md">
          <strong>Integrazione AEM Assets</strong>
-         
+         </a>
       </div>
       <p>
          <em>Gestione semplificata delle risorse digitali mediante un sistema integrato con Adobe Experience Manager per la gestione dei contenuti rich media.</em>
@@ -164,7 +165,7 @@ Per servizi di integrazione si intendono le funzionalità che consentono di coll
       <div>
          <a href="../app-management/overview.md">
          <strong>Gestione app</strong>
-         
+         </a>
       </div>
       <p>
          <em>Associa, configura e gestisci le applicazioni App Builder con la tua istanza Commerce tramite l'interfaccia utente amministratore.</em>
@@ -189,7 +190,8 @@ Gli strumenti dati consentono di gestire e ottimizzare il flusso di informazioni
          </a>
       </div>
       <p>
-         <em>Sincronizza automaticamente i dati di catalogo, ordine e inventario da Adobe Commerce ai servizi connessi. Utilizza i comandi CLI di Commerce o il <strong>dashboard di gestione dati</strong> per gestire l'elaborazione della sincronizzazione.</em></p>
+         <em>Sincronizza automaticamente i dati di catalogo, ordine e inventario da Adobe Commerce ai servizi connessi. Utilizza i comandi CLI di Commerce o il <strong>dashboard di gestione dati</strong> per gestire l'elaborazione della sincronizzazione.</em>
+      </p>
    </td>
    <td valign="top">
       <a href="../price-index/price-indexing.md">
@@ -198,7 +200,7 @@ Gli strumenti dati consentono di gestire e ottimizzare il flusso di informazioni
       <div>
           <a href="../price-index/price-indexing.md">
          <strong>Indicizzatore prezzi SaaS</strong>
-         
+         </a>
       </div>
       <p>
          <em>Ottimizzare le prestazioni del sito eseguendo l'offload delle attività a uso intensivo di risorse, come l'indicizzazione e il calcolo dei prezzi, dall'applicazione Commerce all'infrastruttura cloud di Adobe.</em>
@@ -211,10 +213,11 @@ Gli strumenti dati consentono di gestire e ottimizzare il flusso di informazioni
       <div>
           <a href="https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong>Dashboard di gestione dati</strong>
-         
+         </a>
       </div>
       <p>
-         <em>Monitora facilmente la sincronizzazione dei dati di Commerce e attiva la risincronizzazione da un dashboard unificato in Commerce Admin. Ottieni informazioni preziose sulla disponibilità dei dati per una visualizzazione tempestiva agli acquirenti.</em></p>
+         <em>Monitora facilmente la sincronizzazione dei dati di Commerce e attiva la risincronizzazione da un dashboard unificato in Commerce Admin. Ottieni informazioni preziose sulla disponibilità dei dati per una visualizzazione tempestiva ai tuoi acquirenti.</em>
+      </p>
    </td>
 </table>
 
