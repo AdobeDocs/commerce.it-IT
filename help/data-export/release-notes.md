@@ -22,14 +22,14 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: ee2211b243171ebfc9ca744f169c786943c40ad9
+source-git-commit: 06cf519b8588e19f870e851558fa7fe7f0602b17
 workflow-type: tm+mt
-source-wordcount: 3256
+source-wordcount: 3237
 ht-degree: 0%
 
 ---
 
-# Note sulla versione dell&#39;estensione [!DNL SaaS Data Export]
+# Note sulla versione [!DNL SaaS Data Export Extension]
 
 Queste note sulla versione descrivono le versioni più recenti dell&#39;estensione [!DNL SaaS data export]. È disponibile il supporto per la versione principale rilasciata corrente. Vengono fornite a titolo di riferimento le note sulla versione per le versioni precedenti.
 
@@ -41,9 +41,9 @@ Gli aggiornamenti includono:
 
 >[!NOTE]
 >
->L’estensione SaaS per l’esportazione dei dati è una raccolta di moduli che viene installata automaticamente con Live Search, Product Recommendations e Catalog Service. Puoi controllare la versione installata nel sistema utilizzando Composer. In alcuni casi, potrebbe essere utile aggiornare l’estensione di esportazione dei dati sul sistema per rilevare correzioni o nuove funzionalità senza aggiornare la versione del servizio Commerce.
+>L&#39;estensione [!DNL SaaS data export] è una raccolta di moduli installati automaticamente con [!DNL Live Search], [!DNL Product Recommendations] e [!DNL Catalog Service]. È possibile controllare la versione installata nel sistema utilizzando [!DNL Composer]. In alcuni casi, potrebbe essere utile aggiornare l’estensione di esportazione dei dati sul sistema per rilevare correzioni o nuove funzionalità senza aggiornare la versione del servizio Commerce.
 
-## Versioni del 2026
+## Versioni del 2026 {#release-notes-2026}
 
 ### Versione 103.4.30
 
@@ -70,6 +70,7 @@ _11 giugno 2026_
 _4 giugno 2026_
 
 ![Correzione](../assets/fix.svg) **I prodotti bundle rimangono visibili dopo gli aggiornamenti simultanei del catalogo**-È stato corretto un problema a causa del quale i prodotti bundle non venivano visualizzati nella vetrina quando i prodotti configurabili e bundle venivano aggiornati contemporaneamente. Dopo aver aggiornato `magento/module-data-exporter` alla versione 103.4.27, il feed dei prodotti viene automaticamente pianificato per la risincronizzazione al fine di correggere le incoerenze dei dati del bundle esistenti in [!DNL Catalog Service], [!DNL Live Search] e altri servizi Commerce connessi.
+<!--MDEE-1379-->
 
 ### Versione 103.4.26
 
@@ -90,8 +91,10 @@ _19 maggio 2026_
 _5 maggio 2026_
 
 ![Correzione](../assets/fix.svg) **Risoluzione dei problemi più semplice dai registri di esportazione**-Molti errori e avvisi relativi alle esportazioni ora includono codici di registro coerenti. Questi codici consentono di tracciare i problemi più rapidamente quando si lavora con il supporto o con la documentazione. Per informazioni dettagliate, vedere [Riferimento codici di registro](troubleshooting/log-codes-reference.md).
+<!--MDEE-1276-->
 
 ![Correzione](../assets/fix.svg) **Risincronizzazione automatica quando cambiano le etichette delle opzioni di attributo**-Modifica delle etichette delle opzioni dell&#39;attributo del prodotto per una visualizzazione archivio (inclusi gli attributi a selezione multipla) ora mette in coda i prodotti interessati per l&#39;esportazione di nuovo in modo che Live Search, Product Recommendations, Catalog Service e altri servizi Commerce connessi visualizzino le etichette del facet e del filtro aggiornate nelle visualizzazioni acquirente. In precedenza, le modifiche apportate solo alle etichette potevano lasciare i cataloghi SaaS con parole non aggiornate fino a quando una modifica più ampia del prodotto non attivava la sincronizzazione.
+<!--MDEE-1337-->
 
 ![Correzione](../assets/fix.svg) **Stato affidabile e visibilità quando mancano i dati dell&#39;ambito predefinito**-L&#39;esportazione del prodotto gestisce le lacune nell&#39;ambito amministratore predefinito in modo che i servizi connessi vengano attivati, disabilitati e visualizzati correttamente. I valori specifici dello store impostati hanno comunque la precedenza.
 
@@ -109,7 +112,9 @@ _5 maggio 2026_
 _20 aprile 2026_
 
 ![Correzione](../assets/fix.svg) **Errori SQL risolti durante l&#39;eliminazione degli attributi EAV statici**-Il plug-in ProductAttributeDelete non genera più errori SQL durante l&#39;eliminazione degli attributi EAV statici, garantendo una gestione degli attributi più fluida e una maggiore affidabilità del sistema. <!--MDEE-1336-->
-![Correzione](../assets/fix.svg) **Esportazione del percorso di categoria fissa dopo lo spostamento della categoria**- Assicura che il feed delle categorie aggiorni correttamente `url_path` quando una categoria viene spostata in un altro elemento padre, impedendo percorsi di categoria mancanti o non aggiornati nei servizi Commerce connessi.![Correzione](../assets/fix.svg) **Gli aggiornamenti delle categorie pianificati migliorati per i prodotti correlati**. Gli aggiornamenti pianificati per gli URL delle categorie ora interessano solo le categorie previste, preservando l&#39;integrità dei dati e impedendo modifiche non intenzionali ai prodotti correlati. Ora le modifiche pianificate all’URL della categoria vengono applicate correttamente ai dati esportati, mantenendo la navigazione della vetrina e i servizi collegati allineati al catalogo corrente.
+![Correzione](../assets/fix.svg) **Esportazione del percorso di categoria fissa dopo lo spostamento della categoria**- Assicura che il feed delle categorie aggiorni correttamente `url_path` quando una categoria viene spostata in un altro elemento padre, impedendo percorsi di categoria mancanti o non aggiornati nei servizi Commerce connessi.<!--MDEE-1331-->
+![Correzione](../assets/fix.svg) **Gli aggiornamenti delle categorie pianificati migliorati per i prodotti correlati**. Gli aggiornamenti pianificati per gli URL delle categorie ora interessano solo le categorie previste, preservando l&#39;integrità dei dati e impedendo modifiche non intenzionali ai prodotti correlati. Ora le modifiche pianificate all’URL della categoria vengono applicate correttamente ai dati esportati, mantenendo la navigazione della vetrina e i servizi collegati allineati al catalogo corrente.
+<!--MDEE-1321-->
 
 ### Versione 103.4.22
 
@@ -174,7 +179,7 @@ _24 novembre 2025_
 
 _22 ottobre 2025_
 
-![Nuovo](../assets/new.svg) È stato aggiunto il supporto per l&#39;estensione dello stato di sincronizzazione dei feed di dati per monitorare e risolvere i problemi relativi ai trasferimenti di dati da Adobe Commerce ai servizi connessi (Catalog Service, Live Search e Product Recommendations). Per informazioni dettagliate sull&#39;installazione e l&#39;utilizzo di questa estensione, vedere [Monitoraggio dello stato di sincronizzazione dei feed di dati](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=it) nella *Guida per l&#39;amministratore di Commerce*. <!--MDEE-954-->
+![Nuovo](../assets/new.svg) Aggiunta del supporto per l&#39;estensione dello stato di sincronizzazione dei feed di dati per monitorare e risolvere i problemi relativi ai trasferimenti di dati da [!DNL Adobe Commerce] ai servizi connessi ([!DNL Catalog Service], [!DNL Live Search] e [!DNL Product Recommendations]). Per informazioni dettagliate sull&#39;installazione e l&#39;utilizzo di questa estensione, vedere [Monitoraggio dello stato di sincronizzazione dei feed di dati](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=it) nella *Guida per l&#39;amministratore di Commerce*. <!--MDEE-954-->
 
 ### Versione 103.4.14
 
@@ -300,7 +305,7 @@ _11 marzo 2025_
 ![Nuovo](../assets/new.svg) è stata aggiunta la funzionalità per sincronizzare parzialmente i feed `products`, `productOverrides` e `productAttributes` in base a un elenco specificato di SKU di prodotto. Utilizzare la nuova funzionalità aggiungendo l&#39;opzione `--by-ids` al comando resync CLI: <!--MDEE-606-->
 
 ```shell
-bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
+bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>'
 ```
 
 ![Correzione](../assets/fix.svg) Riduzione dei potenziali problemi di compatibilità con PHP 8.4 grazie alla risoluzione delle funzionalità obsolete. <!--MDEE-1002-->
@@ -417,7 +422,7 @@ _20 giugno 2024_
 
 ![Correzione](../assets/fix.svg) ottimizzata la query dei prezzi per cataloghi di grandi dimensioni con molti siti Web.
 
-![Nuovo](../assets/new.svg) aggiunta della logica di esecuzione di un nuovo tentativo per rieseguire le transazioni non riuscite quando si verifica deadlock.
+![Nuovo](../assets/new.svg) aggiunta della logica di esecuzione di un nuovo tentativo per rieseguire le transazioni non riuscite quando si verificano deadlock.
 
 ### Versione 103.3.5
 
@@ -468,12 +473,12 @@ _30 aprile 2024_
 
 - tabelle di feed (e ID di visualizzazione dell’indicizzatore):
 
-   - `catalog_data_exporter_products` -> `cde_products_feed`
-   - `catalog_data_exporter_product_attributes` -> `cde_product_attributes_feed`
-   - `catalog_data_exporter_categories` -> `cde_categories_feed`
-   - `catalog_data_exporter_product_prices` -> `cde_product_prices_feed`
-   - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
-   - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
+  - `catalog_data_exporter_products` -> `cde_products_feed`
+  - `catalog_data_exporter_product_attributes` -> `cde_product_attributes_feed`
+  - `catalog_data_exporter_categories` -> `cde_categories_feed`
+  - `catalog_data_exporter_product_prices` -> `cde_product_prices_feed`
+  - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
+  - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
 
 - modifica dei nomi delle tabelle di registro: segue lo stesso pattern di denominazione delle tabelle di feed, ma modifica dei nomi delle tabelle di registro aggiunge un suffisso `_cl`. Esempio: `catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
 
