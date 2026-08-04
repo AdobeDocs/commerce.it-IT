@@ -6,30 +6,18 @@ feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
 TQID: https://experienceleague.adobe.com/l3Z3-ncMTQ3j-4s6xL9X8ZYtlBHqzhBfMLc2jL4Kv6A
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: ee2211b243171ebfc9ca744f169c786943c40ad9
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 06cf519b8588e19f870e851558fa7fe7f0602b17
 workflow-type: tm+mt
-source-wordcount: 3256
+source-wordcount: 3237
 ht-degree: 0%
 
 ---
 
-# Note sulla versione dell&#39;estensione [!DNL SaaS Data Export]
+# Note sulla versione [!DNL SaaS Data Export Extension]
 
 Queste note sulla versione descrivono le versioni più recenti dell&#39;estensione [!DNL SaaS data export]. È disponibile il supporto per la versione principale rilasciata corrente. Vengono fornite a titolo di riferimento le note sulla versione per le versioni precedenti.
 
@@ -41,9 +29,9 @@ Gli aggiornamenti includono:
 
 >[!NOTE]
 >
->L’estensione SaaS per l’esportazione dei dati è una raccolta di moduli che viene installata automaticamente con Live Search, Product Recommendations e Catalog Service. Puoi controllare la versione installata nel sistema utilizzando Composer. In alcuni casi, potrebbe essere utile aggiornare l’estensione di esportazione dei dati sul sistema per rilevare correzioni o nuove funzionalità senza aggiornare la versione del servizio Commerce.
+>L&#39;estensione [!DNL SaaS data export] è una raccolta di moduli installati automaticamente con [!DNL Live Search], [!DNL Product Recommendations] e [!DNL Catalog Service]. È possibile controllare la versione installata nel sistema utilizzando [!DNL Composer]. In alcuni casi, potrebbe essere utile aggiornare l’estensione di esportazione dei dati sul sistema per rilevare correzioni o nuove funzionalità senza aggiornare la versione del servizio Commerce.
 
-## Versioni del 2026
+## Versioni del 2026 {#release-notes-2026}
 
 ### Versione 103.4.30
 
@@ -70,6 +58,7 @@ _11 giugno 2026_
 _4 giugno 2026_
 
 ![Correzione](../assets/fix.svg) **I prodotti bundle rimangono visibili dopo gli aggiornamenti simultanei del catalogo**-È stato corretto un problema a causa del quale i prodotti bundle non venivano visualizzati nella vetrina quando i prodotti configurabili e bundle venivano aggiornati contemporaneamente. Dopo aver aggiornato `magento/module-data-exporter` alla versione 103.4.27, il feed dei prodotti viene automaticamente pianificato per la risincronizzazione al fine di correggere le incoerenze dei dati del bundle esistenti in [!DNL Catalog Service], [!DNL Live Search] e altri servizi Commerce connessi.
+<!--MDEE-1379-->
 
 ### Versione 103.4.26
 
@@ -90,8 +79,10 @@ _19 maggio 2026_
 _5 maggio 2026_
 
 ![Correzione](../assets/fix.svg) **Risoluzione dei problemi più semplice dai registri di esportazione**-Molti errori e avvisi relativi alle esportazioni ora includono codici di registro coerenti. Questi codici consentono di tracciare i problemi più rapidamente quando si lavora con il supporto o con la documentazione. Per informazioni dettagliate, vedere [Riferimento codici di registro](troubleshooting/log-codes-reference.md).
+<!--MDEE-1276-->
 
 ![Correzione](../assets/fix.svg) **Risincronizzazione automatica quando cambiano le etichette delle opzioni di attributo**-Modifica delle etichette delle opzioni dell&#39;attributo del prodotto per una visualizzazione archivio (inclusi gli attributi a selezione multipla) ora mette in coda i prodotti interessati per l&#39;esportazione di nuovo in modo che Live Search, Product Recommendations, Catalog Service e altri servizi Commerce connessi visualizzino le etichette del facet e del filtro aggiornate nelle visualizzazioni acquirente. In precedenza, le modifiche apportate solo alle etichette potevano lasciare i cataloghi SaaS con parole non aggiornate fino a quando una modifica più ampia del prodotto non attivava la sincronizzazione.
+<!--MDEE-1337-->
 
 ![Correzione](../assets/fix.svg) **Stato affidabile e visibilità quando mancano i dati dell&#39;ambito predefinito**-L&#39;esportazione del prodotto gestisce le lacune nell&#39;ambito amministratore predefinito in modo che i servizi connessi vengano attivati, disabilitati e visualizzati correttamente. I valori specifici dello store impostati hanno comunque la precedenza.
 
@@ -109,7 +100,9 @@ _5 maggio 2026_
 _20 aprile 2026_
 
 ![Correzione](../assets/fix.svg) **Errori SQL risolti durante l&#39;eliminazione degli attributi EAV statici**-Il plug-in ProductAttributeDelete non genera più errori SQL durante l&#39;eliminazione degli attributi EAV statici, garantendo una gestione degli attributi più fluida e una maggiore affidabilità del sistema. <!--MDEE-1336-->
-![Correzione](../assets/fix.svg) **Esportazione del percorso di categoria fissa dopo lo spostamento della categoria**- Assicura che il feed delle categorie aggiorni correttamente `url_path` quando una categoria viene spostata in un altro elemento padre, impedendo percorsi di categoria mancanti o non aggiornati nei servizi Commerce connessi.![Correzione](../assets/fix.svg) **Gli aggiornamenti delle categorie pianificati migliorati per i prodotti correlati**. Gli aggiornamenti pianificati per gli URL delle categorie ora interessano solo le categorie previste, preservando l&#39;integrità dei dati e impedendo modifiche non intenzionali ai prodotti correlati. Ora le modifiche pianificate all’URL della categoria vengono applicate correttamente ai dati esportati, mantenendo la navigazione della vetrina e i servizi collegati allineati al catalogo corrente.
+![Correzione](../assets/fix.svg) **Esportazione del percorso di categoria fissa dopo lo spostamento della categoria**- Assicura che il feed delle categorie aggiorni correttamente `url_path` quando una categoria viene spostata in un altro elemento padre, impedendo percorsi di categoria mancanti o non aggiornati nei servizi Commerce connessi.<!--MDEE-1331-->
+![Correzione](../assets/fix.svg) **Gli aggiornamenti delle categorie pianificati migliorati per i prodotti correlati**. Gli aggiornamenti pianificati per gli URL delle categorie ora interessano solo le categorie previste, preservando l&#39;integrità dei dati e impedendo modifiche non intenzionali ai prodotti correlati. Ora le modifiche pianificate all’URL della categoria vengono applicate correttamente ai dati esportati, mantenendo la navigazione della vetrina e i servizi collegati allineati al catalogo corrente.
+<!--MDEE-1321-->
 
 ### Versione 103.4.22
 
@@ -120,7 +113,7 @@ _13 aprile 2026_
 - È stato risolto un problema a causa del quale i prodotti eliminati non venivano rimossi correttamente dai servizi Commerce connessi se il servizio di esportazione non era disponibile durante l’eliminazione. Le operazioni di nuovo tentativo e risincronizzazione ora garantiscono che i prodotti eliminati siano correttamente rispecchiati in SaaS. <!--MDEE-1319-->
 - È ora possibile esportare le entità catalogo (prodotti e categorie) nei servizi Commerce connessi anche se mancano i valori degli attributi per la vista archivio di amministrazione. Ciò migliora la compatibilità con le estensioni di terze parti e riduce gli errori di esportazione dovuti a valori predefiniti mancanti. <!--MDEE-1333-->
 
-![Correzione](../assets/fix.svg) è stato risolto un errore nella pagina Stato di sincronizzazione feed dati che poteva verificarsi quando i record di feed contenevano dati imprevisti o mancanti. Il sistema ora gestisce questi casi con facilità, migliorando la stabilità e prevenendo gli arresti anomali. Se si utilizza il connettore Adobe Commerce Optimizer per sincronizzare i dati da Adobe Commerce a Adobe Commerce Optimizer, eseguire l&#39;aggiornamento a [Connettore Adobe Commerce Optimizer versione 1.0.11](https://experienceleague.adobe.com/it/docs/commerce/aco-optimizer-connector/release-notes) o successiva per la correzione.<!--MDEE-1327-->
+![Correzione](../assets/fix.svg) è stato risolto un errore nella pagina Stato di sincronizzazione feed dati che poteva verificarsi quando i record di feed contenevano dati imprevisti o mancanti. Il sistema ora gestisce questi casi con facilità, migliorando la stabilità e prevenendo gli arresti anomali. Se si utilizza il connettore Adobe Commerce Optimizer per sincronizzare i dati da Adobe Commerce a Adobe Commerce Optimizer, eseguire l&#39;aggiornamento a [Connettore Adobe Commerce Optimizer versione 1.0.11](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes) o successiva per la correzione.<!--MDEE-1327-->
 
 ### Versione 103.4.21
 
@@ -146,7 +139,7 @@ _6 febbraio 2026_
 
 _2 febbraio 2026_
 
-![Correzione](../assets/fix.svg) è stato risolto un problema a causa del quale i batch di elementi potevano superare il limite consentito durante gli aggiornamenti, causando `items_limit_exceeded` errori durante la sincronizzazione dei dati con [Servizi Commerce](https://experienceleague.adobe.com/it/docs/commerce/user-guides/home) o [Adobe Commerce Optimizer](https://experienceleague.adobe.com/it/docs/commerce/optimizer/setup/data-sync). <!--MDEE-1264-->
+![Correzione](../assets/fix.svg) è stato risolto un problema a causa del quale i batch di elementi potevano superare il limite consentito durante gli aggiornamenti, causando `items_limit_exceeded` errori durante la sincronizzazione dei dati con [Servizi Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) o [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync). <!--MDEE-1264-->
 
 ![Correzione](../assets/fix.svg) È stata migliorata l&#39;affidabilità delle esportazioni di dati di prodotto aggiungendo logica per registrare gli elementi non riusciti durante la raccolta di opzioni di prodotto bundle. <!--CCSAAS-4458-->
 
@@ -174,7 +167,7 @@ _24 novembre 2025_
 
 _22 ottobre 2025_
 
-![Nuovo](../assets/new.svg) È stato aggiunto il supporto per l&#39;estensione dello stato di sincronizzazione dei feed di dati per monitorare e risolvere i problemi relativi ai trasferimenti di dati da Adobe Commerce ai servizi connessi (Catalog Service, Live Search e Product Recommendations). Per informazioni dettagliate sull&#39;installazione e l&#39;utilizzo di questa estensione, vedere [Monitoraggio dello stato di sincronizzazione dei feed di dati](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=it) nella *Guida per l&#39;amministratore di Commerce*. <!--MDEE-954-->
+![Nuovo](../assets/new.svg) Aggiunta del supporto per l&#39;estensione dello stato di sincronizzazione dei feed di dati per monitorare e risolvere i problemi relativi ai trasferimenti di dati da [!DNL Adobe Commerce] ai servizi connessi ([!DNL Catalog Service], [!DNL Live Search] e [!DNL Product Recommendations]). Per informazioni dettagliate sull&#39;installazione e l&#39;utilizzo di questa estensione, vedere [Monitoraggio dello stato di sincronizzazione dei feed di dati](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) nella *Guida per l&#39;amministratore di Commerce*. <!--MDEE-954-->
 
 ### Versione 103.4.14
 
@@ -200,7 +193,7 @@ _18 settembre 2025_
 
 _29 agosto 2025_
 
-![Nuovo](../assets/new.svg) [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
+![Nuovo](../assets/new.svg) [!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
 È stato aggiunto il supporto per attributi di prodotto aggiuntivi per includere nel feed di prodotto i dati di classe fiscale, serie di attributi e inventario dalle configurazioni di prodotto Commerce. I clienti che desiderano includere questi attributi nei feed di esportazione del prodotto devono aggiungere il modulo Attributi prodotto aggiuntivi al proprio progetto Adobe Commerce. Vedi [Aggiungere classe fiscale, set di attributi e attributi di inventario](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 
 ![Correzione](../assets/fix.svg) È stato risolto un problema che causava la sincronizzazione errata degli aggiornamenti dei prodotti eliminati se si verificava un errore durante un indice di prodotti completo. Ora, tutte le eliminazioni di prodotti vengono sincronizzate correttamente anche se si verifica un errore durante il processo di indicizzazione. <!--MDEE-1144-->
@@ -300,7 +293,7 @@ _11 marzo 2025_
 ![Nuovo](../assets/new.svg) è stata aggiunta la funzionalità per sincronizzare parzialmente i feed `products`, `productOverrides` e `productAttributes` in base a un elenco specificato di SKU di prodotto. Utilizzare la nuova funzionalità aggiungendo l&#39;opzione `--by-ids` al comando resync CLI: <!--MDEE-606-->
 
 ```shell
-bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
+bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>'
 ```
 
 ![Correzione](../assets/fix.svg) Riduzione dei potenziali problemi di compatibilità con PHP 8.4 grazie alla risoluzione delle funzionalità obsolete. <!--MDEE-1002-->
@@ -417,7 +410,7 @@ _20 giugno 2024_
 
 ![Correzione](../assets/fix.svg) ottimizzata la query dei prezzi per cataloghi di grandi dimensioni con molti siti Web.
 
-![Nuovo](../assets/new.svg) aggiunta della logica di esecuzione di un nuovo tentativo per rieseguire le transazioni non riuscite quando si verifica deadlock.
+![Nuovo](../assets/new.svg) aggiunta della logica di esecuzione di un nuovo tentativo per rieseguire le transazioni non riuscite quando si verificano deadlock.
 
 ### Versione 103.3.5
 
@@ -468,12 +461,12 @@ _30 aprile 2024_
 
 - tabelle di feed (e ID di visualizzazione dell’indicizzatore):
 
-   - `catalog_data_exporter_products` -> `cde_products_feed`
-   - `catalog_data_exporter_product_attributes` -> `cde_product_attributes_feed`
-   - `catalog_data_exporter_categories` -> `cde_categories_feed`
-   - `catalog_data_exporter_product_prices` -> `cde_product_prices_feed`
-   - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
-   - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
+  - `catalog_data_exporter_products` -> `cde_products_feed`
+  - `catalog_data_exporter_product_attributes` -> `cde_product_attributes_feed`
+  - `catalog_data_exporter_categories` -> `cde_categories_feed`
+  - `catalog_data_exporter_product_prices` -> `cde_product_prices_feed`
+  - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
+  - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
 
 - modifica dei nomi delle tabelle di registro: segue lo stesso pattern di denominazione delle tabelle di feed, ma modifica dei nomi delle tabelle di registro aggiunge un suffisso `_cl`. Esempio: `catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
 
