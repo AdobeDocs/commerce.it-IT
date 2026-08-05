@@ -12,9 +12,9 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 116d8bd804df364ddc9cb1175525f08fd32c01bf
+source-git-commit: c5a8861614fbf0e8d719305e239f926d5232ac49
 workflow-type: tm+mt
-source-wordcount: 1919
+source-wordcount: 1932
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Utilizza un filtro prezzo **statico** quando desideri un prezzo minimo o massimo
 
 Utilizza un filtro prezzo **dinamico** quando i consigli devono essere limitati rispetto al **prodotto visualizzato** in una pagina dettagli prodotto (PDP). Il filtro utilizza il prezzo finale del prodotto come **ancoraggio** e confronta i prodotti consigliati con i limiti definiti dall&#39;utente.
 
-Gli operatori dinamici sono disponibili solo per [tipi di consigli relativi allo SKU](types.md) eseguiti in un contesto di prodotto, ad esempio:
+Gli operatori dinamici sono disponibili solo per [tipi di consigli relativi allo SKU](types.md) eseguiti in un contesto di prodotto:
 
 - Ha visualizzato questo, ha visualizzato quello
 - Ho visto questo, ho comprato quello
@@ -106,7 +106,16 @@ Gli operatori dinamici sono disponibili solo per [tipi di consigli relativi allo
 - Altri argomenti correlati
 - Somiglianza visiva
 
-Sono **non** disponibili per i tipi basati sulla popolarità (ad esempio, **Più visualizzati** o **Più acquistati**) perché tali unità non hanno un singolo prodotto corrente per ancorare il filtro.
+Sono **non** disponibili per i tipi basati sulla popolarità perché tali unità non hanno un singolo prodotto corrente per ancorare il filtro:
+
+- Articoli più visualizzati
+- Più acquistati
+- Più aggiunti al carrello
+- Di tendenza
+- Consigliato per te
+- Visualizzato di recente
+- Conversione da Vista a Carrello
+- Visualizza per conversione acquisto
 
 Nella vetrina, il menu a discesa per i consigli legge il prezzo del prodotto corrente dal contesto PDP e lo invia con la richiesta di consigli. [!DNL Adobe Commerce Optimizer] utilizza tale valore come ancoraggio durante la valutazione delle regole di prezzo dinamiche. Per i prodotti configurabili, l&#39;ancoraggio corrisponde al prezzo finale **variante più bassa** (`priceRange.minimum`).
 
