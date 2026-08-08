@@ -32,10 +32,10 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-last-update: 2026-08-06
-source-git-commit: 1dd79f88f97d2f6a2f6314434f11049871dcdb6e
+last-update: 2026-08-07
+source-git-commit: 477802467d8f60f05137d60e0d703c0302de5144
 workflow-type: tm+mt
-source-wordcount: 5259
+source-wordcount: 5371
 ht-degree: 0%
 
 ---
@@ -48,7 +48,31 @@ Le seguenti note sulla versione contengono aggiornamenti a [!DNL Adobe Commerce 
 >
 >Se utilizzi Adobe Commerce on-premise o Adobe Commerce sull&#39;infrastruttura cloud, consulta le [note sulla versione di Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/release/notes/overview).
 
-## Luglio 2026 - #1 sulla versione {#latest}
+## Agosto 2026 - #1 sulla versione {#latest}
+
+[!BADGE Sandbox]{type=Caution tooltip="Gli elementi elencati sono attualmente disponibili solo negli ambienti Sandbox. Adobe rende disponibili le nuove versioni negli ambienti Sandbox per fornire il tempo di testare le modifiche imminenti prima che la versione sia disponibile negli ambienti di produzione."}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+I seguenti elementi saranno pubblicati in Produzione l’11 agosto 2026.
+
+>[!BEGINSHADEBOX]
+
+### Iscriviti a un evento per i pagamenti delle fatture
+
+Quando si registra un pagamento di una fattura viene emesso un nuovo evento `observer.sales_order_invoice_pay`, in modo che le integrazioni possano sottoscrivere l&#39;evento anziché eseguire il polling per le modifiche dello stato della fattura. <!-- CEXT-5983 -->
+
+### Miglioramenti e correzioni di bug
+
+In questa versione sono inclusi i miglioramenti, le ottimizzazioni e le correzioni di bug seguenti:
+
+* È stato risolto un problema che causava un rallentamento nel recupero delle aziende assegnate da un cliente tramite GraphQL. <!-- ACCS-1425 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## Luglio 2026
 
 [!BADGE Produzione]{type=Neutral tooltip="Gli elementi elencati sono attualmente disponibili negli ambienti di produzione."}
 
