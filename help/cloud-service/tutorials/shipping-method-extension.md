@@ -6,28 +6,12 @@ role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:22:26.484Z'
 TQID: 'https://experienceleague.adobe.com/vU71zRP-KEPdrmTW-M1mwkv-FFa0oHOcUJcG4afFo2s'
-product_v2:
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
-  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2: id: de2e2e68-c5d7-4efe-be7b-27528698f06bid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: adedf3b3-e153-47a3-ae73-b5d65067b544id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: d378ca77-2da1-4f39-ad92-1917fe974a38
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
 workflow-type: tm+mt
 source-wordcount: 1893
@@ -266,10 +250,10 @@ Dopo la distribuzione, completa i passaggi seguenti per registrare il gestore fi
 
    - Vai a **Archivi** > Impostazioni > **Configurazione** > **Servizi Adobe** > **Webhook Commerce**.
    - Aggiungi un webhook:
-      - **Metodo webhook:** `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`
-      - **Tipo webhook:** **dopo**
-      - **URL:** l&#39;URL dell&#39;azione Web **shipping-methods** distribuito (dall&#39;output di distribuzione o da [!DNL Adobe Developer Console]).
-      - **Obbligatorio:** **Facoltativo** - Questo consente il funzionamento dell&#39;estrazione se l&#39;API esterna non restituisce tariffe.
+     - **Metodo webhook:** `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`
+     - **Tipo webhook:** **dopo**
+     - **URL:** l&#39;URL dell&#39;azione Web **shipping-methods** distribuito (dall&#39;output di distribuzione o da [!DNL Adobe Developer Console]).
+     - **Obbligatorio:** **Facoltativo** - Questo consente il funzionamento dell&#39;estrazione se l&#39;API esterna non restituisce tariffe.
 
    ![Configurazione del webhook di amministrazione di Commerce per le tariffe di spedizione fittizie](../assets/admin-webhook-shipping.png){width="600" zoomable="yes"}
 
@@ -287,9 +271,9 @@ Dopo la distribuzione, completa i passaggi seguenti per registrare il gestore fi
    - Apri **App** e seleziona la tua app.
    - Apri la scheda **Spedizione fittizia** (o equivalente).
    - Immetti i seguenti dettagli:
-      - **URL servizio:** l&#39;URL del flusso di lavoro Pipedream copiato, ad esempio `https://123456.m.pipedream.net`.
-      - **Chiave API:** qualsiasi valore non vuoto per il modello, ad esempio `tutorial-key`.
-      - **Indirizzo del magazzino (origine spedizione):** nome, telefono, via, città, stato, codice postale, paese.
+     - **URL servizio:** l&#39;URL del flusso di lavoro Pipedream copiato, ad esempio `https://123456.m.pipedream.net`.
+     - **Chiave API:** qualsiasi valore non vuoto per il modello, ad esempio `tutorial-key`.
+     - **Indirizzo del magazzino (origine spedizione):** nome, telefono, via, città, stato, codice postale, paese.
    - Fai clic su **Salva**. La configurazione viene archiviata nello stato Runtime e utilizzata dall&#39;azione metodi di spedizione.
 
    ![Modulo di configurazione per spedizione fittizia con URL del servizio, chiave API e indirizzo warehouse](../assets/admin-ui-mock-shipping.png){width="600" zoomable="yes"}
