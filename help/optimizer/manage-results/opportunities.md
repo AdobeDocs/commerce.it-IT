@@ -1,29 +1,13 @@
 ---
 title: Opportunità
 description: Identifica le opportunità per incrementare il traffico, il coinvolgimento e le conversioni tramite l’integrazione con Adobe Sites Optimizer per miglioramenti intelligenti dei siti basati sui dati.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Si applica solo a  [!DNL Adobe Commerce Optimizer]  progetti (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Si applica solo a  [!DNL Adobe Commerce Optimizer]  progetti (infrastruttura SaaS gestita da Adobe)."
 TQID: https://experienceleague.adobe.com/KQb7XtqY-4Qrt4B9fwn9w6u8yBjwsj4owArk53v6VHo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
-  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: b5520579-b31f-4df7-9281-f0d9f91e2edcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
 source-wordcount: 1445
 ht-degree: 0%
@@ -38,7 +22,7 @@ La pagina **Opportunità** consente di identificare e implementare ottimizzazion
 
 ## Cosa sono le opportunità?
 
-Le [opportunità](https://experienceleague.adobe.com/it/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) sono consigli basati sull&#39;intelligenza artificiale che aiutano i merchandising a identificare e risolvere i problemi che influiscono sulle prestazioni del sito di e-commerce. Questi consigli sono basati su [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/it/docs/experience-manager-sites-optimizer/content/home), un servizio basato su cloud che analizza e migliora le prestazioni del sito Web.
+Le [opportunità](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) sono consigli basati sull&#39;intelligenza artificiale che aiutano i merchandising a identificare e risolvere i problemi che influiscono sulle prestazioni del sito di e-commerce. Questi consigli sono basati su [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home), un servizio basato su cloud che analizza e migliora le prestazioni del sito Web.
 
 ## Funzionalità principali
 
@@ -167,7 +151,7 @@ Per implementare un’ottimizzazione suggerita dall’intelligenza artificiale, 
 
 ### Funzionamento dei livelli del catalogo con la correzione automatica
 
-Se nella vista catalogo non è presente un livello Sites Optimizer di Adobe, la funzione di correzione automatica ne crea automaticamente uno e gli assegna la priorità più alta (il numero più alto). Se eliminate questo livello, verrà ricreato alla successiva esecuzione della correzione automatica e sposterà i livelli esistenti in numeri di ordine inferiori. Se il livello Sites Optimizer di Adobe esiste già con un numero di ordine diverso, la correzione automatica non ne modifica la priorità. Se desiderate mantenere un livello di correzione automatica, ma non utilizzarlo immediatamente, potete disattivare il livello. Ulteriori informazioni su come gestire i [livelli catalogo](../setup/catalog-layer.md#activate-deactivate-or-delete-layers).
+Se nella vista catalogo non è presente un livello Sites Optimizer di Adobe, la funzione di correzione automatica ne crea automaticamente uno e gli assegna la priorità più alta (il numero più alto). Se eliminate questo livello, verrà ricreato alla successiva esecuzione della correzione automatica e sposterà i livelli esistenti in numeri di ordine inferiori. Se il livello Sites Optimizer di Adobe esiste già con un numero di ordine diverso, la correzione automatica non ne modifica la priorità. Se desiderate mantenere un livello di correzione automatica, ma non utilizzarlo immediatamente, potete disattivare il livello. Ulteriori informazioni su come gestire i [livelli catalogo](../setup/catalog-layer.md#manage-layer-activation-and-deletion).
 
 ![Livelli catalogo](../assets/catalog-layers.png)
 
@@ -197,7 +181,7 @@ Le metriche di successo monitorano gli indicatori delle prestazioni chiave, ad e
 
 ## Ulteriori informazioni su Sites Optimizer
 
-Per informazioni dettagliate sulle funzionalità di Sites Optimizer, consulta la [documentazione di Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/it/docs/experience-manager-sites-optimizer/content/home).
+Per informazioni dettagliate sulle funzionalità di Sites Optimizer, consulta la [documentazione di Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home).
 
 Risorse aggiuntive:
 

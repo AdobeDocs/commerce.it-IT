@@ -2,33 +2,17 @@
 title: '[!DNL Adobe Commerce Optimizer Connector]'
 description: Scopri  [!DNL Adobe Commerce Optimizer Connector] per la sincronizzazione del catalogo, la ricerca e la consegna in vetrina tra [!DNL Adobe Commerce] e [!DNL Adobe Commerce Optimizer].
 feature: Integration, Storefront, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-  - id: dad884f1-e840-49a1-970e-2f965bdbc410
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: c32adafa-ed01-4b31-997e-2413013911b0id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470id: f8ddfd3b-6194-46e8-a176-0e918039be56id: dad884f1-e840-49a1-970e-2f965bdbc410
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: e0eb8757-182f-49f3-94a4-1587d16f5094id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 1075
+source-wordcount: 1087
 ht-degree: 0%
 
 ---
@@ -127,7 +111,7 @@ Per ulteriori dettagli, vedi i seguenti argomenti:
 
 Quando i dati di [!DNL Adobe Commerce] saranno disponibili in [!DNL Adobe Commerce Optimizer], utilizza [[!DNL Adobe Commerce Optimizer] Studio](/help/optimizer/overview.md#quick-tour) per collegare le esperienze di merchandising e vetrina al catalogo sincronizzato. I passaggi successivi tipici includono:
 
-- **Visualizzazioni e criteri catalogo** — Definisci sottoinsiemi specifici per area geografica, marchio o cliente e regole di accesso dal menu [!UICONTROL Store setup]
+- **Visualizzazioni e criteri catalogo** — Definisci sottoinsiemi specifici per area geografica, marchio o cliente e regole di accesso dal menu [!UICONTROL Store setup]. Per limitare gli utenti che possono eseguire query in una visualizzazione catalogo, vedere [Visualizzazioni catalogo privato](/help/optimizer/setup/private-catalog-view.md)
 - **Individuazione prodotti e consigli**: configurare ricerca, facet, regole di merchandising, sinonimi e unità di consigli nel menu [!UICONTROL Merchandising]. Il comportamento di ricerca e consigli è gestito in [!DNL Adobe Commerce Optimizer]; le impostazioni [!DNL Live Search] e [!DNL Product Recommendations] dell&#39;amministratore [!DNL Adobe Commerce] non sono più applicabili a questi flussi
 - **Connessioni storefront** - Punta gli storefront Commerce su [!DNL Edge Delivery Services] o build headless di terze parti al tenant [!DNL Adobe Commerce Optimizer], alla vista catalogo e agli endpoint API Merchandising corretti. Per le integrazioni headless personalizzate, consulta [Integrazione headless storefront](/help/aco-connector/headless-storefront.md). Per un esempio di integrazione di terze parti, vedere [Salesforce Commerce Connector per [!DNL Adobe Commerce Optimizer]](/help/optimizer/developer/salesforce-connector.md)
 - **Estrai**: mantieni il carrello, l&#39;estrazione, la gestione degli ordini e gli account cliente su [!DNL Adobe Commerce] o su una piattaforma di terze parti connessa. Utilizza [!DNL App Builder] e [!DNL API Mesh] per la consegna del carrello quando necessario

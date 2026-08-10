@@ -1,35 +1,27 @@
 ---
-title: Vista catalogo
+title: Visualizzazioni catalogo
 description: Scopri cosa sono le visualizzazioni catalogo e come crearle per organizzare il catalogo dei prodotti in base alla struttura aziendale, alle politiche e ai prezzi.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
 TQID: https://experienceleague.adobe.com/Jmze0Pq3kSNMIXqkkML-hmmlZnv-XKgeEgRB8Q8NZ6s
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+nudge: true
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: 1210
+source-wordcount: 1276
 ht-degree: 0%
 
 ---
 
-# Visualizzazioni catalogo per servizi di merchandising
+# Visualizzazioni catalogo per Merchandising Services
 
-Le visualizzazioni del catalogo sono alla base di [!DNL Adobe Commerce Optimizer] Servizi di merchandising e consentono di organizzare il catalogo prodotti in base alla struttura aziendale, alle politiche e ai prezzi. Questo modello dati flessibile supporta scenari multi-brand, multi-business unit e multi-lingue, mantenendo al contempo l’efficienza operativa.
+Una vista catalogo definisce i prodotti e i prezzi che un cliente può recuperare. Combina origini di catalogo, livelli di catalogo, criteri e listini prezzi per supportare diversi marchi, aree geografiche, business unit o canali.
 
 ## Cosa sono le visualizzazioni catalogo?
 
@@ -39,26 +31,30 @@ Le visualizzazioni catalogo definiscono il modo in cui il catalogo dei prodotti 
 - **Prezzi visualizzati** tramite listini prezzi collegati
 - **Come vengono filtrati i prodotti** utilizzando i criteri (attributi come marchio, modello, categoria)
 - **Che cosa viene utilizzata [l&#39;origine del catalogo](catalog-sources.md)** in base ad attributi come le impostazioni locali
+- **Chi può accedere ai dati della visualizzazione** tramite [Catalog Protection](private-catalog-view.md) e [chiavi di accesso con restrizioni](restricted-access-keys.md)
 
-Considera le viste catalogo come diversi &quot;obiettivi&quot; attraverso i quali i clienti vedono il tuo catalogo. Ad esempio:
+Ad esempio, puoi creare visualizzazioni catalogo separate per:
 
-- La vista del catalogo del dealer mostra solo i prodotti disponibili per quel dealer specifico
-- Una vista del catalogo regionale potrebbe mostrare prodotti e prezzi specifici per un’area geografica
-- Una vista catalogo marchio può mostrare solo i prodotti di una particolare marca
+- Un marchio o una business unit
+- Un’area geografica
+- Un canale dealer o partner
+- Un segmento di clienti con prezzi specifici
 
 ## Creare una vista catalogo
 
+Prima di creare una vista catalogo, preparate i seguenti elementi in base alle esigenze:
+
+- [origine catalogo](catalog-sources.md)
+- [Criteri](policies.md) che definiscono i filtri dei prodotti
+- [Livelli del catalogo](catalog-layer.md) se devi ignorare gli attributi del prodotto
+- [Listini prezzi](pricebooks.md) per i prezzi visualizzati nella visualizzazione
+- [Chiavi di accesso limitate](restricted-access-keys.md) se si desidera creare una visualizzazione di catalogo privata
+
+### Configurazione
+
 In questa sezione, puoi creare una visualizzazione catalogo, selezionare un [criterio](policies.md) e un [listino prezzi dedicato](pricebooks.md).
 
-Prima di creare una vista catalogo, assicurati di disporre di:
-
-- [Creati criteri](policies.md) per definire i filtri dei prodotti.
-
-- [Livelli catalogo definiti](catalog-layer.md) per definire le varianti dei prodotti.
-
-- [Listini prezzi acquisiti](pricebooks.md) per la determinazione dei prezzi.
-
-1. Dal menu a sinistra, vai a _Configurazione archivio_ e fai clic su **[!UICONTROL Catalog views]**.
+1. Dal menu a sinistra, passare a **[!UICONTROL Store setup]** e fare clic su **[!UICONTROL Catalog views]**.
 
 1. Fare clic su **[!UICONTROL Create catalog view]**. &#x200B;
 
@@ -66,14 +62,20 @@ Prima di creare una vista catalogo, assicurati di disporre di:
 
    - **Nome** - Immettere il nome della visualizzazione del catalogo, ad esempio `Celport`. &#x200B;
    - **Origini catalogo** - Selezionare l&#39;[origine catalogo](catalog-sources.md), ad esempio `en-US`.
-   - **Livelli catalogo**-Rivedi i livelli acquisiti e la priorità.
+   - **Livelli catalogo** - Controlla i livelli acquisiti e la priorità.
    - **Criteri**: utilizzare il menu a discesa per selezionare i criteri rilevanti. Ad esempio, &quot;Marchio&quot;, &quot;Modello&quot;. &#x200B;Assicurarsi di avere già [creato un criterio](policies.md).
 
 1. Selezionare il listino prezzi dedicato da collegare alla vista catalogo.
 
-   - **Utilizza tutti i listini prezzi disponibili** - Questa opzione consente di estrarre i dati relativi ai prezzi da tutti i listini prezzi disponibili.
-   - **Consenti solo listini prezzi selezionati** - Questa opzione visualizza la finestra di dialogo **Aggiungi listini prezzi consentiti** in cui è possibile selezionare il listino prezzi dedicato specifico da utilizzare per la visualizzazione catalogo.
-   - **Disattiva prezzi**-Questa opzione non è al momento disponibile.
+   - **Utilizzare tutti i listini prezzi disponibili**. Questa opzione consente di estrarre i dati relativi ai prezzi da tutti i listini prezzi disponibili.
+   - **Consenti solo listini prezzi selezionati**. Questa opzione visualizza la finestra di dialogo **Aggiungi listini prezzi consentiti**. Utilizzare questa finestra di dialogo per selezionare il listino prezzi specifico da utilizzare per la visualizzazione catalogo.
+   - **Disabilita determinazione prezzi**. Questa opzione non è attualmente disponibile.
+
+   >[!NOTE]
+   >
+   >L&#39;ID di un listino prezzi controlla la determinazione dei prezzi richiesta. Non limita l’accesso alla vista catalogo. Per limitare l&#39;accesso, abilitare Protezione catalogo per creare una [visualizzazione del catalogo privato](private-catalog-view.md).
+
+1. (Facoltativo) Impostare **[!UICONTROL Catalog Protection]** su **[!UICONTROL Enabled]** per limitare i dati della visualizzazione catalogo ai client con un token firmato valido. Consulta [Proteggere una vista catalogo](private-catalog-view.md#protect-a-catalog-view) per i passaggi di configurazione.
 
 1. Fare clic su **[!UICONTROL Add]** per creare la visualizzazione catalogo con i listini prezzi e i criteri collegati.
 
@@ -87,41 +89,42 @@ Dopo aver completato questi passaggi, la vista catalogo viene ora configurata pe
 
 ## Livelli del catalogo
 
-I livelli catalogo consentono di modificare i dati di prodotto all&#39;interno di una vista catalogo senza modificare i dati di origine originali. I livelli applicano le modifiche a specifici attributi del prodotto, come nome, descrizione, immagini, collegamenti e metadati, creando un livello sopra il catalogo di base. I dati originali del prodotto rimangono intatti e consentono di personalizzare in modo sicuro i prodotti e ripristinare le modifiche in qualsiasi momento.
+I livelli catalogo consentono di ignorare gli attributi di prodotto selezionati senza modificare i dati del catalogo di origine. I livelli consentono di personalizzare nomi, descrizioni, immagini, collegamenti o metadati per una vista catalogo.
 
-I casi d’uso comuni per i livelli di catalogo includono:
+Vedi [Livelli catalogo](catalog-layer.md).
 
-- **Ottimizzazione SEO**—Sovrascrivi titoli e descrizioni dei metadati del prodotto in base ai consigli di IA di [Sites Optimizer](../manage-results/opportunities.md)
-- **Campagne stagionali**—Aggiorna temporaneamente nomi di prodotto, descrizioni o immagini per le promozioni
-- **Personalizzazione regionale**—Visualizza informazioni di prodotto diverse in base alla posizione geografica o alla lingua
-- **Test A/B**: verifica diverse presentazioni di prodotti per ottimizzare i tassi di conversione
-- **Gestione multimarca**—Personalizzare gli attributi del prodotto per diverse visualizzazioni del catalogo dei marchi
+## Imposta come privata la visualizzazione di un catalogo
 
-Per ulteriori informazioni sulla creazione, la gestione e l&#39;assegnazione di priorità ai livelli catalogo, vedere [Livelli catalogo](catalog-layer.md).
+Per impostazione predefinita, una vista catalogo è pubblica per le applicazioni client che possono accedere all’API di merchandising di GraphQL. Per limitare l&#39;accesso, configurare una visualizzazione del catalogo privato abilitando **[!UICONTROL Catalog Protection]**.
 
-## Gestisci vista catalogo
+Per informazioni su come proteggere una visualizzazione catalogo e verificare che l&#39;accesso sia applicato, vedere [Visualizzazioni catalogo privato](private-catalog-view.md).
 
-Segui queste istruzioni per aggiornare o visualizzare le proprietà delle viste catalogo esistenti.
+## Gestire le visualizzazioni catalogo
 
-### Modifica vista catalogo
+Per aggiornare o visualizzare le proprietà delle viste catalogo esistenti, seguire queste istruzioni.
 
-1. Nell&#39;area di lavoro *Visualizzazioni catalogo* individuare la visualizzazione catalogo nella griglia che si desidera modificare e fare clic su **...** per aprire il menu Azioni.
-1. Fai clic su **Modifica** per accedere all&#39;editor di visualizzazione del catalogo.
-1. Aggiornare il nome, le origini del catalogo, i criteri e le informazioni sul listino prezzi, in base alle esigenze.
-1. Salva le modifiche.
+### Modificare una vista catalogo
 
-### Elimina vista catalogo
+1. Nell&#39;area di lavoro **[!UICONTROL Catalog views]** individuare la visualizzazione del catalogo.
+1. Per aprire il menu delle azioni, selezionare (**[!UICONTROL ...]**).
+1. Selezionare **[!UICONTROL Edit]** per accedere all&#39;editor di visualizzazione del catalogo.
+1. Aggiornare il nome, le origini del catalogo, i criteri, le informazioni sul listino prezzi e le impostazioni di **[!UICONTROL Catalog Protection]** (incluse le chiavi di accesso con restrizioni assegnate) in base alle esigenze.
+1. Fare clic su **[!UICONTROL Save]**.
 
-1. Nell&#39;area di lavoro *Visualizzazioni catalogo*, individuare la visualizzazione catalogo nella griglia che si desidera modificare e fare clic su **...** per aprire il menu Azioni.
-1. Fare clic su **Elimina**.
+### Eliminare una vista catalogo
+
+1. Nell&#39;area di lavoro **[!UICONTROL Catalog views]** individuare la visualizzazione del catalogo.
+1. Per aprire il menu delle azioni, selezionare (**[!UICONTROL ...]**).
+1. Selezionare **[!UICONTROL Delete]**.
+1. Conferma l’eliminazione.
 
    Quando viene visualizzata la finestra di conferma, fare clic su **[!UICONTROL Delete]**.
 
-### Visualizza dettagli
+### Visualizza dettagli visualizzazione catalogo
 
-Questa opzione consente di visualizzare rapidamente tutti i parametri di visualizzazione del catalogo mantenendo la tabella *Visualizzazioni catalogo*.
+Questa opzione consente di visualizzare rapidamente tutti i parametri di visualizzazione del catalogo mantenendo la tabella **[!UICONTROL Catalog views]**.
 
-Nell&#39;area di lavoro *Visualizzazioni catalogo*, individuare la visualizzazione catalogo nella griglia che si desidera modificare e fare clic sull&#39;icona ![informazioni](../assets/info-icon.png).
+Nell&#39;area di lavoro **[!UICONTROL Catalog views]**, selezionare l&#39;icona ![informazioni](../assets/info-icon.png) per una visualizzazione catalogo per visualizzarne i dettagli di configurazione.
 
 ![Dettagli visualizzazione catalogo](../assets/catalog-view-details.png)
 
@@ -154,7 +157,9 @@ I dati acquisiti creano un catalogo di base unificato nella pipeline di dati di 
 Più visualizzazioni catalogo rappresentano diverse unità aziendali (ad esempio, &quot;Texas Retail&quot;, &quot;Texas Retail Seasonal&quot;). Le impostazioni internazionali, le policy e i listini prezzi possono essere condivisi tra le diverse viste di catalogo per garantire flessibilità.
 
 **4. Consegna multicanale**
-I dati del catalogo filtrati vengono consegnati a varie destinazioni, tra cui vetrine Edge Delivery Services, marketplace, piattaforme pubblicitarie e micro-vetrine personalizzate. Per ulteriori informazioni sulla distribuzione dei dati del catalogo, consulta la [documentazione per gli sviluppatori](https://developer.adobe.com/commerce/services/optimizer/).
+I dati di catalogo filtrati vengono inviati a destinazioni come Edge Delivery Services, marketplace, piattaforme pubblicitarie e micro-vetrine personalizzate. Per ulteriori informazioni sulla distribuzione dei dati del catalogo, consulta la [documentazione per gli sviluppatori](https://developer.adobe.com/commerce/services/optimizer/).
+
+Quando è abilitato **[!UICONTROL Catalog Protection]** in una visualizzazione catalogo, la consegna a tale destinazione richiede un token firmato valido da una [chiave di accesso con restrizioni](restricted-access-keys.md) assegnata; le richieste non autorizzate vengono negate invece di ricevere i dati del catalogo.
 
 ### Componenti chiave
 
@@ -164,6 +169,7 @@ I dati del catalogo filtrati vengono consegnati a varie destinazioni, tra cui ve
 | **Criterio** | Filtro prodotti basato su attributi | Marchio, modello, categoria |
 | **Impostazioni locali** | Impostazione della lingua | en-US, fr-CA, es-MX |
 | **Listino prezzi** | Struttura dei prezzi | Commercio al dettaglio, commercio all&#39;ingrosso, dipendente |
+| **Chiave di accesso limitata** | Credenziali token firmato che consentono di accedere a una visualizzazione di catalogo protetta | Chiave portale partner, chiave di prezzo B2B |
 
 ### Flusso di dati
 
@@ -180,6 +186,7 @@ I dati del catalogo filtrati vengono consegnati a varie destinazioni, tra cui ve
 | **Scalabile** | Gestione efficiente di oltre 200 milioni di SKU |
 | **Multicanale** | Distribuisci cataloghi su vetrine, mercati e piattaforme pubblicitarie |
 | **Aggiornamenti in tempo reale** | Aggiornamento rapido dei dati del catalogo per promozioni e campagne |
+| **Visualizzazioni catalogo privato** | Limitare la visualizzazione di un catalogo ai client autorizzati mediante la convalida del token firmato |
 
 ## Casi d’uso
 
@@ -198,13 +205,15 @@ I dati del catalogo filtrati vengono consegnati a varie destinazioni, tra cui ve
 **Sfida**: prezzi e scorte diversi per ubicazione<br>
 **Soluzione**: viste catalogo basate sulla posizione con criteri specifici per l&#39;area geografica
 
->[!INFO]
+>[!NOTE]
 >
 >Per informazioni dettagliate sull&#39;acquisizione e la consegna dei dati del catalogo, consulta la [documentazione per gli sviluppatori](https://developer.adobe.com/commerce/services/optimizer/).
 
 ## Altri argomenti correlati
 
-- [Origini catalogo](catalog-sources.md) - Definisci l&#39;ambito di autorizzazione di prodotti, attributi e categorie per il comportamento di ricerca, filtro e ordinamento
-- [Livelli catalogo](catalog-layer.md) - Scopri come modificare i dati di prodotto senza modificare l&#39;origine originale
-- [Criteri](policies.md) - Crea criteri per filtrare i prodotti nelle visualizzazioni catalogo
-- [Listini prezzi](pricebooks.md) - Gestisce le strutture di determinazione prezzi per segmenti cliente diversi
+- [Origini del catalogo](catalog-sources.md) - Consente di definire l&#39;ambito autorevole di prodotti, attributi e categorie per il comportamento di ricerca, filtro e ordinamento.
+- [Livelli catalogo](catalog-layer.md)—Scopri come modificare i dati di prodotto senza modificare l&#39;origine originale
+- [Visualizzazioni catalogo privato](private-catalog-view.md)—Creare una visualizzazione catalogo privato per limitare l&#39;accesso ai client autorizzati
+- [Chiavi di accesso limitate](restricted-access-keys.md)—Creare, assegnare e ruotare le chiavi utilizzate per firmare i token per la protezione del catalogo
+- [Criteri](policies.md)—Creare criteri per filtrare i prodotti nelle visualizzazioni catalogo
+- [Listini prezzi](pricebooks.md)—Gestire le strutture di determinazione prezzi per i diversi segmenti cliente

@@ -2,12 +2,12 @@
 title: Limiti e limiti di Adobe Commerce Optimizer
 description: Scopri i limiti di licenza e i limiti del sistema di Adobe Commerce Optimizer. Pianifica la capacità, tieni traccia dell’utilizzo ed evita latenza e limitazione quando i limiti vengono superati.
 role: Admin, Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 nudge: true
-source-git-commit: 172fcbd659f4fe8868059d29ed335a5136af8d33
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1494'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Il tuo utilizzo deve rimanere entro questi limiti. Il loro superamento può caus
 
 I limiti di licenza possono essere aumentati acquistando i pacchetti di licenza descritti nella sezione [Limiti di licenza e limiti di sistema](#license-limits-and-system-boundaries) oppure negoziando licenze personalizzate per casi d&#39;uso univoci. Contatta il rappresentante del tuo account Adobe per discutere delle tue esigenze.
 
-Per domande sui limiti del sistema, contatta il [Supporto Adobe](https://experienceleague.adobe.com/home?lang=it#support).
+Per domande sui limiti del sistema, contatta il [Supporto Adobe](https://experienceleague.adobe.com/home?lang=en#support).
 
 ## Impedisci problemi di prestazioni
 
@@ -93,8 +93,8 @@ Nelle tabelle seguenti vengono riepilogati i limiti di licenza e i limiti di sis
 L&#39;utilizzo di Dynamic Media tiene traccia delle richieste API pervenute nei componenti Product Visuals all&#39;interno di [!DNL Adobe Commerce Optimizer] per facilitare una delle azioni seguenti:
 
 - **La consegna delle immagini utilizza un&#39;operazione Dynamic Media** per ogni occorrenza dei seguenti elementi:
-   - **trasformazione immagine di base** di una risorsa digitale, ad esempio operazioni di ridimensionamento, ridimensionamento, conversione formato, compressione o ritaglio.
-   - **consegna o download di immagini statiche** di tali risorse digitali o rendering di risorse digitali (diverso dal video)
+  - **trasformazione immagine di base** di una risorsa digitale, ad esempio operazioni di ridimensionamento, ridimensionamento, conversione formato, compressione o ritaglio.
+  - **consegna o download di immagini statiche** di tali risorse digitali o rendering di risorse digitali (diverso dal video)
 - **La consegna di immagini avanzate richiede 20 operazioni Dynamic Media** per ogni consegna ottimizzata di una singola risorsa digitale generando automaticamente la rappresentazione dell&#39;immagine più appropriata per il dispositivo e il browser di un utente finale.
 - **La distribuzione di video utilizza 20 operazioni Dynamic Media** per una singola consegna o download di un video o una variante trasformata di un video.
 
@@ -111,6 +111,10 @@ L&#39;utilizzo di Dynamic Media tiene traccia delle richieste API pervenute nei 
 | Visualizzazioni catalogo | Numero di sottoinsiemi configurabili del catalogo principale | In base al numero di [varianti catalogo](#catalog) | Sì<br>Aumenta varianti di catalogo |
 | Criteri per visualizzazione catalogo | Numero di filtri dati consentiti | 10 | No |
 | Valori degli attributi in un criterio | Numero di caratteristiche del prodotto che possono essere configurate per il filtro | 100 | No |
+| [Assegnazione chiave di accesso limitata](setup/private-catalog-view.md) | Numero di chiavi di accesso con restrizioni che possono essere assegnate a una singola vista catalogo | 3 | No |
+| [Chiavi di accesso limitate](setup/restricted-access-keys.md) | Numero di chiavi per ambiente | Massimo 100 | No |
+| Dimensione chiave RSA (chiavi di accesso limitate) | Forza minima e massima della chiave accettata per una chiave ad accesso limitato | minimo 2048 bit, massimo 8192 bit | No |
+| Chiavi di accesso con restrizioni | Ritardo propagazione revoca chiave | Fino a 5 minuti, a causa della memorizzazione nella cache. I token firmati da una chiave rimossa vengono negati una volta trascorso il ritardo. | Non applicabile |
 
 {style="table-layout:auto"}
 
@@ -162,7 +166,7 @@ Per i consigli sui prodotti sono disponibili le seguenti funzionalità. Alcune f
 
 | **Capacità** | **Descrizione** | **Allocazione di base** | **Espandibile?** | **Note** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | Capacità di creare estensioni e integrazioni native per il cloud | Basato sul livello GMV<p>Allocazione minima: 1 pacchetto/anno</p> | Sì<p>Aggiungi pacchetti aggiuntivi</p> | Per i limiti definiti per confezione, vedere:<ul><li>[Descrizione del prodotto App Builder](https://helpx.adobe.com/it/legal/product-descriptions/adobe-developer-app-builder.html) per i limiti definiti per la confezione.</li><li>[Impostazioni e limitazioni di sistema](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) nelle *Guide di App Builder Runtime*.</li><li>[Requisiti di archiviazione App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | Capacità di creare estensioni e integrazioni native per il cloud | Basato sul livello GMV<p>Allocazione minima: 1 pacchetto/anno</p> | Sì<p>Aggiungi pacchetti aggiuntivi</p> | Per i limiti definiti per confezione, vedere:<ul><li>[Descrizione del prodotto App Builder](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) per i limiti definiti per la confezione.</li><li>[Impostazioni e limitazioni di sistema](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) nelle *Guide di App Builder Runtime*.</li><li>[Requisiti di archiviazione App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
