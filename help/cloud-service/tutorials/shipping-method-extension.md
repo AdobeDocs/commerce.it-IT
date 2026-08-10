@@ -266,10 +266,10 @@ Dopo la distribuzione, completa i passaggi seguenti per registrare il gestore fi
 
    - Vai a **Archivi** > Impostazioni > **Configurazione** > **Servizi Adobe** > **Webhook Commerce**.
    - Aggiungi un webhook:
-      - **Metodo webhook:** `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`
-      - **Tipo webhook:** **dopo**
-      - **URL:** l&#39;URL dell&#39;azione Web **shipping-methods** distribuito (dall&#39;output di distribuzione o da [!DNL Adobe Developer Console]).
-      - **Obbligatorio:** **Facoltativo** - Questo consente il funzionamento dell&#39;estrazione se l&#39;API esterna non restituisce tariffe.
+     - **Metodo webhook:** `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`
+     - **Tipo webhook:** **dopo**
+     - **URL:** l&#39;URL dell&#39;azione Web **shipping-methods** distribuito (dall&#39;output di distribuzione o da [!DNL Adobe Developer Console]).
+     - **Obbligatorio:** **Facoltativo** - Questo consente il funzionamento dell&#39;estrazione se l&#39;API esterna non restituisce tariffe.
 
    ![Configurazione del webhook di amministrazione di Commerce per le tariffe di spedizione fittizie](../assets/admin-webhook-shipping.png){width="600" zoomable="yes"}
 
@@ -287,9 +287,9 @@ Dopo la distribuzione, completa i passaggi seguenti per registrare il gestore fi
    - Apri **App** e seleziona la tua app.
    - Apri la scheda **Spedizione fittizia** (o equivalente).
    - Immetti i seguenti dettagli:
-      - **URL servizio:** l&#39;URL del flusso di lavoro Pipedream copiato, ad esempio `https://123456.m.pipedream.net`.
-      - **Chiave API:** qualsiasi valore non vuoto per il modello, ad esempio `tutorial-key`.
-      - **Indirizzo del magazzino (origine spedizione):** nome, telefono, via, città, stato, codice postale, paese.
+     - **URL servizio:** l&#39;URL del flusso di lavoro Pipedream copiato, ad esempio `https://123456.m.pipedream.net`.
+     - **Chiave API:** qualsiasi valore non vuoto per il modello, ad esempio `tutorial-key`.
+     - **Indirizzo del magazzino (origine spedizione):** nome, telefono, via, città, stato, codice postale, paese.
    - Fai clic su **Salva**. La configurazione viene archiviata nello stato Runtime e utilizzata dall&#39;azione metodi di spedizione.
 
    ![Modulo di configurazione per spedizione fittizia con URL del servizio, chiave API e indirizzo warehouse](../assets/admin-ui-mock-shipping.png){width="600" zoomable="yes"}
