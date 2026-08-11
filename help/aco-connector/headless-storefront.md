@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 237
+source-wordcount: 263
 ht-degree: 0%
 
 ---
@@ -65,6 +65,10 @@ Risoluzione di `priceBookId`:
 | Cliente connesso | `websiteCode::sha1(customerGroupId)` |
 
 L&#39;intestazione della richiesta `Store` determina l&#39;ambito del sito Web e quindi il componente `websiteCode`. Il componente `sha1(customerGroupId)` corrisponde alla formula ID listino prezzi utilizzata durante la sincronizzazione dei dati. Consulta [Listino prezzi](reference/field-mapping.md#price-books).
+
+>[!NOTE]
+>
+>Se per la visualizzazione del catalogo di destinazione è abilitato [!UICONTROL Catalog Protection], includi un&#39;intestazione `AC-Catalog-View-Access-Token` firmata insieme a `AC-View-ID` e `AC-Price-Book-ID` nelle richieste API di merchandising oppure la richiesta viene negata. Vedi [Visualizzazioni catalogo privato](../optimizer/setup/private-catalog-view.md).
 
 ## Prodotti bundle: formato add-to-cart {#bundle-products-add-to-cart-format}
 

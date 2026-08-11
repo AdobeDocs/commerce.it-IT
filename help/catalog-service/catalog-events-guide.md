@@ -1,5 +1,5 @@
 ---
-title: Guida all’integrazione di Catalog e Adobe I/O Events
+title: Guida alla configurazione e all’integrazione degli eventi catalogo
 description: Scopri come verificare i dati del catalogo, configurare  [!DNL Adobe I/O Events]  per Adobe Commerce, abbonarsi ai tipi di eventi del catalogo e convalidare la consegna per i consumatori.
 level: Intermediate
 recommendations: noCatalog
@@ -16,14 +16,14 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: d8e9d612392967d19d0da56e81337362f9006c2c
+source-git-commit: 818efacb8dbf63e48cdc83506d228c665d7a8b22
 workflow-type: tm+mt
-source-wordcount: 1566
+source-wordcount: 1568
 ht-degree: 0%
 
 ---
 
-# Eventi catalogo e guida all&#39;integrazione di [!DNL Adobe I/O Events]
+# Abilitare e configurare eventi catalogo con Adobe I/O
 
 Gli eventi del catalogo sono notifiche generate automaticamente che descrivono le modifiche del catalogo supportate rese disponibili tramite [!DNL Catalog Service]. Consentono flussi di lavoro basati su eventi quali:
 

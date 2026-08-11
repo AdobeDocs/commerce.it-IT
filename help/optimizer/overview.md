@@ -4,9 +4,9 @@ description: Scopri  [!DNL Adobe Commerce Optimizer]  e le sue funzionalità chi
 recommendations: noCatalog
 badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 3e759c0d7e51082b70ea9a1fcc5757b60a8aab61
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Con [!DNL Adobe Commerce Optimizer] è possibile:
 - Acquisisci i dati del catalogo da qualsiasi origine.
 - Definire le visualizzazioni e i criteri del catalogo aziendale.
 - Crea ricerche e consigli personalizzati utilizzando IA e ML.
-- Migliora la rilevanza dell&#39;individuazione del prodotto con una classificazione che dà priorità a **corrispondenze esatte e vicine** e corrispondenze dello stesso campo; vedi [Corrispondenza ricerca e classificazione](./manage-results/search-relevance-matching.md).
+- Migliora la rilevanza dell&#39;individuazione del prodotto con una classificazione che dà priorità a **corrispondenze esatte e vicine** e corrispondenze nello stesso campo. Vedi [Corrispondenza ricerca e classificazione](./manage-results/search-relevance-matching.md).
 - Visualizzare i dati fondamentali sulla disponibilità dei prodotti, compresi lo stato di sincronizzazione e i dati degli eventi storefront, per un&#39;implementazione e una risoluzione dei problemi accurate.
 
 Guarda il seguente video per una panoramica di alto livello di [!DNL Adobe Commerce Optimizer]:
@@ -72,6 +72,7 @@ Definisci le visualizzazioni e i criteri del catalogo. Il catalogo non solo cont
 - **Visualizzazioni catalogo** - Consente di definire la struttura della vendita al dettaglio in business group significativi. Ad esempio, rivenditori per l&#39;industria automobilistica, filiali per conglomerati multimarca o sedi di produzione per i fornitori.
 - **Livelli catalogo** - Modificare i dati di prodotto senza modificare i dati di origine. Quando si utilizza AEM Assets per le immagini del prodotto, il livello AEM-Assets viene applicato tramite [Visualizzazioni prodotto](setup/product-visuals.md). Per ulteriori dettagli, vedere [Livelli catalogo](setup/catalog-layer.md).
 - **Criteri** - Filtri di accesso ai dati che si trovano all&#39;interno delle visualizzazioni catalogo. Le policy garantiscono che il contenuto corretto venga inviato alla destinazione corretta. Ad esempio, punti vendita negozi fisici, mercati, pipeline pubblicitarie (Google, Facebook, Instagram).
+- **Visualizzazioni catalogo privato** - Limita la visualizzazione di un catalogo in modo che solo le richieste contenenti un token firmato valido possano recuperare i dati. Consulta [Visualizzazioni catalogo privato](setup/private-catalog-view.md) per la configurazione.
 - **Sincronizzazione dati** - Visualizza una panoramica dello stato di sincronizzazione dei dati di prodotto trasferiti dall&#39;origine dati (PIM, ERP e così via) in [!DNL Adobe Commerce Optimizer]. I dati del prodotto vengono visualizzati nelle schede **[!UICONTROL Catalog Service]**, **[!UICONTROL Search]** e **[!UICONTROL Recommendations]**.
 - **Eventi** - Visualizza i dati dell&#39;evento storefront che alimentano l&#39;individuazione dei prodotti e i consigli. La pagina **Eventi** consente al commerciante di verificare che gli eventi della vetrina siano stati implementati correttamente e che gli eventi vengano acquisiti correttamente. Gli esercenti possono utilizzare questa pagina per identificare potenziali problemi e adottare misure per risolvere eventuali problemi.
 

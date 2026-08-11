@@ -7,9 +7,9 @@ role: Developer, Admin
 level: Beginner
 badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Si applica solo a  [!DNL Adobe Commerce Optimizer]  progetti (infrastruttura SaaS gestita da Adobe)."
 exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
-source-git-commit: a404c2ff7cec5e72ce65d3670330b1f3f3c4702d
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## Connettore Adobe Commerce Optimizer {#aco-connector}
 
-Il connettore Adobe Commerce Optimizer è il bridge che sincronizza i dati di catalogo e determinazione prezzi tra Adobe Commerce (cloud o locale) e [!DNL Adobe Commerce Optimizer]. Quando abiliti il connettore, Commerce rimane il sistema di registrazione per i dati dei prodotti, mentre [!DNL Adobe Commerce Optimizer] potenzia l&#39;individuazione dei prodotti, i consigli, le regole di merchandising, le analisi e le esperienze di vetrina headless.
+Il connettore Adobe Commerce Optimizer è il bridge che sincronizza i dati di catalogo e determinazione prezzi tra Adobe Commerce (cloud o locale) e [!DNL Adobe Commerce Optimizer]. Quando abiliti il connettore, Commerce rimane il sistema di registrazione per i dati dei prodotti, mentre [!DNL Adobe Commerce Optimizer] potenzia l&#39;individuazione dei prodotti, i consigli, le regole di merchandising, le analisi e le esperienze di vetrina headless. Per limitare gli utenti che possono eseguire query su una visualizzazione catalogo sincronizzata, vedere [Visualizzazioni catalogo privato](../setup/private-catalog-view.md).
 
 - [Panoramica del connettore Adobe Commerce Optimizer](../../aco-connector/overview.md){target="_blank"}
 - [Introduzione al connettore](../../aco-connector/get-started.md){target="_blank"}

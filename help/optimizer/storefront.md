@@ -20,9 +20,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 1562
+source-wordcount: 1573
 ht-degree: 0%
 
 ---
@@ -37,20 +37,20 @@ Questa guida illustra come configurare una vetrina per l&#39;istanza [!DNL Adobe
 
 * **Account GitHub** che può creare archivi ed è configurato per lo sviluppo locale (github.com)
 * **[!DNL Adobe Commerce Optimizer]istanza** con dati di esempio e viste e criteri di catalogo configurati
-   * Per istruzioni sull&#39;installazione, vedere [Aggiungere dati di esempio](get-started.md#add-sample-data).
+  * Per istruzioni sull&#39;installazione, vedere [Aggiungere dati di esempio](get-started.md#add-sample-data).
 
 ### Dati istanza richiesti
 
 Prima di iniziare, raccogliere le seguenti informazioni dall&#39;istanza [!DNL Adobe Commerce Optimizer]:
 
 * **ID tenant** (chiamato anche ID istanza)
-   * Disponibile dalla [pagina dei dettagli dell&#39;istanza](get-started.md#manage-instances)
+  * Disponibile dalla [pagina dei dettagli dell&#39;istanza](get-started.md#manage-instances)
 * **Endpoint GraphQL** per l&#39;istanza
-   * Disponibile dalla [pagina dei dettagli dell&#39;istanza](get-started.md#manage-instances)
+  * Disponibile dalla [pagina dei dettagli dell&#39;istanza](get-started.md#manage-instances)
 * **ID visualizzazione catalogo** per la visualizzazione catalogo globale
-   * Disponibile dalla [pagina dettagli catalogo](./setup/catalog-view.md#manage-catalog-view)
+  * Disponibile dalla [pagina dettagli catalogo](./setup/catalog-view.md#manage-catalog-views)
 * **Impostazioni locali di Source** per la visualizzazione del catalogo
-   * Il valore predefinito per i dati di esempio è `en-US`
+  * Il valore predefinito per i dati di esempio è `en-US`
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ Lo strumento Site Creator (Creazione sito) crea un progetto completo di vetrina 
 
    ![[!DNL Site Creator tool]](./assets/storefront-setup-site-creator.png){width="700" zoomable="yes"}
 
-1. Selezionare **Crea nuovo sito (codice e contenuto)**.
+1. Selezionare **[!UICONTROL Create New Site (Code & Content)]**.
 
 1. Completa la configurazione del sito:
 
@@ -89,7 +89,7 @@ Lo strumento Site Creator (Creazione sito) crea un progetto completo di vetrina 
    * **Nome sito**: scegli un nome descrittivo per la vetrina
    * **Endpoint Commerce GraphQL (facoltativo)**: immettere l&#39;endpoint GraphQL per l&#39;istanza [!DNL Adobe Commerce Optimizer]
 
-1. Fai clic su **Crea sito** per creare l&#39;archivio GitHub con il codice boilerplate della vetrina.
+1. Fai clic su **[!UICONTROL Create Site]** per creare l&#39;archivio GitHub con il codice boilerplate della vetrina.
 
    Quando l’archivio viene creato, Site Creator si aggiorna e richiede di installare l’app Code Sync.
 
@@ -103,7 +103,7 @@ Lo strumento Site Creator (Creazione sito) crea un progetto completo di vetrina 
    * Fare clic sul menu **[!UICONTROL Select repositories]**, quindi scegliere l&#39;archivio del codice storefront creato.
    * Fare clic su **[!UICONTROL Save]** per registrare l&#39;archivio.
 
-1. Tornare alla finestra del browser in cui è aperto il creatore del sito e fare clic su **Crea sito**.
+1. Tornare alla finestra del browser in cui è aperto il creatore del sito e fare clic su **[!UICONTROL Create Site]**.
 
    Il creatore del sito copia il contenuto della vetrina nell’ambiente di authoring del documento. Questo processo richiede 1-2 minuti.
 
@@ -115,7 +115,7 @@ Lo strumento Site Creator (Creazione sito) crea un progetto completo di vetrina 
 
    Utilizza questi collegamenti per gestire il codice, il contenuto e la configurazione della vetrina.
 
-1. Copiare e salvare questi collegamenti per riferimento futuro: fare clic su **[!UICONTROL Copy].
+1. Copiare e salvare questi collegamenti per riferimento futuro: fare clic su **[!UICONTROL Copy]**.
 
 ## Configurare la vetrina
 
@@ -140,6 +140,10 @@ Aggiorna la configurazione della vetrina per connetterti all&#39;istanza [!DNL A
    >[!NOTE]
    >
    >Per trovare l&#39;ID del listino prezzi dedicato, controllare i [dettagli di configurazione della vista catalogo](./setup/catalog-view.md) in [!DNL Adobe Commerce Optimizer] per visualizzare i listini prezzi assegnati. Se non vengono assegnati listini prezzi, è possibile rimuovere questa intestazione dal file di configurazione. Aggiungerlo nuovamente quando un listino prezzi dedicato è stato assegnato alla vista catalogo.
+
+   >[!NOTE]
+   >
+   >Se nella vista catalogo sono abilitati [!UICONTROL Catalog Protection], aggiungi un&#39;intestazione `AC-Catalog-View-Access-Token` contenente un token firmato valido oppure le richieste di storefront nella vista catalogo sono rifiutate. Vedi [Visualizzazioni catalogo privato](./setup/private-catalog-view.md).
 
 1. Salva il file di configurazione.
 
@@ -228,7 +232,7 @@ Prima di procedere con i passaggi successivi, assicurati che la vetrina funzioni
 ![Elenco di controllo](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Almeno una pagina dei dettagli del prodotto visualizza informazioni complete<br>
 ![Elenco di controllo](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) La funzionalità di ricerca restituisce risultati rilevanti<br>
 ![Elenco di controllo](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Le immagini di prodotto sono state caricate correttamente<br>
-![Elenco di controllo](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) I valori di configurazione corrispondono alle impostazioni dell&#39;istanza<br>
+<br>
 
 ### Ottieni aiuto
 

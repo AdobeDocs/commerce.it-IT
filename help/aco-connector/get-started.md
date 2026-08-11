@@ -26,10 +26,10 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 last-update: 2026-07-29
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: fb025e5232902ba9fea7e858085ea85abeb11720
 workflow-type: tm+mt
-source-wordcount: 1059
-ht-degree: 0%
+source-wordcount: 1106
+ht-degree: 3%
 
 ---
 
@@ -202,7 +202,7 @@ Ottieni l&#39;ID _tenant_ dal campo _[!DNL Instance Id]_&#x200B;nell&#39;istanza
 
 1. **Configura [!DNL Commerce Optimizer] visualizzazioni catalogo e criteri**
 
-   Creare visualizzazioni e criteri catalogo nell&#39;interfaccia utente [!DNL Commerce Optimizer]. I listini prezzi vengono creati automaticamente da [!DNL Adobe Commerce] gruppi di clienti. Per istruzioni, vedere la documentazione [Visualizzazioni catalogo](../optimizer/setup/catalog-view.md) e [Criteri](../optimizer/setup/policies.md) nella Guida utente *[!DNL Commerce Optimizer]*.
+   Creare visualizzazioni e criteri catalogo nell&#39;interfaccia utente [!DNL Commerce Optimizer]. I listini prezzi vengono creati automaticamente da [!DNL Adobe Commerce] gruppi di clienti. Per istruzioni, vedere la documentazione [Visualizzazioni catalogo](../optimizer/setup/catalog-view.md) e [Criteri](../optimizer/setup/policies.md) nella Guida utente *[!DNL Commerce Optimizer]*. Per limitare l&#39;accesso a una visualizzazione catalogo, vedere [Visualizzazioni catalogo privato](../optimizer/setup/private-catalog-view.md).
 
 1. **Configura una vetrina Commerce su[!DNL Edge Delivery Services]**
 

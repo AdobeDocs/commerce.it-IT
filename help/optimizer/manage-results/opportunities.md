@@ -23,7 +23,7 @@ topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
 source-wordcount: 1445
 ht-degree: 0%
@@ -167,7 +167,7 @@ Per implementare un’ottimizzazione suggerita dall’intelligenza artificiale, 
 
 ### Funzionamento dei livelli del catalogo con la correzione automatica
 
-Se nella vista catalogo non è presente un livello Sites Optimizer di Adobe, la funzione di correzione automatica ne crea automaticamente uno e gli assegna la priorità più alta (il numero più alto). Se eliminate questo livello, verrà ricreato alla successiva esecuzione della correzione automatica e sposterà i livelli esistenti in numeri di ordine inferiori. Se il livello Sites Optimizer di Adobe esiste già con un numero di ordine diverso, la correzione automatica non ne modifica la priorità. Se desiderate mantenere un livello di correzione automatica, ma non utilizzarlo immediatamente, potete disattivare il livello. Ulteriori informazioni su come gestire i [livelli catalogo](../setup/catalog-layer.md#activate-deactivate-or-delete-layers).
+Se nella vista catalogo non è presente un livello Sites Optimizer di Adobe, la funzione di correzione automatica ne crea automaticamente uno e gli assegna la priorità più alta (il numero più alto). Se eliminate questo livello, verrà ricreato alla successiva esecuzione della correzione automatica e sposterà i livelli esistenti in numeri di ordine inferiori. Se il livello Sites Optimizer di Adobe esiste già con un numero di ordine diverso, la correzione automatica non ne modifica la priorità. Se desiderate mantenere un livello di correzione automatica, ma non utilizzarlo immediatamente, potete disattivare il livello. Ulteriori informazioni su come gestire i [livelli catalogo](../setup/catalog-layer.md#manage-layer-activation-and-deletion).
 
 ![Livelli catalogo](../assets/catalog-layers.png)
 

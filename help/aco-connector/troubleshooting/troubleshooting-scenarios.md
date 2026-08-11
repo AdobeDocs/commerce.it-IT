@@ -23,9 +23,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 516
+source-wordcount: 645
 ht-degree: 0%
 
 ---
@@ -69,6 +69,17 @@ In questa pagina sono descritti i comportamenti che è possibile osservare duran
 
 - Verifica che il sito web sia configurato per la sincronizzazione nella configurazione di esportazione del connettore. Consulta [Personalizzare la configurazione di esportazione dei dati](../get-started.md#customize-the-commerce-scopes-export-configuration).
 - Verificare che l&#39;ID del listino prezzi utilizzato in [!DNL Commerce Optimizer] sia presente nella configurazione della [visualizzazione catalogo](../../optimizer/setup/catalog-view.md){target="_blank"} utilizzata per eseguire la query prodotti.
+
+## Le richieste Storefront restituiscono un errore di accesso negato o i dati del catalogo scompaiono completamente
+
+**Problema:** le richieste all&#39;API Merchandising per una visualizzazione catalogo che restituiva dati in precedenza ora non riescono e viene restituito un errore `access-key-invalid` oppure una vetrina che non mostrava più i dati del catalogo.
+
+**Causa:** La protezione del catalogo [è abilitata](../../optimizer/setup/private-catalog-view.md) nella visualizzazione del catalogo e nella richiesta manca l&#39;intestazione `AC-Catalog-View-Access-Token` richiesta oppure tutte le chiavi di accesso con restrizioni assegnate alla visualizzazione sono scadute. [!DNL Adobe Commerce Optimizer Connector] non crea, assegna o ruota automaticamente le chiavi di accesso con restrizioni. La gestione delle chiavi viene gestita interamente dall&#39;applicazione client.
+
+**Soluzione:**
+
+- Conferma che alla vista catalogo sia ancora assegnata almeno una [chiave di accesso con restrizioni](../../optimizer/setup/restricted-access-keys.md) non scaduta e, se necessario, ruota o aggiungi una chiave.
+- Verificare che la vetrina o il client invii un&#39;intestazione `AC-Catalog-View-Access-Token` firmata valida a ogni richiesta. Vedi [Visualizzazioni catalogo privato](../../optimizer/setup/private-catalog-view.md).
 
 ## I dati in [!DNL Adobe Commerce Optimizer] sono stati sovrascritti o modificati in modo imprevisto dopo la sincronizzazione
 
