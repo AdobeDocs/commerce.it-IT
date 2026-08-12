@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 477802467d8f60f05137d60e0d703c0302de5144
+source-git-commit: ecaeba0d36376bf7f9ac864135cbf225c7fd8634
 workflow-type: tm+mt
-source-wordcount: 5371
+source-wordcount: 5345
 ht-degree: 0%
 
 ---
@@ -50,11 +50,11 @@ Le seguenti note sulla versione contengono aggiornamenti a [!DNL Adobe Commerce 
 
 ## Agosto 2026 - #1 sulla versione {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="Gli elementi elencati sono attualmente disponibili solo negli ambienti Sandbox. Adobe rende disponibili le nuove versioni negli ambienti Sandbox per fornire il tempo di testare le modifiche imminenti prima che la versione sia disponibile negli ambienti di produzione."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Produzione]{type=Neutral tooltip="Gli elementi elencati sono attualmente disponibili negli ambienti di produzione."}
 
-I seguenti elementi saranno pubblicati in Produzione l’11 agosto 2026.
+I seguenti elementi sono stati pubblicati in Produzione il 12 agosto 2026.
 
 >[!BEGINSHADEBOX]
 
