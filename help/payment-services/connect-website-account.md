@@ -30,7 +30,7 @@ Per le istanze di Commerce con **più siti Web**, potrebbero essere necessari **
 
 L’onboarding a livello di sito web è disponibile solo quando il negozio soddisfa i seguenti requisiti:
 
-- Installazione di [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas) completata.
+- Installazione di [Commerce Services Connector](https://experienceleague.adobe.com/it/docs/commerce/user-guides/integration-services/saas) completata.
 - Un conto PayPal è connesso all&#39;ambito globale (configurazione predefinita).
 
 Per confermare, controlla che nell’ambito predefinito siano compilati i campi seguenti:
