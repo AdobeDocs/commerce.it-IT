@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
+source-git-commit: 2abebf247603b37a28eb6f4653d63e83aa5d9fd5
 workflow-type: tm+mt
-source-wordcount: '5400'
+source-wordcount: '5483'
 ht-degree: 0%
 
 ---
@@ -116,6 +116,19 @@ _28 giugno 2021_
 >[!NOTE]
 >
 > Le versioni si verificano spesso per fornire nuove funzioni e correzioni, in base alle esigenze. La pianificazione della versione non è corretta.
+
+
+## v2.16.1
+
+_10 agosto 2026_
+
+![È stato risolto un problema](../assets/fix.svg)<!-- PAY-6769 --> che causava un problema intermittente nelle vetrine dei sistemi EDS che utilizzavano i pulsanti avanzati PayPal e che impediva la disponibilità di alcuni metodi di pagamento nella pagina di pagamento.
+
+## v2.16.0
+
+_27 luglio 2026_
+
+![Nuovo problema](../assets/new.svg)<!-- Issue PAY-6510 --> I commercianti possono ora eseguire in autonomia l&#39;onboarding di un altro conto PayPal nell&#39;ambito del sito Web direttamente da [!DNL Commerce Admin]. [!DNL Payment Services] Home include ora un pulsante **[!UICONTROL Connect a different PayPal account for a website]** che reindirizza alla pagina di configurazione dell&#39;amministratore per i metodi di pagamento. Per ulteriori informazioni, consulta [Collegare un altro conto PayPal per un sito Web](connect-website-account.md).
 
 ## v2.15.0
 

@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 379345261bebe5bee9cdbcb6fd3b0ce6275df6ea
+source-git-commit: 882a39a5b0eeb616c7ca1d9e64c3fae76760afad
 workflow-type: tm+mt
-source-wordcount: '3710'
+source-wordcount: '3778'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 Puoi personalizzare [!DNL Payment Services] in base alle tue esigenze con utili opzioni di configurazione nell&#39;Admin.
 
 Quando si configura [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] nell&#39;amministratore, tali configurazioni si applicano solo all&#39;ambiente impostato nel campo _[!UICONTROL Method]_&#x200B;di&#x200B;_[!UICONTROL General Configuration]_. Qualsiasi modifica apportata nei campi di configurazione è indipendente dal passaggio alla selezione di _[!UICONTROL Method]_. Se si cambia metodo, le selezioni non vengono reimpostate.
+
+Se esegui una singola istanza di Commerce con **più siti Web** (e visualizzazioni dello store), per alcuni siti Web potrebbe essere necessario un **account esercente PayPal diverso**. [!DNL Payment Services] consente di completare l&#39;onboarding di **PayPal con ambito sito Web** nell&#39;amministratore dopo la configurazione e l&#39;onboarding dell&#39;istanza nell&#39;ambito **global** (predefinito). Consulta [Collegare un account PayPal diverso per un sito Web](connect-website-account.md) per conoscere i prerequisiti e completare i passaggi per l&#39;onboarding di un account PayPal con ambito sito Web.
 
 ## Configurazione generale
 
@@ -56,11 +58,11 @@ Puoi abilitare [!DNL Payment Services] per il tuo archivio e _[!UICONTROL Mercha
 
 Se esegui una singola istanza di Commerce con **più siti Web** (e visualizzazioni dello store), per alcuni siti Web potrebbe essere necessario un **account esercente PayPal diverso**. [!DNL Payment Services] consente di completare l&#39;onboarding di **PayPal con ambito sito Web** nell&#39;amministratore dopo la configurazione e l&#39;onboarding dell&#39;istanza nell&#39;ambito **global** (predefinito).
 
-Nelle versioni precedenti, la mappatura dell&#39;account PayPal a livello di sito Web richiedeva in genere di [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=it#Solution) o il rappresentante Adobe. Utilizzare l&#39;azione **[!UICONTROL Connect different account for website]** quando si soddisfano i prerequisiti seguenti.
+Nelle versioni precedenti, la mappatura dell&#39;account PayPal a livello di sito Web richiedeva in genere di [contattare il supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=it#Solution) o il rappresentante Adobe. Utilizzare l&#39;azione **[!UICONTROL Connect different account]** quando si soddisfano i prerequisiti seguenti.
 
 ### Prerequisiti (ambito globale)
 
-Il controllo **[!UICONTROL Connect different account for website]** è disponibile e abilitato solo in un ambito **sito Web** quando **tutti** dei seguenti valori sono già true per l&#39;istanza nella configurazione **default/global**:
+Il controllo **[!UICONTROL Connect different account]** è disponibile e abilitato solo in un ambito **sito Web** quando **tutti** dei seguenti valori sono già true per l&#39;istanza nella configurazione **default/global**:
 
 1. Installazione di [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas) completata.
 
@@ -70,7 +72,7 @@ Il controllo **[!UICONTROL Connect different account for website]** è disponibi
 
 1. Un account esercente PayPal **globale** è **connesso** e hai **completato l&#39;onboarding PayPal** per l&#39;ambito predefinito (i campi **[!UICONTROL PayPal Merchant ID]** e correlati sono compilati per l&#39;ambito globale come descritto in [Configurazione generale](#general-configuration)).
 
-   Se l&#39;onboarding globale non è completo, passa l&#39;ambito di configurazione a **[!UICONTROL Website]**, apri **[!UICONTROL Payment Services]** in **[!UICONTROL Payment Methods]** e il pulsante **[!UICONTROL Connect different account for website]** è **disabilitato**; completa la configurazione del connettore e **global** prima l&#39;onboarding PayPal.
+   Se l&#39;onboarding globale non è completo, passa l&#39;ambito di configurazione a **[!UICONTROL Website]**, apri **[!UICONTROL Payment Services]** in **[!UICONTROL Payment Methods]** e il pulsante **[!UICONTROL Connect different account]** è **disabilitato**; completa la configurazione del connettore e **global** prima l&#39;onboarding PayPal.
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -353,7 +355,7 @@ I metodi di pagamento locali (LPM, Local Payment Methods) forniscono supporto pe
 
 >[!NOTE]
 >
->Ciascun metodo di pagamento locale (Local Payment Method, LPM) prevede requisiti specifici per paese e valuta. Un metodo di pagamento viene visualizzato solo quando il paese dell’indirizzo di fatturazione del cliente e la valuta di base del sito web soddisfano tali requisiti. Ad esempio, Bancontact viene visualizzato solo per i clienti con un indirizzo di fatturazione belga quando la valuta di base è EUR.
+>Ciascun metodo di pagamento locale (Local Payment Method, LPM) prevede requisiti specifici per paese e valuta. Un metodo di pagamento viene visualizzato solo quando il paese dell&#39;indirizzo di fatturazione del cliente e la valuta di base del sito Web soddisfano tali requisiti. Ad esempio, Bancontact viene visualizzato solo per i clienti con un indirizzo di fatturazione belga quando la valuta di base è EUR.
 
 ## Elementi riga
 
@@ -444,6 +446,6 @@ In [!UICONTROL Payment Services], puoi utilizzare più account PayPal all&#39;in
 
 Per ulteriori informazioni sulla gerarchia di siti Web, store e visualizzazioni dello store, vedere [Ambito sito, archivio e visualizzazione](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=it).
 
-Per connettere un **account PayPal diverso a un singolo sito Web** dall&#39;amministratore dopo il completamento dell&#39;onboarding di **global** Servizi Commerce e PayPal, utilizzare **[!UICONTROL Connect different account for website]** nell&#39;ambito **[!UICONTROL Website]**. Consulta [Collegare un account PayPal diverso per un sito Web](#connect-a-different-paypal-account-for-a-website).
+Per connettere un **account PayPal diverso a un singolo sito Web** dall&#39;amministratore dopo il completamento dell&#39;onboarding di **global** Servizi Commerce e PayPal, utilizzare **[!UICONTROL Connect different account]** nell&#39;ambito **[!UICONTROL Website]**. Consulta [Collegare un account PayPal diverso per un sito Web](#connect-a-different-paypal-account-for-a-website).
 
 Per ulteriori informazioni sulla configurazione degli ambiti per più account PayPal tramite CLI, vedere [Configurazione della riga di comando](configure-cli.md#configure-scope-via-cli).
