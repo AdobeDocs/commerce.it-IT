@@ -3,7 +3,7 @@ title: Visualizzazioni catalogo privato
 description: Scopri come creare una visualizzazione di catalogo privata abilitando Catalog Protection in modo che solo le richieste con un token firmato valido possano recuperare i dati relativi ai prodotti e ai prezzi.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 feature_v2:
