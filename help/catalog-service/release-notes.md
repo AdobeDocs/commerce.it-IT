@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 616ad9e9b45a66f127a55ef87dd6c6b9c0b470c8
+source-git-commit: 1375139292fb11df9406948010916dbd2507ef4e
 workflow-type: tm+mt
-source-wordcount: 3024
+source-wordcount: 3063
 ht-degree: 0%
 
 ---
@@ -53,7 +53,13 @@ Gli aggiornamenti sono suddivisi per tipo:
 
 ## Servizio catalogo vetrina
 
-## Giugno 2026
+### Agosto 2026
+
+**Data di rilascio**: 7 agosto 2026
+
+![Correzione](../assets/fix.svg) è stato risolto un problema con la query GraphQL `products` a causa del quale il campo `title` per le opzioni personalizzabili (`inputOptions` e `options`) restituiva erroneamente `null` invece del titolo dell&#39;opzione quando il campo `sku` dell&#39;opzione era vuoto o non indicizzato. <!--DATA-7304-->
+
+### Luglio 2026
 
 **Data di rilascio**: 1 luglio 2026
 
