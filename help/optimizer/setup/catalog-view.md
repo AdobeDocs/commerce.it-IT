@@ -21,9 +21,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 nudge: true
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 42c252f70f6ed1d7a5c1fd2832324308294da264
 workflow-type: tm+mt
-source-wordcount: 1276
+source-wordcount: 1317
 ht-degree: 0%
 
 ---
@@ -78,6 +78,7 @@ In questa sezione, puoi creare una visualizzazione catalogo, selezionare un [cri
 
    - **Utilizzare tutti i listini prezzi disponibili**. Questa opzione consente di estrarre i dati relativi ai prezzi da tutti i listini prezzi disponibili.
    - **Consenti solo listini prezzi selezionati**. Questa opzione visualizza la finestra di dialogo **Aggiungi listini prezzi consentiti**. Utilizzare questa finestra di dialogo per selezionare il listino prezzi specifico da utilizzare per la visualizzazione catalogo.
+   - **Solo listino prezzi dedicato**. Selezionare questa opzione se si applica un solo listino prezzi dedicato. Questa opzione è necessaria se si desidera configurare una vista di catalogo privata, che può fare riferimento a un solo listino prezzi dedicato. Consulta [Restrizione del listino prezzi dedicato alle visualizzazioni di cataloghi privati](private-catalog-view.md#price-book-restriction-on-private-catalog-views).
    - **Disabilita determinazione prezzi**. Questa opzione non è attualmente disponibile.
 
    >[!NOTE]

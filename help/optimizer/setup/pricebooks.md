@@ -13,9 +13,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 42c252f70f6ed1d7a5c1fd2832324308294da264
 workflow-type: tm+mt
-source-wordcount: 384
+source-wordcount: 405
 ht-degree: 0%
 
 ---
@@ -36,6 +36,10 @@ Il listino prezzi base definisce la valuta per se stesso e per tutti i listini p
 
 Dopo aver acquisito i listini prezzi in [!DNL Adobe Commerce Optimizer], puoi visualizzare l&#39;elenco dei listini prezzi e gli ID corrispondenti nella **visualizzazione catalogo** pagina.
 
+>[!NOTE]
+>
+>Una visualizzazione del catalogo privato (con [!UICONTROL Catalog Protection] abilitato) può fare riferimento a un solo listino prezzi dedicato. Consulta [Restrizione del listino prezzi dedicato alle visualizzazioni di cataloghi privati](private-catalog-view.md#price-book-restriction-on-private-catalog-views).
+
 1. Vai a _Configurazione archivio_ e fai clic su **[!UICONTROL Catalog views]**.
 
 1. Fare clic su **[!UICONTROL Create catalog view]**. &#x200B;
@@ -52,6 +56,6 @@ Dopo aver acquisito i listini prezzi in [!DNL Adobe Commerce Optimizer], puoi vi
 | **Fallback listino prezzi** | Il listino prezzi più alto di una gerarchia. Non ha alcun padre ed è il listino prezzi *only* che definisce la valuta per se stesso e per tutti i listini prezzi discendenti.<br/><br/>Se durante la creazione del listino prezzi non è stato definito alcun padre tramite l&#39;API, viene creato un nuovo listino prezzi di fallback. |
 | **Listino prezzi principale** | Un listino prezzi di livello superiore da cui un listino prezzi dedicato figlio può ereditare i prezzi se non sono impostati in modo esplicito nel figlio. |
 | **Profondità gerarchia** | Massimo di tre livelli (Fallback -> Figlio -> Nipote)<br/><br/>non applicato al momento dell&#39;acquisizione. |
-| **Valuta** | Definito solo per il listino prezzi di riserva. Ereditato da tutti i libri prezzi per bambini.<br/><br/>Se non viene specificata la valuta durante la creazione del listino prezzi di fallback (tramite l&#39;API), la valuta predefinita è USD. |
+| **Valuta** | Definito solo per il listino prezzi di riserva. Ereditato da tutti i libri prezzi per bambini.<br/><br/>Se non viene specificata la valuta durante la creazione del listino prezzi di fallback (tramite l&#39;API), la valuta viene impostata automaticamente su USD. |
 | **Prezzo del prodotto** | Il prezzo specifico assegnato a un prodotto (SKU) all’interno di un particolare listino prezzi. |
 | **Sconti** | Gli sconti sono definiti nel prezzo del prodotto. Non ereditato. |

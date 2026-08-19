@@ -17,9 +17,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 16e3405e1500dfd39603b1e300f4625e5a57cf02
 workflow-type: tm+mt
-source-wordcount: 467
+source-wordcount: 642
 ht-degree: 0%
 
 ---
@@ -28,15 +28,30 @@ ht-degree: 0%
 
 Per impostazione predefinita, una [visualizzazione catalogo](catalog-view.md) è pubblica. Abilita la protezione del catalogo in una visualizzazione catalogo per limitare l’accesso alle richieste che includono un token firmato valido.
 
-La protezione del catalogo si applica solo alla vista catalogo selezionata. Non modifica i criteri, i livelli o i listini prezzi della vista.
+La protezione del catalogo si applica solo alla vista catalogo selezionata. Non modifica i criteri o i livelli della vista. La visualizzazione è limitata a un singolo listino prezzi dedicato. Vedere [Limitazione del listino prezzi dedicato alle visualizzazioni di cataloghi privati](#price-book-restriction-on-private-catalog-views).
 
 Consulta i [Casi d&#39;uso per le chiavi di accesso con restrizioni](restricted-access-keys.md#restricted-access-key-use-cases) per esempi su quando proteggere una vista catalogo.
 
 ## Comprendere il limite di protezione
 
-La protezione del catalogo si applica solo alla visualizzazione del catalogo in cui è abilitata. Protegge le richieste di catalogo e di ricerca ma non modifica i criteri o i listini prezzi della visualizzazione, non protegge altre visualizzazioni di catalogo o le operazioni di carrello sicuro, pagamento o ordine.
+La protezione del catalogo si applica solo alla visualizzazione del catalogo in cui è abilitata. Protegge le richieste di cataloghi e di ricerca ma non modifica i criteri o i livelli della visualizzazione, non protegge altre visualizzazioni di catalogo né protegge le operazioni di carrello, pagamento o ordine.
 
 Il back-end Commerce connesso deve applicare in modo indipendente l’idoneità all’acquisto.
+
+## Limitazione del listino prezzi dedicato alle visualizzazioni di cataloghi privati
+
+Una vista catalogo privata può fare riferimento a un solo listino prezzi dedicato. Questo differisce da una vista catalogo pubblica, che può utilizzare più listini prezzi.
+
+Quando [!UICONTROL Catalog Protection] è abilitato, il selettore del listino prezzi nel modulo di visualizzazione catalogo passa da un controllo a selezione multipla a un controllo a selezione singola (pulsante di opzione).
+
+![Limitazione del listino prezzi della visualizzazione catalogo privato](../assets/catalog-view-private-pricebook-restrictions.png)
+
+- Se si abilita [!UICONTROL Catalog Protection] in una visualizzazione catalogo a cui sono assegnati più listini prezzi, non sarà possibile salvare la visualizzazione fino a quando non si rimuove tutti i listini prezzi tranne uno.
+- Se in precedenza è stata salvata una vista catalogo privata con più assegnazioni del listino prezzi dedicato prima dell&#39;esistenza di questa restrizione, la configurazione della vista catalogo non viene modificata automaticamente. Tuttavia, alla successiva modifica della vista, è necessario rimuovere tutti i listini prezzi tranne uno prima di poter salvare gli aggiornamenti.
+
+In ciascuno di questi casi, [!DNL Adobe Commerce Optimizer] visualizza il seguente messaggio di convalida: `A protected catalog view can use only one price book. Select 'Single price book only' to continue.`
+
+Le visualizzazioni del catalogo pubblico non sono interessate da questa restrizione e possono continuare a fare riferimento a più listini prezzi.
 
 ## Proteggere una vista catalogo
 

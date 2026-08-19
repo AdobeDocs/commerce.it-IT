@@ -14,22 +14,22 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 88c74f789dc398afa8f40ee2258450e83f134d87
+source-git-commit: 4235bf48bb5f24a076621ee5985e9e7316fcb1cc
 workflow-type: tm+mt
-source-wordcount: 506
+source-wordcount: 498
 ht-degree: 0%
 
 ---
 
 # Compatibilità per [!DNL Payment Services]
 
-[!DNL Payment Services] è disponibile per Adobe Commerce e Magento Open Source. [!DNL Payment Services] è ora compatibile con Adobe Commerce versioni 2.4.x.
+[!DNL Payment Services] è disponibile per [!DNL Adobe Commerce as a Cloud Service], tutte le versioni supportate di [!DNL Adobe Commerce on Cloud] e on-premise e Magento Open Source. Per informazioni specifiche sulla versione, vedere la pagina [Criteri del ciclo di vita](https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/lifecycle-policy).
 
 ## Prerequisiti
 
-Per utilizzare [!DNL Payment Services], devi prima connettere la tua istanza Commerce. **La connessione è stata configurata una sola volta**.
+Per utilizzare [!DNL Payment Services], devi prima connettere la tua istanza Commerce. **La connessione viene eseguita una sola volta**.
 
-1. Se non sei sicuro che l&#39;istanza sia connessa, passa a **Sistema** > Servizi > **Connettore servizi Commerce** e visualizza i valori delle chiavi API pubblica e privata nelle sezioni Chiavi sandbox e Chiavi di produzione e i campi Progetto e Spazio dati nella sezione Identificatore SaaS. Se tali valori sono presenti, l’istanza è connessa.
+1. Se non sei sicuro che l&#39;istanza sia connessa, passa a **Sistema** > Servizi > **Connettore servizi Commerce** per visualizzare le chiavi API e i dettagli dell&#39;identificatore SaaS. Se tali valori sono presenti, l’istanza è connessa.
 
 1. Se è ancora necessario connettere l&#39;istanza, visualizzare le istruzioni nella pagina [Connettore servizi Commerce](../landing/saas.md).
 
@@ -105,16 +105,16 @@ Per ulteriori informazioni sulla configurazione dell&#39;estensione [!DNL Paymen
 
 >[!ENDTABS]
 
-Per ulteriori informazioni sulla versione e sulle specifiche della versione, consulta le pagine [Ciclo di vita](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=it) e [[!DNL Payment Services] note sulla versione](release-notes.md).
+Per ulteriori informazioni sulla versione e sulle specifiche della versione, consulta le pagine [Ciclo di vita](https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/lifecycle-policy) e [[!DNL Payment Services] note sulla versione](release-notes.md).
 
 Per istruzioni complete e avviare il processo di onboarding, consulta [Introduzione a [!DNL Payment Services]](onboard.md).
 
 ### Carte di credito accettate e valute
 
-[!DNL Payment Services] accetta le valute dei paesi in cui è disponibile. Per ulteriori informazioni sull&#39;impostazione dei tassi di cambio, vedere [Configurazione della valuta](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html?lang=it).
+[!DNL Payment Services] accetta le valute dei paesi in cui è disponibile. Per ulteriori informazioni sull&#39;impostazione dei tassi di cambio, vedere [Configurazione della valuta](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration).
 
 Per ulteriori informazioni sulle valute e sui metodi di pagamento disponibili con i prodotti e i servizi PayPal, consulta le pagine seguenti:
 
-* [Documentazione sulle valute supportate](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
+* [Documentazione sulle valute supportate](https://developer.paypal.com/reports/reference/supported-currencies).
 
-* [Documentazione sui metodi di pagamento](https://developer.paypal.com/docs/checkout/payment-methods/).
+* [Documentazione sui metodi di pagamento](https://developer.paypal.com/payment-methods).
