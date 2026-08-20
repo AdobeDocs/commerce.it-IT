@@ -28,7 +28,7 @@ L&#39;area di lavoro *Ricerca merchandising* elenca la selezione corrente di reg
 
 ## Impostare l&#39;ambito
 
-Se l&#39;installazione di Adobe Commerce include più visualizzazioni dello store, impostare **Ambito** sulla [visualizzazione dello store](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) in cui si applicano le regole.
+Se l&#39;installazione di Adobe Commerce include più visualizzazioni dello store, impostare **Ambito** sulla [visualizzazione dello store](https://experienceleague.adobe.com/it/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) in cui si applicano le regole.
 
 ## Mostra/nascondi colonne
 

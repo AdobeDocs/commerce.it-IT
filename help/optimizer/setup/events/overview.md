@@ -191,4 +191,4 @@ Questa tabella descrive gli eventi utilizzati da ogni tipo di consiglio.
 
 ## Supporto
 
-Se noti eventuali discrepanze di dati o se i consigli e i risultati della ricerca non funzionano come previsto, [invia un ticket di supporto](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+Se noti eventuali discrepanze di dati o se i consigli e i risultati della ricerca non funzionano come previsto, [invia un ticket di supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).

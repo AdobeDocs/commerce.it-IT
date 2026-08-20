@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Facet
 
-Faceting è un metodo di filtro ad alte prestazioni che utilizza più dimensioni di valori di attributo come criteri di ricerca. La ricerca con facet è simile, ma considerevolmente &quot;più intelligente&quot; rispetto alla [navigazione a più livelli](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-layered) standard. L&#39;elenco dei filtri disponibili è determinato dai [attributi filtrabili](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-layered#filterable-attributes) dei prodotti restituiti nei risultati della ricerca.
+Faceting è un metodo di filtro ad alte prestazioni che utilizza più dimensioni di valori di attributo come criteri di ricerca. La ricerca con facet è simile, ma considerevolmente &quot;più intelligente&quot; rispetto alla [navigazione a più livelli](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/navigation/navigation-layered) standard. L&#39;elenco dei filtri disponibili è determinato dai [attributi filtrabili](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/navigation/navigation-layered#filterable-attributes) dei prodotti restituiti nei risultati della ricerca.
 
 [!DNL Live Search] utilizza la query `productSearch`, che restituisce faceting e altri dati specifici di [!DNL Live Search]. Per esempi di codice, fare riferimento a [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) nella documentazione per gli sviluppatori.
 
@@ -45,8 +45,8 @@ Se hai a che fare con un numero elevato di attributi, puoi combinarli in un sing
 
 | Impostazione | Descrizione |
 |--- |--- |
-| [Impostazioni visualizzazione categoria](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/categories-display-settings) | Ancoraggio - `Yes` |
-| [Proprietà attributo](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) | [Tipo di input catalogo](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (solo widget), `Text swatch` (solo widget) |
+| [Impostazioni visualizzazione categoria](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/categories/create/categories-display-settings) | Ancoraggio - `Yes` |
+| [Proprietà attributo](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) | [Tipo di input catalogo](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/product-attributes/attributes-input-types) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (solo widget), `Text swatch` (solo widget) |
 | Proprietà vetrina attributo | Utilizzo in navigazione a livelli dei risultati di ricerca - `Yes` |
 
 ## Aggregazione facet

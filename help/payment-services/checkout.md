@@ -23,7 +23,7 @@ Nella pagina di pagamento viene visualizzato un messaggio di errore per l’acqu
 
 ![Errore durante l&#39;estrazione](assets/user-checkout-error.png "Errore durante l&#39;estrazione"){width="600" zoomable="yes"}
 
-Un commento relativo all&#39;ordine annullato viene visualizzato anche nell&#39;amministratore per un [ordine](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders?lang=en) specifico.
+Un commento relativo all&#39;ordine annullato viene visualizzato anche nell&#39;amministratore per un [ordine](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/order-management/orders/orders?lang=en) specifico.
 
 ![Commento ordine annullato in Admin per ordine](assets/admin-checkout-error.png "Commento ordine annullato in Admin per ordine"){width="600" zoomable="yes"}
 

@@ -23,7 +23,7 @@ ht-degree: 0%
 
 L&#39;estensione [Connessione dati](overview.md) collega i dati Commerce ad Experience Platform. I dati da utilizzare in Experience Platform sono raggruppati in due tipi di comportamento: dati di serie temporali, che appartengono alla classe **Experience Event**, e dati di record, che appartengono alla classe **Individual Profile**.
 
-Ulteriori informazioni su [comportamento dati](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#data-behaviors) e [classi](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#class) in Experience Platform.
+Ulteriori informazioni su [comportamento dati](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/schema/composition#data-behaviors) e [classi](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/schema/composition#class) in Experience Platform.
 
 ## Dati delle serie temporali
 
@@ -39,7 +39,7 @@ Scopri come [creare uno schema](update-xdm.md) in grado di acquisire dati di eve
 
 ## Registra dati
 
-I dati del record forniscono informazioni sugli attributi di un soggetto. Un soggetto potrebbe essere un&#39;organizzazione o un individuo. Ad esempio, un acquirente sul tuo sito crea un account e che genera i dati del record. Questi dati vengono acquisiti in Experience Platform utilizzando uno schema la cui classe è impostata su **Profilo individuale**. Puoi inviare i dati del record al servizio di segmentazione e gestione dei profili di Adobe: [Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview).
+I dati del record forniscono informazioni sugli attributi di un soggetto. Un soggetto potrebbe essere un&#39;organizzazione o un individuo. Ad esempio, un acquirente sul tuo sito crea un account e che genera i dati del record. Questi dati vengono acquisiti in Experience Platform utilizzando uno schema la cui classe è impostata su **Profilo individuale**. Puoi inviare i dati del record al servizio di segmentazione e gestione dei profili di Adobe: [Real-Time CDP](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview).
 
 ### Dati record profilo acquisiti
 

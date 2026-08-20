@@ -35,7 +35,7 @@ Questa guida è destinata agli amministratori di Adobe [!DNL Commerce]. Include 
 
 | Guida | Descrizione |
 |------ | ----------- |
-| [Guida utente di Adobe Commerce 2.4](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) | Documentazione incentrata sui commercianti per Adobe Commerce e Magento Open Source |
+| [Guida utente di Adobe Commerce 2.4](https://experienceleague.adobe.com/it/docs/commerce-admin/user-guides/home) | Documentazione incentrata sui commercianti per Adobe Commerce e Magento Open Source |
 | [Guida per gli sviluppatori di Adobe Commerce 2.4](https://developer.adobe.com/commerce/docs) | Documentazione incentrata sugli sviluppatori utilizzata per creare e personalizzare Adobe Commerce o Magento Open Source |
 
 ## Supporto
@@ -44,6 +44,6 @@ Il [processo di onboarding](installation.md) è progettato per guidarti attraver
 
 Se hai bisogno di informazioni o hai domande che non sono trattate in questa guida, utilizza le risorse seguenti:
 
-* [Centro assistenza](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) per gli articoli sulla risoluzione dei problemi.
-* [Ticket di supporto](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) - Invia un ticket per ricevere ulteriore assistenza.
+* [Centro assistenza](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/overview) per gli articoli sulla risoluzione dei problemi.
+* [Ticket di supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) - Invia un ticket per ricevere ulteriore assistenza.
 * Unisciti al team di progettazione di Adobe Commerce e agli utenti dei servizi di vetrina SaaS nel canale Slack pubblico [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) per essere aggiornato.

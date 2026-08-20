@@ -37,7 +37,7 @@ Quando si abilita [!DNL Catalog Adapter], l&#39;indicizzazione dei prezzi e le o
 
 ## Requisiti
 
-- [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+. Per ulteriori dettagli, vedere [Requisiti di sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
+- [Adobe Commerce](https://business.adobe.com/it/products/magento/magento-commerce.html) 2.4.4+. Per ulteriori dettagli, vedere [Requisiti di sistema](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
 - Nell’ambiente Adobe Commerce deve essere abilitato e configurato uno dei seguenti servizi Commerce:
 
   - [Live Search](../live-search/install.md)
@@ -64,7 +64,7 @@ Utilizzare questo metodo per installare [!DNL Catalog Adapter] per un&#39;istanz
 
    >[!NOTE]
    >
-   >Per informazioni sulla gestione locale degli ambienti di progetto Commerce, vedere [Gestione dei rami con CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/cli-branches) nella _Guida utente di Adobe Commerce on Cloud Infrastructure_.
+   >Per informazioni sulla gestione locale degli ambienti di progetto Commerce, vedere [Gestione dei rami con CLI](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/cli-branches) nella _Guida utente di Adobe Commerce on Cloud Infrastructure_.
 
 1. Consulta il ramo dell’ambiente da aggiornare utilizzando Adobe Commerce Cloud CLI.
 
@@ -94,7 +94,7 @@ Utilizzare questo metodo per installare [!DNL Catalog Adapter] per un&#39;istanz
    git push origin <branch-name>
    ```
 
-   Il push degli aggiornamenti all&#39;ambiente cloud avvia il [processo di distribuzione cloud di Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process) per applicare le modifiche. Controllare lo stato della distribuzione dal [registro distribuzione](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#deploy-log).
+   Il push degli aggiornamenti all&#39;ambiente cloud avvia il [processo di distribuzione cloud di Commerce](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/deploy/process) per applicare le modifiche. Controllare lo stato della distribuzione dal [registro distribuzione](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB Locale]
 

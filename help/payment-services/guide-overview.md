@@ -113,11 +113,11 @@ Per una panoramica delle soluzioni di pagamento predefinite, incluse le funziona
 
 >[!MORELIKETHIS]
 >
-> * [[!DNL Adobe Commerce] 2.4 Guida utente](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home)—Documentazione incentrata sul commerciante per [!DNL Adobe Commerce] e [!DNL Magento Open Source]
-> * [[!DNL Adobe Commerce] 2.4 Guida utente](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home)—Documentazione incentrata sugli sviluppatori utilizzata per generare e personalizzare [!DNL Adobe Commerce] o [!DNL Magento Open Source]
+> * [[!DNL Adobe Commerce] 2.4 Guida utente](https://experienceleague.adobe.com/it/docs/commerce-admin/user-guides/home)—Documentazione incentrata sul commerciante per [!DNL Adobe Commerce] e [!DNL Magento Open Source]
+> * [[!DNL Adobe Commerce] 2.4 Guida utente](https://experienceleague.adobe.com/it/docs/commerce-admin/user-guides/home)—Documentazione incentrata sugli sviluppatori utilizzata per generare e personalizzare [!DNL Adobe Commerce] o [!DNL Magento Open Source]
 > * [Note sulla versione](release-notes.md)—Ulteriori informazioni sulle prossime versioni, sui dettagli del prodotto e sulle versioni di Adobe Commerce che supportano l&#39;estensione [!DNL Payment Services]
-> * [Centro assistenza](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) - Cerca articoli relativi alla risoluzione dei problemi relativi a [!DNL Payment Services] nella Knowledge Base
-> * [Ticket di supporto](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case): i clienti Commerce possono inviare un ticket per ricevere ulteriore assistenza
+> * [Centro assistenza](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/overview) - Cerca articoli relativi alla risoluzione dei problemi relativi a [!DNL Payment Services] nella Knowledge Base
+> * [Ticket di supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case): i clienti Commerce possono inviare un ticket per ricevere ulteriore assistenza
 
 ## Supporto
 

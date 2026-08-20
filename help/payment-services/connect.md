@@ -3,7 +3,7 @@ title: Connetti l’istanza
 description: Connetti la tua istanza di Commerce utilizzando una chiave API e una chiave privata e specifica lo spazio di dati nella configurazione.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Paas
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
 source-wordcount: '698'
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
-> Per ulteriori informazioni, guarda il video [[!DNL Adobe Commerce] Connettore servizi](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector).
+> Per ulteriori informazioni, guarda il video [[!DNL Adobe Commerce] Connettore servizi](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector).
 
 * Se *hai già connesso l&#39;istanza*, ottenendo e utilizzando le credenziali API e configurando Commerce Services, puoi passare a [configurare la sandbox di prova](sandbox.md).
 * Se ancora *devi connettere l&#39;istanza*, consulta le informazioni in questo argomento su [come ottenere le credenziali API](#obtain-api-credentials) e [come configurare Commerce Services](#configure-commerce-services).
@@ -32,11 +32,11 @@ ht-degree: 0%
 
 ## Ottenere le credenziali API
 
-Per utilizzare un servizio SaaS di Commerce, è necessario utilizzare le chiavi API dell&#39;istanza (chiave API pubblica di Commerce e chiave privata) sia per la sandbox che per la produzione, che vengono create e gestite nel [dashboard del mio account](https://account.magento.com/customer/account/login). [È possibile creare la coppia di chiavi](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) per un account Commerce, uno per sandbox e uno per la produzione, anche se è possibile utilizzare attivamente una sola coppia alla volta.
+Per utilizzare un servizio SaaS di Commerce, è necessario utilizzare le chiavi API dell&#39;istanza (chiave API pubblica di Commerce e chiave privata) sia per la sandbox che per la produzione, che vengono create e gestite nel [dashboard del mio account](https://account.magento.com/customer/account/login). [È possibile creare la coppia di chiavi](https://experienceleague.adobe.com/it/docs/commerce-admin/config/services/saas) per un account Commerce, uno per sandbox e uno per la produzione, anche se è possibile utilizzare attivamente una sola coppia alla volta.
 
 >[!NOTE]
 >
->Hai bisogno di assistenza per accedere al tuo dashboard [!UICONTROL My Account]? Consulta [Creare un account Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create).
+>Hai bisogno di assistenza per accedere al tuo dashboard [!UICONTROL My Account]? Consulta [Creare un account Commerce](https://experienceleague.adobe.com/it/docs/commerce-admin/start/commerce-account/commerce-account-create).
 
 Una volta creata, una chiave API pubblica è sempre disponibile nella dashboard Il mio account. Può essere copiata o eliminata in base alle esigenze. La chiave API privata diventa visibile quando crei una chiave API pubblica per sandbox o produzione; è disponibile solo per la copia o il salvataggio dalla finestra di dialogo successiva e non è più accessibile in un secondo momento.
 
@@ -73,7 +73,7 @@ Dopo aver ottenuto le credenziali, è possibile configurare il progetto SaaS e S
 
    >[!INFO]
    >
-   > Per ulteriori informazioni, guarda il video [[!DNL Adobe Commerce] Connettore servizi](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs).
+   > Per ulteriori informazioni, guarda il video [[!DNL Adobe Commerce] Connettore servizi](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs).
 
 ## Endpoint
 
