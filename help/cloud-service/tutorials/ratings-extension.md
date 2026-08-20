@@ -9,22 +9,15 @@ level: Intermediate
 type: Tutorial
 autotag-review: '2026-06-18T16:24:27.547Z'
 TQID: 'https://experienceleague.adobe.com/FozTiUWpL6Ab2eqbbf3nhL-faFHdwBIFOgAkvGe5jXQ'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: d7623f5d42eaa50b95a2f36c244b8a3e78d4c7a9
 workflow-type: tm+mt
-source-wordcount: 1738
+source-wordcount: 1737
 ht-degree: 0%
 
 ---
@@ -120,7 +113,7 @@ Questa sezione ti guida attraverso lo sviluppo di un’estensione di valutazione
 
 1. Esaminare il file `requirements.md` e verificare il piano.
 
-   Se tutto sembra corretto, indicare all&#39;agente di passare alla **Fase 2 - Pianificazione architettura**.
+   Se tutto sembra corretto, indicare all&#39;agente di passare alla **Fase 2 — Pianificazione architettura**.
 
 1. Rivedi il piano dell’architettura.
 
@@ -233,7 +226,7 @@ Prepara l’ambiente della vetrina locale per lo sviluppo.
 
 1. Aprire la cartella vetrina in una nuova finestra Cursore.
 
-   In alternativa, se è installato [Cursor CLI](https://cursor.com/docs/configuration/shell#installing-cli-commands), aprire la finestra utilizzando il comando seguente nel terminale:
+   In alternativa, se è installato [Cursor CLI](https://cursor.com/help/customization/keyboard-shortcuts#installing-cli-commands), aprire la finestra utilizzando il comando seguente nel terminale:
 
    ```bash
    cursor .
@@ -266,8 +259,8 @@ Utilizza l’agente per integrare l’API di valutazione nella pagina dei dettag
 1. L&#39;agente valuta la complessità dell&#39;attività e richiama un flusso di lavoro graduale. Durante la **Fase 1 (Raccolta dei requisiti)**, l&#39;agente crea un documento sui requisiti e pone domande di chiarimento quali:
 
    * Dove deve apparire la valutazione nel PDP?
-   * Deve trattarsi di un nuovo blocco autonomo o di una personalizzazione degli slot all’interno del componente di rilascio PDP esistente?
-   * Cosa deve essere il fallback se l’API non è disponibile o non restituisce dati?
+   * Si tratta di un nuovo blocco autonomo o di una personalizzazione degli slot all&#39;interno del componente di rilascio PDP esistente?
+   * Qual è il fallback se l’API non è disponibile o non restituisce dati?
    * Le valutazioni devono essere visualizzate anche su PLP (elenco prodotti) o solo su PDP?
    * Esistono specifiche o modelli di progettazione?
 
@@ -318,7 +311,7 @@ Utilizza l’agente per integrare l’API di valutazione nella pagina dei dettag
    Dovresti visualizzare le seguenti modifiche nell’ambiente di sviluppo e nel browser:
 
    * Viene creato automaticamente un componente di valutazione del prodotto.
-   * Il componente è integrato nel PDP utilizzando [slot di rilascio](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots/?lang=it) o come blocco autonomo, a seconda dell&#39;architettura scelta.
+   * Il componente è integrato nel PDP utilizzando [slot di rilascio](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots/) o come blocco autonomo, a seconda dell&#39;architettura scelta.
    * Le stelle vengono visualizzate con proporzioni di riempimento appropriate in base ai valori di valutazione dell’API.
 
    ![Pagina dei dettagli del prodotto con le classificazioni a stelle integrate sotto il titolo del prodotto](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}

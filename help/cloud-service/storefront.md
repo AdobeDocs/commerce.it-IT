@@ -5,26 +5,18 @@ feature: Storefront
 role: Developer
 level: Beginner
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 autotag-review: '2026-06-18T16:05:19.363Z'
 TQID: 'https://experienceleague.adobe.com/LoeNTJ-evBJB-TaJV0mEQpD2G2MwxHX7cYHx67kP0cA'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+source-git-commit: 28102ad0dba698e37a69bbae90e3e9cec364ca81
 workflow-type: tm+mt
-source-wordcount: 300
+source-wordcount: 332
 ht-degree: 0%
 
 ---
@@ -33,7 +25,7 @@ ht-degree: 0%
 
 Per configurare [!DNL Adobe Commerce Storefront] con tecnologia [!DNL Edge Delivery Services] per [!DNL Adobe Commerce as a Cloud Service] (SaaS), completare la procedura seguente.
 
-Per informazioni dettagliate e personalizzabili, consulta la [documentazione della vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=it).
+Per informazioni dettagliate e personalizzabili, consulta la [documentazione della vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
 
 1. Aprire lo strumento [creatore del sito](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator).
 
@@ -63,5 +55,6 @@ Per ulteriori informazioni, consulta i seguenti articoli:
 * [Aggiornamento del contenuto della vetrina](./use-cases.md#update-storefront-content): consente di gestire e visualizzare contenuto e dati nella vetrina.
 * [Sperimentazione contestuale](./use-cases.md#contextual-experimentation): crea e gestisci esperimenti nella vetrina.
 * [Genera varianti](./use-cases.md#generate-variations): utilizza IA generativa per automatizzare la generazione di contenuti di alta qualità.
-* [Documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it)—Ottieni informazioni dettagliate sull&#39;aggiornamento del contenuto del sito e sull&#39;integrazione con i componenti front-end e i dati back-end di Commerce.
+* [Documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)—Ottieni informazioni dettagliate sull&#39;aggiornamento del contenuto del sito e sull&#39;integrazione con i componenti front-end e i dati back-end di Commerce.
 * [Servizio di configurazione](https://www.aem.live/docs/config-service-setup): scopri come eseguire la migrazione della configurazione della vetrina da `config.json` per l&#39;utilizzo del servizio di configurazione, che supporta casi di utilizzo avanzati quali la configurazione e le sovrapposizioni senza interruzioni.
+* [Funzioni B2B storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/b2b/#major-features). Informazioni sulle funzionalità B2B disponibili nel pacchetto di compatibilità storefront, che viene installato automaticamente per tutte le [!DNL Adobe Commerce as a Cloud Service] istanze.
