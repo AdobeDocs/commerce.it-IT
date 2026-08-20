@@ -2,9 +2,9 @@
 title: Configurare AEM Assets per Commerce Optimizer
 description: Scopri come configurare l'integrazione di AEM Assets per  [!DNL Adobe Commerce Optimizer].
 feature: CMS, Media, Configuration, Integration
-source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1247'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ L&#39;integrazione di [!DNL Commerce Optimizer] presenta le seguenti limitazioni
 
 Prima di configurare l’integrazione, assicurati di disporre di:
 
-* Un&#39;istanza [!DNL Adobe Commerce Optimizer] attiva con adesione **Product Visuals** (bundle Dynamic Media con funzionalità OpenAPI + [AEM Assets Prime](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-prime)) o una licenza AEM Assets fornita dal cliente (ad esempio, **AEM Assets Ultimate**) con Dynamic Media abilitato.
+* Un&#39;istanza [!DNL Adobe Commerce Optimizer] attiva con adesione **Product Visuals** (bundle Dynamic Media con funzionalità OpenAPI + [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime)) o una licenza AEM Assets fornita dal cliente (ad esempio, **AEM Assets Ultimate**) con Dynamic Media abilitato.
 * Accesso a un ambiente AEM Assets as a Cloud Service.
 * Sia [!DNL Commerce Optimizer] che AEM Assets nella stessa organizzazione Adobe IMS.
 * Dynamic Media con OpenAPI abilitato nell&#39;ambiente AEM Assets (consulta [Configurare il progetto AEM Assets](configure-aem.md#prerequisites) per i passaggi di abilitazione).
@@ -85,7 +85,7 @@ Per integrare AEM Assets con [!DNL Commerce Optimizer], il supporto Adobe deve r
 * Eventi AEM Assets (risorsa approvata, aggiornata, rimossa)
 * [!DNL Commerce Optimizer] eventi catalogo (prodotto creato, aggiornato)
 
-Per avviare il processo, [creare un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) che includa le seguenti informazioni:
+Per avviare il processo, [creare un ticket di supporto](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) che includa le seguenti informazioni:
 
 * **[!DNL Adobe Commerce Optimizer]ID tenant** (ID istanza) trovato nell&#39;URL [!DNL Commerce Optimizer] o nell&#39;interfaccia utente di Commerce Cloud Manager.
 * **ID programma AEM e ID ambiente** che hai configurato quando [hai configurato AEM Assets](#configure-aem-assets-first) per l&#39;integrazione.

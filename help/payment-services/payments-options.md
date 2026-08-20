@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 379345261bebe5bee9cdbcb6fd3b0ce6275df6ea
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '2326'
+source-wordcount: '2328'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,7 @@ L&#39;estrazione di [!DNL Google Pay] **express** può mostrare **metodi di sped
 * I codici aggiunti nel foglio paga [!DNL Google Pay] possono essere rimossi solo dal foglio paga, non dalla pagina del carrello di Commerce.
 * In Adobe Commerce 2.4.4-2.4.6, la riga di sconto nel foglio paga di [!DNL Google Pay] potrebbe non mostrare alcun valore a causa di una limitazione della piattaforma.
 * In Adobe Commerce 2.4.7, il valore dello sconto potrebbe non essere visualizzato nel foglio paga [!DNL Google Pay] per alcuni prodotti (principalmente prodotti scaricabili) a causa di una limitazione della piattaforma nella risposta di GraphQL.
-* Se viene applicata una regola [del prezzo del carrello](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html?lang=it) automatica (ad esempio, &quot;$50 di sconto quando si spendono più di $200&quot;), questa viene combinata con qualsiasi codice applicato dall&#39;acquirente nel foglio paga. I totali visualizzati nel foglio paga [!DNL Google Pay] potrebbero essere diversi dal riepilogo dell&#39;ordine.
+* Se viene applicata una regola [del prezzo del carrello](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart) automatica (ad esempio, &quot;$50 di sconto quando si spendono più di $200&quot;), questa viene combinata con qualsiasi codice applicato dall&#39;acquirente nel foglio paga. I totali visualizzati nel foglio paga [!DNL Google Pay] potrebbero essere diversi dal riepilogo dell&#39;ordine.
 
 ### [!DNL PayPal Payment Buttons]
 
@@ -201,14 +201,14 @@ Per **acquisire pagamenti con _solo_ pulsanti di pagamento PayPal (_non_ l&#39;o
 
 1. Assicurati che l&#39;archivio sia [in modalità di produzione](configure-admin.md#general-configuration).
 1. [Configura i pulsanti di pagamento PayPal desiderati](configure-admin.md#paypal-payment-buttons) in Impostazioni.
-1. Disattiva _l&#39;opzione **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;nella sezione&#x200B;_[!UICONTROL Payment buttons]_._
+1. Disattiva _l&#39;opzione **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**nella sezione_[!UICONTROL Payment buttons]_._
 
 Per **acquisire i pagamenti con il provider di carte di credito esistente _e_ i pulsanti di pagamento PayPal**:
 
 1. Assicurati che l&#39;archivio sia [in modalità di produzione](configure-admin.md#general-configuration).
 1. [Configura i pulsanti di pagamento PayPal desiderati](configure-admin.md#paypal-payment-buttons).
-1. Disattiva _l&#39;opzione **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;nella sezione&#x200B;_[!UICONTROL Payment buttons]_._
-1. Disattiva _l&#39;opzione **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)**&#x200B;nella sezione&#x200B;_[!UICONTROL Credit card fields]_ e utilizza l&#39;account [provider di carte di credito esistente](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=it#payments)._
+1. Disattiva _l&#39;opzione **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**nella sezione_[!UICONTROL Payment buttons]_._
+1. Disattiva _l&#39;opzione **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)**nella sezione_[!UICONTROL Credit card fields]_ e utilizza l&#39;account [provider di carte di credito esistente](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments#payments)._
 
 ## Metodi di pagamento locali
 
@@ -249,7 +249,7 @@ Per abilitare i pulsanti di pagamento rapido, configura singolarmente ogni metod
 
 ## Opzioni di pagamento
 
-Con [!DNL Payment Services] puoi configurare l&#39;esperienza di pagamento per Adobe Commerce in base alle preferenze e ai comportamenti degli acquirenti. Caratteristiche quali il vaulting con carta di credito [1&rbrace; e lo svuotamento automatico dell&#39;ordine garantiscono ai clienti una transazione semplice e senza problemi.](vaulting.md)
+Con [!DNL Payment Services] puoi configurare l&#39;esperienza di pagamento per Adobe Commerce in base alle preferenze e ai comportamenti degli acquirenti. Caratteristiche quali il vaulting con carta di credito [1} e lo svuotamento automatico dell&#39;ordine garantiscono ai clienti una transazione semplice e senza problemi.](vaulting.md)
 
 Con Adobe Commerce e Magento Open Source [!DNL Payment Services], sono disponibili più esperienze di pagamento. Esistono comportamenti diversi per ogni metodo di pagamento a seconda della posizione in cui sei nel processo di pagamento:
 

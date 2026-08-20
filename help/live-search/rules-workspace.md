@@ -3,13 +3,11 @@ title: Cerca in Merchandising Workspace
 description: Scopri come utilizzare l’area di lavoro Search Merchandising.
 exl-id: 8cf581b5-cf83-48aa-86ab-39dea8da2ee5
 TQID: https://experienceleague.adobe.com/FB1DxWHgpPtH5J-TiH4XU8SYmP3x8dEobWQsSrQXG4c
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 586
+source-wordcount: 583
 ht-degree: 1%
 
 ---
@@ -28,7 +26,7 @@ L&#39;area di lavoro *Ricerca merchandising* elenca la selezione corrente di reg
 
 ## Impostare l&#39;ambito
 
-Se l&#39;installazione di Adobe Commerce include più visualizzazioni dello store, impostare **Ambito** sulla [visualizzazione dello store](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=it#scope-settings) in cui si applicano le regole.
+Se l&#39;installazione di Adobe Commerce include più visualizzazioni dello store, impostare **Ambito** sulla [visualizzazione dello store](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) in cui si applicano le regole.
 
 ## Mostra/nascondi colonne
 

@@ -3,17 +3,13 @@ title: Gestisci facet
 description: Scopri come gestire i  [!DNL Live Search]  facet esistenti.
 exl-id: 5062bb1f-ce6f-4244-a1df-65ae1ce868b9
 TQID: https://experienceleague.adobe.com/KWh5KwVRNJO3XLiG9xbqhBsGkt99BgY0hPnPbxDd8vY
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 481
+source-wordcount: 482
 ht-degree: 0%
 
 ---
@@ -45,7 +41,7 @@ Consulta [Impostazioni](settings.md) per configurare intervalli e raggruppamenti
 
 1. Per modificare l&#39;etichetta del facet, effettuate una delle seguenti operazioni:
 
-   * Per una vetrina [!DNL Commerce], modifica l&#39;[etichetta attributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=it).
+   * Per una vetrina [!DNL Commerce], modifica l&#39;[etichetta attributo](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes).
    * Per un’implementazione headless, fai clic sul valore nella prima colonna e modifica il testo in base alle esigenze.
 
    ![Modifica etichetta](assets/facet-edit-label.png)

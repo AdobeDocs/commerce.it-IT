@@ -3,15 +3,12 @@ title: Prestazioni
 description: L'area di lavoro Prestazioni di  [!DNL Live Search]  fornisce ad insight i termini di ricerca utilizzati dagli acquirenti.
 exl-id: 07a63df8-b981-4913-841a-7e81ec634281
 TQID: https://experienceleague.adobe.com/COyaQi4zdeb4Uyf7XV1iYJa-bbDkEP-Os59bmfdLV0w
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 668
+source-wordcount: 673
 ht-degree: 0%
 
 ---
@@ -26,7 +23,7 @@ L&#39;area di lavoro *Performance* fornisce ad insight i termini di ricerca util
 
 ![Prestazioni](assets/performance-unique-searches.png)
 
-Per ulteriori informazioni sulla sincronizzazione dei dati, è inoltre possibile fare riferimento a [Dashboard di gestione dati](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=it).
+Per ulteriori informazioni sulla sincronizzazione dei dati, è inoltre possibile fare riferimento a [Dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard).
 
 >[!NOTE]
 >
@@ -47,7 +44,7 @@ Per ulteriori informazioni sulla sincronizzazione dei dati, è inoltre possibile
 
 | Dati snapshot | Descrizione | Esempio di calcolo |
 |--- |--- |--- |
-| Ricerche univoche | Numero totale di ricerche univoche per l’intervallo di date specificato. Le ricerche multiple dello stesso acquirente, anche se per la stessa query, sono considerate univoche se inviate a più di un&#39;ora di distanza. | **Esempio:**<br /> Ricerche:<br />- &quot;pantaloni&quot; alle 10:00<br />- &quot;pantaloni&quot; alle 10:30 AM (entro 1 ora → non univoco)<br />- &quot;pantaloni&quot; alle 12:00 PM (dopo 1 ora → univoco)<br />- &quot;camicia&quot; alle 1:00<br /><br />**Ricerche univoche totali = 3** |
+| Ricerche univoche | Numero totale di ricerche univoche per l’intervallo di date specificato. Le ricerche multiple dello stesso acquirente, anche se per la stessa query, sono considerate univoche se inviate a più di un&#39;ora di distanza. | **Esempio:**<br /> Ricerche:<br />- &quot;pantaloni&quot; alle 10:00 AM<br />- &quot;pantaloni&quot; alle 10:30 AM (entro 1 ora → non univoca)<br />- &quot;pantaloni&quot; alle 12:00 PM (dopo 1 ora → univoca)<br />- &quot;camicia&quot; alle 13:00 PM <br /><br />**Ricerche univoche totali = 3** |
 | Tasso di click-through | La percentuale di ricerche che si concludono con il cliente che fa clic su un prodotto. Ad esempio, il tasso di click-through è del 50% se l’acquirente cerca &quot;pantaloni&quot; e &quot;camicia&quot; e poi fa clic su un risultato nella ricerca &quot;camicia&quot;. | **Formula:**<br /> Percentuale di click-through = Ricerche con clic ≥1 ÷ Totale ricerche univoche <br /><br />**Esempio:**<br /> Totale ricerche univoche = 4<br />Ricerche con almeno un clic = 2<br /><br />CTR = 2 ÷ 4 = **50%** |
 | Tasso di conversione | La percentuale di prodotti acquistati dal cliente rispetto al numero di prodotti su cui il cliente fa clic per l’intervallo di date specificato. Ad esempio, il tasso di conversione dell’interazione è del 100% se l’acquirente visualizza sei prodotti nella finestra a comparsa, fa clic su uno e effettua un acquisto. <br /><br />Il tasso di conversione non è influenzato dal numero di visualizzazioni di un determinato prodotto. Ad esempio, il tasso di conversione rimane lo stesso se l’acquirente utilizza la ricerca, ma non fa clic su alcun prodotto. | **Formula:**<br /> Tasso di conversione = Prodotti acquistati ÷ Totale prodotti selezionati <br /><br />**Esempio 1:**<br /> Prodotti selezionati = 5<br />Prodotti acquistati = 2<br /><br />CVR = 2 ÷ 5 = **40%**<br /><br />**Esempio 2 (aggregazione di 5 ore):**<br /> Clic per ora: 4, 5, 6, 10, 2<br />Acquisti per ora: 1, 3, 0, 4, 1<br /><br />Clic totali = 4 + 5 + 6 + 10 + 2 = 27<br />Acquisti totali = 1 + 3 + 0 + 4 + 9<br /><br />CVR = 9 ÷ 27 = **33,33%** |
 | Percentuale risultati zero | Percentuale di ricerche univoche che non restituisce alcun risultato per l’intervallo di date specificato. Ad esempio, il tasso di risultati zero è 66,67% se il cliente cerca &quot;fjjajfjfjf&quot; due volte (senza risultati) e &quot;pantaloni&quot; una volta (con risultati). | **Formula:**<br /> Percentuale zero risultati = Ricerche univoche con zero risultati ÷ Totale ricerche univoche <br /><br />**Esempio:**<br /> Totale ricerche univoche = 3<br />Ricerche con zero risultati = 2<br /><br />Percentuale zero risultati = 2 ÷ 3 = **66,67%** |

@@ -3,18 +3,13 @@ title: Aggiungi regole
 description: Scopri come creare regole di Search Merchandising.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
 TQID: https://experienceleague.adobe.com/QnJ-q-Y-ccQ7HKEt2RgPYQFeWcBnhjwSDOtKjlF7Rp0
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 657c4b3123407580dfeb2c021a5a1ba515e82115
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 2547
+source-wordcount: 2561
 ht-degree: 0%
 
 ---
@@ -26,7 +21,7 @@ Per creare una regola, il primo passaggio consiste nell’utilizzare l’editor 
 ## Aggiungi una regola
 
 1. In Amministrazione, vai a **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
-1. Imposta **Ambito** per identificare la [visualizzazione archivio](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=it#scope-settings) in cui si applica la regola.
+1. Imposta **Ambito** per identificare la [visualizzazione archivio](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) in cui si applica la regola.
 1. Fare clic sull&#39;area di lavoro **Ricerca merchandising**.
 1. Fai clic su **Aggiungi regola** per avviare l&#39;editor di regole.
 
@@ -136,8 +131,8 @@ Per **regole di ricerca** (e la query di prova nell&#39;editor regole), la class
 
 * **Rilevanza testuale**: il fattore dominante nel punteggio. Questo misura se il nome, la descrizione e gli attributi di un prodotto corrispondono alla query di ricerca. Il punteggio di rilevanza del testo è illimitato (non ha un limite superiore specifico) ed è influenzato da fattori come:
 
-   * Frequenza di occorrenza delle parole corrispondenti.
-   * Lunghezza (in lettere) dei nomi/delle descrizioni dei prodotti.
+  * Frequenza di occorrenza delle parole corrispondenti.
+  * Lunghezza (in lettere) dei nomi/delle descrizioni dei prodotti.
 
 * **Segnali comportamentali**: aumento limitato applicato al punteggio di rilevanza del testo. Quando selezioni una strategia di classificazione intelligente come &quot;Più visualizzato&quot; o &quot;Più acquistato&quot;, i prodotti con segnali comportamentali più elevati ricevono un peso relativo maggiore. La forza di questo peso è controllata da **[!UICONTROL Intelligent Ranking Boost]** (vedi [Aumento classificazione intelligente](#intelligent-ranking-boost)); l&#39;aumento rimane limitato, ma puoi aumentare quanto sposta l&#39;ordine.
 
@@ -164,11 +159,11 @@ Consulta [regole di ricerca](./best-practice.md#search-rules) per scoprire come 
 * Gli apostrofi e le citazioni nelle interrogazioni possono portare ad alcuni problemi minori di classificazione e rilevanza in alcune lingue.
 * Per garantire il corretto funzionamento della classificazione intelligente, assicurati che il **Peso di ricerca** per tutti gli attributi di prodotto utilizzati per la ricerca o il filtraggio (facet) sia pari o inferiore a `5`. Per trovare questa impostazione nell&#39;amministratore [!DNL Commerce]:
 
-   1. Seleziona **Archivi** > _Attributi_ > **Prodotto**.
-   1. Cerca l’attributo, ad esempio &quot;name&quot;.
-   1. Nella pagina **Informazioni attributo** > **Proprietà storefront**, impostare lo spessore della ricerca su minore o uguale a `5`.
+  1. Seleziona **Archivi** > _Attributi_ > **Prodotto**.
+  1. Cerca l’attributo, ad esempio &quot;name&quot;.
+  1. Nella pagina **Informazioni attributo** > **Proprietà storefront**, impostare lo spessore della ricerca su minore o uguale a `5`.
 
-      ![Prodotto - Peso ricerca](assets/set-search-weight.png)
+     ![Prodotto - Peso ricerca](assets/set-search-weight.png)
 
 >[!NOTE]
 >
