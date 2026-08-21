@@ -4,9 +4,9 @@ description: Scopri come gestire i prodotti esauriti in [!DNL Live Search] per A
 feature: Services, Search
 role: Admin, Developer
 level: Intermediate
-source-git-commit: bc8f35434c9f01f1a920745fe42617df2003ca60
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Utilizzare questo approccio quando non si instrada la richiesta tramite il [widg
 Per mantenere i prodotti esauriti nel set di risultati ma sempre dopo i prodotti in magazzino quando si ordina per rilevanza, Adobe può abilitare un flag di funzione interno per il tuo ambiente.
 
 - Questo flag di funzione non è esposto nell&#39;interfaccia utente di amministrazione di [!DNL Live Search].
-- Per richiederlo, [contatta il supporto Adobe](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"} e fai riferimento alla funzionalità per spostare i prodotti esauriti alla fine dei risultati della ricerca.
+- Per richiederlo, [contatta il supporto Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"} e fai riferimento alla funzionalità per spostare i prodotti esauriti alla fine dei risultati della ricerca.
 
 >[!NOTE]
 >

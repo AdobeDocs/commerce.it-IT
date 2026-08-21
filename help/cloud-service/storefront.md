@@ -22,9 +22,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 28102ad0dba698e37a69bbae90e3e9cec364ca81
 workflow-type: tm+mt
-source-wordcount: 300
+source-wordcount: 332
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Per informazioni dettagliate e personalizzabili, consulta la [documentazione del
 
 1. Nel campo **[!UICONTROL Commerce GraphQL Endpoint (optional)]**, immetti l&#39;endpoint GraphQL [!DNL Adobe Commerce as a Cloud Service] (SaaS), a cui puoi accedere in Commerce Cloud Manager dopo [la creazione dell&#39;istanza](./getting-started.md#create-an-instance).
 
-   In alternativa, se utilizzi [[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic), immetti l&#39;endpoint GraphQL [!DNL API Mesh] nel campo **[!UICONTROL Commerce GraphQL Endpoint (optional)]**. Per ulteriori informazioni, vedere [creare una mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh).
+   In alternativa, se utilizzi [[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/), immetti l&#39;endpoint GraphQL [!DNL API Mesh] nel campo **[!UICONTROL Commerce GraphQL Endpoint (optional)]**. Per ulteriori informazioni, vedere [creare una mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh).
 
 1. Fare clic su **[!UICONTROL Create Site]**. Segui le istruzioni visualizzate per autorizzare l’accesso all’archivio GitHub.
 
@@ -65,3 +65,4 @@ Per ulteriori informazioni, consulta i seguenti articoli:
 * [Genera varianti](./use-cases.md#generate-variations): utilizza IA generativa per automatizzare la generazione di contenuti di alta qualità.
 * [Documentazione di Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it)—Ottieni informazioni dettagliate sull&#39;aggiornamento del contenuto del sito e sull&#39;integrazione con i componenti front-end e i dati back-end di Commerce.
 * [Servizio di configurazione](https://www.aem.live/docs/config-service-setup): scopri come eseguire la migrazione della configurazione della vetrina da `config.json` per l&#39;utilizzo del servizio di configurazione, che supporta casi di utilizzo avanzati quali la configurazione e le sovrapposizioni senza interruzioni.
+* [Funzioni B2B storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/b2b/?lang=it#major-features). Informazioni sulle funzionalità B2B disponibili nel pacchetto di compatibilità storefront, che viene installato automaticamente per tutte le [!DNL Adobe Commerce as a Cloud Service] istanze.

@@ -11,9 +11,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 500
+source-wordcount: 501
 ht-degree: 0%
 
 ---
@@ -68,4 +68,4 @@ Nella tabella seguente sono elencate le pagine iniziali in cui è possibile inse
 | Dettagli prodotto | Nella parte inferiore del contenuto principale (impostazione predefinita) | Più visualizzati<br>Più acquistati<br>Più aggiunti al carrello<br>Ha visualizzato questo, ha visualizzato questo<br>Ha visualizzato questo, ha acquistato quello<br>Ha acquistato questo, ha acquistato quello<br>Altri elementi simili a questo<br>Di tendenza<br>Somiglianza visiva |
 | Carrello | Nella parte inferiore del contenuto principale (impostazione predefinita) | Più visualizzati<br>Più acquistati<br>Più aggiunti al carrello<br>Ha visualizzato questo, ha visualizzato questo<br>Ha visualizzato questo, ha acquistato quello<br>Ha acquistato questo, ha acquistato quello<br>Altri argomenti simili<br>Di tendenza |
 | Conferma | Nella parte inferiore del contenuto principale (impostazione predefinita) | Più visualizzati<br>Più acquistati<br>Più aggiunti al carrello<br>Ha visualizzato questo, ha visualizzato questo<br>Ha visualizzato questo, ha acquistato quello<br>Ha acquistato questo, ha acquistato quello<br>Altri argomenti simili<br>Di tendenza |
-| Page Builder | [Trascina](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=it) per posizionare il tipo di contenuto | Più visualizzati<br>Più acquistati<br>Più aggiunti al carrello<br>Consigliati<br>Di tendenza |
+| Page Builder | [Trascina](https://experienceleague.adobe.com/it/docs/commerce-admin/page-builder/add-content/recommendations) per posizionare il tipo di contenuto | Più visualizzati<br>Più acquistati<br>Più aggiunti al carrello<br>Consigliati<br>Di tendenza |

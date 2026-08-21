@@ -17,9 +17,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 738
+source-wordcount: 744
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 La raccolta dati per [!DNL Product Recommendations] non include informazioni personali identificabili (PII). Tutti gli identificatori utente, come gli ID cookie e gli indirizzi IP, sono rigorosamente anonimi. Per ulteriori informazioni, consulta [Informativa sulla privacy di Adobe](https://www.adobe.com/privacy/policy.html).
 
-Per ulteriori informazioni sulla sincronizzazione dei dati, vedere [Dashboard di gestione dati](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=it).
+Per ulteriori informazioni sulla sincronizzazione dei dati, vedere [Dashboard di gestione dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard).
 
 ## Dove vengono visualizzati i consigli
 
@@ -58,7 +58,7 @@ Scegli la documentazione che corrisponde alla tua vetrina:
 
 ## Consigli di prodotto e relazioni di prodotto
 
-Date le complessità in continua evoluzione dello shopping online, ciò che funziona meglio per la vetrina è spesso una combinazione di più tecnologie chiave. L&#39;utilizzo di [!DNL Product Recommendations] e [relazioni tra prodotti](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html?lang=it) offre maggiore flessibilità durante la promozione dei prodotti. Puoi sfruttare [!DNL Product Recommendations] con tecnologia Adobe AI per automatizzare in modo intelligente i consigli su larga scala. Puoi quindi sfruttare le [Regole prodotto correlate](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html?lang=it) quando devi intervenire manualmente e assicurarti che sia stato fatto un consiglio specifico a un segmento di acquirenti target o quando devono essere raggiunti determinati obiettivi aziendali.
+Date le complessità in continua evoluzione dello shopping online, ciò che funziona meglio per la vetrina è spesso una combinazione di più tecnologie chiave. L&#39;utilizzo di [!DNL Product Recommendations] e [relazioni tra prodotti](https://experienceleague.adobe.com/it/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships) offre maggiore flessibilità durante la promozione dei prodotti. Puoi sfruttare [!DNL Product Recommendations] con tecnologia Adobe AI per automatizzare in modo intelligente i consigli su larga scala. Puoi quindi sfruttare le [Regole prodotto correlate](https://experienceleague.adobe.com/it/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules) quando devi intervenire manualmente e assicurarti che sia stato fatto un consiglio specifico a un segmento di acquirenti target o quando devono essere raggiunti determinati obiettivi aziendali.
 
 I consigli sui prodotti consentono di:
 
@@ -82,4 +82,4 @@ Se nell&#39;ambiente è presente un **catalogo vuoto** 45 giorni dopo la creazio
 
 ### Riattiva dati catalogo
 
-Per ripristinare i dati del catalogo dopo la sospensione, [invia una richiesta di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) con il titolo &quot;Riattiva [!DNL Product Recommendations]&quot; e includi gli ID ambiente. I dati del catalogo devono essere ripristinati entro un paio d’ore.
+Per ripristinare i dati del catalogo dopo la sospensione, [invia una richiesta di supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) con il titolo &quot;Riattiva [!DNL Product Recommendations]&quot; e includi gli ID ambiente. I dati del catalogo devono essere ripristinati entro un paio d’ore.

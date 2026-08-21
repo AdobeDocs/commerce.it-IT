@@ -15,9 +15,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 last-update: 2026-07-29
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 971
+source-wordcount: 966
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Per richiedere e ricevere i dati di prodotto da un&#39;istanza di Commerce utili
 >
 >Se utilizzi Adobe Commerce as a Cloud Service, nell’ambiente è disponibile la versione più recente del metapackage. Per iniziare a utilizzare i servizi, vedere [Guida introduttiva a Catalog Service](get-started.md).
 >
->Per le implementazioni della vetrina Commerce tramite Adobe Commerce Optimizer, consulta la [Guida per gli sviluppatori di servizi di merchandising per Adobe Commerce Optimizer](https://developer-stage.adobe.com/commerce/services/optimizer/).
+>Per le implementazioni della vetrina Commerce tramite Adobe Commerce Optimizer, consulta la [Guida per gli sviluppatori di servizi di merchandising per Adobe Commerce Optimizer](https://developer.adobe.com/commerce/services/optimizer/).
 
 
 ## Requisiti di sistema
@@ -91,7 +91,7 @@ Utilizzare questo metodo per installare [!DNL Catalog Service] per un&#39;istanz
 
    >[!NOTE]
    >
-   >Per informazioni sulla gestione locale degli ambienti di progetto Commerce, vedere [Gestione dei rami con CLI](https://experienceleague.adobe.com/it/docs/commerce-cloud-service/user-guide/develop/cli-branches) nella _Guida utente di Adobe Commerce on Cloud Infrastructure_.
+   >Per informazioni sulla gestione locale degli ambienti di progetto Commerce, vedere [Gestione dei rami con CLI](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/cli-branches) nella _Guida utente di Adobe Commerce on Cloud Infrastructure_.
 
 1. Consulta il ramo dell’ambiente da aggiornare utilizzando Adobe Commerce Cloud CLI.
 
@@ -173,7 +173,7 @@ Per integrare Catalog Service con l&#39;istanza Adobe Commerce dopo l&#39;instal
 
 Per garantire il corretto funzionamento dell’esportazione del catalogo:
 
-- [Verificare che i processi cron siano in esecuzione](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+- [Verificare che i processi cron siano in esecuzione](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-39832).
 - Verificare che gli indicizzatori siano in esecuzione da [Admin](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/index-management) o utilizzando il comando CLI di Commerce `bin/magento indexer:info`.
 - Verificare che gli indici `Catalog Attributes Feed, Product Feed, Product Overrides Feed` e `Product Variant Feed` siano impostati su `Update by Schedule`.
 

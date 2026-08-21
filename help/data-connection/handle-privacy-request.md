@@ -21,9 +21,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 598
+source-wordcount: 595
 ht-degree: 1%
 
 ---
@@ -41,8 +41,8 @@ Per ulteriori informazioni su Privacy Service e su come creare e gestire le rich
 
 È possibile inviare singole richieste per accedere ed eliminare i dati dei consumatori da [!DNL Commerce] in due modi:
 
-* Tramite l&#39;**interfaccia utente di Privacy Service**. Consulta la documentazione [qui](https://experienceleague.adobe.com/it/docs/experience-platform/privacy/ui/user-guide#_blank).
-* Tramite **API Privacy Service**. Consulta la documentazione [qui](https://developer.adobe.com/experience-platform-apis/references/privacy-service/#_blank) e le informazioni API [qui](https://developer.adobe.com/experience-platform-apis/#_blank).
+* Tramite l&#39;**interfaccia utente di Privacy Service**. Consulta la documentazione [qui](https://experienceleague.adobe.com/it/docs/experience-platform/privacy/ui/user-guide){target="_blank"}.
+* Tramite **API Privacy Service**. Consulta la documentazione [qui](https://developer.adobe.com/experience-platform-apis/references/privacy-service){target="_blank"} e le informazioni API [qui](https://developer.adobe.com/experience-platform-apis/){target="_blank"}.
 
 Privacy Service supporta due tipi di richieste: **accesso ai dati** e **eliminazione dati**.
 

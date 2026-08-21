@@ -10,9 +10,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 645
+source-wordcount: 646
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Quando si installa il modulo Consigli di prodotto, Adobe Commerce crea la direct
 
 `<your theme>/Magento_ProductRecommendationsLayout/web/template/recommendations.html`
 
-Per ulteriori informazioni sulla modifica dei file modello, consultare [Personalizzazione modello](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough/) nella Guida per gli sviluppatori di Frontend.
+Per ulteriori informazioni sulla modifica dei file modello, consultare [Personalizzazione modello](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough) nella Guida per gli sviluppatori di Frontend.
 
 Se modifichi il file `recommendations.html`, devi mantenere i seguenti tag nel file per garantire che Adobe Commerce possa raccogliere le metriche dei consigli dalla vetrina:
 
@@ -121,7 +121,7 @@ Ad esempio, se il tuo negozio vende alcuni prodotti biologici, potresti avere un
 
 ![Aggiungi badge](assets/unit-custom.png)
 
-Per assicurarsi che un attributo di prodotto personalizzato sia disponibile quando si esegue il rendering dell&#39;unità di consigli sulla pagina, impostare la proprietà `Used in Product Listing` su `Yes` nella pagina [Attributi di prodotto](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=it) dell&#39;amministratore.
+Per assicurarsi che un attributo di prodotto personalizzato sia disponibile quando si esegue il rendering dell&#39;unità di consigli sulla pagina, impostare la proprietà `Used in Product Listing` su `Yes` nella pagina [Attributi di prodotto](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) dell&#39;amministratore.
 
 Quando questa proprietà è impostata, il payload JSON include un oggetto `attributes` che contiene un array di codici e valori di attributo. Puoi quindi applicare uno stile di vetrina personalizzato in base a questi valori di attributo, ad esempio aggiungendo speciali trattamenti visivi o badge come indicato in precedenza.
 

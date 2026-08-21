@@ -18,9 +18,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1415
+source-wordcount: 1421
 ht-degree: 0%
 
 ---
@@ -49,9 +49,9 @@ Adobe Commerce offre diverse opzioni per la ricerca del sito. Rivedi i limiti e 
 ## Indicizzazione
 
 - [!DNL Live Search] [indici](indexing.md) fino a un totale di 450 attributi di prodotto per visualizzazione archivio. Questi sono distribuiti come segue:
-   - 50 attributi ordinabili
-   - 200 attributi filtrabili
-   - 200 attributi ricercabili
+  - 50 attributi ordinabili
+  - 200 attributi filtrabili
+  - 200 attributi ricercabili
 - [!DNL Live Search] indicizza solo i prodotti dal database di Adobe Commerce.
 - Le pagine CMS non sono indicizzate.
 - Gli attributi SKU, nome e categoria sono ricercabili per impostazione predefinita e non possono essere esclusi dalla ricerca. Assicurati di annullare l’assegnazione dei prodotti dalle categorie se non sono destinati a essere in tali categorie.
@@ -59,7 +59,7 @@ Adobe Commerce offre diverse opzioni per la ricerca del sito. Rivedi i limiti e 
 ## Facet
 
 - Dal set di attributi filtrabili definiti, è possibile configurare fino a 100 attributi come facet.
-- All’interno di un facet, è possibile restituire fino a 100 bucket. Se devi restituire più di 100 bucket, [crea un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) in modo che Adobe possa analizzare l&#39;impatto sulle prestazioni e determinare se è possibile aumentare questo limite per il tuo ambiente.
+- All’interno di un facet, è possibile restituire fino a 100 bucket. Se devi restituire più di 100 bucket, [crea un ticket di supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) in modo che Adobe possa analizzare l&#39;impatto sulle prestazioni e determinare se è possibile aumentare questo limite per il tuo ambiente.
 - I facet dinamici possono causare problemi di prestazioni in indici e indici di grandi dimensioni con elevata ordinalità. Se hai creato facet dinamici e noti un deterioramento delle prestazioni o una pagina non caricata con errori di timeout, prova a modificare i facet in modo che siano bloccati per determinare se questo risolve il problema di prestazioni.
 - Lo stato del titolo (`quantity_and_stock_status`) non è supportato come facet. Nell&#39;amministratore è possibile impostare [!UICONTROL Display Out of Stock Products] = [!UICONTROL No] per filtrare i prodotti in stock. Supporto predefinito nel modulo `[PLP Widget](plp-styling.md)`. Per ulteriori dettagli, vedere [Gestione prodotti esauriti](manage-out-of-stock-products.md).
 - Gli attributi del tipo di data non sono supportati come facet.
@@ -100,9 +100,9 @@ Adobe Commerce offre diverse opzioni per la ricerca del sito. Rivedi i limiti e 
 
 - I prodotti non vengono visualizzati se non vengono aggiunti a un catalogo condiviso predefinito.
 - Per limitare i gruppi di clienti utilizzando [autorizzazioni categoria](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/categories/category-permissions):
-   - I prodotti devono essere assegnati alla categoria principale. (**Nota:** è possibile rimuovere questa limitazione aggiornando l&#39;estensione SaaS Data Export alla versione 103.4.0+. Consulta [Gestire l&#39;estensione di esportazione dei dati](../data-export/manage-extension.md).
-   - Al gruppo di clienti &quot;Non connesso&quot; devono essere assegnate autorizzazioni di navigazione &quot;Consenti&quot;.
-   - Per limitare i prodotti al gruppo di clienti &quot;Non connesso&quot;, vai a ogni categoria e imposta le autorizzazioni per ogni [gruppo di clienti](https://experienceleague.adobe.com/it/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
+  - I prodotti devono essere assegnati alla categoria principale. (**Nota:** è possibile rimuovere questa limitazione aggiornando l&#39;estensione SaaS Data Export alla versione 103.4.0+. Consulta [Gestire l&#39;estensione di esportazione dei dati](../data-export/manage-extension.md).
+  - Al gruppo di clienti &quot;Non connesso&quot; devono essere assegnate autorizzazioni di navigazione &quot;Consenti&quot;.
+  - Per limitare i prodotti al gruppo di clienti &quot;Non connesso&quot;, vai a ogni categoria e imposta le autorizzazioni per ogni [gruppo di clienti](https://experienceleague.adobe.com/it/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
 - Al momento non è disponibile il supporto predefinito per B2B con il widget PLP su PWA Studio. Tuttavia, puoi [utilizzare l&#39;API](install.md#pwa-support) per implementare questa funzionalità.
 - I facet di categoria in [!DNL Live Search] potrebbero visualizzare categorie non visualizzabili in un [gruppo di clienti](https://experienceleague.adobe.com/it/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) specifico.
 - [!DNL Live Search] può supportare fino a 1.000 gruppi di clienti.
@@ -123,4 +123,4 @@ Per informazioni sulla risoluzione dei problemi comuni in [!DNL Live Search], ve
 - [[!DNL Live Search] la classificazione del dashboard e dei risultati di ricerca non è corretta](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect). Risolve i problemi in cui i risultati di ricerca o le metriche delle prestazioni visualizzate nel dashboard di Live Search non vengono visualizzati come previsto. Questo articolo spiega come risolvere le discrepanze di classificazione e le incongruenze nei dati del dashboard.
 - [[!DNL Live Search] i facet non sono ordinati alfabeticamente](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted). Risolve il problema relativo alla visualizzazione dei valori facet in ordine imprevisto anziché alfabetico. Questo articolo descrive come configurare e correggere il comportamento di ordinamento dei facet nella vetrina.
 
-Se hai bisogno di ulteriore assistenza, contatta il [supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Se hai bisogno di ulteriore assistenza, contatta il [supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).

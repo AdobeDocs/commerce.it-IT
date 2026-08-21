@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders, Paas, Saas
-source-git-commit: 09630af055b4d59f37fba2d3c398042161a7afa0
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '2254'
+source-wordcount: '2255'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ Attiva monitoraggio asincrono: [!BADGE Solo PaaS]{type=Informative tooltip="Appl
    bin/magento config:set payment/payment_services/async_status_updates 1
    ```
 
-1. Abilita e pianifica il processo cron `sync_order_payment_status` in modo che gli aggiornamenti dello stato vengano recuperati automaticamente. Consulta [Configurare i processi cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=it).
+1. Abilita e pianifica il processo cron `sync_order_payment_status` in modo che gli aggiornamenti dello stato vengano recuperati automaticamente. Consulta [Configurare i processi cron](https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
 
 Una volta abilitate l&#39;impostazione e il processo cron, il processo cron viene eseguito ogni 10 minuti per recuperare gli aggiornamenti per gli ordini con stato `Payment Review`. Dopo la configurazione, non è richiesta alcuna azione aggiuntiva da parte dell&#39;esercente durante il normale funzionamento.
 

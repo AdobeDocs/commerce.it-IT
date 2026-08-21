@@ -7,9 +7,9 @@ product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 126
+source-wordcount: 127
 ht-degree: 0%
 
 ---
@@ -20,4 +20,4 @@ I sinonimi consentono di espandere la query di ricerca in modo da includere paro
 
 >[!IMPORTANT]
 >
->Per le installazioni di Adobe Commerce con [!DNL Live Search] installato, [!DNL Live Search] Sinonimi sostituisce la funzionalità standard di Adobe Commerce [Ricerca sinonimi](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=it#search-synonyms), anche se entrambi vengono visualizzati nella sezione *SEO &amp; Search* del menu Marketing. Se utilizzi [!DNL Live Search], segui le istruzioni riportate in questa sezione.
+>Per le installazioni di Adobe Commerce con [!DNL Live Search] installato, [!DNL Live Search] Sinonimi sostituisce la funzionalità standard di Adobe Commerce [Ricerca sinonimi](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/search/search-terms#search-synonyms), anche se entrambi vengono visualizzati nella sezione *SEO &amp; Search* del menu Marketing. Se utilizzi [!DNL Live Search], segui le istruzioni riportate in questa sezione.

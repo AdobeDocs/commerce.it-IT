@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 428
+source-wordcount: 429
 ht-degree: 0%
 
 ---
@@ -42,11 +42,11 @@ Al momento della query, [!DNL Live Search] genera i risultati della ricerca in g
 
 I facet di cui viene eseguito il rendering per la vetrina [!DNL Commerce] vengono elaborati dall&#39;adattatore di ricerca, che indirizza le richieste ed esegue il rendering dei risultati nella vetrina. Tutti i facet [!DNL Commerce] della vetrina sono ordinati alfabeticamente con opzioni di selezione singola, indipendentemente dal tipo di input assegnato all&#39;attributo corrispondente. I facet disponibili nella vetrina vengono riprodotti in base al tema corrente e riflettono eventuali personalizzazioni apportate alla presentazione della navigazione a livelli.
 
-Al contrario, [implementazioni headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) vengono elaborate dall&#39;API e supportano opzioni aggiuntive. I facet headless possono essere ordinati alfabeticamente o per conteggio e possono avere opzioni a selezione singola o multipla.
+Al contrario, [implementazioni headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api) vengono elaborate dall&#39;API e supportano opzioni aggiuntive. I facet headless possono essere ordinati alfabeticamente o per conteggio e possono avere opzioni a selezione singola o multipla.
 
 ### Etichette facet
 
-Per [!DNL Commerce] storefronts, l&#39;etichetta del facet è determinata dalle [*Proprietà attributo*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=it). Per gli archivi con più visualizzazioni, è possibile definire etichette aggiuntive in *Gestisci etichette*. Per le implementazioni headless, le etichette vengono modificate dall&#39;[area di lavoro faceting](faceting-workspace.md).
+Per [!DNL Commerce] storefronts, l&#39;etichetta del facet è determinata dalle [*Proprietà attributo*](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create). Per gli archivi con più visualizzazioni, è possibile definire etichette aggiuntive in *Gestisci etichette*. Per le implementazioni headless, le etichette vengono modificate dall&#39;[area di lavoro faceting](faceting-workspace.md).
 
 ### Tipo di ordinamento
 

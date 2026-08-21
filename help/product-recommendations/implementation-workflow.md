@@ -16,9 +16,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: 563
+source-wordcount: 546
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Quando installi `magento/product-recommendations module`, Adobe AI aggrega i dat
 
    La distribuzione di [!DNL Product Recommendations] richiede due [origini dati principali](type.md): catalogo e comportamento. Poiché la produzione è l’unico ambiente in cui le azioni degli acquirenti vengono acquisite e analizzate, inizia la raccolta dei dati sulla produzione il prima possibile. [Scopri](events.md) come Adobe AI addestra modelli di apprendimento automatico che offrono consigli di qualità superiore. Inoltre, quando inizi a raccogliere dati comportamentali in produzione, puoi [recuperare consigli](staging-environment.md#fetch-recommendations-from-production-environment-recommended) in base a questi dati di produzione mentre operi in ambienti non di produzione. Puoi quindi testare e sperimentare diversi consigli calcolati in base ai dati reali dell’acquirente raccolti in produzione.
 
-   Per distribuire la raccolta dati in produzione, è necessario [installare e configurare](install-configure.md) il modulo [!DNL Product Recommendations] fornendo una [chiave API](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=it).
+   Per distribuire la raccolta dati in produzione, è necessario [installare e configurare](install-configure.md) il modulo [!DNL Product Recommendations] fornendo una [chiave API](../landing/saas.md).
 
    >[!TIP]
    >
@@ -57,7 +57,7 @@ Quando installi `magento/product-recommendations module`, Adobe AI aggrega i dat
    >
    > Personalizzando il modello, è possibile specificare il foglio di stile, sovrascrivere la posizione in cui un&#39;unità di consigli viene visualizzata in una pagina e così via.
 
-   Per informazioni su come completare questo passaggio, consulta [Personalizza](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html?lang=it) nella documentazione per gli sviluppatori.
+   Per informazioni su come completare questo passaggio, consulta [Personalizza](customize.md) nella documentazione per gli sviluppatori.
 
 1. **Verifica i consigli nell&#39;ambiente non di produzione**
 

@@ -16,9 +16,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 2102
+source-wordcount: 2105
 ht-degree: 0%
 
 ---
@@ -358,11 +358,11 @@ In questo scenario, si dispone di una vetrina headless o PWA che richiede la rac
 1. **Implementa raccolta eventi**:
    - Consulta la [documentazione sugli eventi storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search).
    - Implementa gli eventi richiesti:
-      - `search-request-sent`
-      - `search-response-received`
-      - `search-results-view`
-      - `product-page-view`
-      - `add-to-cart`
+     - `search-request-sent`
+     - `search-response-received`
+     - `search-results-view`
+     - `product-page-view`
+     - `add-to-cart`
    - I dati dell’evento di test fluiscono in Adobe Commerce.
 
 1. **Configura ordinamento facet**:
@@ -458,7 +458,7 @@ Contatta la risorsa appropriata in base alle tue esigenze specifiche.
 - Implementazioni headless o PWA
 - Tracciamento degli eventi personalizzati
 
-Per contattare il supporto Adobe, consulta la [Guida utente del Centro assistenza](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Per contattare il supporto Adobe, consulta la [Guida utente del Centro assistenza](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 ## Domande frequenti
 

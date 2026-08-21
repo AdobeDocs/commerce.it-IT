@@ -22,7 +22,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
 source-wordcount: 1183
 ht-degree: 0%
@@ -35,7 +35,7 @@ Basato sulla tecnologia Adobe App Builder, [!DNL Commerce Optimizer Salesforce C
 
 Il connettore offre funzionalità affidabili di sincronizzazione dei dati e la flessibilità necessaria per personalizzare i flussi di lavoro in base alle esigenze aziendali.
 
-Per una serie di esercitazioni video end-to-end, consulta [Scopri Salesforce Commerce Cloud Starter Kit](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
+Per una serie di esercitazioni video end-to-end, consulta [Scopri Salesforce Commerce Cloud Starter Kit](https://experienceleague.adobe.com/it/docs/commerce-learn/adobe-commerce-optimizer/sfcc-starter-kit/overview).
 
 >[!NOTE]
 >
@@ -48,13 +48,13 @@ Per una serie di esercitazioni video end-to-end, consulta [Scopri Salesforce Com
 * **Supporta più tipi di dati:** sincronizza prodotti, prezzi e strutture di catalogo per riflettere configurazioni di merchandising complesse.
 
 * **Flussi di lavoro di sincronizzazione flessibili**
-   * **Sincronizzazioni pianificate:** automatizza gli aggiornamenti utilizzando la pianificazione dei processi cron, senza richiedere alcuno sforzo manuale.
-   * **Aggiornamenti on-demand:** attiva immediatamente gli aggiornamenti a livello di SKU per modifiche, correzioni o avvii di prodotti urgenti.
+  * **Sincronizzazioni pianificate:** automatizza gli aggiornamenti utilizzando la pianificazione dei processi cron, senza richiedere alcuno sforzo manuale.
+  * **Aggiornamenti on-demand:** attiva immediatamente gli aggiornamenti a livello di SKU per modifiche, correzioni o avvii di prodotti urgenti.
 
 * **Generato per l&#39;estensibilità**
-   * Utilizza gli endpoint personalizzati dell&#39;[API B2C di Salesforce Commerce](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html) (SCAPI) per compatibilità e facile adattamento a casi d&#39;uso univoci o avanzati.
-   * Scalabile con il tuo business-start con la sincronizzazione di cataloghi e prezzi, quindi estendere i flussi di lavoro per supportare integrazioni aggiuntive o logica di business.
-   * Configurare ed evolvere i flussi di lavoro senza ricostruire le integrazioni di base.
+  * Utilizza gli endpoint personalizzati dell&#39;[API B2C di Salesforce Commerce](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html) (SCAPI) per compatibilità e facile adattamento a casi d&#39;uso univoci o avanzati.
+  * Scalabile con il tuo business-start con la sincronizzazione di cataloghi e prezzi, quindi estendere i flussi di lavoro per supportare integrazioni aggiuntive o logica di business.
+  * Configurare ed evolvere i flussi di lavoro senza ricostruire le integrazioni di base.
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ Questo caso d’uso principale illustra l’intero flusso di dati da Salesforce 
 Utilizzo delle funzionalità di localizzazione B2C di Salesforce Commerce:
 
 * Sincronizza le versioni localizzate dei campi di testo del prodotto (nomi, descrizioni) da Salesforce Commerce B2C per diverse lingue.
-* Mappare i concetti delle impostazioni locali di Salesforce 1:1 con [!DNL Commerce Optimizer] impostazioni locali.
+* Mappare i concetti delle impostazioni locali di Salesforce 1:1 con [!DNL Commerce Optimizer] impostazioni internazionali.
 * Supporta più cicli di inserimento dei prodotti per diverse localizzazioni.
 * Mantenere la coerenza tra i cataloghi di prodotti globali.
 

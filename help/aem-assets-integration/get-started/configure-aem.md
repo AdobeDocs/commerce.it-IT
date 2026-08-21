@@ -14,9 +14,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1741
+source-wordcount: 1744
 ht-degree: 1%
 
 ---
@@ -146,12 +146,12 @@ Per distribuire il codice del pacchetto `assets-commerce` nell&#39;ambiente AEM 
 
 * Title: Abilita Dynamic Media OpenAPI per integrare completamente Adobe Commerce con AEM Assets
 
-   * Contenuto del ticket di supporto:
+  * Contenuto del ticket di supporto:
 
-      * **[!UICONTROL AEM Program ID]**
-      * **[!UICONTROL Adobe Commerce URL]**
-      * **[!UICONTROL AEM Environment ID]**
-      * **[!UICONTROL IMS Org ID]**
+    * **[!UICONTROL AEM Program ID]**
+    * **[!UICONTROL Adobe Commerce URL]**
+    * **[!UICONTROL AEM Environment ID]**
+    * **[!UICONTROL IMS Org ID]**
 
 Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Media con funzionalità OpenAPI nell’ambiente Cloud Services e condivide i dettagli, come l’ID client IMS, per consentire all’utente di procedere con l’integrazione.
 
@@ -209,7 +209,7 @@ Se la scheda **Commerce** non viene visualizzata nelle proprietà, è necessario
 
 1. Trascina e rilascia un componente **checkbox** nella scheda **Commerce** e mapparlo sulla proprietà `commerce:isCommerce`. Definisci **Sì** e **No** come opzioni.
 
-Se riscontri altri problemi, crea un [ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) o contatta il rappresentante commerciale per l&#39;integrazione di AEM Assets.
+Se riscontri altri problemi, crea un [ticket di supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) o contatta il rappresentante commerciale per l&#39;integrazione di AEM Assets.
 
 ## Configurare un profilo di metadati (facoltativo)
 

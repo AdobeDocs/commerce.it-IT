@@ -29,16 +29,16 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 1343
+source-wordcount: 1337
 ht-degree: 0%
 
 ---
 
 # Introduzione
 
-[!DNL Adobe Commerce as a Cloud Service] fornisce la maggior parte delle configurazioni pronte all&#39;uso. Dopo aver completato alcuni processi di configurazione di base, lo store è pronto per l&#39;uso in pochissimo tempo. Questa guida illustra come creare e lavorare con un’istanza e come configurarla per il successo. In questo modo i tuoi team potranno accedere correttamente a [!DNL Adobe Commerce as a Cloud Service] e agli strumenti necessari per iniziare.
+[!DNL Adobe Commerce as a Cloud Service] fornisce la maggior parte delle configurazioni per impostazione predefinita. Dopo aver completato alcuni processi di configurazione di base, lo store è pronto per l&#39;uso in pochissimo tempo. Questa guida illustra come creare e lavorare con un’istanza e come configurarla per il successo. In questo modo i tuoi team potranno accedere correttamente a [!DNL Adobe Commerce as a Cloud Service] e agli strumenti necessari per iniziare.
 
 [!DNL Adobe Commerce as a Cloud Service] è una piattaforma di e-commerce nativa per il cloud che offre flessibilità, scalabilità ed efficienza per la distribuzione di esperienze di e-commerce digitali. Questa offerta SaaS è una piattaforma completamente gestita e senza versioni che offre un’esperienza di aggiornamento fluida senza interventi manuali.
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 [!DNL Adobe Commerce as a Cloud Service] è costituito dai seguenti componenti:
 
 * **[[!DNL Adobe Experience Cloud]](https://experience.adobe.com/)** - Punto di ingresso centrale per tutti i [!DNL Adobe Commerce] prodotti in [experience.adobe.com](https://experience.adobe.com/)
-   * Fai clic su [!UICONTROL **Commerce**] in [!UICONTROL **Accesso rapido**] per aprire Commerce Cloud Manager
+  * Fai clic su [!UICONTROL **Commerce**] in [!UICONTROL **Accesso rapido**] per aprire Commerce Cloud Manager
 * **[[!DNL Commerce Cloud Manager]](https://experience.adobe.com/#/commerce/cloud-service)** - Crea e gestisci le istanze, accedi agli URL API e al tuo amministratore Commerce
 * **[[!DNL Adobe Admin Console]](https://adminconsole.adobe.com/)** - Gestisci utenti e ruoli
 * **Amministratore Commerce** - Gestisci prodotti, ordini, clienti e configurazione dello store
@@ -83,7 +83,7 @@ Seleziona una scheda di seguito per visualizzare gli elementi grafici del flusso
 
 >[!TAB Flusso di lavoro amministratore di sistema e esercente]
 
-Questo diagramma fornisce una panoramica generale del modo in cui amministratori di sistema e commercianti accedono e gestiscono le istanze di [!DNL Adobe Commerce as a Cloud Service]. Per ulteriori informazioni sui flussi di lavoro dell&#39;amministratore, vedere la [Guida di Adobe Admin Console](https://helpx.adobe.com/it/enterprise/admin-guide.html).
+Questo diagramma fornisce una panoramica generale del modo in cui amministratori di sistema e commercianti accedono e gestiscono le istanze di [!DNL Adobe Commerce as a Cloud Service]. Per ulteriori informazioni sui flussi di lavoro dell&#39;amministratore, vedere la [Guida di Adobe Admin Console](https://helpx.adobe.com/it/business/enterprise.html).
 
 ![Diagramma del flusso di lavoro dell&#39;amministratore di sistema e del commerciante per Adobe Commerce as a Cloud Service](./assets/merchant-flow.png){zoomable="yes"}
 
@@ -143,7 +143,7 @@ Dopo aver completato le attività di configurazione specifiche per il ruolo:
 
 * **Amministratori di sistema**: rivedi le [linee guida per la responsabilità condivisa](./security/shared-responsibility.md)
 * **Commercianti**: esplora [casi d&#39;uso](use-cases.md) per scenari aziendali comuni
-* **Sviluppatori**: consulta la [documentazione per gli sviluppatori di Adobe Commerce](https://developer.adobe.com/commerce/docs)
+* **Sviluppatori**: consulta la [documentazione per gli sviluppatori di Adobe Commerce](https://developer.adobe.com/commerce/docs/)
 
 ## Nozioni di base su Adobe Commerce as a Cloud Service
 
@@ -173,7 +173,7 @@ Le sezioni seguenti descrivono i processi di base da completare per rendere oper
 
 1. Scegli il [!UICONTROL **Tipo di ambiente**] per la tua istanza. Puoi scegliere tra le seguenti opzioni:
 
-   * [!UICONTROL **Sandbox**] - Solo a scopo di progettazione e test. Devi iniziare il percorso [!DNL Adobe Commerce as a Cloud Service] utilizzando l&#39;ambiente sandbox.
+   * [!UICONTROL **Sandbox**] - Solo a scopo di progettazione e test. Adobe consiglia di iniziare il percorso [!DNL Adobe Commerce as a Cloud Service] utilizzando l&#39;ambiente sandbox.
 
    >[!NOTE]
    >
@@ -220,13 +220,13 @@ Dopo aver creato un&#39;istanza, è possibile accedervi da [!UICONTROL Commerce 
 Gli URL di base per l’amministratore e gli endpoint variano in base all’area geografica e all’ambiente, utilizzando il seguente pattern:
 
 * Amministratore
-   * Amministrazione produzione Nord America: `https://na1.admin.commerce.adobe.com`
-   * Amministratore sandbox Nord America: `https://na1-sandbox.admin.commerce.adobe.com`
-   * Amministratore produzione Europa: `https://eu1.admin.commerce.adobe.com`
+  * Amministrazione produzione Nord America: `https://na1.admin.commerce.adobe.com`
+  * Amministratore sandbox Nord America: `https://na1-sandbox.admin.commerce.adobe.com`
+  * Amministratore produzione Europa: `https://eu1.admin.commerce.adobe.com`
 * REST e GRAPHQL
-   * GraphQL di produzione Nord America: `https://na1.api.commerce.adobe.com`
-   * GraphQL sandbox Nord America: `https://na1-sandbox.api.commerce.adobe.com`
-   * GraphQL di produzione Europa: `https://eu1.api.commerce.adobe.com`
+  * GraphQL di produzione Nord America: `https://na1.api.commerce.adobe.com`
+  * GraphQL sandbox Nord America: `https://na1-sandbox.api.commerce.adobe.com`
+  * GraphQL di produzione Europa: `https://eu1.api.commerce.adobe.com`
 
 ### Importa il catalogo
 

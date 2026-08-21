@@ -22,9 +22,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ef1a9efc579d8d21c145e6981235489a2e4ea203
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 907
+source-wordcount: 921
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Dopo aver collegato un’istanza di Adobe Commerce al servizio Commerce, esegui 
 Con la sincronizzazione parziale, l’esportazione di dati SaaS invia automaticamente aggiornamenti dall’applicazione Commerce, come modifiche al nome del prodotto o aggiornamenti dei prezzi, ai servizi commerce connessi.
 Affinché la sincronizzazione parziale funzioni, l&#39;applicazione Commerce richiede la seguente configurazione:
 
-- [La pianificazione delle attività è abilitata tramite processi cron](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=it)
+- [La pianificazione delle attività è abilitata tramite processi cron](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/next-steps/configuration)
 - Tutti gli indici di esportazione dei dati SaaS sono configurati in modalità `Update by Schedule`.
 
 ### Ritenta sincronizzazione elementi non riusciti {#retry-failed-items-sync}
@@ -103,7 +103,7 @@ I seguenti gruppi cron automatizzano la pipeline secondo una pianificazione fiss
 | `index` | `indexer_reindex_all_invalid` | Esegue una risincronizzazione completa per gli indici di feed contrassegnati come &quot;Reindicizzazione richiesta&quot; | Ogni 1 minuto |
 | `resync_failed_feeds_data_exporter` | `*_resend_failed_items` | Rileva gli elementi di feed non riusciti e li invia nuovamente | Ogni 5 minuti |
 | `commerce_data_export` | `saas_data_exporter` | Invia dati per feed in modalità legacy (ordini, ambiti) | Ogni 5 minuti |
-| `commerce_data_export` | `cleanup_deleted_feed_items` | Pulisce gli elementi di feed eliminati sincronizzati oltre il periodo di conservazione (7 giorni) | Ogni giorno alle 2:00 |
+| `commerce_data_export` | `cleanup_deleted_feed_items` | Pulisce gli elementi di feed eliminati sincronizzati oltre il periodo di conservazione (7 giorni) | Ogni giorno alle due del mattino |
 
 ## Invio di feed e gestione degli errori HTTP {#feed-submission-and-http-error-handling}
 

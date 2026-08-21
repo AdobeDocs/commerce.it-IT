@@ -22,9 +22,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: d7623f5d42eaa50b95a2f36c244b8a3e78d4c7a9
 workflow-type: tm+mt
-source-wordcount: 1738
+source-wordcount: 1737
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ Questa sezione ti guida attraverso lo sviluppo di un’estensione di valutazione
 
 1. Esaminare il file `requirements.md` e verificare il piano.
 
-   Se tutto sembra corretto, indicare all&#39;agente di passare alla **Fase 2 - Pianificazione architettura**.
+   Se tutto sembra corretto, indicare all&#39;agente di passare alla **Fase 2 — Pianificazione architettura**.
 
 1. Rivedi il piano dell’architettura.
 
@@ -233,7 +233,7 @@ Prepara l’ambiente della vetrina locale per lo sviluppo.
 
 1. Aprire la cartella vetrina in una nuova finestra Cursore.
 
-   In alternativa, se è installato [Cursor CLI](https://cursor.com/docs/configuration/shell#installing-cli-commands), aprire la finestra utilizzando il comando seguente nel terminale:
+   In alternativa, se è installato [Cursor CLI](https://cursor.com/help/customization/keyboard-shortcuts#installing-cli-commands), aprire la finestra utilizzando il comando seguente nel terminale:
 
    ```bash
    cursor .
@@ -266,8 +266,8 @@ Utilizza l’agente per integrare l’API di valutazione nella pagina dei dettag
 1. L&#39;agente valuta la complessità dell&#39;attività e richiama un flusso di lavoro graduale. Durante la **Fase 1 (Raccolta dei requisiti)**, l&#39;agente crea un documento sui requisiti e pone domande di chiarimento quali:
 
    * Dove deve apparire la valutazione nel PDP?
-   * Deve trattarsi di un nuovo blocco autonomo o di una personalizzazione degli slot all’interno del componente di rilascio PDP esistente?
-   * Cosa deve essere il fallback se l’API non è disponibile o non restituisce dati?
+   * Si tratta di un nuovo blocco autonomo o di una personalizzazione degli slot all&#39;interno del componente di rilascio PDP esistente?
+   * Qual è il fallback se l’API non è disponibile o non restituisce dati?
    * Le valutazioni devono essere visualizzate anche su PLP (elenco prodotti) o solo su PDP?
    * Esistono specifiche o modelli di progettazione?
 
@@ -318,7 +318,7 @@ Utilizza l’agente per integrare l’API di valutazione nella pagina dei dettag
    Dovresti visualizzare le seguenti modifiche nell’ambiente di sviluppo e nel browser:
 
    * Viene creato automaticamente un componente di valutazione del prodotto.
-   * Il componente è integrato nel PDP utilizzando [slot di rilascio](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=it) o come blocco autonomo, a seconda dell&#39;architettura scelta.
+   * Il componente è integrato nel PDP utilizzando [slot di rilascio](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots/?lang=it) o come blocco autonomo, a seconda dell&#39;architettura scelta.
    * Le stelle vengono visualizzate con proporzioni di riempimento appropriate in base ai valori di valutazione dell’API.
 
    ![Pagina dei dettagli del prodotto con le classificazioni a stelle integrate sotto il titolo del prodotto](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}

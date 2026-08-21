@@ -12,9 +12,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 491
+source-wordcount: 493
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ Completa l’installazione in base al tipo di distribuzione: Adobe Commerce su i
 
 #### Infrastruttura cloud
 
-Nell&#39;infrastruttura Adobe Commerce on Cloud, abilita la variabile globale `ENABLE_EVENTING` in `.magento.env.yaml`. [Ulteriori informazioni](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html?lang=it#enable_eventing).
+Nell&#39;infrastruttura Adobe Commerce on Cloud, abilita la variabile globale `ENABLE_EVENTING` in `.magento.env.yaml`. [Ulteriori informazioni](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-global#enable_eventing).
 
 ```bash
 stage:
@@ -177,4 +177,4 @@ Per eseguire l&#39;aggiornamento a una versione principale, ad esempio da 2.0.0 
 
 ## Disinstalla l&#39;estensione [!DNL Data Connection] {#uninstall}
 
-Per disinstallare l&#39;estensione [!DNL Data Connection], consultare [moduli di disinstallazione](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html?lang=it).
+Per disinstallare l&#39;estensione [!DNL Data Connection], consultare [moduli di disinstallazione](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).

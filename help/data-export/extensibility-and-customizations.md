@@ -18,7 +18,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 815
 ht-degree: 0%
@@ -39,7 +39,7 @@ Dopo aver aggiunto i dati degli attributi, è possibile accedervi dal campo [att
 
 Il feed dei prodotti include attributi di sistema predefiniti necessari per l’elaborazione del prodotto o comunemente utilizzati dai consumatori. Puoi includere attributi di sistema aggiuntivi nel feed dei prodotti aggiungendoli al feed.
 
-Per completare l&#39;attività, aggiornare il modulo `magento/catalog-data-exporter` per aggiungere gli attributi di sistema aggiuntivi al file di configurazione [dependency injection](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`).
+Per completare l&#39;attività, aggiornare il modulo `magento/catalog-data-exporter` per aggiungere gli attributi di sistema aggiuntivi al file di configurazione [dependency injection](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`).
 
 Aggiungere gli attributi alla query dell&#39;attributo di prodotto (`Magento\CatalogDataExporter\Model\Query\ProductAttributeQuery`).
 
@@ -85,7 +85,7 @@ Quando si definiscono le opzioni di attributo, tutti i parametri di attributo ec
 - **`user_defined`=`1`** - Esporta l&#39;attributo in servizi storefront durante la sincronizzazione dei dati
 - **`used_in_product_listing`=`1`**—Rendi l&#39;attributo accessibile nella query del database dell&#39;elenco prodotti
 
-Per informazioni sulla creazione di patch di dati, vedere [Develop data and schema patches](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) in *PHP Developer Guide*.
+Per informazioni sulla creazione di patch di dati, vedere [Develop data and schema patches](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches) in *PHP Developer Guide*.
 
 ### Aggiungere l’attributo di prodotto in modo dinamico
 
@@ -163,7 +163,7 @@ Registra l&#39;osservatore in `etc/events.xml`:
 </event>
 ```
 
-Per informazioni generali su eventi e osservatori, consulta [Eventi e osservatori](https://developer.adobe.com/commerce/php/development/components/events-and-observers){target="_blank"} nella documentazione per sviluppatori di Adobe Commerce.
+Per informazioni generali su eventi e osservatori, consulta [Eventi e osservatori](https://developer.adobe.com/commerce/php/development/components/events-and-observers/){target="_blank"} nella documentazione per sviluppatori di Adobe Commerce.
 
 ## Filtrare i dati prima dell’invio
 

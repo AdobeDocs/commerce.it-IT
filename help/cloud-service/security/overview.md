@@ -24,9 +24,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 581
+source-wordcount: 577
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ I commercianti possono scegliere di distribuire una rete CDN gestita da Adobe o 
 
 Il livello CDN di [!DNL API Mesh] termina TLS, esegue il gateway GraphQL come processi di lavoro, fornisce il caching edge globale e DDoS/WAF automatico ed espone `edge‑graph.adobe.io`/`edge‑sandbox‑graph.adobe.io` come endpoint mesh pubblici; i clienti possono aggiungere prima la propria rete CDN, ma la rete CDN di [!DNL API Mesh] è fissa e gestita da Adobe e i clienti non possono configurare le proprie regole WAF.
 
-Per ulteriori informazioni sulle funzionalità di sicurezza di [!DNL API Mesh], consulta la [documentazione di API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/security/){target="_blank"}.
+Per ulteriori informazioni sulle funzionalità di sicurezza di [!DNL API Mesh], consulta la [documentazione di API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}.
 
 ### CDN back-end
 
@@ -87,6 +87,6 @@ La rete CDN e WAF integrate forniscono protezione DDoS sia a livello di rete che
 
 Se i dati vengono archiviati in [!DNL App Builder], un commerciante può fare riferimento alle [!DNL App Builder] [opzioni di archiviazione](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/). [!DNL App Builder] applica l&#39;isolamento del tenant e l&#39;accesso ai dati archiviati in questi servizi è limitato allo spazio dei nomi di runtime in cui viene eseguita l&#39;azione. Nessuna crittografia dei dati nell&#39;archiviazione.
 
-Quando si utilizza [!DNL API Mesh], i segreti devono essere archiviati nel file `secrets.yaml` nella configurazione mesh. [!DNL API Mesh] crittografa questi segreti utilizzando la crittografia AES-256 ([https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/)).
+Quando si utilizza [!DNL API Mesh], i segreti devono essere archiviati nel file `secrets.yaml` nella configurazione mesh. [!DNL API Mesh] crittografa questi segreti utilizzando la crittografia AES-256 (consulta la [documentazione di API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}).
 
 Tutti i dati archiviati in [!DNL Adobe Commerce as a Cloud Service] vengono crittografati a riposo utilizzando la crittografia AES a 256 bit e tutti i dati vengono crittografati tramite HTTPS utilizzando TLS 1.2 o versione successiva in transito.

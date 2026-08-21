@@ -20,7 +20,7 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 607
 ht-degree: 0%
@@ -83,7 +83,7 @@ La libreria [`@adobe/aio-lib-telemetry`](https://github.com/adobe/aio-lib-teleme
 
 ### Registrazione Mesh API
 
-[Registrazione Mesh API](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/logging/) consente di monitorare ed eseguire il debug delle richieste che scorrono nella rete utilizzando gli ID di ray. Esportare i registri in blocco o inoltrarli a piattaforme come [!DNL New Relic] per l&#39;analisi centralizzata.
+[Registrazione Mesh API](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/logging) consente di monitorare ed eseguire il debug delle richieste che scorrono nella rete utilizzando gli ID di ray. Esportare i registri in blocco o inoltrarli a piattaforme come [!DNL New Relic] per l&#39;analisi centralizzata.
 
 ## Vetrina
 

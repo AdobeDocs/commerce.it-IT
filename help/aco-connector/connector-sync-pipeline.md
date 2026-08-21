@@ -24,9 +24,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 662
+source-wordcount: 673
 ht-degree: 1%
 
 ---
@@ -64,13 +64,13 @@ I seguenti processi cron automatizzano la pipeline secondo una pianificazione fi
 | `index` | `indexer_update_all_views` | Ascolta aggiornamenti di entità, assembla elementi feed, persiste stato feed | Ogni 1 minuto |
 | `index` | `indexer_reindex_all_invalid` | Eseguire la risincronizzazione completa per gli indici di feed contrassegnati come &quot;Reindicizzazione richiesta&quot; | Ogni 1 minuto |
 | `resync_failed_feeds_data_exporter` | `*_resend_failed_items` | Controlla gli elementi di feed non riusciti e li invia nuovamente a [!DNL Commerce Optimizer] | Ogni 5 minuti |
-| `commerce_data_export` | `cleanup_deleted_feed_items` | Pulisce gli elementi di feed eliminati sincronizzati oltre il periodo di conservazione (7 giorni) | Ogni giorno alle 2:00 |
+| `commerce_data_export` | `cleanup_deleted_feed_items` | Pulisce gli elementi di feed eliminati sincronizzati oltre il periodo di conservazione (7 giorni) | Ogni giorno alle due del mattino |
 
 L&#39;estensione **[!DNL SaaS Data Export]** gestisce la raccolta di feed e il tracciamento dello stato. Il livello del connettore mappa entità e ambiti nel formato richiesto dall&#39;API [!DNL Commerce Optimizer] e li invia tramite `POST /v1/catalog/<feed name>`.
 
 #### Requisiti
 
-- [Commerce cron deve essere in esecuzione](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}.
+- [Commerce cron deve essere in esecuzione](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-39832){target="_blank"}.
 - Gli indicizzatori dei feed devono utilizzare la modalità **[!UICONTROL Update by Schedule]**. Vedere [Sincronizzazione parziale](../data-export/sync-overview.md#partial-sync){target="_blank"}.
 
 ## Controllo sincronizzazione basato su ambito

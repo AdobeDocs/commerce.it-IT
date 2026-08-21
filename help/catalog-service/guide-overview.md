@@ -13,9 +13,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: 253
+source-wordcount: 256
 ht-degree: 9%
 
 ---
@@ -35,15 +35,15 @@ Questa guida è destinata agli amministratori di Adobe [!DNL Commerce]. Include 
 
 | Guida | Descrizione |
 |------ | ----------- |
-| [Guida utente di Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html?lang=it) | Documentazione incentrata sui commercianti per Adobe Commerce e Magento Open Source |
+| [Guida utente di Adobe Commerce 2.4](https://experienceleague.adobe.com/it/docs/commerce-admin/user-guides/home) | Documentazione incentrata sui commercianti per Adobe Commerce e Magento Open Source |
 | [Guida per gli sviluppatori di Adobe Commerce 2.4](https://developer.adobe.com/commerce/docs) | Documentazione incentrata sugli sviluppatori utilizzata per creare e personalizzare Adobe Commerce o Magento Open Source |
 
 ## Supporto
 
-Il [processo di onboarding](https://experienceleague.adobe.com/docs/commerce/catalog-service/installation.html?lang=it) è progettato per guidarti attraverso i passaggi necessari per configurare e abilitare la funzionalità [!DNL Catalog Service].
+Il [processo di onboarding](installation.md) è progettato per guidarti attraverso i passaggi necessari per configurare e abilitare la funzionalità [!DNL Catalog Service].
 
 Se hai bisogno di informazioni o hai domande che non sono trattate in questa guida, utilizza le risorse seguenti:
 
-* [Centro assistenza](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=it) per gli articoli sulla risoluzione dei problemi.
-* [Ticket di supporto](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=it#submit-ticket) - Invia un ticket per ricevere ulteriore assistenza.
+* [Centro assistenza](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/overview) per gli articoli sulla risoluzione dei problemi.
+* [Ticket di supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) - Invia un ticket per ricevere ulteriore assistenza.
 * Unisciti al team di progettazione di Adobe Commerce e agli utenti dei servizi di vetrina SaaS nel canale Slack pubblico [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) per essere aggiornato.

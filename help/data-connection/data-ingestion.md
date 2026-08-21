@@ -12,10 +12,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 339
-ht-degree: 2%
+source-wordcount: 342
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 L&#39;estensione [Connessione dati](overview.md) collega i dati Commerce ad Experience Platform. I dati da utilizzare in Experience Platform sono raggruppati in due tipi di comportamento: dati di serie temporali, che appartengono alla classe **Experience Event**, e dati di record, che appartengono alla classe **Individual Profile**.
 
-Ulteriori informazioni su [comportamento dati](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=it#data-behaviors) e [classi](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=it#class) in Experience Platform.
+Ulteriori informazioni su [comportamento dati](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/schema/composition#data-behaviors) e [classi](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/schema/composition#class) in Experience Platform.
 
 ## Dati delle serie temporali
 
@@ -39,7 +39,7 @@ Scopri come [creare uno schema](update-xdm.md) in grado di acquisire dati di eve
 
 ## Registra dati
 
-I dati del record forniscono informazioni sugli attributi di un soggetto. Un soggetto potrebbe essere un&#39;organizzazione o un individuo. Ad esempio, un acquirente sul tuo sito crea un account e che genera i dati del record. Questi dati vengono acquisiti in Experience Platform utilizzando uno schema la cui classe è impostata su **Profilo individuale**. Puoi inviare i dati del record al servizio di segmentazione e gestione dei profili di Adobe: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=it).
+I dati del record forniscono informazioni sugli attributi di un soggetto. Un soggetto potrebbe essere un&#39;organizzazione o un individuo. Ad esempio, un acquirente sul tuo sito crea un account e che genera i dati del record. Questi dati vengono acquisiti in Experience Platform utilizzando uno schema la cui classe è impostata su **Profilo individuale**. Puoi inviare i dati del record al servizio di segmentazione e gestione dei profili di Adobe: [Real-Time CDP](https://experienceleague.adobe.com/it/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview).
 
 ### Dati record profilo acquisiti
 

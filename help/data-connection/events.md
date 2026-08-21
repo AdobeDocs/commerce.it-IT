@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 467
+source-wordcount: 469
 ht-degree: 0%
 
 ---
@@ -26,13 +26,13 @@ ht-degree: 0%
 
 Nell&#39;elenco seguente sono elencati gli eventi comportamentali di Commerce disponibili quando si installa l&#39;estensione [!DNL Data Connection]. I dati raccolti da questi eventi vengono inviati a Adobe Experience Platform. Puoi anche creare [eventi personalizzati](custom-events.md) per raccogliere dati aggiuntivi non forniti come predefiniti.
 
-Oltre ai dati raccolti dai seguenti eventi, si ottengono anche [altri dati](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=it) forniti da Adobe Experience Platform Web SDK.
+Oltre ai dati raccolti dai seguenti eventi, si ottengono anche [altri dati](https://experienceleague.adobe.com/it/docs/experience-platform/collection/js/js-overview) forniti da Adobe Experience Platform Web SDK.
 
 Gli eventi comportamentali raccolgono dati comportamentali anonimi dagli acquirenti che navigano sul tuo sito. Puoi utilizzare i dati raccolti da questi eventi per creare promozioni e campagne indirizzate a un gruppo specifico di acquirenti.
 
 >[!NOTE]
 >
->Tutti gli eventi comportamentali includono il campo [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=it), che include l&#39;indirizzo e-mail dell&#39;acquirente, se disponibile, ed ECID.
+>Tutti gli eventi comportamentali includono il campo [`identityMap`](https://experienceleague.adobe.com/it/docs/experience-platform/xdm/field-groups/profile/identitymap), che include l&#39;indirizzo e-mail dell&#39;acquirente, se disponibile, ed ECID.
 
 ## Eventi vetrina
 
@@ -58,6 +58,6 @@ Per ulteriori informazioni sugli eventi di ricerca, consulta la [documentazione 
 
 ![B2B per Adobe Commerce](../assets/b2b.svg) Per i commercianti B2B, è necessario [installare](install.md#install-the-b2b-extension) l&#39;estensione `experience-platform-connector-b2b` per accedere a questi eventi.
 
-Gli eventi B2B contengono [informazioni sull&#39;elenco di richieste](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html?lang=it), ad esempio se è stato creato, aggiunto o eliminato un elenco di richieste. Tenendo traccia degli eventi specifici degli elenchi di richieste di acquisto, è possibile vedere quali prodotti i clienti acquistano frequentemente e creare campagne basate su tali dati.
+Gli eventi B2B contengono [informazioni sull&#39;elenco di richieste](https://experienceleague.adobe.com/it/docs/commerce-admin/b2b/requisition-lists/requisition-lists), ad esempio se è stato creato, aggiunto o eliminato un elenco di richieste. Tenendo traccia degli eventi specifici degli elenchi di richieste di acquisto, è possibile vedere quali prodotti i clienti acquistano frequentemente e creare campagne basate su tali dati.
 
 Per ulteriori informazioni sugli eventi B2B, consulta la [documentazione per sviluppatori](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection).

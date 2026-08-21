@@ -26,9 +26,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: e7840a7b-a94f-4256-aed0-4e94b08e157b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: d9ea778afc86de323e53cd1be4768bc87cb71a8b
 workflow-type: tm+mt
-source-wordcount: 1291
+source-wordcount: 1289
 ht-degree: 0%
 
 ---
@@ -55,8 +55,8 @@ In questo tutorial sono necessari i seguenti strumenti per lo sviluppo sia di es
   ```
 
 * Guscio Bash
-   * macOS/Linux: nessuna installazione richiesta
-   * Windows: utilizzare [Git Bash](https://git-scm.com/install) o [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
+  * macOS/Linux: nessuna installazione richiesta
+  * Windows: utilizzare [Git Bash](https://git-scm.com/install) o [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
 
 * Scarica un IDE basato su IA, ad esempio [Cursore](https://cursor.com/download) (consigliato). Sono supportati anche altri IDE, come Claude Code, Gemini CLI o Copilot, ma potrebbero richiedere modifiche ai prompt e ad altri passaggi dell’esercitazione.
 
@@ -74,7 +74,7 @@ In questo tutorial sono necessari i seguenti strumenti per lo sviluppo sia di es
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
   ```
 
-Dopo aver installato [!DNL Adobe I/O CLI] e i plug-in richiesti, configurare l&#39;area di lavoro di estensibilità. Adobe consiglia di utilizzare la configurazione automatica per un’esperienza più rapida.
+Dopo aver installato [!DNL Adobe I/O CLI] e i plug-in richiesti, configurare l&#39;area di lavoro di estensibilità. Per un’esperienza ottimale, Adobe consiglia di utilizzare la configurazione automatica.
 
 * **[Installazione automatizzata](#automated-setup) (scelta consigliata)**: esegui un singolo comando per configurare automaticamente l&#39;area di lavoro.
 * **[Configurazione manuale](#manual-setup)**: seguire le istruzioni dettagliate per configurare ogni singolo componente.
@@ -202,7 +202,7 @@ Configura un progetto in Adobe Developer Console con le API e le credenziali ric
 
 #### Crea un nuovo progetto
 
-Crea un progetto App Builder in Adobe Developer Console per ospitare la tua estensione.
+Per ospitare la tua estensione, crea un progetto [!DNL App Builder] in Adobe Developer Console.
 
 1. Passa a [Adobe Developer Console](https://developer.adobe.com/).
 1. Fare clic su **[!UICONTROL Create project from a template]**.
@@ -227,10 +227,10 @@ Aggiungi le API richieste all’area di lavoro di Stage per la gestione degli ev
 1. Seleziona una delle seguenti API. Ripeti questo processo per ogni API elencata di seguito:
 
    * Filtro **[!UICONTROL Adobe Services]**:
-      * **[!UICONTROL I/O Management API]**
-      * API **[!UICONTROL I/O Events]**
+     * **[!UICONTROL I/O Management API]**
+     * API **[!UICONTROL I/O Events]**
    * Filtro **[!UICONTROL Experience Cloud]**:
-      * API **[!UICONTROL Adobe I/O Events for Adobe Commerce]**
+     * API **[!UICONTROL Adobe I/O Events for Adobe Commerce]**
 
 1. Fare clic su **[!UICONTROL Next]**.
 
@@ -342,7 +342,7 @@ EVENT_PREFIX=test
 
 ### Scarica la configurazione dell’area di lavoro
 
-Esegui il comando seguente per scaricare il file di configurazione dell’area di lavoro:
+Per scaricare il file di configurazione dell&#39;area di lavoro, eseguire il comando seguente:
 
 ```bash
 aio console workspace download workspace.json
@@ -382,7 +382,7 @@ Quando richiesto, scegli l’opzione che utilizza l’organizzazione, il progett
 
 ### Installare gli strumenti di extensibility AI
 
-Questo processo crea la configurazione MCP (`.<agent>/mcp.json`), la directory delle abilità (`.<agent>/skills/`) e aggiunge `AGENTS.md` alla directory principale del progetto. Verrà richiesto di scegliere un kit di avvio, un agente di codifica e un gestore di pacchetti.
+Questo processo crea la configurazione MCP (`.<agent>/mcp.json`), la directory delle abilità (`.<agent>/skills/`) e aggiunge `AGENTS.md` alla directory principale del progetto. Viene chiesto di scegliere un kit di avvio, un agente di codifica e un gestore di pacchetti.
 
 
 1. Impostare gli strumenti di sviluppo assistito da IA nella cartella `extension` utilizzando i seguenti comandi:
@@ -407,7 +407,7 @@ Questo processo crea la configurazione MCP (`.<agent>/mcp.json`), la directory d
 
 ## Configurazione manuale della vetrina
 
-In questa sezione viene descritto come configurare manualmente la vetrina per l&#39;esercitazione [sulle estensioni delle valutazioni](./ratings-extension.md) e altre esercitazioni della vetrina.
+In questa sezione viene descritto come configurare manualmente la vetrina per l&#39;esercitazione sulle estensioni delle [Classificazioni](./ratings-extension.md) e altre esercitazioni sulla vetrina.
 
 Per configurare automaticamente la vetrina, eseguire il comando `app-setup` descritto nella sezione [Installazione automatica](#automated-setup) e selezionare il kit di avvio [!DNL AEM Boilerplate Commerce].
 

@@ -13,16 +13,16 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 324
+source-wordcount: 329
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service and API Mesh]
 
-La rete API [per Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) consente agli sviluppatori di integrare API private o di terze parti e altre interfacce con i prodotti Adobe tramite Adobe I/O Runtime.
+La rete API [per Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/mesh/) consente agli sviluppatori di integrare API private o di terze parti e altre interfacce con i prodotti Adobe tramite Adobe I/O Runtime.
 
 ![Diagramma dell&#39;architettura del catalogo](assets/catalog-service-architecture-mesh.png)
 
@@ -30,7 +30,7 @@ Per utilizzare Mesh API con Catalog Service, è necessario connettere Mesh API a
 
 ## Connetti e configura Mesh API.
 
-1. Connetti Mesh API all&#39;istanza di Adobe Commerce seguendo le istruzioni per [creare un Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) nella _Guida per gli sviluppatori di Mesh API_.
+1. Connetti Mesh API all&#39;istanza di Adobe Commerce seguendo le istruzioni per [creare un Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh) nella _Guida per gli sviluppatori di Mesh API_.
 
    Se è la prima volta che usi Mesh API, completa il [processo Guida introduttiva](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) prima di creare la mesh.
 

@@ -18,7 +18,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 267
 ht-degree: 0%
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 Creare un plug-in che aggiunga `customer_attribute` alla classe `Magento\CatalogDataExporter\Model\Provider\Product\Attributes`.
 
-1. Aggiorna il file di configurazione [dependency injection](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`) per definire il plug-in.
+1. Aggiorna il file di configurazione [dependency injection](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`) per definire il plug-in.
 
    ```xml
    <type name="Magento\CatalogDataExporter\Model\Provider\Product\Attributes">
@@ -110,7 +110,7 @@ Creare un plug-in che aggiunga `customer_attribute` alla classe `Magento\Catalog
 
 Se crei dinamicamente un attributo di prodotto personalizzato e desideri utilizzarlo per la visualizzazione, la ricerca o il filtro nei servizi di vetrina, aggiungi i metadati dell’attributo di prodotto per configurare il comportamento della vetrina.
 
-1. Aggiornare il file di configurazione [dependency injection](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`) per definire il plug-in per i metadati dell&#39;attributo del prodotto.
+1. Aggiornare il file di configurazione [dependency injection](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`) per definire il plug-in per i metadati dell&#39;attributo del prodotto.
 
    ```xml
    <type name="Magento\CatalogDataExporter\Model\Provider\ProductMetadata">

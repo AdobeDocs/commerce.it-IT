@@ -20,9 +20,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: d9ea778afc86de323e53cd1be4768bc87cb71a8b
 workflow-type: tm+mt
-source-wordcount: 2634
+source-wordcount: 2611
 ht-degree: 0%
 
 ---
@@ -52,22 +52,22 @@ Dopo l&#39;installazione di [strumenti per sviluppatori di codifica AI](#install
 aio commerce extensibility tools-setup
 ```
 
-Gli strumenti verranno aggiornati alla versione più recente.
+Questo comando aggiorna gli strumenti alla versione più recente.
 
 ## Prerequisiti
 
 * Qualsiasi agente di codifica che supporta [abilità agente](https://agentskills.io/home#adoption), ad esempio:
 
-   * [Cursore](https://cursor.com/download)
-   * [Claude Code](https://www.claude.com/product/claude-code)
-   * [Copilota GitHub](https://github.com/features/copilot)
-   * [Windsurf](https://windsurf.com)
-   * [CLI Gemini](https://github.com/google-gemini/gemini-cli)
-   * [Codice OpenAI](https://openai.com/index/introducing-codex/)
-   * [Cline](https://cline.bot)
+  * [Cursore](https://cursor.com/download)
+  * [Claude Code](https://claude.com/product/claude-code)
+  * [Copilota GitHub](https://github.com/features/copilot)
+  * [Desktop Devin](https://devin.ai/desktop)
+  * [CLI Gemini](https://github.com/google-gemini/gemini-cli)
+  * [Codice OpenAI](https://openai.com/index/introducing-codex/)
+  * [Cline](https://cline.bot)
 
 * [Node.js](https://nodejs.org/en/download): versione LTS
-* Gestione pacchetti: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) o [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
+* Gestione pacchetti: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/) o [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git): per la clonazione dell&#39;archivio e il controllo della versione
 
 ## Installazione
@@ -114,7 +114,7 @@ Gli strumenti verranno aggiornati alla versione più recente.
    aio commerce extensibility tools-setup
    ```
 
-   Il processo di configurazione richiede di specificare le opzioni di configurazione. Seguire le istruzioni per completare l&#39;installazione. Gli strumenti verranno installati nella directory selezionata.
+   Il processo di configurazione richiede di specificare le opzioni di configurazione. Per completare l&#39;installazione, seguire le istruzioni. Gli strumenti vengono installati nella directory selezionata.
 
    * Selezionare il kit di avvio da utilizzare per il progetto.
 
@@ -138,7 +138,7 @@ Gli strumenti verranno aggiornati alla versione più recente.
         ...
      ```
 
-   * Il programma di installazione rileverà se è installato NPM o Yarn e effettuerà automaticamente la selezione appropriata. Tuttavia, se non hai installato nessuno dei due, ti verrà richiesto di selezionare il gestore di pacchetti; Adobe consiglia di utilizzare `npm` per coerenza:
+   * Il programma di installazione rileva se è installato NPM o Yarn e effettua automaticamente la selezione appropriata. Tuttavia, se non hai installato nessuno dei due, ti viene richiesto di selezionare il gestore di pacchetti; Adobe consiglia di utilizzare `npm` per coerenza:
 
      ```shell-session
      ? Which package manager would you like to use?
@@ -156,13 +156,13 @@ Gli strumenti verranno aggiornati alla versione più recente.
 
 >[!NOTE]
 >
->Prima di distribuire il progetto, è necessario completare le seguenti attività di configurazione:
+>Prima di distribuire il progetto, completa le seguenti attività di configurazione:
 >
 >* Accedi a [Adobe Developer Console](https://developer.adobe.com/console) utilizzando Adobe I/O CLI.
 >* Crea un progetto App Builder (vedi [Configurazione del progetto](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
 >* Configurare le variabili di ambiente in un file `.env`.
 >
->Puoi completare questi passaggi di configurazione manualmente o sfruttare gli strumenti di codifica IA per guidarti nel processo. Per istruzioni di configurazione dettagliate, consulta [Creare un&#39;integrazione](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/).
+>Puoi completare queste attività di configurazione manualmente o sfruttare gli strumenti di codifica AI per guidarti nel processo. Per istruzioni di configurazione dettagliate, consulta [Creare un&#39;integrazione](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration).
 
 ## Configurazione post-installazione
 
@@ -189,7 +189,7 @@ aio auth login
 
 >[!NOTE]
 >
->Alcune funzionalità del server MCP funzioneranno senza effettuare l’accesso, ma il servizio RAG (Retrieval-Augmented Generation) non funzionerà. Il servizio RAG fornisce all’agente di codifica AI l’accesso in tempo reale al set completo della documentazione di Adobe Commerce, consentendogli di rispondere alle domande e generare il codice in base alle procedure di sviluppo Commerce, alle API e ai pattern architetturali correnti.
+>Alcune funzioni del server MCP funzionano senza effettuare l’accesso, ma il servizio RAG (Retrieval-Augmented Generation) non funziona. Il servizio RAG fornisce all’agente di codifica AI l’accesso in tempo reale al set completo della documentazione di Adobe Commerce, consentendogli di rispondere alle domande e generare il codice in base alle procedure di sviluppo Commerce, alle API e ai pattern architetturali correnti.
 
 ### Cursore
 
@@ -204,7 +204,7 @@ aio auth login
    * Individua **Commerce-Extensibility MCP Server** nell&#39;elenco
    * Attiva/disattiva il server **ON** per abilitare gli strumenti di codifica
 
-1. Verifica dello stato del server: il server MCP di estensibilità di Commerce deve essere visualizzato come:
+1. Verifica dello stato del server: il server MCP di estensibilità di Commerce viene visualizzato come:
 
    ```shell-session
    Status: Connected/Active
@@ -226,12 +226,12 @@ aio auth login
 
 1. Attiva il server MCP:
 
-   * Apri il pannello Estensioni facendo clic sull&#39;icona **Estensioni** nella barra attività a sinistra oppure utilizzando **Cmd+Maiusc+X** (macOs) o **Ctrl+Maiusc+X** (Windows e Linux).
+   * Apri il pannello Estensioni facendo clic sull&#39;icona **Estensioni** nella barra attività a sinistra oppure utilizzando **Cmd+Maiusc+X** (macOS) o **Ctrl+Maiusc+X** (Windows e Linux).
    * Fare clic su [!UICONTROL **SERVER MCP - INSTALLATI**].
    * Fare clic sull&#39;icona a forma di ingranaggio accanto a [!UICONTROL **Commerce-extensibility MCP Server**] e selezionare [!UICONTROL **Avvia server**], se il server è arrestato.
    * Fare di nuovo clic sull&#39;icona a forma di ingranaggio e selezionare [!UICONTROL **Mostra output**].
 
-1. Verificare lo stato del server. L&#39;output `MCP:commerce-extensibility` deve corrispondere al seguente:
+1. Verificare lo stato del server. L&#39;output `MCP:commerce-extensibility` corrisponde a quanto segue:
 
    ```shell-session
    2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
@@ -287,7 +287,7 @@ Oltre a richiedere conferma, è possibile utilizzare il comando `/search-commerc
 
 ## Abilità
 
-Anche se le abilità verranno richiamate automaticamente quando si chatta con l&#39;agente di codifica, è possibile richiamarle manualmente utilizzando i seguenti comandi:
+Anche se le abilità vengono richiamate automaticamente durante la chat con l’agente di codifica, puoi anche richiamarle manualmente utilizzando i seguenti comandi:
 
 * `/architect` - Progetta l&#39;architettura per le estensioni Adobe Commerce utilizzando [!DNL App Builder] e il kit di avvio selezionato. Da utilizzare per pianificare integrazioni, selezionare eventi, progettare flussi di dati o prendere decisioni architettoniche.
 * `/developer` - Implementa le estensioni Adobe Commerce seguendo i pattern [!DNL App Builder] e la struttura del file. Utilizza quando generi codice, aggiorni i file di configurazione o implementi azioni di runtime.
@@ -299,15 +299,15 @@ Anche se le abilità verranno richiamate automaticamente quando si chatta con l&
 
 ## Best practice
 
-Adobe consiglia di seguire le seguenti best practice durante l’utilizzo degli strumenti di codifica IA:
+Adobe consiglia le seguenti best practice per l’utilizzo degli strumenti di codifica IA:
 
 ### Modalità pianificazione
 
-Durante la chat con il tuo agente di codifica, devi selezionare la modalità **Piano** per creare un piano di implementazione dettagliato per il progetto.
+Durante la chat con il tuo agente di codifica, seleziona la modalità **Piano** per creare un piano di implementazione dettagliato per il progetto.
 
 Il metodo di selezione della modalità **Piano** varia a seconda dell&#39;agente utilizzato. Per le istruzioni relative, consulta la documentazione dell’agente. Ad esempio:
 
-* [Cursore](https://cursor.com/docs/agent/modes)
+* [Cursore](https://cursor.com/docs/agent/plan-mode)
 * [Claude Code](https://code.claude.com/docs/en/common-workflows#when-to-use-plan-mode)
 * [CLI Gemini](https://geminicli.com/docs/cli/plan-mode/)
 
@@ -340,7 +340,7 @@ All&#39;avvio di una nuova chat:
 
 ### Flusso di lavoro
 
-Durante lo sviluppo con gli strumenti di codifica AI, inizia con un codice di esempio o progetti su scaffolding. Questo approccio ti assicura di basarti su basi solide anziché partire dal nulla, ottimizzando al contempo il flusso di lavoro di sviluppo dell’intelligenza artificiale.
+Durante lo sviluppo con gli strumenti di codifica AI, inizia con un codice di esempio o progetti su scaffolding. Questo approccio ti assicura di basarti su una base consolidata anziché partire dal nulla, ottimizzando al contempo il flusso di lavoro di sviluppo di AI.
 
 Questo consente anche di sfruttare i modelli di Adobe e di basarsi su modelli e architetture collaudate, mantenendo al contempo strutture e convenzioni di directory consolidate.
 
@@ -349,8 +349,8 @@ Consulta le seguenti risorse per iniziare:
 * [Kit di avvio dell’integrazione](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Kit di avvio per il pagamento](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [Modelli di kit di avvio Adobe Commerce](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Modelli di Adobe I/O Events Starter](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
-* [Applicazioni di esempio App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
+* [Modelli di Adobe I/O Events Starter](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Applicazioni di esempio App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps/)
 
 #### Perché utilizzare queste risorse
 
@@ -365,12 +365,12 @@ Consulta le seguenti risorse per iniziare:
 
 ### Protocollo
 
-Il seguente protocollo in quattro fasi viene applicato automaticamente dalle abilità installate. Gli strumenti devono seguire questo protocollo automaticamente durante lo sviluppo di applicazioni:
+Le abilità installate applicano automaticamente il seguente protocollo in quattro fasi. Gli strumenti seguono automaticamente questo protocollo durante lo sviluppo di applicazioni:
 
 * Fase 1: analisi dei requisiti e chiarimento
-   * Quando ti vengono poste domande chiarificatrici, fornisci risposte complete.
+  * Quando ti vengono poste domande chiarificatrici, fornisci risposte complete.
 * Fase 2: pianificazione architetturale e approvazione degli utenti
-   * Quando viene presentato un piano, rivederlo attentamente prima di approvarlo.
+  * Quando viene presentato un piano, rivederlo attentamente prima di approvarlo.
 * Fase 3: Generazione e implementazione del codice
 * Fase 4: Documentazione e convalida
 
@@ -435,7 +435,7 @@ Utilizza le seguenti best practice durante il test:
 Dopo aver completato lo sviluppo di una funzione nel piano di implementazione, testala immediatamente. I test preliminari evitano i problemi composti e semplificano il debug.
 
 * Non attendere il completamento di tutte le funzionalità
-* Esegui il test in modo incrementale per rilevare i problemi in anticipo
+* Per rilevare i problemi in anticipo, esegui il test in modo incrementale.
 * Convalida la funzionalità prima di passare alla funzionalità successiva
 
 #### Esegui prima il test locale
@@ -522,7 +522,7 @@ Help me debug why this action is returning 500 errors
 
 ### Debug
 
-Fermatevi e valutate quando le cose vanno male. In caso di problemi:
+Interrompi e valuta quando si verificano errori. In caso di problemi:
 
 * Interrompi e valuta - Non continuare in uno stato interrotto
 * Registri di controllo: utilizza i registri di attivazione per identificare i problemi
@@ -602,7 +602,7 @@ Evita i seguenti anti-pattern quando utilizzi gli strumenti di codifica AI:
 
 Gli sviluppatori interessati a fornire feedback sugli strumenti di codifica AI possono utilizzare il comando `/feedback`.
 
-Questo comando consente di fornire un feedback testuale e di inviare i registri ad Adobe. Tutti i registri inviati saranno bonificati per rimuovere eventuali informazioni private o personali.
+Questo comando consente di fornire un feedback testuale e di inviare i registri ad Adobe. Tutti i registri inviati vengono bonificati per rimuovere informazioni private o personali.
 
 >[!TIP]
 >
@@ -624,4 +624,4 @@ Questo comando consente di fornire un feedback testuale e di inviare i registri 
 
 >[!NOTE]
 >
->Se il comando `/feedback` non viene visualizzato, potrebbe essere necessario [aggiornare alla versione più recente](#updating-to-the-latest-version).
+>Se il comando `/feedback` non viene visualizzato, [aggiorna alla versione più recente](#updating-to-the-latest-version).
