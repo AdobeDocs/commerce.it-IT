@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+source-git-commit: 5964358bb4370fa4fb0c2f4c447bacb3603d0f5e
 workflow-type: tm+mt
-source-wordcount: 3271
+source-wordcount: 3356
 ht-degree: 0%
 
 ---
@@ -44,6 +44,14 @@ Gli aggiornamenti includono:
 >L&#39;estensione [!DNL SaaS data export] è una raccolta di moduli installati automaticamente con [!DNL Live Search], [!DNL Product Recommendations] e [!DNL Catalog Service]. È possibile controllare la versione installata nel sistema utilizzando [!DNL Composer]. In alcuni casi, potrebbe essere utile aggiornare l’estensione di esportazione dei dati sul sistema per rilevare correzioni o nuove funzionalità senza aggiornare la versione del servizio Commerce.
 
 ## Versioni del 2026 {#release-notes-2026}
+
+### Versione 103.4.32
+
+_25 agosto 2026_
+
+![Nuove](../assets/new.svg) **Le opzioni personalizzabili incluse nel feed del prodotto**-Le opzioni personalizzabili del prodotto, ad esempio campioni colore, selezioni dimensioni o campi di personalizzazione, vengono ora esportate come attributo del prodotto `customizable_options`. L&#39;attributo include il titolo di ogni opzione, se necessario, e i relativi valori disponibili, in modo che i servizi Commerce connessi possano visualizzare dati accurati sulle opzioni personalizzabili nella vetrina. <!--MDEE-1029-->
+
+![Correzione](../assets/fix.svg) **Sincronizzazione delle autorizzazioni per le categorie affidabili**-È stato risolto un problema che impediva la completa risincronizzazione del feed delle autorizzazioni per le categorie per le configurazioni in cui manca un ID sito Web, causando errori di sincronizzazione. <!--MDEE-1411-->
 
 ### Versione 103.4.31
 
