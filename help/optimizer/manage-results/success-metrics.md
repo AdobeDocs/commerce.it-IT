@@ -24,9 +24,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2cb4bac8e36ce8b945eabf31e562a5e7fd097c2a
 workflow-type: tm+mt
-source-wordcount: 2627
+source-wordcount: 2835
 ht-degree: 0%
 
 ---
@@ -71,9 +71,29 @@ Gli indicatori chiave di prestazione sono:
 
 1. Fare clic su **[!UICONTROL Export]** per salvare il report come PDF.
 
+## Metadati C2PA sui report esportati {#c2pa-metadata-on-exported-reports}
+
+Il rapporto Metriche di successo include elementi di rilievo e riepiloghi utilizzando l’intelligenza artificiale generativa. Quando esportate un report in PDF, Adobe allega automaticamente i metadati C2PA al file esportato.
+
+I metadati C2PA sono metadati a prova di manomissione e leggibili dal computer basati sullo [C2PA open standard](https://c2pa.org/). I record di metadati utilizzati dall’intelligenza artificiale generativa per produrre il contenuto nel rapporto, insieme a informazioni quali il sistema di intelligenza artificiale utilizzato, se il contenuto è stato generato o modificato con intelligenza artificiale generativa e una marca temporale.
+
+>[!NOTE]
+>
+>I metadati C2PA vengono allegati automaticamente. Non è richiesta alcuna azione aggiuntiva e questo comportamento non può essere disattivato. I metadati C2PA non modificano l’aspetto del rapporto. Si tratta di metadati invisibili trasferiti all’interno di PDF.
+
+**Significato per i report esportati**
+
+- Quando esportate un rapporto Metriche di successo in PDF, il file esportato contiene metadati C2PA.
+- I metadati C2PA viaggiano con PDF quando lo si condivide o si scarica. Le piattaforme di terze parti che supportano i metadati C2PA possono leggere tali metadati e visualizzare informazioni sulla trasparenza ai visualizzatori.
+- Puoi verificare i metadati C2PA allegati a qualsiasi file caricandolo in [Inspect](https://contentauthenticity.adobe.com/inspect).
+
+![Verifica campione](../assets/inspect-sample.png)
+
+Ulteriori informazioni sulla [trasparenza dei contenuti di IA generativa](https://experienceleague.adobe.com/it/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency).
+
 ## Utilizzo congiunto di metriche di successo e Sites Optimizer
 
-Le metriche di successo e Sites Optimizer ([Opportunities](opportunities.md)) sono strumenti complementari progettati per funzionare insieme, che consentono di migliorare le prestazioni del sito di e-commerce. Comprendere la differenza tra queste funzioni ti aiuta a prendere decisioni migliori e a raggiungere risultati misurabili.
+Le metriche di successo e Sites Optimizer ([Opportunities](opportunities.md)) sono strumenti complementari progettati per funzionare insieme, che consentono di migliorare le prestazioni del sito commerce. Comprendere la differenza tra queste funzioni ti aiuta a prendere decisioni migliori e a raggiungere risultati misurabili.
 
 ### Differenze chiave
 

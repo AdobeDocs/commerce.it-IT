@@ -14,9 +14,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 9fce350099392041ec9f648ae2d67a459ff53d91
 workflow-type: tm+mt
-source-wordcount: 1744
+source-wordcount: 1784
 ht-degree: 1%
 
 ---
@@ -34,6 +34,10 @@ Puoi configurare il progetto AEM Assets in due modi:
 >[!TIP]
 >
 >Puoi controllare la versione corrente di AEM dal menu in alto a destra: **[!UICONTROL Help]** > **[!UICONTROL About AEM]**.
+
+>[!IMPORTANT]
+>
+>Indipendentemente dall&#39;opzione utilizzata, [configura lo schema metadati per l&#39;approvazione delle risorse](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets#configuration) nell&#39;editor schema metadati di AEM in modo da poter approvare le risorse Commerce.
 
 ## Abilitare l’integrazione con Commerce (self-service) {#enable-aem-commerce-self-service}
 
@@ -53,7 +57,7 @@ Nelle versioni di AEM supportate, abilita l’integrazione di Commerce da Cloud 
 
 ### Passaggio 1: creare il programma e gli ambienti
 
-La creazione di un programma in Cloud Manager è un processo di creazione guidata singolo: il programma e i relativi ambienti sono configurati in più passaggi e salvati insieme alla fine.
+La creazione di un programma in Cloud Manager è un processo in più passaggi: il programma e i relativi ambienti sono configurati in più passaggi e salvati insieme.
 
 1. In Cloud Manager, selezionare **[!UICONTROL Add Program]**.
 
@@ -195,9 +199,9 @@ Dopo aver inviato il ticket di supporto, Adobe abilita Dynamic Media con funzion
 
 ### La scheda Commerce non è visibile nelle proprietà
 
-Se la scheda **Commerce** non viene visualizzata nelle proprietà, è necessario completare manualmente i passaggi seguenti nell&#39;editor schema metadati:
+Se la scheda **Commerce** non viene visualizzata nelle proprietà, è necessario completare manualmente i passaggi seguenti nell&#39;Editor schema metadati:
 
-1. Passa all’editor schema metadati.
+1. Passa all’Editor schema metadati.
 
 1. Seleziona **Modifica** per modificare il modulo schema metadati predefinito.
 
@@ -231,7 +235,7 @@ Il componente Interfaccia utente dati prodotto viene aggiunto automaticamente in
 
    ![Authoring di AEM Assets](../assets/aem-assets-authoring.png){width="600" zoomable="yes"}
 
-1. Apri gli strumenti di amministrazione selezionando l’icona a forma di martello.
+1. Aprire gli strumenti di amministrazione selezionando l&#39;icona a forma di martello.
 
    ![Amministrazione autori AEM gestisce i profili di metadati](../assets/aem-manage-metadata-profiles.png){width="600" zoomable="yes"}
 
@@ -267,17 +271,17 @@ Il componente Interfaccia utente dati prodotto viene aggiunto automaticamente in
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Facoltativo. Per sincronizzare automaticamente le risorse Commerce approvate quando vengono caricate nell&#39;ambiente AEM Assets, impostare su `approved` il valore predefinito per il campo _[!UICONTROL Review Status]_&#x200B;della scheda `Basic`.
+1. Facoltativo. Per sincronizzare automaticamente Commerce Assets approvato durante il caricamento nell&#39;ambiente AEM Assets, impostare su `approved` il valore predefinito per il campo _[!UICONTROL Review Status]_&#x200B;nella scheda `Basic`.
 
 1. Salva l’aggiornamento.
 
-### Applicare il profilo di metadati alla cartella di origine delle risorse di Commerce
+### Applicare il profilo di metadati alla cartella di origine di Commerce Assets
 
 1. Dalla pagina **[!UICONTROL Metadata Profiles]**, seleziona il profilo di integrazione di Commerce.
 
 1. Dal menu Azioni, selezionare **[!UICONTROL Apply Metadata Profiles to Folders]**.
 
-1. Seleziona la cartella contenente le risorse Commerce.
+1. Seleziona la cartella contenente Commerce Assets.
 
    Crea una cartella Commerce se non esiste.
 
