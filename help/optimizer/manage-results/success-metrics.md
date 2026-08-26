@@ -1,32 +1,16 @@
 ---
 title: Metriche di successo
 description: Le metriche di successo forniscono ad insight le metriche delle prestazioni chiave per il tuo archivio  [!DNL Adobe Commerce Optimizer] .
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: 7202a531-fec3-4698-89b9-6bdbcc37015e
 TQID: https://experienceleague.adobe.com/Z1Ntq9O5Pde8B2N8UCarCf-V5NZw-YiCx78ortu5PwY
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 2cb4bac8e36ce8b945eabf31e562a5e7fd097c2a
 workflow-type: tm+mt
-source-wordcount: 2627
+source-wordcount: 2835
 ht-degree: 0%
 
 ---
@@ -71,9 +55,29 @@ Gli indicatori chiave di prestazione sono:
 
 1. Fare clic su **[!UICONTROL Export]** per salvare il report come PDF.
 
+## Metadati C2PA sui report esportati {#c2pa-metadata-on-exported-reports}
+
+Il rapporto Metriche di successo include elementi di rilievo e riepiloghi utilizzando l’intelligenza artificiale generativa. Quando esportate un report in PDF, Adobe allega automaticamente i metadati C2PA al file esportato.
+
+I metadati C2PA sono metadati a prova di manomissione e leggibili dal computer basati sullo [C2PA open standard](https://c2pa.org/). I record di metadati utilizzati dall’intelligenza artificiale generativa per produrre il contenuto nel rapporto, insieme a informazioni quali il sistema di intelligenza artificiale utilizzato, se il contenuto è stato generato o modificato con intelligenza artificiale generativa e una marca temporale.
+
+>[!NOTE]
+>
+>I metadati C2PA vengono allegati automaticamente. Non è richiesta alcuna azione aggiuntiva e questo comportamento non può essere disattivato. I metadati C2PA non modificano l’aspetto del rapporto. Si tratta di metadati invisibili trasferiti all’interno di PDF.
+
+**Significato per i report esportati**
+
+- Quando esportate un rapporto Metriche di successo in PDF, il file esportato contiene metadati C2PA.
+- I metadati C2PA viaggiano con PDF quando lo si condivide o si scarica. Le piattaforme di terze parti che supportano i metadati C2PA possono leggere tali metadati e visualizzare informazioni sulla trasparenza ai visualizzatori.
+- Puoi verificare i metadati C2PA allegati a qualsiasi file caricandolo in [Inspect](https://contentauthenticity.adobe.com/inspect).
+
+![Verifica campione](../assets/inspect-sample.png)
+
+Ulteriori informazioni sulla [trasparenza dei contenuti di IA generativa](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency).
+
 ## Utilizzo congiunto di metriche di successo e Sites Optimizer
 
-Le metriche di successo e Sites Optimizer ([Opportunities](opportunities.md)) sono strumenti complementari progettati per funzionare insieme, che consentono di migliorare le prestazioni del sito di e-commerce. Comprendere la differenza tra queste funzioni ti aiuta a prendere decisioni migliori e a raggiungere risultati misurabili.
+Le metriche di successo e Sites Optimizer ([Opportunities](opportunities.md)) sono strumenti complementari progettati per funzionare insieme, che consentono di migliorare le prestazioni del sito commerce. Comprendere la differenza tra queste funzioni ti aiuta a prendere decisioni migliori e a raggiungere risultati misurabili.
 
 ### Differenze chiave
 
