@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
+source-git-commit: 4b3bf2c28d4570141497bf6aa514152311fa4a37
 workflow-type: tm+mt
-source-wordcount: 3064
+source-wordcount: 3099
 ht-degree: 0%
 
 ---
@@ -54,6 +54,10 @@ Gli aggiornamenti sono suddivisi per tipo:
 ## Servizio catalogo vetrina
 
 ### Agosto 2026
+
+**Dati sulla versione**: 24 agosto 2026
+
+![Nuovo](../assets/new.svg) **Supporto per la query `categoryTree` su Adobe Commerce as a Cloud Service**. La query GraphQL `categoryTree` è ora disponibile per [!DNL Adobe Commerce as a Cloud Service], pertanto gli storefront possono risolvere le categorie tramite slug ed eseguire il rendering degli alberi delle categorie. <!-- DATA-7299 -->
 
 **Data di rilascio**: 7 agosto 2026
 
