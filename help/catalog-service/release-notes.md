@@ -75,7 +75,7 @@ Gli aggiornamenti sono suddivisi per tipo:
 **Data di rilascio**: 20 maggio 2026
 <!-- v1.55 -->
 
-![Nuovo](../assets/new.svg) Limite massimo imposto di 100 SKU per richiesta per i client Adobe Commerce e Adobe Commerce as a Cloud Service, in base a [limiti e limiti documentati](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits).
+![Nuovo](../assets/new.svg) Limite massimo imposto di 100 SKU per richiesta per i client Adobe Commerce e Adobe Commerce as a Cloud Service, in base a [limiti e limiti documentati](https://experienceleague.adobe.com/it/docs/commerce/optimizer/boundaries-limits).
 <!--DATA-7163-->
 
 **Data di rilascio**: 13 maggio 2026
@@ -95,7 +95,7 @@ Gli aggiornamenti sono suddivisi per tipo:
 <!--v1.52-->
 
 ![Nuovo](../assets/new.svg) Limite massimo imposto di 100 SKU per richiesta per Adobe Commerce Optimizer e Adobe Commerce as a Cloud Service
-client in base a [limiti e limiti documentati](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits). <!--DATA-7156-->
+client in base a [limiti e limiti documentati](https://experienceleague.adobe.com/it/docs/commerce/optimizer/boundaries-limits). <!--DATA-7156-->
 
 **Data di rilascio**: 17 aprile 2026
 <!--v1.51-->
@@ -279,7 +279,7 @@ Si applica a:
 **Data di rilascio**: 20 giugno 2025
 <!-- v1.37 -->
 
-![Nuovo](../assets/new.svg) **Configurazione gerarchica del listino prezzi**: intervalli di prezzi precisi per i listini prezzi padre-figlio. I calcoli rispettano la gerarchia e le regole ereditate; riducono gli errori di determinazione prezzi quando più listini prezzi sono collegati. Solo Adobe Commerce Optimizer. Consulta [Libri Prezzi](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
+![Nuovo](../assets/new.svg) **Configurazione gerarchica del listino prezzi**: intervalli di prezzi precisi per i listini prezzi padre-figlio. I calcoli rispettano la gerarchia e le regole ereditate; riducono gli errori di determinazione prezzi quando più listini prezzi sono collegati. Solo Adobe Commerce Optimizer. Consulta [Libri Prezzi](https://experienceleague.adobe.com/it/docs/commerce/optimizer/setup/pricebooks).
 
 ![Nuovo](../assets/new.svg) **Chiavi senza distinzione tra maiuscole e minuscole**. Le ricerche di chiavi nelle query non fanno distinzione tra maiuscole e minuscole, riducendo gli errori relativi alle maiuscole e minuscole. <!--DATA-6494, DCAT-2495-->
 
@@ -416,7 +416,7 @@ Versione principale: [modello dati catalogo componibile](https://developer.adobe
 
 <!--DATA-5033-->
 
-![Correzione](../assets/fix.svg) aggiunta del supporto per i prezzi dei prodotti fino a 16 cifre e 4 cifre decimali. Risincronizza dal [dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) o [CLI](../data-export/data-export-cli-commands.md) per applicare gli aggiornamenti.
+![Correzione](../assets/fix.svg) aggiunta del supporto per i prezzi dei prodotti fino a 16 cifre e 4 cifre decimali. Risincronizza dal [dashboard di gestione dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) o [CLI](../data-export/data-export-cli-commands.md) per applicare gli aggiornamenti.
 <!--DATA-5033-->
 
 #### Limitazioni note
@@ -453,7 +453,7 @@ Per ulteriori dettagli ed esempi, vedere [Catalog Service and API Mesh](mesh.md)
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.4 e successive
 
-![Nuovo](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) è ora disponibile per i flussi di dati (Product Recommendations, Live Search, Catalog Service). Richiede `catalog-service` metapackage v3.1.0+.
+![Nuovo](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) è ora disponibile per i flussi di dati (Product Recommendations, Live Search, Catalog Service). Richiede `catalog-service` metapackage v3.1.0+.
 
 **Data di rilascio**: 13 febbraio 2024
 <!-- v1.16 -->
@@ -651,7 +651,7 @@ Aggiornamenti al metapacchetto PHP del servizio catalogo (`magento/catalog-servi
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.4 e successive
 
-![Nuovo](../assets/new.svg) **Supporto per il monitoraggio dello stato di sincronizzazione dei feed di dati**. Sono state aggiornate le dipendenze del metapacchetto di Catalog Service per includere l&#39;estensione dello stato di Data Exporter (`magento/module-data-exporter-status`). In questo modo [il monitoraggio dello stato di sincronizzazione del feed dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) verrà attivato dall&#39;amministratore di Commerce senza richiedere ulteriori passaggi di installazione o configurazione
+![Nuovo](../assets/new.svg) **Supporto per il monitoraggio dello stato di sincronizzazione dei feed di dati**. Sono state aggiornate le dipendenze del metapacchetto di Catalog Service per includere l&#39;estensione dello stato di Data Exporter (`magento/module-data-exporter-status`). In questo modo [il monitoraggio dello stato di sincronizzazione del feed dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) verrà attivato dall&#39;amministratore di Commerce senza richiedere ulteriori passaggi di installazione o configurazione
 
 ![Nuovo](../assets/new.svg) Sono state aggiornate le dipendenze per mantenere la compatibilità tra Catalog Service e lo stack di Commerce.
 
@@ -708,9 +708,9 @@ Ogni volta che si utilizza Composer per aggiornare `magento/catalog-service`, il
 
   - [Guida a Catalog Service](overview.md)
   - [Riferimento API GraphQL di Catalog Service](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)
-  - [Guida per l’amministratore di Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home)
+  - [Guida per l’amministratore di Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-admin/user-guides/home)
   - [Guida di Adobe Commerce as a Cloud Service](../cloud-service/overview.md)
-  - [Guida di Adobe Commerce su Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
+  - [Guida di Adobe Commerce su Cloud](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/overview)
 
 - Per i progetti che utilizzano **Adobe Commerce Optimizer** o **Adobe Commerce Optimizer Connector**, consulta la seguente documentazione:
 
