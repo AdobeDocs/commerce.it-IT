@@ -39,7 +39,7 @@ Per ulteriori informazioni sui dati comportamentali raccolti dagli eventi [!DNL 
 
 Se sei un cliente del settore sanitario e hai installato l&#39;estensione [HIPAA Data Services](../data-connection/hipaa-readiness.md#installation), inclusa con l&#39;estensione [Data Connection](../data-connection/overview.md), [!DNL Product Recommendations] non raccoglie più i dati dell&#39;evento storefront perché sono generati sul lato client.
 
-Per riprendere la raccolta e l&#39;invio dei dati evento vetrina, riattivare la raccolta eventi per [!DNL Product Recommendations]. Per ulteriori informazioni, vedere [Configurazione generale](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services).
+Per riprendere la raccolta e l&#39;invio dei dati evento vetrina, riattivare la raccolta eventi per [!DNL Product Recommendations]. Per ulteriori informazioni, vedere [Configurazione generale](https://experienceleague.adobe.com/it/docs/commerce-admin/config/general/general#data-services).
 
 ## Tipi di dati ed eventi
 
@@ -104,4 +104,4 @@ Se la raccolta dei dati di input non è sufficiente, i seguenti tipi di consigli
 
 >[!NOTE]
 >
->Se è abilitata la modalità di restrizione dei cookie [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law), Adobe Commerce non raccoglie i dati comportamentali fino a quando l&#39;acquirente non acconsente all&#39;utilizzo dei cookie. Se la modalità di restrizione dei cookie è disabilitata, Adobe Commerce raccoglie i dati comportamentali per impostazione predefinita.
+>Se è abilitata la modalità di restrizione dei cookie [&#128279;](https://experienceleague.adobe.com/it/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law), Adobe Commerce non raccoglie i dati comportamentali fino a quando l&#39;acquirente non acconsente all&#39;utilizzo dei cookie. Se la modalità di restrizione dei cookie è disabilitata, Adobe Commerce raccoglie i dati comportamentali per impostazione predefinita.

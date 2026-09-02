@@ -3,7 +3,7 @@ title: Merchandising categorie
 description: Utilizza  [!DNL Live Search] merchandising per categorie per un'esperienza di acquisto più veloce.
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 TQID: https://experienceleague.adobe.com/2omWXwNttfwW04upO-QlQlRa41w9vgpdlPOYVFOX7-4
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -51,7 +51,7 @@ Puoi cercare una categoria o sottocategoria nel campo &quot;Ricerca per categori
 Il merchandising per categorie utilizza gli stessi tipi di classificazione utilizzati per [singoli prodotti](rules-workspace.md).
 Esistono due tipi di classificazione: intelligente e manuale.
 
-**La classificazione intelligente** sfrutta l&#39;analisi dei dati comportamentali in vetrina da parte di [Adobe AI](https://business.adobe.com/ai.html) per ordinare tutti i prodotti all&#39;interno delle categorie scelte in base a un determinato algoritmo. Dopo aver scelto una classificazione intelligente, l&#39;ordine specifico dei prodotti cambia nel tempo in quanto [!DNL Adobe AI] rianalizza costantemente i dati sottostanti. Ad esempio, i prodotti con tendenze principali cambiano automaticamente nel tempo in base alle preferenze dell’acquirente.
+**La classificazione intelligente** sfrutta l&#39;analisi dei dati comportamentali in vetrina da parte di [Adobe AI](https://business.adobe.com/it/ai.html) per ordinare tutti i prodotti all&#39;interno delle categorie scelte in base a un determinato algoritmo. Dopo aver scelto una classificazione intelligente, l&#39;ordine specifico dei prodotti cambia nel tempo in quanto [!DNL Adobe AI] rianalizza costantemente i dati sottostanti. Ad esempio, i prodotti con tendenze principali cambiano automaticamente nel tempo in base alle preferenze dell’acquirente.
 I metodi di classificazione intelligenti sono:
 
 * Più acquistati: classifica i prodotti in base alla frequenza con cui gli acquirenti li hanno acquistati nei sette giorni precedenti.
