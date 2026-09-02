@@ -26,9 +26,9 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 last-update: 2026-07-29
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 2803
+source-wordcount: 2856
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Questo articolo è destinato agli sviluppatori o agli integratori di sistemi del
 >
 > **Idoneità HIPAA**
 >
->Se si utilizza Adobe Commerce con l&#39;estensione HIPAA-Ready e il componente aggiuntivo Healthcare, non elaborare alcuna informazione sanitaria protetta (PHI) tramite Live Search> Live Search non è un servizio compatibile con HIPAA.
+>Se utilizzi Adobe Commerce con l’estensione HIPAA-Ready e il componente aggiuntivo Healthcare, non elaborare alcuna informazione sanitaria protetta (PHI) tramite Live Search. Live Search non è un servizio compatibile con HIPAA.
 >
 >Per informazioni dettagliate, vedere [Preparazione HIPAA in Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) e la guida [Operazioni](https://experienceleague.adobe.com/it/docs/commerce-admin/start/compliance/hipaa-ready-service/operations), che elenca Live Search tra i servizi Commerce non conformi HIPAA.
 
@@ -422,9 +422,9 @@ Poiché [!DNL Live Search] non ha accesso al database completo dei prodotti, le 
 Adobe consiglia di chiamare direttamente le API SaaS, in particolare l’endpoint Catalog Service.
 
 - Migliorare le prestazioni e ridurre il carico del processore ignorando il database Commerce/processo Graphql
-- Sfruttare la federazione [!DNL Catalog Service] per chiamare [!DNL Live Search], [!DNL Catalog Service] e [!DNL Product Recommendations] da un singolo endpoint.
+- Per ottenere prestazioni e ridurre il carico del processore, chiamare [!DNL Live Search], [!DNL Catalog Service] e [!DNL Product Recommendations] da un singolo endpoint utilizzando la federazione [!DNL Catalog Service].
 
-Per alcuni casi d&#39;uso, potrebbe essere meglio chiamare [!DNL Catalog Service] per i dettagli del prodotto e casi simili. Per ulteriori informazioni, vedere [refineProduct](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product).
+Per alcuni casi d&#39;uso, potrebbe essere meglio chiamare [!DNL Catalog Service] per i dettagli del prodotto e scenari simili. Per ulteriori informazioni, vedere la query GraphQL [refineProduct](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product).
 
 Se hai un&#39;implementazione headless personalizzata, vedi le [!DNL Live Search] implementazioni di riferimento:
 
@@ -486,7 +486,7 @@ Gli amministratori possono inoltre impostare la lingua dell&#39;[indice di ricer
 
 Il codice per il widget della pagina di elenco prodotti e il widget del campo [!DNL Live Search] è disponibile per il download da GitHub.
 
-Gli sviluppatori che hanno accesso al codice possono personalizzare completamente il suo funzionamento e aspetto. Ospitano il codice sui propri server, ma utilizzano comunque il servizio [!DNL Live Search].
+Gli sviluppatori che hanno accesso al codice possono personalizzare il suo funzionamento e aspetto. Ospitano il codice sui propri server, ma utilizzano comunque il servizio [!DNL Live Search].
 
 - [Widget PLP](https://github.com/adobe/storefront-product-listing-page)
 - [Barra di ricerca](https://github.com/adobe/storefront-search-as-you-type)
@@ -538,7 +538,7 @@ Questo modulo aggiunge contesti aggiuntivi alle query GraphQL:
 
 ### Supporto PWA
 
-[!DNL Live Search] funziona con PWA Studio, ma gli sviluppatori di vetrine potrebbero notare lievi differenze rispetto ad altre implementazioni di Commerce, in particolare in alcuni scenari basati su GraphQL e nelle caratteristiche di risposta complessiva.
+[!DNL Live Search] funziona con PWA Studio, ma gli sviluppatori di vetrine vedono differenze rispetto ad altre implementazioni di Commerce, in particolare in alcuni scenari basati su GraphQL e nelle caratteristiche di risposta.
 
 - L&#39;implementazione PWA corrente di [!DNL Live Search] richiede più tempo di elaborazione per restituire i risultati della ricerca rispetto a [!DNL Live Search] con la vetrina nativa di Commerce.
 - [!DNL Live Search] in PWA non supporta [gestione eventi](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Di conseguenza, la generazione di rapporti di ricerca e il merchandising intelligente non funzionano sui punti vendita di PWA.

@@ -18,9 +18,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 1028
+source-wordcount: 937
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 Quando installi e configuri [[!DNL Product Recommendations]](install-configure.md), il modulo distribuisce la raccolta di dati comportamentali nella vetrina. Questo meccanismo raccoglie dati comportamentali anonimi dagli acquirenti e potenzia [!DNL Product Recommendations]. Ad esempio, l&#39;evento `view` viene utilizzato per calcolare il tipo di consiglio `Viewed this, viewed that` e l&#39;evento `place-order` per calcolare il tipo di consiglio `Bought this, bought that`.
 
-Per ulteriori informazioni sui dati comportamentali raccolti dagli eventi [!DNL Product Recommendations], consulta la [documentazione per sviluppatori](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations).
+Per ulteriori informazioni sui dati comportamentali raccolti dagli eventi [!DNL Product Recommendations], consulta la [documentazione per gli sviluppatori](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations).
 
 >[!NOTE]
 >
@@ -37,7 +37,9 @@ Per ulteriori informazioni sui dati comportamentali raccolti dagli eventi [!DNL 
 
 ## Clienti del settore sanitario
 
-Se sei un cliente del settore sanitario e hai installato l&#39;estensione [HIPAA Data Services](../data-connection/hipaa-readiness.md#installation), che fa parte dell&#39;estensione [Data Connection](../data-connection/overview.md), i dati dell&#39;evento storefront utilizzati da [!DNL Product Recommendations] non vengono più acquisiti. Questo perché i dati dell’evento storefront vengono generati lato client. Per continuare l&#39;acquisizione e l&#39;invio di dati evento vetrina, riattivare la raccolta eventi per [!DNL Product Recommendations]. Per ulteriori informazioni, consulta la [configurazione generale](https://experienceleague.adobe.com/it/docs/commerce-admin/config/general/general#data-services).
+Se sei un cliente del settore sanitario e hai installato l&#39;estensione [HIPAA Data Services](../data-connection/hipaa-readiness.md#installation), inclusa con l&#39;estensione [Data Connection](../data-connection/overview.md), [!DNL Product Recommendations] non raccoglie più i dati dell&#39;evento storefront perché sono generati sul lato client.
+
+Per riprendere la raccolta e l&#39;invio dei dati evento vetrina, riattivare la raccolta eventi per [!DNL Product Recommendations]. Per ulteriori informazioni, vedere [Configurazione generale](https://experienceleague.adobe.com/it/docs/commerce-admin/config/general/general#data-services).
 
 ## Tipi di dati ed eventi
 
@@ -48,16 +50,16 @@ Esistono due tipi di dati utilizzati in Product Recommendations:
 
 Quando installi il modulo `magento/product-recommendations`, Adobe AI aggrega i dati comportamentali e di catalogo e crea consigli di prodotto per ogni tipo di consiglio. Il servizio Consigli di prodotto distribuisce quindi tali consigli nella vetrina sotto forma di un widget contenente il prodotto consigliato _elementi_.
 
-Alcuni tipi di consigli utilizzano i dati comportamentali dei tuoi acquirenti per addestrare modelli di apprendimento automatico per creare consigli personalizzati. Altri tipi di consigli utilizzano solo i dati di catalogo e non utilizzano dati comportamentali. Se desideri iniziare rapidamente a utilizzare i consigli di prodotto sul tuo sito, puoi utilizzare i seguenti tipi di consigli solo catalogo:
+Alcuni tipi di consigli utilizzano i dati comportamentali degli acquirenti per addestrare modelli di apprendimento automatico e generare consigli personalizzati. Altri si basano solo sui dati del catalogo. Per iniziare a utilizzare rapidamente i consigli di prodotto, scegli uno dei seguenti tipi di consigli per il solo catalogo:
 
 - `More like this`
 - `Visual similarity`
 
 ### Avvio a freddo
 
-Quando puoi iniziare a utilizzare i tipi di consigli che utilizzano dati comportamentali? Dipende. Questo problema è denominato _Avvio a freddo_.
+Quando puoi iniziare a utilizzare i tipi di consigli che utilizzano dati comportamentali? Dipende. Questa situazione è definita problema di _Avvio a freddo_.
 
-Il problema di _Avvio a freddo_ si riferisce al tempo necessario per l&#39;addestramento e l&#39;efficacia di un modello. Per i consigli di prodotto, significa attendere che Adobe AI raccolga dati sufficienti per addestrare i suoi modelli di apprendimento automatico prima di distribuire unità di consigli sul sito. Maggiore è il numero di dati di cui dispongono i modelli, più accurati e utili sono i consigli. Poiché la raccolta dati viene eseguita su un sito attivo, è consigliabile avviare questo processo in anticipo installando e configurando il modulo `magento/production-recommendations`.
+Il problema di _Avvio a freddo_ è il tempo necessario per l&#39;addestramento di un modello di apprendimento automatico prima che possa produrre consigli efficaci. Per i consigli di prodotto, Adobe AI deve raccogliere un numero sufficiente di dati per addestrare i suoi modelli prima di distribuire le unità di consigli. Più dati in genere migliorano l’accuratezza e l’utilità dei consigli. Poiché la raccolta dei dati si verifica nel sito attivo, avviare questo processo in anticipo installando e configurando il modulo `magento/product-recommendations`.
 
 La tabella seguente fornisce alcune indicazioni generali sul tempo necessario per raccogliere dati sufficienti per ogni tipo di consiglio:
 
@@ -76,15 +78,15 @@ Altre variabili che possono influire sul tempo necessario per la formazione:
 
 Per aiutarti a visualizzare l&#39;avanzamento della formazione di ciascun tipo di consiglio, la pagina [crea consiglio](create.md#readiness-indicators) visualizza gli indicatori di preparazione.
 
-Durante la raccolta dei dati sul sito live e l’apprendimento dei modelli di apprendimento automatico, puoi completare altre attività di test e configurazione necessarie per impostare i consigli. Al termine di questo lavoro, i modelli avranno a disposizione dati sufficienti per creare consigli utili e distribuirli nella vetrina.
+Mentre il tuo sito live raccoglie dati e i modelli di apprendimento automatico si addestrano, completa le altre attività di test e configurazione. Una volta che i modelli hanno abbastanza dati per generare consigli utili, distribuisci le unità di consigli nella vetrina.
 
-Se il sito non riceve abbastanza traffico (visualizzazioni, acquisti, tendenze) per la maggior parte delle SKU di prodotto, potrebbero non esserci dati sufficienti per completare il processo di apprendimento. In questo modo l’indicatore di preparazione nell’amministratore potrebbe sembrare bloccato. Gli indicatori di preparazione hanno lo scopo di fornire agli esercenti un altro punto di dati nella scelta del tipo di consigli migliore per il negozio. I numeri sono una guida e potrebbero non raggiungere mai il 100%. [Ulteriori informazioni](create.md#readiness-indicators) sugli indicatori di preparazione.
+Se il sito non riceve abbastanza traffico (visualizzazioni, acquisti o tendenze) per la maggior parte delle SKU di prodotto, il processo di apprendimento potrebbe non essere completato, causando il blocco degli indicatori di preparazione nell’amministratore. Gli indicatori di preparazione aiutano i commercianti a scegliere il tipo di consiglio migliore per il loro negozio, ma sono solo una guida e potrebbero non raggiungere mai il 100%. Ulteriori informazioni sugli indicatori di preparazione. [Ulteriori informazioni](create.md#readiness-indicators) sugli indicatori di preparazione.
 
 ### Raccomandazioni per il backup {#backuprecs}
 
-Se i dati di input sono insufficienti per fornire tutti gli elementi dei consigli richiesti in un&#39;unità, Adobe Commerce fornisce consigli di backup per popolare le unità dei consigli. Ad esempio, se distribuisci il tipo di consiglio `Recommended for you` nella tua home page, un acquirente sul tuo sito non ha generato abbastanza dati comportamentali per consigliare accuratamente prodotti personalizzati. In questo caso, Adobe Commerce fa emergere a questo acquirente gli elementi in base al tipo di consiglio `Most viewed`.
+Se i dati di input sono insufficienti e un’unità di consigli non è in grado di restituire tutti gli elementi richiesti, Adobe Commerce le riempie di consigli di backup. Ad esempio, dopo aver distribuito il tipo di consiglio `Recommended for you` nella home page, un acquirente alle prime armi potrebbe non aver generato abbastanza dati comportamentali per i consigli personalizzati. In questo caso, Adobe Commerce visualizza gli elementi in base al tipo di consiglio `Most viewed `.
 
-In caso di raccolta dati di input insufficiente, i seguenti tipi di consigli eseguono il fallback al tipo di consiglio `Most viewed`:
+Se la raccolta dei dati di input non è sufficiente, i seguenti tipi di consigli eseguono il fallback al tipo di consiglio `Most viewed`:
 
 - `Recommended for you`
 - `Viewed this, viewed that`
@@ -96,9 +98,9 @@ In caso di raccolta dati di input insufficiente, i seguenti tipi di consigli ese
 
 #### Avvertenze
 
-- Gli ad blocker e le impostazioni di privacy possono impedire l&#39;acquisizione degli eventi e causare la mancata generazione di rapporti per [metriche](workspace.md#column-descriptions) relative a coinvolgimento e ricavi. Inoltre, alcuni eventi potrebbero non essere inviati a causa di acquirenti che abbandonano la pagina o di problemi di rete.
+- Gli ad blocker e le impostazioni di privacy possono impedire l&#39;acquisizione degli eventi e causare la mancata generazione di rapporti per [metriche](workspace.md#column-descriptions) relative a coinvolgimento e ricavi. Inoltre, alcuni eventi non vengono inviati a causa di acquirenti che escono dalla pagina o a causa di problemi di rete.
 - [Le implementazioni headless](headless.md) devono implementare gli eventi per alimentare il dashboard Consigli di prodotto.
-- Per i prodotti configurabili, la funzione Consigli di prodotto utilizza l’immagine del prodotto principale nell’unità Consigli. Se per il prodotto configurabile non è stata specificata un’immagine, l’unità di consigli sarà vuota per quel prodotto specifico.
+- Per i prodotti configurabili, la funzione Consigli di prodotto utilizza l’immagine del prodotto principale. Se il prodotto principale non ha alcuna immagine, tale prodotto non viene visualizzato nell’unità di consigli.
 
 >[!NOTE]
 >

@@ -17,16 +17,16 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 744
+source-wordcount: 737
 ht-degree: 0%
 
 ---
 
 # Cosa sono [!DNL Product Recommendations]?
 
-[!DNL Product Recommendations] ti aiuta a mostrare consigli di prodotti personalizzati sugli store di Adobe Commerce utilizzando [Adobe AI](https://business.adobe.com/it/ai.html) e machine learning sul comportamento aggregato degli acquirenti e sul tuo catalogo. Questa panoramica descrive i vincoli del servizio (incluso HIPAA), i dati e la privacy, dove vengono visualizzate le unità per i consigli, i percorsi di implementazione della vetrina, il modo in cui i consigli integrano le relazioni tra i prodotti e la conservazione dei dati nei cataloghi.
+[!DNL Product Recommendations] utilizza [Adobe AI](https://business.adobe.com/it/ai.html) e l&#39;apprendimento automatico è stato addestrato sul comportamento degli acquirenti aggregati e sui dati del catalogo per fornire consigli personalizzati sugli store Adobe Commerce. Questa panoramica tratta i vincoli del servizio (incluso HIPAA), la privacy dei dati, il posizionamento dell’unità di consigli, le opzioni di implementazione della vetrina, l’integrazione delle relazioni con i prodotti e la conservazione dei dati del catalogo.
 
 >[!IMPORTANT]
 >
@@ -58,7 +58,7 @@ Scegli la documentazione che corrisponde alla tua vetrina:
 
 ## Consigli di prodotto e relazioni di prodotto
 
-Date le complessità in continua evoluzione dello shopping online, ciò che funziona meglio per la vetrina è spesso una combinazione di più tecnologie chiave. L&#39;utilizzo di [!DNL Product Recommendations] e [relazioni tra prodotti](https://experienceleague.adobe.com/it/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships) offre maggiore flessibilità durante la promozione dei prodotti. Puoi sfruttare [!DNL Product Recommendations] con tecnologia Adobe AI per automatizzare in modo intelligente i consigli su larga scala. Puoi quindi sfruttare le [Regole prodotto correlate](https://experienceleague.adobe.com/it/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules) quando devi intervenire manualmente e assicurarti che sia stato fatto un consiglio specifico a un segmento di acquirenti target o quando devono essere raggiunti determinati obiettivi aziendali.
+Date le complessità in continua evoluzione dello shopping online, ciò che funziona meglio per la vetrina è spesso una combinazione di più tecnologie chiave. L&#39;utilizzo di [!DNL Product Recommendations] e [relazioni tra prodotti](https://experienceleague.adobe.com/it/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships) offre maggiore flessibilità durante la promozione dei prodotti. Per automatizzare i consigli su larga scala, puoi sfruttare [!DNL Product Recommendations] con tecnologia Adobe AI. Puoi quindi sfruttare le [Regole prodotto correlate](https://experienceleague.adobe.com/it/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules) quando devi intervenire manualmente e assicurarti che sia stato fatto un consiglio specifico a un segmento di acquirenti target o quando devono essere raggiunti determinati obiettivi aziendali.
 
 I consigli sui prodotti consentono di:
 
@@ -68,18 +68,18 @@ I consigli sui prodotti consentono di:
 
 ## Demo sui consigli di prodotto
 
-Guarda questo video per saperne di più su [!DNL Product Recommendations]:
+Per ulteriori informazioni su [!DNL Product Recommendations], guarda questo video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3449966?captions=ita&quality=12)
 
 ## Criteri di conservazione dei dati del catalogo
 
-Il servizio [!DNL Product Recommendations] dipende dai dati del catalogo che rimangono sincronizzati con il tuo ambiente Adobe Commerce. I cataloghi o gli ambienti inattivi che interrompono l&#39;esecuzione di query sui dati possono entrare in modalità di sospensione, che influisce sui risultati restituiti dal servizio fino alla riattivazione.
+Il servizio [!DNL Product Recommendations] dipende dai dati del catalogo che rimangono sincronizzati con il tuo ambiente Adobe Commerce. I cataloghi o gli ambienti inattivi che smettono di eseguire query sui dati possono diventare inattivi, il che influisce su ciò che il servizio restituisce fino alla riattivazione.
 
-Se non si invia una query per i dati del catalogo nell&#39;ambiente **testing** per 90 giorni consecutivi, i dati del catalogo vengono impostati sulla modalità di sospensione e non vengono restituiti dati per alcuna query. I dati del catalogo nell&#39;ambiente **produzione** non sono interessati dalla regola dei 90 giorni.
+Se non si invia una query per i dati del catalogo nell&#39;ambiente **testing** per 90 giorni consecutivi, i dati del catalogo vengono impostati sulla modalità inattiva e non vengono restituiti dati per alcuna query. La regola di 90 giorni non influisce sui dati del catalogo nell&#39;ambiente **production**.
 
-Se nell&#39;ambiente è presente un **catalogo vuoto** 45 giorni dopo la creazione, i dati del catalogo vengono impostati sulla modalità di sospensione e non vengono restituiti dati per alcuna query. Questo vale sia per gli ambienti di produzione che per quelli di test.
+Se nell&#39;ambiente è presente un **catalogo vuoto** 45 giorni dopo la creazione, i dati del catalogo vengono impostati sulla modalità inattiva e non vengono restituiti dati per alcuna query. Questo vale sia per gli ambienti di produzione che per quelli di test.
 
 ### Riattiva dati catalogo
 
-Per ripristinare i dati del catalogo dopo la sospensione, [invia una richiesta di supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) con il titolo &quot;Riattiva [!DNL Product Recommendations]&quot; e includi gli ID ambiente. I dati del catalogo devono essere ripristinati entro un paio d’ore.
+Per ripristinare i dati del catalogo dopo che sono diventati inattivi, [invia una richiesta di supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) con il titolo &quot;Riattiva [!DNL Product Recommendations]&quot; e includi gli ID ambiente. I dati del catalogo devono essere ripristinati entro due ore.
