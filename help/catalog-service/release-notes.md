@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4b3bf2c28d4570141497bf6aa514152311fa4a37
+source-git-commit: 695f349ce38a3127beccab83f63f4157cc05e549
 workflow-type: tm+mt
-source-wordcount: 3099
+source-wordcount: 3190
 ht-degree: 0%
 
 ---
@@ -624,6 +624,16 @@ Aggiornamenti al metapacchetto PHP del servizio catalogo (`magento/catalog-servi
 - Per i clienti di Adobe Commerce as a Cloud Service, l’ultima versione viene installata nel tuo ambiente.
 
 - Per Adobe Commerce on-premise o sul cloud, Adobe consiglia di utilizzare Composer per aggiornare il metapacchetto Catalog Service negli ambienti cloud all’ultima versione.
+
+### Versione v3.6.0
+
+**Data di rilascio**: 31 agosto 2026
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.4 e successive
+
+![Nuovo](../assets/new.svg) **Esportazione opzioni personalizzabili**—Sono state aggiornate le dipendenze del metapacchetto Catalog Service per includere il modulo di esportazione dati delle opzioni personalizzabili (`magento/module-customizable-options-data-exporter`). Questo modulo esporta le opzioni personalizzabili di Adobe Commerce di un prodotto, sia le opzioni selezionabili (elenco a discesa, pulsante di scelta, casella di controllo, selezione multipla) che le opzioni di input dell’acquirente (campo di testo, area di testo, file, data, data e ora, ora), in modo che si propaghino al catalogo SaaS utilizzato da Catalog Service. <!--DATA-7366-->
+
+![Nuovo](../assets/new.svg) Sono state aggiornate le dipendenze per mantenere la compatibilità tra Catalog Service e lo stack di Commerce.
 
 ### Versione v3.5.0
 

@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 9d128fd11c1b83276f8a2158f1f2fb98a49bf6c5
+source-git-commit: 49a235a3a545b422b0371b53163d7de770df6a38
 workflow-type: tm+mt
-source-wordcount: 6100
+source-wordcount: 6271
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Le seguenti note sulla versione contengono aggiornamenti a [!DNL Adobe Commerce 
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
-I seguenti elementi saranno pubblicati in Produzione il 1° settembre 2026.
+I seguenti elementi saranno pubblicati in Produzione l’8 settembre 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -122,7 +122,7 @@ La Rubrica aziendale è ora integrata con flussi di lavoro B2B aggiuntivi. Le az
 * Offerte negoziabili
 * Modelli di offerta
 
-Per informazioni dettagliate, incluse le mutazioni di GraphQL e gli endpoint REST, vedere il [registro delle modifiche del pacchetto B2B di compatibilità storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=it) e la sezione **Pacchetto B2B di compatibilità storefront v1.0.24**.
+Per informazioni dettagliate, incluse le mutazioni di GraphQL e gli endpoint REST, vedere il [log delle modifiche del pacchetto B2B di compatibilità storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=it#storefront-compatibility-b2b-package-v1-0-24-2026-07-20).
 
 <!-- USF-3629, USF-4187, USF-4188, USF-4189, USF-4191, USF-4192, USF-4193, USF-4194, USF-4195 -->
 
@@ -141,6 +141,24 @@ La regola del prezzo del carrello **Regalo gratuito** è ora disponibile in [!DN
 Questa regola ti consente di aggiungere al carrello un prodotto omaggio gratuito quando vengono soddisfatte le condizioni della regola.
 
 <!-- dependent on https://github.com/Adobe-Enterprise-Docs/commerce-admin.en/pull/856 and https://github.com/AdobeDocs/commerce-webapi/pull/590 -->
+
+### Pianifica regole prezzo carrello per data e ora
+
+Ora puoi impostare l&#39;ora del giorno in cui vuoi che una [regola prezzo carrello](https://experienceleague.adobe.com/it/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create) inizi o termini in [!DNL Commerce Admin]. Nella griglia delle regole di prezzo del carrello vengono visualizzati gli orari pianificati e l&#39;API REST rispetta un orario inviato il `from_date` e il `to_date` invece di impostare la regola su mezzanotte. <!-- ACCS-970 -->
+
+<!-- commenting this out until the B2B compatibility package version is live. -->
+
+<!-- ### Use a temporary shipping address at B2B checkout -->
+
+<!-- B2B company customers can now enter a custom, temporary shipping address during checkout without saving it to the Company Address Book, when custom shipping addresses are allowed. For detailed information, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=it) and view the **Storefront Compatibility B2B Package v1.0.28** section. USF-4310 -->
+
+### Registra le modifiche degli ordini nella cronologia degli ordini
+
+>[!IMPORTANT]
+>
+>Questa funzione è disabilitata per impostazione predefinita. Per abilitarlo, contatta il tuo Customer Success Manager Adobe Commerce o crea un ticket di supporto.
+
+Quando un ordine viene modificato, Commerce può ora aggiungere un commento leggibile alla cronologia del nuovo ordine che riepiloga le modifiche apportate rispetto all’ordine sostituito. <!-- ACCS-1157 -->
 
 ### Miglioramenti e correzioni di bug
 
@@ -163,6 +181,12 @@ In questa versione sono inclusi i miglioramenti, le ottimizzazioni e le correzio
 * È stato risolto un problema che causava il mancato funzionamento degli URL dell’immagine della categoria nel feed di esportazione dei dati della categoria. <!-- ACCS-1571 -->
 
 * È stato risolto un problema che poteva causare errori intermittenti durante l’assegnazione o la revoca dell’assegnazione concomitante di prodotti tra cataloghi condivisi diversi. <!-- CCSAAS-5287 -->
+
+* Se si imposta l&#39;opzione **Usa in Opzioni di ricerca** su No, l&#39;attributo rimane visibile come colonna della griglia, ma non viene conteggiato per il limite di 16 colonne. <!-- CCSAAS-5370 -->
+
+* È stato risolto un problema che poteva interessare la navigazione dell’amministratore. <!-- CCSAAS-5232 -->
+
+* È stato risolto un problema a causa del quale i carrelli vuoti potevano riportare totali diversi da zero. <!-- ACCS-1730 -->
 
 {{accs-release}}
 
@@ -676,7 +700,7 @@ I seguenti elementi sono stati rilasciati negli ambienti di produzione di [!DNL 
 
 ### Strumenti e tutorial di codifica di IA per App Builder
 
-È ora possibile utilizzare gli strumenti per sviluppatori di codifica [AI](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"} per creare nuove applicazioni [!DNL App Builder] e convertire le estensioni PHP [!DNL Adobe Commerce] esistenti in applicazioni [!DNL App Builder]. Sono disponibili i seguenti tutorial per dimostrare come utilizzare gli strumenti:
+È ora possibile utilizzare gli strumenti per sviluppatori di codifica [AI](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/){target="_blank"} per creare nuove applicazioni [!DNL App Builder] e convertire le estensioni PHP [!DNL Adobe Commerce] esistenti in applicazioni [!DNL App Builder]. Sono disponibili i seguenti tutorial per dimostrare come utilizzare gli strumenti:
 
 * [Prerequisiti del tutorial](./tutorials/tutorial-prerequisites.md)
 * [Esercitazione sull’estensione delle valutazioni](./tutorials/ratings-extension.md)
