@@ -3,19 +3,13 @@ title: Crea nuovo consiglio
 description: Scopri come creare un’unità di consigli di prodotto.
 exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
 TQID: https://experienceleague.adobe.com/K3cKFg-m22bUzlupyhsHgDVxaJka7xhOvFnOt8wDdII
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 1573
+source-wordcount: 1491
 ht-degree: 0%
 
 ---
@@ -35,11 +29,11 @@ Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dat
 
 1. Nella barra laterale _Amministratore_, vai a **Marketing** > _Promozioni_ > **Consigli di prodotto** per visualizzare l&#39;area di lavoro _Consigli di prodotto_.
 
-1. Specifica la [visualizzazione archivio](https://experienceleague.adobe.com/it/docs/commerce-admin/start/setup/websites-stores-views) in cui desideri visualizzare i consigli.
+1. Specifica la [visualizzazione archivio](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) in cui desideri visualizzare i consigli.
 
    >[!NOTE]
    >
-   > Le unità di consigli di Page Builder devono essere create nella vista store predefinita, ma possono essere utilizzate ovunque. Per ulteriori informazioni sulla creazione di consigli di prodotto con Page Builder, consulta [Aggiungi contenuto - Consigli di prodotto](https://experienceleague.adobe.com/it/docs/commerce-admin/page-builder/add-content/recommendations).
+   > Le unità di consigli di Page Builder devono essere create nella vista store predefinita, ma possono essere utilizzate ovunque. Per ulteriori informazioni sulla creazione di consigli di prodotto con Page Builder, consulta [Aggiungi contenuto - Consigli di prodotto](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Fai clic su **Crea consiglio**.
 
@@ -49,14 +43,14 @@ Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dat
 
    >[!NOTE]
    >
-   > I consigli di prodotto non sono supportati nella pagina del carrello quando lo store è configurato per [visualizzare la pagina del carrello subito dopo l&#39;aggiunta di un prodotto al carrello](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
+   > I consigli di prodotto non sono supportati nella pagina del carrello quando lo store è configurato per [visualizzare la pagina del carrello subito dopo l&#39;aggiunta di un prodotto al carrello](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Home page
    * Categoria
    * Dettagli prodotto
    * Carrello
    * Conferma
-   * [Page Builder](https://experienceleague.adobe.com/it/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    Puoi creare fino a 50 unità di consigli attive per ogni tipo di pagina. Al raggiungimento del limite, il tipo di pagina è disattivato.
 
@@ -83,7 +77,7 @@ Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dat
    ![Ordine consigli](assets/create-recommendation-select-placement.png)
    _Ordine consigli a pagina_
 
-1. (Facoltativo) Nella sezione _Filtri_, [applica filtri](filters.md) per controllare quali prodotti vengono visualizzati nell&#39;unità di consigli.
+1. (Facoltativo) Per controllare quali prodotti vengono visualizzati nell&#39;unità di consigli, [applica filtri](filters.md) nella sezione _Filtri_.
 
    ![Filtri per consigli](assets/create-recommendation-filter-products.png)
    _Filtri di prodotto per consigli_
@@ -100,23 +94,23 @@ Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dat
 
 ## Indicatori di preparazione
 
-Gli indicatori di preparazione mostrano quali tipi di consigli funzioneranno meglio in base ai dati di catalogo e comportamentali disponibili. Puoi inoltre utilizzare gli indicatori di preparazione per determinare se si sono verificati problemi con l&#39;[evento](events.md) o se non si dispone di abbastanza traffico per popolare il tipo di consiglio.
+Gli indicatori di preparazione mostrano quali tipi di consigli ottengono le prestazioni migliori con i dati di catalogo e comportamentali disponibili. Utilizzali per identificare i problemi relativi agli eventi o traffico insufficiente per popolare un tipo di consiglio.
 
-Gli indicatori di preparazione sono classificati in [static-based](#static-based) o [dynamic-based](#dynamic-based). Solo dati del catalogo di utilizzo basati su statici; mentre dati comportamentali di utilizzo basati su dinamiche provenienti dai tuoi acquirenti. Questi dati comportamentali vengono utilizzati per [addestrare modelli di apprendimento automatico](events.md) per creare consigli personalizzati e calcolare il loro punteggio di preparazione.
+Gli indicatori di preparazione rientrano in due categorie: [static-based](#static-based) e [dynamic-based](#dynamic-based). I consigli basati su statistiche utilizzano solo dati di catalogo. I consigli basati su dinamiche utilizzano i dati comportamentali degli acquirenti per addestrare modelli di apprendimento automatico, generare consigli personalizzati e calcolare il punteggio di preparazione di ogni consiglio.
 
 ### Calcolo degli indicatori di preparazione
 
 Gli indicatori di preparazione indicano quanto il modello è addestrato. Gli indicatori dipendono dai tipi di eventi raccolti, dall’ampiezza dei prodotti con cui si interagisce e dalle dimensioni del catalogo.
 
-La percentuale dell’indicatore di preparazione è derivata da un calcolo che indica quanti prodotti potrebbero essere consigliati a seconda del tipo di consiglio. Le statistiche vengono applicate ai prodotti in base alle dimensioni complessive del catalogo, al volume di interazioni (come visualizzazioni, clic, aggiunte ai carrelli) e alla percentuale di SKU che registrano tali eventi entro una determinata finestra temporale. Ad esempio, durante il traffico di picco durante le festività, gli indicatori di prontezza potrebbero mostrare valori più elevati rispetto ai tempi del volume normale.
+La percentuale dell’indicatore di preparazione stima la proporzione di prodotti che potrebbero essere consigliati per un determinato tipo di consiglio. Viene calcolato utilizzando la dimensione del catalogo, il volume di interazione e la percentuale di SKU che registrano gli eventi rilevanti entro un intervallo di tempo definito. Ad esempio, gli indicatori di prontezza possono essere più elevati durante i picchi di traffico festivo rispetto ai periodi di traffico normale.
 
-In seguito a queste variabili, la percentuale dell’indicatore di prontezza può oscillare. Questo spiega perché potresti vedere che i tipi di consigli sono &quot;Pronti per la distribuzione&quot;.
+In seguito a queste variabili, la percentuale dell’indicatore di prontezza può oscillare. Questo spiega perché i tipi di consigli variano tra &quot;Pronto per la distribuzione&quot;.
 
 Gli indicatori di preparazione sono calcolati in base a due fattori:
 
 * Dimensione sufficiente del set di risultati: nella maggior parte degli scenari sono stati restituiti risultati sufficienti per evitare di utilizzare [consigli di backup](events.md#backuprecs)?
 
-* Sufficiente varietà di set di risultati: i prodotti restituiti rappresentano una varietà di prodotti del catalogo? L’obiettivo con questo fattore è evitare di avere una minoranza di prodotti come unici articoli consigliati in tutto il sito.
+* I prodotti restituiti rappresentano una varietà di prodotti del catalogo? Questo fattore garantisce che i consigli nel sito non siano limitati a un piccolo sottoinsieme di prodotti.
 
 In base ai fattori di cui sopra, un valore di fattibilità viene calcolato e visualizzato come segue:
 
@@ -168,7 +162,7 @@ _Tipo di consiglio_
 >
 >Gli indicatori non possono mai raggiungere il 100%.
 
-La percentuale dell’indicatore di preparazione per i tipi di consigli che dipendono dai dati del catalogo non cambia molto, in quanto il catalogo del commerciante non cambia spesso. Tuttavia, la percentuale dell’indicatore di preparazione per i tipi di consigli basati sui dati comportamentali dell’acquirente può variare spesso a seconda dell’attività giornaliera dell’acquirente.
+La percentuale di preparazione per i tipi di consigli basati su catalogo in genere cambia poco perché i cataloghi sono relativamente stabili. Al contrario, la percentuale di disponibilità per i tipi di consigli basati sui dati comportamentali dei consumatori può cambiare frequentemente con l’attività giornaliera dei consumatori.
 
 #### Cosa fare se la percentuale dell’indicatore di prontezza è bassa
 
@@ -180,16 +174,16 @@ Una percentuale di preparazione bassa indica che non vi sono molti prodotti del 
 
 Di seguito sono elencati i possibili motivi e soluzioni ai punteggi di bassa prontezza comuni:
 
-* **Basato su statico** - Le percentuali basse per questi indicatori possono essere causate da dati di catalogo mancanti per i prodotti visualizzabili. Se sono inferiori al previsto, il problema può essere risolto con una sincronizzazione completa.
-* **Basato su dinamica** - Le percentuali basse per gli indicatori basati su dinamica possono essere causate da:
+* **Basato su statico** - I dati di catalogo mancanti per i prodotti visualizzabili causano percentuali basse per questi indicatori. Se sono inferiori al previsto, il problema può essere risolto con una sincronizzazione completa.
+* **Basato su dinamica** - I seguenti fattori causano percentuali basse per gli indicatori basati su dinamica:
 
-   * Campi mancanti nei [eventi storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) richiesti per i rispettivi tipi di consigli (requestId, contesto di prodotto e così via).
-   * Traffico ridotto nello store, quindi il volume di eventi comportamentali che riceviamo è basso.
-   * La varietà di eventi comportamentali all&#39;interno dello store tra i diversi prodotti è bassa. Ad esempio, se solo il 10% dei prodotti viene visualizzato o acquistato la maggior parte del tempo, i rispettivi indicatori di disponibilità saranno bassi.
+  * Campi mancanti nei [eventi storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) richiesti per i rispettivi tipi di consigli (requestId, contesto di prodotto e così via).
+  * Traffico ridotto nello store, quindi il volume di eventi comportamentali che riceviamo è basso.
+  * La varietà di eventi comportamentali all&#39;interno dello store tra i diversi prodotti è bassa. Ad esempio, se solo il 10% dei prodotti viene visualizzato o acquistato la maggior parte del tempo, i rispettivi indicatori di disponibilità saranno bassi.
 
 ## Anteprima consigli {#preview}
 
-Il pannello _Anteprima prodotti consigliati_ è sempre disponibile con una selezione di esempi di prodotti che potrebbero comparire nell&#39;unità consigli quando viene distribuita nella vetrina.
+Il pannello _Anteprima prodotti consigliati_ è sempre disponibile con una selezione di esempi di prodotti visualizzati nell&#39;unità Consigli quando viene distribuita nella vetrina.
 
 Per testare un consiglio quando si lavora in un ambiente non di produzione, è possibile recuperare i dati dei consigli da una [origine diversa](settings.md). Questo consente ai commercianti di sperimentare le regole e visualizzare in anteprima i consigli prima di distribuirli in produzione.
 
@@ -200,9 +194,9 @@ Per testare un consiglio quando si lavora in un ambiente non di produzione, è p
 | Prezzo | Il prezzo del prodotto. |
 | Tipo di risultato | Principale: indica che sono stati raccolti dati di formazione sufficienti per visualizzare un consiglio.<br />Backup: indica che i dati di formazione raccolti non sono sufficienti, pertanto per riempire lo slot viene utilizzato un consiglio di backup. Vai a [Dati comportamentali](events.md) per ulteriori informazioni sui modelli di apprendimento automatico e sui consigli di backup. |
 
-Quando crei la tua unità di consigli, prova con il tipo di pagina, il tipo di consiglio e i filtri per ottenere un feedback in tempo reale e immediato sui prodotti che verranno inclusi. Quando inizi a capire quali prodotti vengono visualizzati, puoi configurare l’unità di consigli in base alle tue esigenze aziendali.
+Per vedere quali prodotti include in tempo reale un’unità di consigli, prova a usare il tipo di pagina, il tipo di consiglio e i filtri creati. Quindi, configurare l&#39;unità per soddisfare le esigenze aziendali in base ai prodotti restituiti.
 
-Adobe Commerce [filtra](filters.md) consigli per evitare di visualizzare prodotti duplicati quando più unità di consigli vengono distribuite in una singola pagina. Di conseguenza, i prodotti visualizzati nel pannello di anteprima potrebbero essere diversi da quelli visualizzati nella vetrina.
+Quando più unità di consigli vengono distribuite sulla stessa pagina, Adobe Commerce ha utilizzato [filtri](#filters.md) per rimuovere i prodotti duplicati dai consigli visualizzati. Di conseguenza, il pannello di anteprima potrebbe mostrare un set di prodotti diverso rispetto alla vetrina.
 
 >[!NOTE]
 >

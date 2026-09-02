@@ -3,19 +3,13 @@ title: Configurazione di Live Search
 description: L'area di lavoro  [!DNL Live Search]  viene utilizzata per configurare, gestire e monitorare le prestazioni di ricerca.
 exl-id: 07c32b26-3fa4-4fae-afba-8a10866857c3
 TQID: https://experienceleague.adobe.com/RQ6BKo7AknERkwrXylYHNAuD-FDxLvG74nU1YvuVgwE
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 127067a1ef47c7d9e51c5792e03b568dd818fe8e
 workflow-type: tm+mt
-source-wordcount: 2323
+source-wordcount: 2360
 ht-degree: 0%
 
 ---
@@ -30,22 +24,22 @@ Nell&#39;area di lavoro è possibile configurare, gestire e monitorare le presta
 
 Per garantire che ogni area funzionale nell’area di lavoro contenga i dati corretti, devi configurare la raccolta dati in base all’implementazione della vetrina selezionata:
 
-1. Luma - La raccolta dei dati è disponibile come strumento pronto all’uso.
+1. Luma: la raccolta dati è disponibile per impostazione predefinita.
 1. Headless: la raccolta dei dati deve essere configurata manualmente, a seconda dell’implementazione in vetrina.
 
-Se utilizzi una vetrina headless, consulta la seguente documentazione per ulteriori informazioni sugli eventi richiesti da aggiungere:
+Per ulteriori informazioni sugli eventi richiesti da aggiungere per una vetrina headless, consulta la seguente documentazione:
 
 - [Eventi richiesti](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search) per il dashboard di Live Search.
-- [Agente di raccolta eventi storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) che deve essere aggiunto come prerequisito.
+- [Agente di raccolta eventi storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework/) che deve essere aggiunto come prerequisito.
 - [Esempi](https://github.com/adobe/commerce-events/tree/main/examples) della struttura degli eventi.
 
 ### Clienti del settore sanitario
 
-Se sei un cliente del settore sanitario e hai installato l&#39;estensione [HIPAA Data Services](../data-connection/hipaa-readiness.md#installation), che fa parte dell&#39;estensione [Data Connection](../data-connection/overview.md), i dati dell&#39;evento storefront utilizzati da [!DNL Live Search] non vengono più acquisiti. Questo perché i dati dell’evento storefront vengono generati lato client. Per continuare l&#39;acquisizione e l&#39;invio di dati evento vetrina, riattivare la raccolta eventi per [!DNL Live Search]. Per ulteriori informazioni, consulta la [configurazione generale](https://experienceleague.adobe.com/it/docs/commerce-admin/config/general/general#data-services).
+Se sei un cliente del settore sanitario e hai installato l&#39;estensione [HIPAA Data Services](../data-connection/hipaa-readiness.md#installation), che fa parte dell&#39;estensione [Data Connection](../data-connection/overview.md), [!DNL Live Search] non acquisisce più i dati dell&#39;evento storefront. Questo perché i dati dell’evento storefront vengono generati lato client. Per continuare l&#39;acquisizione e l&#39;invio di dati evento vetrina, riattivare la raccolta eventi per [!DNL Live Search]. Per ulteriori informazioni, vedere [configurazione generale](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services).
 
 ## Impostare l&#39;ambito
 
-Inizialmente l&#39;[ambito](https://experienceleague.adobe.com/it/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) di tutte le impostazioni [!DNL Live Search] è impostato su `Default Store View`. Se l&#39;installazione di [!DNL Commerce] include più visualizzazioni dello store, impostare **Ambito** sulla [visualizzazione dello store](https://experienceleague.adobe.com/it/docs/commerce-admin/start/setup/websites-stores-views) in cui si applicano le impostazioni del facet.
+Inizialmente l&#39;[ambito](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) di tutte le impostazioni [!DNL Live Search] è impostato su `Default Store View`. Se l&#39;installazione di [!DNL Commerce] include più visualizzazioni dello store, impostare **Ambito** sulla [visualizzazione dello store](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) in cui si applicano le impostazioni del facet.
 
 ## Opzioni menu
 
@@ -61,7 +55,7 @@ Inizialmente l&#39;[ambito](https://experienceleague.adobe.com/it/docs/commerce-
 
 ## Imposta attributi come ricercabili
 
-Per produrre risultati con targeting elevato, controlla il set di attributi di prodotto [ricercabili](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/product-attributes/product-attributes) (`searchable=true`). Per garantire la rilevanza, rendi gli attributi ricercabili solo se contengono contenuto con un significato chiaro e conciso. Evitare di utilizzare attributi contenenti testo meno preciso e lungo, ad esempio `description`, che, sebbene abilitati per impostazione predefinita per la ricerca, possono ridurre la precisione dei risultati della ricerca. Ad esempio, se una persona cerca i &quot;pantaloncini corti&quot; e ci sono camicie con una descrizione che include il termine &quot;maniche corte&quot;, allora le camicie saranno incluse nei risultati della ricerca.
+Per produrre risultati con targeting elevato, controlla il set di attributi di prodotto [ricercabili](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) (`searchable=true`). Per garantire la rilevanza, rendi gli attributi ricercabili solo se contengono contenuto con un significato chiaro e conciso. Evitare di utilizzare attributi contenenti testo meno preciso e lungo, ad esempio `description`, che, sebbene abilitati per impostazione predefinita per la ricerca, possono ridurre la precisione dei risultati della ricerca. Ad esempio, se una persona cerca &quot;pantaloncini corti&quot; e ci sono camicie con una descrizione che include il termine &quot;maniche corte&quot;, le camicie appaiono nei risultati della ricerca.
 
 La procedura seguente illustra come consentire la ricerca di attributi:
 
@@ -69,7 +63,7 @@ La procedura seguente illustra come consentire la ricerca di attributi:
 1. Selezionare l&#39;attributo che si desidera rendere ricercabile, ad esempio `color`.
 1. Selezionare **Proprietà storefront** e impostare **Usa nella ricerca** su `yes`.
 
-[!DNL Live Search] rispetta anche il [peso](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search) di un attributo di prodotto, come impostato in Adobe Commerce. Gli attributi con un peso maggiore appariranno più in alto nei risultati di ricerca.
+[!DNL Live Search] rispetta anche il [peso](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search) di un attributo di prodotto, come impostato in Adobe Commerce. Gli attributi con un peso maggiore appaiono più elevati nei risultati di ricerca.
 
 È sempre possibile cercare i seguenti attributi:
 
@@ -79,13 +73,15 @@ La procedura seguente illustra come consentire la ricerca di attributi:
 
 >[!TIP]
 >
->La scelta degli attributi da rendere ricercabili ha un grande impatto sulla qualità della ricerca. Consulta [Sfruttare i metadati del prodotto](best-practice.md#leverage-product-metadata) nella guida alle best practice per informazioni dettagliate sulla selezione degli attributi ricercabili e sull&#39;eliminazione dei problemi di configurazione comuni.
+>La scelta degli attributi da rendere ricercabili ha un impatto significativo sulla qualità della ricerca. Consulta [Utilizzo dei metadati del prodotto](best-practice.md#leverage-product-metadata) nella _Guida alle best practice_ per informazioni dettagliate sulla selezione degli attributi ricercabili e sull&#39;eliminazione dei problemi di configurazione comuni.
 
 ### Comportamento degli attributi nei prodotti complessi
 
 Per i tipi di prodotto complessi (prodotti configurabili, bundle e raggruppati), [!DNL Live Search] indicizza i valori degli attributi dei prodotti padre e figlio, consentendo l&#39;associazione di un prodotto padre a più valori per lo stesso attributo. Questo consente di applicare filtri basati sulle varianti; ad esempio, quando si filtra per &quot;blu&quot; una camicia configurabile viene visualizzata se una variante è blu, anche se il prodotto principale non ha un set di colori.
 
-Questa funzione è adatta per attributi quali colore e dimensioni, ma può causare risultati imprevisti per attributi quali `new_arrival`, `product_ranking`, `promotion_label` o attributi di prezzo personalizzati. Ad esempio, se un prodotto configurabile (SKU-001) ha `new_arrival = true`, ma la relativa variante figlio (SKU-001-01) ha `new_arrival = false`, il prodotto principale SKU-001 viene indicizzato con entrambi i valori (`true` e `false`), consentendone la visualizzazione nei risultati di ricerca per entrambe le condizioni.
+Questo comportamento funziona correttamente per attributi quali colore e dimensioni, ma può produrre risultati imprevisti per attributi che descrivono il prodotto nel suo complesso, come `new_arrival`, `product_ranking`, `promotion_label` e prezzi personalizzati.
+
+Si supponga, ad esempio, che il prodotto configurabile (SKU-001) abbia `new_arrival = true`, mentre la relativa variante figlio SKU-001-01 ne abbia `new_arrival = false`. Quando i valori delle varianti vengono aggregati per il prodotto principale, SKU-001 viene indicizzato con `new_arrival = true` e `new_arrival = false`. Di conseguenza, il prodotto principale può comparire nei risultati di ricerca per entrambi i valori, anche se ogni valore si applica a una variante diversa.
 
 ### Ricerca su più livelli ed espansione dei tipi di ricerca
 
@@ -98,9 +94,9 @@ La ricerca a livelli, o ricerca all’interno di una ricerca, è un potente sist
 La ricerca su più livelli consente di:
 
 - Consenti agli acquirenti di eseguire ricerche all&#39;interno dei risultati di ricerca.
-- Utilizza l&#39;indicizzazione della ricerca `startsWith` e `contains` nel secondo livello della ricerca a livelli per perfezionare ulteriormente i risultati.
+- Per perfezionare ulteriormente i risultati, utilizzare l&#39;indicizzazione della ricerca `startsWith` e `contains` nel secondo livello della ricerca con livelli.
 
-Le funzionalità di ricerca avanzata sono implementate tramite il parametro `filter` nella query [`productSearch`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) utilizzando operatori specifici:
+Le funzionalità di ricerca avanzata sono implementate tramite il parametro `filter` nella query [`productSearch`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search) utilizzando operatori specifici:
 
 - **Ricerca a livelli** - Ricerca in un altro contesto di ricerca - Con questa funzionalità è possibile eseguire fino a due livelli di ricerca per le query di ricerca. Ad esempio:
 
@@ -118,21 +114,23 @@ Le funzionalità di ricerca avanzata sono implementate tramite il parametro `fil
 
   - Ricerca di una query all&#39;interno di una stringa più grande. Ad esempio, se un acquirente cerca il numero di prodotto &quot;PE-123&quot; nella stringa &quot;HAPE-123&quot;.
 
-    - Nota: questo tipo di ricerca è diverso dalla [ricerca frase](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase) esistente, che esegue una ricerca di completamento automatico. Ad esempio, se il valore dell’attributo del prodotto è &quot;pantaloni da esterni&quot;, la ricerca di una frase restituisce una risposta per &quot;out pan&quot;, ma non restituisce una risposta per &quot;o formiche&quot;. Una ricerca contiene, tuttavia, restituisce una risposta per &quot;o formiche&quot;.
+    >[!NOTE]
+    >
+    >Questo tipo di ricerca è diverso dalla [ricerca frase](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#phrase) esistente, che supporta il completamento automatico facendo corrispondere l&#39;inizio delle parole. Ad esempio, se il valore di un attributo di prodotto è &quot;pantaloni esterni&quot;, la ricerca restituisce i risultati per &quot;fuori panoramica&quot; perché &quot;fuori&quot; e &quot;panoramica&quot; corrispondono agli inizi delle parole nel valore. Non restituisce risultati per &quot;o formiche&quot; perché quelle stringhe si trovano all&#39;interno delle parole. Una ricerca contiene il testo corrispondente in qualsiasi punto di una parola, quindi restituisce i risultati per &quot;o formiche&quot;.
 
 Queste nuove condizioni migliorano il meccanismo di filtro delle query di ricerca per perfezionare i risultati della ricerca. Queste nuove condizioni non influiscono sulla query di ricerca principale.
 
 #### Implementazione
 
-1. In Admin, [imposta un attributo di prodotto](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) affinché sia possibile eseguire ricerche.
+1. Per rendere ricercabile un attributo di prodotto, vai all&#39;amministratore e [imposta un attributo di prodotto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties).
 
-   Vedi l&#39;elenco degli [attributi](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/product-attributes/attributes-input-types) ricercabili.
+   Vedi l&#39;elenco degli [attributi](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) ricercabili.
 
 1. Specificare la funzionalità di ricerca per l&#39;attributo, ad esempio **Contains** (impostazione predefinita) o **Starts with**. È possibile specificare un massimo di sei attributi da abilitare per **Contains** e sei attributi da abilitare per **Starts with**. Inoltre, per l&#39;indicizzazione **Contains**, la lunghezza della stringa non può superare i 50 caratteri.
 
    ![Specificare la funzionalità di ricerca](./assets/search-filters-admin.png)
 
-1. Consulta la [documentazione per gli sviluppatori](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability) per esempi su come aggiornare le chiamate API [!DNL Live Search] utilizzando le nuove funzionalità di ricerca di `contains` e `startsWith`.
+1. Consulta la [documentazione per gli sviluppatori](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#filtering-using-search-capability) per esempi su come aggiornare le chiamate API [!DNL Live Search] utilizzando le nuove funzionalità di ricerca di `contains` e `startsWith`.
 
    Puoi implementare queste nuove condizioni nella pagina dei risultati della ricerca. Ad esempio, puoi aggiungere una nuova sezione nella pagina in cui l’acquirente può perfezionare ulteriormente i risultati della ricerca. È possibile consentire agli acquirenti di selezionare attributi di prodotto specifici, ad esempio &quot;Produttore&quot;, &quot;Numero parte&quot; e &quot;Descrizione&quot;. Da lì, eseguono ricerche all&#39;interno di tali attributi utilizzando le condizioni `contains` o `startsWith`.
 
@@ -166,7 +164,7 @@ Facet e sinonimi sono un altro modo per migliorare l&#39;esperienza di ricerca p
 
 >[!NOTE]
 >
->Un attributo di prodotto può essere filtrato solo se la configurazione dell&#39;attributo di prodotto ha le proprietà richieste: *Usa nella ricerca = Sì*, *Usa nei risultati di ricerca Navigazione a livelli=sì* e *Usa nella navigazione a livelli=Filtrabile (con risultati)*. Se queste proprietà mancano o non sono impostate correttamente, l&#39;attributo non è visibile nella configurazione Facet. Per istruzioni di configurazione, vedere [Aggiungere un facet](facets-add.md#step-1-add-a-facet).
+>Un attributo di prodotto è filtrabile solo se presenta le proprietà richieste: *Usa nella ricerca = Sì*, *Usa nei risultati di ricerca Navigazione a livelli=sì* e *Usa nella navigazione a livelli=Filtrabile (con risultati)*. Se queste proprietà mancano o non sono impostate correttamente, l&#39;attributo non è visibile nella configurazione Facet. Per istruzioni di configurazione, vedere [Aggiungere un facet](facets-add.md#step-1-add-a-facet).
 
 [I sinonimi](synonyms.md) sono termini che puoi definire per aiutare gli utenti a trovare il prodotto corretto. Gli utenti alla ricerca di pantaloni potrebbero digitare &quot;pantaloni&quot; o &quot;pantaloni&quot;. È possibile impostare sinonimi in modo che questi termini di ricerca portino gli utenti ai risultati &quot;pantaloni&quot;.
 
@@ -178,7 +176,7 @@ Nella sezione seguente vengono descritte le impostazioni di configurazione di Co
 
 >[!IMPORTANT]
 >
->Si consiglia vivamente di utilizzare i widget di elenco prodotti, abilitati per impostazione predefinita in Live Search 4.0.0. I widget sono destinati a sostituire completamente l’implementazione dell’adattatore nelle versioni future. Per ulteriori informazioni, consulta [abilitare i widget dell&#39;elenco prodotti](install.md#enable-product-listing-widgets).
+>Adobe consiglia di utilizzare i widget di elenco prodotti, abilitati per impostazione predefinita in Live Search 4.0.0. I widget sono destinati a sostituire l&#39;implementazione dell&#39;adattatore nelle versioni future. Per ulteriori informazioni, consulta [abilitare i widget dell&#39;elenco prodotti](install.md#enable-product-listing-widgets).
 
 | Impostazione configurazione Commerce | Descrizione | Supportato da Popover | Supportato dall&#39;adattatore |
 |---|---|---|---|
@@ -203,7 +201,7 @@ I prezzi nella pagina di elenco dei prodotti Widget e nel popover vengono conver
 
 ## Valori attributi predefiniti
 
-I seguenti attributi di prodotto hanno [proprietà storefront](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/product-attributes/product-attributes) utilizzate da [!DNL Live Search] e abilitate per impostazione predefinita.
+I seguenti attributi di prodotto hanno [proprietà storefront](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) che [!DNL Live Search] utilizza e abilita per impostazione predefinita.
 
 | Proprietà | Storefront, proprietà | Attributo |
 |---|---|---|
@@ -213,7 +211,7 @@ I seguenti attributi di prodotto hanno [proprietà storefront](https://experienc
 
 ## Proprietà attributi non di sistema predefinite
 
-La tabella seguente mostra le proprietà predefinite di ricerca e filtrabili degli attributi non di sistema, inclusi quelli specifici dei dati di esempio Luma. Se si imposta la proprietà dell&#39;attributo *Use in Search* su `Yes`, sarà possibile eseguire ricerche sia in [!DNL Live Search] che in Adobe Commerce nativo.
+La tabella seguente mostra le proprietà predefinite di ricerca e filtrabili degli attributi non di sistema, inclusi quelli specifici dei dati di esempio Luma. Per rendere ricercabile l&#39;attributo sia in [!DNL Live Search] che in Adobe Commerce nativo, impostare la proprietà dell&#39;attributo *Use in Search* su `Yes`.
 
 | Codice attributo | Ricercabile | Uso in navigazione a livelli |
 |--- |--- |--- |

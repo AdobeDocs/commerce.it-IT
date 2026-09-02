@@ -3,33 +3,30 @@ title: Widget pagina elenco prodotti
 description: Abilitazione e formattazione di  [!DNL Live Search Product Listing Page Widget]
 exl-id: 50ba8046-869a-4071-b3a3-a6392544c07b
 TQID: https://experienceleague.adobe.com/rEQBfgR9CqVBTFtBtq21QFZ6L5ZvoWJ02VI2xiWqAcw
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 539
+source-wordcount: 524
 ht-degree: 0%
 
 ---
 
 # Widget pagina elenco prodotti
 
-[!DNL Live Search Product Listing Page Widget] (PLP) utilizza la piattaforma Commerce Services per fornire una pagina di elenco di prodotti performante, ricercabile e facet-able. In questo argomento viene descritto come abilitare e assegnare uno stile al widget PLP.
+[!DNL Live Search Product Listing Page Widget] (PLP) utilizza Commerce Services Platform per fornire una pagina di elenco di prodotti performante, ricercabile e facable. In questo argomento viene descritto come abilitare e assegnare uno stile al widget PLP.
 
 ## Abilitazione del widget PLP
 
 Quando il servizio [!DNL Live Search] è installato, la funzionalità di ricerca predefinita viene convertita automaticamente in [!DNL Live Search].
 
-Il widget PLP [!DNL Live Search] è abilitato per impostazione predefinita per le nuove installazioni.
+Le nuove installazioni abilitano il widget PLP [!DNL Live Search] per impostazione predefinita.
 
-Se si sta aggiornando [!DNL Live Search] e il widget PLP è già stato disattivato, rimarrà tale.
+Se si aggiorna [!DNL Live Search] mentre il widget PLP è disabilitato, rimane disabilitato anche dopo l&#39;aggiornamento.
+
+
 
 >[!NOTE]
 >
@@ -42,7 +39,7 @@ Per attivare il widget PLP:
 1. Fare clic sulla sezione [!UICONTROL Storefront Features].
 1. Imposta [!UICONTROL Enable Product Listing Widget] = Sì
 1. Salva configurazione
-1. Se richiesto, svuotare la cache ( vai a Sistema > Strumenti > Gestione cache > [!UICONTROL Flush Magento Cache]).
+1. Se richiesto, svuotare la cache (passare a Sistema > Strumenti > Gestione cache > [!UICONTROL Flush Magento Cache]).
 
 >[!IMPORTANT]
 >
@@ -50,7 +47,7 @@ Per attivare il widget PLP:
 
 ## Funzioni widget
 
-Il widget PLP fornisce le seguenti funzioni predefinite:
+Il widget PLP fornisce le seguenti funzioni standard:
 
 - Pulsanti Aggiungi al carrello - Disponibile solo per prodotti semplici.
 - Più immagini per prodotto: l’immagine può cambiare quando si sceglie un colore diverso per un prodotto configurabile.
@@ -58,7 +55,7 @@ Il widget PLP fornisce le seguenti funzioni predefinite:
 
 ### Personalizzazione del widget
 
-Oltre alle funzioni predefinite del widget PLP, potete personalizzare ulteriormente il widget per includere le seguenti funzioni:
+Oltre alle funzioni standard del widget PLP, potete personalizzare ulteriormente il widget per includere le seguenti funzioni:
 
 - Filtraggio per attributi
 - Supporto di più lingue
@@ -76,13 +73,13 @@ Puoi personalizzare l&#39;aspetto del widget PLP in modo che corrisponda al tuo 
 
 >[!NOTE]
 >
->Gli elementi con classi personalizzate all’interno di un tema Adobe Commerce non vengono ereditati. Questi elementi devono essere oggetto di targeting da parte della classe specifica per corrispondere alle classi personalizzate; le classi di azione primarie non funzioneranno su un pulsante widget. Gli elementi di destinazione generici all&#39;interno del CSS vengono ereditati; `button` si applica ai pulsanti widget.
+>Gli elementi con classi personalizzate all’interno di un tema Adobe Commerce non vengono ereditati. Eseguire il targeting di questi elementi in base alla loro classe specifica per far corrispondere le classi personalizzate; le classi di azione primarie non hanno effetto su un pulsante widget. Gli elementi di destinazione generici all&#39;interno del CSS vengono ereditati; `button` si applica ai pulsanti widget.
 
 Gli elementi div evidenziati contengono la classe di destinazione `ds-sdk-product-item__product-name`.
 
 ![Paginazione](assets/plp-css-example.png)
 
-Personalizza il nome del prodotto aggiungendo una regola per renderli maiuscoli.
+Personalizza il nome del prodotto aggiungendo una regola per renderlo in maiuscolo.
 
 ```css
 .ds-sdk-product-item__product-name {
@@ -196,10 +193,10 @@ Personalizza il nome del prodotto aggiungendo una regola per renderli maiuscoli.
 - `.ds-sdk-product-item__product-name`
 - `.ds-sdk-product-item__product-options`
 - `.ds-sdk-product-price`
-   - `.ds-sdk-product-price--no-discount`
-   - `.ds-sdk-product-price--grouped`
-   - `.ds-sdk-product-price--bundle`
-   - `.ds-sdk-product-price--discount`
+  - `.ds-sdk-product-price--no-discount`
+  - `.ds-sdk-product-price--grouped`
+  - `.ds-sdk-product-price--bundle`
+  - `.ds-sdk-product-price--discount`
 
 ![Prodotto](assets/plp-css-product.png)
 

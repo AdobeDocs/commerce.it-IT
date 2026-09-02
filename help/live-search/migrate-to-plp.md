@@ -2,23 +2,13 @@
 title: Migrazione dalla scheda di ricerca al widget PLP
 description: Scopri come migrare dalla scheda di ricerca obsoleta al widget per pagina elenco prodotti  [!DNL Live Search] .
 TQID: https://experienceleague.adobe.com/YAwhAbTVeYpGYKh4dTe1umcfgoRUOg8QPZNIiGFjKVo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 2105
+source-wordcount: 2114
 ht-degree: 0%
 
 ---
@@ -45,9 +35,9 @@ Prima di avviare la migrazione:
 
 1. Eseguire il backup del database e del codice.
 1. Documenta le personalizzazioni correnti.
-1. Rivedi [Limiti e limiti](boundaries-limits.md) per assicurarti che il widget PLP soddisfi le tue esigenze.
+1. Per assicurarsi che il widget PLP soddisfi le tue esigenze, rivedi [Limiti e limiti](boundaries-limits.md).
 1. Pianifica la migrazione durante un periodo di traffico ridotto.
-1. Informa le parti interessate di potenziali modifiche al comportamento della vetrina.
+1. Per preparare le parti interessate, notifica loro eventuali modifiche al comportamento della vetrina.
 
 **Verifica l&#39;implementazione corrente**:
 
@@ -95,7 +85,7 @@ Se l&#39;implementazione soddisfa questi criteri, passare ai [passaggi di migraz
 - Layout PLP personalizzati che sostituiscono i modelli Luma.
 - CSS o JavaScript personalizzato che esegue il targeting di elementi specifici dell&#39;adattatore di ricerca.
 - Modifiche al modello personalizzato apportate a PLP o a file correlati.
-- Il tema non eredita da Luma (ad esempio, il tema personalizzato viene creato da zero).
+- Il tema non eredita da Luma (ad esempio, il tema personalizzato viene creato indipendentemente).
 
 **Attributi di prodotto personalizzati**:
 
@@ -131,7 +121,7 @@ Per le implementazioni senza personalizzazioni speciali, segui questi passaggi:
 
 ### Passaggio 1: aggiornare [!DNL Live Search]
 
-Aggiorna l&#39;estensione [!DNL Live Search] alla versione 4.0 o successiva per accedere al widget PLP.
+Per accedere al widget PLP, aggiorna l&#39;estensione [!DNL Live Search] alla versione 4.0 o successiva.
 
 **Ruolo**: commerciante o partner
 
@@ -147,7 +137,7 @@ Aggiorna l&#39;estensione [!DNL Live Search] alla versione 4.0 o successiva per 
    bin/magento module:enable Magento_AdvancedSearch
    ```
 
-1. Aggiorna `composer.json` per richiedere [!DNL Live Search] versione 4.0 o successiva:
+1. Per richiedere [!DNL Live Search] 4.0 o versione successiva, aggiornare `composer.json`:
 
    ```json
    "require": {
@@ -180,7 +170,7 @@ Configurate il widget PLP in Commerce Admin.
 
 **Ruolo**: commerciante
 
-Il widget PLP è abilitato per impostazione predefinita per le nuove installazioni di [!DNL Live Search] 4.0.0+. Se si esegue l’aggiornamento da una versione precedente:
+[!DNL Live Search] 4.0.0+ abilita il widget PLP per impostazione predefinita per le nuove installazioni. Se si esegue l’aggiornamento da una versione precedente:
 
 1. Vai a **[!UICONTROL Stores]** > Impostazioni > **[!UICONTROL Configuration]**.
 1. Passa a **[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]**.
@@ -280,7 +270,7 @@ In questo scenario, sono presenti modelli o layout personalizzati che sostituisc
 
 ### Attributi del prodotto con modelli di origine personalizzati
 
-In questo scenario, sono presenti facet che utilizzano attributi di prodotto con modelli di origine personalizzati non supportati dall&#39;adattatore di ricerca ma SUPPORTATI dal widget PLP.
+In questo scenario, i facet si basano sugli attributi del prodotto con modelli di origine personalizzati. Sebbene la scheda di ricerca non supporti questi modelli di origine, il widget PLP lo supporta.
 
 **Ruolo**: commerciante (configurazione amministratore)
 
@@ -333,7 +323,7 @@ In questo scenario, esiste un problema noto in cui l’abilitazione del widget P
 
 **Opzione 3: sostituire GTM con Adobe Analytics**
 
-- Valuta se eseguire la migrazione a [Adobe Analytics](https://business.adobe.com/it/products/adobe-analytics.html), se applicabile.
+- Valuta se eseguire la migrazione a [Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html), se applicabile.
 - Contatta il team di progettazione clienti per assistenza.
 
 **Chi contattare**: invia un ticket di supporto per aggiornamenti sulla compatibilità GTM o assistenza tecnica clienti.
@@ -366,7 +356,7 @@ In questo scenario, si dispone di una vetrina headless o PWA che richiede la rac
    - I dati dell’evento di test fluiscono in Adobe Commerce.
 
 1. **Configura ordinamento facet**:
-   - Per le implementazioni headless, i facet possono essere ordinati in base al conteggio.
+   - Per le implementazioni headless, puoi ordinare i facet in base al conteggio.
    - Configurare nell&#39;area di lavoro **[!UICONTROL Live Search]** > **[!UICONTROL Facets]**.
    - Impostare **[!UICONTROL Sort Type]** su **Count** per una migliore interfaccia utente.
 
@@ -423,20 +413,20 @@ Presta attenzione a queste limitazioni durante la migrazione:
 **Differenze di funzionalità rispetto alla scheda di ricerca**:
 
 - **Campioni colore**: l&#39;attributo `color` deve essere scritto esattamente come `color` (non come &quot;colore&quot; o nomi personalizzati) per il corretto funzionamento dei campioni.
-- **Stile tema**: le classi tema personalizzate non vengono ereditate dal widget. È necessario impostare come destinazione le classi CSS specifiche del widget.
+- **Stile tema**: il widget non eredita le classi tema personalizzate. Devi eseguire il targeting di classi CSS specifiche per il widget.
 - **Tipi di prodotto personalizzati**: non supportati nel widget.
 
 **Considerazioni sulle prestazioni**:
 
-- I cataloghi di grandi dimensioni (oltre 50.000 prodotti) possono presentare caricamenti di pagina iniziali più lunghi.
+- I cataloghi di grandi dimensioni (oltre 50.000 prodotti) presentano caricamenti di pagina iniziali più lunghi.
 - Più facet con molti valori possono influire sulle prestazioni.
-- Le prestazioni del dispositivo mobile possono variare in base alle dimensioni del catalogo.
+- Le prestazioni del dispositivo mobile variano in base alla dimensione del catalogo.
 
 **Problemi di compatibilità**:
 
 - Problema di compatibilità con Google Tag Manager (vedi [Scenario GTM](#google-tag-manager-gtm-integration)).
-- Alcune estensioni di terze parti possono entrare in conflitto con il widget PLP.
-- Le estensioni di estrazione personalizzate potrebbero richiedere aggiornamenti.
+- Alcune estensioni di terze parti sono in conflitto con il widget PLP.
+- Le estensioni di estrazione personalizzate richiedono aggiornamenti.
 
 ## Ottenere aiuto
 
@@ -458,7 +448,7 @@ Contatta la risorsa appropriata in base alle tue esigenze specifiche.
 - Implementazioni headless o PWA
 - Tracciamento degli eventi personalizzati
 
-Per contattare il supporto Adobe, consulta la [Guida utente del Centro assistenza](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+Per contattare il supporto Adobe, consulta la [Guida utente di Adobe Help Center](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 ## Domande frequenti
 
@@ -482,7 +472,7 @@ R: Sì, tutte le regole di merchandising di ricerca, i sinonimi e i facet config
 
 **Q: è necessario riconfigurare i facet?**
 
-R: In genere no, ma se gli attributi del modello di origine personalizzato erano limitati dall’adattatore di ricerca, ora puoi utilizzarli con il widget PLP.
+R: No. Puoi continuare a utilizzare la configurazione facet esistente. Tuttavia, se in precedenza l&#39;adattatore di ricerca limitava l&#39;uso degli attributi di prodotto con modelli di origine personalizzati, ora è possibile utilizzare tali attributi con il widget PLP.
 
 **Q: cosa dire del CSS personalizzato?**
 

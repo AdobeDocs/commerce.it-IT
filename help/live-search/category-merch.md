@@ -3,19 +3,15 @@ title: Merchandising categorie
 description: Utilizza  [!DNL Live Search] merchandising per categorie per un'esperienza di acquisto più veloce.
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 TQID: https://experienceleague.adobe.com/2omWXwNttfwW04upO-QlQlRa41w9vgpdlPOYVFOX7-4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 1171
+source-wordcount: 1143
 ht-degree: 0%
 
 ---
@@ -26,7 +22,7 @@ Il merchandising per categorie consente ai proprietari dei negozi di applicare [
 
 Questo video è un’introduzione alla categoria Merchandising.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448859?captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
 La funzione è accessibile nell&#39;amministratore da **Marketing** > SEO &amp; Search > **[!DNL Live Search]** > **Category Merchandising**.
 
@@ -51,32 +47,32 @@ Puoi cercare una categoria o sottocategoria nel campo &quot;Ricerca per categori
 Il merchandising per categorie utilizza gli stessi tipi di classificazione utilizzati per [singoli prodotti](rules-workspace.md).
 Esistono due tipi di classificazione: intelligente e manuale.
 
-**La classificazione intelligente** sfrutta l&#39;analisi dei dati comportamentali in vetrina da parte di [Adobe AI](https://business.adobe.com/it/ai.html) per ordinare tutti i prodotti all&#39;interno delle categorie scelte in base a un determinato algoritmo. Una volta scelta una classificazione intelligente, l’ordine specifico dei prodotti dovrebbe cambiare nel tempo in quanto i dati sottostanti vengono rianalizzati da Adobe AI su base continuativa. Ad esempio, i prodotti con tendenze principali cambiano automaticamente nel tempo in base alle preferenze dell’acquirente.
+**La classificazione intelligente** sfrutta l&#39;analisi dei dati comportamentali in vetrina da parte di [Adobe AI](https://business.adobe.com/ai.html) per ordinare tutti i prodotti all&#39;interno delle categorie scelte in base a un determinato algoritmo. Dopo aver scelto una classificazione intelligente, l&#39;ordine specifico dei prodotti cambia nel tempo in quanto [!DNL Adobe AI] rianalizza costantemente i dati sottostanti. Ad esempio, i prodotti con tendenze principali cambiano automaticamente nel tempo in base alle preferenze dell’acquirente.
 I metodi di classificazione intelligenti sono:
 
-* Più acquistati: classifica i prodotti in base alla frequenza con cui sono stati acquistati dagli acquirenti nei sette giorni precedenti.
-* Più aggiunti al carrello: classifica i prodotti in base alla frequenza con cui sono stati aggiunti al carrello dagli acquirenti nei sette giorni precedenti.
-* Più visualizzati: classifica i prodotti in base alla frequenza con cui sono stati visualizzati dagli acquirenti nei sette giorni precedenti.
+* Più acquistati: classifica i prodotti in base alla frequenza con cui gli acquirenti li hanno acquistati nei sette giorni precedenti.
+* Più aggiunti al carrello: classifica i prodotti in base alla frequenza con cui gli acquirenti li hanno aggiunti al carrello nei sette giorni precedenti.
+* Più visualizzati: classifica i prodotti in base alla frequenza con cui gli acquirenti li hanno visualizzati nei sette giorni precedenti.
 * Consigliato per te: in base al comportamento precedente e attuale di ogni acquirente sul posto, classifica i prodotti in base alla probabilità che interagisca con ciascuno.
 * Tendenza: classifica i prodotti in base alle recenti acquisizioni di popolarità in base alle visualizzazioni.
 * Nessuno: classifica i prodotti in base all’ordine predefinito.
 
 
-Per qualsiasi metodo di classificazione intelligente ad eccezione di **Nessuno**, è possibile impostare **[!UICONTROL Intelligent Ranking Boost]** nell&#39;editor delle regole per ottimizzare l&#39;effetto dei segnali comportamentali sull&#39;ordine dei prodotti. Per informazioni dettagliate su valori predefiniti, limiti, comportamento di anteprima e confronto tra incremento e **Classificazione manuale**, consulta [Incremento intelligente della classificazione](rules-add.md#intelligent-ranking-boost).
+Per regolare l&#39;effetto dei segnali comportamentali sull&#39;ordine dei prodotti per qualsiasi metodo di classificazione intelligente ad eccezione di **Nessuno**, imposta **[!UICONTROL Intelligent Ranking Boost]** nell&#39;editor di regole. Per informazioni dettagliate su valori predefiniti, limiti, comportamento di anteprima e confronto tra incremento e **Classificazione manuale**, consulta [Incremento intelligente della classificazione](rules-add.md#intelligent-ranking-boost).
 
 **Classificazione manuale** consente agli utenti di ignorare l&#39;ordinamento automatico del prodotto definendo regole manuali di pin, boost, sotterramento e nascondi.
 
 ## Classificazione ereditata
 
-In qualità di merchandiser, potresti voler essere in grado di selezionare tutte le categorie di abbigliamento femminile per essere ordinato per &quot;tendenza&quot;. Sono incluse le sottocategorie &quot;Pantaloni da donna&quot;, &quot;Camicie da donna&quot; e &quot;Accessori da donna&quot;. Le categorie maschili non dovrebbero essere influenzate. Per ottenere questo risultato, puoi utilizzare le classificazioni ereditate.
+Come merchandiser, seleziona tutte le categorie di abbigliamento femminile per ordinare in base alla &quot;tendenza&quot;. Sono incluse le sottocategorie &quot;Pantaloni da donna&quot;, &quot;Camicie da donna&quot; e &quot;Accessori da donna&quot;. Le categorie per gli uomini non dovrebbero essere influenzate. Per ottenere questo risultato, puoi utilizzare le classificazioni ereditate.
 
 Quando si seleziona un metodo di classificazione intelligente per una categoria o sottocategoria con sottocategorie, è possibile attivare l&#39;opzione **Applica classificazione intelligente alle sottocategorie**. Questo applica il metodo di classificazione a tutte le sottocategorie.
 
 Queste sottocategorie ereditano ora tale regola dalla categoria padre (&quot;Sì&quot; nella colonna Classificazione ereditata). Nella colonna Azione le uniche opzioni disponibili sono **Modifica regola** e **Visualizza dettagli**. L&#39;opzione **Elimina** è disabilitata per le regole ereditate sulle sottocategorie. L&#39;eliminazione dell&#39;ereditarietà della sottocategoria richiede l&#39;annullamento dell&#39;ereditarietà dalla categoria padre.
 
-A qualsiasi categoria o sottocategoria può essere applicata una sola classificazione intelligente alla volta. Possono inoltre essere applicate classificazioni manuali aggiuntive.
+A ogni categoria o sottocategoria può essere applicata fino a una classificazione intelligente alla volta. Può anche avere una o più classificazioni manuali applicate simultaneamente.
 
-Se applichi una classificazione intelligente a una categoria e attivi l&#39;opzione **Applica classificazione intelligente alle sottocategorie**, eventuali classificazioni intelligenti già applicate alle sottocategorie vengono sovrascritte.
+Se si applica una classificazione intelligente a una categoria e si abilita [!UICONTROL Apply intelligent ranking to subcategories], la classificazione intelligente della categoria sostituisce tutte le classificazioni intelligenti già applicate alle relative sottocategorie.
 
 ![Elenco sottocategorie sovrascritto](assets/category_overwite_subs.png){width="700"}
 
@@ -89,7 +85,7 @@ Quando si aggiunge direttamente una classificazione intelligente a una categoria
 Quando si elimina la classificazione intelligente dalla categoria, l’ereditarietà viene ristabilita.
 In entrambi gli scenari, vengono mantenute tutte le classificazioni manuali.
 
-Se rimuovi una classificazione intelligente da una categoria e viene selezionata l’ereditarietà della sottocategoria, vengono rimosse dalle sottocategorie solo le classificazioni intelligenti ereditate. Le classificazioni manuali non sono soggette a ereditarietà e rimarranno.
+Se si rimuove una classificazione intelligente da una categoria mentre è abilitato [!UICONTROL Apply intelligent ranking to subcategories], verranno rimosse solo le classificazioni intelligenti ereditate dalle relative sottocategorie. Eventuali classificazioni manuali rimangono perché non vengono ereditate.
 
 Viene visualizzata una finestra di dialogo che illustra quali sottocategorie ereditate sono interessate da eventuali modifiche apportate a una categoria di livello superiore.
 
@@ -143,11 +139,13 @@ Gli eventi sono azioni che modificano i risultati della ricerca quando vengono s
 
 Crea una classificazione manuale:
 
-1. Imposta una regola di classificazione intelligente per una categoria come descritto in precedenza. I risultati della query verranno visualizzati nella visualizzazione Anteprima pagina categoria. Questo utilizza i dati Live Search effettivi per visualizzare in anteprima i risultati.
+1. Imposta una regola di classificazione intelligente per una categoria come descritto in precedenza.
+
+   I risultati della query vengono visualizzati nella visualizzazione Anteprima pagina categoria. Questo utilizza i dati Live Search effettivi per visualizzare in anteprima i risultati.
 
 1. Fai clic su un prodotto e trascinalo nella visualizzazione Anteprima pagina categoria. Trascinalo e rilascialo nella posizione desiderata. I campi Prodotto e Posizione vengono compilati automaticamente nel riquadro Eventi.
 
-Puoi anche fare clic sull’icona a forma di pin per fissare un prodotto alla posizione corrente. Utilizza il menu di scelta rapida con puntini di sospensione per &quot;Fissa in alto&quot; o &quot;Fissa in basso&quot;.
+Puoi anche fare clic sull’icona del pin per bloccare un prodotto nella posizione corrente. Utilizza il menu di scelta rapida con puntini di sospensione per &quot;Fissa in alto&quot; o &quot;Fissa in basso&quot;.
 
 Per aggiungere manualmente un evento:
 

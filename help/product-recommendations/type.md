@@ -3,26 +3,20 @@ title: Tipi di consigli
 description: Scopri i consigli che puoi distribuire in varie pagine del sito.
 exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
 TQID: https://experienceleague.adobe.com/d2V9aHGQO8jnPXAIlae-GklfACARMrVEttryLOY3Zr8
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: beb7a3c1-66ab-4786-b879-7621375b3c40id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 2045
+source-wordcount: 2001
 ht-degree: 0%
 
 ---
 
 # Tipi di consigli
 
-Adobe Commerce fornisce un’ampia serie di consigli che puoi distribuire su varie pagine del sito. Tutti i tipi di consigli sono basati sui dati. Sono basati su dati comportamentali, dati di attributi di prodotto e metriche. Per facilitare la consultazione, i tipi di consigli sono raggruppati come segue:
+Adobe Commerce fornisce un’ampia serie di consigli che puoi distribuire su varie pagine del sito. Tutti i tipi di consigli sono basati sui dati. I dati comportamentali, i dati degli attributi del prodotto e le metriche li alimentano. Per facilitare la consultazione, i tipi di consigli sono raggruppati come segue:
 
 - [Personalizzato](#personalized)
 - [Cross-selling e up-sell](#crossup)
@@ -35,7 +29,7 @@ Come best practice, Adobe consiglia le seguenti linee guida quando si utilizzano
 
 - Non distribuire gli stessi consigli nella pagina del carrello e nella pagina di conferma dell’ordine. Valuta se utilizzare `Most Added to Cart` per la pagina del carrello e `Bought This, Bought That` per la pagina di conferma dell&#39;ordine.
 
-- Mantieni il tuo sito ordinato. Non distribuire più di tre unità di consigli sulla stessa pagina.
+- Gestisci la configurazione del sito. Non distribuire più di tre unità di consigli sulla stessa pagina.
 
 - Se il tuo negozio vende vestiti, il consiglio `More like this` può suggerire prodotti specifici per genere che non corrispondono al genere del prodotto visualizzato. Prendi in considerazione l’utilizzo di questo tipo di consigli solo per categorie non di abbigliamento.
 
@@ -49,7 +43,7 @@ Product Recommendations è un sistema basato sui dati che si basa sui dati compo
 
 >[!IMPORTANT]
 >
->La maggior parte dei tipi di consigli richiede dati comportamentali sufficienti (come visualizzazioni di prodotti, azioni di aggiunta al carrello e acquisti) per generare risultati significativi. Il sistema richiede in genere diversi giorni di attività di acquisto attiva per generare consigli accurati. Consulta [indicatori di preparazione](create.md#readiness-indicators) per scoprire come il traffico del sito aiuta a popolare i vari tipi di consigli.
+>La maggior parte dei tipi di consigli richiede dati comportamentali sufficienti (come visualizzazioni di prodotti, azioni di aggiunta al carrello e acquisti) per generare risultati significativi. Il sistema richiede in genere diversi giorni di attività di acquisto attiva per generare consigli accurati. Per informazioni sul modo in cui il traffico del sito consente di popolare i vari tipi di consigli, vedi [indicatori di preparazione](create.md#readiness-indicators).
 
 ### Cosa succede con dati insufficienti
 
@@ -61,11 +55,11 @@ Quando i dati dell’evento non sono sufficienti per generare i consigli, il sis
 
 ## Personalizzato {#personalized}
 
-Questi tipi di consigli consigliano prodotti in base alla cronologia comportamentale dell’acquirente specifica sul tuo sito. Ad esempio, se un acquirente cerca una giacca in precedenza o ne ha acquistata una sul tuo sito, questi consigli in pratica rilevano da dove hanno lasciato e consigliano altre giacche o prodotti simili.
+Questi tipi di consigli consigliano prodotti in base alla cronologia comportamentale dell’acquirente specifica sul tuo sito. Ad esempio, se un acquirente ha già navigato o acquistato una giacca sul tuo sito, questi consigli continuano dalla sua attività precedente e consigliano altre giacche o prodotti simili.
 
 >[!NOTE]
 >
->I consigli personalizzati richiedono che gli acquirenti abbiano una storia comportamentale consolidata. I nuovi visitatori o acquirenti che non dispongono di una cronologia delle interazioni sufficiente visualizzeranno [consigli di backup](events.md#backup-recommendations), ad esempio la maggior parte dei prodotti visualizzati, finché non genereranno un numero sufficiente di segnali comportamentali sul sito.
+>I consigli personalizzati richiedono che gli acquirenti abbiano una storia comportamentale consolidata. I nuovi visitatori o acquirenti che non dispongono di una cronologia delle interazioni sufficiente visualizzano [i consigli di backup](events.md#backup-recommendations), ad esempio la maggior parte dei prodotti visualizzati, fino a quando non generano sufficienti segnali comportamentali sul sito.
 
 | Tipo | Descrizione |
 |---|---|
@@ -74,7 +68,7 @@ Questi tipi di consigli consigliano prodotti in base alla cronologia comportamen
 
 ## Cross-selling e up-sell {#crossup}
 
-Questi tipi di consigli sono orientati alla social-proof per aiutare gli acquirenti a trovare ciò che piace ad altri o orientati ai prodotti per aiutarli a trovare altri prodotti simili. I prodotti consigliati spesso integrano il prodotto selezionato.
+Questi tipi di consigli sono orientati alla protezione sociale per aiutare gli acquirenti a trovare ciò che piace agli altri. Sono anche orientati ai prodotti per aiutarli a trovare altri prodotti simili. I prodotti consigliati spesso integrano il prodotto selezionato.
 
 ### Contesto pagina per consigli
 
@@ -82,15 +76,15 @@ I tipi di consigli di vendita incrociata e up-selling utilizzano il contesto del
 
 - **Pagina dei dettagli del prodotto** - Utilizza lo SKU del prodotto che l&#39;acquirente sta visualizzando.
 - **Pagina carrello** - Utilizza gli SKU dei prodotti nel carrello.
-- **Pagina di conferma dell&#39;ordine** - Utilizza gli SKU dell&#39;acquisto appena completato.
+- **Pagina di conferma dell&#39;ordine** - Utilizza gli SKU dell&#39;acquisto completato dall&#39;acquirente.
 
 Lo stesso tipo di consigli può produrre risultati diversi a seconda di dove lo distribuisci. Ad esempio, *ha visualizzato questo, ha visualizzato che* in una pagina dei dettagli di un prodotto utilizza il prodotto visualizzato come contesto. Nella pagina del carrello vengono utilizzati i contenuti del carrello. Nella pagina di conferma dell’ordine, utilizza l’ordine completato.
 
 >[!NOTE]
 >
->I tipi di consigli &quot;visualizzato questo, visualizzato quello&quot;, &quot;visualizzato questo, acquistato quello&quot; e &quot;comprato questo, comprato che&quot; non utilizzano una metrica di occorrenza semplice, ma piuttosto un algoritmo di filtro collaborativo più sofisticato che cerca *somiglianze interessanti* che non sono distorti verso i prodotti più popolari. I dati utilizzati per informare questi tipi di consigli si basano sul comportamento aggregato dell’acquirente derivante da più sessioni sul sito. I dati non si basano sul comportamento dell’acquirente derivato da una singola occorrenza nella sessione sul sito. Questi tipi di consigli aiutano gli acquirenti a trovare i prodotti adiacenti che potrebbero non essere evidenti da abbinare al prodotto attualmente visualizzato.
+>I tipi di consigli &quot;visualizzato questo, visualizzato quello&quot;, &quot;visualizzato questo, acquistato quello&quot; e &quot;comprato questo, comprato che&quot; utilizzano un sofisticato algoritmo di filtro collaborativo per identificare _somiglianze interessanti_ senza enfatizzare eccessivamente i prodotti popolari. L’algoritmo utilizza il comportamento aggregato degli acquirenti in più sessioni sul sito, anziché il comportamento derivante da una singola interazione nella sessione. Questi tipi di consigli aiutano gli acquirenti a scoprire prodotti correlati che potrebbero non essere accoppiamenti evidenti con il prodotto che stanno visualizzando.
 >
->Questi tipi di consigli richiedono dati importanti sulle interazioni tra i prodotti per identificare correlazioni significative. I negozi con una limitata diversità del catalogo dei prodotti o un traffico ridotto possono visualizzare meno consigli fino a quando non emergono modelli comportamentali sufficienti.
+>Questi tipi di consigli richiedono dati importanti sulle interazioni tra i prodotti per identificare correlazioni significative. I negozi con una limitata diversità del catalogo dei prodotti o un traffico ridotto ricevono meno consigli fino a quando non emergono modelli comportamentali sufficienti.
 
 | Tipo | Descrizione |
 |---|---|
@@ -106,7 +100,7 @@ Questi tipi di consigli consigliano prodotti che sono i più popolari o di tende
 
 >[!NOTE]
 >
->I consigli basati sulla popolarità richiedono dati evento sufficienti dalla vetrina. Se il negozio è nuovo o il traffico è ridotto, questi tipi di consigli possono restituire risultati limitati o nessun risultato fino a quando non sono stati raccolti dati comportamentali adeguati. Monitora l&#39;[indicatore di preparazione ai dati](workspace.md) per garantire prestazioni ottimali.
+>I consigli basati sulla popolarità richiedono dati evento sufficienti dalla vetrina. Se il tuo negozio è nuovo o il traffico è ridotto, questi tipi di consigli restituiscono risultati limitati o nessun risultato fino a quando non sono stati raccolti dati comportamentali adeguati. Per garantire prestazioni ottimali, monitora l&#39;[indicatore di preparazione ai dati](workspace.md).
 
 | Tipo | Descrizione |
 |---|---|
@@ -121,7 +115,7 @@ Questi tipi di consigli consigliano prodotti con le prestazioni migliori in base
 
 >[!NOTE]
 >
->I tipi di consigli con prestazioni elevate si basano sui dati di conversione (acquisti e azioni di aggiunta al carrello). I nuovi store o store con volumi di conversione bassi potrebbero dover raccogliere dati per 7-14 giorni prima che questi consigli diventino effettivi.
+>I tipi di consigli con prestazioni elevate si basano sui dati di conversione (acquisti e azioni di aggiunta al carrello). I nuovi store o store con volumi di conversione bassi devono raccogliere dati per 7-14 giorni prima che questi consigli diventino effettivi.
 
 | Tipo | Descrizione |
 |---|---|
@@ -153,7 +147,7 @@ Adobe AI utilizza l’intelligenza artificiale per elaborare e analizzare le imm
 >
 > Attualmente, le immagini del prodotto devono avere dimensioni pari o inferiori a 10 MB.
 
-Poiché questo tipo di consiglio non è applicabile alla maggior parte dei cataloghi, non è abilitato per impostazione predefinita. Devi abilitare esplicitamente questo tipo di consigli.
+Poiché questo tipo di consiglio non è applicabile alla maggior parte dei cataloghi, il sistema non lo abilita per impostazione predefinita. Abilita esplicitamente questo tipo di consigli.
 
 ### Abilita tipo di consiglio per somiglianza visiva
 

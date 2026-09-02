@@ -4,36 +4,26 @@ description: Scopri i limiti e le limitazioni di  [!DNL Live Search]  per garant
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
 TQID: https://experienceleague.adobe.com/QIKvaTUGLWd6yw6cEAyDkP9tCgEcJHLdiwpZDtx1-p4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
-source-wordcount: 1421
+source-wordcount: 1409
 ht-degree: 0%
 
 ---
 
 # Limiti e limiti
 
-Adobe Commerce offre diverse opzioni per la ricerca del sito. Rivedi i limiti e le limitazioni seguenti per garantire che [!DNL Live Search] e [!DNL Catalog Service] soddisfino le esigenze della tua azienda. Se hai bisogno di funzionalità di ricerca avanzate, ad esempio ricerca di contenuti, algoritmo BYOA (port-your-own-algorithm) o merchandising basato su attributi, considera una soluzione di ricerca di terze parti.
+Adobe Commerce offre diverse opzioni per la ricerca del sito. Per garantire che [!DNL Live Search] e [!DNL Catalog Service] soddisfino le esigenze della tua azienda, rivedi i limiti e le limitazioni seguenti. Se hai bisogno di funzionalità di ricerca avanzate, ad esempio ricerca di contenuti, algoritmo BYOA (port-your-own-algorithm) o merchandising basato su attributi, considera una soluzione di ricerca di terze parti.
 
 ## Generale
 
 - La scheda di ricerca è stata [obsoleta](release-notes.md#live-search-400) a partire da [!DNL Live Search] 4.0.0. Il widget della pagina di elenco prodotti (PLP) è la soluzione supportata per tutte le [!DNL Live Search] implementazioni successive. L&#39;adattatore di ricerca riceverà solo gli aggiornamenti relativi alla protezione. Per informazioni sulla migrazione al widget PLP, consulta la [guida alla migrazione](migrate-to-plp.md).
-- Il modulo [Ricerca avanzata](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/search/search) è disabilitato quando è installato [!DNL Live Search] e il collegamento Ricerca avanzata nel piè di pagina della vetrina è stato rimosso.
-- [Il livello prezzi](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/products/pricing/product-price-tier) non è supportato nel campo [!DNL Live Search] e nel widget pagina elenco prodotti.
+- Il modulo [Ricerca avanzata](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) è disabilitato quando è installato [!DNL Live Search] e il collegamento Ricerca avanzata nel piè di pagina della vetrina è stato rimosso.
+- [Il livello prezzi](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) non è supportato nel campo [!DNL Live Search] e nel widget pagina elenco prodotti.
 - I prezzi dei prodotti includono l&#39;imposta sul valore aggiunto (IVA), ma [!DNL Live Search] non può visualizzare l&#39;IVA come valore separato.
 - La ricerca dei contenuti (pagine e blocchi CMS) non è supportata.
 - Il numero massimo di risultati che possono essere impaginati è 10.000. Per evitare che gli acquirenti debbano utilizzare l’impaginazione profonda quando una categoria o un risultato di ricerca include un numero elevato di prodotti, puoi fornire metodi significativi per filtrare i prodotti.
@@ -41,14 +31,14 @@ Adobe Commerce offre diverse opzioni per la ricerca del sito. Rivedi i limiti e 
 - L&#39;adattatore di ricerca non supporta attributi di prodotto creati con un modello di origine personalizzato e utilizzati come facet. Per supportare questa funzionalità, è necessario utilizzare il widget [Pagina di elenco prodotti](plp-styling.md).
 - I tipi di prodotto personalizzati non sono supportati.
 - Gli attributi personalizzati creati a livello di programmazione con `"is_user_defined": false` non sono supportati.
-- È possibile filtrare i risultati utilizzando le condizioni &quot;inizia con&quot; o &quot;contiene&quot; con alcune limitazioni, come descritto nella [documentazione per sviluppatori](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations).
+- È possibile filtrare i risultati utilizzando le condizioni &quot;inizia con&quot; o &quot;contiene&quot; con alcune limitazioni, come descritto nella [documentazione per sviluppatori](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#limitations).
 - Puoi tenere traccia delle metriche delle prestazioni solo nell’ultimo anno.
 - Se una query di ricerca contiene più parole, lo spazio vuoto tra le parole fa sì che vengano trattate come termini di ricerca separati. Usa [sinonimi](./synonyms.md) se vuoi tenere conto di query di ricerca con più parole.
-- [!DNL Live Search] non supporta [reindirizzamenti dei termini di ricerca](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/search/search-terms) nativi. Implementa i reindirizzamenti utilizzando Fastly o un’altra configurazione personalizzata.
+- [!DNL Live Search] non supporta [reindirizzamenti dei termini di ricerca](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) nativi. Implementa i reindirizzamenti utilizzando Fastly o un’altra configurazione personalizzata.
 
 ## Indicizzazione
 
-- [!DNL Live Search] [indici](indexing.md) fino a un totale di 450 attributi di prodotto per visualizzazione archivio. Questi sono distribuiti come segue:
+- [!DNL Live Search] [indici](indexing.md) fino a un totale di 450 attributi di prodotto per visualizzazione archivio. Questi attributi vengono distribuiti come segue:
   - 50 attributi ordinabili
   - 200 attributi filtrabili
   - 200 attributi ricercabili
@@ -59,30 +49,30 @@ Adobe Commerce offre diverse opzioni per la ricerca del sito. Rivedi i limiti e 
 ## Facet
 
 - Dal set di attributi filtrabili definiti, è possibile configurare fino a 100 attributi come facet.
-- All’interno di un facet, è possibile restituire fino a 100 bucket. Se devi restituire più di 100 bucket, [crea un ticket di supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) in modo che Adobe possa analizzare l&#39;impatto sulle prestazioni e determinare se è possibile aumentare questo limite per il tuo ambiente.
+- All’interno di un facet, è possibile restituire fino a 100 bucket. Se devi restituire più di 100 bucket, [crea un ticket di supporto](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) in modo che Adobe possa analizzare l&#39;impatto sulle prestazioni e determinare se è possibile aumentare questo limite per il tuo ambiente.
 - I facet dinamici possono causare problemi di prestazioni in indici e indici di grandi dimensioni con elevata ordinalità. Se hai creato facet dinamici e noti un deterioramento delle prestazioni o una pagina non caricata con errori di timeout, prova a modificare i facet in modo che siano bloccati per determinare se questo risolve il problema di prestazioni.
-- Lo stato del titolo (`quantity_and_stock_status`) non è supportato come facet. Nell&#39;amministratore è possibile impostare [!UICONTROL Display Out of Stock Products] = [!UICONTROL No] per filtrare i prodotti in stock. Supporto predefinito nel modulo `[PLP Widget](plp-styling.md)`. Per ulteriori dettagli, vedere [Gestione prodotti esauriti](manage-out-of-stock-products.md).
+- Lo stato del titolo (`quantity_and_stock_status`) non è supportato come facet. Nell&#39;amministratore è possibile impostare [!UICONTROL Display Out of Stock Products] = [!UICONTROL No] per filtrare i prodotti in stock. Questa funzionalità è supportata in modalità nativa nel modulo `[PLP Widget](plp-styling.md)`. Per ulteriori dettagli, vedere [Gestione prodotti esauriti](manage-out-of-stock-products.md).
 - Gli attributi del tipo di data non sono supportati come facet.
 - Eventuali modifiche apportate ai metadati dell’attributo dopo l’aggiunta dell’attributo come facet non vengono riportate nel facet.
 - Puoi disporre di un massimo di 50 attributi ordinabili e 200 attributi ricercabili.
 
 ## Query
 
-- [!DNL Live Search] utilizza un [endpoint GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) univoco per le query che supportano funzionalità quali il faceting dinamico e la ricerca in base al tipo. Sebbene simile all&#39;[API GraphQL](https://developer.adobe.com/commerce/webapi/graphql/), esistono alcune differenze e alcuni campi potrebbero non essere completamente compatibili.
+- [!DNL Live Search] utilizza un [endpoint GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) univoco per le query che supportano funzionalità quali il faceting dinamico e la ricerca in base al tipo. Sebbene simile all&#39;[API GraphQL](https://developer.adobe.com/commerce/webapi/graphql/), esistono alcune differenze e alcuni campi non sono completamente compatibili.
 - Il numero massimo di risultati che possono essere restituiti in una query di ricerca è 10.000.
 - Il numero massimo di risultati per pagina è 100.
 - Non è possibile filtrare i risultati utilizzando un attributo di tipo data.
 
 >[!NOTE]
 >
->L&#39;ordinamento in base alla posizione richiede che sia attivo un filtro `categoryPath` o `categoryIds` valido. [Ulteriori informazioni](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#error-handling-for-categorypath-and-categoryids).
+>L&#39;ordinamento in base alla posizione richiede che sia attivo un filtro `categoryPath` o `categoryIds` valido. [Ulteriori informazioni](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#error-handling-for-categorypath-and-categoryids).
 
 ## Cerca merchandising
 
 - Il numero massimo di [regole](rules.md) di merchandising di ricerca per ogni visualizzazione dello store è 50.
 - Il numero massimo di condizioni per regola è 10.
 - Il numero massimo di eventi per regola è 25.
-- Le regole e i prodotti classificati manualmente vengono applicati ai risultati della ricerca quando viene selezionato il criterio di ordinamento predefinito &quot;Ordina per: Più rilevante&quot;. Se un acquirente modifica il criterio di ordinamento in modo da definirlo in base al nome o al prezzo, le regole e le classificazioni manuali non sono più attive.
+- Le regole e i prodotti classificati manualmente vengono applicati ai risultati della ricerca quando viene selezionato il criterio di ordinamento predefinito &quot;Ordina per: Più rilevante&quot;. Se un acquirente modifica l’ordinamento, le regole e le classificazioni manuali non sono più attive.
 - Per evitare risultati imprevedibili in risposte impaginate, il numero di prodotti bloccati non deve superare le dimensioni di pagina richieste.
 
 ## Sinonimi
@@ -99,17 +89,17 @@ Adobe Commerce offre diverse opzioni per la ricerca del sito. Rivedi i limiti e 
 ## Autorizzazioni B2B e categoria
 
 - I prodotti non vengono visualizzati se non vengono aggiunti a un catalogo condiviso predefinito.
-- Per limitare i gruppi di clienti utilizzando [autorizzazioni categoria](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/categories/category-permissions):
+- Per limitare i gruppi di clienti utilizzando [autorizzazioni categoria](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions):
   - I prodotti devono essere assegnati alla categoria principale. (**Nota:** è possibile rimuovere questa limitazione aggiornando l&#39;estensione SaaS Data Export alla versione 103.4.0+. Consulta [Gestire l&#39;estensione di esportazione dei dati](../data-export/manage-extension.md).
   - Al gruppo di clienti &quot;Non connesso&quot; devono essere assegnate autorizzazioni di navigazione &quot;Consenti&quot;.
-  - Per limitare i prodotti al gruppo di clienti &quot;Non connesso&quot;, vai a ogni categoria e imposta le autorizzazioni per ogni [gruppo di clienti](https://experienceleague.adobe.com/it/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
+  - Per limitare i prodotti al gruppo di clienti &quot;Non connesso&quot;, vai a ogni categoria e imposta le autorizzazioni per ogni [gruppo di clienti](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
 - Al momento non è disponibile il supporto predefinito per B2B con il widget PLP su PWA Studio. Tuttavia, puoi [utilizzare l&#39;API](install.md#pwa-support) per implementare questa funzionalità.
-- I facet di categoria in [!DNL Live Search] potrebbero visualizzare categorie non visualizzabili in un [gruppo di clienti](https://experienceleague.adobe.com/it/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) specifico.
+- I facet di categoria in [!DNL Live Search] potrebbero visualizzare categorie non visualizzabili in un [gruppo di clienti](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) specifico.
 - [!DNL Live Search] può supportare fino a 1.000 gruppi di clienti.
 
 ## [!DNL Storefront popover]
 
-- [[!DNL popover]](storefront-popover.md) è disponibile solo per gli archivi che utilizzano il tema *Luma* o un tema personalizzato basato su *Luma*. Le breadcrumb nella pagina dei risultati di ricerca non avranno uno stile *Luma*.
+- [[!DNL popover]](storefront-popover.md) è disponibile solo per gli archivi che utilizzano il tema *Luma* o un tema personalizzato basato su *Luma*. Le breadcrumb nella pagina dei risultati di ricerca non dispongono dello stile *Luma*.
 - [!DNL popover] non supporta il tema *Blank*.
 - [!DNL popover] non è supportato nel modulo Ordine rapido.
 - Non sono supportate le liste dei desideri e i confronti tra prodotti.
@@ -119,8 +109,8 @@ Adobe Commerce offre diverse opzioni per la ricerca del sito. Rivedi i limiti e 
 
 Per informazioni sulla risoluzione dei problemi comuni in [!DNL Live Search], vedere i seguenti articoli della Knowledge Base:
 
-- [[!DNL Live Search] catalogo non sincronizzato](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) - Fornisce soluzioni per i casi in cui i dati del catalogo prodotti non vengono sincronizzati correttamente tra l&#39;archivio Adobe Commerce e il servizio Live Search. Questo articolo illustra come verificare lo stato della sincronizzazione, identificare gli errori di sincronizzazione e risolvere i problemi di sincronizzazione dei dati.
-- [[!DNL Live Search] la classificazione del dashboard e dei risultati di ricerca non è corretta](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect). Risolve i problemi in cui i risultati di ricerca o le metriche delle prestazioni visualizzate nel dashboard di Live Search non vengono visualizzati come previsto. Questo articolo spiega come risolvere le discrepanze di classificazione e le incongruenze nei dati del dashboard.
-- [[!DNL Live Search] i facet non sono ordinati alfabeticamente](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted). Risolve il problema relativo alla visualizzazione dei valori facet in ordine imprevisto anziché alfabetico. Questo articolo descrive come configurare e correggere il comportamento di ordinamento dei facet nella vetrina.
+- [[!DNL Live Search] catalogo non sincronizzato](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) - Fornisce soluzioni per i casi in cui i dati del catalogo prodotti non vengono sincronizzati correttamente tra l&#39;archivio Adobe Commerce e il servizio Live Search. Questo articolo illustra come verificare lo stato della sincronizzazione, identificare gli errori di sincronizzazione e risolvere i problemi di sincronizzazione dei dati.
+- [[!DNL Live Search] la classificazione del dashboard e dei risultati di ricerca non è corretta](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect). Risolve i problemi in cui i risultati di ricerca o le metriche delle prestazioni visualizzate nel dashboard di Live Search non vengono visualizzati come previsto. Questo articolo spiega come risolvere le discrepanze di classificazione e le incongruenze nei dati del dashboard.
+- [[!DNL Live Search] i facet non sono ordinati alfabeticamente](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted). Risolve il problema relativo alla visualizzazione dei valori facet in ordine imprevisto anziché alfabetico. Questo articolo descrive come configurare e correggere il comportamento di ordinamento dei facet nella vetrina.
 
-Se hai bisogno di ulteriore assistenza, contatta il [supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+Se hai bisogno di ulteriore assistenza, contatta il [supporto](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
