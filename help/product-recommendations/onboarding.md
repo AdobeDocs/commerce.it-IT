@@ -11,9 +11,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 0802d0e53a1ed6701318647b7bf78435082ad5f3
 workflow-type: tm+mt
-source-wordcount: 449
+source-wordcount: 477
 ht-degree: 0%
 
 ---
@@ -54,6 +54,10 @@ Per i requisiti dettagliati, vedere [Requisiti di sistema](https://experiencelea
 [!DNL Product Recommendations] può essere aggiunto a una pagina come tipo di contenuto Page Builder. Per aggiungere il supporto di Page Builder ai consigli di prodotto, fare riferimento a [Installazione e configurazione](install-configure.md).
 
 Per istruzioni su come aggiungere [!DNL Product Recommendations] al contenuto di [!DNL Page Builder], vedere [[!DNL Page Builder] Integrazione](page-builder.md).
+
+### Ottimizzazione rapida delle immagini
+
+[!DNL Product Recommendations] supporta un modulo opzionale [Fastly Image Optimization](install-configure.md#fastlysupport) che applica i parametri Fastly Image Optimization a [!DNL Product Recommendations] URL di immagini. Per aggiungere questo supporto, fare riferimento a [Installa e configura](install-configure.md#fastlysupport).
 
 ### Indicizzazione dei prezzi SaaS
 

@@ -17,9 +17,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
+source-git-commit: 77e37e506362498a4ab27cd19152b4e4e742636b
 workflow-type: tm+mt
-source-wordcount: 2260
+source-wordcount: 2322
 ht-degree: 0%
 
 ---
@@ -31,6 +31,7 @@ Le note sulla versione descrivono gli aggiornamenti ai seguenti moduli [!DNL Pro
 * [!DNL Product Recommendations] metapackage: `magento/product-recommendations`
 * Supporto di Page Builder nel modulo [!DNL Product Recommendations] (facoltativo): `magento/module-page-builder-product-recommendations`
 * Supporto del tipo di consiglio per similarità visiva per il modulo [!DNL Product Recommendations] (facoltativo): `magento/module-visual-product-recommendations`
+* Supporto di Fastly Image Optimization per il modulo [!DNL Product Recommendations] (facoltativo): `magento/module-fastly-recommendations`
 
 Adobe supporta l’ultima versione rilasciata di Product Recommendations. Vengono fornite a titolo di riferimento le note sulla versione per le versioni precedenti.
 
@@ -80,6 +81,14 @@ _25 aprile 2023_
 I clienti ![New](../assets/new.svg) [!DNL Product Recommendations] ora possono utilizzare [Indicizzazione prezzo SaaS](../price-index/price-indexing.md).
 
 ## Versione principale corrente
+
+### 6.8.0 di magento/module-fastly-recommendations
+
+_3 settembre 2026_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.4 e successive
+
+![Nuovo](../assets/new.svg) aggiunto supporto facoltativo di Ottimizzazione immagine rapida per [!DNL Product Recommendations]. Questo modulo applica i parametri [Fastly Image Optimization](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/cdn/fastly) a [!DNL Product Recommendations] URL di immagine. Per istruzioni sull&#39;installazione, consulta [Supporto per l&#39;ottimizzazione delle immagini rapida](install-configure.md#fastlysupport).
 
 ### 6.7.0 magento/product-recommendations
 
