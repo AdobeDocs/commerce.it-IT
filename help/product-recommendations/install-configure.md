@@ -57,7 +57,7 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-Attivando [!DNL Product Recommendations] in Page Builder, è possibile aggiungere una [unità di consigli](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) attiva a qualsiasi contenuto creato in Page Builder, ad esempio pagine, blocchi e blocchi dinamici.
+Attivando [!DNL Product Recommendations] in Page Builder, è possibile aggiungere una [unità di consigli](https://experienceleague.adobe.com/it/docs/commerce-admin/page-builder/add-content/recommendations) attiva a qualsiasi contenuto creato in Page Builder, ad esempio pagine, blocchi e blocchi dinamici.
 
 Per ulteriori istruzioni, vedi [Utilizzo di [!DNL Product Recommendations] con contenuto Page Builder](page-builder.md).
 
@@ -71,7 +71,7 @@ composer require magento/module-visual-product-recommendations
 
 ### Supporto di Fastly Image Optimization {#fastlysupport}
 
-Il supporto di Fastly Image Optimization per [!DNL Product Recommendations] è un modulo opzionale e viene installato separatamente. Questo modulo applica i parametri [Fastly Image Optimization](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) a [!DNL Product Recommendations] URL di immagine. Per installarlo, eseguire il comando seguente:
+Il supporto di Fastly Image Optimization per [!DNL Product Recommendations] è un modulo opzionale e viene installato separatamente. Questo modulo applica i parametri [Fastly Image Optimization](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/cdn/fastly) a [!DNL Product Recommendations] URL di immagine. Per installarlo, eseguire il comando seguente:
 
 ```bash
 composer require magento/module-fastly-recommendations
@@ -83,7 +83,7 @@ composer require magento/module-fastly-recommendations
 
    La configurazione di questa connessione consente la sincronizzazione dei dati e la comunicazione tra l’istanza di Commerce, Catalog Service e altri servizi di supporto. L&#39;estensione [SaaS Data Export](../data-export/overview.md) gestisce la sincronizzazione dei dati.
 
-1. Per garantire la corretta esecuzione dell&#39;esportazione del catalogo, verificare che i processi [cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) e [indexers](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) siano in esecuzione e che l&#39;indicizzatore `Product Feed` sia impostato su `Update by Schedule`.
+1. Per garantire la corretta esecuzione dell&#39;esportazione del catalogo, verificare che i processi [cron](https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) e [indexers](https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cli/manage-indexers) siano in esecuzione e che l&#39;indicizzatore `Product Feed` sia impostato su `Update by Schedule`.
 
 Dopo aver collegato correttamente l&#39;applicazione Commerce a Commerce Services e aver specificato [Spazio dati SaaS](../landing/saas.md#saas-configuration), la sincronizzazione del catalogo inizia. Puoi quindi [verificare](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify) che i dati comportamentali vengano inviati alla vetrina.
 
@@ -143,4 +143,4 @@ Per consentire ai consigli di prodotto di passare attraverso un firewall, aggiun
 
 ## Disinstalla [!DNL Product Recommendations] {#uninstall}
 
-Se necessario, puoi [disinstallare](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) il modulo product-recommendations.
+Se necessario, puoi [disinstallare](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) il modulo product-recommendations.
