@@ -3,19 +3,13 @@ title: Tipi di consigli
 description: Scopri i consigli che puoi distribuire in varie pagine del sito.
 exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
 TQID: https://experienceleague.adobe.com/d2V9aHGQO8jnPXAIlae-GklfACARMrVEttryLOY3Zr8
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: beb7a3c1-66ab-4786-b879-7621375b3c40id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 0802d0e53a1ed6701318647b7bf78435082ad5f3
 workflow-type: tm+mt
-source-wordcount: 2001
+source-wordcount: 2026
 ht-degree: 0%
 
 ---
@@ -132,6 +126,10 @@ Questi tipi di consigli consigliano prodotti con le prestazioni migliori in base
 
 Il tipo di consiglio _Somiglianza visiva_ consiglia prodotti dall&#39;aspetto simile al prodotto visualizzato. Questo tipo di consigli è più utile quando le immagini e gli aspetti visivi dei prodotti sono parti importanti dell’esperienza di acquisto.
 
+>[!NOTE]
+>
+>Poiché questo tipo di consiglio non è applicabile alla maggior parte dei cataloghi, il sistema non lo abilita per impostazione predefinita. [abilita in modo esplicito questo tipo di consiglio](#enable-visual-similarity-recommendation-type).
+
 ### Come funziona
 
 Il tipo di consiglio _Somiglianza visiva_ offre consigli per altri prodotti nel catalogo che hanno una somiglianza visiva con le immagini attualmente visualizzate. La somiglianza visiva include aspetti quali:
@@ -145,15 +143,11 @@ Il tipo di consiglio _Somiglianza visiva_ offre consigli per altri prodotti nel 
 
 Adobe AI utilizza l’intelligenza artificiale per elaborare e analizzare le immagini nel catalogo e creare gli attributi utilizzati per determinare le somiglianze visive.
 
->[!NOTE]
->
-> Se stai sottoponendo a test questo tipo di consigli in un ambiente non di produzione, assicurati che gli URL delle immagini siano accessibili al pubblico.
+#### Considerazioni particolari
 
->[!NOTE]
->
-> Attualmente, le immagini del prodotto devono avere dimensioni pari o inferiori a 10 MB.
-
-Poiché questo tipo di consiglio non è applicabile alla maggior parte dei cataloghi, il sistema non lo abilita per impostazione predefinita. Abilita esplicitamente questo tipo di consigli.
+- Se stai sottoponendo a test questo tipo di consigli in un ambiente non di produzione, assicurati che gli URL delle immagini siano accessibili al pubblico.
+- Attualmente, le immagini del prodotto devono avere dimensioni pari o inferiori a 10 MB.
+- Il modulo opzionale [Fastly Image Optimization](install-configure.md#fastlysupport) può applicare i parametri Fastly Image Optimization a [!DNL Product Recommendations] URL di immagine. Per ulteriori informazioni, consulta [Supporto per l&#39;ottimizzazione rapida delle immagini](install-configure.md#fastlysupport).
 
 ### Abilita tipo di consiglio per somiglianza visiva
 
