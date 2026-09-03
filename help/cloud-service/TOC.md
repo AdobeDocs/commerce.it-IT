@@ -39,11 +39,11 @@ ht-degree: 3%
       - [Lista di controllo preparazione cliente](migration/bulk-data/readiness-checklist.md)
       - [Verificare l’accesso al servizio di migrazione](migration/bulk-data/cdms-access.md)
       - [Eseguire una migrazione dati in blocco](migration/bulk-data/migration-guide.md)
-      - [Procedura dettagliata del video](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/bulk-data-migration-tool/introduction){target="_blank"}
+      - [Procedura dettagliata del video](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/bulk-data-migration-tool/introduction){target="_blank"}
     - [Strumento di valutazione della migrazione](migration/assessment.md)
     - [Strumenti di codifica](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/){target="_blank"}
   - {hide-from-toc}[Servizio RAG documentazione](migration/doc-rag.md)
-- [Accedi come cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+- [Accedi come cliente](https://experienceleague.adobe.com/it/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [Endpoint REST per account gift card](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
 - [Attivazione delle e-mail tramite REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - Tutorial {#tutorials}
@@ -57,6 +57,6 @@ ht-degree: 3%
   - [Schema GraphQL](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
   - [Schema REST API](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
 - [Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-- [Tutorial video](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
+- [Tutorial video](https://experienceleague.adobe.com/it/playlists/accs-getting-started-product-overview){target="_blank"}
 - [Note sulla versione](release-notes.md)
-- [Torna alla pagina principale dei servizi Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Torna alla pagina principale dei servizi Commerce](https://experienceleague.adobe.com/it/docs/commerce/user-guides/home)
