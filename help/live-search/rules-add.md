@@ -12,9 +12,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 0a8adc9dc2c13e0f74fa21b0fbdeb3b904a9bcc6
 workflow-type: tm+mt
-source-wordcount: 2561
+source-wordcount: 2878
 ht-degree: 0%
 
 ---
@@ -101,6 +101,20 @@ I proprietari dei negozi possono impostare i seguenti tipi di strategie di class
 
 Selezionare il tipo di strategia per la regola. Nella finestra **[!UICONTROL Test your rule]** vengono visualizzati i risultati previsti.
 
+### Segnali comportamentali per prodotti e varianti configurabili {#behavioral-signals-variants}
+
+**[!DNL Live Search]** raccoglie segnali comportamentali, quali visualizzazioni, eventi aggiuntivi al carrello e acquisti, in base al prodotto specifico con cui un acquirente interagisce. Per un prodotto configurabile, ciò significa che i segnali vengono registrati a livello di **variante** (prodotto semplice), non rispetto all&#39;elemento padre configurabile.
+
+Quando si classifica un prodotto configurabile, **[!DNL Live Search]** aggrega i segnali comportamentali raccolti da tutte le varianti e li aggrega nell&#39;elemento padre configurabile. Il punteggio di classificazione di un prodotto configurabile riflette i segnali combinati di ogni variante, non solo di una.
+
+Questa aggregazione si verifica nell’ambito della categoria visualizzata. Una variante fornisce i propri segnali comportamentali solo al punteggio di classificazione dell&#39;elemento padre configurabile per le categorie a cui è assegnata quella **variante**. Se manca una variante da una categoria, i segnali non vengono conteggiati per la classificazione del padre in quella categoria, anche quando il padre configurabile stesso è assegnato lì.
+
+**Best practice:** rivedi le assegnazioni di categoria per tutte le varianti di prodotto, in particolare nei cataloghi che utilizzano strutture di categoria specifiche per dimensione, colore o altre varianti, per confermare che ogni variante è assegnata a ogni categoria in cui si prevede che appaia e influisce sulla classificazione.
+
+**Esempio:**
+
+Un merchandiser organizza un catalogo in sottocategorie specifiche per le dimensioni, ad esempio **200g** e **500g**. Un prodotto configurabile ha due varianti, una per ogni dimensione. Se solo la variante 200g viene assegnata alla categoria 200g, gli acquisti e le visualizzazioni della variante 500g non contribuiscono al punteggio di classificazione del prodotto configurabile nella pagina categoria 200g, anche se la variante 500g vende bene altrove. Il prodotto configurabile può quindi essere classificato inferiore al previsto, o non al passo con le prestazioni di vendita effettive, sulla pagina categoria 200g. L’assegnazione di entrambe le varianti alle rispettive categorie risolve la mancata corrispondenza.
+
 ### Miglioramento intelligente della classificazione {#intelligent-ranking-boost}
 
 Per **Consigliato per te**, **Più visualizzato**, **Più acquistato**, **Più aggiunto al carrello** e **Di tendenza**, l&#39;editor mostra **[!UICONTROL Intelligent Ranking Boost]** (il fattore di incremento). Non viene utilizzato quando si seleziona **Nessuno**.
@@ -162,6 +176,7 @@ Consulta [regole di ricerca](./best-practice.md#search-rules) per scoprire come 
 ### Avvertenze
 
 * Gli apostrofi e le citazioni nelle interrogazioni possono portare ad alcuni problemi minori di classificazione e rilevanza in alcune lingue.
+* Se i risultati della classificazione intelligente non sono correlati alle vendite effettive o alle prestazioni di visualizzazione, confermare che tutte le varianti di prodotto pertinenti sono assegnate alla categoria in fase di revisione. Le assegnazioni di categorie di varianti mancanti sono una causa comune e facilmente ignorata di un comportamento di classificazione imprevisto. Consulta [Segnali comportamentali per prodotti e varianti configurabili](#behavioral-signals-variants).
 * Per garantire il corretto funzionamento della classificazione intelligente, assicurati che il **Peso di ricerca** per tutti gli attributi di prodotto utilizzati per la ricerca o il filtraggio (facet) sia pari o inferiore a `5`. Per trovare questa impostazione nell&#39;amministratore [!DNL Commerce]:
 
   1. Seleziona **Archivi** > _Attributi_ > **Prodotto**.
@@ -178,10 +193,10 @@ Consulta [regole di ricerca](./best-practice.md#search-rules) per scoprire come 
 
 La Classificazione manuale (precedentemente nota come Eventi) è un’azione che modifica i risultati della ricerca quando vengono soddisfatte determinate condizioni. Una singola regola può avere fino a 25 eventi.
 
-* Incrementa: sposta un prodotto più in alto nei risultati di ricerca.
-* Intervallo: sposta una SKU in basso nei risultati di ricerca.
-* Fissa un prodotto: il prodotto viene visualizzato nella posizione selezionata sulla pagina.
-* Nascondi un prodotto: esclude uno SKU dai risultati della ricerca.
+* **[!UICONTROL Boost]** - Sposta uno SKU più in alto nei risultati di ricerca.
+* **[!UICONTROL Bury]** - Sposta uno SKU in basso nei risultati di ricerca.
+* **[!UICONTROL Pin a product]** - Lo SKU viene visualizzato nella &quot;Posizione&quot; selezionata sulla pagina.
+* **[!UICONTROL Hide a product]** - Esclude uno SKU dai risultati della ricerca.
 
 Il modo più semplice per fissare un prodotto è tramite trascinamento.
 
@@ -199,7 +214,7 @@ Gli eventi OR possono essere impostati manualmente:
 
 1. In *Eventi*, scegli l&#39;**Evento** da eseguire quando vengono soddisfatte le condizioni associate.
 
-   Scegliere ad esempio `Hide a product`. Quindi, inserisci il nome del prodotto che desideri nascondere. I prodotti vengono suggeriti durante la digitazione.
+   Scegliere ad esempio **[!UICONTROL Hide a product]**. Quindi, inserisci il nome del prodotto che desideri nascondere. I prodotti vengono suggeriti durante la digitazione.
 
 1. Per più eventi, scegli qualsiasi altro evento che desideri attivare quando vengono soddisfatte le condizioni.
 
@@ -262,10 +277,10 @@ Le informazioni immesse vengono visualizzate nel pannello [Dettagli regola](rule
 
 | Evento | Descrizione |
 |--- |--- |
-| Incrementa | Sposta uno SKU o un intervallo di SKU più in alto nei risultati di ricerca. Ognuno di essi è contrassegnato da un badge di anteprima &quot;potenziato&quot; nei risultati della ricerca di test. |
-| Buio | Sposta uno SKU o un intervallo di SKU in un livello inferiore nei risultati di ricerca. Ognuno di essi è contrassegnato da un badge di anteprima &quot;interrato&quot; nei risultati della ricerca di test. |
-| Fissa un prodotto | Associa un singolo SKU a una posizione specifica nei risultati della ricerca. Il prodotto è contrassegnato con un badge di anteprima &quot;fissato&quot; nei risultati della ricerca di test. |
-| Nascondere un prodotto | Esclude uno SKU, o intervallo di SKU, dai risultati della ricerca. |
+| [!UICONTROL Boost] | Sposta uno SKU o un intervallo di SKU più in alto nei risultati di ricerca. Ognuno di essi è contrassegnato da un badge di anteprima &quot;potenziato&quot; nei risultati della ricerca di test. |
+| [!UICONTROL Bury] | Sposta uno SKU o un intervallo di SKU in un livello inferiore nei risultati di ricerca. Ognuno di essi è contrassegnato da un badge di anteprima &quot;interrato&quot; nei risultati della ricerca di test. |
+| [!UICONTROL Pin a product] | Associa un singolo SKU a una posizione specifica nei risultati della ricerca. Il prodotto è contrassegnato con un badge di anteprima &quot;fissato&quot; nei risultati della ricerca di test. |
+| [!UICONTROL Hide a product] | Esclude uno SKU, o intervallo di SKU, dai risultati della ricerca. |
 
 ### Dettagli
 
