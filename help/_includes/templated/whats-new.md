@@ -1,7 +1,7 @@
 ---
-source-git-commit: 73cfc898b25e731238b049419fe0e964e29e92b6
+source-git-commit: 4a68ab79a6ddbd39efe5825fcbe2137ddf83f471
 workflow-type: tm+mt
-source-wordcount: '1059'
+source-wordcount: '1056'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## Novità
 
 Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo elenco sono esclusi tutti gli aggiornamenti minori, ad esempio la modifica della copia.
+
+### 2 settembre 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stata aggiunta la <a href="https://experienceleague.adobe.com/it/docs/commerce/insights/overview">guida di Commerce Insights</a>, una nuova pagina dedicata all'implementazione strategica e alle linee guida sulla sicurezza fornite dal team di progettazione e gestione dei prodotti Adobe Commerce.</p>
+</td>
+      <td>
+        Nuovo argomento
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/7c82665f7696cab156f6559ade451df937faa3e5">commit</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 28 agosto 2026
 
@@ -353,28 +375,6 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
         Aggiornamento principale
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/976a43b367be87363307dc27c55f98df18271eb1">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 6 luglio 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>È stata rimossa la documentazione sull’integrazione di LLM Optimizer e Commerce. La funzionalità è stata ridefinita e spostata nella <a href="https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/products/catalog-enrichment">Guida dell'amministratore di Commerce</a>.</p>
-</td>
-      <td>
-        Aggiornamento principale
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/edab7c8b3c7965425c5d3008a537f7e4a1fc374b">commit</a></td>
     </tr>
   </tbody>
 </table>
