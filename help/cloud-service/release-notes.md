@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 49a235a3a545b422b0371b53163d7de770df6a38
+source-git-commit: 8fdfd3ebfa088fd219c65c86ce99cae838ff5d54
 workflow-type: tm+mt
-source-wordcount: 6271
+source-wordcount: 6358
 ht-degree: 0%
 
 ---
@@ -50,11 +50,11 @@ Le seguenti note sulla versione contengono aggiornamenti a [!DNL Adobe Commerce 
 
 ## Settembre 2026 - #1 sulla versione {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="Gli elementi elencati sono attualmente disponibili solo negli ambienti Sandbox. Adobe rende disponibili le nuove versioni negli ambienti Sandbox per fornire il tempo di testare le modifiche imminenti prima che la versione sia disponibile negli ambienti di produzione."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Produzione]{type=Neutral tooltip="Gli elementi elencati sono attualmente disponibili negli ambienti di produzione."}
 
-I seguenti elementi saranno pubblicati in Produzione l’8 settembre 2026.
+I seguenti elementi sono stati pubblicati in Produzione l’8 settembre 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -66,7 +66,7 @@ Per ulteriori informazioni, consultare le [note sulla versione di Adobe Commerce
 
 ### Sincronizzare le configurazioni sandbox e di produzione tramite l’API REST
 
-I nuovi endpoint REST API `GET` e `PUT /V1/system/config` consentono alle integrazioni di leggere e aggiornare i valori di configurazione del sistema Commerce, tra cui:
+I nuovi endpoint API REST [`GET` e `PUT /V1/system/config`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/system-config) consentono alle integrazioni di leggere e aggiornare i valori di configurazione del sistema Commerce, tra cui:
 
 * Informazioni archivio
 * Impostazioni di spedizione e imposte
@@ -77,15 +77,17 @@ Questi endpoint consentono agli amministratori di sincronizzare la configurazion
 
 ### Eseguire query sulla disponibilità dell’inventario tramite GraphQL
 
-Una nuova query di GraphQL `sourceAvailability` restituisce la disponibilità di scorte per origine per una o più SKU, pertanto i punti vendita, come le pagine di prodotti e categorie, possono visualizzare informazioni accurate sulle scorte per ogni origine di inventario. <!-- ACCS-933 -->
+Una nuova query di GraphQL [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) restituisce la disponibilità delle scorte per origine per uno o più SKU, pertanto i punti vendita, come le pagine di prodotti e categorie, possono visualizzare informazioni accurate sulle scorte per ogni origine inventario.
+
+[Attiva **Disponibilità Per Source**](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/configuration/global-options). <!-- ACCS-933 -->
 
 ### Lettura delle impostazioni persistenti per la condivisione degli account e della lista dei desideri tramite GraphQL
 
-La query GraphQL `storeConfig` ora restituisce i valori di configurazione `persistent_enabled`, `persistent_shopping_cart`, `persistent_options_wishlist` e `share_customer_accounts_scope`, pertanto gli storefront possono accedere alle impostazioni del carrello acquisti permanente e della lista dei desideri senza contattare il supporto tecnico. <!-- USF-4051 -->
+La query GraphQL [`storeConfig`](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/store-config/#query-a-stores-persistent-cart-and-account-sharing-configuration) ora restituisce i valori di configurazione `persistent_enabled`, `persistent_shopping_cart`, `persistent_options_wishlist` e `share_customer_accounts_scope`, pertanto gli storefront possono accedere alle impostazioni del carrello acquisti permanente e della lista dei desideri senza contattare il supporto tecnico. <!-- USF-4051 -->
 
 ### Cerca gli ordini dei clienti per prodotto, SKU o ID ordine
 
-L&#39;input di GraphQL `CustomerOrdersFilterInput` ora supporta un campo `search` facoltativo che corrisponde al numero d&#39;ordine, allo SKU dell&#39;articolo o al nome dell&#39;articolo, in combinazione con qualsiasi altro filtro fornito. <!-- USF-4290 -->
+L&#39;input di GraphQL [`CustomerOrdersFilterInput`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer) ora supporta un campo `search` facoltativo che corrisponde al numero d&#39;ordine, allo SKU dell&#39;elemento o al nome dell&#39;elemento, in combinazione con qualsiasi altro filtro fornito. <!-- USF-4290 -->
 
 ### Aggiornare ed eliminare modelli e-mail personalizzati tramite l’API
 
@@ -136,15 +138,14 @@ Gli esercenti possono ora eseguire in autonomia l&#39;onboarding di un altro con
 
 ### Regole di prezzo del carrello omaggio
 
-La regola del prezzo del carrello **Regalo gratuito** è ora disponibile in [!DNL Commerce Admin] per gli store front. <!-- AC-17678 -->
+La regola del prezzo del carrello [**Regalo gratuito**](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-free-gift) è ora disponibile in [!DNL Commerce Admin] per gli store front.
+<!-- AC-17678 -->
 
-Questa regola ti consente di aggiungere al carrello un prodotto omaggio gratuito quando vengono soddisfatte le condizioni della regola.
-
-<!-- dependent on https://github.com/Adobe-Enterprise-Docs/commerce-admin.en/pull/856 and https://github.com/AdobeDocs/commerce-webapi/pull/590 -->
+Questa regola ti consente di aggiungere al carrello un prodotto omaggio gratuito quando vengono soddisfatte le condizioni della regola. Quando una regola richiede una scelta, gli acquirenti possono selezionare uno SKU regalo utilizzando la nuova mutazione di GraphQL [`selectFreeGiftForCart`](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/select-free-gift), che supporta prodotti regalo configurabili e raggruppabili.
 
 ### Pianifica regole prezzo carrello per data e ora
 
-Ora puoi impostare l&#39;ora del giorno in cui vuoi che una [regola prezzo carrello](https://experienceleague.adobe.com/it/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create) inizi o termini in [!DNL Commerce Admin]. Nella griglia delle regole di prezzo del carrello vengono visualizzati gli orari pianificati e l&#39;API REST rispetta un orario inviato il `from_date` e il `to_date` invece di impostare la regola su mezzanotte. <!-- ACCS-970 -->
+Ora puoi impostare l&#39;ora del giorno in cui vuoi che una [regola prezzo carrello](https://experienceleague.adobe.com/it/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#rule-information) inizi o termini in [!DNL Commerce Admin]. Nella griglia delle regole di prezzo del carrello vengono visualizzati gli orari pianificati e l&#39;API REST rispetta un orario inviato il `from_date` e il `to_date` invece di impostare la regola su mezzanotte. <!-- ACCS-970 -->
 
 <!-- commenting this out until the B2B compatibility package version is live. -->
 
