@@ -4,21 +4,15 @@ description: Informazioni sulla versione mensili per  [!DNL Adobe Commerce Optim
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 631126cc8d9b69c41aed19e30bf1503dd950d7e9
 workflow-type: tm+mt
-source-wordcount: 1561
+source-wordcount: 1626
 ht-degree: 0%
 
 ---
@@ -49,6 +43,11 @@ _3 settembre 2026_
 ## Agosto 2026
 
 >[!BEGINSHADEBOX]
+
+_9 settembre 2026_
+
+![Nuovo](../assets/new.svg) **Criteri per l&#39;attivazione di intestazioni HTTP con più valori**. I criteri per l&#39;attivazione che utilizzano il tipo di trasporto `HTTP_HEADER` possono ora ricevere più valori separati da virgola in un&#39;unica intestazione (ad esempio, `AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`). I filtri dei criteri che utilizzano `IN` valutano i valori con `OR` semantica. I filtri che utilizzano `EQUALS`, `GREATER_THAN_EQUAL` o `LESS_THAN_EQUAL` rifiutano la richiesta con un errore di convalida se l&#39;intestazione contiene più valori. Questo comportamento si applica solo ai criteri di attivazione che utilizzano il trasporto `HTTP_HEADER`. [Ulteriori informazioni](./setup/policies.md#multi-value-http-header-triggers).
+<!--COMOPT-2439-->
 
 _7 agosto 2026_
 
@@ -153,7 +152,7 @@ _29 aprile 2026_
 
 <!--v1.52 release-->
 
-**Richiesta batch richieste**: l&#39;API GraphQL ora applica un massimo di 100 SKU per richiesta quando si recuperano i dati del catalogo. Vedi [limiti e limiti documentati](https://experienceleague.adobe.com/it/docs/commerce/optimizer/boundaries-limits#product-discovery).
+**Richiesta batch richieste**: l&#39;API GraphQL ora applica un massimo di 100 SKU per richiesta quando si recuperano i dati del catalogo. Vedi [limiti e limiti documentati](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery).
 
 <!--DATA-7156-->
 
@@ -347,7 +346,7 @@ _23 settembre 2025_
 
 ### Area geografica UE ora disponibile
 
-L’area di produzione UE (**eu1**) è disponibile per le organizzazioni IMS. Quando [aggiungi un&#39;istanza  [!DNL Commerce Optimizer] &#x200B;](./get-started.md#step-1-create-an-instance) in Cloud Manager, scegli **[!UICONTROL European Union]** come **[!UICONTROL Region]** (solo produzione).
+L’area di produzione UE (**eu1**) è disponibile per le organizzazioni IMS. Quando [aggiungi un&#39;istanza  [!DNL Commerce Optimizer] ](./get-started.md#step-1-create-an-instance) in Cloud Manager, scegli **[!UICONTROL European Union]** come **[!UICONTROL Region]** (solo produzione).
 
 Gli URL di produzione di base per la regione dell’Unione Europea sono:
 

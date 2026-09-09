@@ -2,20 +2,15 @@
 title: Criteri
 description: Scopri come creare e gestire i criteri in [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
 TQID: https://experienceleague.adobe.com/hUwBKWEcFOlkC2WOwBtDDitnj-nu-kixJ9WuencZIe4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4a9bb6c6473680ee7059d1844be5fee718a9ed68
 workflow-type: tm+mt
-source-wordcount: 917
+source-wordcount: 1054
 ht-degree: 0%
 
 ---
@@ -61,6 +56,28 @@ I criteri con **Origine valore** di **TRIGGER** sono denominati criteri esclusiv
 - `AC-Policy-Model`
 
 Se l&#39;acquirente fa clic sull&#39;elenco a discesa **Brand**, l&#39;intestazione della chiamata API contiene `AC-Policy-Brand`, configurato per mostrare solo i prodotti specifici del criterio `AC-Policy-Brand`.
+
+### Trigger di intestazione HTTP con più valori {#multi-value-http-header-triggers}
+
+Un criterio di attivazione che utilizza il tipo di trasporto `HTTP_HEADER` può ricevere più valori in una singola intestazione. I valori devono essere separati da virgole e l&#39;operatore di filtro deve essere `IN`. Ogni valore viene trattato come una corrispondenza accettabile. I valori vengono valutati con `OR` semantica.
+
+Ad esempio, un filtro criteri che utilizza `IN` con la seguente intestazione:
+
+```
+AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025
+```
+
+corrisponde a prodotti il cui attributo `vehicle` è `UNIVERSAL` o `veh-bolt-mammoth-limited-2025`.
+
+Un operatore di filtro di `EQUALS`, `GREATER_THAN_EQUAL` o `LESS_THAN_EQUAL` viene rifiutato con un errore di convalida.
+
+#### Note sulla sintassi
+
+- Il nome dell&#39;intestazione corrisponde al nome del trigger configurato, ad esempio `AC-Policy-Vehicle`.
+- Le virgole separano i singoli valori all’interno dell’intestazione. Quando la stessa intestazione `AC-Policy-_Name_` viene visualizzata più di una volta, i relativi valori verranno combinati in un singolo valore di intestazione separato da virgole
+- Operatore filtro: `IN`.
+- Filtro dei criteri con **Origine valore** impostata su `TRIGGER`.
+- Un trigger il cui **tipo di trasporto** è `HTTP_HEADER`.
 
 ## Crea criterio
 
