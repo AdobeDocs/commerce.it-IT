@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
+source-git-commit: 631126cc8d9b69c41aed19e30bf1503dd950d7e9
 workflow-type: tm+mt
-source-wordcount: 1561
+source-wordcount: 1626
 ht-degree: 0%
 
 ---
@@ -49,6 +49,11 @@ _3 settembre 2026_
 ## Agosto 2026
 
 >[!BEGINSHADEBOX]
+
+_9 settembre 2026_
+
+![Nuovo](../assets/new.svg) **Criteri per l&#39;attivazione di intestazioni HTTP con più valori**. I criteri per l&#39;attivazione che utilizzano il tipo di trasporto `HTTP_HEADER` possono ora ricevere più valori separati da virgola in un&#39;unica intestazione (ad esempio, `AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`). I filtri dei criteri che utilizzano `IN` valutano i valori con `OR` semantica. I filtri che utilizzano `EQUALS`, `GREATER_THAN_EQUAL` o `LESS_THAN_EQUAL` rifiutano la richiesta con un errore di convalida se l&#39;intestazione contiene più valori. Questo comportamento si applica solo ai criteri di attivazione che utilizzano il trasporto `HTTP_HEADER`. [Ulteriori informazioni](./setup/policies.md#multi-value-http-header-triggers).
+<!--COMOPT-2439-->
 
 _7 agosto 2026_
 
