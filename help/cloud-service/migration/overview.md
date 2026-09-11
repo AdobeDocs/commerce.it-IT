@@ -3,41 +3,20 @@ title: Migra a  [!DNL Adobe Commerce as a Cloud Service]
 description: Scopri come eseguire la migrazione a  [!DNL Adobe Commerce as a Cloud Service].
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:12:28.840Z'
 TQID: 'https://experienceleague.adobe.com/GmxaQdGKvAIDpZ2jvmlLFSYw0IFQysIMOT0lUnsJBsI'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
-  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 289267c4bb76bbe1e9f00fd02faa7749b812d0d0
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: e91a50b1-0b31-436e-9033-00e4776e94cbid: f56d26ed-050b-4fb7-b29b-8e6e994e80a2id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080bid: eb30f47f-d87a-400f-8f78-63ce7979ff56id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 3372
+source-wordcount: 3374
 ht-degree: 0%
 
 ---
@@ -76,8 +55,8 @@ Le differenze tra [!DNL Adobe Commerce as a Cloud Service], [!DNL Adobe Commerce
 | Offerta Adobe Commerce | Modello di hosting | Responsabilità dei servizi e degli aggiornamenti |
 |---|---|---|
 | **[!DNL Adobe Commerce as a Cloud Service]** | SaaS — ospitato da Adobe | Adobe gestisce l&#39;applicazione, l&#39;infrastruttura e gli aggiornamenti principali di Commerce. I commercianti estendono la piattaforma tramite API supportate e servizi di estensibilità (API, [!DNL Adobe Developer App Builder], SDK per l’interfaccia utente). Gli esercenti non possono modificare il codice dell’applicazione principale. |
-| **[!DNL Adobe Commerce on Cloud Infrastructure]** | PaaS: gestito da Adobe | [Responsabilità condivisa](https://experienceleague.adobe.com/it/docs/commerce-operations/security-and-compliance/shared-responsibility): Adobe gestisce la piattaforma ospitata. L’esercente gestisce le patch a livello di applicazione, il codice personalizzato, la configurazione e aggiorna le estensioni e i servizi della piattaforma alle versioni supportate, tra cui database, cache, ricerca, runtime PHP, server web e coda dei messaggi. |
-| **[!DNL Adobe Commerce on-premises]** | Ospitato dal commerciante o dal provider di hosting | [Responsabilità dell&#39;esercente](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/overview#merchant-responsibilities): l&#39;esercente o il provider di hosting gestisce l&#39;infrastruttura e tutti i servizi della piattaforma. |
+| **[!DNL Adobe Commerce on Cloud Infrastructure]** | PaaS: gestito da Adobe | [Responsabilità condivisa](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility): Adobe gestisce la piattaforma ospitata. L’esercente gestisce le patch a livello di applicazione, il codice personalizzato, la configurazione e aggiorna le estensioni e i servizi della piattaforma alle versioni supportate, tra cui database, cache, ricerca, runtime PHP, server web e coda dei messaggi. |
+| **[!DNL Adobe Commerce on-premises]** | Ospitato dal commerciante o dal provider di hosting | [Responsabilità dell&#39;esercente](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview#merchant-responsibilities): l&#39;esercente o il provider di hosting gestisce l&#39;infrastruttura e tutti i servizi della piattaforma. |
 
 **Implicazioni di architettura**
 
@@ -90,7 +69,7 @@ Le differenze tra [!DNL Adobe Commerce as a Cloud Service], [!DNL Adobe Commerce
 
 - [Mesh API per Adobe Developer App Builder](https://developer.adobe.com/app-builder/) e [per Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/)
 - [Commerce Optimizer](../../optimizer/overview.md)
-- [Servizi di consegna Edge](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it)
+- [Servizi di consegna Edge](https://experienceleague.adobe.com/en/tools/commerce-storefront/)
 - Provisioning self-service con [Commerce Cloud Manager](../getting-started.md#create-an-instance)
 
 ### Il percorso di migrazione
@@ -214,7 +193,7 @@ Utilizzando i risultati della [valutazione della migrazione](#migration-assessme
 
 ### Modernizzazione della vetrina
 
-Sul front-end, Commerce Developer MCP modernizza [storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it) su Edge Delivery Services (EDS) per Commerce utilizzando i blocchi boilerplate, Drop-in Components ed EDS di Adobe Commerce.
+Sul front-end, Commerce Developer MCP modernizza [storefronts](https://experienceleague.adobe.com/en/tools/commerce-storefront/) su Edge Delivery Services (EDS) per Commerce utilizzando i blocchi boilerplate, Drop-in Components ed EDS di Adobe Commerce.
 
 Commerce Developer MCP carica i progetti di vetrina esistenti basati sulla piattaforma standard Commerce. Modernizza la vetrina:
 
@@ -315,4 +294,4 @@ Quando si è pronti per eseguire la migrazione, completare il [questionario di v
 
 Per ulteriori informazioni sul flusso di lavoro, i dati supportati e la verifica, consulta la [guida dello strumento Bulk Data Migration](bulk-data/migration-tool.md).
 
-Gli integratori di sistemi che preparano un ambiente di origine possono inoltre utilizzare [Adobe Commerce Cloud CLI](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) standard e [Adobe Developer Console](https://developer.adobe.com) per le credenziali IMS.
+Gli integratori di sistemi che preparano un ambiente di origine possono inoltre utilizzare [Adobe Commerce Cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) standard e [Adobe Developer Console](https://developer.adobe.com) per le credenziali IMS.
