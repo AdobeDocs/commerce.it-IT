@@ -177,7 +177,7 @@ Dopo aver configurato [AEM Asset Selector](synchronize/asset-selector-integratio
 
 1. Fare clic su **[!UICONTROL Save]** e continuare.
 
-   Per ulteriori informazioni sulla creazione di una categoria, vedere [Completare il contenuto della categoria](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) nella **Guida alla gestione del catalogo di Commerce**.
+   Per ulteriori informazioni sulla creazione di una categoria, vedere [Completare il contenuto della categoria](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) nella **Guida alla gestione del catalogo di Commerce**.
 
 ## Aggiornare una risorsa
 
@@ -187,6 +187,6 @@ Affinché il flusso di lavoro lato Commerce colleghi le risorse ai prodotti tram
 
 Per le procedure AEM Assets, consulta la seguente documentazione:
 
-* [Rielaborazione di risorse digitali](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [Rielaborazione di risorse digitali](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [Approvare una risorsa](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [Approvare una risorsa](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)

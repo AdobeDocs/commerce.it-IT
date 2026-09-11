@@ -4,7 +4,7 @@ description: Scopri gli strumenti di osservabilità e le funzionalità di teleme
 feature: Cloud, Integration
 role: Admin, Developer
 level: Intermediate
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 autotag-review: '2026-06-09T15:41:54.613Z'
 TQID: 'https://experienceleague.adobe.com/jTPNVSy6cP8v-pV-3pyqgJX-PAzFFhOUf9SjQIMeBns'
 product_v2:
@@ -95,5 +95,5 @@ La libreria [`@adobe/aio-lib-telemetry`](https://github.com/adobe/aio-lib-teleme
 
 I video seguenti forniscono una panoramica di alto livello delle offerte di osservabilità in [!DNL Adobe Commerce as a Cloud Service]:
 
-* [Video sull’osservabilità di App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/observability/overview){target="_blank"}
-* [Video Mesh API](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/api-mesh/getting-started-api-mesh){target="_blank"}
+* [Video sull’osservabilità di App Builder](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/observability/overview){target="_blank"}
+* [Video Mesh API](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/extensibility/api-mesh/getting-started-api-mesh){target="_blank"}

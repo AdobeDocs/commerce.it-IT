@@ -9,7 +9,7 @@ role: Admin, Developer
 level: Intermediate
 topic: Administration
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 feature_v2:
@@ -55,11 +55,11 @@ In genere, la soluzione include i seguenti componenti:
 
 Verifica che il tuo ambiente Adobe Commerce on Cloud sia pronto per la produzione.
 
-▢ L&#39;istanza cloud è [predisposta](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/new-project).
+▢ L&#39;istanza cloud è [predisposta](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/start/new-project).
 ▢ I test e i dati fittizi vengono rimossi dall&#39;istanza.
 I dati di produzione di ▢ sono caricati nell&#39;istanza.
 ▢ Conosci l&#39;[endpoint GraphQL](https://developer.adobe.com/commerce/webapi/graphql/).
-▢ L&#39;istanza soddisfa i requisiti di [ready-for-launch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist).
+▢ L&#39;istanza soddisfa i requisiti di [ready-for-launch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/launch/checklist).
 
 ## Verifica istanza Commerce Optimizer {#verify-optimizer}
 
@@ -156,7 +156,7 @@ Conferma la configurazione dell’estensibilità per la produzione.
 
 ▢ L&#39;area di lavoro di produzione include tutte le configurazioni e i servizi richiesti.
 ▢ L&#39;app di produzione passa il test tra gli scenari di build.
-▢ I limiti e i limiti del prodotto sono stati rivisti e confermati in base alla [descrizione del prodotto Adobe Developer App Builder](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"} e alle [impostazioni e limitazioni del sistema App Builder](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
+▢ I limiti e i limiti del prodotto sono stati rivisti e confermati in base alla [descrizione del prodotto Adobe Developer App Builder](https://helpx.adobe.com/it/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"} e alle [impostazioni e limitazioni del sistema App Builder](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
 ▢ L&#39;app di produzione utilizza gli endpoint di produzione App Builder.
 ▢ Le estensioni del pannello *Admin* personalizzate sono distribuite nell&#39;area di lavoro di produzione.
 
@@ -225,7 +225,7 @@ I punteggi di ▢ Lighthouse soddisfano le tue destinazioni (ad esempio, `100` n
 Conferma autorizzazioni e segreti.
 
 ▢ Le autorizzazioni appropriate sono configurate per il contenuto DA e i siti EDS. Consulta [Autorizzazioni DA.live](https://da.live/docs/administration/permissions) e [Impostazione dell&#39;autenticazione per l&#39;authoring](https://www.aem.live/docs/authentication-setup-authoring).
-▢ È stato eseguito il provisioning dell&#39;integrazione degli elementi visivi del prodotto. Consulta [Panoramica dell&#39;accesso ad AEM Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview#).
+▢ È stato eseguito il provisioning dell&#39;integrazione degli elementi visivi del prodotto. Consulta [Panoramica dell&#39;accesso ad AEM Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/accessing/overview#).
 I collegamenti per la reimpostazione della password ▢ nei modelli e-mail corrispondono alla configurazione di Edge Delivery Services. Vedi le domande frequenti su storefront: [Cosa devo fare se i miei collegamenti del modello e-mail sono interrotti dopo la migrazione a Edge Delivery Services o Helix?](https://experienceleague.adobe.com/en/tools/commerce-storefront/troubleshooting/faq/#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}.
 ▢ Le chiavi di produzione per le integrazioni e i provider di pagamenti sono attive.
 I domini ▢ sono inseriti nell&#39;elenco Consentiti e i webhook di back-end funzionano.

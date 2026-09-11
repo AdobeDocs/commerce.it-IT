@@ -57,7 +57,7 @@ Utilizzare la procedura seguente per connettere AEM Assets a una vetrina di Docu
 
 >[!NOTE]
 >
->Per istruzioni di installazione dettagliate, vedi [Configurare AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank} nella documentazione di Da.live e [Integrare AEM Assets durante l&#39;authoring dei contenuti per Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank} nella documentazione di AEM Assets.
+>Per istruzioni di installazione dettagliate, vedi [Configurare AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank} nella documentazione di Da.live e [Integrare AEM Assets durante l&#39;authoring dei contenuti per Edge Delivery Services](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank} nella documentazione di AEM Assets.
 
 ### Passaggio 1: aprire la configurazione del sito in Da.live
 
@@ -106,6 +106,6 @@ La vetrina ora è connessa ad AEM Assets. È possibile sfogliare e inserire riso
 
 * [Integrazione AEM Assets](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/){target=_blank} nella *documentazione di Adobe Commerce Storefront*: configurazione della vetrina e comportamento di gestione delle immagini.
 
-* [Integra AEM Assets durante la creazione di contenuti per Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank} nella documentazione di *AEM Assets*.
+* [Integra AEM Assets durante la creazione di contenuti per Edge Delivery Services](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank} nella documentazione di *AEM Assets*.
 
 * [Configura AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank} e [Utilizzo dei file multimediali](https://docs.da.live/authors/guides/adding-media){target=_blank} nella documentazione di Da.live.
