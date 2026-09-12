@@ -36,9 +36,9 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1456
+source-wordcount: 1458
 ht-degree: 0%
 
 ---
@@ -96,13 +96,13 @@ Questo diagramma illustra il flusso di dati tra [!DNL Adobe Commerce as a Cloud 
 
 ## Commerce Storefront
 
-Per creare esperienze avanzate in pochi minuti con semplici operazioni di authoring basato su documenti o di modifica visiva con [!DNL Storefront Builder], utilizza [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it) di Adobe con tecnologia [!DNL Edge Delivery Services].
+Per creare esperienze avanzate in pochi minuti con semplici operazioni di authoring basato su documenti o di modifica visiva con [!DNL Storefront Builder], utilizza [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/en/tools/commerce-storefront/) di Adobe con tecnologia [!DNL Edge Delivery Services].
 
 [!DNL Commerce Storefront] è completamente headless con un&#39;architettura separata che fornisce tutti i servizi e i dati di Adobe Merchandising tramite un livello API GraphQL. Questa architettura consente ai team di sviluppare i propri front-end in modo indipendente da Commerce Foundation, fornendo la flessibilità necessaria per creare e testare nuovi punti di contatto con le tecnologie emergenti.
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] non supporta le vetrine Luma. Se esegui la migrazione da [!DNL Adobe Commerce on Cloud] o on-premise, consulta [vetrine esistenti](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=it#existing-storefronts) per informazioni sulla transizione.
+>[!DNL Adobe Commerce as a Cloud Service] non supporta le vetrine Luma. Se esegui la migrazione da [!DNL Adobe Commerce on Cloud] o on-premise, consulta [vetrine esistenti](https://experienceleague.adobe.com/en/tools/commerce-storefront/discovery/#existing-storefronts) per informazioni sulla transizione.
 
 ## Servizi Adobe Merchandising e servizi di pagamento
 

@@ -22,9 +22,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d7623f5d42eaa50b95a2f36c244b8a3e78d4c7a9
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1737
+source-wordcount: 1738
 ht-degree: 0%
 
 ---
@@ -318,7 +318,7 @@ Utilizza l’agente per integrare l’API di valutazione nella pagina dei dettag
    Dovresti visualizzare le seguenti modifiche nell’ambiente di sviluppo e nel browser:
 
    * Viene creato automaticamente un componente di valutazione del prodotto.
-   * Il componente è integrato nel PDP utilizzando [slot di rilascio](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots/?lang=it) o come blocco autonomo, a seconda dell&#39;architettura scelta.
+   * Il componente è integrato nel PDP utilizzando [slot di rilascio](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins/customize/slots/) o come blocco autonomo, a seconda dell&#39;architettura scelta.
    * Le stelle vengono visualizzate con proporzioni di riempimento appropriate in base ai valori di valutazione dell’API.
 
    ![Pagina dei dettagli del prodotto con le classificazioni a stelle integrate sotto il titolo del prodotto](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}

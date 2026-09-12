@@ -16,9 +16,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1573
+source-wordcount: 1574
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Dopo aver creato un consiglio, devi recuperarne l’ID per implementare l’unit
 
 1. Nella sezione **ID consiglio**, copia l&#39;ID.
 
-1. Usa questo ID per configurare il [menu a discesa dei consigli](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=it) nella vetrina di Edge Delivery Services.
+1. Usa questo ID per configurare il [menu a discesa dei consigli](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) nella vetrina di Edge Delivery Services.
 
 ## Gestire i consigli esistenti
 
@@ -212,6 +212,6 @@ Di seguito sono elencati i possibili motivi e soluzioni ai punteggi di bassa pro
 - **Basato su statico** - Le percentuali basse per questi indicatori possono essere causate da dati di catalogo mancanti per i prodotti visualizzabili. Se sono inferiori al previsto, il problema può essere risolto con una sincronizzazione completa.
 - **Basato su dinamica** - Le percentuali basse per gli indicatori basati su dinamica possono essere causate da:
 
-   - Campi mancanti nei [eventi storefront](../../setup/events/overview.md) richiesti per i rispettivi tipi di consigli (requestId, contesto di prodotto e così via).
-   - Traffico ridotto verso l’archivio, pertanto il volume di eventi comportamentali ricevuti è basso.
-   - La varietà di eventi comportamentali all&#39;interno dello store tra i diversi prodotti è bassa. Ad esempio, se solo il 10% dei prodotti viene visualizzato o acquistato la maggior parte del tempo, i rispettivi indicatori di disponibilità sono bassi.
+  - Campi mancanti nei [eventi storefront](../../setup/events/overview.md) richiesti per i rispettivi tipi di consigli (requestId, contesto di prodotto e così via).
+  - Traffico ridotto verso l’archivio, pertanto il volume di eventi comportamentali ricevuti è basso.
+  - La varietà di eventi comportamentali all&#39;interno dello store tra i diversi prodotti è bassa. Ad esempio, se solo il 10% dei prodotti viene visualizzato o acquistato la maggior parte del tempo, i rispettivi indicatori di disponibilità sono bassi.

@@ -14,9 +14,9 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 7f901cec90291e264376e3f93e6ebaaccf7c15f0
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 610
+source-wordcount: 612
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Per abilitare l&#39;integrazione in vetrine di Commerce con tecnologia Edge Deli
 
 I menu a discesa di Commerce rilevano automaticamente la configurazione `commerce-assets-enabled` e regolano di conseguenza la gestione delle immagini.
 
-Per ulteriori informazioni sull&#39;utilizzo di AEM Assets con Commerce Storefront basato su Edge Delivery Services, consulta l&#39;argomento [Integrazione di AEM Assets](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=it) nella documentazione di *Adobe Commerce Storefront*.
+Per ulteriori informazioni sull&#39;utilizzo di AEM Assets con Commerce Storefront basato su Edge Delivery Services, consulta l&#39;argomento [Integrazione di AEM Assets](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/) nella documentazione di *Adobe Commerce Storefront*.
 
 >[!TIP]
 >
@@ -104,7 +104,7 @@ La vetrina ora è connessa ad AEM Assets. È possibile sfogliare e inserire riso
 
 ## Documentazione correlata
 
-* [Integrazione AEM Assets](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=it){target=_blank} nella *documentazione di Adobe Commerce Storefront*: configurazione della vetrina e comportamento di gestione delle immagini.
+* [Integrazione AEM Assets](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/){target=_blank} nella *documentazione di Adobe Commerce Storefront*: configurazione della vetrina e comportamento di gestione delle immagini.
 
 * [Integra AEM Assets durante la creazione di contenuti per Edge Delivery Services](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank} nella documentazione di *AEM Assets*.
 

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[Componenti di eliminazione](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=it) per [!DNL Commerce Storefront on Edge Delivery Services] rilevano automaticamente le modifiche GraphQL più recenti (nuovi campi, limiti e comportamento di query).
+>[Componenti di eliminazione](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins/all/introduction/) per [!DNL Commerce Storefront on Edge Delivery Services] rilevano automaticamente le modifiche GraphQL più recenti (nuovi campi, limiti e comportamento di query).
 
 ## Accesso anticipato ACS {#accs-early-access}
 
@@ -53,10 +53,10 @@ ht-degree: 0%
 <table style="table-layout:fixed">
   <tr>
     <td style="vertical-align: middle;"><a href="https://developer.adobe.com/commerce/webapi/"><img alt="Developers" src="../assets/icons/developers.svg" /> <strong>Developers</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
     <td style="vertical-align: middle;"><a href="../cloud-service/overview.md"><img alt="Merchants" src="../assets/icons/merchants.svg" /> <strong>Merchants</strong></a></td>
     <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/?lang=it"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/playgrounds/commerce-services/"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
   </tr>
 </table>
 
@@ -93,7 +93,7 @@ Per informazioni sulle opzioni di configurazione delle identità, tra cui Adobe 
 
 | Servizi | Estensibilità | Vetrina |
 | --- | --- | --- |
-| <ul><li>[Servizio catalogo](../catalog-service/release-notes.md)</li><li>[Live Search](../live-search/release-notes.md)</li><li>[Servizi di pagamento](../payment-services/release-notes.md)</li><li>[Consigli di prodotto](../product-recommendations/release-notes.md)</li><li>[Esportazione dati SaaS](../data-export/release-notes.md)</li></ul> | <ul><li>[SDK interfaccia utente amministratore](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[Mesh API](https://developer.adobe.com/graphql-mesh-gateway/mesh/release/)</li><li>[Eventi](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[Informazioni sulla versione](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=it)</li><li>[Registro modifiche](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=it)</li></ul> |
+| <ul><li>[Servizio catalogo](../catalog-service/release-notes.md)</li><li>[Live Search](../live-search/release-notes.md)</li><li>[Servizi di pagamento](../payment-services/release-notes.md)</li><li>[Consigli di prodotto](../product-recommendations/release-notes.md)</li><li>[Esportazione dati SaaS](../data-export/release-notes.md)</li></ul> | <ul><li>[SDK interfaccia utente amministratore](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[Mesh API](https://developer.adobe.com/graphql-mesh-gateway/mesh/release/)</li><li>[Eventi](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[Informazioni sulla versione](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/)</li><li>[Registro modifiche](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/changelog/)</li></ul> |
 
 ## Note sulla versione di Adobe Commerce Optimizer Services {#aco-release}
 
@@ -103,7 +103,7 @@ Per informazioni sulle opzioni di configurazione delle identità, tra cui Adobe 
 
 | Servizi | Vetrina |
 | --- | --- |
-| [Integrazione AEM Assets](../aem-assets-integration/release-notes.md)<br>[Connettore Commerce Optimizer](../aco-connector/release-notes.md) | [Informazioni sulla versione di Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=it)<br>[Storefront changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=it) |
+| [Integrazione AEM Assets](../aem-assets-integration/release-notes.md)<br>[Connettore Commerce Optimizer](../aco-connector/release-notes.md) | [Informazioni sulla versione di Storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/)<br>[Storefront changelog](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/changelog/) |
 
 ## Accesso anticipato allo strumento di migrazione dei dati in blocco {#bulk-data-early-access}
 

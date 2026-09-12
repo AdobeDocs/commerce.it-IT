@@ -35,9 +35,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 289267c4bb76bbe1e9f00fd02faa7749b812d0d0
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 3372
+source-wordcount: 3374
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Le differenze tra [!DNL Adobe Commerce as a Cloud Service], [!DNL Adobe Commerce
 
 - [Mesh API per Adobe Developer App Builder](https://developer.adobe.com/app-builder/) e [per Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/)
 - [Commerce Optimizer](../../optimizer/overview.md)
-- [Servizi di consegna Edge](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it)
+- [Servizi di consegna Edge](https://experienceleague.adobe.com/en/tools/commerce-storefront/)
 - Provisioning self-service con [Commerce Cloud Manager](../getting-started.md#create-an-instance)
 
 ### Il percorso di migrazione
@@ -214,7 +214,7 @@ Utilizzando i risultati della [valutazione della migrazione](#migration-assessme
 
 ### Modernizzazione della vetrina
 
-Sul front-end, Commerce Developer MCP modernizza [storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=it) su Edge Delivery Services (EDS) per Commerce utilizzando i blocchi boilerplate, Drop-in Components ed EDS di Adobe Commerce.
+Sul front-end, Commerce Developer MCP modernizza [storefronts](https://experienceleague.adobe.com/en/tools/commerce-storefront/) su Edge Delivery Services (EDS) per Commerce utilizzando i blocchi boilerplate, Drop-in Components ed EDS di Adobe Commerce.
 
 Commerce Developer MCP carica i progetti di vetrina esistenti basati sulla piattaforma standard Commerce. Modernizza la vetrina:
 

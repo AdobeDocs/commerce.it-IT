@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 966
+source-wordcount: 967
 ht-degree: 2%
 
 ---
@@ -136,7 +136,7 @@ Se il progetto AEM Assets as a Cloud Service è stato configurato con un [nome d
 
 ## Passaggio successivo
 
-* **Configura Commerce Storefront**. Per utilizzare AEM Assets con Commerce Storefront con tecnologia Edge Delivery Services, completa la configurazione della vetrina descritta nell&#39;argomento [Integrazione AEM Assets](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=it) nella *documentazione Adobe Commerce Storefront*.
+* **Configura Commerce Storefront**. Per utilizzare AEM Assets con Commerce Storefront con tecnologia Edge Delivery Services, completa la configurazione della vetrina descritta nell&#39;argomento [Integrazione AEM Assets](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/) nella *documentazione Adobe Commerce Storefront*.
 
 * Imposta [regole corrispondenti](../synchronize/default-match.md) tra Adobe Commerce e l&#39;integrazione AEM Assets.
 

@@ -26,9 +26,9 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 last-update: 2026-08-10
-source-git-commit: bffd9077e8745de887b0d97c40ec9aa0e520ce8b
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1106
+source-wordcount: 1107
 ht-degree: 3%
 
 ---
@@ -206,4 +206,4 @@ Ottieni l&#39;ID _tenant_ dal campo _[!DNL Instance Id]_&#x200B;nell&#39;istanza
 
 1. **Configura una vetrina Commerce su[!DNL Edge Delivery Services]**
 
-   Per connettere la vetrina all&#39;istanza [!DNL Commerce Optimizer] e iniziare a distribuire esperienze e-commerce personalizzate, segui la [documentazione di configurazione della vetrina](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=it){target="_blank"}.
+   Per connettere la vetrina all&#39;istanza [!DNL Commerce Optimizer] e iniziare a distribuire esperienze e-commerce personalizzate, segui la [documentazione di configurazione della vetrina](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/){target="_blank"}.
