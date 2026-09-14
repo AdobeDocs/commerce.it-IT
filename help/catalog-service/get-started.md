@@ -43,14 +43,14 @@ Dopo aver abilitato [!DNL Catalog Service], puoi accedere al servizio e utilizza
 
 [!DNL Catalog Service] è disponibile come API GraphQL a cui è possibile accedere dall&#39;amministratore Commerce o da qualsiasi applicazione front-end che supporta le query GraphQL. Il servizio è disponibile sia in ambienti SaaS che PaaS.
 
-[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
+[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."}
 
 | Ambiente | Endpoint |
 | ------------ | ----------: |
 | **Test** | `https://catalog-service-sandbox.adobe.io/graphql` |
 | **Produzione** | `https://catalog-service.adobe.io/graphql` |
 
-[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."}
+[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."}
 
 | Ambiente | Endpoint |
 | ----------- | --------:|
