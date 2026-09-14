@@ -1,31 +1,38 @@
 ---
-title: Introduzione a  [!DNL Catalog Service]
-description: Scopri come accedere a  [!DNL Catalog Service]  e integrarlo con applicazioni front-end e servizi di terze parti.
+title: Introduzione a [!DNL Catalog Service]
+description: Scopri come accedere a [!DNL Catalog Service] e integrarlo con applicazioni front-end e servizi di terze parti.
 role: Admin, Developer
 exl-id: ee178e67-519d-4283-8de8-2634ae1f347a
 TQID: https://experienceleague.adobe.com/KBdWesEoKJu-qWsY-Ny1Om-msUkyUPfUTQWftEqSg1g
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 subfeature_v2:
   - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+    internal-label: Storefront configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-last-update: 2026-08-20
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Data management
+last-update: 2026-09-11
+source-git-commit: 6b784df469162bd536cfa764268a7180f94cc1c7
 workflow-type: tm+mt
-source-wordcount: 437
+source-wordcount: '438'
 ht-degree: 0%
-
 ---
-
 # Introduzione a [!DNL Catalog Service]
 
 Dopo aver abilitato [!DNL Catalog Service], puoi accedere al servizio e utilizzarlo per recuperare i dati del catalogo, come le informazioni su prodotti e categorie, dall&#39;istanza Adobe Commerce. Il servizio è disponibile come API di GraphQL a cui è possibile accedere dall’amministratore Commerce o da qualsiasi applicazione front-end che supporta le query GraphQL.
