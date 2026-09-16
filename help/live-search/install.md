@@ -1,6 +1,6 @@
 ---
-title: Introduzione a  [!DNL Live Search]
-description: Scopri i requisiti di sistema e i passaggi di installazione per  [!DNL Live Search]  da Adobe Commerce.
+title: Introduzione a [!DNL Live Search]
+description: Scopri i requisiti di sistema e i passaggi di installazione per [!DNL Live Search] da Adobe Commerce.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
@@ -8,31 +8,44 @@ badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.ad
 TQID: https://experienceleague.adobe.com/63Lia0NKyJV2ngoXLlcGkciK3xZWYsmtwzfkyOg5Bfw
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 last-update: 2026-09-02
-source-git-commit: 299da83bd0a9b776ad6b13482b65af61bffe15fa
+source-git-commit: c40236ec3dfbbb0f393e5d1fc4743ffc7626b11e
 workflow-type: tm+mt
-source-wordcount: 2856
+source-wordcount: '2978'
 ht-degree: 0%
-
 ---
-
 # Configurazione per il successo con [!DNL Live Search]
 
 Adobe Commerce [!DNL Live Search] e [[!DNL Catalog Service]](../catalog-service/guide-overview.md) collaborano per fornire una soluzione di ricerca efficiente, pertinente e intuitiva. Questa soluzione consente ai clienti di trovare rapidamente ciò di cui hanno bisogno. In particolare, [!DNL Catalog Service] fa emergere i dati del catalogo per i servizi SaaS, ad esempio [!DNL Live Search] da utilizzare.
@@ -133,11 +146,15 @@ Segui queste istruzioni se stai installando [!DNL Live Search] in una nuova ista
    - Feed categorie
    - Feed di autorizzazioni categoria
 
-Dopo aver verificato gli indicizzatori, il passaggio successivo consiste nel [configurare le chiavi API](#2-configure-api-keys).
+Dopo aver verificato gli indicizzatori, il passaggio successivo consiste nel [configurare le chiavi API](#configure).
 
 >[!TAB Istanza di Commerce esistente]
 
 Seguire queste istruzioni se si sta installando [!DNL Live Search] in un&#39;istanza di Commerce esistente.
+
+>[!NOTE]
+>
+>L&#39;impostazione *Admin* > _[!UICONTROL Stores]_> [!UICONTROL Settings] >_[!UICONTROL Configuration]_ > **[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]** > **[!UICONTROL Enable Product Listing Widgets]** controlla solo i widget dell&#39;elenco di prodotti. Nessuna impostazione di *Admin* per disabilitare l&#39;esperienza completa della vetrina [!DNL Live Search] (ad esempio il popover di ricerca). Utilizzare i comandi del modulo CLI in questa procedura per mantenere attiva la ricerca della vetrina esistente durante la configurazione di [!DNL Live Search].
 
 1. Verificare che [processi cron](https://experienceleague.adobe.com/it/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) e [indicizzatori](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/index-management) siano in esecuzione.
 
@@ -153,13 +170,17 @@ Seguire queste istruzioni se si sta installando [!DNL Live Search] in un&#39;ist
    composer update magento/live-search --with-dependencies
    ```
 
-1. Disabilita i moduli [!DNL Live Search] che forniscono i risultati della ricerca in vetrina.
+1. Disattivare i moduli storefront [!DNL Live Search] mantenendo attivato `Magento_LiveSearchAdapter`.
 
    ```bash
-   bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing
+   bin/magento module:disable Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing
    ```
 
-   [!DNL Elasticsearch] continua a gestire le richieste di ricerca dalla vetrina mentre il servizio [!DNL Live Search] sincronizza i dati del catalogo e indicizza i prodotti in background.
+   [!DNL Elasticsearch] continua a gestire le richieste di ricerca dalla vetrina mentre il servizio [!DNL Live Search] sincronizza i dati del catalogo e indicizza i prodotti in background. Se si mantiene abilitato `Magento_LiveSearchAdapter`, la ricerca nella vetrina non viene spostata su [!DNL Live Search]. È sufficiente che il modulo rimanga abilitato in modo che le dipendenze del motore di ricerca di Commerce continuino a essere risolte correttamente.
+
+   >[!IMPORTANT]
+   >
+   >Mantieni `Magento_LiveSearchAdapter` abilitato durante questa fase, anche se era [obsoleto](release-notes.md#live-search-400) a partire da [!DNL Live Search] 4.0.0. `Magento\Search\Model\EngineResolver` dipende dall&#39;attivazione di questo modulo, pertanto la disattivazione interrompe la ricerca della vetrina esistente con un errore `500`. Impossibile disabilitare `Magento_LiveSearchAdapter` anche se `Magento_LiveSearchMetrics` è abilitato, perché `composer.json` del modulo `Magento_LiveSearchMetrics` dichiara una dipendenza da `Magento_LiveSearchAdapter`. Non è necessario disabilitare `Magento_LiveSearchMetrics` per questo flusso di lavoro.
 
 1. Installare gli aggiornamenti.
 
@@ -181,10 +202,10 @@ Seguire queste istruzioni se si sta installando [!DNL Live Search] in un&#39;ist
 1. Abilitare l&#39;estensione [!DNL Live Search] e disabilitare [!DNL OpenSearch] (moduli Magento Elasticsearch e OpenSearch).
 
    ```bash
-   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover  Magento_LiveSearchProductListing
+   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing
    ```
 
-   ```
+   ```bash
    bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_Elasticsearch8 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
@@ -198,7 +219,7 @@ Seguire queste istruzioni se si sta installando [!DNL Live Search] in un&#39;ist
    bin/magento setup:upgrade
    ```
 
-Dopo aver verificato gli indicizzatori, il passaggio successivo consiste nel [configurare le chiavi API](#2-configure-api-keys).
+Dopo aver verificato gli indicizzatori, il passaggio successivo consiste nel [configurare le chiavi API](#configure).
 
 >[!ENDTABS]
 
