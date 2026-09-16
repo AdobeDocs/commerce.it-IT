@@ -56,7 +56,7 @@ Prima di provare a eseguire uno di questi casi d&#39;uso, è necessario soddisfa
 1. [Crea la tua istanza di Cloud Service](./getting-started.md#create-an-instance) utilizzando le seguenti opzioni:
    1. Seleziona [!UICONTROL **Sandbox**] nel menu a discesa [!UICONTROL **Ambiente**].
    1. Seleziona [!UICONTROL **Adobe Store**] nel menu a discesa [!UICONTROL **Dati di prova**].
-1. [Accedi al tuo account  [!DNL Adobe Experience Cloud] ](https://experience.adobe.com)
+1. [Accedi al tuo account  [!DNL Adobe Experience Cloud] &#x200B;](https://experience.adobe.com)
 1. [Configura la vetrina di Cloud Service](./storefront.md) utilizzando le seguenti opzioni:
    1. Selezionare [!UICONTROL `adobe-commerce/adobe-demo-store`] per il modello.
    1. Selezionare [!UICONTROL **Scegli un&#39;istanza disponibile (Mesh -> SaaS)**] per il metodo di connessione.
