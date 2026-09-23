@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 04f2eddef8abc6843ced0d00368ea19f3626adce
+source-git-commit: 9cc9b3270d808102f293609a606ff32a781d084c
 workflow-type: tm+mt
-source-wordcount: '6842'
+source-wordcount: '6869'
 ht-degree: 0%
 ---
 # Note sulla versione
@@ -64,21 +64,21 @@ Le seguenti note sulla versione contengono aggiornamenti a [!DNL Adobe Commerce 
 
 ## Settembre 2026 - #2 sulla versione {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="Gli elementi elencati sono attualmente disponibili solo negli ambienti Sandbox. Adobe rende disponibili le nuove versioni negli ambienti Sandbox per fornire il tempo di testare le modifiche imminenti prima che la versione sia disponibile negli ambienti di produzione."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Produzione]{type=Neutral tooltip="Gli elementi elencati sono attualmente disponibili negli ambienti di produzione."}
 
-I seguenti elementi saranno disponibili negli ambienti di produzione il 22 settembre 2026.
+I seguenti elementi sono stati aggiunti agli ambienti di produzione il 22 settembre 2026.
 
 >[!BEGINSHADEBOX]
 
 ### Allega file e immagini per restituire le richieste
 
-I clienti ora possono caricare file e immagini quando inviano una richiesta di ritorno tramite la mutazione GraphQL `requestReturn` nella vetrina. <!-- CCSAAS-5410 -->
+I clienti ora possono caricare file e immagini durante l&#39;invio di una richiesta di ritorno tramite la mutazione GraphQL [`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment) nella vetrina. Utilizza le mutazioni [`initiateUpload` e `finishUpload`](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/) per caricare il file, quindi assegna la chiave restituita a un attributo personalizzato dell&#39;elemento restituito. <!-- CCSAAS-5410 -->
 
 ### Controlla l&#39;aspetto dell&#39;origine dell&#39;inventario
 
-Ogni origine inventario ora include un interruttore [!UICONTROL **Visibile su Storefront**] nella pagina di modifica origine in [!DNL Commerce Admin] ([!UICONTROL **Archivi**] > [!UICONTROL **Inventario**] > [!UICONTROL **Origini**]). La query GraphQL [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) restituisce informazioni sulle scorte solo per le origini contrassegnate come visibili. Le origini sono nascoste per impostazione predefinita. <!-- ACCS-1645 -->
+Ogni origine inventario ora include un interruttore [!UICONTROL **Visibile su Storefront**] nella [pagina di modifica origine](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/sources/sources-add) in [!DNL Commerce Admin] ([!UICONTROL **Archivi**] > [!UICONTROL **Inventario**] > [!UICONTROL **Origini**]). La query GraphQL [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) restituisce informazioni sulle scorte solo per le origini contrassegnate come visibili. Le origini sono nascoste per impostazione predefinita. <!-- ACCS-1645 -->
 
 ### Guida alle spedizioni multi-source
 
