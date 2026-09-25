@@ -5,21 +5,25 @@ exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
 TQID: https://experienceleague.adobe.com/K3cKFg-m22bUzlupyhsHgDVxaJka7xhOvFnOt8wDdII
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
+    internal-label: Machine learning
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: 1491
+source-wordcount: '1463'
 ht-degree: 0%
-
 ---
-
 # Crea nuovo consiglio
 
 Quando crei un consiglio, crei una _unità di consigli_, o widget, che contiene il prodotto consigliato _elementi_.
@@ -35,11 +39,11 @@ Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dat
 
 1. Nella barra laterale _Amministratore_, vai a **Marketing** > _Promozioni_ > **Consigli di prodotto** per visualizzare l&#39;area di lavoro _Consigli di prodotto_.
 
-1. Specifica la [visualizzazione archivio](https://experienceleague.adobe.com/it/docs/commerce-admin/start/setup/websites-stores-views) in cui desideri visualizzare i consigli.
+1. Specifica la [visualizzazione archivio](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) in cui desideri visualizzare i consigli.
 
    >[!NOTE]
    >
-   > Le unità di consigli di Page Builder devono essere create nella vista store predefinita, ma possono essere utilizzate ovunque. Per ulteriori informazioni sulla creazione di consigli di prodotto con Page Builder, consulta [Aggiungi contenuto - Consigli di prodotto](https://experienceleague.adobe.com/it/docs/commerce-admin/page-builder/add-content/recommendations).
+   > Le unità di consigli di Page Builder devono essere create nella vista store predefinita, ma possono essere utilizzate ovunque. Per ulteriori informazioni sulla creazione di consigli di prodotto con Page Builder, consulta [Aggiungi contenuto - Consigli di prodotto](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Fai clic su **Crea consiglio**.
 
@@ -49,14 +53,14 @@ Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dat
 
    >[!NOTE]
    >
-   > I consigli di prodotto non sono supportati nella pagina del carrello quando lo store è configurato per [visualizzare la pagina del carrello subito dopo l&#39;aggiunta di un prodotto al carrello](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
+   > I consigli di prodotto non sono supportati nella pagina del carrello quando lo store è configurato per [visualizzare la pagina del carrello subito dopo l&#39;aggiunta di un prodotto al carrello](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Home page
    * Categoria
    * Dettagli prodotto
    * Carrello
    * Conferma
-   * [Page Builder](https://experienceleague.adobe.com/it/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    Puoi creare fino a 50 unità di consigli attive per ogni tipo di pagina. Al raggiungimento del limite, il tipo di pagina è disattivato.
 
@@ -176,7 +180,7 @@ Una percentuale di preparazione bassa indica che non vi sono molti prodotti del 
 
 >[!IMPORTANT]
 >
->_I tipi di prodotto_, _raggruppati_ e personalizzati non sono supportati. Se il catalogo contiene un numero elevato di questi tipi di prodotti, il livello di preparazione sarà basso. Inoltre, qualsiasi SKU con spazi può ridurre la rilevanza dei consigli e deve essere evitata.
+>Eventuali SKU con spazi possono ridurre la rilevanza dei consigli e devono essere evitate.
 
 Di seguito sono elencati i possibili motivi e soluzioni ai punteggi di bassa prontezza comuni:
 

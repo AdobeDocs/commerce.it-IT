@@ -1,28 +1,34 @@
 ---
 title: Creare e gestire le regole
 description: Scopri come creare e gestire le regole di merchandising per le pagine di ricerca, gli elenchi di prodotti predefiniti e le categorie.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
+    internal-label: Personalization
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: 4183
+source-wordcount: '4182'
 ht-degree: 0%
-
 ---
-
 # Creare e gestire le regole
 
 Per generare e pubblicare una regola:
@@ -47,7 +53,7 @@ Ogni tipo di regola dispone di un’icona di informazioni nell’editor con una 
 | Tipo di regola | Finalità |
 | --- | --- |
 | **Tutti gli elenchi prodotti** | Classificazione e merchandising predefiniti tra gli elenchi di prodotti quando non si applica alcuna regola di ricerca o categoria più specifica. Puoi creare una sola regola di questo tipo, non può contenere condizioni. |
-| **Regola categoria** | Applica il merchandising e la classificazione a una o più categorie selezionate, controllando l’ordine dei prodotti nelle pagine delle categorie. |
+| **Regola categoria** | Applica il merchandising e la classificazione a una singola categoria, controllando l’ordine dei prodotti sulla pagina di tale categoria. |
 | **Regola di ricerca** | Applica il merchandising e la classificazione quando gli acquirenti eseguono una ricerca che corrisponde alle condizioni di query della regola. |
 
 Nella sezione **Genera la regola**, puoi definire il nome della regola, la pianificazione, se la regola si applica a tutte le inserzioni o a condizioni di ricerca specifiche, e i tipi di classificazione.
@@ -265,7 +271,7 @@ Gli eventi OR possono essere impostati manualmente:
 
 >[!AVAILABILITY]
 >
->Questa funzionalità è in [beta](https://experienceleague.adobe.com/it/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
+>Questa funzionalità è in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
 
 **La classificazione degli attributi** applica automaticamente un&#39;azione **[!UICONTROL Boost]**, **[!UICONTROL Bury]** o **[!UICONTROL Hide]** a ogni prodotto che corrisponde a una o più condizioni degli attributi, senza che sia necessario selezionare singoli SKU. La classificazione degli attributi viene visualizzata nell&#39;editor delle regole insieme a [Classificazione intelligente](#intelligent-ranking) e [Classificazione manuale](#manual-ranking) ed è disponibile per le **Regola per tutti i prodotti**, **Regole di ricerca** e **Regole per categorie**. Puoi utilizzarlo per ridimensionare il merchandising in cataloghi di grandi dimensioni, ad esempio per promuovere ogni prodotto di un determinato marchio o per seppellire ogni prodotto in un colore discontinuo.
 

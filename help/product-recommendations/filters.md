@@ -5,17 +5,18 @@ exl-id: 140bf047-4f6a-48da-b536-d96e78ae3d17
 TQID: https://experienceleague.adobe.com/IcJh0vfW3tvlyeZT0K9OnyqLqRmHlgfmUOX3lY-50tg
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+    internal-label: Admin
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: 778
+source-wordcount: '759'
 ht-degree: 0%
-
 ---
-
 # Filtra prodotti
 
 Adobe Commerce applica automaticamente filtri predefiniti non configurabili alle unità di consigli. Se in una pagina sono distribuite più unità di consigli, Adobe Commerce filtra tutti i prodotti ripetuti in tali unità. Viene utilizzato solo il primo riferimento a un prodotto ripetuto, per fare spazio ad altri prodotti da consigliare. Adobe Commerce filtra anche eventuali prodotti acquistati in precedenza e quelli presenti nel carrello.
@@ -55,7 +56,7 @@ Nel campo categoria vengono visualizzate le categorie che appartengono alla visu
 
 >[!NOTE]
 >
->Per i commercianti B2B, il filtro Categoria aderisce a qualsiasi [categoria di prodotto specifica per il cliente](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/categories/category-permissions) configurata.
+>Per i commercianti B2B, il filtro Categoria aderisce a qualsiasi [categoria di prodotto specifica per il cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions) configurata.
 
 Adobe Commerce consiglia di utilizzare la seguente configurazione del filtro categorie quando distribuisci i consigli ai tipi di pagina:
 
@@ -77,7 +78,7 @@ I filtri dei prodotti specificano quali prodotti specifici sono idonei, o non id
 
 ### Tipo
 
-Un filtro basato sul tipo di prodotto include o esclude tutti i prodotti di un tipo specifico. I tipi supportati sono _simple_, _configurable_, _virtual_, _downloadable_ o _gift card_. _I tipi di prodotto_, _raggruppati_ e personalizzati non sono supportati.
+Un filtro basato sul tipo di prodotto include o esclude tutti i prodotti di un tipo specifico.
 
 ### Visibilità
 
@@ -85,11 +86,11 @@ Filtra i prodotti in base alla visibilità, ad esempio: _Catalogo_, _Ricerca_ o 
 
 ### Prezzo
 
-Un filtro basato sul prezzo del prodotto utilizza il prezzo finale per eseguire il confronto. Il prezzo finale include eventuali sconti disponibili per gli acquirenti anonimi. Per i commercianti B2B, il prezzo visualizzato riflette i [prezzi di gruppo specifici per il cliente](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/products/pricing/pricing-advanced) che hai configurato.
+Un filtro basato sul prezzo del prodotto utilizza il prezzo finale per eseguire il confronto. Il prezzo finale include eventuali sconti disponibili per gli acquirenti anonimi. Per i commercianti B2B, il prezzo visualizzato riflette i [prezzi di gruppo specifici per il cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/pricing-advanced) che hai configurato.
 
 ### Stato del magazzino
 
 I seguenti filtri di esclusione possono essere utilizzati per filtrare i prodotti in base allo stato delle scorte:
 
 - Esaurito - (solo esclusione) esclude i prodotti esauriti.
-- Magazzino basso: (solo esclusione) esclude i prodotti con scorte limitate. Lo stato scorte basse si basa sul valore _Solo X Soglia sinistra_ nella [Configurazione inventario](https://experienceleague.adobe.com/it/docs/commerce-admin/config/catalog/inventory).
+- Magazzino basso: (solo esclusione) esclude i prodotti con scorte limitate. Lo stato scorte basse si basa sul valore _Solo X Soglia sinistra_ nella [Configurazione inventario](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/inventory).

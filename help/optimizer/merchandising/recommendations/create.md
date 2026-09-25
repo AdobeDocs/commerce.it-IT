@@ -1,28 +1,34 @@
 ---
 title: Creare e gestire i consigli
 description: Scopri come creare e gestire i consigli.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 TQID: https://experienceleague.adobe.com/4w6G-IgBjgmYYnnEpbK0HML9pSi3quLDxJfuCp9tV84
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Machine learning
+source-git-commit: f316b57d365b8952223d4d250ac14f113cf48601
 workflow-type: tm+mt
-source-wordcount: 1574
+source-wordcount: '1547'
 ht-degree: 0%
-
 ---
-
 # Creare e gestire i consigli
 
 Quando crei un consiglio, crei una _unità di consigli_, o widget, che contiene il prodotto consigliato _elementi_.
@@ -32,7 +38,7 @@ _Unità consigli_
 
 Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dati](../../manage-results/recommendation-performance.md) per misurare impression, visualizzazioni, clic e così via. Nella tabella Consigli vengono visualizzate le metriche di ogni unità di consigli per consentire di prendere decisioni aziendali informate.
 
-1. Nella barra laterale _[!DNL Adobe Commerce Optimizer]_, vai a_ Merchandising _>**Recommendations**&#x200B;per visualizzare l&#39;area di lavoro_ Recommendations _.
+1. Nella barra laterale _[!DNL Adobe Commerce Optimizer]_, vai a_ Merchandising _>**Recommendations**per visualizzare l&#39;area di lavoro_ Recommendations _.
 
 1. Nel campo **Vista catalogo**, seleziona la vista catalogo in cui desideri rendere disponibile il consiglio. Ulteriori informazioni sull&#39;utilizzo di [visualizzazioni catalogo per i consigli](../../manage-results/recommendation-performance.md#select-catalog-view).
 
@@ -205,7 +211,7 @@ Una percentuale di preparazione bassa indica che non vi sono molti prodotti del 
 
 >[!IMPORTANT]
 >
->_I tipi di prodotto_, _raggruppati_ e personalizzati non sono supportati. Se il catalogo contiene un numero elevato di questi tipi di prodotti, il livello di preparazione sarà basso. Inoltre, qualsiasi SKU con spazi può ridurre la rilevanza dei consigli e deve essere evitata.
+>Eventuali SKU con spazi possono ridurre la rilevanza dei consigli e devono essere evitate.
 
 Di seguito sono elencati i possibili motivi e soluzioni ai punteggi di bassa prontezza comuni:
 
