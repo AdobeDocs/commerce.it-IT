@@ -1,21 +1,18 @@
 ---
 title: Limiti e limiti
-description: Scopri i limiti e le limitazioni di  [!DNL Product Recommendations]  per garantire che soddisfi le esigenze della tua azienda.
+description: Scopri i limiti e le limitazioni di [!DNL Product Recommendations] per garantire che soddisfi le esigenze della tua azienda.
 role: Admin, Developer
-source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '893'
 ht-degree: 0%
-
 ---
-
 # Limiti e limiti
 
 Rivedi i limiti e le limitazioni seguenti per garantire che [!DNL Product Recommendations] soddisfi le esigenze della tua azienda. Comprendere questi vincoli ti aiuta a pianificare l’implementazione, configurare i filtri ed evitare problemi comuni.
 
 ## Generale
 
-- **Tipi di prodotto** - I tipi di prodotto supportati includono _simple_, _configurable_, _virtual_, _downloadable_ e _gift card_. _I tipi di prodotto_, _raggruppati_ e personalizzati non sono supportati. Se il catalogo contiene un numero elevato di tipi di prodotto non supportati, il [punteggio di preparazione](create.md#readiness-indicators) sarà basso. Vedi [Filtro per tipo di prodotto](filters.md#type).
 - **SKU con spazi** - Gli SKU contenenti spazi possono ridurre la rilevanza dei consigli e devono essere evitati quando possibile.
 - **Pagina carrello** - I consigli di prodotto non sono supportati nella pagina del carrello quando lo store è configurato per [visualizzare la pagina del carrello subito dopo aver aggiunto un prodotto al carrello](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration). Consulta [Creare consigli](create.md).
 - **Prodotti secondari** - I prodotti secondari di un prodotto configurabile (visibilità _Non visibile singolarmente_) non vengono visualizzati in un&#39;unità di consigli. Può essere visualizzato solo il prodotto configurabile (padre). Vedi [Filtra prodotti](filters.md#product).
