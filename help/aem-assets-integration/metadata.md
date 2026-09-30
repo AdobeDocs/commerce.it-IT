@@ -4,20 +4,23 @@ description: Scopri lo spazio dei nomi di Commerce, lo schema dei metadati e il 
 feature: CMS, Media, Integration
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
+    internal-label: Digital asset management
+source-git-commit: 7950f5d171b35054be42ca60d19bafcf43c53cd6
 workflow-type: tm+mt
-source-wordcount: 749
+source-wordcount: '836'
 ht-degree: 0%
-
 ---
-
 # Metadati Commerce in AEM Assets
 
 I metadati di Commerce sono il contratto tra AEM Assets e Commerce. Indica a Commerce quali risorse sono per Commerce, a quali prodotti appartengono e come devono essere utilizzate o visualizzate. Questi metadati consentono all’integrazione di AEM Assets di mappare e sincronizzare correttamente i file di risorse.
@@ -30,10 +33,6 @@ I metadati di Commerce offrono le seguenti funzionalità:
 * **Aggiungi testo alternativo specifico per Commerce codificato dalla visualizzazione archivio** tramite i campi `commerce:altTextStoreViews` e `commerce:altTextValues`.
 * **Esporre questi campi nell&#39;interfaccia utente delle proprietà di AEM Assets** tramite una scheda **[!UICONTROL Commerce]** e un modulo schema.
 
->[!IMPORTANT]
->
->La funzionalità **Testo alternativo specifico per Commerce** non è ancora disponibile tramite [onboarding self-service](get-started/configure-aem.md#enable-aem-commerce-self-service). Attualmente viene fornito solo quando distribuisci il pacchetto di codice personalizzato `assets-commerce` (vedi [Installare il pacchetto assets-commerce manualmente](get-started/configure-aem.md#install-the-assets-commerce-package-manually)). Il supporto nativo è pianificato per la prossima versione di AEM.
-
 Per configurare queste risorse nel progetto AEM, vedi [Configurare il progetto AEM Assets](get-started/configure-aem.md). Il resto di questo argomento descrive come vengono forniti i metadati.
 
 ## contenuti del pacchetto AEM Commerce assets-commerce
@@ -44,20 +43,24 @@ Questo codice di pacchetto aggiunge le seguenti risorse all’ambiente di author
 
 * Uno [spazio dei nomi personalizzato](https://github.com/ankumalh/assets-commerce/blob/main/ui.config/jcr_root/apps/commerce/config/org.apache.sling.jcr.repoinit.RepositoryInitializer~commerce-namespaces.cfg.json), `Commerce` per identificare le proprietà relative a Commerce.
 
-   * Tipo di metadati personalizzato `commerce:isCommerce` con etichetta `Eligible for Commerce` per assegnare tag alle risorse Commerce associate a un progetto Adobe Commerce.
+  * Tipo di metadati personalizzato `commerce:isCommerce` con etichetta `Eligible for Commerce` per assegnare tag alle risorse Commerce associate a un progetto Adobe Commerce.
 
-   * Un tipo di metadati personalizzato `commerce:skus` e un componente dell&#39;interfaccia utente corrispondente per aggiungere una proprietà **[!UICONTROL Product Data]**. I dati prodotto includono le proprietà dei metadati per associare una risorsa Commerce agli SKU di prodotto.
+  * Un tipo di metadati personalizzato `commerce:skus` e un componente dell&#39;interfaccia utente corrispondente per aggiungere una proprietà **[!UICONTROL Product Data]**. I dati prodotto includono le proprietà dei metadati per associare una risorsa Commerce agli SKU di prodotto.
 
-     ![Controllo interfaccia utente dati prodotto personalizzato](assets/aem-commerce-sku-metadata-fields-from-template.png){width="600" zoomable="yes"}
+    ![Controllo interfaccia utente dati prodotto personalizzato](assets/aem-commerce-sku-metadata-fields-from-template.png){width="600" zoomable="yes"}
 
-   * Attributi del tipo di metadati personalizzato `commerce:roles` e `commerce:positions` che mostrano come la risorsa viene visualizzata in Commerce.
+  * Attributi del tipo di metadati personalizzato `commerce:roles` e `commerce:positions` che mostrano come la risorsa viene visualizzata in Commerce. I quattro ruoli standard (`image`, `small_image`, `thumbnail` e `swatch_image`) rimangono supportati. A partire dalla versione 1.4.6 dell&#39;estensione dell&#39;integrazione di AEM Assets, è inoltre possibile impostare un ruolo immagine personalizzato in `commerce:roles`, ad esempio `hero` o `custom_role_1`, per sincronizzare un ruolo che Commerce non definisce per impostazione predefinita. Per informazioni sull&#39;acquisizione dei ruoli immagine personalizzati, vedere [Corrispondenza automatica personalizzata](synchronize/custom-match.md).
 
-   * Metadati multifield di testo alternativo (_[!UICONTROL Alt texts]_) che consentono agli editor di immettere testo alternativo per ogni codice di visualizzazione dell&#39;archivio Commerce. Il multifield persiste in due proprietà `String[]` allineate all&#39;indice:
+    >[!NOTE]
+    >
+    >Commerce crea automaticamente un attributo di stile `media_image` mancante per un ruolo personalizzato.
 
-      * `commerce:altTextStoreViews` — memorizza il codice di visualizzazione per ogni riga.
-      * `commerce:altTextValues` — testo alt corrispondente nello stesso indice di ogni voce in `commerce:altTextStoreViews`.
+  * Metadati multifield di testo alternativo (_[!UICONTROL Alt texts]_) che consentono agli editor di immettere testo alternativo per ogni codice di visualizzazione dell&#39;archivio Commerce. Il multifield persiste in due proprietà `String[]` allineate all&#39;indice:
 
-     Le implementazioni di App Builder che utilizzano una [corrispondenza esterna](synchronize/custom-match.md){target=_blank} possono intercettare queste proprietà durante la trasformazione dei payload delle risorse. Questo non cambia il modo in cui le immagini del prodotto vengono assegnate o definite nell’ambito del catalogo. Vedi [Testo alternativo localizzato nei metadati di AEM Assets](#localized-alt-text-in-aem-assets-metadata).
+    * `commerce:altTextStoreViews` — memorizza il codice di visualizzazione per ogni riga.
+    * `commerce:altTextValues` — testo alt corrispondente nello stesso indice di ogni voce in `commerce:altTextStoreViews`.
+
+    Le implementazioni di App Builder che utilizzano una [corrispondenza esterna](synchronize/custom-match.md){target=_blank} possono intercettare queste proprietà durante la trasformazione dei payload delle risorse. Questo non cambia il modo in cui le immagini del prodotto vengono assegnate o definite nell’ambito del catalogo. Vedi [Testo alternativo localizzato nei metadati di AEM Assets](#localized-alt-text-in-aem-assets-metadata).
 
 * Modulo schema metadati con scheda Commerce che include i campi `Eligible for Commerce` e `Product Data` per l&#39;assegnazione di tag alle risorse Commerce. Il modulo fornisce inoltre opzioni per mostrare o nascondere i campi `roles` e `position` dall&#39;interfaccia utente di AEM Assets.
 
@@ -71,7 +74,7 @@ Questo codice di pacchetto aggiunge le seguenti risorse all’ambiente di author
 
 ## Testo alternativo localizzato nei metadati di AEM Assets
 
-Il multifield _[!UICONTROL Alt texts]_&#x200B;è disponibile nell&#39;editor metadati risorse di AEM Assets nella scheda **[!UICONTROL Commerce]**&#x200B;quando si modifica un&#39;immagine idonea.
+Il multifield _[!UICONTROL Alt texts]_è disponibile nell&#39;editor metadati risorse di AEM Assets nella scheda **[!UICONTROL Commerce]**quando si modifica un&#39;immagine idonea.
 
 >[!IMPORTANT]
 >
@@ -85,9 +88,9 @@ Il campo multiplo contiene una riga per ogni visualizzazione store di Commerce. 
 
 Selezionare **[!UICONTROL Add]** per aggiungere altre righe per altre visualizzazioni dello store. Per rimuovere una riga, selezionare l&#39;icona **[!UICONTROL Delete]** sulla riga per rimuoverla.
 
-![Testi Alt con più campi con input Codice visualizzazione archivio e Testo Alt](assets/commerce-metadata-alt-texts-multifield.png){width="600" zoomable="yes"}
+![Testi Alt con più campi con input Codice visualizzazione archivio e Testo Alt](assets/aem-alt-texts.png){width="600" zoomable="yes"}
 
-Quando si salva, la convalida lato client blocca l&#39;invio se una riga presenta un _[!UICONTROL Store View Code]_&#x200B;vuoto o se due righe utilizzano lo stesso codice di visualizzazione archivio (senza distinzione maiuscole/minuscole).
+Quando si salva, la convalida lato client blocca l&#39;invio se una riga presenta un _[!UICONTROL Store View Code]_vuoto o se due righe utilizzano lo stesso codice di visualizzazione archivio (senza distinzione maiuscole/minuscole).
 
 Le voci di testo alternative vengono mantenute nei metadati delle risorse JCR come due proprietà `String[]` allineate all&#39;indice:
 
@@ -95,3 +98,14 @@ Le voci di testo alternative vengono mantenute nei metadati delle risorse JCR co
 * `commerce:altTextValues`: Corrispondenza del testo alternativo nello stesso indice di ogni voce in `commerce:altTextStoreViews`.
 
 Quando queste risorse vengono sincronizzate con Adobe Commerce, nella galleria di supporti del prodotto viene scritto del testo alternativo per la visualizzazione del negozio per i codici di visualizzazione del negozio corrispondenti. La mappatura immagine sottostante è invariata.
+
+Esempio di valori dei metadati:
+
+```text
+commerce:altTextStoreViews = ["en_US", "fr_FR"]
+commerce:altTextValues = ["Running shoe", "Chaussure de course"]
+```
+
+Quando queste risorse vengono sincronizzate con Adobe Commerce, ogni valore di testo alternativo viene scritto nel campo immagine standard **[!UICONTROL Label]** di Commerce per il codice della visualizzazione archivio corrispondente. L&#39;integrazione non popola una colonna di database `alt_text` creata dal cliente.
+
+Il testo alternativo è localizzato per ogni visualizzazione archivio, ma l&#39;assegnazione di prodotto-immagine sottostante e la mappatura della galleria rimangono invariate. L&#39;assegnazione di una singola immagine continua a essere applicata in base al comportamento esistente della raccolta Commerce.

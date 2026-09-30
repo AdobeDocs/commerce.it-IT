@@ -6,24 +6,30 @@ exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
 TQID: https://experienceleague.adobe.com/y-207fJaMiLZbQW7bzv2WCzFItckGDnyKUm6Q0tqMw8
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 subfeature_v2:
   - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Digital asset management
+source-git-commit: cf31a1ed5069095fb3c4c50d99475e60ee61efa9
 workflow-type: tm+mt
-source-wordcount: 1073
+source-wordcount: '1236'
 ht-degree: 0%
-
 ---
-
 # Gestire le risorse multimediali di Commerce
 
 <!--In ACAP-844, this topic was linked to from the Commerce Admin products images and videos when the Assets integration is enabled. If the URL to the topic changes, be sure to add a redirect.-->
@@ -72,6 +78,14 @@ Per informazioni su come collegare le risorse ai prodotti in AEM Assets (inclusa
 
 * [Corrispondenza automatica predefinita](synchronize/default-match.md)
 * [Corrispondenza automatica personalizzata](synchronize/custom-match.md).
+
+### Gestisci testo alternativo localizzato
+
+Il testo alternativo localizzato viene creato in AEM Assets, non nella galleria multimediale del prodotto Commerce. Aggiungere una riga per ogni visualizzazione di Commerce Store nel campo **[!UICONTROL Alt Texts]**. Includi un valore di testo alternativo per questa immagine, ad esempio &quot;T-shirt bianca&quot;, quindi fai clic su **[!UICONTROL Save & Close]** in modo che il processo di sincronizzazione esistente trasferisca i valori in Commerce.
+
+Commerce archivia ogni valore sincronizzato nel campo **[!UICONTROL Label]** dell&#39;immagine standard. La localizzazione con testo alternativo non modifica l’assegnazione della risorsa, il ruolo dell’immagine o la posizione della galleria. I campi del database creati dal cliente, ad esempio `alt_text`, non rientrano nell&#39;ambito di integrazione standard.
+
+![Testi Alt Adobe Experience Manager](./assets/aem-alt-texts.png){width="600" zoomable="yes"}
 
 ### SLA di sincronizzazione
 
@@ -177,16 +191,18 @@ Dopo aver configurato [AEM Asset Selector](synchronize/asset-selector-integratio
 
 1. Fare clic su **[!UICONTROL Save]** e continuare.
 
-   Per ulteriori informazioni sulla creazione di una categoria, vedere [Completare il contenuto della categoria](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) nella **Guida alla gestione del catalogo di Commerce**.
+   Per ulteriori informazioni sulla creazione di una categoria, vedere [Completare il contenuto della categoria](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) nella **Guida alla gestione del catalogo di Commerce**.
 
 ## Aggiornare una risorsa
 
 Dopo aver aggiornato e approvato una risorsa in AEM Assets, gli aggiornamenti vengono inviati automaticamente ad Adobe Commerce utilizzando la funzionalità di corrispondenza automatica. Questo processo viene attivato all’approvazione della risorsa. Per fare in modo che tutte le modifiche finali e gli aggiornamenti dei metadati siano inclusi, assicurati di rielaborare la risorsa prima di approvarla.
 
+Quando modifichi i valori di ruolo o posizione su una risorsa già sincronizzata, Commerce aggiorna l’assegnazione di ruolo esistente invece di aggiungere un duplicato. Se un tentativo di sincronizzazione non riesce, controlla i registri di Commerce per individuare l’errore prima di riprovare. Al termine dell&#39;aggiornamento, verifica la modifica nella sezione **Immagini e video** del prodotto e conferma che la risorsa sia visualizzata nel ruolo e nella posizione previsti nella raccolta multimediale.
+
 Affinché il flusso di lavoro lato Commerce colleghi le risorse ai prodotti tramite metadati, consulta l&#39;argomento [Corrispondenza automatica predefinita](synchronize/default-match.md).
 
 Per le procedure AEM Assets, consulta la seguente documentazione:
 
-* [Rielaborazione di risorse digitali](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [Rielaborazione di risorse digitali](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [Approvare una risorsa](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [Approvare una risorsa](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)

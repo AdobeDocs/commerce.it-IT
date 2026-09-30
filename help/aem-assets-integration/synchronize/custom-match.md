@@ -6,22 +6,24 @@ exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
 TQID: https://experienceleague.adobe.com/RHRfW99iShMpajrEC8BhvoMEfQ-ABdipWTCdK-KaVH4
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+    internal-label: Metadata
+source-git-commit: 7ecedcc7c17abdeb64507d8f74ec6fc103b361cc
 workflow-type: tm+mt
-source-wordcount: 605
+source-wordcount: '927'
 ht-degree: 0%
-
 ---
-
 # Corrispondenza automatica personalizzata
 
-Se la strategia di corrispondenza automatica predefinita (**Corrispondenza automatica OOTB**) non è allineata ai requisiti aziendali specifici, selezionare l&#39;opzione di corrispondenza personalizzata. Questa opzione supporta l&#39;utilizzo di [Adobe Developer App Builder](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder) per sviluppare un&#39;applicazione di corrispondenza personalizzata che gestisca logiche di corrispondenza complesse o risorse provenienti da un sistema di terze parti che non possono popolare i metadati in AEM Assets.
+Se la strategia di corrispondenza automatica predefinita (**Corrispondenza automatica OOTB**) non è allineata ai requisiti aziendali specifici, selezionare l&#39;opzione di corrispondenza personalizzata. Questa opzione supporta l&#39;utilizzo di [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder) per sviluppare un&#39;applicazione di corrispondenza personalizzata che gestisca logiche di corrispondenza complesse o risorse provenienti da un sistema di terze parti che non possono popolare i metadati in AEM Assets.
 
 ## Configurare la corrispondenza automatica personalizzata
 
@@ -121,9 +123,45 @@ Il campo **[!UICONTROL Adobe I/O Workspace Configuration]** consente di configur
 
 1. Fare clic su **[!UICONTROL Save Config]**.
 
+## Salva configurazione asincrona
+
+Se nell&#39;istanza di Commerce è abilitata l&#39;opzione [Salva configurazione asincrona](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save), le modifiche alla configurazione vengono messe in coda e applicate da un consumer asincrono anziché essere salvate immediatamente nella stessa richiesta. Per caricare un file `workspace.json` per la corrispondenza automatica personalizzata in questa modalità, completare i passaggi seguenti in ordine:
+
+1. Verificare che il salvataggio della configurazione asincrona di Commerce sia [abilitato](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save).
+
+1. Dall&#39;amministratore, passare a **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Adobe Services]** > **[!UICONTROL AEM Assets Integration]**.
+
+1. Carica il file App Builder `workspace.json` corrente.
+
+1. Salva la configurazione.
+
+1. Attendere il completamento dell&#39;elaborazione del salvataggio da parte del consumer di configurazione asincrono.
+
+1. Verifica i valori OAuth e la configurazione dell’integrazione dipendente.
+
+1. Verifica che la registrazione della corrispondenza esterna rifletta l’aggiornamento.
+
+>[!NOTE]
+>
+>Se il salvataggio della configurazione asincrona è disattivato, si applica il normale comportamento di salvataggio sincrono e non è necessario attendere un consumatore della coda.
+
+### Risoluzione dei problemi relativi al salvataggio della configurazione asincrona
+
+| Sintomo | Cosa fare |
+| --- | --- |
+| I valori OAuth rimangono invariati dopo il salvataggio | Conferma l&#39;esecuzione della versione 1.4.7 o successiva dell&#39;estensione AEM Assets Integration, carica un nuovo file `workspace.json` e attendi il completamento dell&#39;elaborazione della coda prima di controllare di nuovo i valori. |
+| Il salvataggio non riesce dopo un caricamento non valido | Verificare che il file sia un file `workspace.json` ben formato e contenga le credenziali App Builder previste. |
+| Nessun file caricato | La configurazione archiviata esistente rimane invariata. |
+| La registrazione della corrispondenza esterna non viene aggiornata | Controlla se il consumatore in coda ha completato l’elaborazione, controlla i registri di Commerce e conferma lo stato di registrazione della corrispondenza esterna. |
+| Salvataggio configurazione asincrona disabilitato | Si applica il normale comportamento di salvataggio sincrono; questa sezione relativa alla risoluzione dei problemi non è applicabile. |
+
+>[!NOTE]
+>
+>Se sviluppi un osservatore di configurazione per l’integrazione di AEM Assets, non dipendere da parametri di richiesta HTTP non elaborati. Il salvataggio della configurazione asincrona e altri salvataggi della configurazione programmatica possono eseguire l’osservatore senza un contesto di richiesta amministratore.
+
 ## Endpoint API di corrispondenza personalizzati
 
-Quando si crea un&#39;applicazione di corrispondenza personalizzata utilizzando [App Builder](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l&#39;applicazione deve esporre i seguenti endpoint:
+Quando si crea un&#39;applicazione di corrispondenza personalizzata utilizzando [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l&#39;applicazione deve esporre i seguenti endpoint:
 
 * Endpoint **da risorsa App Builder all&#39;URL prodotto**
 * Endpoint **da prodotto App Builder a URL risorsa**
@@ -292,7 +330,7 @@ Il parametro `asset_matches` contiene i seguenti attributi:
 | Attributo | Tipo di dati | Descrizione |
 | --- | --- | --- |
 | `asset_id` | Stringa | ID risorsa. |
-| `asset_roles` | Array | Ruoli risorsa. Utilizza i [ruoli di risorse Commerce](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) supportati come `thumbnail`, `image`, `small_image` e `swatch_image`. |
+| `asset_roles` | Array | Ruoli risorsa. Utilizza i [ruoli di risorse Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) supportati, ad esempio `thumbnail`, `image`, `small_image` e `swatch_image`. Con AEM Assets Integration Extension 1.4.6 e versioni successive, vengono accettati anche i ruoli immagine personalizzati (come `hero` o `custom_role_1`). |
 | `asset_format` | Stringa | Il formato della risorsa. I valori possibili sono `image` e `video`. |
 | `asset_position` | Numero | Posizione della risorsa nella galleria di prodotti. |
 
