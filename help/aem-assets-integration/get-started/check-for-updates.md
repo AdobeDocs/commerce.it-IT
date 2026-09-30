@@ -70,7 +70,7 @@ Il controllo di aggiornamento legge i metadati della versione dalla sezione `ext
 ```json
 {
   "extra": {
-    "release_notes_url": "https://experienceleague.adobe.com/...",
+    "release_notes_url": "https://experienceleague.adobe.com/it...",
     "release_type": "feature",
     "compatible_commerce_versions": ">=2.4.7 <2.5.0"
   }
