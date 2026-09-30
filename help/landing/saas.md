@@ -8,26 +8,34 @@ badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.ad
 TQID: https://experienceleague.adobe.com/pWbJSCrV9CcdJXNTkuXyCxh73eUA7nYt1okexwtK7II
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 subfeature_v2:
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+    internal-label: Data management
+source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
 workflow-type: tm+mt
-source-wordcount: 1665
+source-wordcount: '1665'
 ht-degree: 0%
-
 ---
-
 # [!DNL Commerce Services Connector]
 
 Alcune funzionalità di Adobe Commerce e Magento Open Source sono basate su [!DNL Commerce Services] e distribuite come SaaS (software as a service). Per utilizzare questi servizi, è necessario connettere l&#39;istanza [!DNL Commerce] utilizzando le chiavi API di produzione e sandbox e specificare lo spazio dati nella [configurazione](#saas-configuration). È sufficiente configurare la connessione una sola volta per ogni istanza.
@@ -155,9 +163,9 @@ Per selezionare o creare un progetto SaaS, richiedere le chiavi API [!DNL Commer
 
    Se si dispone di istanze separate da integrare con Commerce Services, [inviare un ticket di supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) per richiedere un nuovo progetto SaaS per ogni istanza aggiuntiva. Dopo aver creato il progetto SaaS, configurare il connettore dei servizi Commerce per l&#39;istanza **utilizzando le stesse chiavi API** e selezionare il nuovo progetto SaaS e lo spazio dati.
 
->[!WARNING]
->
-> Se generi nuove chiavi nel portale API, aggiorna immediatamente le chiavi API nella configurazione Admin. Se l’amministratore utilizza ancora chiavi obsolete, le estensioni SaaS cessano di funzionare e la raccolta dei dati viene interrotta.
+   >[!WARNING]
+   >
+   > Se generi nuove chiavi nel portale API, aggiorna immediatamente le chiavi API nella configurazione Admin. Se l’amministratore utilizza ancora chiavi obsolete, le estensioni SaaS cessano di funzionare e la raccolta dei dati viene interrotta.
 
 Per modificare i nomi del progetto SaaS o dello spazio dati, fare clic su **Rinomina** accanto a uno dei due. La modifica del nome non influisce sul servizio, in quanto il nome è solo un’etichetta per identificare e distinguere tra progetti e spazi di dati.
 

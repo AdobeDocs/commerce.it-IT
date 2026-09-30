@@ -3,13 +3,11 @@ title: Note sulla versione dell’integrazione AEM Assets
 description: Consulta le note sulla versione per informazioni su tutte le versioni di Integrazione di AEM Assets.
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: afef108e512c69047a0420566a498dab164c207e
+source-git-commit: a0b269f6d4b709dd0aed4c23264928f28b2f5d98
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1784'
 ht-degree: 0%
-
 ---
-
 # Note sulla versione dell’integrazione AEM Assets
 
 Queste note sulla versione descrivono tutte le versioni di AEM Assets Integration e includono:
@@ -38,6 +36,36 @@ _11 febbraio 2025_
 
 +++
 
+## v1.4.7
+
+_18 settembre 2026_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versione 2.4.5 e successive.
+
+![È stato risolto il problema](../assets/fix.svg)<!-- Issue ACAP-1317 --> che impediva la corretta persistenza del file `workspace.json` caricato per [corrispondenza automatica personalizzata](synchronize/custom-match.md) quando il salvataggio della configurazione asincrona di Commerce era abilitato. In precedenza, la richiesta di amministrazione metteva in coda solo i metadati di caricamento anziché il contenuto del file, pertanto quando il consumer della configurazione asincrona elaborava il salvataggio, non era più possibile leggere il file di caricamento temporaneo. Di conseguenza, la configurazione è stata salvata correttamente mentre i valori OAuth di App Builder sono rimasti invariati. Le credenziali di App Builder caricate ora superano il limite della coda e vengono elaborate correttamente dal consumatore asincrono.
+
+>[!IMPORTANT]
+>
+>Se utilizzi una corrispondenza personalizzata con l&#39;opzione Salva configurazione asincrona abilitata, ricarica il file `workspace.json` dopo l&#39;aggiornamento a questa versione. Per le istruzioni di caricamento, vedere [Salvataggio configurazione asincrona](synchronize/custom-match.md#async-config-save).
+
+## v1.4.6
+
+_8 settembre 2026_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versione 2.4.5 e successive.
+
+![Nuovo problema](../assets/new.svg)<!-- Issue ACAP-1272 --> I ruoli immagine AEM personalizzati vengono ora mantenuti durante la sincronizzazione. I valori personalizzati nel campo metadati di AEM `commerce:roles` vengono acquisiti e mappati ai dati della galleria di contenuti multimediali del prodotto Commerce, oltre ai quattro ruoli standard (`image`, `small_image`, `thumbnail` e `swatch_image`). Per ulteriori dettagli, vedere [Corrispondenza automatica personalizzata](synchronize/custom-match.md).
+
+![Nuovo problema](../assets/new.svg)<!-- Issue ACAP-1272 --> Adobe Commerce ora può verificare la presenza di aggiornamenti asincroni dell&#39;estensione dell&#39;integrazione di AEM Assets e avvisare gli amministratori dell&#39;amministratore quando è disponibile una nuova versione. Gli amministratori possono inoltre eseguire un controllo manuale utilizzando `bin/magento aem:assets:check-update`. Per ulteriori dettagli, vedere [Verificare la disponibilità di aggiornamenti dell&#39;estensione](get-started/check-for-updates.md).
+
+## v1.4.5
+
+_3 agosto 2026_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versione 2.4.5 e successive.
+
+![È stato risolto un problema](../assets/fix.svg)<!-- Issue ACAP-1321 --> di compatibilità con le versioni precedenti relativo alla visibilità delle risorse nella visualizzazione archivio. Le richieste di sincronizzazione risorse esistenti che non specificano le viste nascoste degli archivi continuano a funzionare senza modifiche.
+
 ## v1.4.4
 
 _30 luglio 2026_
@@ -45,6 +73,8 @@ _30 luglio 2026_
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versione 2.4.5 e successive.
 
 ![Nuovo problema](../assets/new.svg) Ora i commercianti possono nascondere specifiche visualizzazioni dello store per una risorsa AEM. Quando AEM Assets contrassegna un’immagine come nascosta per una o più visualizzazioni del negozio, Commerce la esclude dalla vetrina. La galleria multimediale del prodotto Admin ora include un campo **[!UICONTROL Store View Visibility]** che mostra quali visualizzazioni dello store nascondono l&#39;immagine. <!-- Issue ACAP-1308 -->
+
+![È stato risolto un problema](../assets/fix.svg) a causa del quale il pacchetto di integrazione di Page Builder richiedeva erroneamente il pacchetto `magento/module-page-builder`, impedendo l&#39;installazione indipendente del pacchetto.
 
 ## v1.4.2
 

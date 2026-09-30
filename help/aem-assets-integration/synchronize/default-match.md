@@ -6,19 +6,21 @@ exl-id: 8a18639b-f508-456e-8d22-18e3e0fdd515
 TQID: https://experienceleague.adobe.com/z7vpuhsVJnKohiU-bKNrcGnoIQ5WAwcwiccYlvawN0U
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+    internal-label: Metadata
+source-git-commit: cf31a1ed5069095fb3c4c50d99475e60ee61efa9
 workflow-type: tm+mt
-source-wordcount: 317
+source-wordcount: '349'
 ht-degree: 0%
-
 ---
-
 # Corrispondenza automatica predefinita
 
 L&#39;integrazione AEM Assets per Commerce fornisce un meccanismo di corrispondenza automatica predefinito (**[!UICONTROL Match by product SKU]**) basato sulla configurazione dei metadati **AEM Assets**. Questa regola abilita la sincronizzazione perfetta tra **Adobe Commerce** e **AEM Assets**, garantendo che le risorse siano collegate automaticamente alle entità di merchandising corrette.
@@ -50,6 +52,8 @@ Quando la regola di corrispondenza **[!UICONTROL Match by product SKU]** è conf
    ![Esempio di metadati](../assets/metadata-commerce-yes.png){width="600" zoomable="yes"}
 
 1. Configurare i metadati ([!UICONTROL SKU], [!UICONTROL position] e [!UICONTROL role]) che collegano la risorsa allo SKU del prodotto associato.
+
+   I quattro ruoli standard sono `image`, `small_image`, `thumbnail` e `swatch_image`. Con l&#39;estensione AEM Assets Integration versione 1.4.6 e successive, è inoltre possibile immettere un ruolo immagine personalizzato, ad esempio `hero` o `custom_role_1`. Vedi [Corrispondenza automatica personalizzata](custom-match.md) per i dettagli.
 
    >[!NOTE]
    >
