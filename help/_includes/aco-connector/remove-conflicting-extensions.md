@@ -14,7 +14,7 @@ Se è installata una delle seguenti estensioni, disinstallarle prima di installa
 * [!DNL Adobe Commerce Catalog Service] (`magento/catalog-service`, `magento/catalog-service-installer`)
 * **[!UICONTROL Data Management Dashboard]** (`magento-catalog-sync-admin`)
 
-I dati associati a queste estensioni sono ancora disponibili nel database di Commerce. Tuttavia, non viene esportato in [!DNL Commerce Optimizer] quando il connettore è abilitato. Per implementare le funzionalità di ricerca e merchandising di Adobe Commerce fornite da queste estensioni dopo l&#39;abilitazione del connettore, configurale dall&#39;[[!DNL Commerce Optimizer] interfaccia utente amministratore](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview#quick-tour).
+I dati associati a queste estensioni sono ancora disponibili nel database di Commerce. Tuttavia, non viene esportato in [!DNL Commerce Optimizer] quando il connettore è abilitato. Per implementare le funzionalità di ricerca e merchandising di Adobe Commerce fornite da queste estensioni dopo l&#39;abilitazione del connettore, configurale dall&#39;[[!DNL Commerce Optimizer] interfaccia utente amministratore](https://experienceleague.adobe.com/it/docs/commerce/optimizer/overview#quick-tour).
 
 >[!IMPORTANT]
 >

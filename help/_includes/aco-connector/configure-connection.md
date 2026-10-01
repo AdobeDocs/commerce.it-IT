@@ -12,7 +12,7 @@ Ottieni l&#39;ID _tenant_ dal campo _[!DNL Instance Id]_&#x200B;nell&#39;istanza
 
    ![[!DNL Commerce Optimizer] pagina di configurazione](/help/aco-connector/assets/aco-connector-admin-installation.png){width="500" zoomable="yes"}
 
-1. Dalla riga di comando, [utilizzare SSH](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) per connettersi all&#39;ambiente di staging [!DNL Adobe Commerce].
+1. Dalla riga di comando, [utilizzare SSH](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/develop/secure-connections) per connettersi all&#39;ambiente di staging [!DNL Adobe Commerce].
 
 1. Per configurare l&#39;integrazione, eseguire il seguente comando CLI [!DNL Adobe Commerce], sostituendo i valori segnaposto con i valori per il progetto [!DNL Commerce Optimizer]:
 

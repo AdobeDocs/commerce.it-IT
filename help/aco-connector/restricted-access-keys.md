@@ -3,7 +3,7 @@ title: Gestire le chiavi di accesso limitate per i cataloghi condivisi B2B
 description: Scopri come gestire le chiavi di accesso limitato che il connettore Adobe Commerce Optimizer utilizza per proteggere le proiezioni di cataloghi condivisi B2B.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
