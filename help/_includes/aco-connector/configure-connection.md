@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 # Ottieni dettagli istanza [!DNL Commerce Optimizer]
 
-Ottieni l&#39;ID _tenant_ dal campo _[!DNL Instance Id]_nell&#39;istanza [[!DNL Instance details] page](/help/optimizer/get-started.md#manage-instances) di [!DNL Commerce Optimizer] o dall&#39;URL utilizzato per accedere all&#39;istanza. Ad esempio, in `https://experience.adobe.com/#/@<your organization>/in:<tenant>/commerce-optimizer-studio/home`.
+Ottieni l&#39;ID _tenant_ dal campo _[!DNL Instance Id]_&#x200B;nell&#39;istanza [[!DNL Instance details] page](/help/optimizer/get-started.md#manage-instances) di [!DNL Commerce Optimizer] o dall&#39;URL utilizzato per accedere all&#39;istanza. Ad esempio, in `https://experience.adobe.com/#/@<your organization>/in:<tenant>/commerce-optimizer-studio/home`.
 
 1. Dall&#39;amministratore di Commerce, selezionare **[!UICONTROL Adobe Commerce Optimizer]** per visualizzare la pagina di configurazione con le istruzioni.
 
