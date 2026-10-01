@@ -1,26 +1,29 @@
 ---
 title: Sincronizzazione dati
-description: Rivedi i dati del catalogo che vengono sincronizzati dall'origine dati di Commerce in [!DNL Adobe Commerce Optimizer].
+description: Esaminare i dati del catalogo sincronizzati dall'origine dati Commerce in [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
 exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
 TQID: https://experienceleague.adobe.com/ZTMFkch-YNS-CUgCdadmg1kemA8ORXQ7KGCEkI7d-Yw
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: c7633056caec2fcec318f8ebcc9664cfc7b3b9b4
+    internal-label: Insights
+source-git-commit: 2dbf2b973af0cb7b831a17ca1a868a81b11bc9ee
 workflow-type: tm+mt
-source-wordcount: 484
+source-wordcount: '485'
 ht-degree: 0%
-
 ---
-
 # Sincronizzazione dati
 
 Nella pagina **Sincronizzazione dati** viene visualizzata una panoramica dello stato di sincronizzazione dei dati di prodotto trasferiti dall&#39;origine dati (il catalogo Commerce esistente, il sistema di gestione delle informazioni sui prodotti (PIM), il sistema ERP (Enterprise Resource Planning) e così via) in [!DNL Adobe Commerce Optimizer].
@@ -63,7 +66,7 @@ Se non trovi prodotti specifici nella pagina **Sincronizzazione dati**, devi avv
 
 ## Verificare che la sincronizzazione dei dati funzioni
 
-Per i progetti che utilizzano Adobe Commerce come origine dati a monte tramite il connettore Adobe Commerce Optimizer, puoi monitorare il processo di esportazione dei dati e avviare le operazioni di risincronizzazione dalla pagina Stato sincronizzazione feed dati. Per ulteriori dettagli, vedere [Verificare che la sincronizzazione dei dati funzioni](../../aco-connector/data-sync-manage.md#verify-that-the-data-sync-is-working) nella documentazione di _Adobe Commerce Optimizer Connector_.
+Per i progetti che utilizzano Adobe Commerce come origine dati a monte tramite il connettore Adobe Commerce Optimizer, puoi monitorare il processo di esportazione dei dati e avviare le operazioni di risincronizzazione dalla pagina Stato sincronizzazione feed dati. Per ulteriori dettagli, vedere [Verificare che la sincronizzazione dei dati funzioni](../../aco-connector/data-sync-status.md#verify-that-the-data-sync-is-working) nella documentazione di _Adobe Commerce Optimizer Connector_.
 
 ## Argomenti correlati
 

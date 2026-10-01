@@ -1,6 +1,6 @@
 ---
 title: Elenco di controllo per Launch
-description: Scopri come convalidare configurazione, vetrina, SEO, CDN, integrazioni, sicurezza, analisi e test per  [!DNL Adobe Commerce Optimizer]  produzione.
+description: Scopri come convalidare configurazione, vetrina, SEO, CDN, integrazioni, sicurezza, analisi e test per la produzione di [!DNL Adobe Commerce Optimizer].
 autotag-review: '2026-06-17T15:08:59.000Z'
 solution: Commerce
 feature: Integration, Storefront, Search, Catalog Management, Personalization
@@ -9,30 +9,38 @@ role: Admin, Developer
 level: Intermediate
 topic: Administration
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
 subfeature_v2:
   - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+    internal-label: Storefront configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Implementation
+source-git-commit: 1009ae28286a8503511c85726bf44922c7c2575e
 workflow-type: tm+mt
-source-wordcount: 2309
+source-wordcount: '2311'
 ht-degree: 0%
-
 ---
-
 
 # Elenco di controllo di Launch
 
@@ -55,11 +63,11 @@ In genere, la soluzione include i seguenti componenti:
 
 Verifica che il tuo ambiente Adobe Commerce on Cloud sia pronto per la produzione.
 
-▢ L&#39;istanza cloud è [predisposta](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/start/new-project).
+▢ L&#39;istanza cloud è [predisposta](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/new-project).
 ▢ I test e i dati fittizi vengono rimossi dall&#39;istanza.
 I dati di produzione di ▢ sono caricati nell&#39;istanza.
 ▢ Conosci l&#39;[endpoint GraphQL](https://developer.adobe.com/commerce/webapi/graphql/).
-▢ L&#39;istanza soddisfa i requisiti di [ready-for-launch](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/launch/checklist).
+▢ L&#39;istanza soddisfa i requisiti di [ready-for-launch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist).
 
 ## Verifica istanza Commerce Optimizer {#verify-optimizer}
 
@@ -92,7 +100,7 @@ Completa questi controlli nel progetto Cloud.
 ▢ Il connettore Commerce Optimizer è [installato e configurato](../../aco-connector/get-started.md).
 ▢ Il comando CLI `aco:conf:show` conferma la connessione all&#39;istanza Commerce Optimizer di produzione. L’ID organizzazione, l’ID client, l’URL di acquisizione e l’URL di Commerce Optimizer corrispondono alla produzione.
 ▢ Gli ambiti di sincronizzazione nella [configurazione di esportazione](../../aco-connector/get-started.md) corrispondono ai requisiti.
-▢ [Stato sincronizzazione feed dati](../../aco-connector/data-sync-manage.md) conferma l&#39;esportazione dei dati dall&#39;istanza Cloud.
+▢ [Stato sincronizzazione feed dati](../../aco-connector/data-sync-status.md) conferma l&#39;esportazione dei dati dall&#39;istanza Cloud.
 
 ### In Commerce Optimizer
 
@@ -156,7 +164,7 @@ Conferma la configurazione dell’estensibilità per la produzione.
 
 ▢ L&#39;area di lavoro di produzione include tutte le configurazioni e i servizi richiesti.
 ▢ L&#39;app di produzione passa il test tra gli scenari di build.
-▢ I limiti e i limiti del prodotto sono stati rivisti e confermati in base alla [descrizione del prodotto Adobe Developer App Builder](https://helpx.adobe.com/it/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"} e alle [impostazioni e limitazioni del sistema App Builder](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
+▢ I limiti e i limiti del prodotto sono stati rivisti e confermati in base alla [descrizione del prodotto Adobe Developer App Builder](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"} e alle [impostazioni e limitazioni del sistema App Builder](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
 ▢ L&#39;app di produzione utilizza gli endpoint di produzione App Builder.
 ▢ Le estensioni del pannello *Admin* personalizzate sono distribuite nell&#39;area di lavoro di produzione.
 
@@ -225,7 +233,7 @@ I punteggi di ▢ Lighthouse soddisfano le tue destinazioni (ad esempio, `100` n
 Conferma autorizzazioni e segreti.
 
 ▢ Le autorizzazioni appropriate sono configurate per il contenuto DA e i siti EDS. Consulta [Autorizzazioni DA.live](https://da.live/docs/administration/permissions) e [Impostazione dell&#39;autenticazione per l&#39;authoring](https://www.aem.live/docs/authentication-setup-authoring).
-▢ È stato eseguito il provisioning dell&#39;integrazione degli elementi visivi del prodotto. Consulta [Panoramica dell&#39;accesso ad AEM Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/accessing/overview#).
+▢ È stato eseguito il provisioning dell&#39;integrazione degli elementi visivi del prodotto. Consulta [Panoramica dell&#39;accesso ad AEM Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview#).
 I collegamenti per la reimpostazione della password ▢ nei modelli e-mail corrispondono alla configurazione di Edge Delivery Services. Vedi le domande frequenti su storefront: [Cosa devo fare se i miei collegamenti del modello e-mail sono interrotti dopo la migrazione a Edge Delivery Services o Helix?](https://experienceleague.adobe.com/en/tools/commerce-storefront/troubleshooting/faq/#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}.
 ▢ Le chiavi di produzione per le integrazioni e i provider di pagamenti sono attive.
 I domini ▢ sono inseriti nell&#39;elenco Consentiti e i webhook di back-end funzionano.

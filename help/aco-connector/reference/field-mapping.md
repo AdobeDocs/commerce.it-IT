@@ -1,36 +1,47 @@
 ---
-title: Mappatura campi per  [!DNL Adobe Commerce Optimizer Connector] feed
-description: Scopri [!DNL Adobe Commerce Optimizer Connector] la mappatura dei campi da [!DNL Adobe Commerce] dati catalogo a [!DNL Adobe Commerce Optimizer] formati API di acquisizione per tutti i feed.
+title: Mappatura campi per [!DNL Adobe Commerce Optimizer Connector] feed
+description: Scopri come mappare il campo [!DNL Adobe Commerce Optimizer Connector] dai dati del catalogo [!DNL Adobe Commerce] ai formati API di acquisizione [!DNL Adobe Commerce Optimizer] per tutti i feed.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+    internal-label: Data modeling
+source-git-commit: 9c2d0f1c3342d87b1e95a789b905f4a383bc8f5f
 workflow-type: tm+mt
-source-wordcount: 665
-ht-degree: 0%
-
+source-wordcount: '731'
+ht-degree: 3%
 ---
-
 
 # Mappatura dei campi per i feed del connettore
 
@@ -56,6 +67,7 @@ Il feed `products` invia dati all&#39;endpoint [Products](https://developer.adob
 | `metaKeyword` | `metaTags/keywords` | Stringa delimitata da nuova riga divisa in matrice |
 | `inStock`, `lowStock`, `weight`, `weightUnit` | `attributes[].code = "aco_ac_attributes"` | Oggetto con codifica JSON `{inStock, lowStock, weight, weightType}`; sempre presente come prima voce di attributo |
 | `attributes[]` | `attributes[]` | Ogni voce mappata a `{code, values[], variantReferenceId}`; `inStock`, `lowStock`, `weight`, `weightType` sono esclusi (entrano in `aco_ac_attributes`) |
+| `(synthesized)` | `attributes[].code = "ac_assortments"` | Array di ID numerici dei cataloghi condivisi personalizzati a cui appartiene il prodotto, deduplicati e ordinati. Questo attributo non è disponibile solo per i prodotti del catalogo pubblico. I criteri [!DNL Commerce Optimizer] filtrano per questo attributo per applicare l&#39;assortimento di visualizzazione catalogo privato. |
 | `images[]` | `images[]` | `url`, `label`; ruoli standard mappati: `image`→`BASE`, `small_image`→`SMALL`, `thumbnail`→`THUMBNAIL`, `swatch_image`→`SWATCH`; ruoli non standard vanno a `customRoles[]` |
 | `categoryData[].categoryPath` | `routes[].path` | |
 | `categoryData[].productPosition` | `routes[].position` | |
