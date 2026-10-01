@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
+source-git-commit: fc9fb7a63e4e7c3dd862ed710acdfa8561c91ec5
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 0%
@@ -57,9 +57,9 @@ Per completare l’onboarding della sandbox:
 
    Quando l’onboarding in Sandbox PayPal viene approvato, dovresti visualizzare una notifica che informa che il sistema di pagamento è attualmente in modalità sandbox e non elabora pagamenti live.
 
-   >[!IMPORTANT]
-   >
-   >Se revoci il consenso a [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] per l&#39;elaborazione dei pagamenti (nelle impostazioni del tuo conto PayPal), gli ordini nel tuo Negozio non possono essere elaborati da [!DNL Payment Services]. Nella pagina principale di Payment Services viene visualizzato un avviso relativo alla revoca del consenso. Per ignorare l&#39;avviso, fare clic su **[!UICONTROL Do not show again]**.
+>[!IMPORTANT]
+>
+>Se revoci il consenso a [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] per l&#39;elaborazione dei pagamenti (nelle impostazioni del tuo conto PayPal), gli ordini nel tuo Negozio non possono essere elaborati da [!DNL Payment Services]. Nella pagina principale di Payment Services viene visualizzato un avviso relativo alla revoca del consenso. Per ignorare l&#39;avviso, fare clic su **[!UICONTROL Do not show again]**.
 
 ### Reimposta l’account sandbox
 
@@ -102,9 +102,9 @@ Per configurare il paese dell&#39;acquirente:
 
 1. Fai clic su **[!UICONTROL Save Config]** per salvare le modifiche.
 
->[!NOTE]
->
->L&#39;impostazione **[!UICONTROL Buyer's country]** viene visualizzata solo quando il metodo è impostato su `Sandbox`. Questo non influisce sugli ambienti di produzione.
+   >[!NOTE]
+   >
+   >L&#39;impostazione **[!UICONTROL Buyer's country]** viene visualizzata solo quando il metodo è impostato su `Sandbox`. Questo non influisce sugli ambienti di produzione.
 
 ## Test in ambiente sandbox
 

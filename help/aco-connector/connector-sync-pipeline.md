@@ -1,36 +1,48 @@
 ---
 title: Pipeline di sincronizzazione catalogo
-description: Scopri come funziona la pipeline di sincronizzazione  [!DNL Adobe Commerce Optimizer Connector] , inclusa la trasformazione dei feed, le pianificazioni cron, il controllo dell'ambito e la gestione degli errori.
+description: Scopri come funziona la pipeline di sincronizzazione [!DNL Adobe Commerce Optimizer Connector], inclusa la trasformazione dei feed, le pianificazioni cron, il controllo dell'ambito e la gestione degli errori.
 feature: Integration, Configuration
 badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 autotag-review: '2026-06-09T16:21:52.214Z'
 TQID: 'https://experienceleague.adobe.com/EXUQzAd0I6Hnq4twzhaBZZnv0jLjeGBuTx-QgQz-5MA'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
 feature_v2:
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
+    internal-label: Data pipelines
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+    internal-label: Data integration
+source-git-commit: 2dbf2b973af0cb7b831a17ca1a868a81b11bc9ee
 workflow-type: tm+mt
-source-wordcount: 673
+source-wordcount: '674'
 ht-degree: 1%
-
 ---
-
 # Pipeline di sincronizzazione del connettore
 
 Basato su [[!DNL SaaS Data Export]](https://experienceleague.adobe.com/it/docs/commerce/saas-data-export/overview), **[!DNL Adobe Commerce Optimizer Connector]** associa i dati raccolti dagli indicizzatori [!DNL SaaS Data Export] al formato richiesto da [!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API] e gestisce l&#39;autenticazione, l&#39;invio in batch e il controllo di sincronizzazione basato sull&#39;ambito. Le sezioni seguenti descrivono come funziona tale sincronizzazione.
@@ -93,7 +105,7 @@ Per informazioni dettagliate sulla personalizzazione dell&#39;ambito di sincroni
 | Errori transitori | Riprovato ogni 5 minuti |
 | Sincronizzazione completa o cataloghi di grandi dimensioni | Da minuti a ore |
 
-Monitorare lo stato per feed dalla pagina [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) nell&#39;amministrazione di Commerce. Vedere [Verificare che la sincronizzazione dei dati funzioni](./data-sync-manage.md#verify-that-the-data-sync-is-working).
+Monitorare lo stato per feed dalla pagina [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) nell&#39;amministrazione di Commerce. Vedere [Verificare che la sincronizzazione dei dati funzioni](./data-sync-status.md#verify-that-the-data-sync-is-working).
 
 ## Invio di feed e gestione degli errori
 

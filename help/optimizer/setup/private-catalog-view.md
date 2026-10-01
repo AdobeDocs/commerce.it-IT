@@ -1,36 +1,47 @@
 ---
 title: Visualizzazioni catalogo privato
-description: Scopri come creare una visualizzazione di catalogo privata abilitando Catalog Protection in modo che solo le richieste con un token firmato valido possano recuperare i dati relativi ai prodotti e ai prezzi.
+description: Scopri in che modo le visualizzazioni del catalogo privato limitano l’accesso ai dati del catalogo, vengono create automaticamente per i cataloghi condivisi B2B o vengono configurate manualmente con Catalog Protection.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 16e3405e1500dfd39603b1e300f4625e5a57cf02
+    internal-label: Personalization
+source-git-commit: f93bd673624c58050696da772ce733874ce594e5
 workflow-type: tm+mt
-source-wordcount: 642
+source-wordcount: '903'
 ht-degree: 0%
-
 ---
-
 # Visualizzazioni di cataloghi privati
 
-Per impostazione predefinita, una [visualizzazione catalogo](catalog-view.md) è pubblica. Abilita la protezione del catalogo in una visualizzazione catalogo per limitare l’accesso alle richieste che includono un token firmato valido.
+Per impostazione predefinita, una [visualizzazione catalogo](catalog-view.md) è pubblica. Limita l’accesso a una vista catalogo in modo che solo le richieste con un token firmato valido possano recuperare i relativi dati.
+
+Una vista catalogo diventa privata in uno dei due modi seguenti:
+
+- [!BADGE Private Beta]{type=Caution tooltip="Richiede l’estensione B2B del connettore Adobe Commerce Optimizer, attualmente in versione beta privata."} **Automaticamente, per i cataloghi condivisi B2B**. Per le distribuzioni Commerce che utilizzano l&#39;integrazione [!DNL Adobe Commerce Optimizer Connector] con l&#39;estensione B2B, le visualizzazioni del catalogo privato vengono create e configurate automaticamente, in base alla configurazione del catalogo condiviso in [!DNL Adobe Commerce]. Vedi [Visualizzazioni automatiche di cataloghi privati per cataloghi condivisi B2B](#automatic-private-catalog-views-for-b2b-shared-catalogs).
+
+- **Manualmente, per qualsiasi vista catalogo**. Per limitare l&#39;accesso a una vista catalogo che sarebbe altrimenti pubblica, inclusa una vista catalogo B2C, seguire la procedura descritta in [Proteggere una vista catalogo](#protect-a-catalog-view). Consulta [Casi d&#39;uso con chiave di accesso limitato](restricted-access-keys.md#restricted-access-key-use-cases) per esempi, come portali per partner e anteprime pre-release.
 
 La protezione del catalogo si applica solo alla vista catalogo selezionata. Non modifica i criteri o i livelli della vista. La visualizzazione è limitata a un singolo listino prezzi dedicato. Vedere [Limitazione del listino prezzi dedicato alle visualizzazioni di cataloghi privati](#price-book-restriction-on-private-catalog-views).
-
-Consulta i [Casi d&#39;uso per le chiavi di accesso con restrizioni](restricted-access-keys.md#restricted-access-key-use-cases) per esempi su quando proteggere una vista catalogo.
 
 ## Comprendere il limite di protezione
 
@@ -53,7 +64,19 @@ In ciascuno di questi casi, [!DNL Adobe Commerce Optimizer] visualizza il seguen
 
 Le visualizzazioni del catalogo pubblico non sono interessate da questa restrizione e possono continuare a fare riferimento a più listini prezzi.
 
+## Visualizzazioni automatiche di cataloghi privati per cataloghi condivisi B2B
+
+[!BADGE Private Beta]{type=Caution tooltip="Richiede l’estensione B2B del connettore Adobe Commerce Optimizer, attualmente in versione beta privata."}
+
+Per le distribuzioni integrate con [!DNL Adobe Commerce Optimizer Connector for B2B] per il supporto di cataloghi condivisi, l&#39;estensione crea e configura automaticamente le visualizzazioni del catalogo privato, in base alla configurazione del catalogo condiviso in [!DNL Adobe Commerce]. Questa configurazione include la vista catalogo, il criterio, una chiave di accesso con restrizioni iniziale e un riferimento al listino prezzi dedicato. Con questa configurazione, puoi gestire le chiavi di accesso con restrizioni dalla pagina Amministratore Commerce **Chiavi di accesso con restrizioni** (**Sistema** > **Trasferimento dati**). Per informazioni dettagliate, vedere [Modifiche al catalogo condiviso B2B](/help/aco-connector/get-started.md#monitor-b2b-shared-catalog-changes) nella Guida all&#39;integrazione *[!DNL Adobe Commerce Optimizer Connector]*.
+
+Se non si utilizzano cataloghi condivisi B2B, ad esempio per proteggere una visualizzazione di catalogo per un portale partner o per l&#39;anteprima pre-release, utilizzare le istruzioni in [Proteggi una visualizzazione di catalogo](#protect-a-catalog-view) per configurarne manualmente una.
+
 ## Proteggere una vista catalogo
+
+>[!NOTE]
+>
+>Ignorare questa procedura per le visualizzazioni catalogo associate ai cataloghi condivisi B2B gestiti da [!DNL Adobe Commerce Optimizer Connector for B2B]. Vedi [Visualizzazioni automatiche di cataloghi privati per cataloghi condivisi B2B](#automatic-private-catalog-views-for-b2b-shared-catalogs).
 
 Prima di iniziare, [crea una chiave ad accesso limitato](restricted-access-keys.md) dalla chiave pubblica generata dall&#39;applicazione client.
 
@@ -98,11 +121,11 @@ Una richiesta con un token firmato da una chiave assegnata e non scaduta restitu
 
 ## Gestire le chiavi di accesso con restrizioni
 
-Se [!UICONTROL Catalog Protection] è abilitato e tutte le chiavi assegnate scadono, la vista catalogo diventa inaccessibile. Gli storefront che si basano su questa vista catalogo non possono servire i dati da essa. Assegna una nuova chiave non scaduta per ripristinare l’accesso. Per istruzioni, vedere [Ruotare le chiavi](restricted-access-keys.md#rotate-a-key).
+Se [!UICONTROL Catalog Protection] è abilitato e tutte le chiavi assegnate scadono, la visualizzazione del catalogo diventa inaccessibile. Gli storefront che si basano su questa vista catalogo non possono fornire dati da essa. Assegna una nuova chiave non scaduta per ripristinare l’accesso. Per istruzioni, vedere [Ruotare le chiavi](restricted-access-keys.md#rotate-a-key).
 
->[!IMPORTANT]
+>[!NOTE]
 >
->La creazione e la gestione automatica delle chiavi tramite Adobe Commerce e il connettore Adobe Commerce Optimizer non sono ancora disponibili.
+>Per le distribuzioni integrate con l&#39;estensione [!DNL Adobe Commerce Optimizer Connector for B2B], è possibile gestire le chiavi di accesso dalla pagina **Chiavi di accesso limitate** dell&#39;amministratore di Commerce (**Sistema** > **Trasferimento dati**). Per informazioni dettagliate, vedere [Gestione delle chiavi di accesso con restrizioni](../../aco-connector/restricted-access-keys.md) nella Guida all&#39;integrazione di *[!DNL Adobe Commerce Optimizer Connector]*.
 
 ## Altri argomenti correlati
 
