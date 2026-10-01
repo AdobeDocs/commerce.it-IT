@@ -1,6 +1,6 @@
 ---
 title: Note sulla versione di [!DNL Adobe Commerce as a Cloud Service]
-description: Scopri le funzionalità e i miglioramenti più recenti di [!DNL Adobe Commerce as a Cloud Service].
+description: Scopri tutte le funzionalità e i miglioramenti più recenti di [!DNL Adobe Commerce as a Cloud Service].
 feature-set: Commerce
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 1e03d399d191875186f5839458c3036179cf1b17
+source-git-commit: 6a2300d65c9c77d18813c2eb491bfd02d1fca8ba
 workflow-type: tm+mt
-source-wordcount: '7503'
+source-wordcount: '7581'
 ht-degree: 0%
 ---
 # Note sulla versione
@@ -78,7 +78,16 @@ Il payload del webhook `plugin.out_of_process_shipping_methods.api.shipping_rate
 
 ### Gestire le regole del prezzo di catalogo in REST
 
-I nuovi endpoint REST API consentono alle integrazioni di gestire ed eseguire ricerche in [regole prezzo catalogo](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog) a livello di programmazione. <!-- ACCS-1621 -->
+I nuovi endpoint REST API consentono alle integrazioni di gestire ed eseguire ricerche in [regole prezzo catalogo](https://experienceleague.adobe.com/it/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) a livello di programmazione. <!-- ACCS-1621 -->
+
+I seguenti endpoint sono protetti dall&#39;autorizzazione `Magento_CatalogRule::promo_catalog`, che protegge anche la schermata Regola prezzo catalogo amministratore. Per utilizzare questo endpoint è necessario l’accesso amministratore o a livello di integrazione.
+
+* `GET /V1/catalogPriceRules/metadata` - Scopri le azioni di sconto consentite e gli attributi della condizione, con i relativi operatori e le origini di valore.
+* `GET /V1/catalogPriceRules/search` - Elenca e cerca le regole con i criteri di ricerca standard (filtri, ordinamento, paging).
+* `GET /V1/catalogPriceRules/:ruleId` - Ottiene una regola, inclusa la struttura completa delle condizioni.
+* `POST /V1/catalogPriceRules` - Crea una regola.
+* `PUT /V1/catalogPriceRules/:ruleId` - Aggiornare una regola. Inviare solo i campi che si desidera modificare.
+* `DELETE /V1/catalogPriceRules/:ruleId` - Elimina una regola.
 
 ### Proteggere i caricamenti prefirmati con reCAPTCHA
 
@@ -112,7 +121,7 @@ L&#39;oggetto di input GraphQL `CustomerOrdersFilterInput` ora supporta un campo
 
 ### Pianifica regole prezzo catalogo per data e ora
 
-Ora puoi impostare l&#39;ora del giorno per una [regola del prezzo di catalogo](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog) per iniziare o terminare in [!DNL Commerce Admin]. <!-- ACCS-1762 -->
+Ora puoi impostare l&#39;ora del giorno per una [regola del prezzo di catalogo](https://experienceleague.adobe.com/it/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) per iniziare o terminare in [!DNL Commerce Admin]. <!-- ACCS-1762 -->
 
 ### Applicare sconti di spedizione personalizzati tramite l’API REST per l’amministrazione
 
