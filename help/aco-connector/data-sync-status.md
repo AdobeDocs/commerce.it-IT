@@ -4,7 +4,7 @@ description: Scopri come verificare la sincronizzazione dei dati del catalogo e 
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -35,8 +35,8 @@ topic_v2:
     internal-label: Data management
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-last-update: 2026-08-20
-source-git-commit: 77872b44f9b1aeb1ecf00253377802962df04c83
+last-update: 2026-10-01
+source-git-commit: 9ed3a09bc4e26e2ef787909700f51e25de0a18fa
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
@@ -66,5 +66,5 @@ Se la sincronizzazione parziale e il nuovo tentativo automatico non risolvono i 
 > - [Risoluzione dei problemi](troubleshooting.md) — Diagnostica i problemi relativi all&#39;esportazione di credenziali, sincronizzazione e ambito
 > - [Personalizzare la configurazione di esportazione degli ambiti di Commerce](./get-started.md#customize-the-commerce-scopes-export-configuration): configurare i feed per livello di ambito, abilitare e disabilitare il comportamento e i passaggi dell&#39;amministratore
 > - [Moduli connettore ed endpoint di feed](reference/connector-reference.md) — Moduli di revisione, endpoint API e feed supportati
-> - [Pagina Stato sincronizzazione feed dati nell&#39;amministratore di Commerce](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} — Ulteriori informazioni sui campi e sulle funzionalità disponibili per monitorare lo stato dei feed
-> - [Dashboard di sincronizzazione dati in [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/it/docs/commerce/optimizer/setup/data-sync){target="_blank"} — Documentazione di riferimento per campi e azioni disponibili per monitorare la sincronizzazione dei dati del catalogo
+> - [Pagina Stato sincronizzazione feed dati nell&#39;amministratore di Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} — Ulteriori informazioni sui campi e sulle funzionalità disponibili per monitorare lo stato dei feed
+> - [Dashboard di sincronizzazione dati in [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync){target="_blank"} — Documentazione di riferimento per campi e azioni disponibili per monitorare la sincronizzazione dei dati del catalogo
