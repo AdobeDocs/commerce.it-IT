@@ -3,9 +3,9 @@ title: Note sulla versione dell’integrazione AEM Assets
 description: Consulta le note sulla versione per informazioni su tutte le versioni di Integrazione di AEM Assets.
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: a0b269f6d4b709dd0aed4c23264928f28b2f5d98
+source-git-commit: e8b87b4622bf41f6340bf7ddd0f208512e9b09c7
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1738'
 ht-degree: 0%
 ---
 # Note sulla versione dell’integrazione AEM Assets
@@ -42,11 +42,11 @@ _18 settembre 2026_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versione 2.4.5 e successive.
 
-![È stato risolto il problema](../assets/fix.svg)<!-- Issue ACAP-1317 --> che impediva la corretta persistenza del file `workspace.json` caricato per [corrispondenza automatica personalizzata](synchronize/custom-match.md) quando il salvataggio della configurazione asincrona di Commerce era abilitato. In precedenza, la richiesta di amministrazione metteva in coda solo i metadati di caricamento anziché il contenuto del file, pertanto quando il consumer della configurazione asincrona elaborava il salvataggio, non era più possibile leggere il file di caricamento temporaneo. Di conseguenza, la configurazione è stata salvata correttamente mentre i valori OAuth di App Builder sono rimasti invariati. Le credenziali di App Builder caricate ora superano il limite della coda e vengono elaborate correttamente dal consumatore asincrono.
+![È stato risolto un problema](../assets/fix.svg)<!-- Issue ACAP-1317 --> che impediva il salvataggio della configurazione **[!UICONTROL AEM Assets Integration]**, incluso il caricamento `workspace.json`, con `Commerce Async Config Save` (introdotto in Adobe Commerce 2.4.7) abilitato, e la registrazione o l&#39;aggiornamento del tenant con ARES. La configurazione è stata salvata correttamente, ma i valori OAuth di App Builder sono rimasti invariati. Le credenziali caricate vengono ora elaborate correttamente dal consumatore asincrono.
 
 >[!IMPORTANT]
 >
->Se utilizzi una corrispondenza personalizzata con l&#39;opzione Salva configurazione asincrona abilitata, ricarica il file `workspace.json` dopo l&#39;aggiornamento a questa versione. Per le istruzioni di caricamento, vedere [Salvataggio configurazione asincrona](synchronize/custom-match.md#async-config-save).
+>Se si utilizza una corrispondenza personalizzata con Salva configurazione asincrona abilitata, caricare nuovamente il file `workspace.json` dopo l&#39;aggiornamento. Per istruzioni, vedere [Salvataggio configurazione asincrona](synchronize/custom-match.md#async-config-save).
 
 ## v1.4.6
 
