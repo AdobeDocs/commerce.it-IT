@@ -66,7 +66,7 @@ Nella scheda [!UICONTROL Catalog View] ogni riga rappresenta una visualizzazione
 | **Ritiro** | Hai eliminato il catalogo condiviso in [!DNL Adobe Commerce]. La vista catalogo è ancora accessibile fino alla scadenza del periodo di tolleranza per l’eliminazione. Il periodo di tolleranza predefinito è di sette giorni. È possibile modificare il valore predefinito aggiornando le [impostazioni di sincronizzazione della visualizzazione catalogo](#configure-aco-catalog-view-sync-settings). |
 | **Orfano** | La visualizzazione o la chiave del catalogo è stata creata direttamente in [!DNL Adobe Commerce Optimizer] Studio, non dal connettore. Vedi [Rivedi voci orfane ed eliminate](#review-orphaned-and-deleted-entries). |
 
-[!UICONTROL Healthy], [!UICONTROL Pending] e [!UICONTROL Deleted] sono stati informativi che non richiedono alcun intervento. Per l&#39;elenco completo, vedere [Sincronizzare i valori di stato](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"} nella *Guida dell&#39;amministratore di Commerce*.
+[!UICONTROL Healthy], [!UICONTROL Pending] e [!UICONTROL Deleted] sono stati informativi che non richiedono alcun intervento. Per l&#39;elenco completo, vedere [Sincronizzare i valori di stato](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"} nella *Guida dell&#39;amministratore di Commerce*.
 
 ### Configura le impostazioni di sincronizzazione della vista catalogo ACO {#configure-aco-catalog-view-sync-settings}
 
