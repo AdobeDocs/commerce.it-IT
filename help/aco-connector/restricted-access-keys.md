@@ -60,7 +60,7 @@ Dall&#39;amministratore di Commerce, passa a **[!UICONTROL System]** > **[!UICON
 
 >[!NOTE]
 >
->Per un riferimento ai campi di questa pagina, [Gestione chiavi di accesso con restrizioni](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} nella *Guida per l&#39;amministratore di Commerce*.—>
+>Per un riferimento ai campi di questa pagina, [Gestione chiavi di accesso con restrizioni](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} nella *Guida per l&#39;amministratore di Commerce*.—>
 
 ## Quando è necessario più del tasto automatico {#when-you-need-more-than-the-automatic-key}
 
@@ -159,7 +159,7 @@ La rotazione automatica dei tasti non è ancora disponibile.
 
 >[!MORELIKETHIS]
 >
-> - [Gestisci chiavi di accesso con restrizioni](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — Riferimento completo al campo per questa pagina, nella *Guida per l&#39;amministratore di Commerce* —>
+> - [Gestisci chiavi di accesso con restrizioni](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — Riferimento completo al campo per questa pagina, nella *Guida per l&#39;amministratore di Commerce* —>
 > - [Monitora sincronizzazione visualizzazione catalogo](catalog-view-sync-status.md) — Controlla le visualizzazioni catalogo protette da queste chiavi
 > - [Visualizzazioni catalogo privato](/help/optimizer/setup/private-catalog-view.md) — Scopri cos’è una visualizzazione catalogo privato gestita dal connettore
 > - [Chiavi di accesso limitate](/help/optimizer/setup/restricted-access-keys.md): scopri come funziona il flusso di chiavi manuale basato su ACO Studio per i casi di utilizzo non B2B
