@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 6a2300d65c9c77d18813c2eb491bfd02d1fca8ba
+source-git-commit: d4f896450e74c62db575ce9798cf27737466eb07
 workflow-type: tm+mt
-source-wordcount: '7581'
+source-wordcount: '8005'
 ht-degree: 0%
 ---
 # Note sulla versione
@@ -129,6 +129,38 @@ Ora puoi applicare uno sconto arbitrario sulla spedizione a un carrello tramite 
 
 Utilizzare `POST /V1/carts/:cartId/shipping-discount` per impostare lo sconto. Per utilizzare questo endpoint è necessario l’accesso amministratore o a livello di integrazione. <!-- ACCS-1156 -->
 
+### Aggiungi articoli carrello a un prezzo personalizzato
+
+È ora possibile impostare un prezzo personalizzato per un elemento del carrello aggiungendo l&#39;attributo di estensione `custom_price` agli endpoint REST standard per aggiungere o aggiornare l&#39;elemento del carrello (`POST /V1/carts/:cartId/items` e `PUT /V1/carts/:cartId/items/:itemId`). Per impostare un prezzo personalizzato, devi fornire un token di amministrazione o di integrazione. Le richieste con un prezzo negativo o un tipo di prodotto non supportato, ad esempio un prodotto bundle con prezzi dinamici, vengono rifiutate. <!-- ACCS-1155 -->
+
+```json
+{
+  "cartItem": {
+    "sku": "t-shirt",
+    "qty": 1,
+    "quote_id": 17,
+    "extension_attributes": { "custom_price": 15.00 }
+  }
+}
+```
+
+Anche gli endpoint `GET /V1/carts/:cartId` e `GET /V1/carts/:cartId/items` restituiscono il valore `custom_price`.
+
+### Isolare i carrelli creati dall’amministratore dai carrelli di vetrina
+
+Una funzione di consenso, disabilitata per impostazione predefinita, isola i carrelli che gli amministratori e le integrazioni possono creare tramite l’API REST dal carrello vetrina attivo del cliente. Quando è abilitato, `POST /V1/customers/:customerId/carts` crea sempre un nuovo carrello inattivo che l&#39;amministratore e i chiamanti all&#39;integrazione possono gestire attraverso gli endpoint REST del carrello senza modificare il carrello della vetrina. <!-- ACCS-1153 -->
+
+Per abilitarlo, contatta il tuo Customer Success Manager Adobe Commerce o crea un ticket di supporto.
+
+### Inviare e-mail transazionali tramite piattaforme di terze parti
+
+I nuovi eventi consentono di inviare e-mail transazionali da una piattaforma e-mail di terze parti, ad esempio [!DNL Salesforce Marketing Cloud], tramite [!DNL App Builder]. Iscriviti ai seguenti eventi tramite [!DNL Adobe I/O Events]: <!-- ACCS-1929 -->
+
+* `observer.customer_balance_save_after` - Un saldo a credito dell&#39;archivio è stato salvato. Aggiungi una regola di abbonamento in cui `notify_by_email` è uguale a `1` per ricevere un evento per ogni e-mail di notifica del credito dell&#39;archivio.
+* `observer.giftcard_item_email_send_after` - Viene inviata un&#39;e-mail gift card per un ordine. Il payload include tutti i codici gift card per l&#39;articolo.
+* `plugin.customer.api.account_management.activate` - Un cliente conferma il proprio account.
+* `plugin.negotiable_quote.api.negotiable_quote_management.decline` - Un preventivo negoziabile è stato rifiutato.
+
 ### Miglioramenti e correzioni di bug
 
 In questa versione sono inclusi i miglioramenti, le ottimizzazioni e le correzioni di bug seguenti:
@@ -152,6 +184,22 @@ In questa versione sono inclusi i miglioramenti, le ottimizzazioni e le correzio
 * È stato risolto un problema a causa del quale la richiesta di prezzi o totali del carrello poteva restituire un errore se il carrello conteneva un articolo esaurito. <!-- CEXT-6776 -->
 
 * È stato risolto un problema a causa del quale il consumer di inventario poteva sopraffare la coda di messaggi quando tentava di trovare uno SKU mancante. <!-- ACCS-1976 -->
+
+* La query GraphQL `customerDownloadableProducts` ora restituisce i metadati dei file per i prodotti scaricabili configurati con un URL esterno, in modo che gli storefront possano determinare il tipo di file e se aprire o scaricare la risorsa. <!-- ACCS-1735 -->
+
+* La query GraphQL `sourceAvailability` ora applica le autorizzazioni di categoria e catalogo condiviso B2B, pertanto gli acquirenti ricevono scorte per origine solo per i prodotti che possono vedere. <!-- ACCS-1888 -->
+
+* È stato risolto un problema che impediva ai clienti di impostare una password dal collegamento dell&#39;e-mail di benvenuto e impediva la visualizzazione dei nuovi clienti creati nella griglia clienti [!DNL Commerce Admin]. <!-- ACCS-1979 -->
+
+* È stato risolto un problema a causa del quale gli ordini modificati tramite l’API REST per la modifica degli ordini potevano salvare gli articoli con prezzo errato. <!-- ACCS-1982 -->
+
+* È stato risolto un problema a causa del quale i prodotti rimossi dal catalogo condiviso di un’azienda rimanevano visibili nella vetrina e venivano rilasciati automaticamente dal carrello. <!-- CCSAAS-5544 -->
+
+* È stato risolto un problema a causa del quale un prodotto catalogo condiviso in una categoria negato al gruppo di clienti veniva visualizzato nella vetrina ma non poteva essere aggiunto al carrello. L&#39;autorizzazione di rifiuto di una categoria ha ora la precedenza sull&#39;appartenenza a un catalogo condiviso. <!-- CCSAAS-5549 -->
+
+* È stato risolto un problema a causa del quale il posizionamento di un ordine tramite GraphQL poteva restituire un errore se un articolo IVA sulla spedizione non aveva alcun titolo. <!-- CCSAAS-5552 -->
+
+* È stato risolto un problema a causa del quale l&#39;endpoint REST `GET /V1/customers/:customerId/companyRoles` restituiva autorizzazioni vuote per un amministratore della società. <!-- ACCS-1998 -->
 
 {{accs-release}}
 
