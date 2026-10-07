@@ -1,24 +1,27 @@
 ---
 title: Filtri per consigli
-description: Scopri come utilizzare i filtri per controllare quali prodotti vengono visualizzati nei  [!DNL Adobe Commerce Optimizer]  consigli.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+description: Scopri come utilizzare i filtri per controllare quali prodotti vengono visualizzati nei consigli di [!DNL Adobe Commerce Optimizer].
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: c5a8861614fbf0e8d719305e239f926d5232ac49
+    internal-label: Personalization
+source-git-commit: 40374f0aa28d3635fc567c0311e452f92dc5704c
 workflow-type: tm+mt
-source-wordcount: 1932
+source-wordcount: '2334'
 ht-degree: 0%
-
 ---
-
 # Filtra prodotti
 
 [!DNL Adobe Commerce Optimizer] applica automaticamente filtri predefiniti non configurabili alle unità di consigli. Se in una pagina sono distribuite più unità di consigli, [!DNL Adobe Commerce Optimizer] esclude tutti i prodotti ripetuti nelle unità. Viene utilizzato solo il primo riferimento a un prodotto ripetuto, per fare spazio ad altri prodotti da consigliare. [!DNL Adobe Commerce Optimizer] esclude anche i prodotti acquistati in precedenza e quelli presenti nel carrello.
@@ -86,7 +89,7 @@ Utilizza un filtro prezzo **statico** quando desideri un prezzo minimo o massimo
 1. Nell&#39;elenco a sinistra, selezionare **[!UICONTROL Price]**.
 1. Attiva **[!UICONTROL Enable filter]**.
 
-   I valori di prezzo utilizzano la valuta di base del sito Web **&#x200B;**, come indicato nella pagina.
+   I valori di prezzo utilizzano la valuta di base del sito Web ****, come indicato nella pagina.
 
 1. Aprire **[!UICONTROL Include products based on]** (nella scheda **[!UICONTROL Inclusions]**) o il controllo equivalente nella scheda **[!UICONTROL Exclusions]** e scegliere **[!UICONTROL Set price range]**.
 1. Impostare un **[!UICONTROL Min price]** e/o un **[!UICONTROL Max price]** facoltativo utilizzando i campi accanto al simbolo di valuta. È possibile digitare gli importi o utilizzare i controlli **-** e **+** per regolare i valori. Lascia vuoto un limite se non hai bisogno di un minimo o di un massimo. L&#39;intervallo viene confrontato con il prezzo calcolato finale di ciascun prodotto per il listino prezzi attivo del negozio.
@@ -207,8 +210,73 @@ Per **inclusioni**, è possibile consigliare solo i prodotti con SKU elencati (e
 >
 >I prodotti secondari di un prodotto configurabile non vengono visualizzati in un&#39;unità di consigli perché tali prodotti secondari hanno la visibilità di _Non visibile singolarmente_.
 
-<!--
-### Attribute
+### Attributi {#attributes}
 
-You can filter products based on attribute criteria, including attribute values. Selected values use OR logic to either include or exclude products when any of the specified values are found.
+>[!NOTE]
+>
+>Il filtro degli attributi è in versione beta.
+
+I filtri attributi consentono di includere o escludere prodotti in base ai valori degli attributi del prodotto, utilizzando la stessa pagina **[!UICONTROL Filter products]** dei filtri [price](#price) e [product](#product).
+
+#### Informazioni sui filtri attributi
+
+Un filtro di attributi differisce da un [filtro di prodotto](#product) in quanto esegue il targeting dei prodotti in base ai valori di attributi condivisi anziché in base al singolo SKU. Ad esempio, invece di elencare tutti gli SKU assegnati a una categoria, puoi creare un singolo filtro di attributi che corrisponda a tutti i prodotti assegnati a tale categoria.
+
+#### Impostare un filtro attributi
+
+Per aggiungere una regola di inclusione o esclusione di attributi a un’unità di consigli, effettua le seguenti operazioni.
+
+1. Durante la [creazione o modifica](create.md) di un&#39;unità di consigli, passare a **[!UICONTROL Filter products]**.
+1. Selezionare la scheda **[!UICONTROL Inclusions]** o **[!UICONTROL Exclusions]**. Il badge in ogni scheda mostra il numero di filtri di quel tipo abilitati.
+1. Nell&#39;elenco a sinistra, selezionare **[!UICONTROL Attributes]**.
+1. Scegli un attributo dal selettore, ad esempio **Categoria**.
+1. In **[!UICONTROL Value]**, immettere un valore per l&#39;attributo, ad esempio **pantaloni**.
+1. Premi **Invio** o fai clic su **[!UICONTROL Add inclusion filter]** (o sul controllo di esclusione equivalente) per aggiungere il filtro attributi.
+1. Completa la configurazione dell’unità di consigli e salva o pubblica come di consueto, in modo che il filtro diventi effettivo.
+
+![Filtro attributi](../../assets/filter-attribute.png)
+
+>[!NOTE]
+>
+>Quando si seleziona un attributo i cui metadati impostano `number` su `true`, ad esempio **Dimensione**, il campo **Valore** visualizza gli input dell&#39;intervallo anziché un singolo valore di testo.
+
+#### Utilizzare le condizioni di inclusione ed esclusione
+
+È consentito consigliare solo i prodotti che corrispondono ai filtri di inclusione. I prodotti che corrispondono a qualsiasi filtro di esclusione non saranno consigliati.
+
+#### Combina condizioni
+
+Quando un filtro di attributi include più valori o è combinato con altre condizioni, viene applicata la logica seguente.
+
+- Se per lo stesso attributo sono selezionati più valori, questi vengono combinati con `OR`.
+- Le condizioni per attributi diversi (ad esempio, Colore e Dimensione) vengono combinate con `AND`. Un prodotto deve corrispondere a tutti. Se si aggiunge lo stesso attributo come condizione separata invece di immettere più valori in una condizione, anche queste condizioni vengono combinate con `AND`, non con `OR`.
+- Se sono presenti più condizioni di esclusione, un prodotto viene rimosso quando corrisponde a una qualsiasi delle condizioni di esclusione.
+- Se utilizzi sia filtri di inclusione che filtri di esclusione, consulta [Operatori logici](#logical-operators).
+
+<!--
+#### Availability by recommendation type
+
+Hiding this for now as we need better clarification on what "limited" means.
+
+Attribute filter support varies by recommendation type.
+
+| Recommendation type | Inclusion support | Exclusion support |
+| --- | --- | --- |
+| Most viewed | Yes | Yes |
+| Most purchased | Yes | Yes |
+| Trending | Yes | Yes |
+| Recommended for you | Limited | Yes |
+| Viewed this, viewed that | Limited | Yes |
+| Viewed this, bought that | Limited | Yes |
+| Bought this, bought that | Limited | Yes |
+| More like this | Limited | Yes |
+| Visual similarity | No | Yes |
+| Recently viewed | No | Limited |
+| Recently purchased | No | Limited |
 -->
+
+#### Disponibilità, convalida e risoluzione dei problemi
+
+- Se sono presenti valori di attributo vuoti o condizioni non valide, i consigli non vengono riprodotti nella vetrina o nel pannello di anteprima.
+- I valori degli attributi devono corrispondere esattamente a quelli presenti nel catalogo, compresi spazi e maiuscole/minuscole.
+- Se nessuno dei prodotti soddisfa i criteri di filtro, i consigli non vengono riprodotti nella vetrina o nel pannello di anteprima.
