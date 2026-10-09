@@ -92,7 +92,7 @@ Per abilitare [!DNL Adobe Commerce Optimizer Connector] e iniziare la sincronizz
 
 1. **[Personalizzare la configurazione di esportazione degli ambiti di Commerce](#customize-the-commerce-scopes-export-configuration)** dall&#39;amministratore.
 
-1. **[Abilita l&#39;integrazione [!DNL Commerce Optimizer] ](#enable-the-adobe-commerce-optimizer-integration)**.
+1. **[Abilita l&#39;integrazione [!DNL Commerce Optimizer] &#x200B;](#enable-the-adobe-commerce-optimizer-integration)**.
 
 1. **[Verificare che la sincronizzazione dei dati funzioni](#verify-that-the-data-sync-is-working)**.
 

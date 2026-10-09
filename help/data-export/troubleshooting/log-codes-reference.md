@@ -1,5 +1,5 @@
 ---
-title: '[!Data Esporta] riferimento codici di registro'
+title: '[ !Data Esporta] riferimento codici di registro'
 description: Elenco di riferimento per codici di registro, messaggi e livelli di gravità dell’esportazione dei dati, per risolvere i problemi di sincronizzazione e decidere quando è necessaria una risincronizzazione parziale o completa.
 autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services
