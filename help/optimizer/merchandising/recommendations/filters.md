@@ -1,7 +1,7 @@
 ---
 title: Filtri per consigli
 description: Scopri come utilizzare i filtri per controllare quali prodotti vengono visualizzati nei consigli di [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
 product_v2:
@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 40374f0aa28d3635fc567c0311e452f92dc5704c
+source-git-commit: 092ffabea06cf72af39a663c14b448f9e7633f60
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2364'
 ht-degree: 0%
 ---
 # Filtra prodotti
@@ -89,7 +89,7 @@ Utilizza un filtro prezzo **statico** quando desideri un prezzo minimo o massimo
 1. Nell&#39;elenco a sinistra, selezionare **[!UICONTROL Price]**.
 1. Attiva **[!UICONTROL Enable filter]**.
 
-   I valori di prezzo utilizzano la valuta di base del sito Web **&#x200B;**, come indicato nella pagina.
+   I valori di prezzo utilizzano la valuta di base del sito Web ****, come indicato nella pagina.
 
 1. Aprire **[!UICONTROL Include products based on]** (nella scheda **[!UICONTROL Inclusions]**) o il controllo equivalente nella scheda **[!UICONTROL Exclusions]** e scegliere **[!UICONTROL Set price range]**.
 1. Impostare un **[!UICONTROL Min price]** e/o un **[!UICONTROL Max price]** facoltativo utilizzando i campi accanto al simbolo di valuta. È possibile digitare gli importi o utilizzare i controlli **-** e **+** per regolare i valori. Lascia vuoto un limite se non hai bisogno di un minimo o di un massimo. L&#39;intervallo viene confrontato con il prezzo calcolato finale di ciascun prodotto per il listino prezzi attivo del negozio.
@@ -280,3 +280,11 @@ Attribute filter support varies by recommendation type.
 - Se sono presenti valori di attributo vuoti o condizioni non valide, i consigli non vengono riprodotti nella vetrina o nel pannello di anteprima.
 - I valori degli attributi devono corrispondere esattamente a quelli presenti nel catalogo, compresi spazi e maiuscole/minuscole.
 - Se nessuno dei prodotti soddisfa i criteri di filtro, i consigli non vengono riprodotti nella vetrina o nel pannello di anteprima.
+
+### Esaurito
+
+Il seguente filtro di esclusione può filtrare i prodotti in base allo stato delle scorte:
+
+- Esaurito - (solo esclusione) esclude i prodotti esauriti.
+
+![Filtro stato magazzino](../../assets/filter-stock-status.png)
