@@ -157,6 +157,6 @@ Di seguito è riportata una panoramica generale sull&#39;utilizzo dello strument
 
 >[!MORELIKETHIS]
 >
-> Demo video sullo strumento Importazione in blocco di [](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
+> Demo video sullo strumento Importazione in blocco di [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
 > [Suggerimenti, best practice e limitazioni](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
 > [Carica o acquisisci risorse tramite API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
