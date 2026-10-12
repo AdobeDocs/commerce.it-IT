@@ -27,7 +27,7 @@ ht-degree: 0%
 * Per Adobe Commerce as a Cloud Service, l’amministratore abilita l’autenticazione IMS per impostazione predefinita.
 * Per Adobe Commerce su cloud o on-premise, IMS è facoltativo.
 
-  [L&#39;abilitazione di IMS per Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} fornisce un&#39;interfaccia utente di configurazione avanzata (selettore risorse, elenchi a discesa con compilazione automatica), ma è possibile configurare l&#39;integrazione senza IMS immettendo manualmente **ID programma** e **ID ambiente**.
+  [L&#39;abilitazione di IMS per Commerce](https://experienceleague.adobe.com/it/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} fornisce un&#39;interfaccia utente di configurazione avanzata (selettore risorse, elenchi a discesa con compilazione automatica), ma è possibile configurare l&#39;integrazione senza IMS immettendo manualmente **ID programma** e **ID ambiente**.
 
 Quando si utilizza IMS, l&#39;integrazione AEM Assets richiede anche **profili di prodotto Adobe Admin Console** specifici. Gli utenti che configurano l&#39;integrazione in Commerce Admin hanno bisogno del profilo di prodotto **Utenti AEM Assets DM OpenAPI - delivery** oppure del profilo di prodotto **author** come fallback. Questo accesso è controllato tramite i profili di prodotto di Admin Console nell’organizzazione IMS dell’utente e consente di:
 
@@ -73,7 +73,7 @@ Aggiungi l&#39;utente al profilo di prodotto **Utenti OpenAPI di AEM Assets DM -
 
 >[!NOTE]
 >
-> Gli utenti devono essere aggiunti anche a Commerce e AEM Assets. Consulta [Aggiungere un utente ad AEM Assets o Product Visuals](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} nella _Guida per l&#39;utente e Identity Management_ per l&#39;installazione completa.
+> Gli utenti devono essere aggiunti anche a Commerce e AEM Assets. Consulta [Aggiungere un utente ad AEM Assets o Product Visuals](https://experienceleague.adobe.com/it/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} nella _Guida per l&#39;utente e Identity Management_ per l&#39;installazione completa.
 
 ![Profilo prodotto Admin Console per la consegna AEM Assets](../assets/aem-assets-delivery-product-profile.png){width="600" zoomable="yes"}
 
@@ -85,9 +85,9 @@ L&#39;ID client **IMS** è necessario affinché PaaS abiliti il selettore risors
 
 Per utilizzare il Selettore risorse e i campi di configurazione con compilazione automatica (ID programma, ID ambiente, Mappatura dominio):
 
-1. [Abilita Adobe IMS per Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} in modo che l&#39;amministratore di Commerce utilizzi l&#39;autenticazione IMS e possa leggere i profili di prodotto Admin Console dell&#39;utente.
+1. [Abilita Adobe IMS per Commerce](https://experienceleague.adobe.com/it/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} in modo che l&#39;amministratore di Commerce utilizzi l&#39;autenticazione IMS e possa leggere i profili di prodotto Admin Console dell&#39;utente.
 
-1. Per richiedere un ID client IMS personalizzato per il selettore risorse, [Apri un ticket di supporto](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
+1. Per richiedere un ID client IMS personalizzato per il selettore risorse, [Apri un ticket di supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
 
 1. Da [Adobe Admin Console](https://adminconsole.adobe.com/), aggiungi l&#39;utente al profilo di prodotto **Utenti OpenAPI di AEM Assets DM - delivery** oppure al profilo di prodotto **author** come fallback.
 
@@ -99,6 +99,6 @@ Senza IMS, puoi comunque configurare l’integrazione immettendo manualmente l�
 
 * [Configurare le autorizzazioni utente IMS per l&#39;integrazione di AEM Assets](setup-synchronization.md)—Connettere Commerce ad AEM Assets e configurare le regole corrispondenti.
 * [Selezione manuale delle risorse](../synchronize/asset-selector-integration.md): utilizza il selettore delle risorse per le immagini delle categorie e Page Builder.
-* [Aggiungi un utente ad AEM Assets o ai visualizzatori di prodotto](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank}. Per [!DNL Adobe Commerce as a Cloud Service], aggiungi prima gli utenti a Commerce e AEM Cloud Manager (Proprietario business, Responsabile della distribuzione). Il profilo **Utenti OpenAPI di AEM Assets DM - consegna** (o profilo **autore** come fallback) è un requisito aggiuntivo per le funzioni Selettore risorse e di compilazione automatica.
-* [Assegna membri del gruppo al livello di consegna di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}. Documentazione di AEM per l’accesso alla consegna.
+* [Aggiungi un utente ad AEM Assets o ai visualizzatori di prodotto](https://experienceleague.adobe.com/it/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank}. Per [!DNL Adobe Commerce as a Cloud Service], aggiungi prima gli utenti a Commerce e AEM Cloud Manager (Proprietario business, Responsabile della distribuzione). Il profilo **Utenti OpenAPI di AEM Assets DM - consegna** (o profilo **autore** come fallback) è un requisito aggiuntivo per le funzioni Selettore risorse e di compilazione automatica.
+* [Assegna membri del gruppo al livello di consegna di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}. Documentazione di AEM per l’accesso alla consegna.
 

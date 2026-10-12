@@ -2,7 +2,7 @@
 title: Verifica accesso al servizio di migrazione
 description: Scopri come verificare l’accesso end-to-end all’API del servizio di migrazione dati di Commerce, confermando la raggiungibilità della rete, l’autenticazione IMS e l’autorizzazione del tenant.
 feature: Cloud
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:18:53.554Z'

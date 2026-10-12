@@ -3,7 +3,7 @@ title: Gestire le chiavi di accesso limitate per i cataloghi condivisi B2B
 description: Scopri come gestire le chiavi di accesso limitato che il connettore Adobe Commerce Optimizer utilizza per proteggere le proiezioni di cataloghi condivisi B2B.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -62,7 +62,7 @@ Dall&#39;amministratore di Commerce, passa a **[!UICONTROL System]** > **[!UICON
 
 >[!NOTE]
 >
->Per un riferimento ai campi di questa pagina, [Gestione chiavi di accesso con restrizioni](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} nella *Guida per l&#39;amministratore di Commerce*.—>
+>Per un riferimento ai campi di questa pagina, [Gestione chiavi di accesso con restrizioni](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} nella *Guida per l&#39;amministratore di Commerce*.—>
 
 ## Quando è necessario più del tasto automatico {#when-you-need-more-than-the-automatic-key}
 
@@ -161,7 +161,7 @@ La rotazione automatica dei tasti non è ancora disponibile.
 
 >[!MORELIKETHIS]
 >
-> - [Gestisci chiavi di accesso con restrizioni](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — Riferimento completo al campo per questa pagina, nella *Guida per l&#39;amministratore di Commerce* —>
+> - [Gestisci chiavi di accesso con restrizioni](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — Riferimento completo al campo per questa pagina, nella *Guida per l&#39;amministratore di Commerce* —>
 > - [Monitora sincronizzazione visualizzazione catalogo](catalog-view-sync-status.md) — Controlla le visualizzazioni catalogo protette da queste chiavi
 > - [Visualizzazioni catalogo privato](/help/optimizer/setup/private-catalog-view.md) — Scopri cos’è una visualizzazione catalogo privato gestita dal connettore
 > - [Chiavi di accesso limitate](/help/optimizer/setup/restricted-access-keys.md): scopri come funziona il flusso di chiavi manuale basato su ACO Studio per i casi di utilizzo non B2B
