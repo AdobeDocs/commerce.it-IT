@@ -1,10 +1,10 @@
 ---
 title: Monitorare la sincronizzazione della visualizzazione catalogo per i cataloghi condivisi B2B
-last-update: 2026-09-03
+last-update: 2026-09-03T00:00:00.000Z
 description: Utilizzare la pagina Stato di sincronizzazione della visualizzazione del catalogo per monitorare e riconciliare i dati di visualizzazione del catalogo, i criteri, il riferimento al listino prezzi e i dati di configurazione chiave sincronizzati con Adobe Commerce Optimizer.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -19,6 +19,8 @@ feature_v2:
     internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
     internal-label: Data Transfer
@@ -35,7 +37,7 @@ topic_v2:
     internal-label: Data management
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: 1fd5e3d84d5249ce96014cae46e045528d2790d0
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 0%
@@ -66,7 +68,7 @@ Nella scheda [!UICONTROL Catalog View] ogni riga rappresenta una visualizzazione
 | **Ritiro** | Hai eliminato il catalogo condiviso in [!DNL Adobe Commerce]. La vista catalogo è ancora accessibile fino alla scadenza del periodo di tolleranza per l’eliminazione. Il periodo di tolleranza predefinito è di sette giorni. È possibile modificare il valore predefinito aggiornando le [impostazioni di sincronizzazione della visualizzazione catalogo](#configure-aco-catalog-view-sync-settings). |
 | **Orfano** | La visualizzazione o la chiave del catalogo è stata creata direttamente in [!DNL Adobe Commerce Optimizer] Studio, non dal connettore. Vedi [Rivedi voci orfane ed eliminate](#review-orphaned-and-deleted-entries). |
 
-[!UICONTROL Healthy], [!UICONTROL Pending] e [!UICONTROL Deleted] sono stati informativi che non richiedono alcun intervento. Per l&#39;elenco completo, vedere [Sincronizzare i valori di stato](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"} nella *Guida dell&#39;amministratore di Commerce*.
+[!UICONTROL Healthy], [!UICONTROL Pending] e [!UICONTROL Deleted] sono stati informativi che non richiedono alcun intervento. Per l&#39;elenco completo, vedere [Sincronizzare i valori di stato](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"} nella *Guida dell&#39;amministratore di Commerce*.
 
 ### Configura le impostazioni di sincronizzazione della vista catalogo ACO {#configure-aco-catalog-view-sync-settings}
 

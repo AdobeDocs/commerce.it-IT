@@ -4,25 +4,34 @@ description: Scopri come utilizzare Adobe Journey Optimizer per inviare un’e-m
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 229fac48-1c7f-4b3a-8edf-6086b7361911
-TQID: https://experienceleague.adobe.com/p4p0Gde7aPp15kj1KJTiCAijRF7wBnKDqhJN-pHgFKU
+TQID: 'https://experienceleague.adobe.com/p4p0Gde7aPp15kj1KJTiCAijRF7wBnKDqhJN-pHgFKU'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+    internal-label: Administration
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 1404
+source-wordcount: '1404'
 ht-degree: 0%
-
 ---
-
 # Utilizzare Adobe Journey Optimizer per inviare un messaggio e-mail per carrello abbandonato
 
 Scopri come inviare un’e-mail o una notifica di ricoinvolgimento personalizzata se una sessione del carrello o del browser è stata abbandonata. In questo articolo, puoi utilizzare dati generati da clienti che hanno visualizzato una serie di prodotti e categorie, che sono coinvolti in un prodotto o che hanno trascorso del tempo su una pagina.
@@ -34,7 +43,7 @@ Crea un carrello abbandonato, sfoglia le e-mail o notifica utilizzando i dati pr
 | Tipi di dati | Dati storefront (eventi comportamentali) | Dati di back office (eventi lato server) |
 |---|---|---|
 | **Definizione** | Clic o azioni eseguite dai clienti sul sito. | Informazioni sul ciclo di vita e dettagli di ciascun ordine (passato e corrente). |
-| **Eventi acquisiti da Adobe Commerce** | [pageView](https://experienceleague.adobe.com/it/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/it/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/it/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/it/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/it/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/it/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/it/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Storico ordini](https://experienceleague.adobe.com/it/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
+| **Eventi acquisiti da Adobe Commerce** | [pageView](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Storico ordini](https://experienceleague.adobe.com/en/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
 
 ### Quali sono stati i risultati ottenuti dagli altri clienti? {#what-have-other-customers-achieved}
 
@@ -60,7 +69,7 @@ Questo caso d&#39;uso particolare si concentra sulla creazione di un&#39;e-mail 
 
 ### Cos’è Adobe Journey Optimizer?
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/get-started/essentials/get-started) ti consente di personalizzare l&#39;esperienza di e-commerce per i tuoi acquirenti. Ad esempio, puoi utilizzare Journey Optimizer per creare e distribuire campagne di marketing pianificate, come le promozioni settimanali di un negozio al dettaglio, o generare un’e-mail abbandonato nel carrello se un cliente ha aggiunto un prodotto a un carrello ma non lo ha completato.
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/essentials/get-started) ti consente di personalizzare l&#39;esperienza di e-commerce per i tuoi acquirenti. Ad esempio, puoi utilizzare Journey Optimizer per creare e distribuire campagne di marketing pianificate, come le promozioni settimanali di un negozio al dettaglio, o generare un’e-mail abbandonato nel carrello se un cliente ha aggiunto un prodotto a un carrello ma non lo ha completato.
 
 In questo argomento imparerai a creare un&#39;e-mail del carrello abbandonata ascoltando un evento `checkout` generato dalla tua istanza di [!DNL Commerce] e rispondendo a tale evento in Journey Optimizer.
 
@@ -96,7 +105,7 @@ Crea un utente nell’ambiente sandbox e verifica che le informazioni sull’acc
 
 Nell&#39;ambiente sandbox [!DNL Commerce], attiva gli eventi nella vetrina visualizzando le pagine dei prodotti, aggiungendo elementi al carrello e completando varie altre attività eseguite da un acquirente. Quindi, verifica che questi eventi vengano trasmessi a Journey Optimizer.
 
-1. Avvia [Adobe Journey Optimizer](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/get-started/work-efficiently/user-interface).
+1. Avvia [Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/work-efficiently/user-interface).
 1. Selezionare **[!UICONTROL Profiles]**.
 1. Imposta **[!UICONTROL Identity namespace]** su `Email`.
 1. Imposta **[!UICONTROL Identity value]** sul tuo indirizzo e-mail.
@@ -125,7 +134,7 @@ Configurare due eventi in Journey Optimizer: uno ascolta l&#39;evento `commerce.
 
 ### Creare un evento listener
 
-1. Avvia [Adobe Journey Optimizer](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/get-started/work-efficiently/user-interface).
+1. Avvia [Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/work-efficiently/user-interface).
 
 1. Fare clic su **[!UICONTROL Configurations]** nella sezione **[!UICONTROL Administration]** del riquadro sinistro.
 
@@ -198,7 +207,7 @@ Crea un’e-mail carrello abbandonata che viene inviata quando viene rilevato un
 
 1. Nel percorso creato in precedenza, fare doppio clic sull&#39;icona **[!UICONTROL Email]** nell&#39;area di lavoro.
 
-1. Segui i [passaggi](https://experienceleague.adobe.com/it/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions#configure-email) nella guida di Journey Optimizer per creare l’e-mail del carrello abbandonato.
+1. Segui i [passaggi](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions#configure-email) nella guida di Journey Optimizer per creare l’e-mail del carrello abbandonato.
 
 Ora disponi di un percorso in Journey Optimizer che ascolta l&#39;evento `commerce.checkouts` dal tuo archivio [!DNL Commerce] e di un&#39;e-mail del carrello abbandonata, inviata dopo un certo periodo di tempo. Nella sezione successiva viene illustrato come verificare il funzionamento del percorso.
 

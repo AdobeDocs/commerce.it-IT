@@ -5,7 +5,7 @@ feature: Cloud, Integration
 role: User, Leader
 level: Beginner
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 autotag-review: '2026-06-18T16:06:00.993Z'
 TQID: 'https://experienceleague.adobe.com/4L-M8vsEkT6uuafrOISankRaarQ-OVHDWLXwoVLaUZQ'
 product_v2:
@@ -20,6 +20,10 @@ feature_v2:
     internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: ae62cf09-5996-4921-bda8-fbe67b62e470
     internal-label: Storefront configuration
@@ -38,7 +42,7 @@ topic_v2:
     internal-label: Experimentation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 3834c95713e05a24f31c2f9c4d82ae8f56526c90
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1468'
 ht-degree: 0%
@@ -56,7 +60,7 @@ Prima di provare a eseguire uno di questi casi d&#39;uso, è necessario soddisfa
 1. [Crea la tua istanza di Cloud Service](./getting-started.md#create-an-instance) utilizzando le seguenti opzioni:
    1. Seleziona [!UICONTROL **Sandbox**] nel menu a discesa [!UICONTROL **Ambiente**].
    1. Seleziona [!UICONTROL **Adobe Store**] nel menu a discesa [!UICONTROL **Dati di prova**].
-1. [Accedi al tuo account  [!DNL Adobe Experience Cloud] &#x200B;](https://experience.adobe.com)
+1. [Accedi al tuo account  [!DNL Adobe Experience Cloud] ](https://experience.adobe.com)
 1. [Configura la vetrina di Cloud Service](./storefront.md) utilizzando le seguenti opzioni:
    1. Selezionare [!UICONTROL `adobe-commerce/adobe-demo-store`] per il modello.
    1. Selezionare [!UICONTROL **Scegli un&#39;istanza disponibile (Mesh -> SaaS)**] per il metodo di connessione.
@@ -230,7 +234,7 @@ Considera uno scenario in cui desideri modificare rapidamente lo sfondo di un’
 
 #### Aggiungi immagine a [!DNL Commerce AEM Assets]
 
-1. Dal [Pannello di navigazione](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) di [!DNL AEM as a Cloud Service], seleziona [!UICONTROL **Assets**] > [!UICONTROL **File**] > [!UICONTROL **Commerce**] e fai clic sulla risorsa creata nella sezione precedente.
+1. Dal [Pannello di navigazione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) di [!DNL AEM as a Cloud Service], seleziona [!UICONTROL **Assets**] > [!UICONTROL **File**] > [!UICONTROL **Commerce**] e fai clic sulla risorsa creata nella sezione precedente.
 
    ![Cartella Commerce in [!DNL AEM Assets] con immagini prodotto](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -280,7 +284,7 @@ Generate Variations di [!DNL Adobe Commerce] sfrutta l&#39;intelligenza artifici
 
 ### Genera testo
 
-1. Apri il tuo sito di vetrina utilizzando [Universal Editor](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+1. Apri il tuo sito di vetrina utilizzando [Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 1. Selezionare il blocco di testo da modificare.
 
@@ -294,7 +298,7 @@ Generate Variations di [!DNL Adobe Commerce] sfrutta l&#39;intelligenza artifici
 
 ### Generare contenuti e immagini
 
-1. Apri [[!DNL Generate Variations]](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/ai-in-aem/generate-variations/generate-variations).
+1. Apri [[!DNL Generate Variations]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/generate-variations/generate-variations).
 
 1. Selezionare il modello [!UICONTROL **Banner principale**].
 

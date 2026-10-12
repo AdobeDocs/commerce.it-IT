@@ -1,16 +1,24 @@
 ---
-title: Cos'è  [!DNL Adobe Commerce Optimizer]?
-description: Scopri  [!DNL Adobe Commerce Optimizer]  e le sue funzionalità chiave.
+title: Cos'è [!DNL Adobe Commerce Optimizer]?
+description: Informazioni su [!DNL Adobe Commerce Optimizer] e le relative funzioni chiave.
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1009'
 ht-degree: 0%
-
 ---
-
 # Cos&#39;è [!DNL Adobe Commerce Optimizer]?
 
 [!DNL Adobe Commerce Optimizer] migliora la tua esperienza di e-commerce con una vetrina ad alte prestazioni, aumentando il traffico organico, il coinvolgimento dei clienti e i ricavi.
@@ -26,7 +34,7 @@ Con [!DNL Adobe Commerce Optimizer] è possibile:
 
 Guarda il seguente video per una panoramica di alto livello di [!DNL Adobe Commerce Optimizer]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450471?captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Chi trae il massimo vantaggio da [!DNL Adobe Commerce Optimizer]?
 

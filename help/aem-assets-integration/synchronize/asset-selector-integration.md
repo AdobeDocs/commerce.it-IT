@@ -3,24 +3,34 @@ title: Selezione manuale delle risorse
 description: Scopri in che modo il Selettore risorse di AEM integrato nell’amministratore di Commerce consente agli addetti al marketing e ai merchandising di aggiungere facilmente immagini da AEM Assets ad Adobe Commerce, semplificando la gestione delle risorse.
 feature: CMS, Media, Integration
 exl-id: 3c1f906f-3ec3-4eac-a47e-b21792767359
-TQID: https://experienceleague.adobe.com/3fYabUvRiY8KTxQX1YiTBbLxABpQqfZLu0a6IBDsM3E
+TQID: 'https://experienceleague.adobe.com/3fYabUvRiY8KTxQX1YiTBbLxABpQqfZLu0a6IBDsM3E'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+    internal-label: Digital asset management
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 397
+source-wordcount: '397'
 ht-degree: 0%
-
 ---
-
 # Selezione manuale delle risorse
 
 **Selettore risorse AEM** consente agli addetti al marketing e ai merchandising di aggiungere facilmente immagini da AEM Assets ad Adobe Commerce, semplificando il processo di gestione delle risorse. Questo metodo garantisce la coerenza del marchio e la conformità limitando la selezione delle risorse a quelle esaminate e approvate in [!DNL DAM (Digital Asset Management system)].
@@ -31,11 +41,11 @@ Quando l&#39;integrazione **AEM Asset Selector** è configurata, gli addetti al 
 
 * Gestisci le immagini delle categorie in modo semplice, garantendone l’allineamento con le linee guida del marchio e della campagna.
 * [!BADGE Solo PaaS]{type=Informative tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe)."} Assegna risorse direttamente in Page Builder per contenuti visivamente avanzati.
-* [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."} Assegna Assets direttamente in Commerce Storefront con tecnologia Edge Delivery Services per contenuti arricchiti visivamente.
+* [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."} Assegna Assets direttamente in Commerce Storefront con tecnologia Edge Delivery Services per contenuti arricchiti visivamente.
 
 >[!NOTE]
 >
-> AEM Asset Selector è un componente front-end di AEM Assets che consente di integrare AEM Assets con le applicazioni di authoring. Per ulteriori informazioni su questo componente, vedi [Selettore risorse micro-front](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/content-advisor/integrate-adobe-non-adobe-applications){target=_blank} nella *Guida utente di AEM as a Cloud Service*.
+> AEM Asset Selector è un componente front-end di AEM Assets che consente di integrare AEM Assets con le applicazioni di authoring. Per ulteriori informazioni su questo componente, vedi [Selettore risorse micro-front](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-advisor/integrate-adobe-non-adobe-applications){target=_blank} nella *Guida utente di AEM as a Cloud Service*.
 
 ## Vantaggi principali
 

@@ -1,17 +1,35 @@
 ---
-title: Onboarding  [!DNL Payment Services]  flusso
-description: Connetti la tua istanza a [!DNL Payment Services] completando l'onboarding per la tua distribuzione Adobe Commerce, con sandbox e passaggi di produzione per PaaS, on-premise e SaaS.
+title: Onboarding del flusso [!DNL Payment Services]
+description: Connetti l'istanza a [!DNL Payment Services] completando l'onboarding per la distribuzione Adobe Commerce, con sandbox e passaggi di produzione per PaaS, on-premise e SaaS.
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 feature: Payments, Checkout, Integration, Paas, Saas
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '633'
 ht-degree: 0%
-
 ---
-
 # Onboarding del flusso [!DNL Payment Services]
 
 Per iniziare a utilizzare [!DNL Payment Services], devi completare alcuni passaggi di onboarding. Per istruzioni precise, seleziona l’opzione Adobe Commerce seguente che si allinea al meglio all’istanza e alla versione della tua organizzazione.
@@ -42,7 +60,7 @@ Questo diagramma di flusso mostra il processo sandbox di onboarding con un Adobe
 1. [Configurare il servizio sandbox](sandbox.md#sandbox-onboarding)
 1. Verifica dei pagamenti in un ambiente [sandbox](sandbox.md#test-in-sandbox-environment).
 
-[![ulteriori informazioni](assets/learn-more-button.svg)](https://helpx.adobe.com/it/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![ulteriori informazioni](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB Produzione]
 
@@ -77,13 +95,13 @@ Questo diagramma di flusso mostra i passaggi sandbox necessari per l&#39;onboard
 
 **Passaggi di onboarding per le versioni v2.4.0-2.4.6 Parte 1: Sandbox**
 
-1. [Installare l&#39;estensione [!DNL Payment Services] &#x200B;](install.md#get-payment-services) se necessario.
+1. [Installare l&#39;estensione [!DNL Payment Services] ](install.md#get-payment-services) se necessario.
 1. [Ottieni credenziali API](connect.md#obtain-api-credentials).
 1. [Connetti l&#39;istanza](connect.md#configure-commerce-services) ai servizi Commerce. Questa connessione deve essere completata una sola volta per ogni istanza di Commerce.
 1. [Configurare il servizio sandbox](sandbox.md#sandbox-onboarding)
 1. Verifica dei pagamenti in un ambiente [sandbox](sandbox.md#test-in-sandbox-environment).
 
-[![ulteriori informazioni](assets/learn-more-button.svg)](https://helpx.adobe.com/it/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![ulteriori informazioni](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB Produzione]
 
@@ -110,8 +128,8 @@ Questo diagramma di flusso mostra il processo generale per abilitare [!DNL Payme
 
 >[!MORELIKETHIS]
 >
-> * [Risoluzione dei problemi [!DNL Payment Services] installazione](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-26826)
-> * [Conto sandbox PayPal non verificato](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-26836)
-> * [Dati di report](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-26837) ritardati [!DNL Payment Services] 
-> * [Il test della carta di credito non riesce con PayPal durante l&#39;elaborazione dei pagamenti in un ambiente Sandbox](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-26825)
-> * [Disabilita l&#39;estensione [!DNL Payment Services] &#x200B;](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)
+> * [Risoluzione dei problemi [!DNL Payment Services] installazione](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26826)
+> * [Conto sandbox PayPal non verificato](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26836)
+> * [Dati di report](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26837) ritardati [!DNL Payment Services] 
+> * [Il test della carta di credito non riesce con PayPal durante l&#39;elaborazione dei pagamenti in un ambiente Sandbox](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26825)
+> * [Disabilita l&#39;estensione [!DNL Payment Services] ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)

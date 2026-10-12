@@ -2,7 +2,15 @@
 title: Limiti e limiti
 description: Scopri i limiti e le limitazioni di [!DNL Product Recommendations] per garantire che soddisfi le esigenze della tua azienda.
 role: Admin, Developer
-source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '893'
 ht-degree: 0%
@@ -14,10 +22,10 @@ Rivedi i limiti e le limitazioni seguenti per garantire che [!DNL Product Recomm
 ## Generale
 
 - **SKU con spazi** - Gli SKU contenenti spazi possono ridurre la rilevanza dei consigli e devono essere evitati quando possibile.
-- **Pagina carrello** - I consigli di prodotto non sono supportati nella pagina del carrello quando lo store è configurato per [visualizzare la pagina del carrello subito dopo aver aggiunto un prodotto al carrello](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration). Consulta [Creare consigli](create.md).
+- **Pagina carrello** - I consigli di prodotto non sono supportati nella pagina del carrello quando lo store è configurato per [visualizzare la pagina del carrello subito dopo aver aggiunto un prodotto al carrello](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration). Consulta [Creare consigli](create.md).
 - **Prodotti secondari** - I prodotti secondari di un prodotto configurabile (visibilità _Non visibile singolarmente_) non vengono visualizzati in un&#39;unità di consigli. Può essere visualizzato solo il prodotto configurabile (padre). Vedi [Filtra prodotti](filters.md#product).
 - **Prodotti disabilitati o non visibili** - I prodotti disabilitati o non visibili singolarmente non possono mai essere visualizzati nei consigli e non possono essere selezionati nei filtri dei prodotti.
-- **Prezzi speciali** - [I prezzi speciali](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/products/pricing/product-price-special) con date di inizio e fine non sono supportati nelle unità di consigli. Un prodotto con un prezzo speciale può essere visualizzato nei consigli, ma l’unità non visualizza il prezzo speciale, la data di inizio o la data di fine. Gli acquirenti vedono il prezzo regolare (o altri dati sui prezzi forniti dal catalogo/feed dei prezzi) fino a quando non aprono la pagina del prodotto.
+- **Prezzi speciali** - [I prezzi speciali](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) con date di inizio e fine non sono supportati nelle unità di consigli. Un prodotto con un prezzo speciale può essere visualizzato nei consigli, ma l’unità non visualizza il prezzo speciale, la data di inizio o la data di fine. Gli acquirenti vedono il prezzo regolare (o altri dati sui prezzi forniti dal catalogo/feed dei prezzi) fino a quando non aprono la pagina del prodotto.
 
 ## Unità consigli
 
@@ -41,7 +49,7 @@ Rivedi i limiti e le limitazioni seguenti per garantire che [!DNL Product Recomm
 
 ## Limitazioni per i cookie
 
-- Quando la modalità di restrizione dei cookie [1&rbrace; è attivata e gli acquirenti non hanno accettato i cookie, alcuni tipi di consigli che si basano su dati comportamentali potrebbero non essere visualizzati o mostrare risultati limitati.](setting-cookie.md)
+- Quando la modalità di restrizione dei cookie [1} è attivata e gli acquirenti non hanno accettato i cookie, alcuni tipi di consigli che si basano su dati comportamentali potrebbero non essere visualizzati o mostrare risultati limitati.](setting-cookie.md)
 - I tipi di consigli che non si basano su dati comportamentali (ad esempio, _Più visualizzati_, _Somiglianza visiva_) continuano a funzionare quando le restrizioni dei cookie sono abilitate.
 - Quando le restrizioni sui cookie sono abilitate, la funzione Consigli di prodotto non raccoglie né memorizza i dati comportamentali nei cookie o nell’archiviazione locale fino a quando l’acquirente non acconsente.
 
@@ -51,7 +59,7 @@ Rivedi i limiti e le limitazioni seguenti per garantire che [!DNL Product Recomm
 
 ## B2B
 
-- La funzione Consigli di prodotto rispetta [le autorizzazioni per la categoria](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/categories/category-permissions), [i cataloghi condivisi](https://experienceleague.adobe.com/it/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) e i prezzi specifici del gruppo di clienti. Gli acquirenti vedono solo i consigli per i prodotti a cui possono accedere in base al segmento e all’assegnazione del catalogo. Consulta [Onboarding](onboarding.md).
+- La funzione Consigli di prodotto rispetta [le autorizzazioni per la categoria](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions), [i cataloghi condivisi](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) e i prezzi specifici del gruppo di clienti. Gli acquirenti vedono solo i consigli per i prodotti a cui possono accedere in base al segmento e all’assegnazione del catalogo. Consulta [Onboarding](onboarding.md).
 
 ## Dati e preparazione
 
@@ -60,4 +68,4 @@ Rivedi i limiti e le limitazioni seguenti per garantire che [!DNL Product Recomm
 
 ## Risoluzione dei problemi
 
-Per informazioni sulla sincronizzazione del catalogo, sulla mancata visualizzazione dei consigli o su altri problemi comuni, eseguire una ricerca nella [Knowledge Base di Commerce](https://experienceleague.adobe.com/it/docs/commerce-knowledge-base/kb/overview) o contattare il [supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+Per informazioni sulla sincronizzazione del catalogo, sulla mancata visualizzazione dei consigli o su altri problemi comuni, eseguire una ricerca nella [Knowledge Base di Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) o contattare il [supporto](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).

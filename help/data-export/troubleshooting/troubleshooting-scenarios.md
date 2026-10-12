@@ -1,36 +1,49 @@
 ---
-title: Risoluzione dei problemi relativi a  [!DNL SaaS Data Export]
-description: Scopri come diagnosticare e risolvere comportamenti di sincronizzazione imprevisti [!DNL SaaS Data Export] causati da configurazione errata, impostazioni di indicizzazione o interpretazione errata dei risultati di sincronizzazione.
+title: Risoluzione dei problemi relativi a [!DNL SaaS Data Export]
+description: Scopri come diagnosticare e risolvere il comportamento imprevisto di sincronizzazione di [!DNL SaaS Data Export] causato da configurazione errata, impostazioni di indicizzazione o interpretazione errata dei risultati di sincronizzazione.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
+    internal-label: Data Transfer
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+    internal-label: Troubleshooting
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 983
+source-wordcount: '984'
 ht-degree: 0%
-
 ---
-
 
 # Risoluzione dei problemi relativi a [!DNL SaaS Data Export]
 
@@ -84,9 +97,9 @@ La correzione immediata per questo problema è una soluzione alternativa: config
 1. Dalla vetrina Commerce, apri i risultati della ricerca. Quindi, seleziona il prodotto in questione per aprirne la vista dettagliata.
 1. Copiare l&#39;output JSON e verificare che corrisponda a quello presente nel catalogo [!DNL Commerce].
 1. Se il contenuto non corrisponde, apporta una modifica minore al prodotto nel catalogo, ad esempio aggiungendo uno spazio o un punto, per forzare il rilevamento della modifica.
-1. Attendere la risincronizzazione o attivare una risincronizzazione manuale dalla CLI o dalla pagina [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) nell&#39;amministratore.
+1. Attendere la risincronizzazione o attivare una risincronizzazione manuale dalla CLI o dalla pagina [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) nell&#39;amministratore.
 
-Per ulteriori informazioni sulla risoluzione dei problemi relativi ai dati del catalogo in [!DNL Product Recommendations], vedere [Risoluzione dei problemi relativi al modulo Consigli di prodotto](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-40095) nella Knowledge Base di Commerce.
+Per ulteriori informazioni sulla risoluzione dei problemi relativi ai dati del catalogo in [!DNL Product Recommendations], vedere [Risoluzione dei problemi relativi al modulo Consigli di prodotto](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-40095) nella Knowledge Base di Commerce.
 
 ## Sincronizzazione dati non in esecuzione secondo pianificazione {#sync-not-on-schedule}
 
@@ -96,8 +109,8 @@ Per ulteriori informazioni sulla risoluzione dei problemi relativi ai dati del c
 
 **Soluzione:**
 
-- [Verificare che i processi cron siano in esecuzione](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-39832).
-- Verificare che gli indicizzatori per i feed seguenti siano impostati su **[!UICONTROL Update by Schedule]**: Attributi catalogo, Prodotto, Sostituzioni prodotto e Variante prodotto. Controllare da [[!UICONTROL Index Management]](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/tools/index-management) nell&#39;amministratore di Commerce o utilizzare CLI: `bin/magento indexer:show-mode | grep -i feed`.
+- [Verificare che i processi cron siano in esecuzione](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-39832).
+- Verificare che gli indicizzatori per i feed seguenti siano impostati su **[!UICONTROL Update by Schedule]**: Attributi catalogo, Prodotto, Sostituzioni prodotto e Variante prodotto. Controllare da [[!UICONTROL Index Management]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) nell&#39;amministratore di Commerce o utilizzare CLI: `bin/magento indexer:show-mode | grep -i feed`.
 
 ## Stato della sincronizzazione del catalogo non riuscito {#catalog-sync-failed}
 
@@ -110,7 +123,7 @@ Per ulteriori informazioni sulla risoluzione dei problemi relativi ai dati del c
 1. Per informazioni dettagliate sull’errore, consulta i registri degli errori di esportazione dei dati. Consulta [Esaminare i registri e risolvere i problemi](logging.md) per il formato del registro e le opzioni di registrazione estese:
    - `var/log/commerce-data-export-errors.log` per errori durante la raccolta dati.
    - `var/log/saas-export-errors.log` per gli errori durante l&#39;invio dei dati.
-1. Se l&#39;errore non è correlato alla configurazione o a un&#39;estensione di terze parti, [invia un ticket di supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) con le voci di registro pertinenti.
+1. Se l&#39;errore non è correlato alla configurazione o a un&#39;estensione di terze parti, [invia un ticket di supporto](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) con le voci di registro pertinenti.
 
 ## Il registro mostra i messaggi &quot;operazione ignorata - elaborazione bloccata&quot; {#process-locked}
 

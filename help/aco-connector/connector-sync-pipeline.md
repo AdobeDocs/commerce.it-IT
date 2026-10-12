@@ -2,7 +2,7 @@
 title: Pipeline di sincronizzazione catalogo
 description: Scopri come funziona la pipeline di sincronizzazione [!DNL Adobe Commerce Optimizer Connector], inclusa la trasformazione dei feed, le pianificazioni cron, il controllo dell'ambito e la gestione degli errori.
 feature: Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 autotag-review: '2026-06-09T16:21:52.214Z'
 TQID: 'https://experienceleague.adobe.com/EXUQzAd0I6Hnq4twzhaBZZnv0jLjeGBuTx-QgQz-5MA'
 product_v2:
@@ -23,6 +23,8 @@ feature_v2:
     internal-label: Developer tools
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -38,14 +40,14 @@ topic_v2:
     internal-label: Data pipelines
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: 2dbf2b973af0cb7b831a17ca1a868a81b11bc9ee
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 1%
 ---
 # Pipeline di sincronizzazione del connettore
 
-Basato su [[!DNL SaaS Data Export]](https://experienceleague.adobe.com/it/docs/commerce/saas-data-export/overview), **[!DNL Adobe Commerce Optimizer Connector]** associa i dati raccolti dagli indicizzatori [!DNL SaaS Data Export] al formato richiesto da [!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API] e gestisce l&#39;autenticazione, l&#39;invio in batch e il controllo di sincronizzazione basato sull&#39;ambito. Le sezioni seguenti descrivono come funziona tale sincronizzazione.
+Basato su [[!DNL SaaS Data Export]](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview), **[!DNL Adobe Commerce Optimizer Connector]** associa i dati raccolti dagli indicizzatori [!DNL SaaS Data Export] al formato richiesto da [!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API] e gestisce l&#39;autenticazione, l&#39;invio in batch e il controllo di sincronizzazione basato sull&#39;ambito. Le sezioni seguenti descrivono come funziona tale sincronizzazione.
 
 Contesto correlato:
 
@@ -82,7 +84,7 @@ L&#39;estensione **[!DNL SaaS Data Export]** gestisce la raccolta di feed e il t
 
 #### Requisiti
 
-- [Commerce cron deve essere in esecuzione](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-39832){target="_blank"}.
+- [Commerce cron deve essere in esecuzione](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-39832){target="_blank"}.
 - Gli indicizzatori dei feed devono utilizzare la modalità **[!UICONTROL Update by Schedule]**. Vedere [Sincronizzazione parziale](../data-export/sync-overview.md#partial-sync){target="_blank"}.
 
 ## Controllo sincronizzazione basato su ambito
@@ -105,7 +107,7 @@ Per informazioni dettagliate sulla personalizzazione dell&#39;ambito di sincroni
 | Errori transitori | Riprovato ogni 5 minuti |
 | Sincronizzazione completa o cataloghi di grandi dimensioni | Da minuti a ore |
 
-Monitorare lo stato per feed dalla pagina [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) nell&#39;amministrazione di Commerce. Vedere [Verificare che la sincronizzazione dei dati funzioni](./data-sync-status.md#verify-that-the-data-sync-is-working).
+Monitorare lo stato per feed dalla pagina [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) nell&#39;amministrazione di Commerce. Vedere [Verificare che la sincronizzazione dei dati funzioni](./data-sync-status.md#verify-that-the-data-sync-is-working).
 
 ## Invio di feed e gestione degli errori
 

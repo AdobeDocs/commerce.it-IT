@@ -1,29 +1,39 @@
 ---
-title: Compatibilità per  [!DNL Payment Services]
-description: Scopri se  [!DNL Payment Services]  è disponibile nel tuo paese e se è compatibile con la versione di Adobe Commerce.
+title: Compatibilità per [!DNL Payment Services]
+description: Scopri se [!DNL Payment Services] è disponibile nel tuo paese e se è compatibile con la tua versione di Adobe Commerce.
 role: User
 level: Intermediate
 feature: Payments, Checkout, Paas, Saas
 exl-id: 4bef8429-5053-424d-806a-9e8b96295b1b
-TQID: https://experienceleague.adobe.com/UUD0IiEiwh0sZKMkclOJtoC2bKYcmDN3WAWD16mfad4
+TQID: 'https://experienceleague.adobe.com/UUD0IiEiwh0sZKMkclOJtoC2bKYcmDN3WAWD16mfad4'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 4235bf48bb5f24a076621ee5985e9e7316fcb1cc
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 498
+source-wordcount: '499'
 ht-degree: 0%
-
 ---
-
 # Compatibilità per [!DNL Payment Services]
 
-[!DNL Payment Services] è disponibile per [!DNL Adobe Commerce as a Cloud Service], tutte le versioni supportate di [!DNL Adobe Commerce on Cloud] e on-premise e Magento Open Source. Per informazioni specifiche sulla versione, vedere la pagina [Criteri del ciclo di vita](https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/lifecycle-policy).
+[!DNL Payment Services] è disponibile per [!DNL Adobe Commerce as a Cloud Service], tutte le versioni supportate di [!DNL Adobe Commerce on Cloud] e on-premise e Magento Open Source. Per informazioni specifiche sulla versione, vedere la pagina [Criteri del ciclo di vita](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy).
 
 ## Prerequisiti
 
@@ -35,7 +45,7 @@ Per utilizzare [!DNL Payment Services], devi prima connettere la tua istanza Com
 
    >[!TIP]
    >
-   > Per ulteriori informazioni, guarda il video tutorial su [Adobe Commerce Services Connector](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector).
+   > Per ulteriori informazioni, guarda il video tutorial su [Adobe Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector).
 
 1. Se hai già connesso l&#39;istanza, passa alla pagina [onboarding](onboard.md) per i passaggi successivi.
 
@@ -53,7 +63,7 @@ Per utilizzare [!DNL Payment Services], devi prima connettere la tua istanza Com
 
 ### Qual è l&#39;opzione [!DNL Payment Services] più adatta alle tue esigenze?
 
->[!VIDEO](https://video.tv.adobe.com/v/3447926?captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3447811)
 
 Per ulteriori informazioni sulla configurazione dell&#39;estensione [!DNL Payment Services], vedere [Connect](connect.md).
 
@@ -105,13 +115,13 @@ Per ulteriori informazioni sulla configurazione dell&#39;estensione [!DNL Paymen
 
 >[!ENDTABS]
 
-Per ulteriori informazioni sulla versione e sulle specifiche della versione, consulta le pagine [Ciclo di vita](https://experienceleague.adobe.com/it/docs/commerce-operations/release/planning/lifecycle-policy) e [[!DNL Payment Services] note sulla versione](release-notes.md).
+Per ulteriori informazioni sulla versione e sulle specifiche della versione, consulta le pagine [Ciclo di vita](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy) e [[!DNL Payment Services] note sulla versione](release-notes.md).
 
 Per istruzioni complete e avviare il processo di onboarding, consulta [Introduzione a [!DNL Payment Services]](onboard.md).
 
 ### Carte di credito accettate e valute
 
-[!DNL Payment Services] accetta le valute dei paesi in cui è disponibile. Per ulteriori informazioni sull&#39;impostazione dei tassi di cambio, vedere [Configurazione della valuta](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration).
+[!DNL Payment Services] accetta le valute dei paesi in cui è disponibile. Per ulteriori informazioni sull&#39;impostazione dei tassi di cambio, vedere [Configurazione della valuta](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration).
 
 Per ulteriori informazioni sulle valute e sui metodi di pagamento disponibili con i prodotti e i servizi PayPal, consulta le pagine seguenti:
 

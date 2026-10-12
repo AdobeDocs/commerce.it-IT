@@ -1,16 +1,31 @@
 ---
 title: Visualizzazioni prodotto con AEM Assets
-description: Scopri come utilizzare AEM Assets per le immagini di prodotto in [!DNL Adobe Commerce Optimizer].
+description: Scopri come utilizzare AEM Assets per le immagini dei prodotti in [!DNL Adobe Commerce Optimizer].
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: bf87cbdc38a17ea3f5ad339cb7b4f4f030317450
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '651'
 ht-degree: 0%
-
 ---
-
 
 # Visualizzazioni prodotto con AEM Assets
 
@@ -18,7 +33,7 @@ Product Visuals consente ai commercianti di [!DNL Adobe Commerce Optimizer] di g
 
 >[!NOTE]
 >
->**Elementi visivi prodotto** è il nome del bundle fornito con [!DNL Adobe Commerce as a Cloud Service] e [!DNL Adobe Commerce Optimizer]. Combina [Dynamic Media con funzionalità OpenAPI](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) e [AEM Assets Prime](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-prime).
+>**Elementi visivi prodotto** è il nome del bundle fornito con [!DNL Adobe Commerce as a Cloud Service] e [!DNL Adobe Commerce Optimizer]. Combina [Dynamic Media con funzionalità OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) e [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime).
 >
 >I clienti con una licenza AEM Assets diversa (ad esempio, **AEM Assets Ultimate**) possono utilizzare la stessa integrazione; solo la versione di AEM influisce sui passaggi di onboarding, non sul tipo di licenza.
 
@@ -62,7 +77,7 @@ Prima di abilitare Product Visuals, assicurati di soddisfare i [prerequisiti per
 
 ## Configurazione
 
-Per abilitare l&#39;integrazione, [crea un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket) con i tuoi dettagli di [!DNL Commerce Optimizer] e AEM Assets. Il supporto Adobe configura l’integrazione e registra il tenant con il servizio di integrazione Assets.
+Per abilitare l&#39;integrazione, [crea un ticket di supporto](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket) con i tuoi dettagli di [!DNL Commerce Optimizer] e AEM Assets. Il supporto Adobe configura l’integrazione e registra il tenant con il servizio di integrazione Assets.
 
 Per informazioni sull&#39;onboarding, consulta [Configurare AEM Assets per Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md).
 
@@ -103,4 +118,4 @@ Per visualizzare le immagini AEM Assets nella vetrina, [assegna il livello `AEM-
 * [Livelli del catalogo](catalog-layer.md)
 * [Visualizzazioni catalogo](catalog-view.md)
 * [Guida all’integrazione di AEM Assets](../../aem-assets-integration/overview.md)
-* [Limiti e limiti delle visualizzazioni prodotto](https://experienceleague.adobe.com/it/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)
+* [Limiti e limiti delle visualizzazioni prodotto](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)

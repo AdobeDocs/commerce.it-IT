@@ -5,20 +5,27 @@ seo-title: Adobe Commerce Services release notes
 seo-description: See a collated list of all release notes for Adobe Commerce Services and related data and integration services.
 feature: Release Notes, Services
 exl-id: 2fa88976-f604-4c13-873b-5bdae37d55b3
-TQID: https://experienceleague.adobe.com/bi2GyJj88oZZprBxqzUECkS2BEXepP075YTbc50A-UE
+TQID: 'https://experienceleague.adobe.com/bi2GyJj88oZZprBxqzUECkS2BEXepP075YTbc50A-UE'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: adedf70c-c1e1-5734-acdc-c5c43b114964
+    internal-label: Release Notes
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
+    internal-label: Leader
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 174
+source-wordcount: '174'
 ht-degree: 0%
-
 ---
-
 # Note sulla versione di Commerce Services
 
 Utilizza la tabella seguente per trovare le note sulla versione e le informazioni importanti relative a versioni specifiche di tutti i servizi Adobe Commerce.
@@ -29,24 +36,24 @@ Utilizza la tabella seguente per trovare le note sulla versione e le informazion
       <td><strong>Servizi Commerce</strong>
         <p>Scopri gli ultimi miglioramenti ai servizi innovativi di Commerce disponibili come estensioni.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/it/docs/commerce/catalog-service/release-notes">[!DNL Catalog Service]</a></li>
-            <li><a href="https://experienceleague.adobe.com/it/docs/commerce/live-search/release-notes">[!DNL Live Search]</a></li>
-            <li><a href="https://experienceleague.adobe.com/it/docs/commerce/payment-services/release-notes">[!DNL Payment Services]</a></li>
-            <li><a href="https://experienceleague.adobe.com/it/docs/commerce/product-recommendations/release-notes">Consigli di prodotto</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes">[!DNL Catalog Service]</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes">[!DNL Live Search]</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">[!DNL Payment Services]</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/release-notes">Consigli di prodotto</a></li>
           </ul>
         </td>
       <td><strong>Servizi di integrazione</strong>
         <p>Scopri gli ultimi miglioramenti ai servizi di integrazione che consentono ai servizi Commerce di connettersi con altri servizi ed estensioni e prodotti Adobe.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/it/docs/commerce/data-connection/release-notes">[!DNL Data Connection]</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes">[!DNL Data Connection]</a></li>
             <li><a href="../landing/saas.md">[!DNL Services Connector]</a></li>
           </ul>
       </td>
       <td><strong>Servizi dati</strong>
         <p>Scopri gli ultimi miglioramenti al servizio dati che consentono ai servizi Commerce di gestire i dati dei prodotti.</p>
           <ul>
-           <li><a href="https://experienceleague.adobe.com/it/docs/commerce/saas-data-export/release-notes">Estensione SaaS Data Export</a></li>
-            <li><a href="https://experienceleague.adobe.com/it/docs/commerce/user-guides/data-services/catalog-sync">Sincronizzazione catalogo</a></li>
+           <li><a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Estensione SaaS Data Export</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync">Sincronizzazione catalogo</a></li>
           </ul>
       </td>
     </tr>

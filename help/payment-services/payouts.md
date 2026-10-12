@@ -5,13 +5,29 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1356'
 ht-degree: 0%
-
 ---
-
 # Rapporto Pagamenti
 
 [!DNL Payment Services] per [!DNL Adobe Commerce] e [!DNL Magento Open Source] offre report completi che consentono di ottenere una chiara visualizzazione delle transazioni, degli ordini e dei pagamenti del tuo Negozio.
@@ -31,7 +47,7 @@ Le visualizzazioni Pagamenti mostrano immediatamente informazioni complete sui p
 
 >[!NOTE]
 >
->I report pagamenti mostrano solo gli ordini acquisiti (l&#39;azione di pagamento è impostata su [`Authorize and Capture`](production.md#set-payment-services-as-payment-method)) o [contrassegnati come `Invoiced`](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
+>I report pagamenti mostrano solo gli ordini acquisiti (l&#39;azione di pagamento è impostata su [`Authorize and Capture`](production.md#set-payment-services-as-payment-method)) o [contrassegnati come `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
 
 ## Visualizzazione dati pagamenti
 
@@ -73,7 +89,7 @@ La visualizzazione dati Pagamenti include le seguenti informazioni.
 
 La visualizzazione del rapporto Pagamenti è disponibile nella visualizzazione Pagamenti di Servizi di pagamento. Include tutte le informazioni disponibili sui pagamenti per il/i tuo/i negozio/i.
 
-Nella barra laterale _Amministratore_, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**&#x200B;per visualizzare la visualizzazione dettagliata del report Pagamenti nella tabella.
+Nella barra laterale _Amministratore_, vai a **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**per visualizzare la visualizzazione dettagliata del report Pagamenti nella tabella.
 
 ![Transazioni di pagamento nell&#39;amministratore](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
@@ -93,7 +109,7 @@ Nella visualizzazione del report Pagamenti è possibile selezionare l&#39;origin
 
 ![Selezione origini dati](assets/datasource.png){width="300" zoomable="yes"}
 
-Se _[!UICONTROL Live]_&#x200B;è l&#39;origine dati selezionata, è possibile visualizzare le informazioni del report per gli archivi in modalità di produzione. Se&#x200B;_[!UICONTROL Sandbox]_ è l&#39;origine dati selezionata, è possibile visualizzare gli archivi di informazioni del report in modalità sandbox.
+Se _[!UICONTROL Live]_è l&#39;origine dati selezionata, è possibile visualizzare le informazioni del report per gli archivi in modalità di produzione. Se_[!UICONTROL Sandbox]_ è l&#39;origine dati selezionata, è possibile visualizzare gli archivi di informazioni del report in modalità sandbox.
 
 Le selezioni delle origini dati funzionano come segue:
 
@@ -159,7 +175,7 @@ I rapporti di pagamento includono le seguenti informazioni.
 | [!UICONTROL Code] | Codice transazione che indica il credito (*CR*) o il debito (*DR*) |
 | [!UICONTROL Reference ID] | ID transazione originale per cui è correlato questo evento |
 | [!UICONTROL Invoice] | ID fattura (uno per ordine) della transazione |
-| [!UICONTROL Commerce order] | ID ordine Commerce <br> <br>Per visualizzare le [informazioni ordine](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/order-management/orders/orders) correlate, fare clic sull&#39;ID. |
+| [!UICONTROL Commerce order] | ID ordine Commerce <br> <br>Per visualizzare le [informazioni ordine](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders) correlate, fare clic sull&#39;ID. |
 | [!UICONTROL Commerce trans] | ID transazione Commerce |
 | [!UICONTROL Pay method] | Tipo di carta di credito—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*—e provider di carta associato (ad esempio *Visa* o *MasterCard*) |
 | [!UICONTROL TRANS AMT] | Importo della transazione |

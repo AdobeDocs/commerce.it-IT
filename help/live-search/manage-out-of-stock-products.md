@@ -4,13 +4,30 @@ description: Scopri come gestire i prodotti esauriti in [!DNL Live Search] per A
 feature: Services, Search
 role: Admin, Developer
 level: Intermediate
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '451'
 ht-degree: 0%
-
 ---
-
 # Gestire i prodotti esauriti
 
 È possibile controllare la modalità di visualizzazione dei prodotti esauriti nei risultati di ricerca e categoria di [!DNL Live Search] utilizzando la configurazione dell&#39;inventario, i filtri di query e i flag di funzionalità di back-end facoltativi. Queste opzioni hanno dei limiti importanti, come viene spiegato in questo argomento.
@@ -64,7 +81,7 @@ Utilizzare questo approccio quando non si instrada la richiesta tramite il [widg
 Per mantenere i prodotti esauriti nel set di risultati ma sempre dopo i prodotti in magazzino quando si ordina per rilevanza, Adobe può abilitare un flag di funzione interno per il tuo ambiente.
 
 - Questo flag di funzione non è esposto nell&#39;interfaccia utente di amministrazione di [!DNL Live Search].
-- Per richiederlo, [contatta il supporto Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"} e fai riferimento alla funzionalità per spostare i prodotti esauriti alla fine dei risultati della ricerca.
+- Per richiederlo, [contatta il supporto Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"} e fai riferimento alla funzionalità per spostare i prodotti esauriti alla fine dei risultati della ricerca.
 
 >[!NOTE]
 >
@@ -87,4 +104,4 @@ Per nascondere o rimuovere la priorità dei prodotti esauriti nel catalogo, util
 >[!MORELIKETHIS]
 >
 > - [Cerca regole di merchandising](rules.md)
-> - [Configurare le opzioni globali di Inventory management](https://experienceleague.adobe.com/it/docs/commerce-admin/inventory/configuration/configuration)
+> - [Configurare le opzioni globali di Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/configuration)

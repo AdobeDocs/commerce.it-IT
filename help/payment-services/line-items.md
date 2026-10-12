@@ -1,16 +1,27 @@
 ---
-title: Elementi riga per  [!DNL Payment Services]
-description: Scopri gli elementi riga per  [!DNL Payment Services]  e come visualizzare gli elementi riga nel dashboard esercente.
+title: Elementi riga per [!DNL Payment Services]
+description: Scopri gli elementi riga per [!DNL Payment Services] e come visualizzare gli elementi riga nel dashboard esercente.
 feature: Payments, Paas, Saas
 role: User
 exl-id: f690ff94-f83d-4525-9d52-1dea25a71060
-source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '690'
 ht-degree: 0%
-
 ---
-
 # Elementi riga per [!DNL Payment Services]
 
 Gli elementi riga per [!DNL Payment Services] sono gli elementi inclusi in un ordine. Queste voci forniscono informazioni quali:
@@ -31,7 +42,7 @@ Gli elementi riga sono abilitati per impostazione predefinita per [!DNL Payment 
 
 1. Espandere la sezione _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
 
-1. Nella sezione _[!UICONTROL Payment Services]_, espandere la sezione&#x200B;_[!UICONTROL Line Items]_.
+1. Nella sezione _[!UICONTROL Payment Services]_, espandere la sezione_[!UICONTROL Line Items]_.
 
 1. Per **[!UICONTROL Line Items Enabled]**, selezionare `Yes` per abilitare (impostazione predefinita) o `No` per disabilitare gli elementi riga.
 
@@ -149,7 +160,7 @@ Per ulteriori informazioni su questi campi e sulle relative limitazioni, consult
 
 ## Gestisci righe
 
-Adobe Commerce [calcola l&#39;imposta in base all&#39;importo totale per ogni riga](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}. Ciò può causare problemi di arrotondamento se vengono ordinate più quantità dello stesso articolo o se nel catalogo vengono visualizzati prezzi comprensivi di imposte. In questi casi, la quantità totale può essere divisa in due righe, ma la quantità sarà uguale al totale degli articoli ordinati.
+Adobe Commerce [calcola l&#39;imposta in base all&#39;importo totale per ogni riga](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}. Ciò può causare problemi di arrotondamento se vengono ordinate più quantità dello stesso articolo o se nel catalogo vengono visualizzati prezzi comprensivi di imposte. In questi casi, la quantità totale può essere divisa in due righe, ma la quantità sarà uguale al totale degli articoli ordinati.
 
 > Esempio di elementi riga con problemi di arrotondamento nella vista dashboard esercente
 

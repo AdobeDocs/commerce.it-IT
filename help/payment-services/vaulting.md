@@ -3,13 +3,30 @@ title: Vaulting con carta di credito
 description: Gli acquirenti possono archiviare (salvare) i dati della carta di credito per acquisti futuri.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
-
 ---
-
 # Vaulting con carta di credito
 
 Convertire i clienti occasionali in clienti fedeli con il vaulting delle carte di credito. I clienti che hanno effettuato l’accesso possono salvare, o &quot;vaultare&quot;, le credenziali della carta di credito da utilizzare in un acquisto successivo per lo stesso o un altro negozio all’interno dello stesso account esercente.
@@ -32,7 +49,7 @@ I clienti connessi possono archiviare un metodo di pagamento nel dashboard **Il 
 
 1. Passa a **[!UICONTROL Stored Payment Methods]** nella barra di navigazione a sinistra per visualizzare tutti i metodi di pagamento memorizzati.
 
-   Per ulteriori informazioni, vedere [Metodi di pagamento memorizzati](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/payments/stored-payment-methods).
+   Per ulteriori informazioni, vedere [Metodi di pagamento memorizzati](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods).
 
 1. Il cliente fa clic su **[!UICONTROL Add New Card]** per memorizzare una nuova scheda.
 
@@ -73,10 +90,10 @@ Puoi usare le carte ad archivio nell&#39;Amministratore solo se il cliente ha un
 
 Per creare un ordine nell’amministratore per un cliente utilizzando la sua carta di credito archiviata:
 
-1. [Crea un ordine e aggiungi prodotti](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order).
-1. In _[!UICONTROL Payment & Shipping Information]_, selezionare **[!UICONTROL Stored Cards]**&#x200B;come metodo di pagamento.
+1. [Crea un ordine e aggiungi prodotti](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order).
+1. In _[!UICONTROL Payment & Shipping Information]_, selezionare **[!UICONTROL Stored Cards]**come metodo di pagamento.
 1. Seleziona il metodo di pagamento con carta di credito archiviata desiderato.
-1. Dopo aver completato tutti gli altri passaggi necessari per l&#39;ordine, [invialo](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order).
+1. Dopo aver completato tutti gli altri passaggi necessari per l&#39;ordine, [invialo](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order).
 
    ![Utilizza carta di credito archiviata in Amministratore per il cliente](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 
