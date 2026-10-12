@@ -1,16 +1,22 @@
 ---
 title: Ricerca semantica
-description: Abilita la ricerca semantica AI in [!DNL Adobe Commerce Optimizer] da Impostazioni. Non è richiesta alcuna modifica alla configurazione degli attributi o alla vetrina.
+description: Abilitare la ricerca semantica AI in [!DNL Adobe Commerce Optimizer] dalle impostazioni. Non è richiesta alcuna modifica alla configurazione degli attributi o alla vetrina.
 role: Admin, User
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '794'
 ht-degree: 0%
-
 ---
-
 # Ricerca semantica
 
 La ricerca semantica utilizza l&#39;intelligenza artificiale per capire cosa significano gli acquirenti, non solo le parole esatte che digitano. Query come &quot;abito per un matrimonio in spiaggia&quot; o &quot;scarpe comode per stare in piedi tutto il giorno&quot; possono restituire prodotti rilevanti anche quando il catalogo non utilizza quelle frasi esatte.
