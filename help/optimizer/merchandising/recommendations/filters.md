@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 40374f0aa28d3635fc567c0311e452f92dc5704c
+source-git-commit: 092ffabea06cf72af39a663c14b448f9e7633f60
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2364'
 ht-degree: 0%
 ---
 # Filtra prodotti
@@ -280,3 +280,11 @@ Attribute filter support varies by recommendation type.
 - Se sono presenti valori di attributo vuoti o condizioni non valide, i consigli non vengono riprodotti nella vetrina o nel pannello di anteprima.
 - I valori degli attributi devono corrispondere esattamente a quelli presenti nel catalogo, compresi spazi e maiuscole/minuscole.
 - Se nessuno dei prodotti soddisfa i criteri di filtro, i consigli non vengono riprodotti nella vetrina o nel pannello di anteprima.
+
+### Esaurito
+
+Il seguente filtro di esclusione può filtrare i prodotti in base allo stato delle scorte:
+
+- Esaurito - (solo esclusione) esclude i prodotti esauriti.
+
+![Filtro stato magazzino](../../assets/filter-stock-status.png)
