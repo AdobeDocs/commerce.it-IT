@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 559efed5340b7076f18a3efc0077f9afd5f8ca48
 workflow-type: tm+mt
-source-wordcount: '3447'
+source-wordcount: '3576'
 ht-degree: 0%
 ---
 # Note sulla versione [!DNL SaaS Data Export Extension]
@@ -60,6 +60,16 @@ Gli aggiornamenti includono:
 >L&#39;estensione [!DNL SaaS data export] è una raccolta di moduli installati automaticamente con [!DNL Live Search], [!DNL Product Recommendations] e [!DNL Catalog Service]. È possibile controllare la versione installata nel sistema utilizzando [!DNL Composer]. In alcuni casi, potrebbe essere utile aggiornare l’estensione di esportazione dei dati sul sistema per rilevare correzioni o nuove funzionalità senza aggiornare la versione del servizio Commerce.
 
 ## Versioni del 2026 {#release-notes-2026}
+
+### Versione 103.5.0
+
+_13 ottobre 2026_
+
+![Correzione](../assets/fix.svg) **Visibilità attributi accurata nei metadati esportati**-È stato risolto un problema a causa del quale il campo di visibilità attributi esportava l&#39;impostazione di visibilità amministratore invece dell&#39;impostazione di visibilità storefront. I servizi Commerce connessi ricevono ora la visibilità corretta per ogni attributo. <!--MDEE-932-->
+
+![Nuovi](../assets/new.svg) **Filtri di intervallo per attributi di prodotto numerici**-Aggiornati attributi di prodotto per supportare il tipo di input **Numero**. Questo tipo di input si applica agli attributi che memorizzano valori decimali, inclusi numeri negativi, senza visualizzare un simbolo di valuta. Vengono esportati con metadati che consentono a [!DNL Live Search] di generare facet di intervallo, in modo che gli acquirenti possano filtrare in base a misurazioni quali la temperatura operativa. <!--MDEE-1416-->
+
+![Correzione](../assets/fix.svg) **Valori di attributi di prezzo personalizzati coerenti**-I valori di attributi di prezzo personalizzati vengono ora esportati con due posizioni decimali, nella valuta predefinita del negozio, in modo che la formattazione del prezzo nella vetrina corrisponda al formato dei dati del prezzo.<!--MDEE-1459-->
 
 ### Versione 103.4.35
 
