@@ -1,7 +1,7 @@
 ---
 title: Creare e gestire le regole
 description: Scopri come creare e gestire le regole di merchandising per le pagine di ricerca, gli elenchi di prodotti predefiniti e le categorie.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
 product_v2:
@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Behavioral data
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
+source-git-commit: 3d21aed1af575d15c2cea4a42c49169a0fe37d7e
 workflow-type: tm+mt
-source-wordcount: '4182'
+source-wordcount: '4111'
 ht-degree: 0%
 ---
 # Creare e gestire le regole
@@ -40,7 +40,7 @@ Per generare e pubblicare una regola:
 ## Creare una regola {#create-a-rule}
 
 1. Nella barra a sinistra, passa a _Merchandising_ > **Regole di merchandising**.
-1. (Facoltativo) Utilizza il menu a discesa **Vista catalogo** per selezionare la vista catalogo in cui applicare la regola. La regola creata ha l&#39;ambito della vista selezionata (o di tutte le viste catalogo se è selezionato **Tutte le viste**). Per informazioni sul funzionamento dell&#39;ambito della visualizzazione catalogo, vedere [Selezionare la visualizzazione catalogo](workspace.md#select-catalog-view).
+1. (Facoltativo) Seleziona la vista catalogo in cui si applica la regola utilizzando il menu a discesa **Vista catalogo**. La regola creata ha l&#39;ambito della vista selezionata (o di tutte le viste catalogo se è selezionato **Tutte le viste**). Per informazioni sul funzionamento dell&#39;ambito della visualizzazione catalogo, vedere [Selezionare la visualizzazione catalogo](workspace.md#select-catalog-view).
 
 1. Fare clic su **[!UICONTROL Create rule]** per avviare l&#39;editor di regole.
 
@@ -48,7 +48,7 @@ Per generare e pubblicare una regola:
 
 ### Tipi di regole
 
-Ogni tipo di regola dispone di un’icona di informazioni nell’editor con una breve spiegazione. Utilizza il tipo di corrispondenza in cui gli acquirenti devono visualizzare la logica di merchandising:
+Ogni tipo di regola dispone di un’icona di informazioni nell’editor con una breve spiegazione. Utilizza il tipo che corrisponde alla posizione in cui gli acquirenti vedono la logica di merchandising:
 
 | Tipo di regola | Finalità |
 | --- | --- |
@@ -82,7 +82,7 @@ Le condizioni sono i requisiti per attivare un evento. Una regola può avere fin
    - La query di ricerca inizia con - Inserisci un carattere o una stringa di testo che deve trovarsi all’inizio della query dell’acquirente.
    - La query di ricerca termina con - Immetti un carattere o una stringa di testo che deve trovarsi alla fine della query dell’acquirente.
 
-   I risultati vengono visualizzati immediatamente nel riquadro *Verifica regola* e sono numerati per priorità. Puoi utilizzare il cursore *Risultati per riga* in alto a destra per modificare il numero di prodotti in ogni riga.
+   Nel riquadro *Verifica regola* vengono visualizzati immediatamente i risultati, numerati per priorità. Puoi utilizzare il cursore *Risultati per riga* in alto a destra per modificare il numero di prodotti in ogni riga.
 
 1. Per verificare altre query, modifica il testo della query nella casella di ricerca *Verifica la regola* e premi **Invio**.
 Inizialmente, il riquadro dei test esegue il rendering della query dalla casella di ricerca Condizioni. Ma ora sta eseguendo il rendering della query dalla casella di query del test. Nel riquadro dei test viene eseguita una sola query alla volta.
@@ -110,13 +110,13 @@ Una regola può avere fino a dieci condizioni. L&#39;operatore logico che unisce
 
 >[!TAB Regola categoria]
 
-Le regole di categoria controllano il modo in cui i prodotti vengono ordinati nelle **pagine di categoria**. È possibile combinare **regole categoria** con **classificazione intelligente** (inclusi i segnali basati sull&#39;intelligenza artificiale) e **azioni manuali** quali pin, boost e bury, in modo da poter curare l&#39;individuazione, eseguire promozioni e allineare le pagine categoria con la strategia senza affidarsi a strumenti esterni.
+Le regole di categoria controllano il modo in cui i prodotti vengono ordinati nelle **pagine di categoria**. Combina **regole di categoria** con **classificazione intelligente** e **azioni manuali** per curare l&#39;individuazione, eseguire promozioni e allineare le pagine di categorie alla tua strategia.
 
 **Seleziona categorie**
 
-In **Categorie**, seleziona una o più categorie a cui applicare la regola. Le categorie selezionate vengono visualizzate sotto il controllo per consentirti di confermare l’ambito. Selezionare le categorie in uno dei modi seguenti:
+In **Categorie** selezionare una o più categorie per la regola. Le categorie selezionate vengono visualizzate sotto il controllo per consentirti di confermare l’ambito. Selezionare le categorie in uno dei modi seguenti:
 
-- **Sfoglia la struttura delle categorie**. Espandere una categoria per caricare le categorie figlio immediate. Per passare a un livello più profondo, espandi la categoria figlio. L&#39;albero carica un livello alla volta.
+- **Sfogliare la struttura delle categorie**. Per caricare le categorie figlio immediate, espandere una categoria. Per passare a un livello più profondo, espandi la categoria figlio. L&#39;albero carica un livello alla volta.
 - **Cerca per nome categoria** - Immettere un nome categoria nel campo **Cerca e seleziona categorie**. I risultati della ricerca includono nomi di categorie corrispondenti provenienti da tutto il catalogo, incluse categorie al di fuori del ramo attualmente espanso. La ricerca non corrisponde al testo del percorso della categoria.
 
 Se più categorie hanno nomi simili, utilizzare il percorso della categoria visualizzato con ogni risultato (ad esempio, `brakes/aurora`) per selezionare la categoria corretta.
@@ -127,13 +127,13 @@ Se più categorie hanno nomi simili, utilizzare il percorso della categoria visu
 
 >[!TIP]
 >
->Se una categoria figlio non è visibile, espandere la categoria padre per caricare il livello successivo. Se conosci il nome della categoria, utilizza il campo di ricerca invece di navigare nella struttura. Questa funzione è utile per i cataloghi di grandi dimensioni, in quanto i livelli di categoria vengono caricati su richiesta.
+>Se una categoria figlio non è visibile, espandere la categoria padre per caricare il livello successivo. Se conosci il nome della categoria, utilizza il campo di ricerca invece di navigare nella struttura. Questo comportamento è utile per i cataloghi di grandi dimensioni, in quanto i livelli di categoria vengono caricati su richiesta.
 
 1. Dall’elenco delle categorie selezionate, fai clic sui tre punti accanto a una categoria e seleziona per:
 
    - **Elimina** - Rimuove la categoria dalla regola.
    - **Applica a sottocategorie** - Applica la regola alle sottocategorie per le quali non è già stata definita una regola di merchandising attiva.
-   - **Anteprima** - Visualizza l&#39;aspetto della pagina della categoria nella vetrina.
+   - **Anteprima** - Visualizza l&#39;aspetto della pagina delle categorie nella vetrina.
 
 1. Facoltativamente, impostare [Classificazione intelligente](#intelligent-ranking), [Classificazione manuale](#manual-ranking) o [Classificazione attributi](#attribute-ranking) come descritto nelle sezioni seguenti. Gli stessi controlli si applicano alle regole di ricerca, con eventuali differenze richiamate.
 
@@ -145,7 +145,7 @@ Se più categorie hanno nomi simili, utilizzare il percorso della categoria visu
 
 Classificazione intelligente ordina i prodotti utilizzando **segnali comportamentali** e, se applicabile, IA. Si applica a **regole di ricerca**, **tutti gli elenchi di prodotti** (regole predefinite) e **regole categoria** (pagine categorie). Per gli acquirenti **ricerche**, la classificazione pesa anche **rilevanza testuale** per la query; **le pagine di categoria** non utilizzano il testo della query allo stesso modo, l&#39;editor si concentra sulle strategie comportamentali.
 
-I proprietari dei negozi possono impostare strategie come le seguenti. Le etichette esatte e le finestre temporali corrispondono all’editor di regole e possono differire leggermente per tipo di regola.
+I proprietari dei negozi possono impostare strategie come le seguenti. Le etichette esatte e le finestre temporali corrispondono all’editor di regole e differiscono leggermente per tipo di regola.
 
 ![Classificazioni intelligenti](../../assets/rule-intelligent-ranking.png)
 
@@ -160,13 +160,13 @@ Seleziona la strategia per la regola. Nel riquadro **[!UICONTROL Test your rule]
 
 #### Segnali comportamentali per prodotti e varianti configurabili {#behavioral-signals-variants}
 
-La classificazione intelligente raccoglie segnali comportamentali, come visualizzazioni, eventi aggiuntivi al carrello e acquisti, in base al prodotto specifico con cui un acquirente interagisce. Per un prodotto configurabile, ciò significa che i segnali vengono registrati a livello di **variante** (prodotto semplice), non rispetto all&#39;elemento padre configurabile.
+La classificazione intelligente raccoglie segnali comportamentali rispetto al prodotto specifico con cui un acquirente interagisce. Per un prodotto configurabile, ciò significa che i segnali vengono registrati a livello di **variante** (prodotto semplice), non rispetto all&#39;elemento padre configurabile.
 
 Quando si classifica un prodotto configurabile, la classificazione intelligente aggrega i segnali comportamentali raccolti da tutte le sue varianti e li aggrega fino al padre configurabile. Il punteggio di classificazione di un prodotto configurabile riflette i segnali combinati di ogni variante, non solo di una.
 
 Questa aggregazione si verifica nell’ambito della categoria visualizzata. Una variante fornisce i propri segnali comportamentali solo al punteggio di classificazione dell&#39;elemento padre configurabile per le categorie a cui è assegnata quella **variante**. Se manca una variante da una categoria, i segnali non vengono conteggiati per la classificazione del padre in quella categoria, anche quando il padre configurabile stesso è assegnato lì.
 
-**Best practice:** rivedi le assegnazioni di categoria per tutte le varianti di prodotto, in particolare nei cataloghi che utilizzano strutture di categoria specifiche per dimensione, colore o altre varianti, per confermare che ogni variante è assegnata a ogni categoria in cui si prevede che appaia e influisce sulla classificazione.
+**Best practice:** rivedi le assegnazioni delle categorie per tutte le varianti di prodotto per confermare che ogni variante è assegnata a ogni categoria in cui influenza la classificazione.
 
 **Esempio:**
 
@@ -180,8 +180,8 @@ Usare questo controllo per bilanciare l&#39;influenza dei **segnali comportament
 
 | Comportamento | Dettaglio |
 | --- | --- |
-| Predefinito | `5` (equivalente al precedente moltiplicatore comportamentale fisso). |
-| Intervallo | Da `1` (minore influenza sul comportamento) a `100` (maggiore influenza). Il limite superiore può cambiare in una versione futura. |
+| Predefinito | `50`. |
+| Intervallo | Da `1` (minore influenza sul comportamento) a `1000` (maggiore influenza). |
 | Ambito | Si applica solo alle query o alle inserzioni a cui la regola è destinata. Altre regole mantengono i propri valori di incremento. |
 | Anteprima | L’anteprima della regola utilizza lo stesso incremento dei risultati live per quella regola. |
 | Indicizzazione | Applicato al **momento della query**. Non è necessaria la risincronizzazione del catalogo o la reindicizzazione completa solo perché è stata modificata questa impostazione. |
@@ -222,7 +222,7 @@ Un commerciante utilizza la strategia di classificazione intelligente &quot;Most
 
 - **Candela Texas** (prima posizione): ha un nome di prodotto più breve e più chiaro che crea un punteggio di rilevanza del testo molto elevato. Anche se ha meno visualizzazioni di **YAN-K-E-512**, la sua corrispondenza di testo superiore supera l&#39;aumento del comportamento.
 
-- **YAN-K-E-512** (posizione più bassa): nonostante il percentile di visualizzazione più alto nei dati comportamentali &quot;Più visualizzati&quot;, il nome complesso basato su SKU genera un punteggio di rilevanza del testo più basso. Nel **[!UICONTROL Intelligent Ranking Boost]** (`5`) predefinito, l&#39;influenza sul comportamento potrebbe non essere sufficiente per superare tale spazio vuoto di testo. Aumentando l&#39;incremento è possibile spostare **YAN-K-E-512** in alto tra i prodotti che già corrispondono alla query. Anche **YAN-K-E-512** deve corrispondere alla query: almeno un attributo ricercabile per tale SKU deve includere **candle**, altrimenti non verrà visualizzato nei risultati e l&#39;incremento non può essere applicato.
+- **YAN-K-E-512** (posizione più bassa): nonostante il percentile di visualizzazione più alto nei dati comportamentali &quot;Più visualizzati&quot;, il nome complesso basato su SKU genera un punteggio di rilevanza del testo più basso. Nel **[!UICONTROL Intelligent Ranking Boost]** (`50`) predefinito, l&#39;influenza sul comportamento potrebbe non essere sufficiente per superare tale spazio vuoto di testo. Aumentando l&#39;incremento è possibile spostare **YAN-K-E-512** in alto tra i prodotti che già corrispondono alla query. Anche **YAN-K-E-512** deve corrispondere alla query: almeno un attributo ricercabile per tale SKU deve includere **candle**, altrimenti non verrà visualizzato nei risultati e l&#39;incremento non può essere applicato.
 
 **Esempio (query ampia):**
 
@@ -271,7 +271,7 @@ Gli eventi OR possono essere impostati manualmente:
 
 >[!AVAILABILITY]
 >
->Questa funzionalità è in [beta](https://experienceleague.adobe.com/it/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
+>Questa funzionalità è in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
 
 **La classificazione degli attributi** applica automaticamente un&#39;azione **[!UICONTROL Boost]**, **[!UICONTROL Bury]** o **[!UICONTROL Hide]** a ogni prodotto che corrisponde a una o più condizioni degli attributi, senza che sia necessario selezionare singoli SKU. La classificazione degli attributi viene visualizzata nell&#39;editor delle regole insieme a [Classificazione intelligente](#intelligent-ranking) e [Classificazione manuale](#manual-ranking) ed è disponibile per le **Regola per tutti i prodotti**, **Regole di ricerca** e **Regole per categorie**. Puoi utilizzarlo per ridimensionare il merchandising in cataloghi di grandi dimensioni, ad esempio per promuovere ogni prodotto di un determinato marchio o per seppellire ogni prodotto in un colore discontinuo.
 
@@ -394,7 +394,7 @@ Questa opzione consente di visualizzare rapidamente tutti i parametri della rego
 
 | Campo | Descrizione |
 | --- | --- |
-| [!UICONTROL Intelligent Ranking Boost] | Quando è selezionata una strategia intelligente diversa da **Nessuno**, questa impostazione controlla il modo in cui i segnali comportamentali influenzano la classificazione per quella regola. `5` predefinito; intervallo consentito `1`-`100`. Applicata al momento della query; l’anteprima della regola corrisponde al comportamento live per la regola configurata. |
+| [!UICONTROL Intelligent Ranking Boost] | Quando è selezionata una strategia intelligente diversa da **Nessuno**, questa impostazione controlla il modo in cui i segnali comportamentali influenzano la classificazione per quella regola. `50` predefinito; intervallo consentito `1`-`1000`. Applicata al momento della query; l’anteprima della regola corrisponde al comportamento live per la regola configurata. |
 
 ### Dettagli
 
