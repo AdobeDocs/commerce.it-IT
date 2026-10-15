@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 559efed5340b7076f18a3efc0077f9afd5f8ca48
+source-git-commit: 9ea19181108118892e238ba2ffce4bb7b451ee94
 workflow-type: tm+mt
-source-wordcount: '3576'
+source-wordcount: '3608'
 ht-degree: 0%
 ---
 # Note sulla versione [!DNL SaaS Data Export Extension]
@@ -60,6 +60,12 @@ Gli aggiornamenti includono:
 >L&#39;estensione [!DNL SaaS data export] è una raccolta di moduli installati automaticamente con [!DNL Live Search], [!DNL Product Recommendations] e [!DNL Catalog Service]. È possibile controllare la versione installata nel sistema utilizzando [!DNL Composer]. In alcuni casi, potrebbe essere utile aggiornare l’estensione di esportazione dei dati sul sistema per rilevare correzioni o nuove funzionalità senza aggiornare la versione del servizio Commerce.
 
 ## Versioni del 2026 {#release-notes-2026}
+
+### Versione 103.5.1
+
+_14 ottobre 2026_
+
+![Correzione](../assets/fix.svg) **Il tipo di attributo Numero è ora disponibile durante la creazione di attributi di prodotto nell&#39;interfaccia utente di amministrazione**. Questo attributo abilita l’ordinamento numerico e il filtro degli intervalli in Live Search. <!--MDEE-1416 -->
 
 ### Versione 103.5.0
 
