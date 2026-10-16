@@ -4,7 +4,7 @@ description: Informazioni sulla versione mensili per [!DNL Adobe Commerce Optimi
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: 'https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo'
 product_v2:
@@ -25,7 +25,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 92e2b81e91e5d78b08d551aa9531b18ebf50d853
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 0%
@@ -47,7 +47,7 @@ _3 settembre 2026_
 
 ### Classificazione attributi (beta)
 
-[!DNL Adobe Commerce Optimizer] regole di merchandising ora supportano [**classificazione attributi**](./merchandising/rules/add.md#attribute-ranking) per **Tutti gli elenchi prodotti**, **Regola categoria** e **Regola ricerca**. Applica automaticamente un&#39;azione **[!UICONTROL Boost]**, **[!UICONTROL Bury]** o **[!UICONTROL Hide]** a ogni prodotto che soddisfa una o più condizioni di attributo, ad esempio marchio o categoria, senza selezionare singoli SKU. La classificazione degli attributi è in versione beta. [Ulteriori informazioni](./merchandising/rules/add.md#attribute-ranking).
+[!DNL Adobe Commerce Optimizer] regole di merchandising ora supportano [**classificazione attributi**](./merchandising/rules/add.md#attribute-ranking) per **regola di ricerca predefinita**, **regola categoria** e **regola di ricerca**. Applica automaticamente un&#39;azione **[!UICONTROL Boost]**, **[!UICONTROL Bury]** o **[!UICONTROL Hide]** a ogni prodotto che soddisfa una o più condizioni di attributo, ad esempio marchio o categoria, senza selezionare singoli SKU. La classificazione degli attributi è in versione beta. [Ulteriori informazioni](./merchandising/rules/add.md#attribute-ranking).
 
 {{aco-release}}
 
@@ -165,7 +165,7 @@ _29 aprile 2026_
 
 <!--v1.52 release-->
 
-**Richiesta batch richieste**: l&#39;API GraphQL ora applica un massimo di 100 SKU per richiesta quando si recuperano i dati del catalogo. Vedi [limiti e limiti documentati](https://experienceleague.adobe.com/it/docs/commerce/optimizer/boundaries-limits#product-discovery).
+**Richiesta batch richieste**: l&#39;API GraphQL ora applica un massimo di 100 SKU per richiesta quando si recuperano i dati del catalogo. Vedi [limiti e limiti documentati](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery).
 
 <!--DATA-7156-->
 
@@ -359,7 +359,7 @@ _23 settembre 2025_
 
 ### Area geografica UE ora disponibile
 
-L’area di produzione UE (**eu1**) è disponibile per le organizzazioni IMS. Quando [aggiungi un&#39;istanza  [!DNL Commerce Optimizer] &#x200B;](./get-started.md#step-1-create-an-instance) in Cloud Manager, scegli **[!UICONTROL European Union]** come **[!UICONTROL Region]** (solo produzione).
+L’area di produzione UE (**eu1**) è disponibile per le organizzazioni IMS. Quando [aggiungi un&#39;istanza  [!DNL Commerce Optimizer] ](./get-started.md#step-1-create-an-instance) in Cloud Manager, scegli **[!UICONTROL European Union]** come **[!UICONTROL Region]** (solo produzione).
 
 Gli URL di produzione di base per la regione dell’Unione Europea sono:
 
