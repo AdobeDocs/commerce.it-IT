@@ -1,7 +1,7 @@
 ---
-source-git-commit: b12fd59e97279b78017bee0403a7e7672adb1957
+source-git-commit: f43710c77d063d923d136b9fda2d9283ede97788
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1250'
 ht-degree: 1%
 ---
 # Nuovo modello
@@ -9,6 +9,80 @@ ht-degree: 1%
 ## Novità
 
 Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo elenco sono esclusi tutti gli aggiornamenti minori, ad esempio la modifica della copia.
+
+### 16 ottobre 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stata aggiornata la documentazione sulle regole di merchandising per rinominare il tipo di regola Tutti gli elenchi di prodotti in Regola di ricerca predefinita in <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/overview">Panoramica sulle regole di merchandising</a>, <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/add">Crea e gestisci regole</a> e <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/release-notes">Note sulla versione</a>, in base all'opzione rinominata nel menu del tipo di regola Amministratore.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b5c9b1b4ead9f355cd7438d3a8f1b90ac08b12d1">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 14 ottobre 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Correzione dei valori predefiniti e dell'intervallo documentati per [!UICONTROL Intelligent Ranking Boost] in <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">Creare e gestire regole di merchandising</a>: il valore predefinito è <code>50</code> (in precedenza documentato come <code>5</code>) e l'intervallo massimo è <code>1000</code> (in precedenza documentato come <code>100</code>).</p>
+</td>
+      <td>
+        Tecnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/07fb011b0303ebca11dd3e0948d264c72bd2422e">commit</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 12 ottobre 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrizione</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>È stata aggiunta la documentazione per il nuovo filtro di esclusione esaurito per le unità di consigli in <a href="https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/recommendations/filters">Filtri</a>, che esclude i prodotti esauriti dai consigli.</p>
+</td>
+      <td>
+        Feedback, aggiornamento principale
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/abba2327d9c678e374a94c5bc5ed091f401c8aff">commit</a></td>
+    </tr>
+    <tr>
+      <td><p>È stato aggiornato il riferimento ai <a href="https://experienceleague.adobe.com/it/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">codici di registro esportazione dati</a> dai <a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">codici di registro sorgente.md</a> più recenti.</p>
+</td>
+      <td>
+        Tecnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/83acf0b6474920141c0bcc354f7c49ea7d10d29c">commit</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 8 ottobre 2026
 
@@ -388,36 +462,6 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
         Aggiornamento principale
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b6613edbf84681a860b9c71a07f43a7df40e8784">commit</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 12 agosto 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrizione</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Sono state aggiunte le <a href="https://experienceleague.adobe.com/it/docs/commerce/cloud-service/release-notes">note sulla versione</a> di produzione per Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Aggiornamento principale
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed13ed011180fbb9d535f5a228a5f932ebf00689">commit</a></td>
-    </tr>
-    <tr>
-      <td><p>Gli esercenti possono ora eseguire in autonomia l’onboarding di un altro conto PayPal nell’ambito del sito web direttamente dall’amministratore di Commerce. Per ulteriori informazioni, consulta <a href="https://experienceleague.adobe.com/it/docs/commerce/payment-services/configure/connect-website-account">Collegare un altro conto PayPal per un sito Web</a>.</p>
-</td>
-      <td>
-        Nuovo argomento
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e18c82a81c49de8175a8a8d77e9a191fe2af4b46">commit</a></td>
     </tr>
   </tbody>
 </table>

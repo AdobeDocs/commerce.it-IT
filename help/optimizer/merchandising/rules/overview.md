@@ -1,29 +1,33 @@
 ---
 title: Regole di merchandising
 description: '[!DNL Adobe Commerce Optimizer] le regole di merchandising combinano la logica con le azioni per modellare i risultati della ricerca, gli elenchi di prodotti predefiniti e le pagine delle categorie.'
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
 TQID: https://experienceleague.adobe.com/1lpaqHx0SaVYLXcTSOToxvbpKzhPJKmhfxjlCvNQLkU
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+    internal-label: Personalization
+source-git-commit: 44fb94ab5d9ba6deab421a15b391294ec0087f38
 workflow-type: tm+mt
-source-wordcount: 760
+source-wordcount: '821'
 ht-degree: 0%
-
 ---
-
 # Regole di merchandising
 
-Le regole di merchandising combinano la logica con le azioni per modellare l&#39;aspetto dei prodotti in **risultati di ricerca**, in **elenchi di prodotti predefiniti** (**tutti gli elenchi di prodotti**) e in **pagine di categorie**. Puoi aumentare, seppellire, fissare o nascondere i prodotti e applicare **classificazione intelligente** in modo che le inserzioni riflettano i tuoi obiettivi aziendali.
+Le regole di merchandising combinano la logica con le azioni per modellare l&#39;aspetto dei prodotti in **risultati di ricerca**, in **elenchi di prodotti predefiniti** tramite la **regola di ricerca predefinita** e in **pagine di categorie**. Puoi aumentare, seppellire, fissare o nascondere i prodotti e applicare **classificazione intelligente** in modo che le inserzioni riflettano i tuoi obiettivi aziendali.
 
 Ogni **regola di ricerca** ha tre componenti principali:
 
@@ -33,7 +37,7 @@ Ogni **regola di ricerca** ha tre componenti principali:
 
 **Le regole di categoria** utilizzano la **selezione di categorie** invece delle condizioni di query di ricerca. La classificazione intelligente e la classificazione manuale funzionano allo stesso modo della ricerca, con differenze richiamate in [Crea e gestisci regole](add.md).
 
-È possibile combinare più condizioni e azioni per le regole di ricerca e pianificare l&#39;attivazione di qualsiasi regola per un periodo. È inoltre possibile impostare una **regola predefinita** (**Tutti gli elenchi di prodotti**) che viene applicata quando non viene applicata alcuna regola di ricerca o categoria specifica.
+È possibile combinare più condizioni e azioni per le regole di ricerca e pianificare l&#39;attivazione di qualsiasi regola per un periodo. È inoltre possibile impostare una **regola di ricerca predefinita** da applicare quando non è disponibile alcuna regola di ricerca o categoria specifica.
 
 ## Regole di categoria {#category-rules}
 
@@ -68,7 +72,7 @@ Durante la composizione di una regola complessa, può essere utile scriverla con
 
 ## Regola predefinita
 
-È possibile impostare una regola predefinita (**Tutti gli elenchi di prodotti**) che viene applicata quando non viene specificato alcun termine di ricerca o non è possibile applicare altre regole di ricerca. Se si imposta la regola predefinita su &quot;Most Purchased&quot; (Più acquistati), le query vengono impostate per default su tale tipo di classificazione, a meno che non vengano sostituite da un termine di ricerca più specifico. Nessun termine di ricerca può essere impostato per la regola predefinita. **Le regole di categoria** sono separate: si applicano solo alle categorie selezionate e non sostituiscono la regola di elenco predefinita.
+È possibile impostare una **regola di ricerca predefinita** da applicare quando non viene specificato alcun termine di ricerca o non è possibile applicare altre regole di ricerca. Se si imposta la regola predefinita su &quot;Most Purchased&quot; (Più acquistati), le query vengono impostate per default su tale tipo di classificazione, a meno che non vengano sostituite da un termine di ricerca più specifico. Nessun termine di ricerca può essere impostato per la regola predefinita. **Le regole di categoria** sono separate: si applicano solo alle categorie selezionate e non sostituiscono la regola di elenco predefinita.
 
 ## Ordine di precedenza con più regole
 

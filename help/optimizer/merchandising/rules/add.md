@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Behavioral data
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3d21aed1af575d15c2cea4a42c49169a0fe37d7e
+source-git-commit: 92e2b81e91e5d78b08d551aa9531b18ebf50d853
 workflow-type: tm+mt
-source-wordcount: '4111'
+source-wordcount: '4108'
 ht-degree: 0%
 ---
 # Creare e gestire le regole
@@ -52,7 +52,7 @@ Ogni tipo di regola dispone di un’icona di informazioni nell’editor con una 
 
 | Tipo di regola | Finalità |
 | --- | --- |
-| **Tutti gli elenchi prodotti** | Classificazione e merchandising predefiniti tra gli elenchi di prodotti quando non si applica alcuna regola di ricerca o categoria più specifica. Puoi creare una sola regola di questo tipo, non può contenere condizioni. |
+| **Regola di ricerca predefinita** | Classificazione e merchandising predefiniti tra gli elenchi di prodotti quando non si applica alcuna regola di ricerca o categoria più specifica. Puoi creare una sola regola di questo tipo, non può contenere condizioni. |
 | **Regola categoria** | Applica il merchandising e la classificazione a una singola categoria, controllando l’ordine dei prodotti sulla pagina di tale categoria. |
 | **Regola di ricerca** | Applica il merchandising e la classificazione quando gli acquirenti eseguono una ricerca che corrisponde alle condizioni di query della regola. |
 
@@ -143,7 +143,7 @@ Se più categorie hanno nomi simili, utilizzare il percorso della categoria visu
 
 ### Classificazione intelligente {#intelligent-ranking}
 
-Classificazione intelligente ordina i prodotti utilizzando **segnali comportamentali** e, se applicabile, IA. Si applica a **regole di ricerca**, **tutti gli elenchi di prodotti** (regole predefinite) e **regole categoria** (pagine categorie). Per gli acquirenti **ricerche**, la classificazione pesa anche **rilevanza testuale** per la query; **le pagine di categoria** non utilizzano il testo della query allo stesso modo, l&#39;editor si concentra sulle strategie comportamentali.
+Classificazione intelligente ordina i prodotti utilizzando **segnali comportamentali** e, se applicabile, IA. Si applica a **regole di ricerca**, **regole di ricerca predefinite** e **regole di categoria** (pagine di categorie). Per gli acquirenti **ricerche**, la classificazione pesa anche **rilevanza testuale** per la query; **le pagine di categoria** non utilizzano il testo della query allo stesso modo, l&#39;editor si concentra sulle strategie comportamentali.
 
 I proprietari dei negozi possono impostare strategie come le seguenti. Le etichette esatte e le finestre temporali corrispondono all’editor di regole e differiscono leggermente per tipo di regola.
 
@@ -401,7 +401,7 @@ Questa opzione consente di visualizzare rapidamente tutti i parametri della rego
 | Campo | Descrizione |
 | --- | --- |
 | Nome | Nome della regola. I nomi delle regole devono essere univoci. |
-| Tipo di regola | **Predefinito** (tutti gli elenchi prodotti), **Query** (condizioni di ricerca specifiche) o **Categoria** (pagine categorie), a seconda di **La regola si applica a**. |
+| Tipo di regola | **Regola di ricerca predefinita**, **Query** (condizioni di ricerca specifiche) o **Categoria** (pagine categoria), a seconda di **Regola applicabile a**. |
 | Data di inizio | Data di inizio della regola, se pianificata. |
 | Data di fine | Data di fine della regola, se pianificata. |
 | Descrizione | Breve descrizione della regola. |
