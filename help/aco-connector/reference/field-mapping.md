@@ -153,7 +153,7 @@ Il feed `prices` invia [!DNL Adobe Commerce] dati all&#39;endpoint [Price](https
 Il feed `categories` invia [!DNL Adobe Commerce] dati all&#39;endpoint [Categories](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}.
 
 Il connettore identifica i record dei feed delle categorie in base al percorso URL e al codice di visualizzazione dell’archivio.
-- 
+- &#x200B;
   - Quando una categoria si sposta su un elemento padre diverso nella struttura delle categorie, la sincronizzazione invia i nuovi percorsi per tale categoria e i relativi discendenti e rimuove i percorsi precedenti da [!DNL Adobe Commerce Optimizer].
 - Gli elementi con un `urlPath` vuoto (categorie radice logiche) vengono ignorati e non vengono mai inviati.
 
