@@ -3,7 +3,7 @@ title: Mappatura campi per [!DNL Adobe Commerce Optimizer Connector] feed
 description: Scopri come mappare il campo [!DNL Adobe Commerce Optimizer Connector] dai dati del catalogo [!DNL Adobe Commerce] ai formati API di acquisizione [!DNL Adobe Commerce Optimizer] per tutti i feed.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
 product_v2:
@@ -39,9 +39,9 @@ topic_v2:
     internal-label: Personalization
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
     internal-label: Data modeling
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b62a0a272684daa2494017d290a711da8e1746b9
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1065'
 ht-degree: 2%
 ---
 
@@ -152,7 +152,10 @@ Il feed `prices` invia [!DNL Adobe Commerce] dati all&#39;endpoint [Price](https
 
 Il feed `categories` invia [!DNL Adobe Commerce] dati all&#39;endpoint [Categories](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}.
 
-Gli elementi con un `urlPath` vuoto (categorie radice logiche) vengono ignorati e non vengono mai inviati.
+Il connettore identifica i record dei feed delle categorie in base al percorso URL e al codice di visualizzazione dell’archivio.
+- 
+  - Quando una categoria si sposta su un elemento padre diverso nella struttura delle categorie, la sincronizzazione invia i nuovi percorsi per tale categoria e i relativi discendenti e rimuove i percorsi precedenti da [!DNL Adobe Commerce Optimizer].
+- Gli elementi con un `urlPath` vuoto (categorie radice logiche) vengono ignorati e non vengono mai inviati.
 
 | Campo [!DNL Adobe Commerce] | Campo API [!DNL Commerce Optimizer] | Dettagli mappatura |
 | --------------- | -------------- | ------- |
