@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ## Gestione dei dati e privacy
 
-La raccolta dati per [!DNL Product Recommendations] non include informazioni personali identificabili (PII). Tutti gli identificatori utente, come gli ID cookie e gli indirizzi IP, sono rigorosamente anonimi. Per ulteriori informazioni, consulta [Informativa sulla privacy di Adobe](https://www.adobe.com/privacy/policy.html).
+La raccolta dati per [!DNL Product Recommendations] non include informazioni personali identificabili (PII). Tutti gli identificatori utente, come gli ID cookie e gli indirizzi IP, sono rigorosamente anonimi. Per ulteriori informazioni, consulta [Informativa sulla privacy di Adobe](https://www.adobe.com/it/privacy/policy.html).
 
 Per ulteriori informazioni sulla sincronizzazione dei dati, vedere [Dashboard di gestione dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard).
 

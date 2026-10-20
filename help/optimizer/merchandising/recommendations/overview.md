@@ -33,6 +33,6 @@ I consigli emergono sulla vetrina come unità con etichette, ad esempio &quot;Ha
 
 ## Privacy
 
-La raccolta dei dati ai fini della raccomandazione non include informazioni personali identificabili (PII, personally identifiable information). Inoltre, tutti gli identificatori degli utenti come gli ID cookie e gli indirizzi IP sono rigorosamente anonimi. Per ulteriori informazioni, consulta [Informativa sulla privacy di Adobe](https://www.adobe.com/privacy/policy.html).
+La raccolta dei dati ai fini della raccomandazione non include informazioni personali identificabili (PII, personally identifiable information). Inoltre, tutti gli identificatori degli utenti come gli ID cookie e gli indirizzi IP sono rigorosamente anonimi. Per ulteriori informazioni, consulta [Informativa sulla privacy di Adobe](https://www.adobe.com/it/privacy/policy.html).
 
 Gli utenti di Recommendations possono fare riferimento alla pagina [Sincronizzazione dati](../../setup/data-sync.md) per ulteriori dati sulla sincronizzazione dei dati.
