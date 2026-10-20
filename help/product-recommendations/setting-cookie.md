@@ -97,7 +97,7 @@ Per verificare il comportamento dei consigli di prodotto con le restrizioni sui 
 
 ## Rispetto della privacy
 
-La raccolta dati di Consigli di prodotto non include informazioni personali (PII, personally identifiable information). Tutti gli identificatori utente, come gli ID cookie e gli indirizzi IP, sono anonimi. Per ulteriori informazioni, vedere l&#39;[Informativa sulla privacy di Adobe](https://www.adobe.com/privacy/policy.html).
+La raccolta dati di Consigli di prodotto non include informazioni personali (PII, personally identifiable information). Tutti gli identificatori utente, come gli ID cookie e gli indirizzi IP, sono anonimi. Per ulteriori informazioni, vedere l&#39;[Informativa sulla privacy di Adobe](https://www.adobe.com/it/privacy/policy.html).
 
 >[!TIP]
 >

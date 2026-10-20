@@ -63,7 +63,7 @@ Adobe mantiene un set completo di certificazioni e attestazioni per l&#39;infras
 
 - **RGPD e CCPA**: Adobe fornisce strumenti e documentazione per aiutare i clienti a rispettare gli obblighi previsti dalle normative sulla privacy dei dati.
 
-Per un elenco completo delle certificazioni e della documentazione sulla conformità di Adobe, visita il [Centro affidabilità Adobe](https://www.adobe.com/trust/compliance/compliance-list.html){target="_blank"}.
+Per un elenco completo delle certificazioni e della documentazione sulla conformità di Adobe, visita il [Centro affidabilità Adobe](https://www.adobe.com/it/trust/compliance/compliance-list.html){target="_blank"}.
 
 ## Certificazione per professionisti
 
