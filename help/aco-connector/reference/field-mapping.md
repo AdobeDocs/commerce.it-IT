@@ -39,9 +39,9 @@ topic_v2:
     internal-label: Personalization
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
     internal-label: Data modeling
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b62a0a272684daa2494017d290a711da8e1746b9
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1065'
 ht-degree: 2%
 ---
 
@@ -152,7 +152,10 @@ Il feed `prices` invia [!DNL Adobe Commerce] dati all&#39;endpoint [Price](https
 
 Il feed `categories` invia [!DNL Adobe Commerce] dati all&#39;endpoint [Categories](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}.
 
-Gli elementi con un `urlPath` vuoto (categorie radice logiche) vengono ignorati e non vengono mai inviati.
+Il connettore identifica i record dei feed delle categorie in base al percorso URL e al codice di visualizzazione dell’archivio.
+- &#x200B;
+  - Quando una categoria si sposta su un elemento padre diverso nella struttura delle categorie, la sincronizzazione invia i nuovi percorsi per tale categoria e i relativi discendenti e rimuove i percorsi precedenti da [!DNL Adobe Commerce Optimizer].
+- Gli elementi con un `urlPath` vuoto (categorie radice logiche) vengono ignorati e non vengono mai inviati.
 
 | Campo [!DNL Adobe Commerce] | Campo API [!DNL Commerce Optimizer] | Dettagli mappatura |
 | --------------- | -------------- | ------- |
