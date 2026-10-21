@@ -3,7 +3,7 @@ title: Sincronizzazione dati
 description: Esaminare i dati del catalogo sincronizzati dall'origine dati Commerce in [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
 exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
 TQID: https://experienceleague.adobe.com/ZTMFkch-YNS-CUgCdadmg1kemA8ORXQ7KGCEkI7d-Yw
 product_v2:
@@ -19,7 +19,7 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 2dbf2b973af0cb7b831a17ca1a868a81b11bc9ee
+source-git-commit: 014ae9bbe0a9bb48e6a5d574af4fc47158ad33dc
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
@@ -50,7 +50,7 @@ La pagina **Sincronizzazione dati** contiene i campi seguenti:
 
 Per visualizzare i dettagli di un prodotto sincronizzato in formato JSON, fai clic sull&#39;icona del codice ![collegamento al codice](../assets/data-sync-details.png) nella riga del prodotto dalla tabella dei prodotti sincronizzati.
 
-![Dettagli prodotto Syncd](../assets/synced-products.png)
+![Dettagli prodotto sincronizzati](../assets/synced-products.png)
 
 ## Risincronizza dati catalogo
 
