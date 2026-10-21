@@ -29,14 +29,14 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: e689017374503218dd1100ab1226e7d76fbb7dae
 workflow-type: tm+mt
-source-wordcount: '2697'
+source-wordcount: '2693'
 ht-degree: 0%
 ---
 # Raccogliere dati Commerce tramite tag Adobe Experience Platform
 
-Anche se è possibile utilizzare l&#39;estensione [!DNL Data Connection] per pubblicare e sottoscrivere eventi storefront, alcuni commercianti potrebbero già utilizzare una soluzione di raccolta dati, ad esempio i [tag Adobe Experience Platform](https://experienceleague.adobe.com/it/docs/platform-learn/data-collection/tags/create-a-property). Per questi commercianti, Adobe Commerce fornisce un&#39;opzione di sola pubblicazione nell&#39;estensione [!DNL Data Connection] che utilizza Adobe Commerce Event SDK.
+Anche se è possibile utilizzare l&#39;estensione [!DNL Data Connection] per pubblicare e sottoscrivere eventi storefront, alcuni commercianti potrebbero già utilizzare una soluzione di raccolta dati, ad esempio i [tag Adobe Experience Platform](https://experienceleague.adobe.com/it/docs/experience-platform/tags/home). Per questi commercianti, Adobe Commerce fornisce un&#39;opzione di sola pubblicazione nell&#39;estensione [!DNL Data Connection] che utilizza Adobe Commerce Event SDK.
 
 Flusso di dati dell&#39;estensione ![[!DNL Data Connection]](assets/tags-data-flow.png)
 Flusso di dati dell&#39;estensione _[!DNL Data Connection]con tag_
