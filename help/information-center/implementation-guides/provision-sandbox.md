@@ -49,7 +49,7 @@ La modalità di provisioning di una sandbox dipende dal prodotto Adobe Commerce 
 
 - **[!DNL Adobe Commerce as a Cloud Service]** - Utilizzare il portale di provisioning self-service di Commerce Cloud Manager per avviare le istanze sandbox e di produzione. Consulta [Guida introduttiva ad Adobe Commerce as a Cloud Service](/help/cloud-service/getting-started.md).
 
-- **Adobe Commerce on Cloud (partner)**: invia richieste sandbox tramite il supporto Adobe. Consulta [Richieste sandbox per infrastrutture partner Adobe Commerce su cloud](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/partner-magento-commerce-cloud-sandbox-requests).
+- **Adobe Commerce on Cloud (partner)**: invia richieste sandbox tramite il supporto Adobe. Consulta [Richieste sandbox per infrastrutture partner Adobe Commerce su cloud](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/partner-magento-commerce-cloud-sandbox-requests).
 
 - **Servizi Commerce**: utilizzare le chiavi API sandbox con [Connettore servizi Commerce](/help/landing/saas.md) per testare le integrazioni di servizi prima di connettere un&#39;istanza di produzione.
 

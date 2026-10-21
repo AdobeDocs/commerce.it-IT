@@ -2,7 +2,7 @@
 title: Connettore Adobe Commerce Optimizer
 description: Scopri in che modo [!DNL Adobe Commerce Optimizer Connector] sincronizza i dati del catalogo da Commerce a [!DNL Adobe Commerce Optimizer] per la ricerca e la distribuzione in vetrina.
 feature: Integration, Storefront, Configuration
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe) e ai progetti on-premise."
 autotag-review: '2026-06-09T19:00:00.000Z'
 nudge: true
 TQID: 'https://experienceleague.adobe.com/v769V06jl-9YfovpL3HOB-FxovIMZyHxOlHXHvkQmbc'
