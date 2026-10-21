@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 663a9e8e61850f3d34712971eb28f18893d56ad2
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1483'
 ht-degree: 0%
 ---
 # Limiti e limiti
@@ -118,7 +118,6 @@ L&#39;utilizzo di Dynamic Media tiene traccia delle richieste API pervenute nei 
 | Criteri per visualizzazione catalogo | Numero di filtri dati consentiti | 10 | No |
 | Valori degli attributi in un criterio | Numero di caratteristiche del prodotto che possono essere configurate per il filtro | 100 | No |
 | [Assegnazione chiave di accesso limitata](setup/private-catalog-view.md) | Numero di chiavi di accesso con restrizioni che possono essere assegnate a una singola vista catalogo | 3 | No |
-| [Chiavi di accesso limitate](setup/restricted-access-keys.md) | Numero di chiavi per ambiente | Massimo 100 | No |
 | Dimensione chiave RSA (chiavi di accesso limitate) | Forza minima e massima della chiave accettata per una chiave ad accesso limitato | minimo 2048 bit, massimo 8192 bit | No |
 | Chiavi di accesso con restrizioni | Ritardo propagazione revoca chiave | Fino a 5 minuti, a causa della memorizzazione nella cache. I token firmati da una chiave rimossa vengono negati una volta trascorso il ritardo. | Non applicabile |
 
