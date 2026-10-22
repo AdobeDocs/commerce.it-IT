@@ -136,4 +136,4 @@ L’e-commerce non è più limitato alle vetrine e ai risultati di ricerca. I mo
 * [Criteri](/help/optimizer/setup/policies.md)
 * [Strumenti per gli sviluppatori di codifica AI per Adobe Commerce App Builder](/help/cloud-service/migration/coding-tools.md)
 * [API di Commerce](../../apis/commerce-apis.md)
-* [Playlist di Commerce Developer Agent](https://experienceleague.adobe.com/en/playlists/commerce-developer-agent) - Guarda i video tecnici sulla configurazione e l&#39;utilizzo di Commerce Developer Agent.
+* [Playlist di Commerce Developer Agent](https://experienceleague.adobe.com/it/playlists/commerce-developer-agent) - Guarda i video tecnici sulla configurazione e l&#39;utilizzo di Commerce Developer Agent.

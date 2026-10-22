@@ -57,7 +57,7 @@ Scopri cos’è Adobe Commerce e come funzionano insieme l’amministratore e la
 
 - [[!DNL Adobe Commerce Optimizer role-based workflows]](/help/optimizer/get-started.md#role-based-workflows)
 
-- [Guida introduttiva di Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/guide-overview)
+- [Guida introduttiva di Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-admin/start/guide-overview)
 
 
 ## Per gli esercenti
@@ -90,8 +90,8 @@ La configurazione varia in base alla piattaforma e al fatto che il progetto util
 
 - Per l’amministrazione della piattaforma per Adobe Commerce on-premise o sul cloud, consulta:
 
-- [Guida di Commerce sull’infrastruttura cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
-- [Guide operative di Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home) per on-premise.
+- [Guida di Commerce sull’infrastruttura cloud](https://experienceleague.adobe.com/it/docs/commerce-on-cloud/user-guide/overview)
+- [Guide operative di Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/operational-guides/home) per on-premise.
 
 ## Per sviluppatori
 
