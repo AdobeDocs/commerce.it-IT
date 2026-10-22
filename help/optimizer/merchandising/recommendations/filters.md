@@ -1,7 +1,7 @@
 ---
 title: Filtri per consigli
 description: Scopri come utilizzare i filtri per controllare quali prodotti vengono visualizzati nei consigli di [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
 product_v2:
@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 092ffabea06cf72af39a663c14b448f9e7633f60
+source-git-commit: b5ef5e736e116d4321444cbaaeae90a08facf047
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2407'
 ht-degree: 0%
 ---
 # Filtra prodotti
@@ -89,7 +89,7 @@ Utilizza un filtro prezzo **statico** quando desideri un prezzo minimo o massimo
 1. Nell&#39;elenco a sinistra, selezionare **[!UICONTROL Price]**.
 1. Attiva **[!UICONTROL Enable filter]**.
 
-   I valori di prezzo utilizzano la valuta di base del sito Web **&#x200B;**, come indicato nella pagina.
+   I valori di prezzo utilizzano la valuta di base del sito Web ****, come indicato nella pagina.
 
 1. Aprire **[!UICONTROL Include products based on]** (nella scheda **[!UICONTROL Inclusions]**) o il controllo equivalente nella scheda **[!UICONTROL Exclusions]** e scegliere **[!UICONTROL Set price range]**.
 1. Impostare un **[!UICONTROL Min price]** e/o un **[!UICONTROL Max price]** facoltativo utilizzando i campi accanto al simbolo di valuta. È possibile digitare gli importi o utilizzare i controlli **-** e **+** per regolare i valori. Lascia vuoto un limite se non hai bisogno di un minimo o di un massimo. L&#39;intervallo viene confrontato con il prezzo calcolato finale di ciascun prodotto per il listino prezzi attivo del negozio.
@@ -225,6 +225,14 @@ Un filtro di attributi differisce da un [filtro di prodotto](#product) in quanto
 #### Impostare un filtro attributi
 
 Per aggiungere una regola di inclusione o esclusione di attributi a un’unità di consigli, effettua le seguenti operazioni.
+
+>[!TIP]
+>
+>Per gli attributi che si desidera filtrare, utilizzare l&#39;[API metadati](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) per impostare il parametro `filterable`:
+>
+>{&quot;filterable&quot;: true}
+>
+>L&#39;attributo diventa disponibile nel menu **Attributi** alla successiva sincronizzazione del catalogo con [!DNL Adobe Commerce Optimizer].
 
 1. Durante la [creazione o modifica](create.md) di un&#39;unità di consigli, passare a **[!UICONTROL Filter products]**.
 1. Selezionare la scheda **[!UICONTROL Inclusions]** o **[!UICONTROL Exclusions]**. Il badge in ogni scheda mostra il numero di filtri di quel tipo abilitati.
