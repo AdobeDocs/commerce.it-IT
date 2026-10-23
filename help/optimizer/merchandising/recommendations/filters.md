@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 092ffabea06cf72af39a663c14b448f9e7633f60
+source-git-commit: b5ef5e736e116d4321444cbaaeae90a08facf047
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2407'
 ht-degree: 0%
 ---
 # Filtra prodotti
@@ -225,6 +225,14 @@ Un filtro di attributi differisce da un [filtro di prodotto](#product) in quanto
 #### Impostare un filtro attributi
 
 Per aggiungere una regola di inclusione o esclusione di attributi a un’unità di consigli, effettua le seguenti operazioni.
+
+>[!TIP]
+>
+>Per gli attributi che si desidera filtrare, utilizzare l&#39;[API metadati](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) per impostare il parametro `filterable`:
+>
+>{&quot;filterable&quot;: true}
+>
+>L&#39;attributo diventa disponibile nel menu **Attributi** alla successiva sincronizzazione del catalogo con [!DNL Adobe Commerce Optimizer].
 
 1. Durante la [creazione o modifica](create.md) di un&#39;unità di consigli, passare a **[!UICONTROL Filter products]**.
 1. Selezionare la scheda **[!UICONTROL Inclusions]** o **[!UICONTROL Exclusions]**. Il badge in ogni scheda mostra il numero di filtri di quel tipo abilitati.
