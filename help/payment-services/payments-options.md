@@ -27,9 +27,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2458'
 ht-degree: 0%
 ---
 # Opzioni di pagamento
@@ -149,7 +149,7 @@ L&#39;estrazione di [!DNL Google Pay] **express** può mostrare **metodi di sped
 * I codici aggiunti nel foglio paga [!DNL Google Pay] possono essere rimossi solo dal foglio paga, non dalla pagina del carrello di Commerce.
 * In Adobe Commerce 2.4.4-2.4.6, la riga di sconto nel foglio paga di [!DNL Google Pay] potrebbe non mostrare alcun valore a causa di una limitazione della piattaforma.
 * In Adobe Commerce 2.4.7, il valore dello sconto potrebbe non essere visualizzato nel foglio paga [!DNL Google Pay] per alcuni prodotti (principalmente prodotti scaricabili) a causa di una limitazione della piattaforma nella risposta di GraphQL.
-* Se viene applicata una regola [del prezzo del carrello](https://experienceleague.adobe.com/it/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart) automatica (ad esempio, &quot;$50 di sconto quando si spendono più di $200&quot;), questa viene combinata con qualsiasi codice applicato dall&#39;acquirente nel foglio paga. I totali visualizzati nel foglio paga [!DNL Google Pay] potrebbero essere diversi dal riepilogo dell&#39;ordine.
+* Se viene applicata una regola [del prezzo del carrello](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart) automatica (ad esempio, &quot;$50 di sconto quando si spendono più di $200&quot;), questa viene combinata con qualsiasi codice applicato dall&#39;acquirente nel foglio paga. I totali visualizzati nel foglio paga [!DNL Google Pay] potrebbero essere diversi dal riepilogo dell&#39;ordine.
 
 ### [!DNL PayPal Payment Buttons]
 
@@ -166,6 +166,17 @@ Scopri la disponibilità dei metodi di pagamento per paese nella [documentazione
 I clienti possono effettuare il check-out con facilità e sicurezza utilizzando il pulsante PayPal.
 
 Il pulsante [!DNL PayPal] è visibile dalla pagina del prodotto, dal mini-carrello, dal carrello e dalle visualizzazioni per il pagamento.
+
+#### Pagina di revisione PayPal Express
+
+In [!DNL Payment Services] 2.17.0 o versione successiva, i commercianti possono configurare una pagina di revisione opzionale per il pagamento PayPal Express. Questa pagina è separata dal modale di pagamento PayPal e consente agli acquirenti di rivedere il totale dell&#39;ordine finale e i termini e le condizioni applicabili prima di effettuare un ordine.
+
+Utilizza **[!UICONTROL Skip Review]** nella [configurazione dei pulsanti di pagamento PayPal](configure-admin.md#paypal-payment-buttons) per controllare questo passaggio:
+
+* `No` - L&#39;acquirente ritorna alla pagina di revisione dell&#39;esercente dopo aver completato il modale di pagamento PayPal e conferma l&#39;ordine prima di effettuarlo.
+* `Yes` - La pagina di revisione del commerciante è stata saltata.
+
+L&#39;impostazione della pagina di revisione non sostituisce la responsabilità dell&#39;esercente di soddisfare i requisiti normativi applicabili. L&#39;impostazione esistente [Pagina di revisione di Google Pay](configure-admin.md#google-pay) è configurata separatamente.
 
 #### Pulsante [!DNL Venmo]
 
@@ -201,7 +212,7 @@ Scopri come disabilitare o abilitare i messaggi [!DNL Pay Later] aggiornando la 
 
 I metodi di pagamento PayPal, PayLater e Venmo utilizzano un [callback di spedizione lato server](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/) che consente a PayPal di comunicare direttamente con l&#39;istanza Commerce per recuperare le opzioni di spedizione e calcolare i totali in tempo reale.
 
-Questo approccio lato server consente a [!DNL Payment Services] di saltare la finestra a comparsa di conferma dell&#39;ordine, fornendo un&#39;esperienza di acquisto più rapida e semplificata. Poiché le spese e le tasse di spedizione vengono calcolate dinamicamente tramite callback, l&#39;acquirente visualizza i totali accurati direttamente nella pagina di revisione di PayPal o Venmo.
+Poiché le spese e le tasse di spedizione vengono calcolate dinamicamente tramite callback, l&#39;acquirente visualizza le opzioni di spedizione aggiornate e i totali direttamente nel modale di pagamento PayPal o Venmo. Per il pagamento tramite PayPal Express, la [pagina di revisione dell&#39;esercente](#paypal-express-review-page) opzionale è un passaggio separato dopo il pagamento tramite PayPal, controllato da **[!UICONTROL Skip Review]**.
 
 >[!NOTE]
 >
@@ -221,14 +232,14 @@ Per **acquisire pagamenti con _solo_ pulsanti di pagamento PayPal (_non_ l&#39;o
 
 1. Assicurati che l&#39;archivio sia [in modalità di produzione](configure-admin.md#general-configuration).
 1. [Configura i pulsanti di pagamento PayPal desiderati](configure-admin.md#paypal-payment-buttons) in Impostazioni.
-1. Disattiva _l&#39;opzione **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;nella sezione&#x200B;_[!UICONTROL Payment buttons]_._
+1. Disattiva _l&#39;opzione **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**nella sezione_[!UICONTROL Payment buttons]_._
 
 Per **acquisire i pagamenti con il provider di carte di credito esistente _e_ i pulsanti di pagamento PayPal**:
 
 1. Assicurati che l&#39;archivio sia [in modalità di produzione](configure-admin.md#general-configuration).
 1. [Configura i pulsanti di pagamento PayPal desiderati](configure-admin.md#paypal-payment-buttons).
-1. Disattiva _l&#39;opzione **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;nella sezione&#x200B;_[!UICONTROL Payment buttons]_._
-1. Disattiva _l&#39;opzione **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)**&#x200B;nella sezione&#x200B;_[!UICONTROL Credit card fields]_ e utilizza l&#39;account [provider di carte di credito esistente](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/payments/payments#payments)._
+1. Disattiva _l&#39;opzione **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**nella sezione_[!UICONTROL Payment buttons]_._
+1. Disattiva _l&#39;opzione **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)**nella sezione_[!UICONTROL Credit card fields]_ e utilizza l&#39;account [provider di carte di credito esistente](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments#payments)._
 
 ## Metodi di pagamento locali
 
@@ -269,7 +280,7 @@ Per abilitare i pulsanti di pagamento rapido, configura singolarmente ogni metod
 
 ## Opzioni di pagamento
 
-Con [!DNL Payment Services] puoi configurare l&#39;esperienza di pagamento per Adobe Commerce in base alle preferenze e ai comportamenti degli acquirenti. Caratteristiche quali il vaulting con carta di credito [1&rbrace; e lo svuotamento automatico dell&#39;ordine garantiscono ai clienti una transazione semplice e senza problemi.](vaulting.md)
+Con [!DNL Payment Services] puoi configurare l&#39;esperienza di pagamento per Adobe Commerce in base alle preferenze e ai comportamenti degli acquirenti. Caratteristiche quali il vaulting con carta di credito [1} e lo svuotamento automatico dell&#39;ordine garantiscono ai clienti una transazione semplice e senza problemi.](vaulting.md)
 
 Con Adobe Commerce e Magento Open Source [!DNL Payment Services], sono disponibili più esperienze di pagamento. Esistono comportamenti diversi per ogni metodo di pagamento a seconda della posizione in cui sei nel processo di pagamento:
 
@@ -283,7 +294,7 @@ Con Adobe Commerce e Magento Open Source [!DNL Payment Services], sono disponibi
 
 ### Ricalcolo ordine
 
-Quando un cliente accede al flusso di pagamento dal mini-carrello, dal carrello o dalla pagina del prodotto, viene indirizzato a una pagina di revisione dell’ordine in cui può visualizzare l’indirizzo di spedizione selezionato in una finestra a comparsa PayPal. Dopo che il cliente ha selezionato il metodo di spedizione, l&#39;importo dell&#39;ordine viene ricalcolato in modo appropriato e il cliente può visualizzare le spese di spedizione e le imposte.
+Quando un cliente accede al flusso di pagamento PayPal dal mini-carrello, dal carrello o dalla pagina del prodotto, può controllare l&#39;indirizzo di spedizione selezionato nel modale di pagamento PayPal. Dopo che il cliente ha selezionato il metodo di spedizione, l&#39;importo dell&#39;ordine viene ricalcolato e il cliente può visualizzare le spese di spedizione e le imposte. Per il pagamento PayPal Express, la [pagina di revisione dell&#39;esercente](#paypal-express-review-page) opzionale consente al cliente di esaminare il totale finale e i termini e le condizioni applicabili prima di effettuare l&#39;ordine.
 
 Quando un cliente accede al flusso di pagamento dalla pagina di pagamento, il sistema è già a conoscenza dell&#39;indirizzo di spedizione e dell&#39;importo calcolato finale e i totali sono rappresentati in modo appropriato.
 
