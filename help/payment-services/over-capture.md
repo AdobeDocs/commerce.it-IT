@@ -17,7 +17,7 @@ PayPal determina il limite di overcapture per ogni account esercente. L&#39;abil
 
 >[!NOTE]
 >
->In questo argomento viene descritta l&#39;overcapture nell&#39;estensione [!DNL Payment Services]. Per [!DNL Adobe Commerce as a Cloud Service], vedere [Quantità di acquisizione personalizzate](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts) per i requisiti di disponibilità e abilitazione separati.
+>In questo argomento viene descritta l&#39;overcapture nell&#39;estensione [!DNL Payment Services]. Per [!DNL Adobe Commerce as a Cloud Service], vedere [Quantità di acquisizione personalizzate](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts) per i requisiti di disponibilità e abilitazione separati.
 
 ## Prerequisiti
 
@@ -42,7 +42,7 @@ Prima di abilitare l&#39;overcapture:
 
 ## Acquisire un pagamento autorizzato
 
-L&#39;overcapture avviene durante la fatturazione nell&#39;amministratore. L&#39;importo di acquisizione richiesto deve essere compreso nel limite approvato da PayPal per il tuo account esercente. Vedere [Creare una fattura](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) per il flusso di lavoro di fatturazione standard.
+L&#39;overcapture avviene durante la fatturazione nell&#39;amministratore. L&#39;importo di acquisizione richiesto deve essere compreso nel limite approvato da PayPal per il tuo account esercente. Vedere [Creare una fattura](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) per il flusso di lavoro di fatturazione standard.
 
 1. Nella barra laterale _Admin_, passa a **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
 1. Apri un ordine con un pagamento autorizzato che non è ancora stato acquisito.
