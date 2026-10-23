@@ -26,9 +26,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1110'
 ht-degree: 0%
 ---
 # Abilita [!DNL Payment Services] per la produzione
@@ -61,6 +61,8 @@ Dopo aver [configurato i servizi Commerce](connect.md#configure-commerce-service
    >[!IMPORTANT]
    >
    >[!DNL Payment Services] supporta le acquisizioni parziali. Un commerciante può acquisire parzialmente (fatturare) parti di un ordine. Ad esempio, puoi acquisire ogni elemento singolarmente oppure un elemento ora e il resto in un secondo momento.
+
+   I commercianti idonei con un contratto di sovrascrittura PayPal possono abilitare anche [la sovrascrittura](over-capture.md) in [!DNL Payment Services] 2.17.0 o versione successiva. L&#39;overcapture richiede che **[!UICONTROL Payment Action]** sia impostato su `Authorize`, con l&#39;acquisizione eseguita successivamente durante la fatturazione.
 
 1. Fare clic su **[!UICONTROL Save]**.
 1. Fare clic su **[!UICONTROL Go to Payment Services]** per tornare alla home di [!DNL Payment Services].

@@ -22,9 +22,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '578'
 ht-degree: 0%
 ---
 # Vaulting con carta di credito
@@ -100,3 +100,5 @@ Per creare un ordine nell’amministratore per un cliente utilizzando la sua car
 ## Sicurezza
 
 Le informazioni minime sulla carta di credito vengono condivise con l&#39;acquirente, che visualizza solo le ultime quattro cifre, la data di scadenza e il marchio della carta di credito archiviata. Le informazioni sulla carta di credito vengono archiviate con il provider di pagamenti per soddisfare gli standard di conformità [PCI](security.md#pci-compliance).
+
+In [!DNL Payment Services] 2.17.0 o versione successiva, agli acquirenti che pagano con una carta di credito salvata potrebbe essere richiesto di completare un [3D Secure (3DS) authentication challenge](security.md#3ds) richiesto dall&#39;emittente della carta. Il salvataggio di una scheda non ignora l’autenticazione richiesta dall’emittente.

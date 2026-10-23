@@ -27,9 +27,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2458'
 ht-degree: 0%
 ---
 # Opzioni di pagamento
@@ -167,6 +167,17 @@ I clienti possono effettuare il check-out con facilità e sicurezza utilizzando 
 
 Il pulsante [!DNL PayPal] è visibile dalla pagina del prodotto, dal mini-carrello, dal carrello e dalle visualizzazioni per il pagamento.
 
+#### Pagina di revisione PayPal Express
+
+In [!DNL Payment Services] 2.17.0 o versione successiva, i commercianti possono configurare una pagina di revisione opzionale per il pagamento PayPal Express. Questa pagina è separata dal modale di pagamento PayPal e consente agli acquirenti di rivedere il totale dell&#39;ordine finale e i termini e le condizioni applicabili prima di effettuare un ordine.
+
+Utilizza **[!UICONTROL Skip Review]** nella [configurazione dei pulsanti di pagamento PayPal](configure-admin.md#paypal-payment-buttons) per controllare questo passaggio:
+
+* `No` - L&#39;acquirente ritorna alla pagina di revisione dell&#39;esercente dopo aver completato il modale di pagamento PayPal e conferma l&#39;ordine prima di effettuarlo.
+* `Yes` - La pagina di revisione del commerciante è stata saltata.
+
+L&#39;impostazione della pagina di revisione non sostituisce la responsabilità dell&#39;esercente di soddisfare i requisiti normativi applicabili. L&#39;impostazione esistente [Pagina di revisione di Google Pay](configure-admin.md#google-pay) è configurata separatamente.
+
 #### Pulsante [!DNL Venmo]
 
 I clienti possono estrarre utilizzando il pulsante [Venmo](https://venmo.com/).
@@ -201,7 +212,7 @@ Scopri come disabilitare o abilitare i messaggi [!DNL Pay Later] aggiornando la 
 
 I metodi di pagamento PayPal, PayLater e Venmo utilizzano un [callback di spedizione lato server](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/) che consente a PayPal di comunicare direttamente con l&#39;istanza Commerce per recuperare le opzioni di spedizione e calcolare i totali in tempo reale.
 
-Questo approccio lato server consente a [!DNL Payment Services] di saltare la finestra a comparsa di conferma dell&#39;ordine, fornendo un&#39;esperienza di acquisto più rapida e semplificata. Poiché le spese e le tasse di spedizione vengono calcolate dinamicamente tramite callback, l&#39;acquirente visualizza i totali accurati direttamente nella pagina di revisione di PayPal o Venmo.
+Poiché le spese e le tasse di spedizione vengono calcolate dinamicamente tramite callback, l&#39;acquirente visualizza le opzioni di spedizione aggiornate e i totali direttamente nel modale di pagamento PayPal o Venmo. Per il pagamento tramite PayPal Express, la [pagina di revisione dell&#39;esercente](#paypal-express-review-page) opzionale è un passaggio separato dopo il pagamento tramite PayPal, controllato da **[!UICONTROL Skip Review]**.
 
 >[!NOTE]
 >
@@ -283,7 +294,7 @@ Con Adobe Commerce e Magento Open Source [!DNL Payment Services], sono disponibi
 
 ### Ricalcolo ordine
 
-Quando un cliente accede al flusso di pagamento dal mini-carrello, dal carrello o dalla pagina del prodotto, viene indirizzato a una pagina di revisione dell’ordine in cui può visualizzare l’indirizzo di spedizione selezionato in una finestra a comparsa PayPal. Dopo che il cliente ha selezionato il metodo di spedizione, l&#39;importo dell&#39;ordine viene ricalcolato in modo appropriato e il cliente può visualizzare le spese di spedizione e le imposte.
+Quando un cliente accede al flusso di pagamento PayPal dal mini-carrello, dal carrello o dalla pagina del prodotto, può controllare l&#39;indirizzo di spedizione selezionato nel modale di pagamento PayPal. Dopo che il cliente ha selezionato il metodo di spedizione, l&#39;importo dell&#39;ordine viene ricalcolato e il cliente può visualizzare le spese di spedizione e le imposte. Per il pagamento PayPal Express, la [pagina di revisione dell&#39;esercente](#paypal-express-review-page) opzionale consente al cliente di esaminare il totale finale e i termini e le condizioni applicabili prima di effettuare l&#39;ordine.
 
 Quando un cliente accede al flusso di pagamento dalla pagina di pagamento, il sistema è già a conoscenza dell&#39;indirizzo di spedizione e dell&#39;importo calcolato finale e i totali sono rappresentati in modo appropriato.
 

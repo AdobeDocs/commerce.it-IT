@@ -21,9 +21,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '729'
 ht-degree: 0%
 ---
 # Sicurezza e conformità
@@ -57,6 +57,8 @@ PCI 3-D Secure (3DS) consente l&#39;autenticazione dell&#39;acquirente con l&#39
 Se sei un commerciante all&#39;interno dell&#39;UE o della Gran Bretagna in cui è richiesta la conformità 3DS, devi attivare manualmente 3DS (è `Off` per impostazione predefinita) nel [Amministratore configurazione](configure-admin.md#credit-card-fields).
 
 3DS è supportato per i campi **[Carta di credito](configure-admin.md#credit-card-fields)** e **[[!DNL Google Pay]](configure-admin.md#google-pay)**. Ogni metodo di pagamento dispone di una propria impostazione di autenticazione 3D Secure nell&#39;amministratore, che può essere impostata su `Always`, `When required` o `Off`.
+
+In [!DNL Payment Services] 2.17.0 o versione successiva, gli acquirenti che pagano con una [carta di credito salvata](vaulting.md) possono anche completare i problemi di autenticazione 3DS richiesti dall&#39;emittente. Una carta salvata non esenta un pagamento dall&#39;autenticazione richiesta dall&#39;emittente della carta.
 
 >[!IMPORTANT]
 >
