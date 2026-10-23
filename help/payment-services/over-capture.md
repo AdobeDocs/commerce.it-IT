@@ -35,7 +35,7 @@ Prima di abilitare l&#39;overcapture:
 1. Nel pannello a sinistra, espandi **[!UICONTROL Sales]** e scegli **[!UICONTROL Payment Methods]**.
 1. Seleziona il sito web da configurare utilizzando il selettore dell’ambito di archiviazione.
 1. Espandere la sezione _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
-1. Nella sezione _[!UICONTROL Payment Services]_, espandere la sezione_[!UICONTROL General Configuration]_.
+1. Nella sezione _[!UICONTROL Payment Services]_, espandere la sezione&#x200B;_[!UICONTROL General Configuration]_.
 1. Imposta **[!UICONTROL Over Capture Enabled]** su `Yes`.
 1. Fai clic su **[!UICONTROL Save Config]** per salvare le modifiche.
 1. Passare a **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, quindi fare clic su **[!UICONTROL Flush Cache]** per aggiornare tutte le cache non valide.
