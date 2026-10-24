@@ -360,7 +360,7 @@ Questa pagina contiene le modifiche apportate negli ultimi 60 giorni. Da questo 
   </thead>
   <tbody>
     <tr>
-      <td><p>È stata aggiunta la <a href="https://experienceleague.adobe.com/en/docs/commerce/information-center/insights-and-guidance/overview">guida di Commerce Insights</a>, una nuova pagina dedicata all'implementazione strategica e alle linee guida sulla sicurezza fornite dal team di progettazione e gestione dei prodotti Adobe Commerce.</p>
+      <td><p>È stata aggiunta la <a href="https://experienceleague.adobe.com/it/docs/commerce/information-center/insights-and-guidance/overview">guida di Commerce Insights</a>, una nuova pagina dedicata all'implementazione strategica e alle linee guida sulla sicurezza fornite dal team di progettazione e gestione dei prodotti Adobe Commerce.</p>
 </td>
       <td>
         Nuovo argomento
