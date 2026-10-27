@@ -1,10 +1,10 @@
 ---
-title: '[ !Data Esporta] riferimento codici di registro'
+title: '[!Data Esporta] riferimento codici di registro'
 description: Elenco di riferimento per codici di registro, messaggi e livelli di gravità dell’esportazione dei dati, per risolvere i problemi di sincronizzazione e decidere quando è necessaria una risincronizzazione parziale o completa.
 autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services
 exl-id: c1341863-1ec4-4d67-8ff2-821ef0a61f33
-last-update: 2026-10-12
+last-update: 2026-10-26
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -31,7 +31,7 @@ topic_v2:
     internal-label: Data management
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: a77dda94b3a9ff82ce5003bfe460156296b32fd1
+source-git-commit: 92bcd22d78ab1d900161ae687bd354fea31d0233
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 0%

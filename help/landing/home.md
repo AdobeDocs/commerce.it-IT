@@ -47,8 +47,8 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-last-update: 2026-10-21
-source-git-commit: 74fd3753c29482d4d2ed0ed6bd96c9a4c4aa2adb
+last-update: 2026-10-26
+source-git-commit: 92bcd22d78ab1d900161ae687bd354fea31d0233
 workflow-type: tm+mt
 source-wordcount: '1522'
 ht-degree: 0%
@@ -64,7 +64,7 @@ I servizi Adobe Commerce forniscono funzionalità componibili che estendono le e
 
 ## Come si connette Commerce ai servizi?
 
-Per i servizi che lo richiedono, [Commerce Services Connector](https://experienceleague.adobe.com/it/docs/commerce/user-guides/integration-services/saas) connette un&#39;istanza di Commerce ai servizi supportati utilizzando chiavi API e uno spazio dati SaaS. I passaggi di connessione e sincronizzazione dei dati dipendono dal modello di distribuzione e dal servizio.
+Per i servizi che lo richiedono, [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas) connette un&#39;istanza di Commerce ai servizi supportati utilizzando chiavi API e uno spazio dati SaaS. I passaggi di connessione e sincronizzazione dei dati dipendono dal modello di distribuzione e dal servizio.
 
 Una volta configurato Commerce Services Connector, è possibile accedere alle seguenti funzionalità:
 
@@ -151,7 +151,7 @@ I servizi di vetrina sono un gruppo di funzioni basate sull’intelligenza artif
 >
 >Adobe Commerce Optimizer fornisce funzionalità di catalogo e merchandising in modalità nativa, invece di utilizzare i servizi separati Live Search, Catalog Service e Product Recommendations. Vedi [Cos&#39;è Adobe Commerce Optimizer?](../optimizer/overview.md)
 >
->Per le distribuzioni Adobe Commerce integrate con Optimizer, il connettore Adobe Commerce Optimizer gestisce la sincronizzazione di cataloghi e prezzi senza richiedere il connettore dei servizi Commerce per tale sincronizzazione. Altre integrazioni, ad esempio [Servizi di pagamento](../payment-services/compatibility.md) e [Connessione dati](../data-connection/connect-data.md#configure-the-commerce-services-connector), richiedono ancora il connettore dei servizi di Commerce. Vedere [Configurare il connettore per Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce/aco-optimizer-connector/get-started/get-started).
+>Per le distribuzioni Adobe Commerce integrate con Optimizer, il connettore Adobe Commerce Optimizer gestisce la sincronizzazione di cataloghi e prezzi senza richiedere il connettore dei servizi Commerce per tale sincronizzazione. Altre integrazioni, ad esempio [Servizi di pagamento](../payment-services/compatibility.md) e [Connessione dati](../data-connection/connect-data.md#configure-the-commerce-services-connector), richiedono ancora il connettore dei servizi di Commerce. Vedere [Configurare il connettore per Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/get-started/get-started).
 
 >[!TAB Servizi di integrazione]
 
@@ -234,11 +234,11 @@ Gli strumenti dati consentono di gestire e ottimizzare il flusso di informazioni
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
       <img alt="Sincronizzazione dei dati del monitor" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong>Dashboard di gestione dati</strong>
          </a>
       </div>
@@ -264,7 +264,7 @@ Sia che si tratti di scalare l&#39;azienda, migliorare le esperienze dei clienti
 | Creare esperienze personalizzate omni-channel | I dati di e-commerce vengono inseriti in un silos, impedendo la distribuzione di esperienze personalizzate tra i canali. | Utilizza [Connessione dati](../data-connection/overview.md) per inviare dati comportamentali, transazionali e di profilo a Adobe Experience Platform. Crea segmenti di clienti sofisticati, crea campagne carrello abbandonate, rivolgiti a tipi di pubblico simili e analizza le tendenze stagionali nell’intero percorso di clienti. |
 | Gestione semplificata delle risorse digitali | La gestione delle immagini dei prodotti e dei rich media su più sistemi richiede molto tempo ed è soggetta ad errori. | L&#39;[integrazione AEM Assets](../aem-assets-integration/overview.md) fornisce una gestione centralizzata delle risorse collegando Adobe Commerce a un progetto Adobe Experience Manager Assets, semplificando i flussi di lavoro e garantendo esperienze del marchio coerenti in tutti i punti di contatto. |
 | Ottimizzare l’elaborazione dei pagamenti | Opzioni di pagamento limitate e esperienze di pagamento scadenti stanno danneggiando la soddisfazione del cliente e la conversione. | [Servizi di pagamento](../payment-services/guide-overview.md) offre più metodi di pagamento, incluse le rate senza interessi, con un dashboard unificato per la gestione di pagamenti, ordini e fatture. |
-| Gestire la sincronizzazione dei dati su larga scala | L&#39;indicizzazione ad uso intensivo di risorse rallenta il sito e non è possibile tenere traccia facilmente dei problemi di sincronizzazione dei dati. | [Esportazione dati SaaS](../data-export/overview.md), [Indicizzatore prezzo SaaS](../price-index/price-indexing.md) e [Dashboard di gestione dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) sincronizzano automaticamente i dati di catalogo, ordine e inventario, scaricano i calcoli dei prezzi nell&#39;infrastruttura cloud di Adobe e forniscono visibilità in tempo reale sullo stato di sincronizzazione. |
+| Gestire la sincronizzazione dei dati su larga scala | L&#39;indicizzazione ad uso intensivo di risorse rallenta il sito e non è possibile tenere traccia facilmente dei problemi di sincronizzazione dei dati. | [Esportazione dati SaaS](../data-export/overview.md), [Indicizzatore prezzo SaaS](../price-index/price-indexing.md) e [Dashboard di gestione dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) sincronizzano automaticamente i dati di catalogo, ordine e inventario, scaricano i calcoli dei prezzi nell&#39;infrastruttura cloud di Adobe e forniscono visibilità in tempo reale sullo stato di sincronizzazione. |
 | Recuperare i clienti perduti e ridurre i rendimenti | Gli elevati tassi di abbandono dei clienti e di rendimento dei prodotti influiscono sulla redditività. | Combina [Connessione dati](../data-connection/overview.md) con Adobe Journey Optimizer e Real-Time CDP per identificare i pattern di ritorno, creare campagne di recupero, segmentare i clienti per comportamento e inviare campagne di ricoinvolgimento personalizzate tramite e-mail e SMS. |
 | Decisioni di merchandising basate sui dati | Non sai quali prodotti promuovere o quando eseguire le promozioni. | [Live Search](../live-search/overview.md) fornisce informazioni approfondite sulle prestazioni di ricerca e strumenti di merchandising per accedere a metriche chiave, analizzare i termini di ricerca e utilizzare regole di merchandising intelligenti per aumentare o sotterrare i prodotti in base al comportamento reale dei clienti e agli obiettivi aziendali. |
 | Garanzia di conformità con i dati sensibili | È necessario gestire i dati sensibili dei clienti mantenendo la conformità HIPAA. | [Connessione dati](../data-connection/overview.md) è compatibile con HIPAA e consente di condividere i dati di back office con Experience Platform, mantenendo al contempo la conformità e gestendo in modo sistematico le richieste di accesso a dati personali. |
