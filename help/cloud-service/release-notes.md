@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: f7a84928b817f21a05ecc9e822ace49e103a8dfd
+source-git-commit: d84e54994e01c702c9d3634fbe42409bc4b0ce51
 workflow-type: tm+mt
-source-wordcount: '9292'
+source-wordcount: '9439'
 ht-degree: 0%
 ---
 # Note sulla versione
@@ -74,13 +74,21 @@ Le seguenti note sulla versione contengono aggiornamenti a [!DNL Adobe Commerce 
 >
 >Se utilizzi Adobe Commerce on-premise o Adobe Commerce sull&#39;infrastruttura cloud, consulta le [note sulla versione di Adobe Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/release/notes/overview).
 
+## Modifiche all’interfaccia di amministrazione
+
+L&#39;amministratore [!DNL Adobe Commerce as a Cloud Service] ora funziona come gli altri prodotti Adobe già in uso, con gli stessi strumenti di navigazione superiore, lo stesso selettore prodotto e lo stesso commutatore organizzazione. Effettua l’accesso una volta per spostarti facilmente tra i prodotti e le istanze di Commerce, senza dover effettuare accessi separati per Commerce Cloud Manager e ogni istanza. Un selettore di istanza e la navigazione Commerce ricercabile ti aiutano a trovare dove devi andare più velocemente.
+
+Ogni esperienza di amministrazione ha un proprio URL. I collegamenti delle istanze in Commerce Cloud Manager aprono la nuova esperienza di amministrazione di Commerce per impostazione predefinita, utilizzando **[!UICONTROL Admin URL (Unified Shell UI)]**. L’interfaccia classica rimane supportata, quindi puoi continuare a utilizzare flussi di lavoro familiari durante l’adattamento alla nuova esperienza. Per utilizzare l&#39;interfaccia classica, aprire il pannello dei dettagli dell&#39;istanza e selezionare **[!UICONTROL Admin URL (Classic UI)]**. Gli URL amministratore e i segnalibri esistenti continuano ad aprire l’interfaccia classica.
+
+Ulteriori informazioni sono disponibili in [Amministratore Commerce in Adobe Unified Experience](https://experienceleague.adobe.com/it/docs/commerce-admin/start/admin/admin-unified-experience).
+
 ## Ottobre 2026 - #3 sulla versione {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="Gli elementi elencati sono attualmente disponibili solo negli ambienti Sandbox. Adobe rende disponibili le nuove versioni negli ambienti Sandbox per fornire il tempo di testare le modifiche imminenti prima che la versione sia disponibile negli ambienti di produzione."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Produzione]{type=Neutral tooltip="Gli elementi elencati sono attualmente disponibili negli ambienti di produzione."}
 
-I seguenti elementi saranno disponibili negli ambienti di produzione il 29 ottobre 2026.
+I seguenti elementi sono stati rilasciati negli ambienti di produzione il 28 ottobre 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -94,9 +102,9 @@ Quando le revisioni dei prodotti sono abilitate, il conteggio delle revisioni ap
 
 ### Rimborso del credito del negozio
 
-L&#39;endpoint REST `POST /V1/creditmemo/refund` ora accetta un campo facoltativo `extension_attributes.refund_to_store_credit_amount` che rimborsa tutta o parte di una nota di credito al credito dell&#39;archivio del cliente.<!-- ACCS-2068 -->
+L&#39;endpoint REST [`POST /V1/creditmemo/refund`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/store-credit) ora accetta un campo `extension_attributes.refund_to_store_credit_amount` facoltativo che rimborsa tutta o parte di una nota di credito al credito dell&#39;archivio del cliente.<!-- ACCS-2068 -->
 
-Due nuove autorizzazioni del ruolo di amministratore controllano l&#39;accesso per archiviare il credito: <!-- ACCS-1961 -->
+Due [nuove autorizzazioni per ruolo amministratore](https://experienceleague.adobe.com/it/docs/commerce-admin/customers/customer-accounts/store-credit/store-credit-using#store-credit-role-resources) controllano l&#39;accesso per archiviare il credito: <!-- ACCS-1961 -->
 
 * [!UICONTROL Customers] > [!UICONTROL All Customers] > [!UICONTROL Manage Store Credit Balances]
 * [!UICONTROL Sales] > [!UICONTROL Operations] > [!UICONTROL Orders] > [!UICONTROL Actions] > [!UICONTROL Create] > [!UICONTROL Can Spend Store Credit]

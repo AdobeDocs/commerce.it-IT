@@ -16,9 +16,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b02fb8e31f4a25cff9e52f64a64812f30d6858b8
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '2009'
 ht-degree: 0%
 ---
 # Note sulla versione dell’integrazione AEM Assets
@@ -48,6 +48,20 @@ _11 febbraio 2025_
 ![Nuovo problema](../assets/new.svg) Ora gli esercenti possono sincronizzare le immagini per prodotti e categorie.
 
 +++
+
+## v1.4.12
+
+_28 ottobre 2026_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versione 2.4.6 e successive.
+
+![È stato risolto il problema](../assets/fix.svg)<!-- Issue ACAP-1335 --> È stata corretta la gestione delle immagini delle categorie quando si cambiava la proprietà della visualizzazione tra Adobe Commerce e AEM Assets. Le selezioni delle risorse AEM ora sono memorizzate in un attributo `asset_role_image` dedicato, che viene mantenuto quando la proprietà cambia. Le operazioni di lettura ed esportazione delle immagini delle categorie utilizzano il valore AEM asset-role quando AEM Assets è responsabile della visualizzazione, inclusi i valori specifici della visualizzazione store durante l’esportazione. Gli URL di consegna risorse HTTP/HTTPS AEM esistenti nella categoria `image` vengono migrati al nuovo attributo senza sovrascrivere i valori dei ruoli delle risorse esistenti.
+
+![È stato risolto il problema](../assets/fix.svg)<!-- Issue ACAP-2180 -->. Il campo categoria GraphQL `asset_role_image` è stato corretto e restituiva `null` quando Adobe Commerce è responsabile della visualizzazione e il valore categoria asset-role quando AEM Assets è responsabile della visualizzazione.
+
+![È stato risolto un problema](../assets/fix.svg)<!-- Issue ACAP-2180 --> a causa del quale i ruoli delle risorse AEM non venivano esportati correttamente nel feed del prodotto. Ora i ruoli delle risorse di AEM vengono esportati correttamente.
+
+![È stato risolto il problema](../assets/fix.svg)<!-- Issue ACAP-1338 -->. Sono state aggiornate le dipendenze dei pacchetti, inclusi il ripristino dei requisiti espliciti per Adobe IMS, gli eventi Commerce e i pacchetti ID servizi, e la rimozione del requisito `magento/framework` esplicito.
 
 ## v1.4.9
 
