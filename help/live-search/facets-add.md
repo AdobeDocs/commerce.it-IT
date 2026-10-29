@@ -1,6 +1,6 @@
 ---
 title: Aggiungi facet
-description: Scopri come aggiungere attributi di prodotto filtrabili come  [!DNL Live Search] facet.
+description: Scopri come aggiungere attributi di prodotto filtrabili come [!DNL Live Search] facet.
 exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
 TQID: https://experienceleague.adobe.com/6mX3QWuZRFuDb1eDnUlPj1yvXZ2qGIdQ4oScxfHjNWY
 product_v2:
@@ -15,13 +15,11 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: a652b6d5659dd6d5aede27d771736222b72b9c5e
 workflow-type: tm+mt
-source-wordcount: 600
-ht-degree: 0%
-
+source-wordcount: '622'
+ht-degree: 3%
 ---
-
 # Aggiungi facet
 
 Qualsiasi attributo di prodotto filtrabile può essere utilizzato come facet ad eccezione dello stato delle scorte (`quantity_and_stock_status`). Il pannello *[!UICONTROL Add facets]* elenca i facet correnti e semplifica l&#39;assegnazione di attributi di prodotto aggiuntivi come facet. Durante questo processo in tre fasi, viene scelto un attributo da utilizzare come facet, le proprietà vengono modificate se necessario e le modifiche pubblicate nella vetrina.
@@ -42,7 +40,7 @@ Qualsiasi attributo di prodotto filtrabile può essere utilizzato come facet ad 
    * Per trovare un attributo di prodotto specifico, immettere i primi caratteri del nome dell&#39;attributo nella casella *Cerca*. Quindi fare clic su **Aggiungi**.
 
      Per configurare intervalli e raggruppamenti di price faceting, fare riferimento a [Impostazioni](settings.md). Per ulteriori informazioni, vai a [Tipi di facet](facets-type.md).
-Il facet viene aggiunto nella parte inferiore dell&#39;elenco *Facet dinamici* e il pulsante *Pubblica modifiche* diventa disponibile.
+     Il facet viene aggiunto all&#39;elenco *Facet dinamici* in ordine crescente e il pulsante *Pubblica modifiche* diventa disponibile.
 
 1. Se il facet che desideri aggiungere non viene trovato, vai a **Archivi** > Attributi > **Prodotto** e verifica che l&#39;attributo abbia le [proprietà richieste](facets.md) da utilizzare come facet. Se necessario, aggiorna le seguenti proprietà della vetrina dell’attributo:
 

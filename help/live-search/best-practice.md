@@ -23,13 +23,11 @@ topic_v2:
     internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
+source-git-commit: 82da0a6749a2c3e6496992a6450c9ea0e7070b17
 workflow-type: tm+mt
-source-wordcount: 2965
-ht-degree: 0%
-
+source-wordcount: '3048'
+ht-degree: 2%
 ---
-
 # Best practice
 
 Questo articolo aiuta i commercianti a migliorare la funzionalità di ricerca sul sito, garantendo un’esperienza di acquisto fluida ed efficiente che massimizza i tassi di conversione. Seguendo le strategie descritte, imparerai a implementare funzionalità di ricerca avanzate e a perfezionare continuamente lo strumento di ricerca per ottenere prestazioni ottimali con Adobe Commerce [!DNL Live Search].
@@ -94,7 +92,7 @@ Per impostare un attributo di prodotto come facet, è necessario che siano impos
 - Determina gli attributi più rilevanti per i prodotti e impostali come [facet dinamici](facets-type.md). 
 - Imposta e ordina gli attributi del prodotto che sono coerenti all’interno del catalogo e altamente rilevanti per i tuoi prodotti, in modo da migliorare la rilevanza e le funzionalità di filtro per gli acquirenti.
 - Assicurati che le etichette dei facet siano facili da comprendere e denominate in modo coerente all’interno del sito. Ad esempio, utilizza &quot;Fascia di prezzo&quot; invece di &quot;Costo&quot;.
-- Evita di sopraffare gli acquirenti limitando il numero di sfaccettature a quelle più importanti. Troppe opzioni possono causare affaticamento decisionale. Per impostazione predefinita, [!DNL Live Search] è limitato a un massimo di 100 attributi configurati come facet e 30 bucket restituiti all&#39;interno di ogni facet. Ulteriori informazioni sulle [limitazioni del facet](boundaries-limits.md#facets). 
+- Evita di sopraffare gli acquirenti limitando il numero di sfaccettature a quelle più importanti. Troppe opzioni possono causare affaticamento decisionale. Per impostazione predefinita, [!DNL Live Search] è limitato a un massimo di 100 attributi configurati come facet e 30 bucket restituiti all&#39;interno di ogni facet. I commercianti idonei possono richiedere un aumento fino a un massimo di 500 facet tramite [Supporto Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}; l&#39;approvazione è soggetta a valutazione di idoneità e prestazioni. Ulteriori informazioni sulle [limitazioni del facet](boundaries-limits.md#facets).
 - Consenti agli acquirenti di selezionare più criteri di filtro contemporaneamente per perfezionare i risultati. Ad esempio, consentendo agli acquirenti di selezionare sia il rosso che il blu.
 - Visualizza il numero di prodotti disponibili accanto a ogni opzione di sfaccettatura per dare agli acquirenti un&#39;idea dei risultati di ricerca che possono aspettarsi.
 - Per mantenere pulita e gestibile l’interfaccia, in particolare sui dispositivi mobili, implementa sezioni facet comprimibili.
@@ -232,7 +230,7 @@ Se i risultati della ricerca risultano casuali o irrilevanti, utilizza questo el
 Ulteriori informazioni sugli attributi del prodotto per la ricerca:
 
 - [Imposta attributi come ricercabili](workspace.md#set-attributes-as-searchable)
-- [Assegna peso agli attributi](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Assegna peso agli attributi](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Monitoraggio dei risultati di ricerca
 
