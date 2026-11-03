@@ -18,9 +18,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a00b9e1654a572e1773b5b7e321683332882d86f
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '489'
 ht-degree: 0%
 ---
 # Panoramica di [!DNL App Management]
@@ -37,7 +37,7 @@ Queste funzionalità creano insieme un modello di estensibilità scalabile che c
 
 ## Cosa offre [!DNL App Management]
 
-* **Un posto per tutte le tue app**. Associa, configura e gestisci le app da **[!UICONTROL Apps]** > **[!UICONTROL App Management]**. [Cerca, filtra e acquisisci app](manage-app.md) dalla stessa visualizzazione.
+* **Un posto per tutte le tue app**. Associa, installa, configura, aggiorna e gestisci le app da **[!UICONTROL Apps]** > **[!UICONTROL App Management]**. [Cerca, filtra e acquisisci app](manage-app.md) dalla stessa visualizzazione.
 * **Impostazioni corrispondenti alla tua azienda**. Applica diverse configurazioni per la visualizzazione di siti web, store o store per configurazioni con più aree geografiche o marchi.
 * **Sincronizzazione automatica archivio**. I siti Web, gli store e le visualizzazioni dello store di Commerce vengono importati quando si associa un&#39;app.
 * **Esperienza di amministrazione nativa**. Utilizza le app di Adobe Exchange o le distribuzioni personalizzate senza uscire da Commerce.
@@ -45,22 +45,24 @@ Queste funzionalità creano insieme un modello di estensibilità scalabile che c
 ## Chi utilizza [!DNL App Management]?
 
 | Ruolo | Caso d’uso |
-|------|----------|
-| **App manager** | Associa le app, configura le impostazioni e gestisci le app nell’istanza Commerce. |
+| --- | --- |
+| **App manager** | Rivedi i dettagli dell’app, associa e installa le app, configura le impostazioni e gestisci gli aggiornamenti nell’istanza di Commerce. |
 | **Amministratori Commerce** | Supervisiona le configurazioni e le autorizzazioni dell’app in tutta l’organizzazione. |
 | **Architetti tecnici** | Assicurati che le app siano configurate correttamente per distribuzioni in più store o aree geografiche. |
 
 ## Cosa puoi fare
 
 * **Associa un&#39;app**. Collega un’applicazione App Builder all’istanza Commerce selezionando il progetto e l’area di lavoro.
+* **Rivedi e installa un&#39;app**. Ispeziona i casi d’uso aziendali e la configurazione dell’app, completa le istruzioni di preinstallazione e monitora l’avanzamento dell’installazione.
 * **Configura impostazioni**. Regola le impostazioni dell’app tramite il modulo generato automaticamente; se necessario, sostituisci i valori per store o area geografica.
 * **Gestisci ambiti**. Mantieni la gerarchia dello store sincronizzata con le tue app e applica le impostazioni al livello giusto.
-* **Annulla associazione di un&#39;app**. Rimuovere un’app quando si ritira un’integrazione o si puliscono le configurazioni di test.
+* **Aggiorna un&#39;app**. Rivedi e avvia gli aggiornamenti quando lo sviluppatore distribuisce una nuova versione. Gli sviluppatori possono anche abilitare gli aggiornamenti automatici sperimentali.
+* **Annulla associazione di un&#39;app**. Rivedi i componenti interessati e i requisiti di pulizia prima di rimuovere un’app quando ritiri un’integrazione o pulisci le configurazioni di test.
 
 ## Passaggi successivi
 
 * [Installa](install.md). Verificare che i prerequisiti siano soddisfatti e accedere a [!DNL App Management].
-* [Gestisci la tua app](manage-app.md). Associa, configura e annulla l&#39;associazione di app.
+* [Gestisci la tua app](manage-app.md). Rivedi, associa, installa, configura, aggiorna e annulla l&#39;associazione delle app.
 
 ## Per sviluppatori
 
