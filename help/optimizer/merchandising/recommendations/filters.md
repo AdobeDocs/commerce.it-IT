@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: b5ef5e736e116d4321444cbaaeae90a08facf047
+source-git-commit: 8e3471bb89e2dd77c390ee1b8199c835a4f1e6bc
 workflow-type: tm+mt
-source-wordcount: '2407'
+source-wordcount: '2452'
 ht-degree: 0%
 ---
 # Filtra prodotti
@@ -247,6 +247,8 @@ Per aggiungere una regola di inclusione o esclusione di attributi a un’unità 
 >[!NOTE]
 >
 >Quando si seleziona un attributo i cui metadati impostano `number` su `true`, ad esempio **Dimensione**, il campo **Valore** visualizza gli input dell&#39;intervallo anziché un singolo valore di testo.
+
+L&#39;elenco degli attributi dipende dalla **Visualizzazione catalogo** selezionata. Se si seleziona **Tutte le visualizzazioni**, l&#39;elenco si basa sull&#39;origine del catalogo associata alla prima visualizzazione del catalogo. Se si seleziona una vista catalogo specifica, l&#39;elenco si basa sull&#39;origine del catalogo della vista.
 
 #### Utilizzare le condizioni di inclusione ed esclusione
 

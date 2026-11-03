@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 43c00a414f95900a30103e56820d06077d530e0f
+source-git-commit: 9aba7b8541b7b067aa5eb751bf601542e8b3c43c
 workflow-type: tm+mt
-source-wordcount: '9823'
+source-wordcount: '9775'
 ht-degree: 0%
 ---
 # Note sulla versione
@@ -147,10 +147,6 @@ I seguenti elementi sono stati rilasciati negli ambienti di produzione il 28 ott
 ### Aggiungi variabili personalizzate per ordinare le e-mail dei commenti
 
 Il `observer.email_order_comment_set_template_vars_before` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/) è ora disponibile. Utilizzala per aggiungere o modificare le variabili del modello nell’e-mail di commento dell’ordine prima che venga eseguito il rendering dell’e-mail. <!-- ACCS-2087 -->
-
-### Esporta valutazioni prodotto
-
-Quando le revisioni dei prodotti sono abilitate, il conteggio delle revisioni approvate e la valutazione media di ogni prodotto vengono esportati in [!DNL Catalog Service] come attributi di prodotto di sistema `ac_review_count` e `ac_rating_summary`. Gli store front possono utilizzare questi attributi per visualizzare le valutazioni dei prodotti. Il feed di prodotto viene aggiornato quando cambiano i riepiloghi di revisione. Le recensioni dei prodotti sono disabilitate per impostazione predefinita. <!-- ACCS-2196 -->
 
 ### Rimborso del credito del negozio
 
