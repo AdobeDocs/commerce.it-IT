@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '521'
 ht-degree: 0%
 ---
 
@@ -54,42 +54,13 @@ L’integrazione dispone di due flussi di eventi indipendenti. Entrambi utilizza
 
 Le immagini aggiornate sono disponibili tramite le API vetrina (Catalog Service, Live Search, Product Recommendations).
 
-### Configurazione di Source e livelli
-
-Le immagini da AEM Assets vengono acquisite come livello di catalogo con la seguente configurazione di origine:
-
-> Esempio di configurazione sorgente
-
-```json
-{
-  "source": {
-    "locale": "en-US",
-    "layer": "AEM-Assets"
-  }
-}
-```
-
-Questa configurazione assicura che le immagini AEM Assets vengano applicate come sovrapposizione al catalogo prodotti di base.
-
-## Prerequisiti
-
-Prima di abilitare Product Visuals, assicurati di soddisfare i [prerequisiti per Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md#prerequisites).
-
-## Configurazione
-
-Per abilitare l&#39;integrazione, [crea un ticket di supporto](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket) con i tuoi dettagli di [!DNL Commerce Optimizer] e AEM Assets. Il supporto Adobe configura l’integrazione e registra il tenant con il servizio di integrazione Assets.
-
-Per informazioni sull&#39;onboarding, consulta [Configurare AEM Assets per Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md).
-
 ### Configurare i metadati di AEM Assets
 
 Per abilitare la corrispondenza automatica dei prodotti, configura le risorse in AEM Assets con i metadati Commerce.
 
-Consulta [Configurare AEM Assets](../../aem-assets-integration/get-started/configure-aco.md#configure-aem-assets-first) per i passaggi e i campi di metadati richiesti.
+Consulta [Configurare AEM Assets](../../aem-assets-integration/get-started/configure-aem.md) per i passaggi e i campi di metadati richiesti.
 
 ## Limitazioni
-
-Prima di utilizzare i visualizzatori di prodotto, controlla le [limitazioni dell&#39;integrazione](../../aem-assets-integration/get-started/configure-aco.md#limitations), ovvero i vincoli relativi ai livelli che influiscono sul modo in cui i dati di AEM Assets vengono uniti al catalogo di base.
 
 Per le allocazioni di capacità e utilizzo (archiviazione delle risorse, operazioni Dynamic Media, licenze utente), consulta [Limiti dei visualizzatori di prodotto](../boundaries-limits.md#product-visuals-limits) nella _Guida limiti e limiti_.
 

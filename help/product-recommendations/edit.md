@@ -15,18 +15,17 @@ role_v2:
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
     internal-label: Behavioral data
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 97fda73b4f68154aa6fe66eee61ef2d68be979ca
 workflow-type: tm+mt
-source-wordcount: 428
+source-wordcount: '443'
 ht-degree: 0%
-
 ---
-
 # Modifica consiglio
 
 La pagina Modifica consiglio consente di regolare le singole impostazioni che compongono il consiglio. È possibile modificare tutte le impostazioni tranne il tipo di pagina e il tipo di consiglio. È possibile modificare le seguenti impostazioni:
 
 - [Nome consiglio](#name)
+- [Chiave di riferimento](#reference-key)
 - [Etichetta vetrina](#label)
 - [Numero di prodotti](#number)
 - [Posizionamento e posizione](#placement)
@@ -51,6 +50,10 @@ L’anteprima a destra della pagina mostra come potrebbe apparire nella vetrina 
 Scegli un nome descrittivo che indichi lo scopo del consiglio. Il nome è un riferimento interno e non viene visualizzato nella vetrina.
 
 ![Modifica nome](assets/edit-name.png)
+
+### Chiave di riferimento {#reference-key}
+
+Chiave utilizzata per identificare l&#39;unità di consigli nella configurazione della vetrina.
 
 ### Etichetta vetrina {#label}
 

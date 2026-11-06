@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Personalization
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: f316b57d365b8952223d4d250ac14f113cf48601
+source-git-commit: 0be21c4e838dabb8871eecbfc6c36c34af2d3ff0
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1612'
 ht-degree: 0%
 ---
 # Creare e gestire i consigli
@@ -48,6 +48,8 @@ Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dat
 
 1. Nella sezione _Denomina il consiglio_, inserisci un nome descrittivo per il riferimento interno, ad esempio `Home page most popular`.
 
+1. Nella sezione **Riferimento vetrina**, immetti una chiave di riferimento per identificare questa unità di consigli nella configurazione vetrina. Dopo aver creato il consiglio, puoi [copiarne il valore](#get-the-storefront-reference-key) dai **dettagli unità consiglio** e utilizzarlo come `referenceKey` nel blocco consigli. La chiave di riferimento è per la configurazione della vetrina; l&#39;etichetta di visualizzazione della vetrina è il testo che gli acquirenti vedono.
+
 1. Nella sezione _Seleziona tipo di consiglio_, specifica il [tipo di consiglio](types.md) desiderato in base alla strategia.
 
 1. Nella sezione _Etichetta di visualizzazione vetrina_, immetti la [etichetta](best-practice.md#recommendation-labels) visibile agli acquirenti, ad esempio &quot;Più venduti&quot;.
@@ -66,7 +68,7 @@ Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dat
 
    - **Attiva** per abilitare l&#39;unità di consigli nella vetrina.
 
-   Il consiglio viene visualizzato nell’area di lavoro Consigli. Per usare il consiglio nella vetrina, devi trovare il [ID consiglio](#get-recommendation-id).
+   Il consiglio viene visualizzato nell’area di lavoro Consigli. Per utilizzare il consiglio nella vetrina, devi disporre dell&#39;[ID consiglio o chiave di riferimento](#get-the-recommendation-id-or-reference-key).
 
 >[!NOTE]
 >
@@ -98,21 +100,17 @@ Quando crei la tua unità di consigli, prova con il tipo di consiglio e i filtri
 
 Per le impostazioni multi-storefront, multi-lingua o multi-brand, puoi configurare se ogni consiglio si applica a tutte le viste catalogo (globale) o a una singola [vista catalogo](../../setup/catalog-view.md). Ulteriori informazioni su come [impostare la visualizzazione del catalogo](../../manage-results/recommendation-performance.md#select-catalog-view) quando si lavora con i consigli.
 
-## Ottieni ID consiglio
+## Ottieni la chiave di riferimento per la vetrina
 
-Dopo aver creato un consiglio, devi recuperarne l’ID per implementare l’unità di consigli nella vetrina.
+Dopo aver creato un consiglio, utilizza la relativa chiave di riferimento per configurare l’unità di consigli nella vetrina.
 
-1. Nella pagina **Consigli**, seleziona il consiglio.
+1. Nella pagina **Consigli**, fai clic sull&#39;icona delle informazioni (![icona Info](../../assets/info-icon.png)) accanto al nome del consiglio per aprire la pagina **Dettagli unità consigli**.
 
-1. Fai clic sull&#39;icona delle informazioni (![icona Info](../../assets/info-icon.png)) accanto al nome del consiglio.
+   ![Ottieni ID consiglio](../../assets/get-ref-id.png)
 
-   Viene visualizzata la pagina **Dettagli unità consigli**.
+1. Copia il valore dalla sezione **Chiave di riferimento Storefront**.
 
-   ![Ottieni ID consiglio](../../assets/get-rec-id.png)
-
-1. Nella sezione **ID consiglio**, copia l&#39;ID.
-
-1. Usa questo ID per configurare il [menu a discesa dei consigli](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) nella vetrina di Edge Delivery Services.
+1. Nel blocco `product-recommendations` della vetrina, utilizza questa chiave di riferimento per configurare il [menu a discesa consigli](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) nella vetrina Edge Delivery Services.
 
 ## Gestire i consigli esistenti
 
@@ -127,6 +125,7 @@ Puoi modificare, disattivare o eliminare un consiglio esistente.
 1. Nel menu puoi **Disattivare**, **Eliminare** o **Modificare** il consiglio. Se selezioni **Modifica**, puoi regolare le seguenti impostazioni in base alle esigenze:
 
    - Nome consiglio
+   - Chiave di riferimento
    - Etichetta vetrina
    - Numero di prodotti
    - Filtra prodotti
