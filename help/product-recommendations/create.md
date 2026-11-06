@@ -19,9 +19,9 @@ topic_v2:
     internal-label: Behavioral data
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
+source-git-commit: 1effb98aaefee32d6479ffdc0737367edc8d1a3a
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1665'
 ht-degree: 0%
 ---
 # Crea nuovo consiglio
@@ -39,28 +39,30 @@ Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dat
 
 1. Nella barra laterale _Amministratore_, vai a **Marketing** > _Promozioni_ > **Consigli di prodotto** per visualizzare l&#39;area di lavoro _Consigli di prodotto_.
 
-1. Specifica la [visualizzazione archivio](https://experienceleague.adobe.com/it/docs/commerce-admin/start/setup/websites-stores-views) in cui desideri visualizzare i consigli.
+1. Specifica la [visualizzazione archivio](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) in cui desideri visualizzare i consigli.
 
    >[!NOTE]
    >
-   > Le unità di consigli di Page Builder devono essere create nella vista store predefinita, ma possono essere utilizzate ovunque. Per ulteriori informazioni sulla creazione di consigli di prodotto con Page Builder, consulta [Aggiungi contenuto - Consigli di prodotto](https://experienceleague.adobe.com/it/docs/commerce-admin/page-builder/add-content/recommendations).
+   > Le unità di consigli di Page Builder devono essere create nella vista store predefinita, ma possono essere utilizzate ovunque. Per ulteriori informazioni sulla creazione di consigli di prodotto con Page Builder, consulta [Aggiungi contenuto - Consigli di prodotto](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Fai clic su **Crea consiglio**.
 
 1. Nella sezione _Denomina il consiglio_, inserisci un nome descrittivo per il riferimento interno, ad esempio `Home page most popular`.
 
+1. [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service (infrastruttura SaaS gestita da Adobe)."} Nella sezione **Riferimento Storefront**, immetti una chiave di riferimento per identificare questa unità di consigli nella configurazione storefront. Dopo aver creato il consiglio, puoi [copiarne il valore](#get-the-storefront-reference-key) dai **dettagli unità consiglio** e utilizzarlo come `referenceKey` nel blocco consigli. La chiave Reference (Riferimento) è per la configurazione della vetrina; l&#39;etichetta di visualizzazione della vetrina è il testo che gli acquirenti vedono.
+
 1. Nella sezione _Seleziona tipo di pagina_, seleziona la pagina in cui desideri visualizzare il consiglio tra le seguenti opzioni:
 
    >[!NOTE]
    >
-   > I consigli di prodotto non sono supportati nella pagina del carrello quando lo store è configurato per [visualizzare la pagina del carrello subito dopo l&#39;aggiunta di un prodotto al carrello](https://experienceleague.adobe.com/it/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
+   > I consigli di prodotto non sono supportati nella pagina del carrello quando lo store è configurato per [visualizzare la pagina del carrello subito dopo l&#39;aggiunta di un prodotto al carrello](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Home page
    * Categoria
    * Dettagli prodotto
    * Carrello
    * Conferma
-   * [Page Builder](https://experienceleague.adobe.com/it/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    Puoi creare fino a 50 unità di consigli attive per ogni tipo di pagina. Al raggiungimento del limite, il tipo di pagina è disattivato.
 
@@ -101,6 +103,20 @@ Quando attivi l&#39;unità di consigli, Adobe Commerce inizia a [raccogliere dat
 >[!IMPORTANT]
 >
 >Alcuni browser potrebbero bloccare gli script critici che impediscono al servizio Consigli di prodotto di funzionare come previsto.
+
+## Ottieni la chiave di riferimento per la vetrina
+
+[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service (infrastruttura SaaS gestita da Adobe)."} Dopo aver creato un consiglio, utilizza la relativa chiave di riferimento per configurare l&#39;unità di consigli nella vetrina.
+
+1. Apri i dettagli di un consiglio di prodotto.
+
+   ![Ottieni ID consiglio](./assets/get-ref-id.png)
+
+1. Copia il valore dalla sezione **Chiave di riferimento**.
+
+   I consigli meno recenti potrebbero mostrare **[!UICONTROL Unit ID]** invece di **[!UICONTROL Reference Key]**. Puoi continuare a utilizzare **[!UICONTROL Unit ID]** nella tua vetrina, ma [!DNL Adobe Commerce] consiglia di aggiornare i consigli esistenti per utilizzare **[!UICONTROL Reference Key]**.
+
+1. Nel blocco `product-recommendations` della vetrina, utilizza questa chiave di riferimento per configurare il [menu a discesa consigli](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) nella vetrina Edge Delivery Services.
 
 ## Indicatori di preparazione
 
