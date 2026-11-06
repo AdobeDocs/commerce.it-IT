@@ -2,7 +2,7 @@
 title: Limiti e limiti di Adobe Commerce Optimizer
 description: Scopri i limiti di licenza e i limiti del sistema di Adobe Commerce Optimizer. Pianifica la capacità, tieni traccia dell’utilizzo ed evita latenza e limitazione quando i limiti vengono superati.
 role: Admin, Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 nudge: true
 product_v2:
@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 663a9e8e61850f3d34712971eb28f18893d56ad2
+source-git-commit: 0b52c20df4c64d3dd7e43f023e7b0f4517e8fcf7
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1486'
 ht-degree: 0%
 ---
 # Limiti e limiti
@@ -31,7 +31,7 @@ Il tuo utilizzo deve rimanere entro questi limiti. Il loro superamento può caus
 
 I limiti di licenza possono essere aumentati acquistando i pacchetti di licenza descritti nella sezione [Limiti di licenza e limiti di sistema](#license-limits-and-system-boundaries) oppure negoziando licenze personalizzate per casi d&#39;uso univoci. Contatta il rappresentante del tuo account Adobe per discutere delle tue esigenze.
 
-Per domande sui limiti del sistema, contatta il [Supporto Adobe](https://experienceleague.adobe.com/home?lang=it#support).
+Per domande sui limiti del sistema, contatta il [Supporto Adobe](https://experienceleague.adobe.com/home?lang=en#support).
 
 ## Impedisci problemi di prestazioni
 
@@ -81,7 +81,7 @@ Nelle tabelle seguenti vengono riepilogati i limiti di licenza e i limiti di sis
 | --- | --- | --- | --- |
 | Visualizzazioni di prodotto Utenti avanzati | Utente concesso in licenza con funzionalità complete di gestione delle risorse digitali, tra cui strumenti di intelligenza artificiale, integrazioni [!DNL Adobe Express]/[!DNL Firefly] e condivisione di Content Hub, gestione delle attività DAM di base e funzioni avanzate native per il cloud per una efficienza ottimale. | 2 | Sì<p>Esegui l&#39;aggiornamento alla licenza [!DNL AEM Assets]</p> |
 | Visualizzazioni prodotto per utenti di Collaborator | Accesso e utilizzo delle risorse tramite l&#39;integrazione AEM Commerce, creazione e modifica dei contenuti tramite [!DNL Adobe Express] e [!DNL Firefly] e, se abilitata, utilizzo delle risorse approvate tramite il portale Content Hub. | 2 | Sì<p>Esegui l&#39;aggiornamento alla licenza [!DNL AEM Assets]</p> |
-| Archiviazione di Product Visuals | Spazio di archiviazione allocato per le risorse | 1 TB di storage | No |
+| Archiviazione di Product Visuals | Spazio di archiviazione allocato per le risorse | 1 TB di storage | Sì<p>Esegui l&#39;aggiornamento alla licenza [!DNL AEM Assets]</p> |
 | Utilizzo Dynamic Media | Indennità per le operazioni di elaborazione di elementi multimediali dinamici, che comprende:<ul><li>Consegna delle immagini</li><li>Imaging avanzato</li><li>Consegna video</li></ul><p>Per informazioni dettagliate, consulta *Calcolare l&#39;utilizzo di Dynamic Media* di seguito. | In base al valore lordo delle merci (GMV)<p>Dotazione minima: 5 milioni di operazioni al mese</p> | Sì<ul><li>Licenza di acquisto per operazioni aggiuntive</li><li>Esegui l&#39;aggiornamento alla licenza [!DNL AEM Assets]</li></ul> |
 | Consegna video | Tolleranza per la consegna o il download di video | 300 video, 1 minuto per video | Sì<p>Esegui l&#39;aggiornamento alla licenza [!DNL AEM Assets]</p> |
 | Generazione risorse | Accesso a [!DNL Adobe Express] e [!DNL Adobe Firefly] IA generativa per la creazione di immagini | Nessuno | Acquistare separatamente i crediti IA generativi |
@@ -171,7 +171,7 @@ Per i consigli sui prodotti sono disponibili le seguenti funzionalità. Alcune f
 
 | **Capacità** | **Descrizione** | **Allocazione di base** | **Espandibile?** | **Note** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | Capacità di creare estensioni e integrazioni native per il cloud | Basato sul livello GMV<p>Allocazione minima: 1 pacchetto/anno</p> | Sì<p>Aggiungi pacchetti aggiuntivi</p> | Per i limiti definiti per confezione, vedere:<ul><li>[Descrizione del prodotto App Builder](https://helpx.adobe.com/it/legal/product-descriptions/adobe-developer-app-builder.html) per i limiti definiti per la confezione.</li><li>[Impostazioni e limitazioni di sistema](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) nelle *Guide di App Builder Runtime*.</li><li>[Requisiti di archiviazione App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | Capacità di creare estensioni e integrazioni native per il cloud | Basato sul livello GMV<p>Allocazione minima: 1 pacchetto/anno</p> | Sì<p>Aggiungi pacchetti aggiuntivi</p> | Per i limiti definiti per confezione, vedere:<ul><li>[Descrizione del prodotto App Builder](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) per i limiti definiti per la confezione.</li><li>[Impostazioni e limitazioni di sistema](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) nelle *Guide di App Builder Runtime*.</li><li>[Requisiti di archiviazione App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
