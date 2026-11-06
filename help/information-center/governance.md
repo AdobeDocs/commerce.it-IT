@@ -1,9 +1,9 @@
 ---
 title: Governance del Centro informazioni Commerce
 description: Scopri il modello di governance interna per il Centro informazioni di Commerce. Non pubblicato in Experience League.
-source-git-commit: a91925091da28cd0745923894a3faab0374f0a0c
+source-git-commit: bd6b2a10f02498b94c8837a27490e943b630c5fc
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '578'
 ht-degree: 0%
 ---
 
@@ -13,9 +13,9 @@ Questo riferimento interno per il team di documentazione non è elencato in `TOC
 
 ## Proprietà
 
-Il team di documentazione di Adobe Commerce è il proprietario del Centro informazioni. È stato creato in `Adobe-Enterprise-Docs/commerce.en`, il repository elencato come `git-repo` in `metadata.md`.
+Il team della documentazione di Adobe Commerce gestisce il processo di acquisizione, la revisione editoriale e la pubblicazione dei contenuti del Centro informazioni provenienti dall&#39;archivio GitHub `Adobe-Enterprise-Docs/commerce.en`.
 
-Non è di proprietà di un singolo team di prodotto, in quanto è tra prodotti diversi. Inoltra le correzioni specifiche per il prodotto al contatto della documentazione del team di prodotto proprietario invece di correggerle qui.
+Non è di proprietà di un singolo team di prodotto, in quanto è tra prodotti diversi. I proprietari dei prodotti e gli ingegneri devono approvare il contenuto prima di inviare la PR ExL. Inoltra le correzioni specifiche per il prodotto al contatto della documentazione del team di prodotto proprietario invece di correggerle qui.
 
 ## Contenuto del Centro informazioni
 
@@ -28,6 +28,8 @@ Non è di proprietà di un singolo team di prodotto, in quanto è tra prodotti d
 - Il Centro informazioni non consolida né esegue la migrazione della documentazione del prodotto e non documenta le singole caratteristiche del prodotto. Collega a contenuti autorevoli esistenti prima di scrivere qualcosa di nuovo.
 
 ## Aggiunta di nuovi contenuti
+
+Invia le proposte di articoli creando un ticket JIRA nel progetto COMDOX seguendo il processo descritto nell&#39;epica [COMDOX-1864](https://jira.corp.adobe.com/browse/COMDOX-1864). Utilizza la descrizione del ticket con AI per generare un ticket e collegarlo all’epica.
 
 ### Articoli in una sezione esistente
 

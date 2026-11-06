@@ -10,6 +10,8 @@ exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
+  - id: ef0c45ae-6bee-4821-a65e-e1e118e8a01c
+    internal-label: Commerce Optimizer
 feature_v2:
   - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
     internal-label: Integration
@@ -23,9 +25,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 972d2a1118daca17dc17a29e20ada593656960e1
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '570'
 ht-degree: 0%
 ---
 
@@ -34,13 +36,6 @@ ht-degree: 0%
 [!DNL Adobe Commerce Optimizer] include integrazioni che consentono di sincronizzare dati da Adobe Commerce su cloud o on-premise, gestire risorse, migliorare esperienze di vetrina e collegare sistemi esterni. Le sezioni seguenti descrivono il funzionamento di ogni integrazione con [!DNL Adobe Commerce Optimizer]. Segui i collegamenti per la configurazione e l’utilizzo quotidiano.
 
 {{aco-integration-environment-alignment}}
-
-## Connettore Adobe Commerce Optimizer {#aco-connector}
-
-Il connettore Adobe Commerce Optimizer è il bridge che sincronizza i dati di catalogo e determinazione prezzi tra Adobe Commerce (cloud o locale) e [!DNL Adobe Commerce Optimizer]. Quando abiliti il connettore, Commerce rimane il sistema di registrazione per i dati dei prodotti, mentre [!DNL Adobe Commerce Optimizer] potenzia l&#39;individuazione dei prodotti, i consigli, le regole di merchandising, le analisi e le esperienze di vetrina headless. Per limitare gli utenti che possono eseguire query su una visualizzazione catalogo sincronizzata, vedere [Visualizzazioni catalogo privato](../setup/private-catalog-view.md).
-
-- [Panoramica del connettore Adobe Commerce Optimizer](../../aco-connector/overview.md){target="_blank"}
-- [Introduzione al connettore](../../aco-connector/get-started.md){target="_blank"}
 
 ## Visualizzazioni prodotto con AEM Assets {#product-visuals}
 
@@ -58,6 +53,20 @@ Adobe Experience Manager Sites Optimizer analizza i siti Web Commerce e migliora
 >Questa funzionalità richiede la licenza **Ultima** Adobe Sites Optimizer. È possibile richiedere una licenza tramite il proprio consulente tecnico clienti Adobe. Una volta eseguito il provisioning del tuo account, la funzione Opportunità è disponibile nell&#39;interfaccia [!DNL Adobe Commerce Optimizer] e puoi iniziare a utilizzare informazioni basate sull&#39;intelligenza artificiale per ottimizzare le strategie di storefront e merchandising.
 
 - [Opportunità](../manage-results/opportunities.md)
+
+## Connettore Adobe Commerce Optimizer {#aco-connector}
+
+Il connettore Adobe Commerce Optimizer è il bridge che sincronizza i dati di catalogo e determinazione prezzi tra Adobe Commerce (cloud o locale) e [!DNL Adobe Commerce Optimizer]. Quando abiliti il connettore, Commerce rimane il sistema di registrazione per i dati dei prodotti, mentre [!DNL Adobe Commerce Optimizer] potenzia l&#39;individuazione dei prodotti, i consigli, le regole di merchandising, le analisi e le esperienze di vetrina headless. Per limitare gli utenti che possono eseguire query su una visualizzazione catalogo sincronizzata, vedere [Visualizzazioni catalogo privato](../setup/private-catalog-view.md).
+
+- [Panoramica del connettore Adobe Commerce Optimizer](../../aco-connector/overview.md){target="_blank"}
+- [Introduzione al connettore](../../aco-connector/get-started.md){target="_blank"}
+
+## Integrazione di carrello e pagamento di terze parti
+
+Adobe Commerce Optimizer può potenziare l’individuazione dei prodotti e il merchandising per una vetrina che utilizza una piattaforma di e-commerce separata per le transazioni. La vetrina utilizza le API di Commerce Optimizer Merchandising Services per dati di prodotto, ricerche, consigli e merchandising. La piattaforma di e-commerce dell’host rimane responsabile degli account cliente, del carrello, del pagamento e dell’elaborazione degli ordini. L’integrazione con la piattaforma host è un’implementazione personalizzata che utilizza API Mesh, App Builder, API dirette o una combinazione di questi strumenti.
+
+Per Salesforce Commerce Cloud (SFCC), il [Adobe Commerce Optimizer SFCC Checkout Starter Kit](https://github.com/adobe-commerce/aco-sfcc-checkout-starter-kit) fornisce esempi di blocchi e script Edge Delivery Services per la connessione di una vetrina Adobe Commerce Optimizer a una funzionalità SFCC shopper, cart e checkout. Utilizzala come implementazione di riferimento e adattala alla vetrina; non è un connettore predefinito generico. È disponibile anche un esempio di [vetrina headless per Next.js](https://github.com/adobe-commerce/aco-sfcc-storefront-next){target="_blank"}.
+
 
 ## Connettore Salesforce Commerce {#commerce-salesforce-connector}
 
