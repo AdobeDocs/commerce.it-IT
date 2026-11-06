@@ -3,7 +3,7 @@ title: Livelli catalogo
 description: Scopri come i livelli del catalogo consentono di modificare i dati del prodotto senza modificare i dati di origine originali, in modo da poter personalizzare in modo sicuro e ripristinare le modifiche in qualsiasi momento.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
 TQID: https://experienceleague.adobe.com/aeuD7Ev8AhkzIspV08x4ZTA9knMjZ3EObSZJpidY8QI
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -27,13 +27,11 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: 1533
+source-wordcount: '1493'
 ht-degree: 0%
-
 ---
-
 # Livelli del catalogo
 
 I livelli del catalogo consentono di modificare i dati del prodotto senza modificare i dati di origine originali. I livelli modificano gli attributi del prodotto, ad esempio nome, descrizione, immagini, collegamenti e metadati, creando un livello sopra il catalogo di base. I dati originali del prodotto rimangono intatti e consentono di personalizzare i prodotti in modo sicuro e ripristinare le modifiche in qualsiasi momento.
@@ -67,8 +65,6 @@ I livelli catalogo vengono comunemente utilizzati per:
 * **Visualizzazioni prodotto**: applica le immagini di prodotto da AEM Assets come livello sul catalogo di base.
 
 ## Livello AEM-Assets
-
-Quando abiliti [Product Visuals](product-visuals.md), l&#39;integrazione AEM Assets crea e gestisce automaticamente un livello di catalogo dedicato esclusivamente al contenuto di AEM Assets. Il nome del livello predefinito è `AEM-Assets`. Tuttavia, è possibile specificare un nome personalizzato durante l&#39;onboarding di [nell&#39;integrazione AEM Assets](../../aem-assets-integration/get-started/configure-aco.md).
 
 Questo livello contiene immagini di prodotto sincronizzate da AEM Assets. Come altri livelli del catalogo, viene compilato tramite l&#39;[API dei livelli di prodotto](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank}. Il servizio di integrazione di Assets trasforma i metadati delle risorse AEM e gli URL di consegna nel formato API e invia automaticamente i dati quando le risorse vengono approvate in AEM Assets.
 

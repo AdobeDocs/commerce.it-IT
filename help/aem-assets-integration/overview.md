@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1109'
 ht-degree: 1%
 ---
 # Integrazione di AEM Assets per Commerce
@@ -68,27 +68,27 @@ La localizzazione in formato testo alternativo non modifica l&#39;assegnazione d
 
 ## Requisiti per l’utilizzo dell’integrazione
 
-Per sfruttare questa integrazione con [Product Visuals o AEM Assets](https://experienceleague.adobe.com/it/docs/commerce/cloud-service/overview#product-visuals-powered-by-aem-assets), le aziende devono soddisfare i seguenti requisiti:
+Per sfruttare questa integrazione con [Product Visuals o AEM Assets](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview#product-visuals-powered-by-aem-assets), le aziende devono soddisfare i seguenti requisiti:
 
 >[!BEGINTABS]
 
 >[!TAB Visualizzazioni prodotto]
 
-[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."} Licenze attive per Adobe Commerce, Visuali prodotto con tecnologia AEM Assets e [AEM Dynamic Media](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media) (queste licenze sono disponibili come standard con [!DNL Adobe Commerce as a Cloud Service] e [!DNL Adobe Commerce Optimizer]).
+[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."} Licenze attive per Adobe Commerce, Visuali prodotto con tecnologia AEM Assets e [AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media) (queste licenze sono disponibili come standard con [!DNL Adobe Commerce as a Cloud Service] e [!DNL Adobe Commerce Optimizer]).
 
 >[!TAB AEM Assets]
 
-[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."} Licenze attive per Adobe Commerce, Adobe Experience Manager Assets e [AEM Dynamic Media](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media).
+[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."} Licenze attive per Adobe Commerce, Adobe Experience Manager Assets e [AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media).
 
 [!BADGE Solo PaaS]{type=Informative tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe)."} Adobe Commerce 2.4.5+
 
-* Adobe Commerce 2.4.5+. Per ulteriori dettagli, vedere [Requisiti di sistema](https://experienceleague.adobe.com/it/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
+* Adobe Commerce 2.4.5+. Per ulteriori dettagli, vedere [Requisiti di sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
 
-Per [!BADGE solo SaaS]{type=Positive url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."} è stato eseguito il provisioning di Adobe Experience Manager con [Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/overview)
+Per [!BADGE solo SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."} è stato eseguito il provisioning di Adobe Experience Manager con [Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/overview)
 
 >[!ENDTABS]
 
-L&#39;utente di Adobe Commerce che configura l&#39;integrazione deve avere accesso all&#39;organizzazione [IMS](https://experienceleague.adobe.com/it/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255) in cui è stato eseguito il provisioning del progetto AEM Assets.
+L&#39;utente di Adobe Commerce che configura l&#39;integrazione deve avere accesso all&#39;organizzazione [IMS](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255) in cui è stato eseguito il provisioning del progetto AEM Assets.
 
 >[!BEGINSHADEBOX]
 
@@ -114,7 +114,7 @@ Per scoprire come impostare e utilizzare l’integrazione di AEM Assets con Adob
 
 Per scoprire come Adobe Commerce e AEM Assets collaborano per semplificare i flussi di lavoro dei contenuti, guarda questo video:
 
->[!VIDEO](https://video.tv.adobe.com/v/3447893?captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3447837)
 
 >[!TAB Esercitazione su Adobe Commerce as a Cloud Service]
 
@@ -162,24 +162,8 @@ Seleziona la distribuzione per seguire i passaggi richiesti nell’ordine:
 
 1. Facoltativo. [Abilita la visualizzazione dell&#39;immagine del prodotto](get-started/configure-storefront.md#enable-product-images) in modo che una vetrina basata su Edge Delivery Services esegua il rendering delle immagini dei prodotti gestiti da AEM.
 
->[!TAB Adobe Commerce Optimizer]
-
-[!BADGE Solo SaaS]{type=Positive tooltip="Applicabile solo ai progetti Adobe Commerce Optimizer."}
-
-[!DNL Adobe Commerce Optimizer] Non dispone di un&#39;interfaccia utente di configurazione amministratore. Il supporto Adobe configura l’integrazione dal ticket di onboarding, quindi prepara prima AEM Assets.
-
-1. Per supportare i metadati di Commerce, [configura il progetto AEM Assets](get-started/configure-aem.md). In AEM versione `2026.5.26309` e successive, utilizzare l&#39;[onboarding self-service](get-started/configure-aem.md#enable-aem-commerce-self-service); nelle versioni precedenti, installare manualmente il pacchetto `assets-commerce`.
-
-1. [Invia il ticket di supporto all&#39;onboarding](get-started/configure-aco.md#onboarding) con il tuo ID tenant, l&#39;ID programma AEM, l&#39;ID ambiente AEM, la regola, il livello e le impostazioni locali corrispondenti.
-
-1. [Configura la vista catalogo](get-started/configure-aco.md#onboarding) con le stesse impostazioni locali e lo stesso livello registrati nel ticket.
-
-1. Facoltativo. [Abilita la visualizzazione dell&#39;immagine del prodotto](get-started/configure-storefront.md#enable-product-images) in modo che una vetrina basata su Edge Delivery Services esegua il rendering delle immagini dei prodotti gestiti da AEM.
-
-   Per informazioni dettagliate su procedure, limitazioni e livelli, vedere [Configurare AEM Assets per Commerce Optimizer](get-started/configure-aco.md).
-
 >[!ENDTABS]
 
 ## Supporto
 
-Se hai bisogno di informazioni o se hai domande non trattate in questa guida, contatta il tuo rappresentante commerciale per l&#39;integrazione di AEM Assets o crea un [ticket di supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) per ricevere ulteriore assistenza.
+Se hai bisogno di informazioni o se hai domande non trattate in questa guida, contatta il tuo rappresentante commerciale per l&#39;integrazione di AEM Assets o crea un [ticket di supporto](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) per ricevere ulteriore assistenza.
