@@ -5,7 +5,7 @@ feature: Cloud, Integration
 role: Admin, Developer, User
 level: Beginner
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 autotag-review: '2026-06-18T16:01:44.084Z'
 TQID: 'https://experienceleague.adobe.com/fGnz7X-DD5KzHhVtS0VR2NpVVEpwMQjzD2l0KO97-r4'
 product_v2:
@@ -48,9 +48,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 19c1c7d4cfaa6192169e8005e6bb323a0940d875
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1348'
 ht-degree: 0%
 ---
 # Introduzione
@@ -100,7 +100,7 @@ Seleziona una scheda di seguito per visualizzare gli elementi grafici del flusso
 
 >[!TAB Flusso di lavoro amministratore di sistema e esercente]
 
-Questo diagramma fornisce una panoramica generale del modo in cui amministratori di sistema e commercianti accedono e gestiscono le istanze di [!DNL Adobe Commerce as a Cloud Service]. Per ulteriori informazioni sui flussi di lavoro dell&#39;amministratore, vedere la [Guida di Adobe Admin Console](https://helpx.adobe.com/it/business/enterprise.html).
+Questo diagramma fornisce una panoramica generale del modo in cui amministratori di sistema e commercianti accedono e gestiscono le istanze di [!DNL Adobe Commerce as a Cloud Service]. Per ulteriori informazioni sui flussi di lavoro dell&#39;amministratore, vedere la [Guida di Adobe Admin Console](https://helpx.adobe.com/business/enterprise.html).
 
 ![Diagramma del flusso di lavoro dell&#39;amministratore di sistema e del commerciante per Adobe Commerce as a Cloud Service](./assets/merchant-flow.png){zoomable="yes"}
 
@@ -125,7 +125,7 @@ In qualità di amministratore di sistema, sei responsabile della configurazione 
 | Comprendere la piattaforma | Scopri l’architettura e i vantaggi di Adobe Commerce as a Cloud Service | [Panoramica](overview.md) |
 | Confrontare le funzioni | Comprendere le differenze tra Cloud Service e altre offerte Adobe Commerce | [Confronto delle funzionalità](feature-comparison.md) |
 | Creare un’istanza | Provisioning di ambienti sandbox e di produzione | [Crea un&#39;istanza](#create-an-instance) |
-| Configurare la gestione degli utenti | Aggiungere utenti, assegnare ruoli e gestire autorizzazioni | [Gestione utente](user-management.md) |
+| Configurare la gestione degli utenti | Aggiungi utenti e gestisci l’accesso tramite Adobe Admin Console, e configura ruoli e autorizzazioni in Commerce Admin. | [Gestione utente](user-management.md) |
 | Configura [!DNL AEM Assets] e [!DNL Product Visuals] (facoltativo) | Aggiungere utenti, assegnare ruoli e gestire autorizzazioni | [Gestione utente](user-management.md#add-a-user-to-aem-assets-or-product-visuals) |
 
 >[!TAB Commerciante]
@@ -251,7 +251,7 @@ Per impostazione predefinita, [!DNL Adobe Commerce as a Cloud Service] istanze n
 
 Esistono due modi per importare il catalogo in [!DNL Adobe Commerce as a Cloud Service]:
 
-* [**Amministratore Commerce**](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/import/data-import) - Interfaccia intuitiva che consente di importare i dati del catalogo con pochi clic.
+* [**Amministratore Commerce**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - Interfaccia intuitiva che consente di importare i dati del catalogo con pochi clic.
 * [**Importa API JSON**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - API REST che consente di importare i dati del catalogo a livello di programmazione.
 
 ### Configurare la vetrina
