@@ -34,9 +34,9 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 8ed4d2fa87f7a91c3c9c21817391003488c55046
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1961'
 ht-degree: 0%
 ---
 # Utente e Identity Management
@@ -54,6 +54,8 @@ Questo processo richiede un&#39;organizzazione IMS con accesso a [!DNL Adobe Com
 ## Informazioni sui ruoli
 
 I seguenti ruoli sono disponibili per [!DNL Adobe Commerce as a Cloud Service]. Per visualizzare o modificare questi ruoli, nell&#39;amministratore di Commerce passa a [!UICONTROL **Sistema**] > [!UICONTROL **Autorizzazioni**] > [!UICONTROL **Ruoli utente**].
+
+Puoi creare ruoli personalizzati in Commerce Admin per fornire agli utenti autorizzazioni più granulari rispetto ai ruoli Adobe Admin Console standard. I ruoli e le assegnazioni personalizzati di Commerce vengono mantenuti quando gli utenti effettuano successivamente l’accesso tramite Adobe IMS. Gli utenti devono comunque avere accesso all’istanza di Adobe Commerce as a Cloud Service tramite Adobe Admin Console. Per creare ruoli personalizzati, [definisci i ruoli nell&#39;amministratore di Commerce](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/user-accounts/permissions-user-roles#define-a-role).
 
 * **Utenti** - Gli utenti hanno accesso come amministratore all&#39;amministratore di Commerce ma non possono gestire l&#39;accesso a livello di prodotto in Admin Console. Gli utenti possono inoltre utilizzare i crediti per [creare istanze](./getting-started.md#create-an-instance) in [!DNL Commerce Cloud Manager].
 
@@ -134,6 +136,8 @@ Per informazioni dettagliate sulle autorizzazioni concesse a ogni ruolo all&#39;
 ## Aggiungi utenti
 
 Le istruzioni seguenti forniscono informazioni su come aggiungere utenti a [!DNL Commerce Cloud Manager] e all&#39;amministratore di Commerce. L&#39;interfaccia [!DNL Commerce Cloud Manager] consente di creare e gestire le istanze di Commerce. Questo processo è necessario per tutti gli utenti, inclusi sviluppatori e amministratori.
+
+Per creare ruoli personalizzati, invece di utilizzare i ruoli più ampi definiti in Adobe Admin Console, è possibile [definire ruoli in Commerce Admin](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/user-accounts/permissions-user-roles#define-a-role).
 
 >[!NOTE]
 >
