@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: c67e36c5a607fa1112a3a34b71c89de1b0162b10
+source-git-commit: 0bda134570bb3bf2f43da545917dedc95394df5e
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '947'
 ht-degree: 0%
 ---
 
@@ -75,9 +75,9 @@ In questo argomento vengono illustrate le modifiche apportate al modello CCDM, l
 
 ## Quali modifiche introduce il CCDM?
 
-Il modello di catalogo originale utilizza Catalog Service per fornire i dati dei prodotti agli store, con le funzionalità di ricerca, merchandising e consigli di Live Search e Product Recommendations. In questo modello, Commerce esegue la sincronizzazione utilizzando [Esportazione dati SaaS](https://experienceleague.adobe.com/it/docs/commerce/saas-data-export/overview).
+Il modello di catalogo originale utilizza Catalog Service per fornire i dati dei prodotti agli store, con le funzionalità di ricerca, merchandising e consigli di Live Search e Product Recommendations. In questo modello, Commerce esegue la sincronizzazione utilizzando [Esportazione dati SaaS](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview).
 
-Con CCDM, queste funzionalità funzionano sulla stessa base di catalogo che alimenta Adobe Commerce Optimizer. [Visualizzazioni catalogo](../optimizer/setup/catalog-view.md) e [Criteri](../optimizer/setup/policies.md) definiscono il contesto del catalogo disponibile per una vetrina. I criteri determinano l’assortimento di prodotti e le regole di merchandising possono essere applicate a tutte le visualizzazioni di catalogo o essere personalizzate per una visualizzazione specifica.
+Con CCDM, queste funzionalità funzionano sulla stessa base di catalogo che alimenta Adobe Commerce Optimizer. [Visualizzazioni catalogo](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view) e [Criteri](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/policies) definiscono il contesto del catalogo disponibile per una vetrina. I criteri determinano l’assortimento di prodotti e le regole di merchandising possono essere applicate a tutte le visualizzazioni di catalogo o essere personalizzate per una visualizzazione specifica.
 
 Questo cambia la modalità di configurazione, accesso e merchandised del catalogo. CCDM si basa sulle funzionalità di ricerca, consigli e merchandising del catalogo Commerce originale e introduce controlli a livello di visualizzazione del catalogo. Di seguito sono descritte ulteriori funzionalità di gestione e reporting.
 
@@ -99,9 +99,9 @@ Il diagramma seguente mostra la posizione dei servizi di merchandising nell’ar
 
 ## Novità per i commercianti
 
-Il nuovo modello consente di estendere le regole di merchandising esistenti a tutte le viste di catalogo o a una vista specifica. Questo consente di applicare il merchandising a ogni pubblico della vetrina. Scopri come [estendere una regola di merchandising alle viste catalogo](../optimizer/merchandising/rules/add.md#create-a-rule).
+Il nuovo modello consente di estendere le regole di merchandising esistenti a tutte le viste di catalogo o a una vista specifica. Questo consente di applicare il merchandising a ogni pubblico della vetrina. Scopri come [estendere una regola di merchandising alle viste catalogo](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add).
 
-In Amministrazione è possibile configurare il contesto del catalogo con [!UICONTROL Catalog Views] e [!UICONTROL Policies]. È inoltre possibile utilizzare [!UICONTROL Success Metrics] per esaminare i ricavi, la conversione, il coinvolgimento, l&#39;acquisizione e il tasso di mancato recapito. Per informazioni dettagliate, consulta [Metriche di successo](../optimizer/manage-results/success-metrics.md).
+In Amministrazione è possibile configurare il contesto del catalogo con [!UICONTROL Catalog Views] e [!UICONTROL Policies]. È inoltre possibile utilizzare [!UICONTROL Success Metrics] per esaminare i ricavi, la conversione, il coinvolgimento, l&#39;acquisizione e il tasso di mancato recapito. Per informazioni dettagliate, consulta [Metriche di successo](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/manage-results/success-metrics).
 
 ## Considerazioni prima dell’adozione
 
@@ -126,7 +126,7 @@ Rivedi le app e le estensioni di terze parti che leggono i dati del catalogo o u
 
 ### Esperienza di amministrazione
 
-Adobe Commerce as a Cloud Service con CCDM utilizza [[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/it/docs/commerce-admin/start/admin/admin-unified-experience) (Unified Shell). Adobe ha rilasciato Unified Shell separatamente da CCDM. Le istanze esistenti nel modello Catalog-Services originale mantengono l&#39;accesso sia a Classic che a Unified Shell.
+Adobe Commerce as a Cloud Service con CCDM utilizza [[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin-unified-experience) (Unified Shell). Adobe ha rilasciato Unified Shell separatamente da CCDM. Le istanze esistenti nel modello Catalog-Services originale mantengono l&#39;accesso sia a Classic che a Unified Shell.
 
 ### Limiti
 
