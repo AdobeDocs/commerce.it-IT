@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: ab9c4d33ab0254c0c4ba990cd91ed01226d3abb9
+source-git-commit: 2123503aaa8088baab9b9a5e3ce9c3036518061e
 workflow-type: tm+mt
-source-wordcount: '9964'
+source-wordcount: '10011'
 ht-degree: 0%
 ---
 # Note sulla versione
@@ -84,11 +84,11 @@ Ulteriori informazioni sono disponibili in [Amministratore Commerce in Adobe Uni
 
 ## Novembre 2026 - #1 sulla versione {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="Gli elementi elencati sono attualmente disponibili solo negli ambienti Sandbox. Adobe rende disponibili le nuove versioni negli ambienti Sandbox per fornire il tempo di testare le modifiche imminenti prima che la versione sia disponibile negli ambienti di produzione."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Produzione]{type=Neutral tooltip="Gli elementi elencati sono attualmente disponibili negli ambienti di produzione."}
 
-I seguenti elementi saranno rilasciati negli ambienti di produzione il 10 novembre 2026.
+I seguenti elementi sono stati rilasciati negli ambienti di produzione il 10 novembre 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -109,7 +109,7 @@ Il nuovo `plugin.magento.out_of_process_shipping_methods.api.shipment_item_filte
 
 ### Includi indirizzi di spedizione
 
-I nuovi ordini non virtuali creati tramite gli endpoint REST `POST /V1/orders` e `PUT /V1/orders/create` richiedono ora un indirizzo di spedizione. Le richieste senza indirizzo di spedizione restituiscono un errore HTTP 400. Questa modifica impedisce agli ordini privi di informazioni di spedizione di causare errori di e-mail degli ordini. <!-- CCSAAS-5351 -->
+I nuovi ordini non virtuali creati tramite gli endpoint REST `POST /V1/orders` e `PUT /V1/orders/create` richiedono ora un [indirizzo di spedizione](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management#shipping-address-requirement-for-new-orders). Le richieste senza indirizzo di spedizione restituiscono un errore HTTP 400. Questa modifica impedisce agli ordini privi di informazioni di spedizione di causare errori di e-mail degli ordini. <!-- CCSAAS-5351 -->
 
 Per creare un ordine senza un indirizzo di spedizione:
 
@@ -118,15 +118,15 @@ Per creare un ordine senza un indirizzo di spedizione:
 
 ### Recupera [!DNL AEM Assets] immagini categoria
 
-I tipi di GraphQL `CategoryInterface` e `CategoryTree` ora includono un campo `asset_role_image` che restituisce l&#39;immagine della categoria assegnata da [!DNL AEM Assets]. <!-- ACCS-2180 -->
+I tipi di GraphQL `CategoryInterface` e `CategoryTree` ora includono un campo [`asset_role_image`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/interfaces/category#aem-assets-category-images) che restituisce l&#39;immagine della categoria assegnata da [!DNL AEM Assets]. <!-- ACCS-2180 -->
 
 ### Recupera saldi credito del negozio cliente
 
-Il nuovo endpoint REST `GET /V1/customers/:customerId/balance` restituisce il saldo del credito del punto vendita del cliente. Questo endpoint richiede l&#39;autorizzazione [!UICONTROL Manage Store Credit Balances]. <!-- CCSAAS-5274 -->
+Il nuovo endpoint REST [`GET /V1/customers/:customerId/balance`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/store-credit#retrieve-a-customers-store-credit-balance) restituisce il saldo del credito dell&#39;archivio del cliente. Questo endpoint richiede l&#39;autorizzazione [!UICONTROL Manage Store Credit Balances]. <!-- CCSAAS-5274 -->
 
 ### Recupera totali righe articolo fattura
 
-Il tipo di GraphQL `InvoiceItemInterface` ora include un campo `row_total` che restituisce il subtotale delle righe memorizzato per un elemento fattura. <!-- USF-4460 -->
+Il tipo di GraphQL [`InvoiceItemInterface`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/interfaces/invoice-item#invoice-item-row-totals) ora include un campo `row_total` che restituisce il subtotale delle righe memorizzato per un elemento fattura. <!-- USF-4460 -->
 
 ### Miglioramenti e correzioni di bug
 
@@ -153,6 +153,8 @@ In questa versione sono inclusi i miglioramenti, le ottimizzazioni e le correzio
 * È stato risolto un problema a causa del quale la mutazione GraphQL `addProductsToCart` poteva restituire un errore durante l&#39;utilizzo del raccoglitore dei totali out-of-process. <!-- ACCS-2263, CEXT-6986 -->
 
 * È stato risolto un problema a causa del quale le query e le mutazioni del carrello di GraphQL potevano restituire un errore dopo l&#39;eliminazione di un prodotto configurabile da un carrello.<!-- CCSAAS-5721 -->
+
+* È stato risolto un problema che poteva causare il timeout del salvataggio o del recupero di un cliente con molti indirizzi salvati. <!-- CCSAAS-5599 -->
 
 {{accs-release}}
 
