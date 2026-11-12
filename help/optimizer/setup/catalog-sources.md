@@ -3,7 +3,7 @@ title: Origini catalogo
 description: Scopri cosa sono le origini del catalogo e come definiscono l’ambito autorevole di prodotti, attributi e categorie per il comportamento di ricerca, filtro e ordinamento.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
 autotag-review: '2026-06-09T19:36:23.516Z'
 TQID: 'https://experienceleague.adobe.com/MiLbuYx6Pf95n3jvrgvou05Ery9XHXskx8p6KrN6CYg'
 product_v2:
@@ -34,46 +34,11 @@ topic_v2:
     internal-label: Data modeling
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: dd0ff00127242a63faf1eac1fa614673d73a7f24
 workflow-type: tm+mt
-source-wordcount: 457
+source-wordcount: '53'
 ht-degree: 0%
-
 ---
-
 # Origini del catalogo
 
-Le origini del catalogo rappresentano ambiti autorevoli di prodotti, attributi e categorie. In genere vengono mappati sui limiti della lingua, del pubblico o del sistema di origine e determinano il comportamento di ricerca, filtro e ordinamento.
-
-## Origini del catalogo e concetti correlati
-
-Il modo in cui le origini del catalogo si relazionano con altri concetti di [!DNL Adobe Commerce Optimizer] consente di modellare correttamente i dati:
-
-* **Origine catalogo**: il contesto dei dati sottostante che fornisce le informazioni sul prodotto. Un&#39;origine catalogo è in genere una lingua (ad esempio, `en-US`, `fr-CA`) o un sistema esterno come un PIM o un ERP. I prodotti, i metadati degli attributi e le categorie hanno tutti un ambito per origine di catalogo. Considera un&#39;origine del catalogo come *da cui* provengono i dati del catalogo non elaborati e *come* influisce sull&#39;individuazione del prodotto (risultati di ricerca, filtraggio e comportamento di ordinamento).
-
-* **[Visualizzazione catalogo](catalog-view.md)**: visualizzazione configurata del catalogo per esigenze aziendali specifiche. Quando crei una visualizzazione catalogo, selezioni l&#39;origine del catalogo (o le impostazioni locali) da utilizzare, quindi aggiungi [criteri](policies.md) per filtrare i prodotti visibili e collega [listini prezzi](pricebooks.md) per controllare la determinazione prezzi. Un&#39;unica origine di catalogo può alimentare molte visualizzazioni di catalogo (ad esempio, un&#39;origine `en-US` con visualizzazioni di catalogo separate per marchi o aree geografiche diversi). Considera una visualizzazione catalogo come *il modo* in cui esponi tali dati a una vetrina, un canale o un pubblico.
-
-* **[Livello catalogo](catalog-layer.md)**: livello applicato ai dati del catalogo di base per modificare gli attributi del prodotto (nome, descrizione, immagini, metadati) senza modificare i dati di origine. Utilizzare i livelli del catalogo quando le differenze devono influire solo sulla visualizzazione della vetrina, non sul rilevamento del prodotto.
-
-## Regole e limitazioni
-
-* Ogni origine di catalogo viene creata acquisendo un prodotto tramite l’API di acquisizione dati. Per ulteriori informazioni, consulta [Developer Docs - Data Ingestion](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/).
-* L’univocità del prodotto è determinata da SKU + origine catalogo.
-* Gli acquirenti non accedono direttamente alle origini del catalogo. I dati del catalogo sono esposti alla vetrina tramite [visualizzazioni catalogo](catalog-view.md).
-
-## Linee guida per la modellazione
-
-Per decidere come strutturare le origini del catalogo, attieniti alle seguenti indicazioni:
-
-* Crea un&#39;origine catalogo separata per ogni lingua del catalogo.
-* Utilizza origini di catalogo separate quando le differenze di prodotti e attributi devono influire sul comportamento di ricerca, filtro o ordinamento (ad esempio, diversa ricercabilità, filtrabilità o configurazione facet per lo stesso attributo).
-* Utilizzare i [livelli catalogo](catalog-layer.md) quando le differenze tra prodotti e attributi devono influire solo sulla visualizzazione della vetrina, non sull&#39;individuazione del prodotto.
-
->[!MORELIKETHIS]
->
-> * [Visualizzazioni catalogo](catalog-view.md) - Configura visualizzazioni filtrate con prezzo sopra un&#39;origine catalogo
-> * [Livelli catalogo](catalog-layer.md) - Modificare la presentazione del prodotto senza modificare i dati di origine
-> * [Criteri](policies.md) - Creare filtri basati su attributi per le visualizzazioni catalogo
-> * [Listini prezzi](pricebooks.md) - Gestisce le strutture di determinazione prezzi per segmenti cliente diversi
-> * [Chiavi di accesso limitate](restricted-access-keys.md) - Proteggere una visualizzazione catalogo con autenticazione token firmato
-
+{{$include /help/_includes/ccdm-shared/setup/catalog-sources.md}}

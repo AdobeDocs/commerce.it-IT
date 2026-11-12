@@ -24,7 +24,7 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 672e67ef99d52c942013a880ecfec0da31e76756
 workflow-type: tm+mt
 source-wordcount: '3191'
 ht-degree: 0%
@@ -352,7 +352,7 @@ Si applica a:
 
 Versione principale: [modello dati catalogo componibile](https://developer.adobe.com/commerce/services/optimizer/) per vetrine headless, gestione intestazione e gestione dati prodotto.
 
-![Nuovo](../assets/new.svg) **Composable Catalog Data Model (CCDM)**—Supporta i clienti che utilizzano il catalogo componibile per vetrine headless. I nuovi endpoint accettano gli ID di criteri e vista catalogo (compatibili con le versioni precedenti). Dettagli prodotto configurabili e prezzi con impaginazione incorporata.<!--DATA-6018, DATA-6288-->
+![Nuovo](../assets/new.svg) **modello dati catalogo componibile (CCDM)**—Supporta i clienti che utilizzano il catalogo componibile per vetrine headless. I nuovi endpoint accettano gli ID di criteri e vista catalogo (compatibili con le versioni precedenti). Dettagli prodotto configurabili e prezzi con impaginazione incorporata.<!--DATA-6018, DATA-6288-->
 
 ![Nuovo](../assets/new.svg) **Gestione intestazioni**-`AC-Locale` rinominato in `AC-Scope-Locale` per le operazioni API del catalogo componibile. Sono stati specificati il mapping delle intestazioni e i valori predefiniti.<!--DATA-6303, DATA-6078-->
 

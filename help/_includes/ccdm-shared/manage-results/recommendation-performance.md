@@ -1,0 +1,104 @@
+---
+source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+workflow-type: tm+mt
+source-wordcount: '915'
+ht-degree: 0%
+---
+Nella pagina Prestazioni dei consigli viene visualizzato un elenco di consigli configurati e le relative metriche chiave, utili per valutarne l’efficacia. Puoi configurare la visualizzazione in modo da visualizzare le metriche relative all’ultimo giorno, settimana o mese. Queste informazioni mostrano la frequenza con cui ogni unità di consigli viene visualizzata o cliccata, consentendoti di valutare le prestazioni e identificare le opportunità di ottimizzazione.
+
+>[!INFO]
+>
+>Un&#39;unità di consigli è un widget che contiene il prodotto consigliato _elementi_.
+
+![Prestazioni consigli](/help/assets/ccdm-shared/manage-results/rec-performance.png){zoomable="yes"}
+
+## Visualizzare un rapporto
+
+1. Scegli la **vista Catalogo**, ad esempio *tutte le viste* a cui applicare i consigli.
+
+   Ulteriori informazioni sulle [visualizzazioni catalogo](#select-catalog-view) nei consigli.
+
+1. Fare clic su **[!UICONTROL Date Range]** e selezionare uno dei seguenti intervalli:
+
+   ![Intervallo date consigli](/help/assets/ccdm-shared/manage-results/rec-perf-date-range.png)
+
+   La tabella dei consigli viene aggiornata per visualizzare le metriche per l’intervallo di date e la vista catalogo.
+
+## Personalizza tabella
+
+1. Nell&#39;angolo superiore sinistro fare clic sull&#39;icona ![Selettore colonna](/help/assets/ccdm-shared/manage-results/icon-show-hide-columns.png) per personalizzare la tabella.
+
+   Le colonne visibili presentano un segno di spunta.
+
+1. Nel menu, effettuate una delle seguenti operazioni:
+
+   - Per visualizzare una colonna nascosta, fare clic sul nome di una colonna senza segno di spunta.
+   - Per nascondere una colonna visibile, fare clic su un nome di colonna con un segno di spunta.
+
+   La tabella viene aggiornata per includere solo le colonne selezionate.
+
+## Visualizza dettagli
+
+1. Nella tabella, fai clic sull&#39;icona (![Altro selettore](/help/assets/ccdm-shared/recommendations/btn-more.png)) accanto al consiglio che desideri esaminare.
+
+1. Per cambiare lo stato del consiglio, fare clic su **Attiva** o **Disattiva**.
+
+## Creare o gestire i consigli
+
+Scopri come [creare un nuovo consiglio o gestirne uno esistente](../merchandising/recommendations/create.md).
+
+## Controlli Workspace
+
+| Controllo | Descrizione |
+|---|---|
+| ![Intervallo date](/help/assets/ccdm-shared/manage-results/rec-perf-date-range.png) | Determina l’intervallo di tempo utilizzato per i calcoli delle metriche. |
+| ![Selettore colonna](/help/assets/ccdm-shared/manage-results/icon-show-hide-columns.png) | Determina le colonne visualizzate nella tabella Consigli. |
+| Crea consiglio | Apre la pagina [Crea nuovo consiglio](../merchandising/recommendations/create.md). |
+| [Visualizzazione catalogo](#select-catalog-view) | Seleziona la vista catalogo per filtrare la tabella in modo da mostrare solo i consigli che si applicano alla vista catalogo selezionata. Questa selezione viene utilizzata anche come vista catalogo quando [crei](../merchandising/recommendations/create.md) un nuovo consiglio. Le opzioni sono *Tutte le visualizzazioni* o una [visualizzazione catalogo](../setup/catalog-view.md) specifica. |
+
+## Descrizioni delle colonne
+
+| Colonna | Descrizione |
+|---|---|
+| Nome | Nome del consiglio. |
+| Pagina | Pagina in cui viene visualizzato il consiglio. |
+| Tipo | Il tipo di consiglio. |
+| Stato | Lo stato del consiglio. Opzioni: Inattivo/Attivo/Bozza |
+| Creato | Data di creazione del consiglio. |
+| Ultima modifica | Data dell’ultima modifica apportata al consiglio. |
+| Impression | Il numero di volte in cui un’unità di consigli viene caricata e sottoposta a rendering su una pagina. Nella pagina viene eseguito il rendering di un’unità di consigli che si trova sotto la piega della finestra della vista del browser, anche se non viene visualizzata dall’acquirente. In questo caso, l’unità sottoposta a rendering viene conteggiata come un’impression, ma una visualizzazione viene conteggiata solo se il cliente fa scorrere l’unità verso la visualizzazione. |
+| vImpression | (Impression visualizzabili) Il numero di unità di consigli che registrano almeno una visualizzazione. Ad esempio, se l’unità di consigli ha due righe, ciascuna con due prodotti, e gli ultimi due prodotti non sono visibili dal cliente, ma i primi due lo sono, l’attività verrà comunque conteggiata come un’impression. |
+| Visualizzazioni | Il numero di unità di consigli visualizzate nella finestra della vista del browser del cliente. Se il cliente scorre la pagina verso l&#39;alto o verso il basso più volte, l&#39;evento si attiva più volte ogni volta che l&#39;unità è visualizzabile. |
+| Clic | Somma del numero di volte in cui un acquirente fa clic su un elemento nell&#39;unità di consigli e del numero di volte in cui fa clic sul pulsante **Aggiungi al carrello** nell&#39;unità di consigli |
+| Ricavi | I ricavi determinati dai consigli per l’intervallo di tempo corrente. |
+| Ricavi Lt | (Ricavi ciclo di vita) I ricavi del ciclo di vita generati da un consiglio. |
+| Visibilità | Percentuale di unità di consigli registrate per la visualizzazione. |
+| Tasso di click-through | (Percentuale di click-through) Percentuale di unit impression per il consiglio che registra un clic. CTR conta tutte le impression anche se l&#39;unità non entra nella vista dell&#39;acquirente. Se l’unità di consigli non viene visualizzata, è improbabile che venga cliccata. Tuttavia, quelle impressioni non viste contano per il punteggio CTR e riducono la percentuale complessiva di CTR. |
+| vCTR | (Percentuale di click-through visualizzabile) misura i clic solo in base alle impression visualizzabili (consigli effettivamente visualizzati nella parte visibile dello schermo del cliente), fornendo un indicatore più preciso del coinvolgimento del cliente. |
+
+## Seleziona vista catalogo
+
+Il selettore **[!UICONTROL Catalog view]** nella pagina **Recommendations** esegue due operazioni:
+
+1. **Filtra la tabella** - Mostra solo i consigli (e le relative metriche) applicabili alla vista catalogo selezionata.
+1. **Imposta l&#39;ambito per i nuovi consigli**. Quando [crei](../merchandising/recommendations/create.md) un consiglio, la vista catalogo selezionata viene utilizzata come ambito dell&#39;unità. Le opzioni sono *Tutte le visualizzazioni* o una [visualizzazione catalogo](../setup/catalog-view.md) specifica.
+
+   - **Tutte le visualizzazioni** - Il consiglio si applica a tutte le visualizzazioni del catalogo (la disponibilità del prodotto è ancora filtrata per visualizzazione).
+   - **Vista catalogo** - Il consiglio si applica solo alla vista catalogo selezionata (ad esempio, una vetrina, una lingua o un marchio).
+
+Specificando una vista catalogo per ogni consiglio, puoi:
+
+- Configura i consigli per tutte le viste catalogo (globale) o per una sola vista catalogo.
+- Visualizza l&#39;anteprima e filtra i prodotti in base alla vista catalogo nella pagina di consigli [crea](../merchandising/recommendations/create.md).
+- Mostra solo i prodotti disponibili per ogni vetrina.
+- Visualizzare le metriche e il comportamento della vetrina per vista catalogo.
+
+### Come la visualizzazione catalogo filtra i prodotti
+
+La disponibilità del prodotto viene applicata per ogni visualizzazione di catalogo anche per le unità di consigli nella selezione **Tutte le visualizzazioni**. Questo funziona in aggiunta a qualsiasi [filtro di inclusione o esclusione](../merchandising/recommendations/filters.md) impostato nell&#39;unità di consigli.
+
+**Esempio: consiglio con filtri di inclusione nella selezione Tutte le visualizzazioni**
+
+- **Tutte le visualizzazioni** sono consigliati gli SKU: SKU_ABC, SKU_CDE, SKU_XYZ.
+- **Visualizzazione catalogo: Kingsbluff** non può vendere SKU_ABC o SKU_CDE. **Visualizzato:** SKU_XYZ più qualsiasi altro SKU valido per Kingsbluff.
+- **Visualizzazione catalogo: Arkbridge** non può vendere gli SKU inclusi. **Visualizzato:** Solo gli SKU consentiti da Arkbridge. Se non ne è disponibile alcuna, l’unità di consigli non viene visualizzata nella vetrina.

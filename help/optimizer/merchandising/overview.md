@@ -2,7 +2,7 @@
 title: Panoramica sul merchandising
 description: Informazioni sulle funzionalità di merchandising in [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
 exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
 TQID: https://experienceleague.adobe.com/GJ7017EEKg4wd4Wjom5-FrEcfrPbmvwEAJw0AFgGc64
 product_v2:
@@ -27,28 +27,11 @@ topic_v2:
     internal-label: Personalization
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
+source-git-commit: 1fb7db58ba92437c6fc894178261754d0394b6cd
 workflow-type: tm+mt
-source-wordcount: 237
+source-wordcount: '35'
 ht-degree: 0%
-
 ---
+# Adobe Merchandising
 
-# Merchandising
-
-In questa sezione imparerai a creare esperienze personalizzate per gli acquirenti attraverso l’individuazione dei prodotti e i consigli.
-
-## Individuazione prodotto
-
-Product Discovery offre ai commercianti strumenti potenti per curare e ottimizzare l’esperienza di acquisto, garantendo ai clienti la possibilità di trovare rapidamente i prodotti giusti al momento giusto. Ottimizzando il comportamento di ricerca, puoi influenzare direttamente la visibilità, la rilevanza e la conversione dei prodotti.
-
-Grazie all&#39;individuazione dei prodotti, è possibile:
-
-* **Utilizza [ricerca semantica](../setup/semantic-search.md)** — Abilitata per impostazione predefinita in [Impostazioni](../settings.md#advanced-search) per migliorare la rilevanza per le query basate su linguaggio naturale e intento. Non sono richieste modifiche alla configurazione degli attributi o alla vetrina.
-* **Configura [facet](./facets/overview.md), [regole di ricerca e categoria per merchandising](./rules/overview.md) e [sinonimi](./synonyms/overview.md)** per guidare gli acquirenti verso i prodotti più rilevanti con attrito minimo.
-
-## Consigli
-
-I consigli utilizzano l’intelligenza artificiale e l’apprendimento automatico per analizzare il comportamento aggregato dei visitatori e le interazioni dei prodotti nella vetrina. Combinando questi dati comportamentali con il catalogo dei prodotti, [!DNL Adobe Commerce Optimizer] offre suggerimenti di prodotto altamente personalizzati e pertinenti che migliorano il coinvolgimento degli acquirenti e aumentano la conversione.
-
-I consigli vengono visualizzati nella vetrina come unità etichettate, ad esempio &quot;Hanno visto anche i clienti che hanno visualizzato questo prodotto&quot;. Queste unità possono essere posizionate strategicamente in tutto il percorso. In qualità di merchandiser, puoi facilmente creare, gestire e distribuire queste unità di consigli direttamente in [!DNL Adobe Commerce Optimizer] per supportare obiettivi promozionali, strategie di cross-selling ed esperienze personalizzate.
+{{$include /help/_includes/ccdm-shared/merchandising/overview.md}}

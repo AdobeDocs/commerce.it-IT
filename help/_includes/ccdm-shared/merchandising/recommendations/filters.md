@@ -1,0 +1,278 @@
+---
+source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+workflow-type: tm+mt
+source-wordcount: '2382'
+ht-degree: 0%
+---
+[!DNL Product Recommendations] applica automaticamente filtri predefiniti non configurabili alle unità di consigli. Se in una pagina sono distribuite più unità di consigli, [!DNL Product Recommendations] esclude tutti i prodotti ripetuti nelle unità. Viene utilizzato solo il primo riferimento a un prodotto ripetuto, per fare spazio ad altri prodotti da consigliare. [!DNL Product Recommendations] esclude anche i prodotti acquistati in precedenza e quelli presenti nel carrello.
+
+Quando [crei](create.md) un&#39;unità di consigli, puoi definire filtri che controllano quali prodotti possono essere visualizzati nei consigli. Questi filtri si basano su un set di condizioni di inclusione o esclusione definite dall’utente. Solo i prodotti che corrispondono a tutte le condizioni di inclusione vengono visualizzati nei consigli. Non sono consigliati i prodotti che soddisfano una qualsiasi delle condizioni di esclusione.
+
+Per configurare più filtri e abilitarli solo quelli desiderati, seleziona l’opzione (Attiva/Disattiva) in ogni pagina del filtro. Ciò consente di creare bozze di filtri da utilizzare in futuro. Il numero di filtri attivati viene visualizzato in ogni scheda.
+
+## Condizioni
+
+Le condizioni possono essere statiche o dinamiche.
+
+- Una condizione statica utilizza gli attributi di prodotto esistenti per determinare quali prodotti possono comparire nell’unità. Ad esempio, è possibile specificare che solo i prodotti in magazzino con un prezzo superiore a 25 $ vengano visualizzati nell&#39;unità.
+
+- Una condizione dinamica si basa sul contesto corrente di un acquirente, ad esempio la categoria o il prodotto attualmente visualizzato. Ad esempio, quando crei un consiglio di prodotto da distribuire nelle pagine dei dettagli del prodotto, puoi utilizzare un [filtro prezzo dinamico](#dynamic-price-filters-relative-to-current-product) per includere o escludere prodotti all&#39;interno di un intervallo di prezzo relativo del prodotto visualizzato.
+
+### Operatori logici
+
+Gli operatori logici `AND` e `OR` vengono utilizzati per unire più condizioni. Se utilizzi sia filtri di inclusione che filtri di esclusione tra i tipi di filtro, le inclusioni vengono valutate per prime per determinare tutti i possibili prodotti che possono essere consigliati, quindi i prodotti che corrispondono a eventuali filtri di esclusione vengono rimossi dall’elenco. **Prezzo** i filtri utilizzano un ordine diverso tra le regole di prezzo: esclusioni prima, inclusioni poi. Vedi [Come usare il prezzo per le regole di inclusione ed esclusione](#how-include-and-exclude-rules-use-price).
+
+- `AND` - Unisce due condizioni di filtro di inclusione
+- `OR` - Unisce due condizioni di filtro di esclusione
+
+## Tipi di filtri
+
+Ogni tipo di filtro esegue il targeting di un aspetto diverso del catalogo, ad esempio prodotto e prezzo, in modo da poter restringere o ampliare i prodotti idonei per un&#39;unità. Scegli i tipi che corrispondono agli obiettivi di merchandising, quindi combina le condizioni di inclusione ed esclusione secondo necessità; le sottosezioni seguenti descrivono il comportamento di ciascun tipo e come [!DNL Product Recommendations] lo applica.
+
+>[!NOTE]
+>
+>È possibile consigliare solo i prodotti che corrispondono ai filtri di **inclusione** e rimuovere tutti i prodotti che corrispondono a un filtro di **esclusione**.
+
+### Prezzo {#price}
+
+>[!IMPORTANT]
+>
+>Il filtro del prezzo è in versione beta.
+
+Il filtro dei prezzi utilizza il **prezzo calcolato finale** di ogni prodotto dal **listino prezzi attivo** della vetrina, che è il listino prezzi assegnato alla vetrina in cui viene eseguito il rendering dell&#39;unità di consigli.
+
+Tale valore:
+
+- **Include** sconti, promozioni e prezzi speciali definiti nel listino prezzi dedicato (non solo prezzo di listino).
+- **Esclude** le regolazioni a livello di spedizione e carrello.
+- **Si applica solo** al listino prezzi attivo per quella vetrina; non vengono utilizzati altri storefront o listini prezzi.
+
+Configura il modo in cui i listini prezzi sono associati a una vetrina nella configurazione di [listini prezzi](/help/optimizer/setup/pricebooks.md).
+
+#### Come includere ed escludere regole usa prezzo {#how-include-and-exclude-rules-use-price}
+
+- **Regole di esclusione** - I prodotti il cui prezzo finale **corrisponde a qualsiasi** esclusione prezzo definita vengono rimossi per primi.
+- **Regole di inclusione** - Tra i candidati rimanenti, solo i prodotti il cui prezzo finale **corrisponde a tutte** le condizioni di inclusione prezzo definite rimangono idonei. Ciò include ogni filtro di inclusione abilitato (ad esempio, la regola del prezzo più altre regole di inclusione).
+
+Le regole di prezzo **filtrano** il set di candidati per i consigli; **non** riclassificano i prodotti. Il motore genera un elenco di classificazione, le regole di inclusione ed esclusione dei prezzi rimuovono i prodotti da tale elenco e l&#39;ordine relativo dei prodotti rimanenti rimane invariato. Se il numero di prodotti idonei è inferiore a quello delle richieste di unità, verranno visualizzati solo gli articoli validi. Se nessuno è idoneo, l’unità non viene riprodotta (nessun segnaposto vuoto).
+
+Il prezzo mostrato sui prodotti all&#39;interno dell&#39;unità di consigli è lo stesso **prezzo finale** del listino prezzi di quel negozio, quindi quello che gli acquirenti vedono corrisponde al valore utilizzato per il filtro. Nell&#39;anteprima di amministrazione, i prodotti configurabili possono mostrare una fascia di prezzo quando i prezzi delle varianti differiscono; vedi [Prodotti configurabili nell&#39;anteprima](#configurable-products-in-preview).
+
+#### Intervallo prezzi statico
+
+Utilizza un filtro prezzo **statico** quando desideri un prezzo minimo o massimo fisso nella valuta di base del tuo negozio, indipendentemente dal prodotto che un acquirente sta visualizzando.
+
+##### Impostare un filtro prezzi statico
+
+1. Durante la [creazione o modifica](create.md) di un&#39;unità di consigli, apri **[!UICONTROL Filter products]** (o passa al passaggio _Filtri_ dal flusso di lavoro dell&#39;unità).
+1. Selezionare la scheda **[!UICONTROL Inclusions]** o **[!UICONTROL Exclusions]**, a seconda che si desideri consentire solo i prodotti in una fascia di prezzo o bloccare i prodotti in un intervallo. Il badge in ogni scheda mostra il numero di filtri di quel tipo abilitati.
+1. Nell&#39;elenco a sinistra, selezionare **[!UICONTROL Price]**.
+1. Attiva **[!UICONTROL Enable filter]**.
+
+   I valori di prezzo utilizzano la valuta di base del sito Web **&#x200B;**, come indicato nella pagina.
+
+1. Aprire **[!UICONTROL Include products based on]** (nella scheda **[!UICONTROL Inclusions]**) o il controllo equivalente nella scheda **[!UICONTROL Exclusions]** e scegliere **[!UICONTROL Set price range]**.
+1. Impostare un **[!UICONTROL Min price]** e/o un **[!UICONTROL Max price]** facoltativo utilizzando i campi accanto al simbolo di valuta. È possibile digitare gli importi o utilizzare i controlli **-** e **+** per regolare i valori. Lascia vuoto un limite se non hai bisogno di un minimo o di un massimo. L&#39;intervallo viene confrontato con il prezzo calcolato finale di ciascun prodotto per il listino prezzi attivo del negozio.
+1. Completa la configurazione dell’unità di consigli e salva o pubblica in modo che il filtro diventi effettivo.
+
+![Filtro prezzi](/help/assets/ccdm-shared/recommendations/filter-price.png)
+
+#### Filtri di prezzo dinamici (relativi al prodotto corrente) {#dynamic-price-filters-relative-to-current-product}
+
+Utilizza un filtro prezzi **dynamic** per limitare i consigli relativi al **prodotto visualizzato** in una pagina dettagli prodotto (PDP). Il filtro utilizza il prezzo finale del prodotto come **ancoraggio** e confronta i prodotti consigliati con i limiti definiti dall&#39;utente.
+
+Gli operatori dinamici sono disponibili solo per [tipi di consigli relativi allo SKU](types.md) eseguiti in un contesto di prodotto:
+
+- Ha visualizzato questo, ha visualizzato quello
+- Ho visto questo, ho comprato quello
+- Ho comprato questo e quello
+- Altri argomenti correlati
+- Somiglianza visiva
+
+Sono **non** disponibili per i tipi basati sulla popolarità perché tali unità non hanno un singolo prodotto corrente per ancorare il filtro:
+
+- Articoli più visualizzati
+- Più acquistati
+- Più aggiunti al carrello
+- Di tendenza
+- Consigliato per te
+- Visualizzato di recente
+- Conversione da Vista a Carrello
+- Visualizza per conversione acquisto
+
+Nella vetrina, il menu a discesa per i consigli legge il prezzo del prodotto corrente dal contesto PDP e lo invia con la richiesta di consigli. [!DNL Product Recommendations] utilizza tale valore come ancoraggio durante la valutazione delle regole di prezzo dinamiche. Per i prodotti configurabili, l&#39;ancoraggio corrisponde al prezzo finale **variante più bassa** (`priceRange.minimum`).
+
+##### Operatori
+
+In **[!UICONTROL Include products based on]** (o l&#39;equivalente delle esclusioni), puoi scegliere:
+
+| Operatore | Finalità |
+| --- | --- |
+| **Minore o uguale al prezzo del prodotto corrente** | Includi o escludi i prodotti in corrispondenza o al di sotto di un limite derivato dal prezzo di ancoraggio più un offset. |
+| **Maggiore o uguale al prezzo del prodotto corrente** | Includi o escludi prodotti in corrispondenza o al di sopra di un limite derivato dal prezzo di ancoraggio più un offset. |
+| **In un intervallo di valori del prodotto corrente** | Includi o escludi i prodotti il cui prezzo finale rientra in una fascia di valuta fissa intorno all’ancoraggio (offset dal prezzo corrente). |
+| **Entro un intervallo percentuale dal prodotto corrente** | Includi o escludi i prodotti il cui prezzo finale rientra in una fascia percentuale intorno all’ancoraggio. |
+
+##### Scostamento semantico
+
+Per **minore o uguale al prezzo del prodotto corrente** e **maggiore o uguale al prezzo del prodotto corrente**, il valore immesso è un **offset numerico aggiunto al prezzo di ancoraggio** per formare il limite:
+
+- Un offset **negativo** sposta il limite **al di sotto** del prezzo del prodotto corrente.
+- Un offset **positivo** sposta il limite **al di sopra** del prezzo del prodotto corrente.
+- **Vuoto** o **0** significa **nessun limite** su quel lato; il backend li tratta allo stesso modo.
+- Impossibile utilizzare **0** per indicare &quot;esattamente il prezzo del prodotto corrente&quot; come limite.
+
+##### Impostare un filtro prezzi dinamico
+
+1. [Crea o modifica](create.md) un&#39;unità di consigli **relativa allo SKU** distribuita nella pagina **dettagli prodotto** (o in un&#39;altra posizione in cui un prodotto corrente è sempre nel contesto).
+1. Aprire **[!UICONTROL Filter products]** e selezionare la scheda **[!UICONTROL Inclusions]** o **[!UICONTROL Exclusions]**.
+1. Selezionare **[!UICONTROL Price]** e attivare **[!UICONTROL Enable filter]**.
+1. Apri **[!UICONTROL Include products based on]** (o l&#39;equivalente delle esclusioni) e scegli un operatore dinamico (ad esempio, **All&#39;interno di un intervallo di valori del prodotto corrente**).
+1. Immettete i valori di offset o intervallo come richiesto. Utilizza l’anteprima per confermare i risultati per un prodotto di esempio.
+1. Salvare o pubblicare l&#39;unità.
+
+Valori non validi (importi non numerici, combinazioni non supportate o intervalli in cui il valore minimo è maggiore del valore massimo) impediscono il salvataggio e mostrano errori di convalida; **[!UICONTROL Save]** rimane disabilitato finché il filtro non è valido.
+
+##### Se non è disponibile alcun prezzo di ancoraggio
+
+Se un filtro prezzi dinamico è abilitato ma la vetrina non è in grado di fornire un prezzo di prodotto corrente (ad esempio, l&#39;unità viene sottoposta a rendering all&#39;esterno di un contesto PDP), [!DNL Product Recommendations] non restituisce consigli non filtrati. L&#39;unità mostra **nessun consiglio**, perché la visualizzazione dei risultati non filtrati non corrisponde alla regola configurata.
+
+##### Prodotti configurabili in anteprima {#configurable-products-in-preview}
+
+Nel pannello **anteprima**, i prezzi dei prodotti consigliati vengono visualizzati come segue:
+
+- **Prodotti semplici** - Prezzo finale singolo dalla risposta di GraphQL.
+- **Prodotti configurabili** - Se i prezzi delle varianti minimo e massimo sono diversi, l&#39;anteprima mostra un intervallo (ad esempio, `$min – $max`). Se sono uguali, viene visualizzato un singolo prezzo.
+
+Il prezzo di ancoraggio utilizzato per i calcoli dei filtri dinamici su un prodotto configurabile è sempre il prezzo finale della variante **minimum**, coerente con la vetrina.
+
+#### Esempi di filtri di prezzo
+
+Negli esempi seguenti viene utilizzato un prezzo di prodotto corrente di **$500**. Per raggiungere l’obiettivo di merchandising, regola inclusione ed esclusione.
+
+| Operatore | Linguetta | Obiettivo | Esempio di limite |
+| --- | --- | --- | --- |
+| Minore o uguale al prezzo del prodotto corrente | Esclusioni | Promuovere l&#39;upselling nascondendo le alternative a basso prezzo | Escludi prodotti ≤ $500 |
+| Minore o uguale al prezzo del prodotto corrente | Inclusioni | Offrire alternative convenienti | Includi prodotti ≤ $500 |
+| Maggiore o uguale al prezzo del prodotto corrente | Esclusioni | Evitare l&#39;upselling in un flusso incentrato sul budget | Escludi prodotti ≥ $500 |
+| Maggiore o uguale al prezzo del prodotto corrente | Inclusioni | Superficie premium alternative | Includi prodotti ≥ $500 |
+| All&#39;interno di un intervallo di valori del prodotto corrente | Esclusioni | Diversificarsi rispetto a punti di prezzo simili | Escludi $ 400- $ 600 |
+| All&#39;interno di un intervallo di valori del prodotto corrente | Inclusioni | Mostra alternative comparabili in una banda stretta | Inclusi $ 400- $ 600 |
+| Entro un intervallo percentuale del prodotto corrente | Esclusioni | Riduci articoli con prezzi simili (ad esempio ±20%) | Escludere circa $ 400-$ 600 |
+| Entro un intervallo percentuale del prodotto corrente | Inclusioni | Confronto equo all&#39;interno di una fascia comparabile | Includere circa $ 400-$ 600 |
+
+### Prodotto
+
+I filtri dei prodotti eseguono il targeting dei singoli elementi del catalogo per **SKU**. Per consentire o bloccare prodotti specifici, utilizzare la pagina **[!UICONTROL Filter products]** come [filtri di prezzo](#price) per aggiungere SKU. Non è possibile rendere visibili prodotti disabilitati o non visibili singolarmente in un&#39;unità di consigli; tali prodotti non vengono mai visualizzati nella vetrina indipendentemente dai filtri.
+
+#### Configurare un filtro prodotto
+
+1. Durante la [creazione o modifica](create.md) di un&#39;unità di consigli, apri **[!UICONTROL Filter products]** (o passa al passaggio _Filtri_ dal flusso di lavoro dell&#39;unità).
+1. Selezionare la scheda **[!UICONTROL Inclusions]** o **[!UICONTROL Exclusions]**. Il badge in ogni scheda mostra il numero di filtri di quel tipo abilitati.
+1. Nell&#39;elenco a sinistra, selezionare **[!UICONTROL Product]**.
+1. Attiva **[!UICONTROL Enable filter]**.
+
+   L&#39;intestazione del pannello a destra riflette la scheda, ad esempio **[!UICONTROL Product inclusions]** o l&#39;equivalente per le esclusioni.
+
+1. In **[!UICONTROL Product SKU]**, immettere uno SKU e fare clic su **[!UICONTROL Add]**. Ripeti l’operazione per aggiungere altri SKU.
+
+   In **[!UICONTROL Product SKUs]** ogni SKU viene visualizzato come tag rimovibile. Fai clic su **X** su un tag per rimuovere tale SKU oppure fai clic su **[!UICONTROL Clear All]** per rimuovere ogni SKU dall&#39;elenco.
+
+1. Completa la configurazione dell’unità di consigli e salva o pubblica per rendere effettivo il filtro.
+
+Per **inclusioni**, è possibile consigliare solo i prodotti con SKU elencati (e che soddisfano gli altri filtri di inclusione abilitati). Per **esclusioni**, qualsiasi prodotto con SKU elencato non è consigliato, anche se è idoneo per il resto.
+
+![Filtro prodotti](/help/assets/ccdm-shared/recommendations/filter-product.png)
+
+>[!NOTE]
+>
+>I prodotti secondari di un prodotto configurabile non vengono visualizzati in un&#39;unità di consigli perché tali prodotti secondari hanno la visibilità di _Non visibile singolarmente_.
+
+### Attributi {#attributes}
+
+>[!NOTE]
+>
+>Il filtro degli attributi è in versione beta.
+
+I filtri attributi consentono di includere o escludere prodotti in base ai valori degli attributi del prodotto, utilizzando la stessa pagina **[!UICONTROL Filter products]** dei filtri [price](#price) e [product](#product).
+
+#### Informazioni sui filtri attributi
+
+Un filtro di attributi differisce da un [filtro di prodotto](#product) in quanto esegue il targeting dei prodotti in base ai valori di attributi condivisi anziché in base al singolo SKU. Ad esempio, invece di elencare tutti gli SKU assegnati a una categoria, puoi creare un singolo filtro di attributi che corrisponda a tutti i prodotti assegnati a tale categoria.
+
+#### Impostare un filtro attributi
+
+Per aggiungere una regola di inclusione o esclusione di attributi a un’unità di consigli, effettua le seguenti operazioni.
+
+>[!TIP]
+>
+>Per gli attributi che si desidera filtrare, utilizzare l&#39;[API metadati](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata){target="_blank"} per impostare il parametro `filterable`:
+>
+>{&quot;filterable&quot;: true}
+>
+>L&#39;attributo diventa disponibile nel menu **Attributi** alla successiva sincronizzazione del catalogo con il livello dati di Merchandising Services.
+
+1. Durante la [creazione o modifica](create.md) di un&#39;unità di consigli, passare a **[!UICONTROL Filter products]**.
+1. Selezionare la scheda **[!UICONTROL Inclusions]** o **[!UICONTROL Exclusions]**. Il badge in ogni scheda mostra il numero di filtri di quel tipo abilitati.
+1. Nell&#39;elenco a sinistra, selezionare **[!UICONTROL Attributes]**.
+1. Scegli un attributo dal selettore, ad esempio **Categoria**.
+1. In **[!UICONTROL Value]**, immettere un valore per l&#39;attributo, ad esempio **pantaloni**.
+1. Premi **Invio** o fai clic su **[!UICONTROL Add inclusion filter]** (o sul controllo di esclusione equivalente) per aggiungere il filtro attributi.
+1. Completa la configurazione dell’unità di consigli e salva o pubblica per rendere effettivo il filtro.
+
+![Filtro attributi](/help/assets/ccdm-shared/recommendations/filter-attribute.png)
+
+>[!NOTE]
+>
+>Quando si seleziona un attributo i cui metadati impostano `number` su `true`, ad esempio **Dimensione**, il campo **Valore** visualizza gli input dell&#39;intervallo anziché un singolo valore di testo.
+
+L&#39;elenco degli attributi dipende dalla **Visualizzazione catalogo** selezionata. Se si seleziona **Tutte le visualizzazioni**, l&#39;elenco si basa sull&#39;origine del catalogo associata alla prima visualizzazione del catalogo. Se si seleziona una vista catalogo specifica, l&#39;elenco si basa sull&#39;origine del catalogo della vista.
+
+#### Utilizzare le condizioni di inclusione ed esclusione
+
+È consentito consigliare solo i prodotti che corrispondono ai filtri di inclusione. I prodotti che corrispondono a qualsiasi filtro di esclusione non vengono visualizzati nei consigli.
+
+#### Combina condizioni
+
+Quando un filtro di attributi include più valori o è combinato con altre condizioni, viene applicata la logica seguente.
+
+- Se per lo stesso attributo sono selezionati più valori, questi vengono combinati con `OR`.
+- Le condizioni per attributi diversi (ad esempio, Colore e Dimensione) vengono combinate con `AND`. Un prodotto deve corrispondere a tutti. Se si aggiunge lo stesso attributo come condizione separata invece di immettere più valori in una condizione, anche queste condizioni vengono combinate con `AND`, non con `OR`.
+- Se sono presenti più condizioni di esclusione, un prodotto viene rimosso quando corrisponde a una qualsiasi delle condizioni di esclusione.
+- Se utilizzi sia filtri di inclusione che filtri di esclusione, consulta [Operatori logici](#logical-operators).
+
+<!--
+#### Availability by recommendation type
+
+Hiding this for now as we need better clarification on what "limited" means.
+
+Attribute filter support varies by recommendation type.
+
+| Recommendation type | Inclusion support | Exclusion support |
+| --- | --- | --- |
+| Most viewed | Yes | Yes |
+| Most purchased | Yes | Yes |
+| Trending | Yes | Yes |
+| Recommended for you | Limited | Yes |
+| Viewed this, viewed that | Limited | Yes |
+| Viewed this, bought that | Limited | Yes |
+| Bought this, bought that | Limited | Yes |
+| More like this | Limited | Yes |
+| Visual similarity | No | Yes |
+| Recently viewed | No | Limited |
+| Recently purchased | No | Limited |
+-->
+
+#### Disponibilità, convalida e risoluzione dei problemi
+
+- Se sono presenti valori di attributo vuoti o condizioni non valide, i consigli non vengono riprodotti nella vetrina o nel pannello di anteprima.
+- I valori degli attributi devono corrispondere esattamente a quelli presenti nel catalogo. Ciò include spazi e case.
+- Se nessuno dei prodotti soddisfa i criteri di filtro, i consigli non vengono riprodotti nella vetrina o nel pannello di anteprima.
+
+### Esaurito
+
+Il seguente filtro di esclusione può filtrare i prodotti in base allo stato delle scorte:
+
+- Esaurito - (Solo esclusione) Esclude i prodotti esauriti.
+
+![Filtro stato magazzino](/help/assets/ccdm-shared/recommendations/filter-stock-status.png)
