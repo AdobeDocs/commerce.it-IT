@@ -1,7 +1,7 @@
 ---
 title: Facet Workspace
 description: Scopri come utilizzare l'area di lavoro Facets in [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  di Adobe Commerce (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
 exl-id: bd977769-6565-48ca-b5aa-963a217df3ea
 TQID: https://experienceleague.adobe.com/gpKL-sHYbuIW9obwCgozt4WJgVc7gq9IA4c17Eu-TJo
 product_v2:
@@ -20,31 +20,11 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 8041acb445e99eae524cc46933d6b322861be81d
 workflow-type: tm+mt
-source-wordcount: 212
-ht-degree: 1%
-
+source-wordcount: '38'
+ht-degree: 0%
 ---
-
 # Facet Workspace
 
-Nell&#39;area di lavoro *Facets* sono elencati tutti i facet attualmente disponibili e sono disponibili gli strumenti necessari per impostare e gestire i facet. I facet bloccati vengono visualizzati per primi nell&#39;elenco dei facet esistenti, seguiti dai facet dinamici. È possibile eseguire ricerche nell&#39;elenco dei facet.
-
-![Facet Workspace](../../assets/facet-workspace.png)
-
-## Descrizioni dei campi
-
-| Campo | Descrizione |
-|--- |--- |
-| Crea facet | Apre l&#39;[editor facet](add.md). |
-| Etichetta | L&#39;[etichetta facet](type.md#facet-labels) visibile nella vetrina può essere modificata per coerenza con il tuo marchio. |
-| Tipo di ordinamento | Metodo utilizzato per [ordinare](type.md#sort-type) facet. Tutti i [!DNL Adobe Commerce Optimizer] storefront ordinano i facet in ordine alfabetico e per `Count`. Opzioni:<br />Alfabetico - Ordina alfabeticamente i facet.<br />Conteggio - Ordina i facet in base al numero di corrispondenze trovate. |
-| Valore massimo | Il numero massimo di valori che possono essere visualizzati nella vetrina per ogni facet. I facet che rappresentano un intervallo di valori vengono distribuiti in modo uniforme. Voci valide: 0 - 100; valore predefinito: 8. |
-
-## Controlli
-
-| Controllo | Descrizione |
-|--- |--- |
-| ![Selettore pin](../../assets/btn-pin-blue.png) | Aggiunge o rimuove un facet all&#39;inizio dell&#39;elenco *Filtri*. |
-| ![Altro selettore](../../assets/btn-more.png) | Visualizza un menu di ulteriori azioni che possono essere applicate al facet selezionato. Opzioni: Modifica, Elimina |
+{{$include /help/_includes/ccdm-shared/merchandising/facets/workspace.md}}
