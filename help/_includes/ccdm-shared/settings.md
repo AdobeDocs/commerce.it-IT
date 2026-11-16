@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '872'
 ht-degree: 0%
 ---
+# Impostazioni merchandising
+
 Utilizza l&#39;area di lavoro *Impostazioni* per configurare la ricerca e l&#39;individuazione dei prodotti per la vetrina. Sono disponibili le seguenti schede:
 
 - **Facet**—Configura i gruppi di intervalli di prezzo e gli intervalli utilizzati come filtri di ricerca.
@@ -116,7 +118,7 @@ Dopo aver abilitato la ricerca semantica, nella stessa scheda puoi regolare quan
 
 - **[!UICONTROL Semantic boost]** - Per assegnare la priorità ai risultati rilevanti dal punto di vista semantico nella classificazione, applica un incremento. Aumentare il valore quando le corrispondenze semantiche dovrebbero pesare di più nel set di risultati; abbassarlo quando i risultati si sentono troppo ampi.
 - **[!UICONTROL Similarity threshold]** - Imposta il punteggio di somiglianza minimo (come percentuale) per una corrispondenza semantica. I valori più bassi restituiscono più risultati (richiamo più elevato), ma possono includere corrispondenze più deboli. I valori più alti restituiscono un numero minore di corrispondenze più strette (maggiore precisione).
-- **[!UICONTROL Fuzzy search]** - Per trovare corrispondenze vicine per le query di ricerca e correggere errori di battitura e varianti minori, attivare **2&rbrace;.**
+- **[!UICONTROL Fuzzy search]** - Per trovare corrispondenze vicine per le query di ricerca e correggere errori di battitura e varianti minori, attivare **2}.**
 - **[!UICONTROL Fuzzy search similarity threshold]** - Imposta la somiglianza minima (come percentuale) necessaria per la visualizzazione delle corrispondenze fuzzy. Le soglie inferiori restituiscono corrispondenze più approssimative; aumenta la soglia se i risultati sfocati si sentono troppo ampi.
 
 >[!NOTE]

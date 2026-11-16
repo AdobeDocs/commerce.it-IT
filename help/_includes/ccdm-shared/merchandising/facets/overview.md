@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '921'
 ht-degree: 0%
 ---
+# Facet
+
 Facet è un metodo di filtro ad alte prestazioni che utilizza più dimensioni di valori di attributo come criteri di ricerca.
 
 ![Risultati ricerca filtrati](/help/assets/ccdm-shared/facets/storefront-search-results-run.png)
@@ -31,7 +33,7 @@ Il sistema abilita i seguenti attributi di prodotto per impostazione predefinita
 
 Ulteriori informazioni sugli attributi del prodotto e sulle relative proprietà:
 
-- Per le distribuzioni connesse a un backend Adobe Commerce, consulta [Panoramica sugli attributi del prodotto](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/product-attributes/product-attributes)
+- Per le distribuzioni connesse a un backend Adobe Commerce, consulta [Panoramica sugli attributi del prodotto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)
 - Per le distribuzioni che utilizzano un back-end Commerce di terze parti, consulta l&#39;[API dei metadati per l&#39;acquisizione dei dati](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata).
 
 ## Ricerca su più livelli ed espansione dei tipi di ricerca

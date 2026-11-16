@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '2821'
+source-wordcount: '2823'
 ht-degree: 0%
 ---
+# Metriche di successo
+
 Questa pagina fornisce una panoramica delle metriche delle prestazioni chiave per il tuo store. L’obiettivo è comprendere i risultati dell’implementazione dei servizi di merchandising con il Composable Catalog Data Model (CCDM) per identificare opportunità di crescita e aree di ottimizzazione.
 
 ![Rapporto sulle metriche di successo](/help/assets/ccdm-shared/manage-results/success-metrics.png)
@@ -66,7 +68,7 @@ I metadati C2PA sono metadati a prova di manomissione e leggibili dal computer b
 
 ![Verifica campione](/help/assets/ccdm-shared/manage-results/inspect-sample.png)
 
-Ulteriori informazioni sulla [trasparenza dei contenuti di IA generativa](https://experienceleague.adobe.com/it/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency).
+Ulteriori informazioni sulla [trasparenza dei contenuti di IA generativa](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency).
 
 ## Utilizzo congiunto di metriche di successo e Sites Optimizer
 

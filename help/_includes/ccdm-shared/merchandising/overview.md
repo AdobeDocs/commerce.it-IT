@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '302'
 ht-degree: 0%
 ---
+# Adobe Merchandising
+
 Scopri come creare esperienze personalizzate per gli acquirenti attraverso l’individuazione dei prodotti e la generazione di consigli.
 
 Questi servizi Adobe Merchandising sono basati sul modello dati del catalogo componibile (CCDM), che separa *dati prodotto* dal *contesto prodotto*. I dati dei prodotti includono SKU, attributi, metadati, risorse e prezzi. Il contesto di prodotto definisce il modo in cui vengono consegnati i dati, incluse [visualizzazioni catalogo](/help/optimizer/setup/catalog-view.md), [criteri di accesso ai dati](/help/optimizer/setup/policies.md) e [origini catalogo](/help/optimizer/setup/catalog-sources.md) (impostazioni internazionali). Poiché le visualizzazioni e i criteri del catalogo controllano i dati della vetrina, puoi comporre cataloghi personalizzati per modelli B2B, B2C e D2C e personalizzare le esperienze di acquisto senza duplicare i dati di base.

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '993'
 ht-degree: 0%
 ---
+# Criteri
+
 I criteri definiscono i filtri applicati ai prodotti in una vista catalogo. Aiuta a personalizzare l’assortimento di prodotti restituito a una vetrina o a un canale. In questo modo, i contenuti vengono inviati alla destinazione corretta. Ad esempio, negozi fisici, mercati e canali pubblicitari come Google, Facebook e Instagram.
 
 I criteri utilizzano attributi di prodotto come marchio, modello o categoria di parte per adattare i dati del catalogo ai requisiti aziendali. &#x200B;

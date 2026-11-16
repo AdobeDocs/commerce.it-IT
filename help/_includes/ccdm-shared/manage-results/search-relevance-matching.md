@@ -1,12 +1,14 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '829'
 ht-degree: 0%
 ---
+# Ricerca corrispondenza e classificazione
+
 >[!IMPORTANT]
 >
->La funzionalità seguente è in [versione beta privata](https://experienceleague.adobe.com/it/docs/commerce-operations/release/beta).
+>La funzionalità seguente è in [versione beta privata](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
 
 I servizi di merchandising con il modello di dati a catalogo componibile (CCDM) classificano i risultati in modo che gli acquirenti possano vedere prima i prodotti più rilevanti. Il servizio incrementa i prodotti il cui testo del catalogo **corrisponde** alla query dell&#39;acquirente, quindi favorisce le corrispondenze in cui i termini vengono visualizzati insieme e infine include corrispondenze più ampie.
 
@@ -57,7 +59,7 @@ La corrispondenza delle frasi da sola non determina la rilevanza. Diversi segnal
 - Incrementa da **esatta / vicino** corrispondenza frase
 - Incrementa quando **tutti i termini di query** vengono visualizzati nel campo **same**
 - **Classificazione intelligente** (se abilitata), che combina rilevanza testuale e segnali comportamentali. Vedere [Funzionamento del punteggio di classificazione intelligente](../merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
-- **[Peso della ricerca](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/search/search-results)** per ogni attributo e altri fattori di rilevanza testuali (ad esempio, la frequenza con cui si verificano i termini nella lunghezza del nome o della descrizione). In *Impostazioni*, configura gli attributi che partecipano alla ricerca per parole chiave e i relativi **[pesi di ricerca per parole chiave](../settings.md)**.
+- **[Peso della ricerca](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)** per ogni attributo e altri fattori di rilevanza testuali (ad esempio, la frequenza con cui si verificano i termini nella lunghezza del nome o della descrizione). In *Impostazioni*, configura gli attributi che partecipano alla ricerca per parole chiave e i relativi **[pesi di ricerca per parole chiave](../settings.md)**.
 - **[Regole di merchandising](../merchandising/rules/overview.md)** come pin, boost e bury
 
 Poiché i segnali interagiscono, a volte una corrispondenza ampia viene posizionata al di sopra di una corrispondenza di frase più stretta quando **i pesi di ricerca** o la frequenza dei termini superano una corrispondenza di frase più debole.

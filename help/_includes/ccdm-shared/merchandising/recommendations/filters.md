@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '2382'
+source-wordcount: '2384'
 ht-degree: 0%
 ---
+# Filtra prodotti
+
 [!DNL Product Recommendations] applica automaticamente filtri predefiniti non configurabili alle unità di consigli. Se in una pagina sono distribuite più unità di consigli, [!DNL Product Recommendations] esclude tutti i prodotti ripetuti nelle unità. Viene utilizzato solo il primo riferimento a un prodotto ripetuto, per fare spazio ad altri prodotti da consigliare. [!DNL Product Recommendations] esclude anche i prodotti acquistati in precedenza e quelli presenti nel carrello.
 
 Quando [crei](create.md) un&#39;unità di consigli, puoi definire filtri che controllano quali prodotti possono essere visualizzati nei consigli. Questi filtri si basano su un set di condizioni di inclusione o esclusione definite dall’utente. Solo i prodotti che corrispondono a tutte le condizioni di inclusione vengono visualizzati nei consigli. Non sono consigliati i prodotti che soddisfano una qualsiasi delle condizioni di esclusione.
@@ -69,7 +71,7 @@ Utilizza un filtro prezzo **statico** quando desideri un prezzo minimo o massimo
 1. Nell&#39;elenco a sinistra, selezionare **[!UICONTROL Price]**.
 1. Attiva **[!UICONTROL Enable filter]**.
 
-   I valori di prezzo utilizzano la valuta di base del sito Web **&#x200B;**, come indicato nella pagina.
+   I valori di prezzo utilizzano la valuta di base del sito Web ****, come indicato nella pagina.
 
 1. Aprire **[!UICONTROL Include products based on]** (nella scheda **[!UICONTROL Inclusions]**) o il controllo equivalente nella scheda **[!UICONTROL Exclusions]** e scegliere **[!UICONTROL Set price range]**.
 1. Impostare un **[!UICONTROL Min price]** e/o un **[!UICONTROL Max price]** facoltativo utilizzando i campi accanto al simbolo di valuta. È possibile digitare gli importi o utilizzare i controlli **-** e **+** per regolare i valori. Lascia vuoto un limite se non hai bisogno di un minimo o di un massimo. L&#39;intervallo viene confrontato con il prezzo calcolato finale di ciascun prodotto per il listino prezzi attivo del negozio.

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1925'
 ht-degree: 0%
 ---
+# Prestazioni di ricerca
+
 La pagina *Prestazioni di ricerca* fornisce ad insight i termini di ricerca utilizzati dagli acquirenti. Le informazioni possono essere utilizzate per identificare le tendenze, aumentare il click-through e migliorare il tasso di conversione. La pagina Prestazioni di ricerca fornisce un’istantanea delle metriche di ricerca per un intervallo di date specifico e include i seguenti rapporti:
 
 - Ricerche univoche
@@ -66,7 +68,7 @@ Esistono diversi fattori chiave che determinano la rilevanza e l’efficacia dei
 
 Per ottimizzare i risultati della ricerca, monitora gli indicatori di prestazioni chiave (KPI, Key Performance Indicators) rilevanti, come query univoche, posizione media dei clic, tassi di click-through, tasso di conversione e tasso di risultati pari a zero, per comprendere le interazioni della ricerca dell’acquirente. Questi dati ti aiutano ad aggiornare e perfezionare regolarmente le regole di ricerca.
 
-- **Ricerche univoche** - Numero di query di ricerca univoche eseguite sul sito. Il sistema conta ogni ricerca univoca una sola volta, anche se lo stesso acquirente o acquirenti diversi la ripetono più volte. Questa metrica ti aiuta a comprendere la diversità dei termini di ricerca utilizzati dai clienti e fornisce informazioni approfondite sui prodotti o sulle informazioni che gli acquirenti stanno cercando. Il tracciamento delle ricerche univoche consente di:
+- **Ricerche univoche** - Numero di ricerche univoche eseguite sul sito durante l&#39;intervallo di date selezionato. Le ricerche multiple effettuate dallo stesso acquirente per la stessa query sono considerate univoche se inviate a più di un’ora di distanza. Utilizza questa metrica insieme al rapporto Ricerche univoche per comprendere l’attività di ricerca e identificare i prodotti o le informazioni che gli acquirenti stanno cercando. Il tracciamento delle ricerche univoche consente di:
 
   - Identifica le tendenze di ricerca più comuni e gli elementi cercati di frequente.
   - Rileva potenziali lacune nel catalogo dei prodotti o nel contenuto.
@@ -115,7 +117,7 @@ Assicurati che i prodotti secondari dei prodotti configurabili dispongano di imm
 
 ### Sfruttare i metadati del prodotto
 
-Assicurati che gli attributi del prodotto [&#x200B; precisi e dettagliati siano configurabili come ricercabili e abbiano un peso assegnato](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Tieni presente che gli attributi SKU, nome e categoria sono ricercabili per impostazione predefinita e non possono essere esclusi dalla ricerca. Per ottenere risultati ottimali, non utilizzare spazi negli SKU.
+Assicurati che gli attributi del prodotto [ precisi e dettagliati siano configurabili come ricercabili e abbiano un peso assegnato](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Tieni presente che gli attributi SKU, nome e categoria sono ricercabili per impostazione predefinita e non possono essere esclusi dalla ricerca. Per ottenere risultati ottimali, non utilizzare spazi negli SKU.
 
 Per aumentare la rilevanza della ricerca, assegnare un peso a ogni attributo ricercabile. Gli attributi con un peso maggiore dovrebbero apparire più in alto nei risultati della ricerca. L’ordinamento in base alla rilevanza è influenzato da più criteri, ad esempio il peso della ricerca. Ciò significa che a volte gli attributi con un peso di ricerca inferiore possono comunque avere maggiore rilevanza degli attributi con un peso di ricerca maggiore. Altri criteri possono includere il numero di corrispondenze in un dato attributo, la posizione del termine di ricerca trovato e la struttura generale del testo prima e dopo un termine di ricerca.
 

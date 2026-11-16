@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '853'
 ht-degree: 0%
 ---
+# Visualizzazioni di cataloghi privati
+
 Per impostazione predefinita, una [visualizzazione catalogo](catalog-view.md) è pubblica. Limita l’accesso a una vista catalogo in modo che solo le richieste con un token firmato valido possano recuperare i relativi dati.
 
 Una vista catalogo diventa privata in uno dei due modi seguenti:
@@ -96,7 +98,7 @@ Se [!UICONTROL Catalog Protection] è abilitato e tutte le chiavi assegnate scad
 
 >[!NOTE]
 >
->Per le distribuzioni B2B di Adobe Commerce che utilizzano Merchandising Services con CCDM, puoi gestire le chiavi di accesso dalla pagina Amministratore Commerce **Chiavi di accesso limitate** (**Sistema** > **Trasferimento dati**). Per informazioni dettagliate, vedere [Gestione delle chiavi di accesso con restrizioni](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) nella Guida all&#39;integrazione di *[!DNL Adobe Commerce Optimizer Connector]*.
+>Per le distribuzioni B2B di Adobe Commerce che utilizzano Merchandising Services con CCDM, puoi gestire le chiavi di accesso dalla pagina Amministratore Commerce **Chiavi di accesso limitate** (**Sistema** > **Trasferimento dati**). Per informazioni dettagliate, vedere [Gestione delle chiavi di accesso con restrizioni](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) nella Guida all&#39;integrazione di *[!DNL Adobe Commerce Optimizer Connector]*.
 
 ## Altri argomenti correlati
 

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '583'
 ht-degree: 0%
 ---
+# Crea sinonimi
+
 Aumenta il coinvolgimento dei clienti aggiungendo un elenco personalizzato di sinonimi. Puoi aggiungere fino a 200 sinonimi per origine di catalogo.
 
 ![Sinonimo Di Workspace](/help/assets/ccdm-shared/synonyms/synonym-workspace.png)
@@ -56,13 +58,13 @@ In questo esempio, la parola chiave da associare è &quot;pantaloni&quot; e l&#3
 
 | Campo | Descrizione |
 |--- |--- |
-| [Tipo](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/synonyms/type) | Determina se i sinonimi hanno lo stesso significato della parola chiave o sono un sottoinsieme della parola chiave. Opzioni:<br />Bidirezionale (impostazione predefinita) - Termini che hanno lo stesso significato della parola chiave e restituiscono gli stessi risultati di ricerca<br />Unidirezionale - Termini che sono un sottoinsieme della parola chiave. I sinonimi unidirezionali restituiscono un elenco più ristretto di prodotti specifici. |
+| [Tipo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/type) | Determina se i sinonimi hanno lo stesso significato della parola chiave o sono un sottoinsieme della parola chiave. Opzioni:<br />Bidirezionale (impostazione predefinita) - Termini che hanno lo stesso significato della parola chiave e restituiscono gli stessi risultati di ricerca<br />Unidirezionale - Termini che sono un sottoinsieme della parola chiave. I sinonimi unidirezionali restituiscono un elenco più ristretto di prodotti specifici. |
 | Parola chiave | Parola comunemente associata a una selezione di prodotti nel catalogo. |
 | Espansione | Termini aggiuntivi che hanno lo stesso significato o un significato simile della parola chiave. |
 
 ## Gestire i sinonimi
 
-Segui queste istruzioni per gestire [sinonimi](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/synonyms/overview) esistenti.
+Segui queste istruzioni per gestire [sinonimi](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/overview) esistenti.
 
 ## Trova sinonimo
 
