@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '872'
 ht-degree: 0%
 ---
+# Impostazioni merchandising
+
 Utilizza l&#39;area di lavoro *Impostazioni* per configurare la ricerca e l&#39;individuazione dei prodotti per la vetrina. Sono disponibili le seguenti schede:
 
 - **Facet**—Configura i gruppi di intervalli di prezzo e gli intervalli utilizzati come filtri di ricerca.

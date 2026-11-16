@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '385'
 ht-degree: 0%
 ---
+# Sinonimo Di Migliori Pratiche
+
 Di seguito è riportato un elenco di best practice per la creazione di sinonimi.
 
 - Per impostazione predefinita, il sistema gestisce gli errori di ortografia. Per includere parole che gli acquirenti potrebbero utilizzare, imposta i sinonimi. Queste parole sono diverse da quelle specificate nel catalogo. Non vuoi perdere una vendita perché qualcuno sta cercando un &quot;divano&quot; mentre il tuo prodotto è elencato come &quot;divano&quot;. Acquisisci un&#39;ampia gamma di termini di ricerca immettendo tutte le possibili parole che i clienti potrebbero usare per trovare i tuoi prodotti. Per migliorare i risultati, [imposta i sinonimi come unidirezionali o bidirezionali](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/synonyms/add#step-2-define-the-synonym-by-type).

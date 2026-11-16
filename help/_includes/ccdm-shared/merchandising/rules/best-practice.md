@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '455'
 ht-degree: 0%
 ---
+# Best practice per le regole di merchandising
+
 Per ottimizzare la conversione e i ricavi, implementa **regole di ricerca** efficaci, una **regola di elenco predefinita** forte e **[regole di categoria](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/add#rule-types)**. Regola le classificazioni utilizzando dati di vendita, azioni, promozioni e [classificazione intelligente](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking).
 
 È fondamentale stabilire una regola **predefinita** ben ponderata. La [regola predefinita](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/overview#default-rule) determina il modo in cui i risultati della ricerca vengono inizialmente ordinati quando non si applica alcuna regola di ricerca più specifica, migliorando così l&#39;individuazione e la probabilità di acquisto. Esamina regolarmente in modo da tenere il passo con le esigenze e le campagne dei clienti.

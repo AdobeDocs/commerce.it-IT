@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '853'
 ht-degree: 0%
 ---
+# Visualizzazioni di cataloghi privati
+
 Per impostazione predefinita, una [visualizzazione catalogo](catalog-view.md) è pubblica. Limita l’accesso a una vista catalogo in modo che solo le richieste con un token firmato valido possano recuperare i relativi dati.
 
 Una vista catalogo diventa privata in uno dei due modi seguenti:

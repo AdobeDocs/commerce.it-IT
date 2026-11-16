@@ -1,10 +1,10 @@
 ---
-source-git-commit: b6b737220a6dadf55b03da54e8d74226ed578cd0
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1633'
 ht-degree: 0%
 ---
-# Chiavi di accesso limitate
+# Chiavi di accesso con restrizioni
 
 Le chiavi di accesso con restrizioni consentono alle applicazioni client autorizzate di accedere a una [vista di catalogo privata](private-catalog-view.md). Solo le richieste che contengono un token firmato valido da una chiave assegnata possono recuperare i dati del catalogo. Tutte le altre richieste vengono rifiutate, incluse quelle di acquirenti che non hanno accesso esplicito a questa vista catalogo e gli script che esaminano l’API di Adobe Commerce Merchandising Services.
 
@@ -62,7 +62,7 @@ Seleziona la scheda per lo strumento utilizzato per gestire le chiavi: Commerce 
 
 I clienti che utilizzano Adobe Commerce as a Cloud Service con CCDM o Adobe Commerce Optimizer connesso ad Adobe Commerce tramite il connettore possono generare coppie di chiavi RSA dall’amministratore Commerce. Vedi [Gestire le chiavi con restrizioni di accesso](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys).
 
->[!TAB Adobe Commerce Optimizer Studio - gestione manuale delle chiavi]
+>[!TAB Adobe Commerce Optimizer Studio]
 
 I clienti che utilizzano Adobe Commerce Optimizer Studio devono generare e gestire le proprie coppie di chiavi RSA e quindi aggiungere la chiave pubblica al sistema. Si tratta del flusso di lavoro richiesto per Adobe Commerce Optimizer con un back-end di terze parti. Anche i clienti che utilizzano il connettore possono utilizzare questo flusso di lavoro al posto dell’amministratore di Commerce.
 
@@ -136,7 +136,7 @@ Seleziona la scheda per lo strumento utilizzato per gestire le chiavi: Commerce 
 
 Vedi [Selezione chiave e rotazione](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys#key-selection-and-rotation). Questo vale per Adobe Commerce as a Cloud Service con CCDM e per i progetti Adobe Commerce integrati con Adobe Commerce Optimizer tramite il connettore Adobe Commerce Optimizer.
 
->[!TAB Adobe Commerce Optimizer Studio (gestione manuale delle chiavi)]
+>[!TAB Adobe Commerce Optimizer Studio]
 
 Questa procedura è necessaria per Adobe Commerce Optimizer con un back-end di terze parti. I clienti che utilizzano il connettore possono anche utilizzarlo al posto dell’amministratore di Commerce.
 
@@ -154,3 +154,4 @@ Vedi [Visualizzazioni catalogo e limiti dei criteri](https://experienceleague.ad
 ## Altri argomenti correlati
 
 - [Visualizzazioni catalogo privato](private-catalog-view.md)—Scopri come proteggere una visualizzazione catalogo con chiavi di accesso limitato.
+

@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
+source-git-commit: d112f591ea46e4f3bdc081566a9a036df4ccfe5a
 workflow-type: tm+mt
-source-wordcount: '5663'
+source-wordcount: '5695'
 ht-degree: 0%
 ---
 
@@ -131,6 +131,13 @@ _28 giugno 2021_
 >
 > Le versioni si verificano spesso per fornire nuove funzioni e correzioni, in base alle esigenze. La pianificazione della versione non è corretta.
 
+## v2.17.1
+
+_16 novembre 2026_
+
+[!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versione 2.4.6 e successive
+
+![È stato risolto un problema](../assets/fix.svg)<!-- PAY-7254 --> che causava la cancellazione della casella di controllo dei termini e delle condizioni dopo l&#39;approvazione del pagamento PayPal, impedendo agli acquirenti di completare l&#39;estrazione.
 
 ## v2.17.0
 
@@ -543,7 +550,7 @@ _27 settembre 2023_
 
 [!BADGE Supportato]{type=Informative tooltip="Supportato"} Adobe Commerce versioni 2.4.4 e successive
 
-![È stato risolto un problema](../assets/fix.svg)<!-- Issue PAY-4870 --> che popolava in modo errato il nuovo attributo di intestazione in Storefront durante l&#39;invio della versione dell&#39;estensione con la versione più recente. In precedenza, con la versione `1.3.0` del connettore Commerce Services, non era possibile estendere `User-Agent header` dall&#39;estensione [!DNL Payment Services].
+<!-- Issue PAY-4870 --> È stato risolto un problema che popolava erroneamente il nuovo attributo di intestazione in Storefront durante l&#39;invio della versione dell&#39;estensione con la versione più recente. In precedenza, con la versione `1.3.0` del connettore Commerce Services, non era possibile estendere `User-Agent header` dall&#39;estensione [!DNL Payment Services].
 
 ## v2.2.0
 

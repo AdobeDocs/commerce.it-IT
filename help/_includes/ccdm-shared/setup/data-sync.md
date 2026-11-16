@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '487'
 ht-degree: 0%
 ---
+# Sincronizzazione catalogo
+
 Nella pagina **Sincronizzazione dati** viene visualizzata una panoramica dello stato di sincronizzazione dei dati dei prodotti trasferiti dall&#39;origine dati (il catalogo Commerce esistente, il sistema di gestione delle informazioni sui prodotti (PIM), il sistema ERP (Enterprise Resource Planning) e così via) nel livello dati dei servizi di merchandising.
 
 La pagina **Sincronizzazione dati** fornisce informazioni utili sulla disponibilità dei dati di prodotto per la vetrina, garantendo che possano essere visualizzati immediatamente agli acquirenti.

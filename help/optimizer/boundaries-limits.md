@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 0b52c20df4c64d3dd7e43f023e7b0f4517e8fcf7
+source-git-commit: 57a905703b11ef8fc4ca4527a5fc136dc81615cc
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1491'
 ht-degree: 0%
 ---
 # Limiti e limiti
@@ -151,7 +151,7 @@ I seguenti limiti si applicano alla ricerca di prodotti vetrina, all’elenco e 
 | Attributi ricercabili | Numero di caratteristiche del prodotto che possono essere indicizzate per la ricerca nel catalogo | 200 | No |
 | Attributi ordinabili | Il numero di caratteristiche del prodotto disponibili come opzioni di ordinamento nelle pagine di ricerca e categoria. | 50 | No |
 | Profondità di paginazione della ricerca | Numero massimo di prodotti raggiungibili tramite impaginazione ricerca (ad esempio, pagina 100 × 100 prodotti/pagina) | 10K | No |
-| Facet | Il numero di attributi di prodotto filtrabili (come Marchio, Colore, Dimensione, Prezzo) che possono essere configurati per aiutare gli acquirenti a perfezionare i risultati di ricerca e sfogliare le categorie | 100<p>Deve essere un attributo filtrabile</p> | No |
+| Facet | Il numero di attributi di prodotto filtrabili (come Marchio, Colore, Dimensione, Prezzo) che possono essere configurati per aiutare gli acquirenti a perfezionare i risultati di ricerca e sfogliare le categorie | 100<p>Deve essere un attributo filtrabile</p> | Sì<p>Può aumentare tramite richiesta di supporto</p> |
 | Opzioni per facet | Il numero di valori di attributi di prodotto filtrabili che gli acquirenti possono selezionare all’interno di un facet (ad esempio, &quot;Rosso&quot;, &quot;Blu&quot; per Colore; &quot;Piccolo&quot;, &quot;Medium&quot; per Dimensione) | 100 | Sì<p>Può aumentare tramite richiesta di supporto</p> |
 
 {style="table-layout:auto"}

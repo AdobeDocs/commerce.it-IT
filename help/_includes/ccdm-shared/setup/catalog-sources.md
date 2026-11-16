@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '510'
 ht-degree: 0%
 ---
+# Origini del catalogo
+
 Le origini del catalogo rappresentano ambiti autorevoli di prodotti, attributi e categorie. In genere vengono mappati sui limiti della lingua, del pubblico o del sistema di origine e determinano il comportamento di ricerca, filtro e ordinamento.
 
 ## Origini del catalogo e concetti correlati

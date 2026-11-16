@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '209'
 ht-degree: 0%
 ---
+# Tipi di facet
+
 I facet sono disponibili in diversi tipi e vengono visualizzati nell&#39;elenco *Filtri* solo se pertinenti. L’elenco dei facet disponibili cambia in base ai prodotti restituiti. Le seguenti caratteristiche influiscono sulla loro presentazione e sul loro comportamento:
 
 - Facet bloccati (Pinned Facets) - I facet più comunemente utilizzati possono essere bloccati nella parte superiore dell&#39;elenco. I facet rimanenti sono elencati nell&#39;ordine *Tipo di ordinamento* dopo i facet bloccati.

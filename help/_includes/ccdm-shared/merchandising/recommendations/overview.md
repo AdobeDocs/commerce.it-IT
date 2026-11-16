@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '157'
 ht-degree: 0%
 ---
+# Introduzione alla funzione Consigli
+
 I consigli sono un potente strumento di marketing che puoi utilizzare per aumentare le conversioni, incrementare i ricavi e stimolare il coinvolgimento degli acquirenti. I consigli sono basati su [Adobe AI](https://business.adobe.com/it/ai.html), che utilizza algoritmi di intelligenza artificiale e machine learning per eseguire un&#39;analisi approfondita dei dati aggregati dei visitatori. Quando vengono combinati con il tuo catalogo Adobe Commerce, questi dati offrono un’esperienza altamente coinvolgente, rilevante e personalizzata.
 
 I consigli emergono sulla vetrina come unità con etichette, ad esempio &quot;Hanno visto anche i clienti che hanno visualizzato questo prodotto&quot;. Puoi creare, gestire e distribuire consigli nelle viste dello store direttamente dall’area di lavoro Consigli.

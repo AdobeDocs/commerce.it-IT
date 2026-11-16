@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1606'
 ht-degree: 10%
 ---
+# Eventi
+
 Gli eventi sono uno strumento fondamentale per migliorare l’esperienza di acquisto e favorire le conversioni sfruttando le informazioni sui dati in tempo reale.
 
 Merchandising Services con Composable Catalog Data Model (CCDM) distribuisce automaticamente gli eventi storefront sul sito. Questi eventi acquisiscono dati dalle interazioni degli acquirenti sul tuo sito. Questi dati anonimi sono potenti per [consigli](../../manage-results/recommendation-performance.md), [individuazione prodotto](../../manage-results/search-performance.md) e [metriche di successo](../../manage-results/success-metrics.md).

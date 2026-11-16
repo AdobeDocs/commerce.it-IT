@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '4094'
+source-wordcount: '4098'
 ht-degree: 0%
 ---
+# Creare e gestire le regole
+
 La creazione di una regola richiede la selezione della vista catalogo in cui si applica la regola, la configurazione della descrizione della regola, il tipo e la definizione delle relative condizioni e della classificazione, il test dei risultati e la pubblicazione della regola.
 
 ## Creare una regola {#create-a-rule}

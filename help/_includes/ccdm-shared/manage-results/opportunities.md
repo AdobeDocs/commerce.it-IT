@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1452'
+source-wordcount: '1453'
 ht-degree: 0%
 ---
+# Opportunità
+
 La pagina **Opportunità** consente di identificare e implementare ottimizzazioni per migliorare il traffico del sito, il coinvolgimento degli utenti e i tassi di conversione tramite l&#39;integrazione con Adobe Sites Optimizer.
 
 ![Opportunità](/help/assets/ccdm-shared/opportunities/opportunities.png)

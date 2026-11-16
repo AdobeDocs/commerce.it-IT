@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '177'
 ht-degree: 1%
 ---
+# Facet Workspace
+
 Nell&#39;area di lavoro *Facets* sono elencati tutti i facet attualmente disponibili e sono disponibili gli strumenti necessari per impostare e gestire i facet. I facet bloccati vengono visualizzati per primi nell&#39;elenco dei facet esistenti, seguiti dai facet dinamici. È possibile eseguire ricerche nell&#39;elenco dei facet.
 
 ![Facet Workspace](/help/assets/ccdm-shared/facets/facet-workspace.png)
