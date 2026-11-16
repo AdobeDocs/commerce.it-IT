@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: bda4dae0a31e869ced20968bc9a9785f6b730c97
+source-git-commit: 885ac15bc30ac9d9fe9ab416db7fdbfcad0ff026
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '265'
 ht-degree: 0%
 ---
 
@@ -58,6 +58,7 @@ Sviluppatori, architetti, responsabili tecnici, strateghi e team aziendali che c
 ## Inizia ad esplorare
 
 - [Progetta una piattaforma di e-commerce per acquirenti e agenti di IA](agentic-commerce/architectural-foundations-agentic-commerce.md): scopri come servire persone e agenti di IA da un&#39;unica fonte di verità. L’articolo tratta un catalogo creato per il ragionamento automatico, il protocollo MCP (Model Context Protocol) e i protocolli di e-commerce open agent, e la telemetria che mostra come gli agenti rappresentano il tuo marchio.
+- [Agentic commerce in 2027: cinque priorità per i leader commerciali](agentic-commerce/five-priorities-commerce-leaders-2027.md)—Prepararsi per lo shopping basato sull’intelligenza artificiale con priorità per i dati dei prodotti, la reperibilità, l’infrastruttura, la misurazione e la sperimentazione.
 - [Migliora l&#39;individuazione dei prodotti con Adobe Commerce Live Search](catalog-management/improve-product-discovery-live-search.md). Scopri come utilizzare le informazioni sulle prestazioni delle ricerche e la ricerca semantica per aiutare gli acquirenti a trovare prodotti rilevanti.
 
 Gli articoli vengono aggiunti a questa sezione durante la pubblicazione. Controlla di nuovo le prospettive degli esperti, le strategie di implementazione e i consigli che puoi mettere a disposizione immediatamente.

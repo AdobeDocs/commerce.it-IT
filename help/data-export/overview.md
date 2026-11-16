@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 672e67ef99d52c942013a880ecfec0da31e76756
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '391'
 ht-degree: 5%
 ---
 # Guida [!DNL SaaS Data Export]
@@ -47,7 +47,6 @@ L&#39;esportazione di dati SaaS raccoglie ed esporta vari tipi di dati, denomina
 - **I feed di entità del catalogo** aggregano i dati di prodotto. I dati includono prodotti, attributi del prodotto, prezzi dei prodotti, varianti dei prodotti, categorie, autorizzazioni per le categorie e autorizzazioni per i prodotti.
 - Il feed **Scopes** aggrega i dati per i gruppi di clienti, i siti Web, gli archivi e le visualizzazioni degli archivi.
 - Il **feed ordine di vendita** aggrega i dati degli ordini, incluse le entità correlate, quali fatture, spedizioni, note di accredito e così via.
-- Il **feed inventario per più Source** aggrega i dati relativi agli elementi dello stato delle scorte.
 
 L’esportazione di dati SaaS viene fornita come estensione PHP che supporta sia la sincronizzazione automatica che manuale:
 

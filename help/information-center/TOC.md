@@ -18,9 +18,9 @@ feature_v2:
   - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
     internal-label: Commerce ecosystem
 nudge: true
-source-git-commit: 21b4214971866f0e801d8992ac736950324ce524
+source-git-commit: 885ac15bc30ac9d9fe9ab416db7fdbfcad0ff026
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '127'
 ht-degree: 3%
 ---
 
@@ -38,6 +38,7 @@ ht-degree: 3%
 - Approfondimenti e guida {#insights-and-guidance}
   - [Panoramica](guidance-and-insights/overview.md)
   - [Progettare una piattaforma commerciale per acquirenti e agenti di IA](guidance-and-insights/agentic-commerce/architectural-foundations-agentic-commerce.md)
+  - [Commercio agenziale nel 2027: cinque priorità per i leader commerciali](guidance-and-insights/agentic-commerce/five-priorities-commerce-leaders-2027.md)
   - [Migliorare l’individuazione dei prodotti con Adobe Commerce Live Search](guidance-and-insights/catalog-management/improve-product-discovery-live-search.md)
 - Architettura {#architecture}
   - [Panoramica](architecture-options/overview.md)

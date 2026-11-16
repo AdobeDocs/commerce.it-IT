@@ -26,14 +26,14 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '754'
 ht-degree: 0%
 ---
 # Sincronizzare i feed utilizzando Commerce CLI
 
-Il comando `saas:resync` nel pacchetto `magento/saas-export` consente di gestire la sincronizzazione dei dati per i servizi SaaS [!DNL Adobe Commerce].
+Il comando CLI `saas:resync` consente di gestire la sincronizzazione dei dati per [!DNL Adobe Commerce] servizi SaaS.
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ bin/magento saas:resync --feed products
 
 ## `--by-ids`
 
-Risincronizza parzialmente entità specifiche in base ai loro ID. Supporta `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants` e `categoryPermissions` feed.
+Risincronizza parzialmente entità specifiche in base ai loro ID. Supporta `products`, `productAttributes`, `productOverrides`, `prices`, `variants` e `categoryPermissions` feed.
 
 Per impostazione predefinita, quando si utilizza l&#39;opzione `--by-ids` si specificano valori utilizzando i valori SKU del prodotto. Per utilizzare gli ID prodotto, aggiungere l&#39;opzione `--id-type=productId`.
 
@@ -134,7 +134,7 @@ bin/magento saas:resync --feed products --by-ids='1,2,3' --id-type='productId'
 
 ## `--cleanup-feed`
 
-Pulisci la tabella dell’indicizzatore del feed prima della reindicizzazione e dell’invio dei dati a SaaS. Supportato solo per `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants` e `categoryPermissions`.
+Pulisci la tabella dell’indicizzatore del feed prima della reindicizzazione e dell’invio dei dati a SaaS. Supportato solo per `products`, `productAttributes`, `productOverrides`, `prices`, `variants` e `categoryPermissions`.
 
 Se utilizzata con l&#39;opzione `--dry-run`, l&#39;operazione esegue un&#39;operazione di risincronizzazione a secco per tutti gli elementi.
 

@@ -1,6 +1,6 @@
 ---
 title: Stima del volume dei dati e del tempo di trasmissione
-description: Scopri come stimare il volume di dati e il tempo di trasmissione necessari affinché lo strumento  [!DNL data export]  sincronizzi i dati dei feed tra Adobe Commerce e i servizi connessi.
+description: Scopri come stimare il volume di dati e il tempo di trasmissione necessari per lo strumento [!DNL data export] per sincronizzare i dati dei feed tra Adobe Commerce e i servizi connessi.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 787d05d6-fc2f-4f23-8ea7-ef54330e1f37
@@ -27,13 +27,11 @@ role_v2:
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: 585
+source-wordcount: '548'
 ht-degree: 0%
-
 ---
-
 # Stimare il volume dei dati e il tempo di trasmissione per la sincronizzazione dei dati
 
 Adobe consiglia di stimare il volume dei dati e il tempo di sincronizzazione prima di avviare qualsiasi sincronizzazione dei feed di dati per garantire una pianificazione fluida ed evitare interruzioni nelle operazioni del sito. Questa stima è importante quando si pianificano sincronizzazioni iniziali o aggiornamenti di cataloghi su larga scala, ad esempio le variazioni dei prezzi di massa.
@@ -72,7 +70,6 @@ Utilizzare i valori e le formule della tabella seguente per calcolare il volume 
 | Sostituzioni prodotto | Prodotti con autorizzazioni o in catalogo condiviso (P): 10000, Gruppi di clienti interessati (CG): 5, Siti Web assegnati WS: 2 | P \* WS * CG = 100000 | 100000/Dimensione batch (100) = 1000 richieste | (1000 richieste * 0,5 secondi per richiesta) / 60 = 8,3 minuti |
 | Varianti prodotto | Varianti (prodotti secondari) assegnate a prodotti configurabili (PV): 100000 | PV = 100000 | 100000/Dimensione batch (100) = 1000 richieste | (1000 richieste * 0,5 secondi per richiesta) / 60 = 8,3 minuti |
 | Autorizzazioni categoria | Numero di tutte le autorizzazioni per categoria + 4 record di fallback (CP): 10000 | CP = 10000 | 10000/Dimensione batch (100) = 100 richieste | (100 richieste * 0,5 secondi per richiesta) / 60 = 0,8 minuti (50 secondi) |
-| Stato scorte | Prodotti (P): 10000, Scorte prodotti assegnati a (S): 5 (supponendo che ogni prodotto sia assegnato a ogni scorta) | P * S = 50000 | 50000/Dimensione batch (100) = 500 richieste | (500 richieste * 0,5 secondi per richiesta) / 60 = 4,2 minuti |
 | Ordini di vendita | Tutti i record ordine (comprese fatture, spedizioni e così via) (SO): 10000 | SO = 10000 | 10000/Dimensione batch (100) = 100 richieste | (100 richieste * 0,5 secondi per richiesta) / 60 = 0,8 minuti (50 secondi) |
 
 >[!MORELIKETHIS]
