@@ -12,7 +12,7 @@ Merchandising Services con Composable Catalog Data Model (CCDM) distribuisce aut
 
 >[!NOTE]
 >
->La raccolta dei dati non include informazioni personali identificabili (PII, personally identifiable information). Tutti gli identificatori utente, come gli ID cookie e gli indirizzi IP, sono rigorosamente anonimi. [Ulteriori informazioni](https://www.adobe.com/privacy/experience-cloud.html).
+>La raccolta dei dati non include informazioni personali identificabili (PII, personally identifiable information). Tutti gli identificatori utente, come gli ID cookie e gli indirizzi IP, sono rigorosamente anonimi. [Ulteriori informazioni](https://www.adobe.com/it/privacy/experience-cloud.html).
 
 La pagina **Eventi** consente di osservare i dati dell&#39;evento storefront raccolti. Una visualizzazione della raccolta dati dell’evento consente ai commercianti di verificare che abbiano implementato correttamente gli eventi della vetrina e che gli eventi vengano acquisiti correttamente. I commercianti possono utilizzare questa pagina per identificare potenziali problemi e adottare misure per risolvere eventuali problemi relativi agli eventi.
 
@@ -174,4 +174,4 @@ Questa tabella descrive gli eventi utilizzati da ogni tipo di consiglio.
 
 ## Supporto
 
-Se noti eventuali discrepanze di dati o se i consigli e i risultati della ricerca non funzionano come previsto, [invia un ticket di supporto](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+Se noti eventuali discrepanze di dati o se i consigli e i risultati della ricerca non funzionano come previsto, [invia un ticket di supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).

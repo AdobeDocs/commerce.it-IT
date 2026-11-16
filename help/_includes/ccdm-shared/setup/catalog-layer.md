@@ -199,6 +199,6 @@ Segui questi consigli quando lavori con i livelli del catalogo:
 ## Altri argomenti correlati
 
 * [Visualizzazioni catalogo](catalog-view.md)—Configurare le visualizzazioni catalogo per diversi storefront
-* [Visualizzazioni prodotto](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/product-visuals): utilizza AEM Assets per le immagini dei prodotti
+* [Visualizzazioni prodotto](https://experienceleague.adobe.com/it/docs/commerce/optimizer/setup/product-visuals): utilizza AEM Assets per le immagini dei prodotti
 * [Opportunità](../manage-results/opportunities.md): informazioni sull&#39;ottimizzazione basata sull&#39;intelligenza artificiale tramite i livelli del catalogo
 * [Chiavi di accesso limitate](restricted-access-keys.md)—Proteggere una vista catalogo con autenticazione token firmato

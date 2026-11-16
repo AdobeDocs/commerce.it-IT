@@ -68,7 +68,7 @@ I metadati C2PA sono metadati a prova di manomissione e leggibili dal computer b
 
 ![Verifica campione](/help/assets/ccdm-shared/manage-results/inspect-sample.png)
 
-Ulteriori informazioni sulla [trasparenza dei contenuti di IA generativa](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency).
+Ulteriori informazioni sulla [trasparenza dei contenuti di IA generativa](https://experienceleague.adobe.com/it/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency).
 
 ## Utilizzo congiunto di metriche di successo e Sites Optimizer
 

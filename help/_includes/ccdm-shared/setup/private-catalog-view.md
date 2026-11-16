@@ -98,7 +98,7 @@ Se [!UICONTROL Catalog Protection] è abilitato e tutte le chiavi assegnate scad
 
 >[!NOTE]
 >
->Per le distribuzioni B2B di Adobe Commerce che utilizzano Merchandising Services con CCDM, puoi gestire le chiavi di accesso dalla pagina Amministratore Commerce **Chiavi di accesso limitate** (**Sistema** > **Trasferimento dati**). Per informazioni dettagliate, vedere [Gestione delle chiavi di accesso con restrizioni](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) nella Guida all&#39;integrazione di *[!DNL Adobe Commerce Optimizer Connector]*.
+>Per le distribuzioni B2B di Adobe Commerce che utilizzano Merchandising Services con CCDM, puoi gestire le chiavi di accesso dalla pagina Amministratore Commerce **Chiavi di accesso limitate** (**Sistema** > **Trasferimento dati**). Per informazioni dettagliate, vedere [Gestione delle chiavi di accesso con restrizioni](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) nella Guida all&#39;integrazione di *[!DNL Adobe Commerce Optimizer Connector]*.
 
 ## Altri argomenti correlati
 

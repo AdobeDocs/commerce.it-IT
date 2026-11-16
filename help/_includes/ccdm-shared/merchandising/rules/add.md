@@ -210,7 +210,7 @@ Per migliorare la reperibilità dei prodotti mediante le regole, vedere [regole 
 
 Per informazioni sull&#39;impostazione dei pesi di ricerca:
 
-- Per tutte le distribuzioni di Adobe Commerce, vedi [Risultati ricerca](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results) nella _Guida alla gestione del catalogo_.
+- Per tutte le distribuzioni di Adobe Commerce, vedi [Risultati ricerca](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/search/search-results) nella _Guida alla gestione del catalogo_.
 - Per le distribuzioni autonome di Adobe Commerce Optimizer, vedere l&#39;[API REST dei metadati](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) nella _Guida per gli sviluppatori di Merchandising Services_.
 
 ### Classificazione manuale {#manual-ranking}
@@ -246,7 +246,7 @@ Gli eventi OR possono essere impostati manualmente:
 
 >[!AVAILABILITY]
 >
->Questa funzionalità è in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
+>Questa funzionalità è in [beta](https://experienceleague.adobe.com/it/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
 
 **La classificazione degli attributi** applica automaticamente un&#39;azione **[!UICONTROL Boost]**, **[!UICONTROL Bury]** o **[!UICONTROL Hide]** a ogni prodotto che corrisponde a una o più condizioni degli attributi, senza che sia necessario selezionare singoli SKU. La classificazione degli attributi viene visualizzata nell&#39;editor delle regole insieme a [Classificazione intelligente](#intelligent-ranking) e [Classificazione manuale](#manual-ranking) ed è disponibile per le **Regola per tutti i prodotti**, **Regole di ricerca** e **Regole per categorie**. Puoi utilizzarlo per ridimensionare il merchandising in cataloghi di grandi dimensioni, ad esempio per promuovere ogni prodotto di un determinato marchio o per seppellire ogni prodotto in un colore discontinuo.
 
@@ -297,7 +297,7 @@ Una singola regola può avere fino a 25 condizioni di attributo, lo stesso limit
 
 ## Modificare, visualizzare ed eliminare le regole {#edit-view-and-delete-rules}
 
-Per aggiornare le proprietà delle regole esistenti, segui queste istruzioni. Non è possibile modificare la vista catalogo (ambito) di una regola dopo averla creata; l&#39;ambito viene impostato al momento della creazione della regola. Vedi [Seleziona visualizzazione catalogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
+Per aggiornare le proprietà delle regole esistenti, segui queste istruzioni. Non è possibile modificare la vista catalogo (ambito) di una regola dopo averla creata; l&#39;ambito viene impostato al momento della creazione della regola. Vedi [Seleziona visualizzazione catalogo](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
 
 ### Modifica regola
 
