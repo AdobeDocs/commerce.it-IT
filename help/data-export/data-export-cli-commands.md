@@ -42,7 +42,7 @@ Il comando CLI `saas:resync` consente di gestire la sincronizzazione dei dati pe
 Adobe sconsiglia di utilizzare il comando `saas:resync` regolarmente. Gli scenari tipici per l’utilizzo del comando sono:
 
 - Sincronizzazione iniziale
-- Sincronizza i dati con un nuovo spazio dati dopo aver modificato l&#39;[ID spazio dati SaaS](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
+- Sincronizza i dati con un nuovo spazio dati dopo aver modificato l&#39;[ID spazio dati SaaS](https://experienceleague.adobe.com/it/docs/commerce-admin/config/services/saas)
 - Risoluzione dei problemi
 
 Monitorare le operazioni di sincronizzazione nel file `var/log/saas-export.log`.
