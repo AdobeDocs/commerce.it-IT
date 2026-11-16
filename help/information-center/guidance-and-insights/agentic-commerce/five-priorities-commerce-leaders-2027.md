@@ -168,7 +168,7 @@ Il futuro del commercio non è solo dove i clienti fanno acquisti. Si tratta di 
 
 **Sei pronto a preparare la tua azienda per l&#39;e-commerce basato sull&#39;intelligenza artificiale?**
 
-[Esplora Adobe Commerce as a Cloud Service](https://business.adobe.com/products/commerce.html) e scopri come Adobe può aiutarti a creare esperienze di acquisto più intelligenti e connesse.
+[Esplora Adobe Commerce as a Cloud Service](https://business.adobe.com/it/products/commerce.html) e scopri come Adobe può aiutarti a creare esperienze di acquisto più intelligenti e connesse.
 
 >[!ENDSHADEBOX]
 
