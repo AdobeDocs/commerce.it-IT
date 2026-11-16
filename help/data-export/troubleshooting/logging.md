@@ -31,9 +31,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1007'
 ht-degree: 0%
 ---
 # Revisione dei registri e risoluzione dei problemi
@@ -42,7 +42,7 @@ L&#39;estensione [!DNL data export] fornisce i registri per tenere traccia dei p
 
 >[!NOTE]
 >
->È inoltre possibile tenere traccia dello stato e delle prestazioni dei feed di esportazione dei dati per i dati di prodotti e categorie dal dashboard [Stato sincronizzazione feed dati](https://experienceleague.adobe.com/it/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) nell&#39;amministratore.
+>È inoltre possibile tenere traccia dello stato e delle prestazioni dei feed di esportazione dei dati per i dati di prodotti e categorie dal dashboard [Stato sincronizzazione feed dati](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) nell&#39;amministratore.
 
 ## Registri
 
@@ -159,7 +159,7 @@ Se i dati mancano o sono errati nei servizi Commerce, controlla i registri per i
 - Il log degli errori di esportazione dei dati (`commerce-data-export-errors.log`) acquisisce gli errori che si verificano durante la fase di raccolta.
 - Il log degli errori di esportazione SaaS (`saas-export-errors.log`) acquisisce gli errori che si verificano durante la fase di trasmissione.
 
-Se vengono visualizzati errori non correlati alla configurazione o alle estensioni di terze parti, invia un [ticket di supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) con il maggior numero di informazioni possibile.
+Se vengono visualizzati errori non correlati alla configurazione o alle estensioni di terze parti, invia un [ticket di supporto](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) con il maggior numero di informazioni possibile.
 
 ### Risolvi problemi di sincronizzazione catalogo {#resolvesync}
 
@@ -181,7 +181,7 @@ Al termine dell&#39;operazione, il payload del feed è disponibile per la revisi
 
 ### Mantieni payload nella tabella dell’indice del feed
 
-Per l&#39;estensione di esportazione dei dati Commerce SaaS (`magento/module-data-exporter`) 103.3.0 e versioni successive, i feed di esportazione immediati mantengono solo i dati minimi richiesti nella tabella dell&#39;indice. I feed includono tutti i feed dello stato delle scorte di magazzino e di catalogo.
+Per l&#39;estensione di esportazione dei dati Commerce SaaS (`magento/module-data-exporter`) 103.3.0 e versioni successive, i feed di esportazione immediati mantengono solo i dati minimi richiesti nella tabella dell&#39;indice. I feed includono tutti i feed del catalogo.
 
 La conservazione dei dati di payload nella tabella di indice non è consigliata negli ambienti di produzione, ma può essere utile in un ambiente di sviluppo. Includere il payload del feed nell&#39;indice aggiungendo la variabile di ambiente `PERSIST_EXPORTED_FEED=1` quando si risincronizza il feed.
 
