@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '962'
 ht-degree: 1%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.it-IT/blob/main/help/_includes/ccdm-shared/merchandising/rules/workspace.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Workspace delle regole di merchandising
 
 Nell&#39;area di lavoro *Regole di merchandising* sono elencati la selezione corrente delle regole e il relativo stato e sono disponibili gli strumenti necessari per creare e gestire le regole. È possibile definire l&#39;ambito delle regole per tutte le [visualizzazioni catalogo](https://experienceleague.adobe.com/it/docs/commerce/optimizer/setup/catalog-view) (globale) o per una singola visualizzazione catalogo. Consulta [Selezionare la vista catalogo](#select-catalog-view) per informazioni su come filtrare per vista catalogo e creare regole per vista catalogo. Dall’area di lavoro puoi:

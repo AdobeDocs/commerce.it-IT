@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.it-IT/blob/main/help/_includes/ccdm-shared/setup/private-catalog-view.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Visualizzazioni di cataloghi privati
 
 Per impostazione predefinita, una [visualizzazione catalogo](catalog-view.md) è pubblica. Limita l’accesso a una vista catalogo in modo che solo le richieste con un token firmato valido possano recuperare i relativi dati.
@@ -39,7 +49,7 @@ Le visualizzazioni del catalogo pubblico non sono interessate da questa restrizi
 
 ## Visualizzazioni automatiche di cataloghi privati per cataloghi condivisi B2B
 
-[!BADGE Private Beta]{type=Caution tooltip="Richiede l’estensione B2B del connettore Adobe Commerce Optimizer, attualmente in versione beta privata."}
+[!BADGE Private beta]{type=Caution tooltip="Richiede l’estensione B2B del connettore Adobe Commerce Optimizer, attualmente in versione beta privata."}
 
 Per le distribuzioni B2B di Adobe Commerce che utilizzano Merchandising Services con CCDM, il sistema crea e configura automaticamente le viste del catalogo privato in base alla configurazione del catalogo condiviso in [!DNL Adobe Commerce]. Questa configurazione include la vista catalogo, il criterio, una chiave di accesso con restrizioni iniziale e un riferimento al listino prezzi dedicato. Con questa configurazione, puoi gestire le chiavi di accesso con restrizioni dalla pagina Amministratore Commerce **Chiavi di accesso con restrizioni** (**Sistema** > **Trasferimento dati**).
 
