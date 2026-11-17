@@ -34,9 +34,9 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 560ae770ae76d28e3358fb4f195aa1f2a03362c8
+source-git-commit: 80794cd843b054e043bae4129e1092e31b6e5730
 workflow-type: tm+mt
-source-wordcount: '1959'
+source-wordcount: '2045'
 ht-degree: 0%
 ---
 # Utente e Identity Management
@@ -200,6 +200,14 @@ Per aggiungere sviluppatori e amministratori dei profili di prodotto, ripetere i
 >Assegna agli sviluppatori il ruolo Utente prima di aggiungerli come sviluppatori. Il ruolo Utente è richiesto per le autorizzazioni di base di Commerce.
 
 ![Opzioni della scheda Sviluppatori e amministratori in Admin Console](./assets/tab-select.png){width="600" zoomable="yes"}
+
+### Risoluzione dei problemi dei ruoli
+
+Se accedi all&#39;amministratore di Adobe Commerce e vedi solo la sezione [!UICONTROL **Catalogo**], probabilmente ti verrà assegnato il ruolo **Utente**. Se hai bisogno di accedere ad altre aree dell&#39;amministratore, devi [aggiungerti come **Sviluppatore**](#add-developers-and-product-profile-admins) in Admin Console.
+
+Se non hai accesso a Admin Console, contatta l’amministratore del profilo di prodotto o di sistema della tua organizzazione e richiedi che ti forniscano le autorizzazioni appropriate.
+
+Rivedi [risorse ruolo](#role-resources) per informazioni sulle autorizzazioni concesse a ogni ruolo.
 
 ## Risorse per il ruolo
 
