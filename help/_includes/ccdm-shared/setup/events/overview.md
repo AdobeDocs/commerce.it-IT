@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '1606'
 ht-degree: 10%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/events/overview.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Eventi
 
 Gli eventi sono uno strumento fondamentale per migliorare l’esperienza di acquisto e favorire le conversioni sfruttando le informazioni sui dati in tempo reale.
@@ -12,7 +22,7 @@ Merchandising Services con Composable Catalog Data Model (CCDM) distribuisce aut
 
 >[!NOTE]
 >
->La raccolta dei dati non include informazioni personali identificabili (PII, personally identifiable information). Tutti gli identificatori utente, come gli ID cookie e gli indirizzi IP, sono rigorosamente anonimi. [Ulteriori informazioni](https://www.adobe.com/it/privacy/experience-cloud.html).
+>La raccolta dei dati non include informazioni personali identificabili (PII, personally identifiable information). Tutti gli identificatori utente, come gli ID cookie e gli indirizzi IP, sono rigorosamente anonimi. [Ulteriori informazioni](https://www.adobe.com/privacy/experience-cloud.html).
 
 La pagina **Eventi** consente di osservare i dati dell&#39;evento storefront raccolti. Una visualizzazione della raccolta dati dell’evento consente ai commercianti di verificare che abbiano implementato correttamente gli eventi della vetrina e che gli eventi vengano acquisiti correttamente. I commercianti possono utilizzare questa pagina per identificare potenziali problemi e adottare misure per risolvere eventuali problemi relativi agli eventi.
 
@@ -174,4 +184,4 @@ Questa tabella descrive gli eventi utilizzati da ogni tipo di consiglio.
 
 ## Supporto
 
-Se noti eventuali discrepanze di dati o se i consigli e i risultati della ricerca non funzionano come previsto, [invia un ticket di supporto](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+Se noti eventuali discrepanze di dati o se i consigli e i risultati della ricerca non funzionano come previsto, [invia un ticket di supporto](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).

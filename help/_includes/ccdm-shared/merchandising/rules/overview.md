@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/rules/overview.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Regole di merchandising
 
 Le regole di merchandising combinano la logica con le azioni per modellare l&#39;aspetto dei prodotti in **risultati di ricerca**, in **elenchi di prodotti predefiniti** tramite la **regola di ricerca predefinita** e in **pagine di categorie**. Puoi aumentare, seppellire, fissare o nascondere i prodotti e applicare **classificazione intelligente** in modo che le inserzioni riflettano i tuoi obiettivi aziendali.
@@ -14,13 +24,13 @@ Ogni **regola di ricerca** ha tre componenti principali:
 - **Eventi** - Azioni che vengono eseguite quando vengono soddisfatte le condizioni (classificazione manuale ed eventi correlati).
 - **Dettagli** - Nome della regola, intervallo di tempo e descrizione facoltativi.
 
-**Le regole di categoria** utilizzano la **selezione di categorie** invece delle condizioni di query di ricerca. La classificazione intelligente e la classificazione manuale funzionano allo stesso modo della ricerca, con differenze richiamate in [Crea e gestisci regole](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/add).
+**Le regole di categoria** utilizzano la **selezione di categorie** invece delle condizioni di query di ricerca. La classificazione intelligente e la classificazione manuale funzionano allo stesso modo della ricerca, con differenze richiamate in [Crea e gestisci regole](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add).
 
 È possibile combinare più condizioni e azioni per le regole di ricerca e pianificare l&#39;attivazione di qualsiasi regola per un periodo. È inoltre possibile impostare una **regola di ricerca predefinita** da applicare quando non è disponibile alcuna regola di ricerca o categoria specifica.
 
 ## Regole di categoria {#category-rules}
 
-**Regole categoria** controlla l&#39;ordine dei prodotti in **pagine categoria**. Seleziona una o più categorie, quindi applica la classificazione intelligente (ad esempio, più visualizzati, di tendenza) e le azioni manuali come pin, boost e bury. Non utilizzano le condizioni di query di ricerca. Per i passaggi di configurazione, i tipi di regole e il modo in cui viene applicata la classificazione alla categoria rispetto alla ricerca, vedere [Creare e gestire regole](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/add).
+**Regole categoria** controlla l&#39;ordine dei prodotti in **pagine categoria**. Seleziona una o più categorie, quindi applica la classificazione intelligente (ad esempio, più visualizzati, di tendenza) e le azioni manuali come pin, boost e bury. Non utilizzano le condizioni di query di ricerca. Per i passaggi di configurazione, i tipi di regole e il modo in cui viene applicata la classificazione alla categoria rispetto alla ricerca, vedere [Creare e gestire regole](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add).
 
 ## Requisiti
 
@@ -55,7 +65,7 @@ Durante la composizione di una regola complessa, può essere utile scriverla con
 
 ## Ordine di precedenza con più regole
 
-Quanto segue si applica alle **regole di ricerca** e al modo in cui interagiscono per una determinata ricerca. **Le regole di categoria** si applicano per categoria; consulta [Creare e gestire regole](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/add) per informazioni su come si adattano alle regole di ricerca e alle regole predefinite.
+Quanto segue si applica alle **regole di ricerca** e al modo in cui interagiscono per una determinata ricerca. **Le regole di categoria** si applicano per categoria; consulta [Creare e gestire regole](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add) per informazioni su come si adattano alle regole di ricerca e alle regole predefinite.
 
 A un termine di ricerca viene applicata una sola regola di ricerca alla volta.
 Se a una frase di ricerca sono applicabili più regole, vengono applicate tutte queste regole. Se si verifica una collisione tra due regole, `rule 1`, che aumenta lo SKU1 ma `rule 2` nasconde lo stesso SKU, la regola applicata più di recente (`rule 2`) ha la precedenza.

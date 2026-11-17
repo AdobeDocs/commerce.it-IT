@@ -1,14 +1,24 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/synonyms/best-practice.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Sinonimo Di Migliori Pratiche
 
 Di seguito è riportato un elenco di best practice per la creazione di sinonimi.
 
-- Per impostazione predefinita, il sistema gestisce gli errori di ortografia. Per includere parole che gli acquirenti potrebbero utilizzare, imposta i sinonimi. Queste parole sono diverse da quelle specificate nel catalogo. Non vuoi perdere una vendita perché qualcuno sta cercando un &quot;divano&quot; mentre il tuo prodotto è elencato come &quot;divano&quot;. Acquisisci un&#39;ampia gamma di termini di ricerca immettendo tutte le possibili parole che i clienti potrebbero usare per trovare i tuoi prodotti. Per migliorare i risultati, [imposta i sinonimi come unidirezionali o bidirezionali](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/synonyms/add#step-2-define-the-synonym-by-type).
+- Per impostazione predefinita, il sistema gestisce gli errori di ortografia. Per includere parole che gli acquirenti potrebbero utilizzare, imposta i sinonimi. Queste parole sono diverse da quelle specificate nel catalogo. Non vuoi perdere una vendita perché qualcuno sta cercando un &quot;divano&quot; mentre il tuo prodotto è elencato come &quot;divano&quot;. Acquisisci un&#39;ampia gamma di termini di ricerca immettendo tutte le possibili parole che i clienti potrebbero usare per trovare i tuoi prodotti. Per migliorare i risultati, [imposta i sinonimi come unidirezionali o bidirezionali](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/add#step-2-define-the-synonym-by-type).
 
 - Mappa i nomi dei marchi e le abbreviazioni ai loro nomi completi, ad esempio &quot;HP&quot; in &quot;Hewlett-Packard&quot; e i soprannomi di prodotto comuni, ad esempio &quot;iPhone&quot; in &quot;Apple iPhone&quot;.
 
