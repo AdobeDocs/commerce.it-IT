@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/catalog-view.md
+https://github.com/Adobe-Enterprise-Docs/commerce.it-IT/blob/main/help/_includes/ccdm-shared/setup/catalog-view.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -50,7 +50,7 @@ I dati del catalogo provenienti da un backend di Adobe Commerce o da un altro ba
 
 - **Backend di Adobe Commerce**: il sistema esporta i feed del catalogo di Commerce, li mappa nel formato previsto dall&#39;API REST per l&#39;acquisizione dei dati e sincronizza i dati dei feed con il livello dati di Adobe Merchandising Services. In questo modello, Adobe Commerce gestisce la sincronizzazione iniziale e gli aggiornamenti successivi. I feed includono prodotti, categorie, attributi di prodotto, prezzi e listini prezzi.
 
-- **Sistema di back-end o di origine di terze parti**. Un connettore o un servizio di integrazione recupera i dati del catalogo dall&#39;origine tramite API, eventi o feed di esportazione, quindi li mappa e li convalida in base allo schema del modello dati del catalogo componibile (CCDM) e li sincronizza con il livello Servizi di Adobe Merchandising utilizzando l&#39;API REST per l&#39;acquisizione dei dati. L’integrazione è responsabile del caricamento iniziale e dell’invio delle modifiche successive. Un connettore specifico della piattaforma, ad esempio il [connettore Salesforce Commerce](https://experienceleague.adobe.com/en/docs/commerce/optimizer/developer/salesforce-connector) di Adobe, può fornire un punto di partenza.
+- **Sistema di back-end o di origine di terze parti**. Un connettore o un servizio di integrazione recupera i dati del catalogo dall&#39;origine tramite API, eventi o feed di esportazione, quindi li mappa e li convalida in base allo schema del modello dati del catalogo componibile (CCDM) e li sincronizza con il livello Servizi di Adobe Merchandising utilizzando l&#39;API REST per l&#39;acquisizione dei dati. L’integrazione è responsabile del caricamento iniziale e dell’invio delle modifiche successive. Un connettore specifico della piattaforma, ad esempio il [connettore Salesforce Commerce](https://experienceleague.adobe.com/it/docs/commerce/optimizer/developer/salesforce-connector) di Adobe, può fornire un punto di partenza.
 
 **2. Catalogo base unificato**
 I dati acquisiti creano un catalogo di base unificato nella pipeline di dati di Catalog Service. Questa fonte singola elimina la duplicazione dei dati tra le unità aziendali.
