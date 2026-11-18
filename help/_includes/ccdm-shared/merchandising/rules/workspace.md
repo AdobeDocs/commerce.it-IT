@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/rules/workspace.md
+https://github.com/Adobe-Enterprise-Docs/commerce.it-IT/blob/main/help/_includes/ccdm-shared/merchandising/rules/workspace.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -16,7 +16,7 @@ This includes related images in help/assets/ccdm-shared/.
 
 # Workspace delle regole di merchandising
 
-Nell&#39;area di lavoro *Regole di merchandising* sono elencati la selezione corrente delle regole e il relativo stato e sono disponibili gli strumenti necessari per creare e gestire le regole. È possibile definire l&#39;ambito delle regole per tutte le [visualizzazioni catalogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) (globale) o per una singola visualizzazione catalogo. Consulta [Selezionare la vista catalogo](#select-catalog-view) per informazioni su come filtrare per vista catalogo e creare regole per vista catalogo. Dall’area di lavoro puoi:
+Nell&#39;area di lavoro *Regole di merchandising* sono elencati la selezione corrente delle regole e il relativo stato e sono disponibili gli strumenti necessari per creare e gestire le regole. È possibile definire l&#39;ambito delle regole per tutte le [visualizzazioni catalogo](https://experienceleague.adobe.com/it/docs/commerce/optimizer/setup/catalog-view) (globale) o per una singola visualizzazione catalogo. Consulta [Selezionare la vista catalogo](#select-catalog-view) per informazioni su come filtrare per vista catalogo e creare regole per vista catalogo. Dall’area di lavoro puoi:
 
 - Cerca regole
 - Visualizza dettagli regola
@@ -24,7 +24,7 @@ Nell&#39;area di lavoro *Regole di merchandising* sono elencati la selezione cor
 - Elimina regole
 - Accedere all’editor di regole
 
-L&#39;area di lavoro include anche **[regole di soppressione della ricerca](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules)**. Utilizzare gli stessi controlli di gestione delle regole per modificare, pianificare, abilitare o disabilitare queste regole. Per configurare le condizioni di query e le modifiche di pubblicazione, vedere [Creare e gestire le regole di soppressione della ricerca](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules). Non viene visualizzata un’anteprima per le regole di soppressione della ricerca.
+L&#39;area di lavoro include anche **[regole di soppressione della ricerca](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules)**. Utilizzare gli stessi controlli di gestione delle regole per modificare, pianificare, abilitare o disabilitare queste regole. Per configurare le condizioni di query e le modifiche di pubblicazione, vedere [Creare e gestire le regole di soppressione della ricerca](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules). Non viene visualizzata un’anteprima per le regole di soppressione della ricerca.
 
 ![Regole di merchandising Workspace](/help/assets/ccdm-shared/rules/rules-workspace.png)
 
@@ -86,7 +86,7 @@ Per una **regola di soppressione della ricerca**, la disabilitazione della regol
 | Controllo | Descrizione |
 |--- |--- |
 | Aggiungi regola | Apre l&#39;[editor regole](add.md). |
-| Vista catalogo | Filtra la tabella in base alle regole applicabili alla vista catalogo selezionata. Imposta anche l&#39;ambito quando [crei una regola](add.md). Opzioni: *Tutte le visualizzazioni* o una [visualizzazione catalogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) specifica. Vedi [Seleziona visualizzazione catalogo](#select-catalog-view). |
+| Vista catalogo | Filtra la tabella in base alle regole applicabili alla vista catalogo selezionata. Imposta anche l&#39;ambito quando [crei una regola](add.md). Opzioni: *Tutte le visualizzazioni* o una [visualizzazione catalogo](https://experienceleague.adobe.com/it/docs/commerce/optimizer/setup/catalog-view) specifica. Vedi [Seleziona visualizzazione catalogo](#select-catalog-view). |
 | Stato | Filtra l’elenco delle regole in base allo stato. Opzioni: Tutti, Attivo, Inattivo, Pianificato |
 | ![Selettore colonna](/help/assets/ccdm-shared/rules/btn-show-hide-columns.png) | Specifica le colonne visibili nella griglia. Opzioni: Ultimo aggiornamento, Data inizio, Data fine, Stato |
 | Ricerca | Cerca una regola per nome completo o per corrispondenza parziale. |
@@ -109,7 +109,7 @@ Per una **regola di soppressione della ricerca**, la disabilitazione della regol
 Il selettore **[!UICONTROL Catalog view]** nella pagina Regole di merchandising esegue due operazioni:
 
 1. **Filtra la tabella** - Mostra solo le regole (e i relativi dettagli) che si applicano alla vista catalogo selezionata.
-1. **Imposta l&#39;ambito per le nuove regole**. Quando [crei una regola](add.md), la visualizzazione catalogo selezionata viene utilizzata come ambito della regola. Le opzioni sono *Tutte le visualizzazioni* o una [visualizzazione catalogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) specifica.
+1. **Imposta l&#39;ambito per le nuove regole**. Quando [crei una regola](add.md), la visualizzazione catalogo selezionata viene utilizzata come ambito della regola. Le opzioni sono *Tutte le visualizzazioni* o una [visualizzazione catalogo](https://experienceleague.adobe.com/it/docs/commerce/optimizer/setup/catalog-view) specifica.
 
    - **Tutte le visualizzazioni** - La regola si applica a tutte le visualizzazioni catalogo. Il comportamento di ricerca e classificazione è lo stesso in ogni vetrina che utilizza il catalogo.
    - **Vista catalogo** - La regola si applica solo alla vista catalogo selezionata (ad esempio, una vetrina, un&#39;area geografica, un rivenditore o un marchio). Utilizzalo quando diverse visualizzazioni del catalogo richiedono una logica di merchandising diversa.
@@ -124,7 +124,7 @@ Crea regole per visualizzazione catalogo quando diversi store, aree geografiche 
 - **Più aree geografiche** - Visualizzazioni catalogo separate per UE, USA o altre aree geografiche con regole di merchandising specifiche per le aree geografiche.
 - **Multibrand**: ogni marchio ha la propria vista catalogo e desideri regole specifiche per il marchio (ad esempio, diversi prodotti di classificazione predefinita o promossi per marchio).
 
-Per impostazione predefinita, i dati comportamentali che alimentano la [classificazione intelligente](add.md#intelligent-ranking) (come quelli più visualizzati, più acquistati, con tendenze) vengono calcolati per visualizzazione catalogo. Le regole che utilizzano la classificazione intelligente riflettono pertanto il comportamento dell’acquirente della visualizzazione catalogo. Quando il tuo account dispone di un numero elevato di visualizzazioni del catalogo, il sistema può aggregare i dati comportamentali a livello globale per mantenere le prestazioni; in tal caso, la classificazione può essere influenzata maggiormente dalle visualizzazioni del catalogo a traffico elevato e la rilevanza per le visualizzazioni a traffico ridotto può essere ridotta. Vedi [Limiti e limiti](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits) per i limiti correnti.
+Per impostazione predefinita, i dati comportamentali che alimentano la [classificazione intelligente](add.md#intelligent-ranking) (come quelli più visualizzati, più acquistati, con tendenze) vengono calcolati per visualizzazione catalogo. Le regole che utilizzano la classificazione intelligente riflettono pertanto il comportamento dell’acquirente della visualizzazione catalogo. Quando il tuo account dispone di un numero elevato di visualizzazioni del catalogo, il sistema può aggregare i dati comportamentali a livello globale per mantenere le prestazioni; in tal caso, la classificazione può essere influenzata maggiormente dalle visualizzazioni del catalogo a traffico elevato e la rilevanza per le visualizzazioni a traffico ridotto può essere ridotta. Vedi [Limiti e limiti](https://experienceleague.adobe.com/it/docs/commerce/optimizer/boundaries-limits) per i limiti correnti.
 
 ### Come impostare una regola per la vista catalogo
 

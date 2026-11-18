@@ -99,7 +99,7 @@ Una regola di soppressione della ricerca blocca i risultati per le query che sod
 
 1. Completa i [passaggi di pianificazione e pubblicazione](#schedule-publish-search-suppression).
 
-Per informazioni sull&#39;ambito e sulle interazioni con altre regole, vedere [Regole di soppressione della ricerca](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules).
+Per informazioni sull&#39;ambito e sulle interazioni con altre regole, vedere [Regole di soppressione della ricerca](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules).
 
 >[!TAB Regola categoria]
 
@@ -170,7 +170,7 @@ Non è possibile modificare l’ambito di visualizzazione del catalogo dopo la c
 1. Seleziona **Disattiva regola** per interrompere l&#39;applicazione della restrizione di ricerca oppure **Abilita regola** per applicarla in base alle date configurate.
 1. Conferma lo stato della regola nell’area di lavoro.
 
-La disattivazione di una regola ne mantiene la configurazione. Per modificarne le condizioni o la pianificazione, modifica e pubblica la regola. Per informazioni dettagliate, consulta [Regole di merchandising Workspace](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace).
+La disattivazione di una regola ne mantiene la configurazione. Per modificarne le condizioni o la pianificazione, modifica e pubblica la regola. Per informazioni dettagliate, consulta [Regole di merchandising Workspace](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/workspace).
 
 ### Classificazione intelligente {#intelligent-ranking}
 
@@ -269,7 +269,7 @@ Per migliorare la reperibilità dei prodotti mediante le regole, vedere [regole 
 
 Per informazioni sull&#39;impostazione dei pesi di ricerca:
 
-- Per tutte le distribuzioni di Adobe Commerce, vedi [Risultati ricerca](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results) nella _Guida alla gestione del catalogo_.
+- Per tutte le distribuzioni di Adobe Commerce, vedi [Risultati ricerca](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/catalog/search/search-results) nella _Guida alla gestione del catalogo_.
 - Per le distribuzioni autonome di Adobe Commerce Optimizer, vedere l&#39;[API REST dei metadati](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) nella _Guida per gli sviluppatori di Merchandising Services_.
 
 ### Classificazione manuale {#manual-ranking}
@@ -307,7 +307,7 @@ Quando **[!UICONTROL Hide a product]** è configurato nella **regola di ricerca 
 
 >[!AVAILABILITY]
 >
->Questa funzionalità è in [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
+>Questa funzionalità è in [beta](https://experienceleague.adobe.com/it/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
 
 **La classificazione degli attributi** applica automaticamente un&#39;azione **[!UICONTROL Boost]**, **[!UICONTROL Bury]** o **[!UICONTROL Hide]** a ogni prodotto che corrisponde a una o più condizioni degli attributi, senza che sia necessario selezionare singoli SKU. La classificazione degli attributi viene visualizzata nell&#39;editor delle regole insieme a [Classificazione intelligente](#intelligent-ranking) e [Classificazione manuale](#manual-ranking) ed è disponibile per le **Regola per tutti i prodotti**, **Regole di ricerca** e **Regole per categorie**. Puoi utilizzarlo per ridimensionare il merchandising in cataloghi di grandi dimensioni, ad esempio per promuovere ogni prodotto di un determinato marchio o per seppellire ogni prodotto in un colore discontinuo.
 
@@ -362,7 +362,7 @@ Per le regole di soppressione della ricerca, segui [Pianifica e pubblica una reg
 
 ## Modificare, visualizzare ed eliminare le regole {#edit-view-and-delete-rules}
 
-Per aggiornare le proprietà delle regole esistenti, segui queste istruzioni. Non è possibile modificare la vista catalogo (ambito) di una regola dopo averla creata; l&#39;ambito viene impostato al momento della creazione della regola. Vedi [Seleziona visualizzazione catalogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
+Per aggiornare le proprietà delle regole esistenti, segui queste istruzioni. Non è possibile modificare la vista catalogo (ambito) di una regola dopo averla creata; l&#39;ambito viene impostato al momento della creazione della regola. Vedi [Seleziona visualizzazione catalogo](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
 
 ### Modifica regola
 
