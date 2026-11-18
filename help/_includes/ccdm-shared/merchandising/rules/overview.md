@@ -1,22 +1,10 @@
 ---
-source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
+source-git-commit: 3478e3f0162b553d03c4ac4f5b3000b8aabd8c66
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '1209'
 ht-degree: 0%
 ---
-<!--
-SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.it-IT/blob/main/help/_includes/ccdm-shared/merchandising/rules/overview.md
-
-This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
-Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
-are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
-This includes related images in help/assets/ccdm-shared/.
--->
-
-# Regole di merchandising
-
-Le regole di merchandising combinano la logica con le azioni per modellare l&#39;aspetto dei prodotti in **risultati di ricerca**, in **elenchi di prodotti predefiniti** tramite la **regola di ricerca predefinita** e in **pagine di categorie**. Puoi aumentare, seppellire, fissare o nascondere i prodotti e applicare **classificazione intelligente** in modo che le inserzioni riflettano i tuoi obiettivi aziendali.
+Le regole di merchandising combinano la logica con le azioni per modellare l&#39;aspetto dei prodotti in **risultati di ricerca**, in **elenchi di prodotti predefiniti** tramite la **regola di ricerca predefinita** e in **pagine di categorie**. Puoi aumentare, seppellire, fissare o nascondere i prodotti e applicare **classificazione intelligente** in modo che le inserzioni riflettano i tuoi obiettivi aziendali. Utilizza **regole di soppressione della ricerca** per impedire che le query di ricerca corrispondenti restituiscano risultati.
 
 Ogni **regola di ricerca** ha tre componenti principali:
 
@@ -26,7 +14,26 @@ Ogni **regola di ricerca** ha tre componenti principali:
 
 **Le regole di categoria** utilizzano la **selezione di categorie** invece delle condizioni di query di ricerca. La classificazione intelligente e la classificazione manuale funzionano allo stesso modo della ricerca, con differenze richiamate in [Crea e gestisci regole](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/add).
 
-È possibile combinare più condizioni e azioni per le regole di ricerca e pianificare l&#39;attivazione di qualsiasi regola per un periodo. È inoltre possibile impostare una **regola di ricerca predefinita** da applicare quando non è disponibile alcuna regola di ricerca o categoria specifica.
+È possibile combinare più condizioni e azioni per le regole di ricerca e per le regole di pianificazione affinché siano attive per un periodo. Le regole di soppressione della ricerca utilizzano le condizioni di query per bloccare i risultati anziché classificare i prodotti. È inoltre possibile impostare una **regola di ricerca predefinita** da applicare quando non è disponibile alcuna regola di ricerca o categoria specifica.
+
+## Regole di soppressione della ricerca {#search-suppression-rules}
+
+Le regole di soppressione della ricerca sono un tipo di regola di merchandising che blocca i risultati per le query dell’acquirente corrispondenti. Queste ricerche non restituiscono alcun prodotto sul vetrina. Quando la regola diventa attiva, verifica l’effettiva presentazione senza risultati della vetrina.
+
+Utilizza l’eliminazione della ricerca per definire restrizioni di ricerca normative, restrizioni di branding o termini specifici che non devono restituire risultati. Le condizioni supportano **La query è**, **La query contiene**, **La query inizia con** e **La query termina con**. Per i passaggi di configurazione e gestione, vedere [Creare e gestire regole di soppressione della ricerca](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules). Per esempi, consulta [Best practice](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/best-practice#search-suppression-best-practices).
+
+L’eliminazione della ricerca influisce solo sull’esperienza di ricerca. Non modifica la visibilità del prodotto tramite la navigazione per categorie, pagine di merchandising, consigli o URL diretti di prodotto. Non sostituisce i controlli di accesso o di visibilità dei prodotti a livello di catalogo.
+
+### Interazione con altre funzionalità di merchandising
+
+| Funzionalità | Interazione con la soppressione della ricerca |
+| --- | --- |
+| Cerca regole | Per una query associata a una regola di soppressione della ricerca attiva, la vetrina visualizza una pagina dei risultati della ricerca con zero prodotti. Le azioni di classificazione in una regola di ricerca non sovrascrivono l’eliminazione. Le query non bloccate continuano a utilizzare le regole di merchandising applicabili. |
+| Regole di categoria | La navigazione tra categorie e il merchandising delle categorie non sono influenzati dalla soppressione della ricerca. Un prodotto può rimanere visibile in una categoria anche quando una query di ricerca è bloccata. |
+| Regola di ricerca predefinita | L’eliminazione della ricerca blocca le query corrispondenti, mentre la regola di ricerca predefinita definisce la classificazione predefinita e le esclusioni di prodotti. La classificazione predefinita non ripristina i risultati di una query bloccata. |
+| Eventi di merchandising basati su attributi | Questi eventi applicano azioni ai prodotti che soddisfano le condizioni degli attributi, come descritto in [Classificazione attributi](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking). L’eliminazione della ricerca blocca invece i risultati di una query corrispondente, indipendentemente dai prodotti che altrimenti corrisponderebbero. |
+
+Anche i prodotti esclusi dalla **regola di ricerca predefinita**, tramite esclusioni manuali o **eventi di merchandising basati su attributi** con un&#39;azione **Nascondi**, sono esclusi dai **suggerimenti di ricerca e dal completamento automatico**. In questo modo le esclusioni di prodotto rimangono coerenti nell’esperienza di ricerca e sono diverse dal blocco di una query con una regola di soppressione della ricerca.
 
 ## Regole di categoria {#category-rules}
 
@@ -65,7 +72,7 @@ Durante la composizione di una regola complessa, può essere utile scriverla con
 
 ## Ordine di precedenza con più regole
 
-Quanto segue si applica alle **regole di ricerca** e al modo in cui interagiscono per una determinata ricerca. **Le regole di categoria** si applicano per categoria; consulta [Creare e gestire regole](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/add) per informazioni su come si adattano alle regole di ricerca e alle regole predefinite.
+Questa sezione spiega come le regole di ricerca di classificazione si applicano alla query di un acquirente e interagiscono tra loro. La classificazione delle regole di ricerca non sostituisce la soppressione della ricerca: quando una regola di soppressione attiva corrisponde a una query, la vetrina non restituisce alcun prodotto per tale ricerca. Le regole di categoria si applicano alle categorie selezionate. Consulta [Creare e gestire regole](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/add) per informazioni dettagliate sulle regole di ricerca, categoria e regole di ricerca predefinite.
 
 A un termine di ricerca viene applicata una sola regola di ricerca alla volta.
 Se a una frase di ricerca sono applicabili più regole, vengono applicate tutte queste regole. Se si verifica una collisione tra due regole, `rule 1`, che aumenta lo SKU1 ma `rule 2` nasconde lo stesso SKU, la regola applicata più di recente (`rule 2`) ha la precedenza.

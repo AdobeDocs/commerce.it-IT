@@ -1,22 +1,10 @@
 ---
-source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
+source-git-commit: 3478e3f0162b553d03c4ac4f5b3000b8aabd8c66
 workflow-type: tm+mt
-source-wordcount: '4098'
+source-wordcount: '4826'
 ht-degree: 0%
 ---
-<!--
-SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.it-IT/blob/main/help/_includes/ccdm-shared/merchandising/rules/add.md
-
-This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
-Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
-are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
-This includes related images in help/assets/ccdm-shared/.
--->
-
-# Creare e gestire le regole
-
-La creazione di una regola richiede la selezione della vista catalogo in cui si applica la regola, la configurazione della descrizione della regola, il tipo e la definizione delle relative condizioni e della classificazione, il test dei risultati e la pubblicazione della regola.
+La creazione di una regola richiede la selezione della vista catalogo in cui si applica la regola, la configurazione della descrizione e del tipo della regola (ricerca, eliminazione della ricerca, ricerca predefinita o categoria), la definizione delle condizioni e della classificazione, se applicabile, la verifica dei risultati se è disponibile un’anteprima e la pubblicazione della regola. Le regole di soppressione della ricerca non mostrano un’anteprima.
 
 ## Creare una regola {#create-a-rule}
 
@@ -37,8 +25,9 @@ Ogni tipo di regola dispone di un’icona di informazioni nell’editor con una 
 | **Regola di ricerca predefinita** | Classificazione e merchandising predefiniti tra gli elenchi di prodotti quando non si applica alcuna regola di ricerca o categoria più specifica. Puoi creare una sola regola di questo tipo, non può contenere condizioni. |
 | **Regola categoria** | Applica il merchandising e la classificazione a una singola categoria, controllando l’ordine dei prodotti sulla pagina di tale categoria. |
 | **Regola di ricerca** | Applica il merchandising e la classificazione quando gli acquirenti eseguono una ricerca che corrisponde alle condizioni di query della regola. |
+| **Regola di eliminazione ricerca** | Impedisce che le query di ricerca corrispondenti restituiscano prodotti, pertanto la vetrina visualizza una pagina dei risultati di ricerca con zero prodotti. La visibilità del prodotto non viene influenzata dalla navigazione tra categorie, dalle pagine di merchandising, dai consigli e dagli URL diretti dei prodotti. |
 
-Nella sezione **Genera la regola**, puoi definire il nome della regola, la pianificazione, se la regola si applica a tutte le inserzioni o a condizioni di ricerca specifiche, e i tipi di classificazione.
+Nella sezione **Genera la regola**, puoi definire il nome della regola, la pianificazione, il tipo di regola ed eventuali condizioni e classificazioni applicabili. Le regole di soppressione della ricerca bloccano le query corrispondenti invece di classificare i prodotti.
 
 1. Nel campo **[!UICONTROL Name]** immettere un nome per la regola. Tutti i nomi delle regole devono essere univoci.
 1. Nel campo **[!UICONTROL Description]** immettere una descrizione per la regola.
@@ -90,6 +79,28 @@ Una regola può avere fino a dieci condizioni. L&#39;operatore logico che unisce
 1. Per aggiungere un&#39;altra condizione, fare clic su **Aggiungi condizione** e ripetere il processo.
 1. Facoltativamente, impostare [Classificazione intelligente](#intelligent-ranking), [Classificazione manuale](#manual-ranking) o [Classificazione attributi](#attribute-ranking) come descritto nelle sezioni seguenti. Gli stessi controlli si applicano alle pagine delle categorie, con le eventuali differenze indicate.
 
+>[!TAB Regola di eliminazione ricerca]
+
+Una regola di soppressione della ricerca blocca i risultati per le query che soddisfano le relative condizioni. Non richiede azioni di classificazione a livello di prodotto. Le query corrispondenti non restituiscono prodotti e la vetrina visualizza una pagina con risultati di ricerca senza prodotti.
+
+>[!NOTE]
+>
+>Non viene visualizzata un’anteprima per le regole di soppressione della ricerca. Rivedi le condizioni della query prima di pubblicare, quindi verifica le ricerche corrispondenti e non corrispondenti nella vetrina dopo che la regola diventa attiva.
+
+1. In **[!UICONTROL Rule applies to]**, selezionare **Regola di eliminazione ricerca**.
+1. Seleziona una condizione di query e immetti il testo da trovare:
+
+   | Condizione | Quando la query è bloccata | Esempio |
+   | --- | --- | --- |
+   | **La query è** | L&#39;intera query corrisponde al testo specificato. | `restricted item` blocca la query esatta. |
+   | **La query contiene** | La query include il testo specificato. | `restricted brand` blocca `buy restricted brand shoes`. |
+   | **La query inizia con** | La query inizia con il testo specificato. | `restricted brand` blocca `restricted brand accessories`. |
+   | **La query termina con** | La query termina con il testo specificato. | `restricted item` blocca `discount restricted item`. |
+
+1. Completa i [passaggi di pianificazione e pubblicazione](#schedule-publish-search-suppression).
+
+Per informazioni sull&#39;ambito e sulle interazioni con altre regole, vedere [Regole di soppressione della ricerca](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules).
+
 >[!TAB Regola categoria]
 
 Le regole di categoria controllano il modo in cui i prodotti vengono ordinati nelle **pagine di categoria**. Combina **regole di categoria** con **classificazione intelligente** e **azioni manuali** per curare l&#39;individuazione, eseguire promozioni e allineare le pagine di categorie alla tua strategia.
@@ -122,6 +133,44 @@ Se più categorie hanno nomi simili, utilizzare il percorso della categoria visu
    ![Menu Azioni Categoria](/help/assets/ccdm-shared/rules/category-action-menu.png){zoomable="yes"}
 
 >[!ENDTABS]
+
+### Creare e gestire regole di soppressione della ricerca {#search-suppression-rules}
+
+Utilizza questo flusso di lavoro per bloccare i termini di ricerca senza modificare la visibilità del prodotto in altre aree della vetrina.
+
+1. Apri **Merchandising** > **Regole di merchandising**.
+1. Seleziona **Tutte le visualizzazioni** o la **Visualizzazione catalogo** specifica in cui è richiesta la restrizione.
+1. Fare clic su **[!UICONTROL Create rule]**.
+1. Immetti un **Nome** univoco e una **Descrizione** che spieghi la restrizione.
+1. In **[!UICONTROL Rule applies to]**, selezionare **Regola di eliminazione ricerca**.
+1. Configura **La query è**, **La query contiene**, **La query inizia con** o **La query termina con**, come descritto nella scheda **Regola di soppressione della ricerca** precedente.
+1. Completa i [passaggi di pianificazione e pubblicazione](#schedule-publish-search-suppression).
+
+#### Pianificare e pubblicare una regola di soppressione della ricerca {#schedule-publish-search-suppression}
+
+1. In **[!UICONTROL Date range]**, impostare la data di inizio e, se necessario, la data di fine per la restrizione. Utilizza una data di inizio futura per pianificare la regola.
+1. Esamina le condizioni della query.
+1. Fai clic su **Salva e pubblica**.
+1. Trovare la regola nell&#39;area di lavoro *Regole di merchandising* e confermarne lo stato e le date. Una regola pianificata diventa effettiva durante il relativo intervallo di date configurato quando è abilitata.
+1. Dopo che la regola diventa attiva, verifica che una ricerca corrispondente nella vetrina visualizzi una pagina con risultati di ricerca senza prodotti. L’aggiornamento dei risultati delle query memorizzate nella cache può richiedere fino a 15 minuti.
+
+#### Modificare una regola di soppressione della ricerca
+
+1. Nell&#39;area di lavoro *Regole di merchandising*, individua la regola e apri **Altro** (...) > **Modifica**.
+1. Se necessario, aggiorna le condizioni della query, il nome, la descrizione o l’intervallo di date.
+1. Esamina le condizioni di query aggiornate.
+1. Fai clic su **Salva e pubblica** per pubblicare le modifiche.
+1. Quando la regola aggiornata diventa attiva, verifica le ricerche corrispondenti e non corrispondenti nella vetrina. L’aggiornamento dei risultati delle query memorizzate nella cache può richiedere fino a 15 minuti.
+
+Non è possibile modificare l’ambito di visualizzazione del catalogo dopo la creazione. Per applicare la restrizione a un altro ambito, creare una regola in tale vista catalogo.
+
+#### Attivare o disattivare una regola di soppressione della ricerca
+
+1. Nell&#39;area di lavoro *Regole di merchandising*, individua la regola e apri **Altro** (...) menu.
+1. Seleziona **Disattiva regola** per interrompere l&#39;applicazione della restrizione di ricerca oppure **Abilita regola** per applicarla in base alle date configurate.
+1. Conferma lo stato della regola nell’area di lavoro.
+
+La disattivazione di una regola ne mantiene la configurazione. Per modificarne le condizioni o la pianificazione, modifica e pubblica la regola. Per informazioni dettagliate, consulta [Regole di merchandising Workspace](https://experienceleague.adobe.com/it/docs/commerce/optimizer/merchandising/rules/workspace).
 
 ### Classificazione intelligente {#intelligent-ranking}
 
@@ -252,6 +301,8 @@ Gli eventi OR possono essere impostati manualmente:
 
 1. Per più eventi, scegli qualsiasi altro evento che desideri attivare quando vengono soddisfatte le condizioni.
 
+Quando **[!UICONTROL Hide a product]** è configurato nella **regola di ricerca predefinita**, anche i prodotti esclusi vengono rimossi da **suggerimenti di ricerca e completamento automatico**. Per bloccare un&#39;intera query anziché i prodotti selezionati, utilizzare una [regola di soppressione della ricerca](#search-suppression-rules).
+
 ### Classificazione attributi {#attribute-ranking}
 
 >[!AVAILABILITY]
@@ -277,6 +328,8 @@ Gli eventi OR possono essere impostati manualmente:
 
 Il fissaggio non è disponibile nella classificazione degli attributi, perché assegna un prodotto a una posizione esatta, mentre una condizione di attributo può corrispondere a più prodotti contemporaneamente. Per fissare un prodotto specifico, utilizzare [Classificazione manuale](#manual-ranking) direttamente sullo SKU.
 
+Le condizioni di classificazione degli attributi sono anche denominate **Eventi di merchandising basati su attributi**. Anche i prodotti esclusi da un&#39;azione **[!UICONTROL Hide]** nella **regola di ricerca predefinita** sono esclusi dai **suggerimenti di ricerca e completamento automatico**, proprio come le esclusioni manuali in tale regola. Queste esclusioni a livello di prodotto sono diverse da [soppressione della ricerca](#search-suppression-rules), che blocca tutti i risultati per una query corrispondente.
+
 #### Interazione della classificazione degli attributi con la classificazione intelligente
 
 Quando una regola combina una strategia di classificazione intelligente con una o più condizioni di attributo, l’azione attributo ha priorità per qualsiasi prodotto corrispondente. La classificazione intelligente continua a ordinare i prodotti rimanenti senza corrispondenza.
@@ -293,6 +346,8 @@ Una singola regola può avere fino a 25 condizioni di attributo, lo stesso limit
 
 ### Finalizzazione della regola {#finalizing-the-rule}
 
+Per le regole di soppressione della ricerca, segui [Pianifica e pubblica una regola di soppressione della ricerca](#schedule-publish-search-suppression). Queste regole non mostrano un’anteprima.
+
 1. Esaminare i risultati della regola nel riquadro del test.
 1. Se la regola dispone di più query, esegui il test di ciascuna che potrebbe essere interessata dalla regola.
 1. Al termine, fare clic su **Salva e pubblica**.
@@ -303,7 +358,7 @@ Una singola regola può avere fino a 25 condizioni di attributo, lo stesso limit
 
 >[!NOTE]
 >
->Le regole e i prodotti classificati manualmente vengono applicati ai risultati di **ricerca** quando viene selezionato l&#39;ordinamento predefinito &quot;Ordina per: Più rilevante&quot;. Se un acquirente modifica l’ordinamento in modo da ottenere un ordinamento simile a ordinamento per nome, le regole e le classificazioni manuali non sono più in vigore. Per le **inserzioni categoria**, il comportamento predefinito è descritto in [Classificazione manuale](#manual-ranking).
+>Le regole di classificazione e i prodotti classificati manualmente vengono applicati ai risultati di **ricerca** quando viene selezionato l&#39;ordinamento predefinito &quot;Ordina per: Più rilevante&quot;. Se un acquirente modifica l’ordinamento in modo da ottenere un ordinamento simile a ordina per nome, le regole di classificazione e le classificazioni manuali non sono più attive. Questo comportamento di classificazione non consente a una query bloccata di ignorare l’eliminazione della ricerca. Per le **inserzioni categoria**, il comportamento predefinito è descritto in [Classificazione manuale](#manual-ranking).
 
 ## Modificare, visualizzare ed eliminare le regole {#edit-view-and-delete-rules}
 
@@ -313,9 +368,9 @@ Per aggiornare le proprietà delle regole esistenti, segui queste istruzioni. No
 
 1. Nell&#39;area di lavoro *Regole di merchandising*, individua la regola nella griglia da modificare e fai clic su **Altro** (...) opzioni.
 1. Fai clic su **Modifica** per accedere all&#39;editor di regole.
-1. Aggiorna condizioni, operatori ed eventi in base alle esigenze.
+1. Aggiorna condizioni, operatori ed eventi in base al tipo di regola. Le regole di soppressione della ricerca utilizzano condizioni di query anziché eventi di classificazione.
 1. Se necessario, aggiorna i campi nome, data di inizio e di fine e descrizione. Tutti i nomi delle regole devono essere univoci.
-1. Verifica la regola.
+1. Se è disponibile un’anteprima, verifica la regola. Per le regole di soppressione della ricerca, controlla invece le condizioni della query e verifica le ricerche nella vetrina dopo che la regola aggiornata diventa attiva.
 1. Pubblica le modifiche.
 La regola viene aggiunta all&#39;elenco nell&#39;area di lavoro *Rules*. Anche se le regole attive entrano in vigore immediatamente, potrebbero essere necessari fino a 15 minuti perché i risultati delle query memorizzate nella cache vengano aggiornati nella vetrina.
 
@@ -386,7 +441,7 @@ Questa opzione consente di visualizzare rapidamente tutti i parametri della rego
 | Campo | Descrizione |
 | --- | --- |
 | Nome | Nome della regola. I nomi delle regole devono essere univoci. |
-| Tipo di regola | **Regola di ricerca predefinita**, **Query** (condizioni di ricerca specifiche) o **Categoria** (pagine categoria), a seconda di **Regola applicabile a**. |
+| Tipo di regola | **Regola di ricerca predefinita**, **Query** (condizioni di ricerca specifiche), **Regola di soppressione della ricerca** (blocchi query corrispondenti) o **Categoria** (pagine categoria), a seconda di **Regola applicabile a**. |
 | Data di inizio | Data di inizio della regola, se pianificata. |
 | Data di fine | Data di fine della regola, se pianificata. |
 | Descrizione | Breve descrizione della regola. |
