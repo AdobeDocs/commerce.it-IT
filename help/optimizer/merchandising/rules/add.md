@@ -1,7 +1,7 @@
 ---
 title: Creare e gestire le regole
-description: Scopri come creare e gestire le regole di merchandising per le pagine di ricerca, gli elenchi di prodotti predefiniti e le categorie.
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
+description: Scopri come creare e gestire le regole di merchandising per le pagine di ricerca, eliminazione delle ricerche, elenchi di prodotti predefiniti e categorie.
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce Optimizer] (infrastruttura SaaS gestita da Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
 product_v2:
@@ -25,9 +25,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 last-update: 2026-11-16
-source-git-commit: e0c7b4c2eba10c12f0ce728decad6f9be8bae14f
+source-git-commit: 0633a6bf0c347ca0448a76fb45391643ac582d5d
 workflow-type: tm+mt
-source-wordcount: '50'
+source-wordcount: '52'
 ht-degree: 0%
 ---
 # Creare e gestire le regole
