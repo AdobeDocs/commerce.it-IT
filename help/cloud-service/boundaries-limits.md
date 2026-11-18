@@ -2,7 +2,7 @@
 title: Limiti e limiti di Adobe Commerce as a Cloud Service
 description: Scopri i limiti di licenza e i limiti di sistema di Adobe Commerce as a Cloud Service. Pianifica la capacità, tieni traccia dell’utilizzo ed evita latenza e limitazione quando i limiti vengono superati.
 role: Admin, Developer
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce as a Cloud Service] (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e [!DNL Adobe Commerce as a Cloud Service] (infrastruttura SaaS gestita da Adobe)."
 nudge: true
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -32,7 +32,7 @@ ht-degree: 1%
 
 Puoi aumentare i limiti di licenza acquistando i pacchetti di licenza descritti in [Limiti di licenza e limiti di sistema](#license-limits-and-system-boundaries) oppure negoziando licenze personalizzate per casi d&#39;uso univoci. Contatta il rappresentante del tuo account Adobe per discutere delle tue esigenze.
 
-Per domande sui limiti del sistema, contatta il [Supporto Adobe](https://experienceleague.adobe.com/home?lang=en#support).
+Per domande sui limiti del sistema, contatta il [Supporto Adobe](https://experienceleague.adobe.com/home?lang=it#support).
 
 ## Impedisci problemi di prestazioni
 
@@ -187,7 +187,7 @@ Per i consigli sui prodotti sono disponibili le seguenti funzionalità. Alcune f
 
 | **Capacità** | **Descrizione** | **Allocazione di base** | **Espandibile?** | **Note** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | Capacità di creare estensioni e integrazioni native per il cloud | Basato sul livello GMV<p>Allocazione minima: 1 pacchetto/anno</p> | Sì<p>Aggiungi pacchetti aggiuntivi</p> | Per i limiti definiti per confezione, vedere:<ul><li>[Descrizione del prodotto App Builder](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html).</li><li>[Impostazioni e limitazioni di sistema](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) nelle *Guide di App Builder Runtime*.</li><li>[Requisiti di archiviazione App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | Capacità di creare estensioni e integrazioni native per il cloud | Basato sul livello GMV<p>Allocazione minima: 1 pacchetto/anno</p> | Sì<p>Aggiungi pacchetti aggiuntivi</p> | Per i limiti definiti per confezione, vedere:<ul><li>[Descrizione del prodotto App Builder](https://helpx.adobe.com/it/legal/product-descriptions/adobe-developer-app-builder.html).</li><li>[Impostazioni e limitazioni di sistema](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) nelle *Guide di App Builder Runtime*.</li><li>[Requisiti di archiviazione App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
