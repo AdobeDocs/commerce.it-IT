@@ -65,10 +65,10 @@ Quando la regola di corrispondenza **[!UICONTROL Match by product SKU]** è conf
    >
    > Se una risorsa viene utilizzata per più prodotti, configura i metadati per ogni SKU associata.
 
-1. Nella scheda `Basic`, impostare il valore predefinito per il campo _[!UICONTROL Review Status]_su `approved`.
+1. Nella scheda `Basic`, impostare il valore predefinito per il campo _[!UICONTROL Review Status]_&#x200B;su `approved`.
 
    ![Esempio di metadati](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
-Dopo aver approvato la risorsa, [verifica l&#39;associazione del prodotto, il risultato della sincronizzazione e la visualizzazione della vetrina](../get-started/setup-synchronization.md#verify-the-integration). Se la risorsa non viene visualizzata, controlla [Stato sincronizzazione](../get-started/sync-status.md). Per Adobe Commerce Optimizer, utilizzare invece il flusso di lavoro di verifica dell&#39;optimizer [](../get-started/configure-aco.md#match-by-sku-workflow-example). Stato sincronizzazione non disponibile.
+Dopo aver approvato la risorsa, [verifica l&#39;associazione del prodotto, il risultato della sincronizzazione e la visualizzazione della vetrina](../get-started/setup-synchronization.md#verify-the-integration). Se la risorsa non viene visualizzata, controlla [Stato sincronizzazione](../get-started/sync-status.md). Per Adobe Commerce Optimizer, utilizzare invece il flusso di lavoro di verifica dell&#39;optimizer [&#128279;](../get-started/configure-aco.md#match-by-sku-workflow-example). Stato sincronizzazione non disponibile.
 
 [!BADGE Solo PaaS]{type=Informative tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe)."} Per ulteriori informazioni sulla risoluzione dei problemi di sincronizzazione, esaminare i [registri di integrazione](../get-started/logs.md).
