@@ -22,18 +22,22 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '1015'
 ht-degree: 0%
 ---
 # Corrispondenza automatica personalizzata
 
 Se la strategia di corrispondenza automatica predefinita (**Corrispondenza automatica OOTB**) non è allineata ai requisiti aziendali specifici, selezionare l&#39;opzione di corrispondenza personalizzata. Questa opzione supporta l&#39;utilizzo di [Adobe Developer App Builder](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder) per sviluppare un&#39;applicazione di corrispondenza personalizzata che gestisca logiche di corrispondenza complesse o risorse provenienti da un sistema di terze parti che non possono popolare i metadati in AEM Assets.
 
+>[!NOTE]
+>
+>Se la tua integrazione personalizzata con Matcher o Adobe Developer App Builder richiede le API di AEM Assets per gestire le risorse o i metadati a livello di programmazione, è necessario disporre di un diritto AEM Assets Ultimate. Questo requisito dipende dalle API utilizzate dall’applicazione, non dal solo utilizzo di App Builder. Vedi [Limiti di visualizzazione prodotto](../../optimizer/boundaries-limits.md#product-visuals-limits).
+
 ## Configurare la corrispondenza automatica personalizzata
 
-1. Dall&#39;amministratore di Commerce, passare a **[!UICONTROL Store]** > Configurazione > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
+1. Dall&#39;amministratore di Commerce, passare a **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
 1. Selezionare **[!UICONTROL Custom Matcher]** come regola corrispondente.
 
@@ -128,6 +132,10 @@ Il campo **[!UICONTROL Adobe I/O Workspace Configuration]** consente di configur
 1. Seleziona le azioni di runtime appropriate dai menu a discesa per ciascun flusso.
 
 1. Fare clic su **[!UICONTROL Save Config]**.
+
+Dopo aver applicato la configurazione, [verifica l&#39;integrazione](../get-started/setup-synchronization.md#verify-the-integration) con una risorsa approvata e un prodotto a cui è associata la corrispondenza personalizzata.
+
+[!BADGE Solo PaaS]{type=Informative tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe)."} Se la sincronizzazione non riesce, controlla i [registri di integrazione](../get-started/logs.md).
 
 ## Salva configurazione asincrona
 

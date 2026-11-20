@@ -26,9 +26,9 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '664'
 ht-degree: 0%
 ---
 # Configurare Storefront
@@ -52,6 +52,8 @@ Per abilitare l&#39;integrazione in vetrine di Commerce con tecnologia Edge Deli
 I menu a discesa di Commerce rilevano automaticamente la configurazione `commerce-assets-enabled` e regolano di conseguenza la gestione delle immagini.
 
 Per ulteriori informazioni sull&#39;utilizzo di AEM Assets con Commerce Storefront basato su Edge Delivery Services, consulta l&#39;argomento [Integrazione di AEM Assets](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/) nella documentazione di *Adobe Commerce Storefront*.
+
+Dopo aver salvato la configurazione della vetrina, [verifica l&#39;integrazione](setup-synchronization.md#verify-the-integration) con una risorsa approvata associata a un prodotto. Verifica che l’immagine prevista venga visualizzata nella vetrina. In caso contrario, controlla l’associazione del prodotto, il proprietario della visualizzazione e i risultati della sincronizzazione prima di risolvere i problemi relativi alla consegna delle immagini della vetrina. Per Adobe Commerce Optimizer, segui il [flusso di lavoro di verifica dell&#39;optimizer](configure-aco.md#match-by-sku-workflow-example).
 
 >[!TIP]
 >

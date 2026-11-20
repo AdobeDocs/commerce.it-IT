@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1188'
 ht-degree: 1%
 ---
 # Integrazione di AEM Assets per Commerce
@@ -65,6 +65,8 @@ L’integrazione di AEM Assets affronta questa sfida automatizzando i flussi di 
 * **Notifiche per l&#39;aggiornamento delle estensioni** - Con l&#39;estensione AEM Assets Integration versione 1.4.6 o successiva, Commerce verifica la presenza di nuove versioni delle estensioni e avvisa gli amministratori di Admin. Consulta [Verifica aggiornamenti estensione](get-started/check-for-updates.md).
 
 La localizzazione in formato testo alternativo non modifica l&#39;assegnazione di un prodotto all&#39;immagine o la mappatura della galleria. La disponibilità delle risorse di visualizzazione archivio è una funzionalità separata e non è coperta dal flusso di lavoro alt-text.
+
+Le visualizzazioni prodotto fornite da AEM Assets supportano i casi di utilizzo della gestione delle risorse incentrata su Commerce in Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer. Per informazioni sulle funzionalità supportate, sui limiti di capacità e sulle funzionalità che richiedono AEM Assets Ultimate, consulta [Limiti degli elementi visivi del prodotto](../optimizer/boundaries-limits.md#product-visuals-limits).
 
 ## Requisiti per l’utilizzo dell’integrazione
 
@@ -142,7 +144,7 @@ Seleziona la distribuzione per seguire i passaggi richiesti nell’ordine:
 
 1. Per supportare i metadati di Commerce, [configura il progetto AEM Assets](get-started/configure-aem.md). In AEM versione `2026.5.26309` e successive, utilizzare l&#39;[onboarding self-service](get-started/configure-aem.md#enable-aem-commerce-self-service); nelle versioni precedenti, installare manualmente il pacchetto `assets-commerce`.
 
-1. [Configura le autorizzazioni utente IMS](get-started/permissions.md) in modo che siano disponibili i campi Selettore risorse e **[!UICONTROL Program ID]** e **[!UICONTROL Environment ID]** compilati automaticamente.
+1. [Configura le autorizzazioni utente IMS](get-started/permissions.md) per Asset Selector e per l&#39;ambiente e il dominio AEM.
 
 1. [Configurare l&#39;integrazione nell&#39;amministratore di Commerce](get-started/setup-synchronization.md).
 
@@ -156,13 +158,17 @@ Seleziona la distribuzione per seguire i passaggi richiesti nell’ordine:
 
 1. [Installa i pacchetti Adobe Commerce](get-started/configure-commerce.md) per aggiungere l&#39;estensione e generare le credenziali e le connessioni richieste.
 
-1. [Configura le autorizzazioni utente IMS](get-started/permissions.md) in modo che siano disponibili i campi Selettore risorse e **[!UICONTROL Program ID]** e **[!UICONTROL Environment ID]** compilati automaticamente.
+1. [Configura le autorizzazioni utente IMS](get-started/permissions.md) per Asset Selector e per l&#39;ambiente e il dominio AEM.
 
 1. [Configurare l&#39;integrazione nell&#39;amministratore di Commerce](get-started/setup-synchronization.md).
 
 1. Facoltativo. [Abilita la visualizzazione dell&#39;immagine del prodotto](get-started/configure-storefront.md#enable-product-images) in modo che una vetrina basata su Edge Delivery Services esegua il rendering delle immagini dei prodotti gestiti da AEM.
 
 >[!ENDTABS]
+
+Dopo aver completato l&#39;installazione, [verifica l&#39;integrazione](get-started/setup-synchronization.md#verify-the-integration) da una risorsa idonea e approvata tramite l&#39;associazione del prodotto e la sincronizzazione con la visualizzazione della vetrina. Per Adobe Commerce Optimizer, segui il [flusso di lavoro di verifica dell&#39;optimizer](get-started/configure-aco.md#match-by-sku-workflow-example); lo stato di sincronizzazione non è disponibile.
+
+Per l&#39;assegnazione e la verifica dell&#39;immagine di categoria, vedere [Gestione immagini di categoria](manage-assets.md#category-images).
 
 ## Supporto
 

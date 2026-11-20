@@ -22,9 +22,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '372'
 ht-degree: 0%
 ---
 # Corrispondenza automatica predefinita
@@ -33,13 +33,13 @@ L&#39;integrazione AEM Assets per Commerce fornisce un meccanismo di corrisponde
 
 ## Configurare il meccanismo di corrispondenza automatica
 
-1. Dall&#39;amministratore di Commerce, passare a **[!UICONTROL Store]** > Configurazione > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
+1. Dall&#39;amministratore di Commerce, passare a **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
-1. Specificare **[!UICONTROL Match by SKU]** come regola corrispondente.
+1. Specificare **[!UICONTROL Match by product SKU]** come regola corrispondente.
 
-   ![regola di corrispondenza automatica predefinita](../assets/ootb-matching-rule.png){width="600" zoomable="yes"}
+   ![Corrispondenza per regola SKU prodotto e nome proprietà metadati](../assets/ootb-matching-rule.png){width="700" zoomable="yes"}
 
-1. Immetti il nome del campo metadati utilizzato per l’identificazione delle risorse in AEM Assets.
+1. In **[!UICONTROL Match by product SKU attribute name]**, immetti il nome [della proprietà metadati](../metadata.md) che memorizza gli SKU dei prodotti in AEM Assets, non un valore SKU effettivo.
 
    >[!NOTE]
    >
@@ -69,4 +69,6 @@ Quando la regola di corrispondenza **[!UICONTROL Match by product SKU]** è conf
 
    ![Esempio di metadati](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
-Questo approccio garantisce che le risorse digitali siano collegate e visualizzate correttamente in Adobe Commerce. Consente inoltre a commercianti e addetti al marketing di gestire ruoli e posizionamento delle risorse direttamente all’interno di AEM Assets, fornendo un meccanismo coerente e centralizzato per la selezione e l’ordinamento delle immagini su tutti i canali di coinvolgimento.
+Dopo aver approvato la risorsa, [verifica l&#39;associazione del prodotto, il risultato della sincronizzazione e la visualizzazione della vetrina](../get-started/setup-synchronization.md#verify-the-integration). Se la risorsa non viene visualizzata, controlla [Stato sincronizzazione](../get-started/sync-status.md). Per Adobe Commerce Optimizer, utilizzare invece il flusso di lavoro di verifica dell&#39;optimizer [&#128279;](../get-started/configure-aco.md#match-by-sku-workflow-example). Stato sincronizzazione non disponibile.
+
+[!BADGE Solo PaaS]{type=Informative tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe)."} Per ulteriori informazioni sulla risoluzione dei problemi di sincronizzazione, esaminare i [registri di integrazione](../get-started/logs.md).
