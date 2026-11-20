@@ -38,7 +38,7 @@ Configura l’integrazione connettendo Commerce all’istanza di AEM Assets e se
 
 Dopo aver identificato il progetto AEM Assets, seleziona la regola corrispondente per la sincronizzazione delle risorse tra Adobe Commerce e AEM Assets.
 
-* **[!UICONTROL Match by product SKU]**—Regola predefinita che corrisponde allo SKU nei metadati della risorsa con [SKU prodotto Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku) per garantire che le risorse siano associate ai prodotti corretti.
+* **[!UICONTROL Match by product SKU]**—Regola predefinita che corrisponde allo SKU nei metadati della risorsa con [SKU prodotto Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/implementation-playbook/glossary#sku) per garantire che le risorse siano associate ai prodotti corretti.
 
 * **[!UICONTROL Custom match]** - Regola di corrispondenza per scenari più complessi o requisiti aziendali specifici che richiedono una logica di corrispondenza personalizzata. L’implementazione della corrispondenza personalizzata richiede lo sviluppo di codice personalizzato in Adobe Developer App Builder per definire il modo in cui le risorse vengono associate ai prodotti. Vedi [Corrispondenza automatica personalizzata](../synchronize/custom-match.md).
 
@@ -87,7 +87,7 @@ Prima di configurare l’integrazione di AEM Assets, verifica di aver completato
 1. Selezionare una delle regole di corrispondenza risorse per la sincronizzazione risorse dal menu a discesa **[!UICONTROL Asset matching rule]**.
 
    * Selezionare **[!UICONTROL Match by product SKU]** per [corrispondenza automatica predefinita](../synchronize/default-match.md).
-   * Selezionare **[!UICONTROL Custom match]** per [corrispondenza automatica personalizzata](../synchronize/custom-match.md). Questa opzione richiede [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder).
+   * Selezionare **[!UICONTROL Custom match]** per [corrispondenza automatica personalizzata](../synchronize/custom-match.md). Questa opzione richiede [Adobe Developer App Builder](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder).
 
 1. Per **[!UICONTROL Match by product SKU]**, immettere il nome della proprietà dei metadati [AEM Assets](../metadata.md) nel campo **[!UICONTROL Match by product SKU attribute name]**. Il valore predefinito è `commerce:skus`.
 
@@ -135,7 +135,7 @@ L&#39;impostazione **Proprietario visualizzazione** determina quale sistema forn
 
 L&#39;amministratore visualizza le immagini disponibili per il proprietario, mentre le altre immagini sono disattivate e visualizzate con l&#39;etichetta **hidden**.
 
-Per informazioni sul comportamento di visualizzazione delle immagini, vedere l&#39;argomento [Imposta dettagli immagine](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}.
+Per informazioni sul comportamento di visualizzazione delle immagini, vedere l&#39;argomento [Imposta dettagli immagine](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}.
 
 >[!TIP]
 >
@@ -159,7 +159,7 @@ Ottieni l’URL di dominio personalizzato configurato per la consegna delle riso
 
 >[!NOTE]
 >
->La configurazione di un URL di dominio personalizzato non aggiorna gli URL delle risorse sincronizzate in precedenza. Queste risorse mantengono gli URL precedenti fino a quando non vengono [rielaborate in AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing){target=_blank}. Dopo aver salvato la configurazione del dominio personalizzato, rielabora queste risorse per aggiornare i loro URL in modo da utilizzare il dominio personalizzato.
+>La configurazione di un URL di dominio personalizzato non aggiorna gli URL delle risorse sincronizzate in precedenza. Queste risorse mantengono gli URL precedenti fino a quando non vengono [rielaborate in AEM Assets](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/manage/reprocessing){target=_blank}. Dopo aver salvato la configurazione del dominio personalizzato, rielabora queste risorse per aggiornare i loro URL in modo da utilizzare il dominio personalizzato.
 
 1. Passa a **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 

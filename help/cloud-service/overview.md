@@ -5,7 +5,7 @@ feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
+badgeSaas: label="Solo SaaS" type="Positive" url="https://experienceleague.adobe.com/it/docs/commerce/user-guides/product-solutions" tooltip="Applicabile solo ai progetti Adobe Commerce as a Cloud Service e Adobe Commerce Optimizer (infrastruttura SaaS gestita da Adobe)."
 autotag-review: '2026-06-18T16:02:31.185Z'
 TQID: 'https://experienceleague.adobe.com/D1Aq9qlw2HprQUy-g5KcIH2Ky2XUDawZIrAbe2Jz6ZI'
 product_v2:
@@ -145,7 +145,7 @@ Product Visuals supporta DAM (Digital Asset Management) incentrato su Commerce, 
 
 L’integrazione garantisce che le risorse digitali, come immagini di prodotto o contenuti di marketing, si colleghino in modo dinamico alle entità di merchandising appropriate, inclusi i prodotti e le categorie in Adobe Commerce, in base allo SKU o ad altri attributi chiave.
 
-[!DNL Product Visuals] è incluso in [!DNL Adobe Commerce as a Cloud Service]. Offre il bundle [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime), un DAM leggero, con Dynamic Media con funzionalità OpenAPI per la distribuzione delle risorse.
+[!DNL Product Visuals] è incluso in [!DNL Adobe Commerce as a Cloud Service]. Offre il bundle [AEM Assets Prime](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-prime), un DAM leggero, con Dynamic Media con funzionalità OpenAPI per la distribuzione delle risorse.
 
 In alternativa, le funzionalità native di [!DNL Adobe Commerce as a Cloud Service] forniscono strumenti di base per la gestione delle risorse digitali per l&#39;archiviazione e la gestione delle risorse digitali.
 
@@ -153,7 +153,7 @@ Per ulteriori informazioni su come integrare [!DNL Product Visuals powered by AE
 
 ### [!DNL Product Visuals] o [!DNL AEM Assets Ultimate]
 
-Il seguente confronto consente di selezionare l’opzione migliore per i contenuti di cui hai bisogno in supply chain. Product Visuals supporta la gestione delle risorse incentrata su Commerce. [AEM Assets Ultimate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview) supporta DAM di livello enterprise più ampio e catene di fornitura di contenuti complesse, tra cui l&#39;estensibilità dell&#39;interfaccia utente, l&#39;automazione basata su API e la distribuzione di codice personalizzato.
+Il seguente confronto consente di selezionare l’opzione migliore per i contenuti di cui hai bisogno in supply chain. Product Visuals supporta la gestione delle risorse incentrata su Commerce. [AEM Assets Ultimate](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview) supporta DAM di livello enterprise più ampio e catene di fornitura di contenuti complesse, tra cui l&#39;estensibilità dell&#39;interfaccia utente, l&#39;automazione basata su API e la distribuzione di codice personalizzato.
 
 >[!IMPORTANT]
 >
@@ -268,7 +268,7 @@ Gli sviluppatori possono utilizzare [GraphQL](https://developer.adobe.com/commer
 <!-- 
 ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/it/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. 
 -->
