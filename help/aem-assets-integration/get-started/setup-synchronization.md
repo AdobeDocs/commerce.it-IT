@@ -27,9 +27,9 @@ topic_v2:
     internal-label: Metadata
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1355'
 ht-degree: 1%
 ---
 # Configurare l’integrazione
@@ -38,11 +38,11 @@ Configura l’integrazione connettendo Commerce all’istanza di AEM Assets e se
 
 Dopo aver identificato il progetto AEM Assets, seleziona la regola corrispondente per la sincronizzazione delle risorse tra Adobe Commerce e AEM Assets.
 
-* **[!UICONTROL Match by product SKU]**—Regola predefinita che corrisponde allo SKU nei metadati della risorsa con [SKU prodotto Commerce](https://experienceleague.adobe.com/it/docs/commerce-operations/implementation-playbook/glossary#sku) per garantire che le risorse siano associate ai prodotti corretti.
+* **[!UICONTROL Match by product SKU]**—Regola predefinita che corrisponde allo SKU nei metadati della risorsa con [SKU prodotto Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku) per garantire che le risorse siano associate ai prodotti corretti.
 
-* **[!UICONTROL Custom match]** - Regola di corrispondenza per scenari più complessi o requisiti aziendali specifici che richiedono una logica di corrispondenza personalizzata. L’implementazione della corrispondenza personalizzata richiede lo sviluppo di codice personalizzato in Adobe Developer App Builder per definire il modo in cui le risorse vengono associate ai prodotti. Ulteriori dettagli disponibili a breve...
+* **[!UICONTROL Custom match]** - Regola di corrispondenza per scenari più complessi o requisiti aziendali specifici che richiedono una logica di corrispondenza personalizzata. L’implementazione della corrispondenza personalizzata richiede lo sviluppo di codice personalizzato in Adobe Developer App Builder per definire il modo in cui le risorse vengono associate ai prodotti. Vedi [Corrispondenza automatica personalizzata](../synchronize/custom-match.md).
 
-Per la configurazione iniziale, utilizza la regola predefinita *Corrispondenza per SKU prodotto*.
+Per la configurazione iniziale, utilizzare la regola predefinita **[!UICONTROL Match by product SKU]**.
 
 ## Requisiti
 
@@ -52,15 +52,13 @@ Prima di configurare l’integrazione di AEM Assets, verifica di aver completato
 
 * [!BADGE Solo PaaS]{type=Informative tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe)."} [Installa i pacchetti Adobe Commerce](configure-commerce.md) per aggiungere l&#39;estensione e generare le credenziali e le connessioni necessarie per utilizzare l&#39;estensione.
 
-* [Autorizzazioni utente e IMS](permissions.md): configura le autorizzazioni richieste per i campi Selettore risorse e di configurazione con compilazione automatica (ID programma, ID ambiente, Mappatura dominio).
+* [Autorizzazioni utente e IMS](permissions.md): configura le autorizzazioni richieste per il selettore risorse, la selezione dell&#39;ambiente AEM e il mapping dei domini.
 
 ## Configurare la connessione
 
-1. Dall’amministratore di Commerce, apri la configurazione dell’integrazione di AEM Assets.
+![Configurazione dell&#39;integrazione AEM Assets con valori di ambiente e dominio di esempio](../assets/aem-assets-view.png){width="900" zoomable="yes"}
 
-   1. Vai a **[!UICONTROL Store]** > Configurazione > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
-
-      ![L&#39;integrazione di AEM Assets abilita l&#39;integrazione](../assets/aem-assets-view.png){width="600" zoomable="yes"}
+1. Dall&#39;amministratore di Commerce, passa a **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
 >[!INFO]
 >
@@ -68,17 +66,17 @@ Prima di configurare l’integrazione di AEM Assets, verifica di aver completato
 
 1. [!BADGE Solo PaaS]{type=Informative tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe)."} Inserisci **[!UICONTROL Asset Selector IMS Client ID]**.
 
-   Questo ID è necessario per abilitare il Selettore risorse e la funzione di compilazione automatica per i campi ID programma e ID ambiente. Per ottenere questo ID, consulta [Autorizzazioni utente e IMS](permissions.md). Per informazioni dettagliate sul selettore risorse, vedere [Selezione manuale delle risorse](../synchronize/asset-selector-integration.md).
+   Questo ID è necessario per abilitare il Selettore risorse. Per ottenere questo ID, consulta [Autorizzazioni utente e IMS](permissions.md). Per informazioni dettagliate sul selettore risorse, vedere [Selezione manuale delle risorse](../synchronize/asset-selector-integration.md).
 
-1. Selezionare l&#39;ambiente AEM Assets **[!UICONTROL Program ID]** e **[!UICONTROL Environment ID]** dai menu a discesa.
+1. Da **[!UICONTROL AEM Environment]**, selezionare l&#39;ambiente configurato in [Configura il progetto AEM Assets](configure-aem.md).
 
-   I selettori vengono visualizzati quando l&#39;utente amministratore di Commerce dispone delle [autorizzazioni utente](permissions.md#user-permissions-and-ims) richieste per l&#39;esperienza: **le integrazioni di Adobe Commerce as a Cloud Service**, **Adobe Commerce Optimizer** e **Adobe Commerce nell&#39;infrastruttura cloud** possono compilare automaticamente questi campi dalla sessione collegata a IMS anziché fare affidamento sugli ID incollati.
+   L’elenco include gli ambienti AEM per i quali l’utente dispone di un profilo di prodotto Author o Delivery. Se manca l&#39;ambiente previsto, esaminare [Autorizzazioni utente e IMS](permissions.md).
 
-   Se i selettori non sono disponibili, copia **[!UICONTROL Program ID]** e **[!UICONTROL Environment ID]** da AEM Cloud Manager oppure derivali dall&#39;URL dell&#39;autore: `https://author-<ProgramID>-<EnvironmentID>.adobeaemcloud.com/` (sostituisci i segnaposto con gli identificatori).
+   Se nella configurazione vengono visualizzati campi **[!UICONTROL Program ID]** e **[!UICONTROL Environment ID]** separati, specificare gli identificatori per l&#39;ambiente. Per l&#39;immissione manuale, copiarli da AEM Cloud Manager o derivarli dall&#39;URL dell&#39;autore: `https://author-p<ProgramID>-e<EnvironmentID>.adobeaemcloud.com/`. Immettere solo gli identificatori numerici, senza i prefissi `p` e `e`.
 
-   È necessario cancellare **[!UICONTROL Use system value]** per entrambi i campi prima di incollare o selezionare manualmente nuovi valori.
+   Per i campi con una casella di controllo **[!UICONTROL Use system value]**, deselezionarla prima di sostituire il valore predefinito.
 
-   ![Modulo di integrazione AEM Assets con ID programma e selettori ID ambiente](../assets/aem-assets-view.png){width="600" zoomable="yes"}
+1. Seleziona **[!UICONTROL AEM Domain Mapping]**. I domini disponibili vengono caricati automaticamente in base all’ambiente AEM selezionato. Se il progetto utilizza un dominio di consegna risorse personalizzato, segui [Configurare l&#39;URL del dominio personalizzato](#optional-configure-the-custom-domain-url).
 
 1. [!BADGE Solo PaaS]{type=Informative tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe)."} Seleziona [[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment) per autenticare le richieste tra Commerce e il servizio di corrispondenza risorse.
 
@@ -88,10 +86,14 @@ Prima di configurare l’integrazione di AEM Assets, verifica di aver completato
 
 1. Selezionare una delle regole di corrispondenza risorse per la sincronizzazione risorse dal menu a discesa **[!UICONTROL Asset matching rule]**.
 
-   * Seleziona **[!UICONTROL Match by SKU]** per [corrispondenza automatica predefinita](../synchronize/default-match.md),
-   * Seleziona **[!UICONTROL Custom match]** per [corrispondenza automatica personalizzata](../synchronize/custom-match.md) (richiede [Adobe Developer App Builder](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder).)
+   * Selezionare **[!UICONTROL Match by product SKU]** per [corrispondenza automatica predefinita](../synchronize/default-match.md).
+   * Selezionare **[!UICONTROL Custom match]** per [corrispondenza automatica personalizzata](../synchronize/custom-match.md). Questa opzione richiede [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder).
 
-1. Aggiungi il nome del campo di metadati [AEM Assets](configure-aem.md#define-the-metadata-profile) definito per gli SKU dei prodotti Commerce nel campo **[!UICONTROL Match by product SKU attribute name]**, `commerce:skus` per impostazione predefinita.
+1. Per **[!UICONTROL Match by product SKU]**, immettere il nome della proprietà dei metadati [AEM Assets](../metadata.md) nel campo **[!UICONTROL Match by product SKU attribute name]**. Il valore predefinito è `commerce:skus`.
+
+   Inserisci il nome della proprietà, non un valore SKU del prodotto. Aggiungi gli SKU del prodotto effettivi ai metadati **[!UICONTROL Product Data]** di ciascuna risorsa in AEM Assets, come descritto in [Corrispondenza automatica predefinita](../synchronize/default-match.md).
+
+1. Rivedi l&#39;impostazione [Proprietario visualizzazione](#configure-the-visualization-owner). Durante la migrazione, mantieni la proprietà di **Adobe Commerce** fino al completamento della sincronizzazione delle risorse.
 
 1. Selezionare **[!UICONTROL Save Config]** per applicare gli aggiornamenti e avviare la sincronizzazione delle risorse.
 
@@ -123,7 +125,7 @@ Il testo alternativo localizzato utilizza il processo di sincronizzazione risors
 
 Per i nomi dei campi, le regole di convalida e i risultati di Commerce, vedi [Metadati Commerce in AEM Assets](../metadata.md).
 
-### Configurare il proprietario della visualizzazione
+## Configurare il proprietario della visualizzazione
 
 L&#39;impostazione **Proprietario visualizzazione** determina quale sistema fornisce le immagini del prodotto nell&#39;integrazione:
 
@@ -133,35 +135,63 @@ L&#39;impostazione **Proprietario visualizzazione** determina quale sistema forn
 
 L&#39;amministratore visualizza le immagini disponibili per il proprietario, mentre le altre immagini sono disattivate e visualizzate con l&#39;etichetta **hidden**.
 
-Per informazioni sul comportamento di visualizzazione delle immagini, vedere l&#39;argomento [Imposta dettagli immagine](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}.
+Per informazioni sul comportamento di visualizzazione delle immagini, vedere l&#39;argomento [Imposta dettagli immagine](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}.
 
 >[!TIP]
 >
 > Durante una migrazione da Commerce ad AEM Assets, imposta **Proprietario visualizzazione** su Commerce per evitare collegamenti immagine interrotti. Dopo che tutti i prodotti sono stati sincronizzati con AEM Assets, passa al proprietario di AEM Assets per completare la transizione. Ciò garantisce la disponibilità continua delle immagini durante l&#39;intero processo.
 
-1. Passa a **[!UICONTROL Store]** > Configurazione > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
+1. Passa a **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
-   ![Funzionalità proprietario visualizzazione integrazione AEM Assets](../assets/visualization-owner-detail.png){width="400" zoomable="yes"}
+   ![Proprietario visualizzazione impostato su AEM Assets](../assets/visualization-owner-detail.png){width="700" zoomable="yes"}
 
 1. Seleziona l&#39;origine **Proprietario visualizzazione** per visualizzare le immagini.
 
-1. Fare clic su **[!UICONTROL Save Config]** per applicare gli aggiornamenti e avviare la sincronizzazione delle risorse.
+1. Fare clic su **[!UICONTROL Save Config]** per applicare gli aggiornamenti.
 
-### Facoltativo. Configurare l’URL del dominio personalizzato
+   Prima di passare a **AEM Assets**, [verifica che le risorse siano associate ai prodotti previsti](#verify-the-integration). Quindi [configura la vetrina](configure-storefront.md) per visualizzare le immagini dei prodotti AEM Assets.
+
+## Facoltativo. Configurare l’URL del dominio personalizzato
 
 Se il progetto AEM Assets as a Cloud Service è stato configurato con un [nome di dominio personalizzato](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name){target=_blank}, è necessario aggiungere il nome di dominio alla configurazione dell&#39;archivio Commerce in modo che l&#39;integrazione AEM Assets per Commerce possa utilizzarlo.
 
-1. Passa a **[!UICONTROL Store]** > Configurazione > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
+Ottieni l’URL di dominio personalizzato configurato per la consegna delle risorse dall’amministratore AEM. Questa impostazione sostituisce l’URL di consegna di AEM; non è l’URL di authoring di AEM utilizzato per identificare l’ID del programma e l’ID dell’ambiente. Se il progetto non utilizza un dominio personalizzato, lascia invariato il mapping del dominio.
 
-   ![L&#39;integrazione di AEM Assets abilita l&#39;integrazione](../assets/aem-assets-view.png){width="700" zoomable="yes"}
+>[!NOTE]
+>
+>La configurazione di un URL di dominio personalizzato non aggiorna gli URL delle risorse sincronizzate in precedenza. Queste risorse mantengono gli URL precedenti fino a quando non vengono [rielaborate in AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing){target=_blank}. Dopo aver salvato la configurazione del dominio personalizzato, rielabora queste risorse per aggiornare i loro URL in modo da utilizzare il dominio personalizzato.
 
-1. Aggiungi l&#39;**URL dominio personalizzato** al campo **[!UICONTROL Asset Custom Domain]**.
+1. Passa a **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
-1. Fare clic su **[!UICONTROL Save Config]** per applicare gli aggiornamenti e avviare la sincronizzazione delle risorse.
+1. Conferma **[!UICONTROL AEM Environment]** selezionato, quindi seleziona il dominio personalizzato configurato da **[!UICONTROL AEM Domain Mapping]**. I domini disponibili vengono caricati automaticamente per l’ambiente selezionato.
+
+![Selettori di ambienti e domini AEM con valori di esempio](../assets/aem-assets-environment-domain.png){width="700" zoomable="yes"}
+
+    Per le configurazioni che visualizzano un campo di testo **[!UICONTROL Asset Custom Domain]**, immettere l&#39;URL del dominio personalizzato nel campo.
+
+1. Fare clic su **[!UICONTROL Save Config]** per applicare gli aggiornamenti.
+
+## Verificare l’integrazione
+
+>[!NOTE]
+>
+>Stato di sincronizzazione non disponibile per Adobe Commerce Optimizer. Segui il [flusso di lavoro di verifica di Commerce Optimizer](configure-aco.md#match-by-sku-workflow-example) invece dei controlli di amministrazione di Commerce riportati di seguito.
+
+1. Scegli un prodotto Commerce esistente e annota il relativo SKU.
+
+1. In AEM Assets, contrassegna una risorsa di prova come **[!UICONTROL Eligible for Commerce]**, associala allo SKU del prodotto e impostane il ruolo e la posizione. Approva la risorsa. Vedi [Corrispondenza automatica predefinita](../synchronize/default-match.md) oppure utilizza la [regola di corrispondenza personalizzata](../synchronize/custom-match.md) configurata.
+
+1. Al termine della sincronizzazione, apri il prodotto in Commerce Admin e controlla la sezione **[!UICONTROL Images And Videos]** per la risorsa, il ruolo e la posizione associati. Vedi [Gestione risorse](../manage-assets.md).
+
+1. Rivedi [Stato sincronizzazione](sync-status.md) per il risultato della sincronizzazione della risorsa. Se la sincronizzazione non riesce, esaminare la colonna **[!UICONTROL Error]**.
+
+1. Dopo aver selezionato **AEM Assets** come proprietario della visualizzazione e aver completato la [configurazione della vetrina](configure-storefront.md), apri il prodotto nella vetrina e conferma che venga visualizzata l&#39;immagine prevista.
+
+[!BADGE Solo PaaS]{type=Informative tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe)."} Per ulteriori informazioni sulla risoluzione dei problemi di sincronizzazione, esaminare i [registri di integrazione](logs.md).
 
 ## Passaggio successivo
 
-* **Configura Commerce Storefront**. Per utilizzare AEM Assets con Commerce Storefront con tecnologia Edge Delivery Services, completa la configurazione della vetrina descritta nell&#39;argomento [Integrazione AEM Assets](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/) nella *documentazione Adobe Commerce Storefront*.
+* [Configura Commerce Storefront](configure-storefront.md) per visualizzare le immagini dei prodotti AEM Assets con Edge Delivery Services.
 
 * Imposta [regole corrispondenti](../synchronize/default-match.md) tra Adobe Commerce e l&#39;integrazione AEM Assets.
 

@@ -22,18 +22,22 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '1015'
 ht-degree: 0%
 ---
 # Corrispondenza automatica personalizzata
 
-Se la strategia di corrispondenza automatica predefinita (**Corrispondenza automatica OOTB**) non è allineata ai requisiti aziendali specifici, selezionare l&#39;opzione di corrispondenza personalizzata. Questa opzione supporta l&#39;utilizzo di [Adobe Developer App Builder](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder) per sviluppare un&#39;applicazione di corrispondenza personalizzata che gestisca logiche di corrispondenza complesse o risorse provenienti da un sistema di terze parti che non possono popolare i metadati in AEM Assets.
+Se la strategia di corrispondenza automatica predefinita (**Corrispondenza automatica OOTB**) non è allineata ai requisiti aziendali specifici, selezionare l&#39;opzione di corrispondenza personalizzata. Questa opzione supporta l&#39;utilizzo di [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder) per sviluppare un&#39;applicazione di corrispondenza personalizzata che gestisca logiche di corrispondenza complesse o risorse provenienti da un sistema di terze parti che non possono popolare i metadati in AEM Assets.
+
+>[!NOTE]
+>
+>Se la tua integrazione personalizzata con Matcher o Adobe Developer App Builder richiede le API di AEM Assets per gestire le risorse o i metadati a livello di programmazione, è necessario disporre di un diritto AEM Assets Ultimate. Questo requisito dipende dalle API utilizzate dall’applicazione, non dal solo utilizzo di App Builder. Vedi [Limiti di visualizzazione prodotto](../../optimizer/boundaries-limits.md#product-visuals-limits).
 
 ## Configurare la corrispondenza automatica personalizzata
 
-1. Dall&#39;amministratore di Commerce, passare a **[!UICONTROL Store]** > Configurazione > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
+1. Dall&#39;amministratore di Commerce, passare a **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
 1. Selezionare **[!UICONTROL Custom Matcher]** come regola corrispondente.
 
@@ -129,11 +133,15 @@ Il campo **[!UICONTROL Adobe I/O Workspace Configuration]** consente di configur
 
 1. Fare clic su **[!UICONTROL Save Config]**.
 
+Dopo aver applicato la configurazione, [verifica l&#39;integrazione](../get-started/setup-synchronization.md#verify-the-integration) con una risorsa approvata e un prodotto a cui è associata la corrispondenza personalizzata.
+
+[!BADGE Solo PaaS]{type=Informative tooltip="Applicabile solo ai progetti Adobe Commerce on Cloud (infrastruttura PaaS gestita da Adobe)."} Se la sincronizzazione non riesce, controlla i [registri di integrazione](../get-started/logs.md).
+
 ## Salva configurazione asincrona
 
-Se nell&#39;istanza di Commerce è abilitata l&#39;opzione [Salva configurazione asincrona](https://experienceleague.adobe.com/it/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save), le modifiche alla configurazione vengono messe in coda e applicate da un consumer asincrono anziché essere salvate immediatamente nella stessa richiesta. Per caricare un file `workspace.json` per la corrispondenza automatica personalizzata in questa modalità, completare i passaggi seguenti in ordine:
+Se nell&#39;istanza di Commerce è abilitata l&#39;opzione [Salva configurazione asincrona](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save), le modifiche alla configurazione vengono messe in coda e applicate da un consumer asincrono anziché essere salvate immediatamente nella stessa richiesta. Per caricare un file `workspace.json` per la corrispondenza automatica personalizzata in questa modalità, completare i passaggi seguenti in ordine:
 
-1. Verificare che il salvataggio della configurazione asincrona di Commerce sia [abilitato](https://experienceleague.adobe.com/it/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save).
+1. Verificare che il salvataggio della configurazione asincrona di Commerce sia [abilitato](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save).
 
 1. Dall&#39;amministratore, passare a **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Adobe Services]** > **[!UICONTROL AEM Assets Integration]**.
 
@@ -167,7 +175,7 @@ Se nell&#39;istanza di Commerce è abilitata l&#39;opzione [Salva configurazione
 
 ## Endpoint API di corrispondenza personalizzati
 
-Quando si crea un&#39;applicazione di corrispondenza personalizzata utilizzando [App Builder](https://experienceleague.adobe.com/it/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l&#39;applicazione deve esporre i seguenti endpoint:
+Quando si crea un&#39;applicazione di corrispondenza personalizzata utilizzando [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l&#39;applicazione deve esporre i seguenti endpoint:
 
 * Endpoint **da risorsa App Builder all&#39;URL prodotto**
 * Endpoint **da prodotto App Builder a URL risorsa**
@@ -336,7 +344,7 @@ Il parametro `asset_matches` contiene i seguenti attributi:
 | Attributo | Tipo di dati | Descrizione |
 | --- | --- | --- |
 | `asset_id` | Stringa | ID risorsa. |
-| `asset_roles` | Array | Ruoli risorsa. Utilizza i [ruoli di risorse Commerce](https://experienceleague.adobe.com/it/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) supportati, ad esempio `thumbnail`, `image`, `small_image` e `swatch_image`. Con AEM Assets Integration Extension 1.4.6 e versioni successive, vengono accettati anche i ruoli immagine personalizzati (come `hero` o `custom_role_1`). |
+| `asset_roles` | Array | Ruoli risorsa. Utilizza i [ruoli di risorse Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) supportati, ad esempio `thumbnail`, `image`, `small_image` e `swatch_image`. Con AEM Assets Integration Extension 1.4.6 e versioni successive, vengono accettati anche i ruoli immagine personalizzati (come `hero` o `custom_role_1`). |
 | `asset_format` | Stringa | Il formato della risorsa. I valori possibili sono `image` e `video`. |
 | `asset_position` | Numero | Posizione della risorsa nella galleria di prodotti. |
 
